@@ -1,0 +1,20 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+#ID_static_11{
+letter-spacing:-0.3px!important;
+}
+
+#dnd_1_drag_0_0,#dnd_1_drag_1_0,#dnd_1_drag_2_0,#dnd_1_drag_3_0,#dnd_1_drag_4_0,#dnd_1_drag_5_0,#dnd_1_drag_6_0,#dnd_1_drag_7_0,#dnd_1_drag_8_0,#dnd_1_drag_9_0{
+	margin-left: -100px !important;
+}

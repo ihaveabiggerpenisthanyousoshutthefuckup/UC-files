@@ -1,0 +1,60 @@
+<textcomponents>
+
+<!--SLIDE 1 -->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Displaying the Cisco IOS Image</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+
+<!--SLIDE 2 -->
+<component id="ID_s3_title">
+<text><![CDATA[<b>Example of a Cisco IOS 15.2 Software Image Name<br>on an ISR G2 Device</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>Hardware</b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>Image Designation</b>]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>Memory Location</b>]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[<b>Compression Format</b>]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[<b>Digital Signature Indicator</b>]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<b>Major Release</b>]]></text>
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[<b>Minor Release</b>]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[<b>New Feature Release</b>]]></text>
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[<b>Extended Maintenance Release</b>]]></text>
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[<b>Maintenance Rebuild</b>]]></text>
+</component>
+
+<component id="ID_s3_txt11">
+<text><![CDATA[<b>File Extension</b>]]></text>
+</component>
+
+</textcomponents>

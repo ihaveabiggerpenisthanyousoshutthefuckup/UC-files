@@ -1,0 +1,8 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#static1, #static2,#txt1{letter-spacing: 1.5px !important;}
+#static1{letter-spacing: 1.2px !important;}
