@@ -1,0 +1,25 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>First-Hop Router Redundancy Options</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[<b>HSRP Group 1</b>]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+	<text><![CDATA[<b>Active</b>]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+	<text><![CDATA[<b>Standby</b>]]></text>
+	</component>
+	
+	<component id="ID_Title_txt01">
+		<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+	<component id="ID_Body_txt01">
+		<text><![CDATA[<textformat blockindent='-14' ><li>HSRP defines a group of routers - one active and one standby.</li><li>Virtual IP and MAC addresses are shared between the two routers.</li><li>To verify HSRP state, use the <font face="_typewriter"><b>show standby</b></font> command.</li><li>HSRP is Cisco proprietary.</li><li>VRRP is a standard protocol.</li></textformat>]]></text>
+	</component> 
+</textcomponents>

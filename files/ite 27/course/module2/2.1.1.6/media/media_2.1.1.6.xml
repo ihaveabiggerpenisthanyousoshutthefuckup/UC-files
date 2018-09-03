@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Incorrect VTP Configuration Revision Number Scenario</b>]]></text>
+	</component>
+	
+	<component id='ID_txt01'>
+		<text><![CDATA[VLAN10]]></text>
+	</component>
+
+	<component id='ID_txt02'>
+		<text><![CDATA[VLAN20]]></text>
+	</component>
+
+	<component id='ID_txt03'>
+		<text><![CDATA[VLAN10]]></text>
+	</component>
+
+	<component id='ID_txt04'>
+		<text><![CDATA[VLAN20]]></text>
+	</component>
+
+	<component id='ID_txt05'>
+		<text><![CDATA[VLAN20]]></text>
+	</component>
+
+	<component id='ID_txt06'>
+		<text><![CDATA[VLAN20]]></text>
+	</component>
+
+	<component id='ID_txt07'>
+		<text><![CDATA[VTP Server]]></text>
+	</component>
+
+	<component id='ID_txt08'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_txt09'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_txt10'>
+		<text><![CDATA[Trunks]]></text>
+	</component>
+
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[VTP Domain = cisco1<br/>Revision Number = <font color="#f68026"><b>17</b></font><br/>VLANs = <font color="#f68026"><b>10,20</b></font>]]></text>
+	</component>
+
+	<component id='ID_s2_txt01'>
+		<text><![CDATA[VTP Domain = cisco1<br/>Revision Number = <font color="#f68026"><b>17</b></font><br/>VLANs = <font color="#f68026"><b>10,20</b></font>]]></text>
+	</component>
+
+	<component id='ID_s3_txt01'>
+		<text><![CDATA[VTP Domain = cisco1<br/>Revision Number = <font color="#f68026"><b>17</b></font><br/>VLANs = <font color="#f68026"><b>10,20</b></font>]]></text>
+	</component>
+
+	<component id='ID_s4_txt01'>
+		<text><![CDATA[VTP Domain = cisco1<br/>Revision Number = <font color="#f68026"><b>35</b></font><br/>VLANs = <font color="#f68026"><b>30,40</b></font>]]></text>
+	</component>
+
+</textcomponents>

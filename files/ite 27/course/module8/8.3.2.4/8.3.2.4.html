@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.2.4 Configuring the OSPFv3 Router ID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring the OSPFv3 Router ID</h1>
+        <div>
+          <p>Use the<b> ipv6 router ospf </b><i>process-id </i>global configuration mode command to enter router configuration mode. The IPv6 router configuration mode prompt is different than the IPv4 router configuration mode prompt. Use the IPv6 router confirmation mode to configure global OSPFv3 parameters, such as a assigning a 32-bit OSPFv3 router ID and reference bandwidth.  </p>
+          <p></p>
+          <p>IPv6 routing protocols are enabled on an interface, and not from router configuration mode, like their IPv4 counterparts. The<b> network </b>IPv4 router configuration mode command does not exist in IPv6.</p>
+          <p></p>
+          <p>Like OSPFv2, the<i> process-id </i>value is a number between 1 and 65,535 and is chosen by the network administrator. The<i> process-id </i>value is locally significant, which means that it does not have to match other OSPF routers to establish adjacencies with those neighbors. </p>
+          <p></p>
+          <p>OSPFv3 requires a 32-bit router ID to be assigned before OSPF can be enabled on an interface. The logic diagram in Figure 1 displays how a router ID is chosen. Like OSPFv2, OSPFv3 uses:</p>
+          <p>
+            <ul>
+              <li>An explicitly configured router ID first using the<b> router-id</b><i> rid </i>command. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If none are configured, then the router uses the highest configured IPv4 address of a loopback interface. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If none are configured, then the router uses the highest configured IPv4 address of an active interface. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If there are no sources of IPv4 addresses on a router, then the router displays a console message requiring the configuration of the router ID manually.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: For consistency, all three routers use the process ID of 10.</p>
+          <p></p>
+          <p>As shown in the topology in Figure 2, routers R1, R2, and R3 are to be assigned the router IDs indicated. The<b> router-id </b><i>rid </i>command used to assign a router ID in OSPFv2 is the same command used in OSPFv3. </p>
+          <p></p>
+          <p>The example in Figure 3:</p>
+          <p>
+            <ul>
+              <li>Enters the router OSPFv3 configuration mode. Notice how the router prompt is different than the default IPv4 routing protocol mode router prompt. Also notice how an informational console message appeared when the OSPFv3 router configuration mode was accessed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Assigns the router ID 1.1.1.1. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Adjusts the reference bandwidth to 1,000,000,000 bps (1 Gb/s), because there are Gigabit Ethernet links in the network. Notice the information console message that this command must be configured on all routers in the routing domain.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The<b> show ipv6 protocols </b>command is used to verify that the OSPFv3 process ID 10 is using the router ID 1.1.1.1.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure global OSPFv3 settings on R2 and R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is a flow chart the details the router I.D. order of precedence.  The first question asks if the router I.D. is explicitly configured.  If the answer is yes, then that is the router I.D.  If the answer is no, then the next question is whether a loopback interface is configured?  If the answer is yes, then the highest configured address is the router I.D.  If the answer is no, then that router I.D. is the highest active configured I.P. address.  If the answer to all three questions is no, then the router will display an error message stating that O.S.P.F. version three could not pick a router I.D. and that it needs to be configured manually. Figure two shows the O.S.P.F. reference topology and lists the router i.d. for each router.  R-1 has a configured i.d. of one dot one dot one dot one.  R-2 has a configured i.d. of two dot two dot two dot two. R-3 has a configured i.d. of three dot three dot three dot three. Figure three shows the commands necessary to configure router R-1.  The figure begins in global configuration mode. The first command is, i.p.v.6. router O.S.P.F. 10, where 10 is an arbitrary process i.d. This command activates the O.S.P.F. version 3 routing protocol.  The prompt returned by the router is, R.1. open parentheses config hyphen r.t.r. close parentheses.  The next command is, router hyphen i.d. 1 dot 1 dot 1 dot 1.  This is followed by the configuration of the reference bandwidth, and the command is, auto hyphen cost reference hyphen bandwidth 1,000.  The figure then shows the output from the command, show i.p.v.6. protocols, which verifies the router i.d. Figure four is an interactive media element that allows the learner to assign the router i.d. to R-2.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

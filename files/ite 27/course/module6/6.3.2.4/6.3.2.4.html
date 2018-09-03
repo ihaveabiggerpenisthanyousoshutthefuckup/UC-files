@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.4 Delay Metric</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Delay Metric</h1>
+        <div>
+          <p>Delay is the measure of the time it takes for a packet to traverse a route. The delay (DLY) metric is a static value based on the type of link to which the interface is connected and is expressed in microseconds. Delay is not measured dynamically. In other words, the router does not actually track how long packets take to reach the destination. The delay value, much like the bandwidth value, is a default value that can be changed by the network administrator.</p>
+          <p></p>
+          <p>When used to determine the EIGRP metric, delay is the cumulative (sum) of all interface delays along the path (measured in tens of microseconds). </p>
+          <p></p>
+          <p>The table in Figure 1 shows the default delay values for various interfaces. Notice that the default value is 20,000 microseconds for serial interfaces and 10 microseconds for GigabitEthernet interfaces.</p>
+          <p></p>
+          <p>Use the<b> show interfaces </b>command to verify the delay value on an interface, as shown in Figure 2. Although an interface with various bandwidths can have the same delay value, by default, Cisco recommends not modifying the delay parameter, unless the network administrator has a specific reason to do so.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table with different types of media and their corresponding delay values. Figure two shows the output of the "show interface" command. The delay values are highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

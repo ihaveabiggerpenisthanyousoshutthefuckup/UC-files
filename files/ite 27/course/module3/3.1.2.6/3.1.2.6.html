@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.6 Designated and Alternate Ports</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Designated and Alternate Ports</h1>
+        <div>
+          <p>When determining the root port on a switch, the switch compares the path costs on all switch ports participating in the spanning tree. The switch port with the lowest overall path cost to the root bridge is automatically assigned the root port role because it is closest to the root bridge. In a network topology of switches, all non-root bridge switches have a single root port chosen, and that port provides the lowest cost path back to the root bridge. </p>
+          <p></p>
+          <p>A root bridge will not have any root ports. All ports on a root bridge will be designated ports. A switch that is not the root bridge of a network topology will have only one root port defined.</p>
+          <p></p>
+          <p>The figure shows a topology with four switches. Examining the port roles, port F0/1 on switch S3 and port F0/3 on switch S4 have been selected as root ports because they have the lowest cost path (root path cost) to the root bridge for their respective switches.  </p>
+          <p></p>
+          <p>S2 has two port ports, F0/1 and F0/2 with equal cost paths to the root bridge. In this case the bridge IDs of the neighboring switches, S3 and S4, will be used to break the tie. This is known as the sender’s BID. S3 has a BID of 24577.5555.5555.5555 and S4 has a BID of 24577.1111.1111.1111. Because S4 has a lower BID, S2’s F0/1 port, the port connected to S4, will be the root port.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The BIDs are not shown in the figure.</p>
+          <p></p>
+          <p>Next, designated ports need to be selected on shared segments. S2 and S3 connect to the same LAN segment and therefore; they exchange BPDU frames. STP determines whether S2’s F0/2 port or S3’s F0/2 port will be the designated port for the shared segment. The switch with the lower cost path to the root bridge (root path cost) will have its port selected as the designated port. S3’s F0/2 port has a lower cost path to the root bridge so it will be the designated port for that segment.</p>
+          <p></p>
+          <p>S2 and S4 go through a similar process for their shared segment. S4’s F0/1 port has the lower cost path to the root bridge and becomes the designated port on this shared segment.</p>
+          <p></p>
+          <p>All STP port roles have been assigned except for S2’s F0/2 port. S2’s F0/1 port has already been selected as the root port for that switch. Because S3’s F0/2 port is the designated port for this segment, S2’s F0/2 port will become an alternate port.</p>
+          <p></p>
+          <p>The Designated Port is the port that sends and receives traffic, to and from that segment to the Root Bridge. This is the best port on that segment towards the root bridge. The alternate port will not send or receive traffic on that segment. This is the loop prevention part of STP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

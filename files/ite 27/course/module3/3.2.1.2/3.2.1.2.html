@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.2 Characteristics of the Spanning Tree Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Characteristics of the Spanning Tree Protocols</h1>
+        <div>
+          <p>These are characteristics of the various spanning tree protocols. The italicized words indicate whether the particular spanning tree protocol is Cisco-proprietary or an IEEE standard implementation:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>STP</b> - Assumes one IEEE 802.1D spanning tree instance for the entire bridged network, regardless of the number of VLANs. Because there is only one instance, the CPU and memory requirements for this version are lower than for the other protocols. However, because there is only one instance, there is only one root bridge and one tree. Traffic for all VLANs flows over the same path, which can lead to suboptimal traffic flows. Because of the limitations of 802.1D, this version is slow to converge.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PVST+</b> - A Cisco enhancement of STP that provides a separate instance of the Cisco implementation of 802.1D for each VLAN that is configured in the network. The speed of convergence is similar to the original STP. The separate instance supports PortFast, UplinkFast, BackboneFast, BPDU guard, BPDU filter, root guard, and loop guard. Port roles are defined the same as they are with RSTP. Creating an instance for each VLAN increases the CPU and memory requirements, but allows for per-VLAN root bridges. This design allows the spanning tree to be optimized for the traffic of each VLAN. Convergence of this version is similar to the convergence of 802.1D. However, convergence is per-VLAN.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RSTP (or IEEE 802.1w)</b> - An evolution of spanning tree that provides faster convergence than the original 802.1D implementation. This version addresses many convergence issues, but because it still provides a single instance of STP, it does not address the suboptimal traffic flow issues. To support that faster convergence, the CPU usage and memory requirements of this version are higher than those of CST, but less than those of Rapid PVST+.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Rapid PVST+</b> - A Cisco enhancement of RSTP that uses PVST+. It provides a separate instance of 802.1w per VLAN. The separate instance supports PortFast, BPDU guard, BPDU filter, root guard, and loop guard. This version addresses the convergence issues and the suboptimal traffic flow issues. However, this version has the highest CPU and memory requirements. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>MSTP</b> - The IEEE 802.1s standard, and was inspired by the earlier Cisco proprietary MISTP implementation. To reduce the number of required STP instances, MSTP maps multiple VLANs that have the same traffic flow requirements into the same spanning tree instance. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>MST</b> - The Cisco implementation of MSTP, which provides up to 16 instances of RSTP (802.1w) and combines many VLANs with the same physical and logical topology into a common RSTP instance. Each instance supports PortFast, BPDU guard, BPDU filter, root guard, and loop guard. The CPU and memory requirements of this version are less than those of Rapid PVST+ but more than those of RSTP.</li>
+            </ul>
+          </p>
+          <p>Cisco switches running IOS 15.0 or later, run PVST+ by default. This version incorporates many of the specifications of IEEE 802.1D-2004, such as alternate ports in place of the former non-designated ports. However, the switches must be explicitly configured for rapid spanning tree mode in order to run the rapid spanning tree protocol.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table comparing the standard, resources, convergence time, and tree calculations for the different varieties of s.t.p.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.2 Port States and PVST+ Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Port States and PVST+ Operation</h1>
+        <div>
+          <p>STP facilitates the logical loop-free path throughout the broadcast domain. The spanning tree is determined through the information learned by the exchange of the BPDU frames between the interconnected switches. To facilitate the learning of the logical spanning tree, each switch port transitions through five possible port states and three BPDU timers.</p>
+          <p></p>
+          <p>The spanning tree is determined immediately after a switch is finished booting up. If a switch port transitions directly from the blocking state to the forwarding state without information about the full topology during the transition, the port can temporarily create a data loop. For this reason, STP introduces five port states. PVST+ uses the same five port states. The figure describes the port states that ensure no loops are created during the creation of the logical spanning tree:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Blocking</b> - The port is an alternate port and does not participate in frame forwarding. The port receives BPDU frames to determine the location and root ID of the root bridge switch and which port roles each switch port should assume in the final active STP topology.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Listening</b> - Listens for the path to the root. STP has determined that the port can participate in frame forwarding according to the BPDU frames that the switch has received. The switch port receives BPDU frames, transmits its own BPDU frames, and informs adjacent switches that the switch port is preparing to participate in the active topology.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Learning</b> - Learns the MAC addresses. The port prepares to participate in frame forwarding and begins to populate the MAC address table. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Forwarding</b> - The port is considered part of the active topology. It forwards data frames and sends and receives BPDU frames. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Disabled</b> - The Layer 2 port does not participate in spanning tree and does not forward frames. The disabled state is set when the switch port is administratively disabled.</li>
+            </ul>
+          </p>
+          <p>Note that the number of ports in each of the various states (blocking, listening, learning, or forwarding) can be displayed with the <b>show spanning-tree summary</b> command.</p>
+          <p></p>
+          <p>For each VLAN in a switched network, PVST+ performs four steps to provide a loop-free logical network topology:</p>
+          <p></p>
+          <p>
+            <b>Step 1. Elects one root bridge</b> - Only one switch can act as the root bridge (for a given VLAN). The root bridge is the switch with the lowest bridge ID. On the root bridge, all ports are designated ports (no root ports).</p>
+          <p></p>
+          <p>
+            <b>Step 2. Selects the root port on each non-root bridge</b> - PVST+ establishes one root port on each non-root bridge for each VLAN. The root port is the lowest-cost path from the non-root bridge to the root bridge, which indicates the direction of the best path to the root bridge. Root ports are normally in the forwarding state.</p>
+          <p></p>
+          <p>
+            <b>Step 3. Selects the designated port on each segment</b> - On each link, PVST+ establishes one designated port for each VLAN. The designated port is selected on the switch that has the lowest-cost path to the root bridge. Designated ports are normally in the forwarding state, and forwarding traffic for the segment. </p>
+          <p></p>
+          <p>
+            <b>Step 4. The remaining ports in the switched network are alternate ports</b> - Alternate ports normally remain in the blocking state, to logically break the loop topology. When a port is in the blocking state, it does not forward traffic, but it can still process received BPDU messages.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table stating whether a port will be receiving b.p.d.u.'s, forwarding data received on the interface, forwarding data switched from another interface, or learning mac addresses for the 5 different modes of s.t.p. The five modes are blocking, listening, learning, forwarding, and disabled.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

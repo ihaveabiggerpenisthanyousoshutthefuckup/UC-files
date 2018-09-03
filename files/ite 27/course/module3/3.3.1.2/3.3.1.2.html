@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.2 Configuring and Verifying the Bridge ID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring and Verifying the Bridge ID</h1>
+        <div>
+          <p>When an administrator wants a specific switch to become a root bridge, the bridge priority value must be adjusted to ensure it is lower than the bridge priority values of all the other switches on the network. There are two different methods to configure the bridge priority value on a Cisco Catalyst switch.</p>
+          <p></p>
+          <p>
+            <b>Method 1</b>
+          </p>
+          <p>To ensure that the switch has the lowest bridge priority value, use the<b> spanning-tree vlan </b><i>vlan-id</i><b> root primary </b>command in global configuration mode. The priority for the switch is set to the predefined value of 24,576 or to the highest multiple of 4,096, less than the lowest bridge priority detected on the network.</p>
+          <p></p>
+          <p>If an alternate root bridge is desired, use the<b> spanning-tree vlan </b><i>vlan-id</i><b> root secondary </b>global configuration mode command. This command sets the priority for the switch to the predefined value of 28,672. This ensures that the alternate switch becomes the root bridge if the primary root bridge fails. This assumes that the rest of the switches in the network have the default 32,768 priority value defined.</p>
+          <p></p>
+          <p>In Figure 1, S1 has been assigned as the primary root bridge using the<b> spanning-tree vlan 1 root primary </b>command, and S2 has been configured as the secondary root bridge using the<b> spanning-tree vlan 1 root secondary </b>command.</p>
+          <p></p>
+          <p>
+            <b>Method 2</b>
+          </p>
+          <p>Another method for configuring the bridge priority value is using the<b> spanning-tree vlan </b><i>vlan-id</i><b> priority </b><i>value </i>global configuration mode command. This command gives more granular control over the bridge priority value. The priority value is configured in increments of 4,096 between 0 and 61,440. </p>
+          <p></p>
+          <p>In the example, S3 has been assigned a bridge priority value of 24,576 using the<b> spanning-tree vlan 1 priority 24576 </b>command.</p>
+          <p></p>
+          <p>To verify the bridge priority of a switch, use the<b> show spanning-tree </b>command. In Figure 2, the priority of the switch has been set to 24,576. Also notice that the switch is designated as the root bridge for the spanning tree instance.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure switches S1, S2, and S3. Using Method 2 described above, configure S3 manually, setting the priority to 24,576 for VLAN 1. Using Method 1, configure S2 as the secondary root VLAN 1 and configure S1 as the primary root for VLAN 1. Verify the configuration with the<b> show spanning-tree </b>command on S1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three switches inter-connected with trunk links.  Switch one has a call-out that shows the use of the spanning dash tree v. lan one root primary command.  This ensures that switch one will become the root bridge.  Switch three has a call-out that shows the use of the spanning dash tree v. lan one priority command.  This allows you to set the priority of the bridge for the root bridge elections.  Switch two has a call-out that shows the use of the spanning dash tree v. lan one root secondary command.  This will allow switch two to become the root bridge in the event of a failure of the current root bridge. Figure two shows the output from the show spanning dash tree command. Figure three is an interactive activity that allows the learner to practice configuring the bridge priority.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+Figure 1 is the output of the show vlan brief and show vlan command, Figure 2 shows deleting a vlan and verifying.

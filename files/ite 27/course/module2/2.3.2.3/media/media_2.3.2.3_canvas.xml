@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+        <slide>
+            <element type="IMAGE" src="media_2.3.2.3.A.png" width="1000" height="490" x="0" y="0" />
+            <element type="TEXTBOX" titleId="ID_s1_instr_title" bodyId="ID_s1_instr_body" x="25" y="43" width="278" height="200" animated="0" subType="ROLLOVER" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#ffffff" />
+            <element type="TEXT" compId="ID_s1_txt01" x="471" y="102" width="70" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s1_txt02" x="561" y="82" width="114" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s1_txt03" x="674" y="102" width="70" expand="up" align="center" />
+            <element type="TEXT" compId="ID_s1_txt04" x="744" y="156" width="55" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt05" x="470" y="375" width="70" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt06" x="543" y="390" width="118" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt07" x="674" y="375" width="70" expand="down" align="center" />
+            <element type="TEXT" compId="ID_s1_txt08" x="630" y="231" width="103" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s1_txt09" x="531" y="171" width="70" expand="up" align="right" />
+            <element type="TEXT" compId="ID_s1_txt10" x="531" y="301" width="70" expand="up" align="right" />
+            <element type="TEXT" id="ID_static_1" text="F0/1" x="544" y="125" align="center" width="21" />
+            <element type="TEXT" id="ID_static_2" text="F0/2" x="646" y="124" align="center" width="22" />
+            <element type="TEXT" id="ID_static_3" text="G1/1" x="613" y="141" align="center" width="23" />
+            <element type="TEXT" id="ID_static_4" text="G0/1" x="613" y="204" align="center" width="30" />
+            <element type="TEXT" id="ID_static_5" text="G0/2" x="613" y="267" align="center" width="25" />
+            <element type="TEXT" id="ID_static_6" text="G1/1" x="613" y="341" align="center" width="23" />
+            <element type="TEXT" id="ID_static_7" text="F0/2" x="646" y="358" align="center" width="22" />
+            <element type="TEXT" id="ID_static_8" text="F0/1" x="540" y="359" align="center" width="21" />
+            <element type="TEXT" compId="ID_s1_table" x="763" y="202" width="175" height="69" />
+        </slide>
+        <slide>
+            <element type="IMAGE" src="media_2.3.2.3.B.png" width="1000" height="490" x="0" y="0" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+            <element type="TEXTBOX" titleId="ID_s2_instr_title" bodyId="ID_s2_instr_body" x="25" y="43" width="278" height="200" animated="0" subType="ROLLOVER" />
+            <element type="TEXT" compId="ID_s2_ans01" x="548" y="208" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s2_ans02" x="548" y="253" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s2_ans03" x="548" y="298" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s2_ans04" x="548" y="342" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s2_ans05" x="548" y="388" width="274" expand="up+down" align="left" />
+            <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="40" compHeight="40" dragIcon="tick.png" dropIcon="" tickPosition="left" dragAlpha="0.3">
+                <subelement type="DRAG" x="136" y="310" compId="" />
+                <subelement type="DROP" x="493" y="197" match="null" />
+                <subelement type="DROP" x="493" y="242" match="null" />
+                <subelement type="DROP" x="493" y="287" match="null" />
+                <subelement type="DROP" x="493" y="332" match="0" />
+                <subelement type="DROP" x="493" y="380" match="0" />
+                <subelement type="CHECK" x="80" y="397" width="150" height="23" expand="right" compId="ID_s2_check" />
+                <subelement type="RESET" x="80" y="447" width="150" height="23" expand="right" compId="ID_s2_reset" />
+                <subelement type="FEEDBACK" x="367" y="95" width="300" height="130" correctTitleId="ID_s2_CORRECT_TITLE" correctBodyId="ID_s2_CORRECT_BODY" wrongTitleId="ID_s2_INCORRECT_TITLE" wrongBodyId="ID_s2_INCORRECT_BODY" />
+                <element type="ROUTER" textId="ID_router_txt1" x="339.1" y="43.4" width="643" height="136" />
+            </element>
+        </slide>
+        <slide>
+            <element type="IMAGE" src="media_2.3.2.3.B.png" width="1000" height="490" x="0" y="0" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+            <element type="TEXTBOX" titleId="ID_s3_instr_title" bodyId="ID_s3_instr_body" x="25" y="43" width="278" height="200" animated="0" subType="ROLLOVER" />
+            <element type="TEXT" compId="ID_s3_ans01" x="548" y="208" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s3_ans02" x="548" y="253" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s3_ans03" x="548" y="298" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s3_ans04" x="548" y="342" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s3_ans05" x="548" y="388" width="274" expand="up+down" align="left" />
+            <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="40" compHeight="40" dragIcon="tick.png" dropIcon="" tickPosition="left" dragAlpha="0.3">
+                <subelement type="DRAG" x="136" y="310" compId="" />
+                <subelement type="DROP" x="493" y="197" match="0" />
+                <subelement type="DROP" x="493" y="242" match="null" />
+                <subelement type="DROP" x="493" y="287" match="null" />
+                <subelement type="DROP" x="493" y="332" match="null" />
+                <subelement type="DROP" x="493" y="380" match="null" />
+                <subelement type="CHECK" x="80" y="397" width="150" height="23" expand="right" compId="ID_s3_check" />
+                <subelement type="RESET" x="80" y="447" width="150" height="23" expand="right" compId="ID_s3_reset" />
+                <subelement type="FEEDBACK" x="367" y="95" width="300" height="130" correctTitleId="ID_s3_CORRECT_TITLE" correctBodyId="ID_s3_CORRECT_BODY" wrongTitleId="ID_s3_INCORRECT_TITLE" wrongBodyId="ID_s3_INCORRECT_BODY" />
+                <element type="ROUTER" textId="ID_router_txt2" x="339.1" y="43.4" width="643" height="136" />
+            </element>
+        </slide>
+        <slide>
+            <element type="IMAGE" src="media_2.3.2.3.B.png" width="1000" height="490" x="0" y="0" />
+            <element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#ffffff" />
+            <element type="TEXTBOX" titleId="ID_s4_instr_title" bodyId="ID_s4_instr_body" x="25" y="43" width="278" height="200" animated="0" subType="ROLLOVER" />
+            <element type="TEXT" compId="ID_s4_ans01" x="548" y="208" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s4_ans02" x="548" y="253" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s4_ans03" x="548" y="298" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s4_ans04" x="548" y="342" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s4_ans05" x="548" y="388" width="274" expand="up+down" align="left" />
+            <element type="TEXT" compId="ID_s4_ans06" x="548" y="436" width="274" expand="up+down" align="left" />
+            <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="40" compHeight="40" dragIcon="tick.png" dropIcon="" tickPosition="left" dragAlpha="0.3">
+                <subelement type="DRAG" x="136" y="310" compId="" />
+                <subelement type="DROP" x="493" y="197" match="null" />
+                <subelement type="DROP" x="493" y="242" match="null" />
+                <subelement type="DROP" x="493" y="287" match="null" />
+                <subelement type="DROP" x="493" y="332" match="null" />
+                <subelement type="DROP" x="493" y="380" match="0" />
+                <subelement type="DROP" x="493" y="426" match="0" />
+                <subelement type="CHECK" x="80" y="397" width="150" height="23" expand="right" compId="ID_s4_check" />
+                <subelement type="RESET" x="80" y="447" width="150" height="23" expand="right" compId="ID_s4_reset" />
+                <subelement type="FEEDBACK" x="367" y="95" width="300" height="130" correctTitleId="ID_s4_CORRECT_TITLE" correctBodyId="ID_s4_CORRECT_BODY" wrongTitleId="ID_s4_INCORRECT_TITLE" wrongBodyId="ID_s4_INCORRECT_BODY" />
+                <element type="ROUTER" textId="ID_router_txt3" x="339.1" y="43.4" width="643" height="136" />
+            </element>
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<pre>SW3# show ip route 
+… 
+Gateway of last resort is not set 
+
+   10.0.0.0/8 is variably subnetted, 3 subnets, 3 masks 
+C     10.2.0.0/24 is directly connected, Vlan5 
+C     10.3.0.0/24 is directly connected, Vlan3 
+C     10.4.0.0/24 is directly connected, Vlan4</pre>]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[<pre>SW3# show ip route 
+… 
+Gateway of last resort is not set 
+   
+   10.0.0.0/8 is variably subnetted, 3 subnets, 3 masks 
+C     10.2.0.0/30 is directly connected, Vlan2 
+C     10.3.0.0/24 is directly connected, Vlan3 
+C     10.4.0.0/24 is directly connected, Vlan4</pre>]]></text>
+    <text id="ID_router_txt3">
+        <![CDATA[<pre>SW3# show interfaces trunk 
+Port    Mode      Encapsulation    Status     Native vlan 
+Gig0/1  auto      n-802.1q         trunking   1</pre>]]></text>
+    <!-- <text id="ID_router_txt1">
+    <![CDATA[<table width="367" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="3">SW3#<strong> show ip route</strong></td> </tr> <tr> <td colspan="3">…</td> </tr> <tr> <td colspan="3">Gateway of last resort is not set</td> </tr> <tr> <td>&nbsp;</td> <td colspan="2">&nbsp;</td> </tr> <tr> <td width="37">&nbsp;</td> <td colspan="2">10.0.0.0/8 is variably subnetted, 3 subnets, 3 masks</td> </tr> <tr> <td>C</td> <td width="24">&nbsp;</td> <td width="339">10.2.0.0/24 is directly connected, Vlan5</td> </tr> <tr> <td>C</td> <td>&nbsp;</td> <td>10.3.0.0/24 is directly connected, Vlan3</td> </tr> <tr> <td>C</td> <td>&nbsp;</td> <td>10.4.0.0/24 is directly connected, Vlan4</td> </tr></table>]]>
+</text>
+ -->
+    <!-- <text id="ID_s3_txt01">
+        <![CDATA[<table width="367" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="3">SW3# <strong>show ip route</strong></td> </tr> <tr> <td colspan="3">…</td> </tr> <tr> <td colspan="3">Gateway of last resort is not set</td> </tr> <tr> <td>&nbsp;</td> <td colspan="2">&nbsp;</td> </tr> <tr> <td width="37">&nbsp;</td> <td colspan="2">10.0.0.0/8 is variably subnetted, 3 subnets, 3 masks</td> </tr> <tr> <td>C</td> <td width="24">&nbsp;</td> <td width="339">10.2.0.0/30 is directly connected, Vlan2</td> </tr> <tr> <td>C</td> <td>&nbsp;</td> <td>10.3.0.0/24 is directly connected, Vlan3</td> </tr> <tr> <td>C</td> <td>&nbsp;</td> <td>10.4.0.0/24 is directly connected, Vlan4</td> </tr></table>]]>
+    </text>
+    <text id="ID_s4_txt01">
+        <![CDATA[<table width="367" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="400">SW3#<strong> show interfaces trunk</strong></td> </tr> <tr> <td><table width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left">Port</td> <td align="left">Mode</td> <td align="left">Encapsulation</td> <td align="left">Status</td> <td align="left">Native vlan</td> </tr> <tr> <td align="left">Gig0/1</td> <td align="left">auto</td> <td align="left">n-802.1q</td> <td align="left">trunking</td> <td align="left">1</td> </tr> </table></td> </tr></table>]]>
+    </text> -->
+</data>

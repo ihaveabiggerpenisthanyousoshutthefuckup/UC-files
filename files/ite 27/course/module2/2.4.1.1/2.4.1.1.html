@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.4.1.1 Conclusion</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.4.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Conclusion</h1>
+        <div>
+          <p>VLAN Trunking Protocol (VTP) reduces administration of VLANs in a switched network. A switch configured as the VTP server distributes and synchronizes VLAN information over trunk links to VTP-enabled switches throughout the domain.</p>
+          <p></p>
+          <p>The three VTP modes are Server, Client and Transparent.</p>
+          <p></p>
+          <p>The configuration revision number is used when determining whether a VTP switch should keep or update its existing VLAN database. A switch will overwrite its existing VLAN database if it receives a VTP update from another switch in the same domain with a higher configuration revision number. Therefore, when a switch is being added to a VTP domain it must have the default VTP configuration or a lower configuration revision number than the VTP server.</p>
+          <p></p>
+          <p>Troubleshooting VTP can also involve dealing with errors caused by incompatible VTP Versions and incorrectly configured domain names or passwords. </p>
+          <p></p>
+          <p>Trunk negotiation is managed by the Dynamic Trunking Protocol (DTP), which operates on a point-to-point basis between network devices. DTP is a Cisco proprietary protocol that is automatically enabled on Catalyst 2960 and Catalyst 3560 Series switches. A general best practice when a trunk link is required is to set the interface to<b> trunk </b>and<b> nonegotiate</b>. On links where trunking is not intended, DTP should be turned off </p>
+          <p></p>
+          <p>When troubleshooting DTP, problems can be related to trunk mode mismatches, allowed VLANS on a trunk and native VLAN mismatches. </p>
+          <p></p>
+          <p>Layer 3 switching using Switch Virtual Interfaces (SVIs) is a method of inter-VLAN routing that can be configured on Catalyst 2960 switches. An SVI with appropriate IP addressing is configured for each VLAN and provides Layer 3 processing for packets to or from all switch ports associated with those VLANs.</p>
+          <p></p>
+          <p>Another method of Layer 3 inter-VLAN routing is using routed ports.  A routed port is a physical port that acts similarly to an interface on a router. Routed ports are mostly configured between switches in the core and distribution layer.</p>
+          <p></p>
+          <p>Troubleshooting inter-VLAN routing with a router or a Layer 3 switch are similar. Common errors involve VLAN, trunk, Layer 3 interface, and IP address configurations.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure summary graphic.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

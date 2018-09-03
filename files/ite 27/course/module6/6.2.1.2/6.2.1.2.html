@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.2 Autonomous System Numbers</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Autonomous System Numbers</h1>
+        <div>
+          <p>EIGRP uses the<b> router eigrp </b><i>autonomous-system </i>command to enable the EIGRP process. The autonomous system number referred to in the EIGRP configuration is not associated with the Internet Assigned Numbers Authority (IANA) globally assigned autonomous system numbers used by external routing protocols. </p>
+          <p></p>
+          <p>So what is the difference between the IANA globally assigned autonomous system number and the EIGRP autonomous system number?</p>
+          <p></p>
+          <p>An IANA globally assigned autonomous system is a collection of networks under the administrative control of a single entity that presents a common routing policy to the Internet. In the figure, companies A, B, C, and D are all under the administrative control of ISP1. ISP1 presents a common routing policy for all of these companies when advertising routes to ISP2. </p>
+          <p></p>
+          <p>The guidelines for the creation, selection, and registration of an autonomous system are described in RFC 1930. Global autonomous system numbers are assigned by IANA, the same authority that assigns IP address space. The local regional Internet registry (RIR) is responsible for assigning an autonomous system number to an entity from its block of assigned autonomous system numbers. Prior to 2007, assigned autonomous system numbers were 16-bit numbers ranging from 0 to 65,535. Today, 32-bit autonomous system numbers are assigned thereby increasing the number of available autonomous system numbers to over 4 billion. </p>
+          <p></p>
+          <p>Usually, only Internet Service Providers (ISPs), Internet backbone providers, and large institutions connecting to other entities require an autonomous system number. These ISPs and large institutions use the exterior gateway routing protocol, Border Gateway Protocol (BGP), to propagate routing information. BGP is the only routing protocol that uses an actual autonomous system number in its configuration. </p>
+          <p></p>
+          <p>The vast majority of companies and institutions with IP networks do not need an autonomous system number, because they are controlled by a larger entity, such as an ISP. These companies use interior gateway protocols, such as RIP, EIGRP, OSPF, and IS-IS to route packets within their own networks. They are one of many independent and separate networks within the autonomous system of the ISP. The ISP is responsible for the routing of packets within its autonomous system and between other autonomous systems.</p>
+          <p></p>
+          <p>The autonomous system number used for EIGRP configuration is only significant to the EIGRP routing domain. It functions as a process ID to help routers keep track of multiple running instances of EIGRP. This is required because it is possible to have more than one instance of EIGRP running on a network. Each instance of EIGRP can be configured to support and exchange routing updates for different networks.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows an i. s. p. with an autonomous system number serving e. i. g. r. p. between two companies and o. s. p. f. between the other two companies.  I. S. P. one is connected to i. s. p. two and uses b. g. p. between them.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

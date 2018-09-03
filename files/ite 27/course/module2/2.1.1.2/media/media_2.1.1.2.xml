@@ -1,0 +1,91 @@
+﻿<textcomponents>
+    <!-- slide 1 -->
+    <component id="ID_s1_title">
+        <text><![CDATA[<b>VTP Modes</b>]]></text>
+    </component>
+	
+    <!--s1 table-->
+    <component id="ID_s1_table01">
+        <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>VTP Mode</b></font></td>
+<td bgcolor='#666263' width='398' valign="top"><font color='#ffffff'><b>Definition</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>VTP Server</td>
+<td bgcolor='#E9E7E8'><ul><textformat blockindent="-14"><li>VTP servers advertise the VTP domain VLAN information to other VTP-enabled switches in the same VTP domain.</li><li>VTP servers store the VLAN information for the entire domain in NVRAM.</li><li>Switches configured in VTP server mode are allowed to create, delete, or rename VLANs for the domain.</li></textformat></ul></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>VTP Client</td>
+<td bgcolor='#F2F2F2'><ul><textformat blockindent="-14"><li>VTP clients function the same way as VTP servers, but you cannot create, change, or delete VLANs on a VTP client.</li><li>A VTP client only stores the VLAN information for the entire domain while the switch is on.</li><li>A switch reset deletes the VLAN information.</li><li>You must configure VTP client mode on a switch.</li></textformat></ul></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>VTP Transparent</td>
+<td bgcolor='#E9E7E8'><ul><textformat blockindent="-14"><li>Transparent switches do not participate in VTP except to forward VTP advertisements to VTP clients and VTP servers.</li><li>VLANs that are created, renamed, or deleted on transparent switches are local to that switch only.</li><li> To create an extended VLAN, a switch must be configured as a VTP transparent switch when using VTP versions 1 or 2.</li></textformat></ul></td>
+</tr>
+</table>]]>
+        </text>
+    </component>
+
+    <!-- end slide 1 -->
+	
+    <!-- slide 2 -->
+    <component id="ID_s2_title">
+        <text><![CDATA[<b>Compare VTP Modes</b>]]></text>
+    </component>
+
+	<!-- table 2 -->
+    <component id="ID_s2_table01">
+        <text>
+           <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+<tr class="mtable_top">
+<td colspan='4' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+ 
+ <tr>
+<td bgcolor='#666263' width='150' valign="top"><font color='#ffffff'><b>VTP Question</b></font></td>
+<td bgcolor='#666263' width='150' valign="top"><font color='#ffffff'><b>VTP Server</b></font></td>
+<td bgcolor='#666263' width='148' valign="top"><font color='#ffffff'><b>VTP Client</b></font></td>
+<td bgcolor='#666263' width='148' valign="top"><font color='#ffffff'><b>VTP Transparent</b></font></td>
+</tr>             
+
+<tr>
+<td bgcolor='#E9E7E8'>What are the differences?</td>
+<td bgcolor='#E9E7E8'><textformat blockindent="-14"><ul><li>Manages domain and VLAN configuration.</li><li>Multiple VTP servers can be configured.</li></ul></textformat></td>
+<td bgcolor='#E9E7E8'><textformat blockindent="-14"><ul><li>Updates local VTP configurations.</li><li>VTP client switches cannot change VLAN configurations.</li></ul></textformat></td>
+<td bgcolor='#E9E7E8'><textformat blockindent="-14"><ul><li>Manages local VLAN configurations.</li><li>VLAN configurations are not shared with VTP network.</li></ul></textformat></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Does it respond to VTP advertisements?</td>
+<td bgcolor='#F2F2F2'>Participates fully</ul></td>
+<td bgcolor='#F2F2F2'>Participates fully</ul></td>
+<td bgcolor='#F2F2F2'>Only forwards VTP advertisements</ul></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Is the global VLAN configuration preserved on restart?</td>
+<td bgcolor='#E9E7E8'>Yes, global configurations are stored in NVRAM</td>
+<td bgcolor='#E9E7E8'>No, global configurations are stored in RAM only</td>
+<td bgcolor='#E9E7E8'>No, local VLAN configuration is only stored in NVRAM</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Does it update other VTP-enabled switches?</td>
+<td bgcolor='#F2F2F2'>Yes</td>
+<td bgcolor='#F2F2F2'>Yes</td>
+<td bgcolor='#F2F2F2'>No</td>
+</tr>
+
+</table>]]>
+        </text>
+    </component>
+	<!-- end table 2 -->
+    <!-- end slide 2 -->
+</textcomponents>

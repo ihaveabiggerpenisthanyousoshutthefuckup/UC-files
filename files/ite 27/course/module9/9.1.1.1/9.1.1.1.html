@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.1 Single-Area OSPF</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Single-Area OSPF</h1>
+        <div>
+          <p>Single-area OSPF is useful in smaller networks where the web of router links is not complex, and paths to individual destinations are easily deduced.</p>
+          <p></p>
+          <p>However, if an area becomes too big, the following issues must be addressed (see the figure for illustration):</p>
+          <p>
+            <ul>
+              <li>
+                <b>Large routing table </b>- OSPF does not perform route summarization by default. If the routes are not summarized, the routing table can become very large, depending on the size of the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Large link-state database (LSDB) </b>- In single-area OSPF, the LSDB covers the topology of the entire routing domain. Each router must maintain detailed information about every network in the routing domain. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Frequent SPF algorithm calculations </b>- In a large network, changes are inevitable, so the routers spend many CPU cycles recalculating the SPF algorithm and updating the routing table.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To make OSPF more efficient and scalable, OSPF supports hierarchical routing using areas. An OSPF area is a group of routers that share the same link-state information in their link-state databases. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: OSPF route summarization is beyond the scope of this course.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows ten routers, which are all connected in a single area. These routers are running low on memory, receiving too many LSAs, and indicate that the SPF algorithm is running too often. This situation is resulting in decreased routing efficiency.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

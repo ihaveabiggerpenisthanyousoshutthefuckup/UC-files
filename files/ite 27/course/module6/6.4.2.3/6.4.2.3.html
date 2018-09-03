@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.2.3 Configuring the EIGRP for IPv6 Routing Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring the EIGRP for IPv6 Routing Process</h1>
+        <div>
+          <p>The<b> ipv6 unicast-routing </b>global configuration mode command enables IPv6 routing on the router. This command is required before any IPv6 routing protocol can be configured. This command is not required to configure IPv6 addresses on the interfaces, but is necessary for the router to be enabled as an IPv6 router.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6 </b>
+          </p>
+          <p></p>
+          <p>The following global configuration mode command is used to enter router configuration mode for EIGRP for IPv6:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>ipv6</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>router eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>autonomous-system</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Similar to EIGRP for IPv4, the <i>autonomous-system </i>value must be the same on all routers in the routing domain. In Figure 1, the EIGRP for IPv6 routing process could not be configured until IPv6 routing was enabled with the<b> ipv6 unicast-routing </b>global configuration mode command.</p>
+          <p></p>
+          <p>
+            <b>Configuring the Router ID</b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, the<b> eigrp router-id </b>command is used to configure the router ID. EIGRP for IPv6 uses a 32 bit value for the router ID. To obtain that value, EIGRP for IPv6 uses the same process as EIGRP for IPv4. The<b> eigrp router-id </b>command takes precedence over any loopback or physical interface IPv4 addresses. If an EIGRP for IPv6 router does not have any active interfaces with an IPv4 address, then the<b> eigrp router-id </b>command is required.</p>
+          <p></p>
+          <p>The router ID should be a unique 32-bit number in the EIGRP for IP routing domain; otherwise, routing inconsistencies can occur.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The<b> eigrp router-id </b>command is used to configure the router ID for EIGRP. Some versions of IOS will accept the command<b> router-id</b>, without first specifying<b> eigrp</b>. The running-config, however, will display<b> eigrp router-id </b>regardless of which command is used.</p>
+          <p></p>
+          <p>By default, the EIGRP for IPv6 process is in a shutdown state. The<b> no shutdown </b>command is required to activate the EIGRP for IPv6 process, as shown in Figure 3. This command is not required for EIGRP for IPv4. Although, EIGRP for IPv6 is enabled, neighbor adjacencies and routing updates cannot be sent and received until EIGRP is activated on the appropriate interfaces. </p>
+          <p></p>
+          <p>Both the<b> no shutdown </b>command and a router ID are required for the router to form neighbor adjacencies.</p>
+          <p></p>
+          <p>Figure 4 shows the complete EIGRP for IPv6 configuration for router R2.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 5 to configure the EIGRP for IPv6 process on router R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the syntax for configuring i. p. v. 6 routing for e. i. g. r. p. on router one. Figure two shows the syntax for configuring the e. i. g. r. p. router id on router one. Figure three shows the "no shut down" command after configuring the e. i. g. r. p. router id on router one.  This will bring up the i. p. v. 6 e. i. g. r. p. routing process, which is shut down by default. Figure four shows the process of configuring e.i.g.r.p. for i. p. v. 6, including the router id and the no shut down command on router two. Figure five is an interactive activity that allows the learner to practice configuring e.i.g.r.p. for i. p. v. 6, including the router id and the no shut down command on router three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

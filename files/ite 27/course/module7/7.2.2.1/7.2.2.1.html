@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.1 Layer 3 Connectivity</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Layer 3 Connectivity</h1>
+        <div>
+          <p>A prerequisite for a neighbor adjacency to form between two directly connected routers is Layer 3 connectivity. By examining the output of the<b> show ip interface brief </b>command, a network administrator can verify that the status and protocol of connecting interfaces are up. A ping from one router to another directly connected router, should confirm IPv4 connectivity between the devices. The figure displays the<b> show ip interface brief </b>command output for R1. R1 shows connectivity to R2, and pings are successful. </p>
+          <p></p>
+          <p>If the ping is unsuccessful, use the<b> show cdp neighbor</b> command to verify the Layer 1 and 2 connections to the neighbor. If the output does not display the neighboring router, then verify Layer 1 and check the cabling, connections, and interfaces. If you see the neighbor in the output of the command, then Layer 1 and 2 are verified and points the problem to Layer 3.</p>
+          <p></p>
+          <p>Layer 3 problems include misconfigured IP addresses, subnets, network addressing, and more. For example, interfaces on connected devices must be on a common subnet. A log message that states that EIGRP neighbors are not on a common subnet indicates that there is an incorrect IPv4 address on one of the two EIGRP neighbor interfaces.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Similar commands and troubleshooting criteria also apply to EIGRP for IPv6.</p>
+          <p></p>
+          <p>The equivalent command used with EIGRP for IPv6 is<b> show ipv6 interface brief</b>.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers connected with a serial cable.  There is also output from the "show i. p. interface brief command" and the "ping" command below.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

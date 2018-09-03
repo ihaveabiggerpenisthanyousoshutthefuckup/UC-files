@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.7 Routing Protocol Characteristics</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Routing Protocol Characteristics</h1>
+        <div>
+          <p>Routing protocols can be compared based on the following characteristics:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Speed of Convergence </b>- Speed of convergence defines how quickly the routers in the network topology share routing information and reach a state of consistent knowledge. The faster the convergence, the more preferable the protocol. Routing loops can occur when inconsistent routing tables are not updated due to slow convergence in a changing network. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Scalability </b>- Scalability defines how large a network can become, based on the routing protocol that is deployed. The larger the network is, the more scalable the routing protocol needs to be. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Classful or Classless (Use of VLSM) </b>- Classful routing protocols do not include the subnet mask and cannot support VLSM.  Classless routing protocols include the subnet mask in the updates. Classless routing protocols support VLSM and better route summarization.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Resource Usage </b>- Resource usage includes the requirements of a routing protocol such as memory space (RAM), CPU utilization, and link bandwidth utilization. Higher resource requirements necessitate more powerful hardware to support the routing protocol operation, in addition to the packet forwarding processes. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Implementation and Maintenance </b>- Implementation and maintenance describes the level of knowledge that is required for a network administrator to implement and maintain the network based on the routing protocol deployed. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The table in the figure summarizes the characteristics of each routing protocol. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a table comparing routing protocols.  For example RIP is considered a slow converging protocol used on small networks and is easy to implement.  Version 1 of RIP does not use V.L.S.M., however, version 2 does use V.L.S.M.  E.I.G.R.P., O.S.P.F., and I.S.I.S. converge fast, are used on large networks, use V.L.S.M., and are more complex to implement and maintain.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

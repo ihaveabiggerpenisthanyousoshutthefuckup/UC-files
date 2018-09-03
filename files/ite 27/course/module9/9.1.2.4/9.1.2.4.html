@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.2.4 OSPF LSA Type 3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF LSA Type 3</h1>
+        <div>
+          <p>Type 3 LSAs are used by ABRs to advertise networks from other areas. ABRs collect type 1 LSAs in the LSDB. After an OSPF area has converged, the ABR creates a type 3 LSA for each of its learned OSPF networks. Therefore, an ABR with many OSPF routes must create type 3 LSAs for each network.  </p>
+          <p></p>
+          <p>As shown in the figure, ABR1 and ABR2 floods type 3 LSAs from one area to other areas. ABR1 propagates the Area 1 information into Area 0 using Type 3 LSAs. ABR1 also propagates the Area 0 information into Area 1 using Type 3 LSAs. ABR2 does the same thing for Area 2 and Area 0. In a large OSPF deployment with many networks, propagating type 3 LSAs can cause significant flooding problems. For this reason, it is strongly recommended that manual route summarization be configured on the ABR.</p>
+          <p></p>
+          <p>The link-state ID is set to the network number and the mask is also advertised.</p>
+          <p></p>
+          <p>Receiving a type 3 LSA into an area does not cause a router to run the SPF algorithm. The routes being advertised in the type 3 LSAs are appropriately added to or deleted from the router’s routing table, but a full SPF calculation is not necessary.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows type three L.S.A. messages propagating between areas by the A.B.R.'s and indicates a need for a type three L.S.A. for every subnet.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

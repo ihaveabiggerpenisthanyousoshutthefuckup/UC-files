@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.7 DR/BDR Election Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DR/BDR Election Process</h1>
+        <div>
+          <p>OSPF DR and BDR elections are not pre-emptive. If a new router with a higher priority or higher router ID is added to the network after the DR and BDR election, the newly added router does not take over the DR or the BDR role. This is because those roles have already been assigned. The addition of a new router does not initiate a new election process. </p>
+          <p></p>
+          <p>After the DR is elected, it remains the DR until one of the following events occurs:</p>
+          <p>
+            <ul>
+              <li>The DR fails</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The OSPF process on the DR fails or is stopped</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The multiaccess interface on the DR fails or is shutdown</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>If the DR fails, the BDR is automatically promoted to DR. This is the case even if another DROTHER with a higher priority or router ID is added to the network after the initial DR/BDR election. However, after a BDR is promoted to DR, a new BDR election occurs and the DROTHER with the higher priority or router ID is elected as the new BDR.</p>
+          <p></p>
+          <p>Figures 1 to 4 illustrate various scenarios relating to the DR and BDR election process. </p>
+          <p></p>
+          <p>In Figure 1, the current DR (R3) fails; therefore, the pre-elected BDR (R2) assumes the role of DR. Subsequently, an election is held to choose a new BDR. Because R1 is the only DROTHER, it is elected as the BDR.</p>
+          <p></p>
+          <p>In Figure 2, R3 has re-joined the network after several minutes of being unavailable. Because the DR and BDR already exist, R3 does not take over either role; instead, it becomes a DROTHER.</p>
+          <p></p>
+          <p>In Figure 3, a new router (R4) with a higher router ID is added to the network. DR (R2) and BDR (R1) retain the DR and BDR roles. R4 automatically becomes a DROTHER. </p>
+          <p></p>
+          <p>In Figure 4, R2 has failed. The BDR (R1) automatically becomes the DR and an election process selects R4 as the BDR because it has the higher router ID.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three routers connected to a switch. Router one is the B. D. R.  Router two is the D. R. Router three has an x on it. Figure two shows three routers connected to a switch. Router one is the B. D. R.  Router two is the D. R. Router three comes back on line as a drother. Figure three shows three routers connected to a switch. Router one is the B. D. R.  Router two is the D. R. Router three is a drother.  A fourth router is added and becomes a drother. Figure four shows three routers connected to a switch. Router one is the B. D. R.  Router two is the D. R. Routers three and four are drothers.  Router two (the D. R.) goes down, router one becomes the new D. R., and router four becomes the new B. D. R.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

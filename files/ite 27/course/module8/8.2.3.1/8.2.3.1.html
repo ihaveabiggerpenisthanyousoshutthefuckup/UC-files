@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.1 OSPF Metric = Cost</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Metric = Cost</h1>
+        <div>
+          <p>Recall that a routing protocol uses a metric to determine the best path of a packet across a network. A metric gives indication of the overhead that is required to send packets across a certain interface. OSPF uses cost as a metric. A lower cost indicates a better path than a higher cost.</p>
+          <p></p>
+          <p>The cost of an interface is inversely proportional to the bandwidth of the interface. Therefore, a higher bandwidth indicates a lower cost. More overhead and time delays equal a higher cost. Therefore, a 10-Mb/s Ethernet line has a higher cost than a 100-Mb/s Ethernet line.</p>
+          <p></p>
+          <p>The formula used to calculate the OSPF cost is:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>Cost</b>
+                </span>
+                <span class="cmd"> = </span>
+                <span class="cmd">
+                  <i>
+                    <u>reference bandwidth</u>
+                  </i>
+                </span>
+                <span class="cmd"> / </span>
+                <span class="cmd">
+                  <i>
+                    <u>interface bandwidth</u>
+                  </i>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The default reference bandwidth is 10^8 (100,000,000); therefore, the formula is:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>Cost</b>
+                </span>
+                <span class="cmd"> = </span>
+                <span class="cmd">
+                  <u>100,000,000 bps</u>
+                </span>
+                <span class="cmd"> /</span>
+                <span class="cmd">
+                  <b></b>
+                </span>
+                <span class="cmd">
+                  <i>
+                    <u>interface bandwidth in bps</u>
+                  </i>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Refer to the table in the figure for a breakdown of the cost calculation. Notice that FastEthernet, Gigabit Ethernet, and 10 GigE interfaces share the same cost, because the OSPF cost value must be an integer. Consequently, because the default reference bandwidth is set to 100 Mb/s, all links that are faster than Fast Ethernet also have a cost of 1. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a table of default Cisco O.S.P.F. cost values.  The notable link calculations are the following: a serial T-1 link has a cost of 64, 10 Mega b.p.s. has a cost of 10, 100 Mega b.p.s. has a cost of 1, and gigabit and ten gigabit Ethernet also have a cost of 1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

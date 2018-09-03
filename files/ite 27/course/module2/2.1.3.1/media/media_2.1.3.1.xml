@@ -1,0 +1,46 @@
+﻿<textcomponents>
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Normal Range VLANs</b>]]></text>
+	</component>
+
+<!-- end slide 1 -->
+
+<!-- slide 2 -->
+
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Types of VLANs</b>]]></text>
+	</component>
+	
+<component id="ID_s2_table01">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600" >
+<tr class="mtable_title">
+					<td colspan="2" bgcolor='#FFFFFF'><font size="11"></font></td>
+				</tr>
+
+<tr>
+<td width="120" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Type</b></font></td>
+<td  bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Definition</b></font></td>
+</tr>
+
+
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Normal range VLANs</font></td>
+<td bgcolor='#E9E7E8' valign="top"><textformat blockindent="-16"><ul><li>Used in small- and medium-sized business and enterprise networks.</li><li>Identified by VLAN IDs between 1 and 1005.</li><li>IDs 1 and 1002 to 1005 are automatically created and cannot be removed. (IDs 1002 through 1005 are reserved for Token Ring and Fiber Distributed Data Interface [FDDI] VLANs.)</li><li>Configurations are stored within a VLAN database file called <b>vlan.dat</b>, which is stored in flash memory.</li></ul></textformat></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Extended range VLANs</font></td>
+<td bgcolor='#F2F2F2' valign="top"><textformat blockindent="-16"><ul><li>Used by service providers and large organizations to extend their infrastructure to a greater number of customers.</li><li>Identified by a VLAN ID between 1006 and 4094.</li><li>Support fewer VLAN features than normal range VLANs.</li><li>Configurations are saved in the running configuration file.</li></ul></textformat>
+</td>
+</tr>
+
+</table>]]></text>
+	</component>
+
+<!-- end slide 2 -->
+	
+</textcomponents>

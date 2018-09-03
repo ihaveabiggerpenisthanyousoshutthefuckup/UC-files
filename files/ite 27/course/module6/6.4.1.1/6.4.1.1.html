@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.1.1 EIGRP for IPv6</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP for IPv6</h1>
+        <div>
+          <p>Similar to its IPv4 counterpart, EIGRP for IPv6 exchanges routing information to populate the IPv6 routing table with remote prefixes. EIGRP for IPv6 was made available in Cisco IOS, Release 12.4(6)T.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: In IPv6, the network address is referred to as the prefix and the subnet mask is called the prefix length.</p>
+          <p></p>
+          <p>EIGRP for IPv4 runs over the IPv4 network layer, communicating with other EIGRP IPv4 peers, and advertising only IPv4 routes. EIGRP for IPv6 has the same functionality as EIGRP for IPv4, but uses IPv6 as the network layer transport, communicating with EIGRP for IPv6 peers and advertising IPv6 routes. </p>
+          <p></p>
+          <p>EIGRP for IPv6 also uses DUAL as the computation engine to guarantee loop-free paths and backup paths throughout the routing domain.</p>
+          <p></p>
+          <p>As with all IPv6 routing protocols, EIGRP for IPv6 has separate processes from its IPv4 counterpart. The processes and operations are basically the same as in the IPv4 routing protocol; however, they run independently. EIGRP for IPv4 and EIGRP for IPv6 each have separate EIGRP neighbor tables, EIGRP topology tables, and IP routing tables, as shown in the figure. EIGRP for IPv6 is a separate protocol-dependent module (PDM).</p>
+          <p></p>
+          <p>The EIGRP for IPv6 configuration and verification commands are very similar to those used in EIGRP for IPv4. These commands are described later in this section.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers running e. i. g. r. p. The diagram demonstrates that each router keeps separate tables for i. p. v. 4 and i. p. v. 6 for neighbors, topology, and routing.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

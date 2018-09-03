@@ -1,0 +1,22 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt01,#ID_s1_txt02,#ID_s1_txt03{
+	color: #8557A0 !important;
+}
+#ID_txt06,#ID_txt07,#ID_txt08,#ID_txt09,#ID_txt10,#ID_txt10B,#ID_txt10C,#ID_txt10D{
+	background-color: #FFFFFF;
+	padding: 4px 0px 4px 4px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+
+
+#ID_txt11a,#ID_txt12a,#ID_txt13a,#ID_txt11,#ID_txt12,#ID_txt13,#ID_txt14,#ID_txt15,#ID_txt16,
+#ID_txt17,#ID_txt18,#ID_txt19,#ID_txt20,#ID_txt21,#ID_txt22{
+	background-color: #E9E7E8;
+	border: 2px solid #666263;
+	padding-left: 5px;
+}

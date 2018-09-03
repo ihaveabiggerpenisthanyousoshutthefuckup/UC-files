@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.3.4 Basic Router Show Commands</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Basic Router Show Commands</h1>
+        <div>
+          <p>Here are some of the most commonly used IOS commands to display and verify the operational status of the router and related IPv4 network functionality. Similar commands are available for IPv6 by replacing <b>ip</b> with <b>ipv6</b>. These commands are divided into several categories. </p>
+          <p></p>
+          <p>Routing Related:</p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip protocols</b>
+                <b></b>- Displays information about the routing protocols configured. If RIP is configured, this includes the version of RIP, networks the router is advertising, whether or not automatic summarization is in effect, the neighbors the router is receiving updates from, and the default administrative distance, which is 120 for RIP. (Figure 1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route</b>
+                <b></b>- Displays routing table information, including: routing codes, known networks, administrative distance and metrics, how routes were learned, next hop, static routes, and default routes. (Figure 2)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Interface Related:</p>
+          <p>
+            <ul>
+              <li>
+                <b>show interfaces </b>- Displays interfaces with line (protocol) status, bandwidth, delay, reliability, encapsulation, duplex, and I/O statistics. If specified without a specific interface designation, all interfaces will be displayed. If a specific interface is specified after the command, information about that interface only will be displayed. (Figure 3) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interfaces</b>
+                <b></b>- Displays interface information, including: protocol status, the IPv4 address, if a helper address is configured, and whether an ACL is enabled on the interface. If specified without a specific interface designation, all interfaces will be displayed. If a specific interface is specified after the command, information about that interface only will be displayed. (Figure 4)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip interface brief</b>
+                <b></b>- Displays all interfaces with IPv4 addressing information and interface and line protocols status. (Figure 5)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show protocols </b>- Displays information about the routed protocol that is enabled, and the protocol status of interfaces. (Figure 6)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Other connectivity related commands include the<b> show cdp neighbors </b>command (Figure 7). This command displays information on directly connected Cisco devices including Device ID, the local interface the device is connected to, capability (R = router, S = switch), the platform, and Port ID of the remote device. The <b>details</b> option includes IP addressing information and the IOS version.<b></b></p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 8 to verify router configurations using these<b> show </b>commands. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the show i.p. protocols command on a router. Figure two shows the output from the show i.p. route pipe begin gateway command on a router. Figure three shows the output from the show i.p. o.s.p.f. neighbor command on a router. Figure four shows the output from the show interfaces gigabit ethernet zero slash zero command on a router. Figure five shows the output from the show i.p. interface gigabit ethernet zero slash zero command on a router. Figure six shows the output from the show i.p. interface brief command on a router. Figure seven shows the output from the show protocols command on a router. Figure eight shows the output from the show c.d.p. neighbors command on a router. Figure nine is an interactive activity that allows the learner to practice using the commands discussed in this section.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

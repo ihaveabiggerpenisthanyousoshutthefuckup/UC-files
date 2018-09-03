@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.5 Adjusting the Interface Bandwidth</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Adjusting the Interface Bandwidth</h1>
+        <div>
+          <p>
+            <b>Adjusting the Interface Bandwidth</b>
+          </p>
+          <p></p>
+          <p>To adjust the interface bandwidth use the<b> bandwidth </b><i>kilobits </i>interface configuration command. Use the<b> no bandwidth </b>command to restore the default value.</p>
+          <p></p>
+          <p>The example in Figure 1 adjusts the R1 Serial 0/0/1 interface bandwidth to 64 kb/s. A quick verification confirms that the interface bandwidth setting is now 64 kb/s. </p>
+          <p></p>
+          <p>The bandwidth must be adjusted at each end of the serial links, therefore:</p>
+          <p>
+            <ul>
+              <li>R2 requires its S0/0/1 interface to be adjusted to 1,024 kb/s.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R3 requires its serial 0/0/0 to be adjusted to 64 kb/s and its serial 0/0/1 to be adjusted to 1,024 kb/s.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to adjust the serial interface of R2 and R3.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Note</b>: A common misconception for students who are new to networking and the Cisco IOS is to assume that the<b> bandwidth </b>command changes the physical bandwidth of the link. The command only modifies the bandwidth metric used by EIGRP and OSPF. The command does not modify the actual bandwidth on the link.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the C.L.I. commands required to adjust the bandwidth on an interface.  The figure begins in global configuration mode, and the first command is, interface serial zero slash zero slash one.  The next command is, bandwidth 64.  The figure then lists the output from the command, show interfaces serial zero slash zero slash one pipe include B.W. The output lists the bandwidth as 64 kilo b.p.s.  The output is shown from the command, show i.p. O.S.P.F. interface serial zero slash zero slash one pipe include cost.  The cost of the link is 15,625.Figure two is an interactive media element that allows the learner to adjust interface bandwidths.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

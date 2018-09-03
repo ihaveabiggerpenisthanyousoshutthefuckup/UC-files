@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.2 Example: Troubleshooting Layer 3 Switching</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Example: Troubleshooting Layer 3 Switching</h1>
+        <div>
+          <p>Company XYZ is adding a new floor, floor 5, to the network. Based on this, the current requirements are to make sure the users on floor 5 can communicate with users on other floors. Currently, users on floor 5 cannot communicate with users on other floors. The following is an implementation plan to install a new VLAN for users on floor 5 and to ensure the VLAN is routing to other VLANs.</p>
+          <p></p>
+          <p>There are four steps to implementing a new VLAN:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Create a new VLAN 500 on the fifth floor switch and on the distribution switches. Name this VLAN.</p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> Identify the ports needed for the users and switches. Set the<b> switchport access vlan </b>command to<b> 500 </b>and ensure that the trunk between the distribution switches is properly configured and that VLAN 500 is allowed on the trunk.</p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Create an SVI interface on the distribution switches and ensure that IP addresses are assigned.</p>
+          <p></p>
+          <p>
+            <b>Step 4.</b> Verify connectivity.</p>
+          <p></p>
+          <p>The troubleshooting plan checks for the following:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Verify that all VLANs have been created:</p>
+          <p>
+            <ul>
+              <li>Was the VLAN created on all the switches?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Verify with the<b> show vlan </b>command.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> Ensure that ports are in the right VLAN and trunking is working as expected:</p>
+          <p>
+            <ul>
+              <li>Did all access ports have the<b> switchport access VLAN 500 </b>command added?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Were there any other ports that should have been added? If so, make those changes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Were these ports previously used? If so, ensure that there are no extra commands enabled on these ports that can cause conflicts. If not, is the port enabled?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Are any user ports set to trunks? If so, issue the<b> switchport mode access </b>command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Are the trunk ports set to trunk mode? </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is manual pruning of VLANs configured? If so, ensure that the trunks necessary to carry VLAN 500 traffic have the VLAN in the allowed statements.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Verify SVI configurations (if necessary):</p>
+          <p>
+            <ul>
+              <li>Is the SVI already created with the correct IP address and subnet mask?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is it enabled?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is routing enabled?</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a top-down view of a corporate building demonstrating how a new network can be created given the layout of the business elements.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.3 Hello Packet</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Hello Packet</h1>
+        <div>
+          <p>
+            <b>Hello Packet</b>
+          </p>
+          <p>The OSPF Type 1 packet is the Hello packet. Hello packets are used to:</p>
+          <p>
+            <ul>
+              <li>Discover OSPF neighbors and establish neighbor adjacencies.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Advertise parameters on which two routers must agree to become neighbors.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Elect the Designated Router (DR) and Backup Designated Router (BDR) on multiaccess networks like Ethernet and Frame Relay. Point-to-point links do not require DR or BDR.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure displays the fields contained in the OSPFv2 Type 1 Hello packet. Important fields shown in the figure include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Type </b>- Identifies the type of packet. A one (1) indicates a Hello packet. A value 2 identifies a DBD packet, 3 an LSR packet, 4 an LSU packet, and 5 an LSAck packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Router ID </b>- A 32-bit value expressed in dotted decimal notation (like an IPv4 address) used to uniquely identify the originating router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Area ID </b>– Number of the area from which the packet originated. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Network Mask </b>- Subnet mask associated with the sending interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hello Interval </b>- Specifies the frequency, in seconds, at which a router sends Hello packets. The default Hello interval on multiaccess networks is 10 seconds. This timer must be the same on neighboring routers; otherwise, an adjacency is not established.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Router Priority </b>- Used in a DR/BDR election. The default priority for all OSPF routers is 1, but can be manually altered from 0 to 255. The higher the value, the more likely the router becomes the DR on the link.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dead Interval </b>- Is the time in seconds that a router waits to hear from a neighbor before declaring the neighboring router out of service. By default, the router Dead Interval is four times the Hello interval. This timer must be the same on neighboring routers; otherwise, an adjacency is not established.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Designated Router (DR) </b>- Router ID of the DR.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Backup Designated Router (BDR) </b>- Router ID of the BDR.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>List of Neighbors </b>- List that identifies the router IDs of all adjacent routers. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click each of the highlighted fields in the figure for more information.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the O.S.P.F. Hello packet content.  The figure is highlighting the type, the router I.D., area I.D., network mask, Hello interval, the router priority, the router I.D. of the designated router, the router I.D. of the backup designated router, and the list of neighbors.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.5 Configuring the EIGRP Router ID </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring the EIGRP Router ID </h1>
+        <div>
+          <p>The<b> eigrp router-id </b><i>ipv4-address </i>router configuration command is the preferred method used to configure the EIGRP router ID. This method takes precedence over any configured loopback or physical interface IPv4 addresses. The command syntax is:</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The IPv4 address used to indicate the router ID is actually any 32-bit number displayed in dotted-decimal notation. </p>
+          <p></p>
+          <p>The <i>ipv4-address</i> router ID can be configured with any IPv4 address except 0.0.0.0 and 255.255.255.255. The router ID should be a unique 32-bit number in the EIGRP routing domain; otherwise, routing inconsistencies can occur.</p>
+          <p></p>
+          <p>Figure 1 shows the configuration of the EIGRP router ID for routers R1 and R2.</p>
+          <p></p>
+          <p>If a router ID is not explicitly configured, then the router would use its highest IPv4 address configured on a loopback interface. The advantage of using a loopback interface is that unlike physical interfaces, loopbacks cannot fail. There are no actual cables or adjacent devices on which the loopback interface depends for being in the up state. Therefore, using a loopback address for the router ID can provide a more consistent router ID than using an interface address.</p>
+          <p></p>
+          <p>If the<b> eigrp router-id </b>command is not used and loopback interfaces are configured, EIGRP chooses the highest IPv4 address of any of its loopback interfaces. The following commands are used to enable and configure a loopback interface:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b> interface loopback </b>
+            </span>
+            <span class="cmd">
+              <i>number</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-if)#</span>
+            <span class="cmd">
+              <b> ip address </b>
+            </span>
+            <span class="cmd">
+              <i>ipv4-address</i>
+            </span>
+            <span class="cmd">
+              <b></b>
+            </span>
+            <span class="cmd">
+              <i>subnet-mask</i>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Verifying the EIGRP Process</b>
+          </p>
+          <p></p>
+          <p>Figure 2 shows the<b> show ip protocols </b>output for R1, including its router ID. The<b> show ip protocols </b>command displays the parameters and current state of any active routing protocol processes, including both EIGRP and OSPF. The<b> show ip protocols </b>command displays different types of output specific to each routing protocol. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure and verify the router ID for R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the syntax for configuring an e. i. g. r. p. router i. d. for router one and router two. Figure two shows the output of the "show i. p. protocols" command on router one.  The router i. d. is highlighted. Figure three is an interactive activity that allows the learner to practice configuring an e. i. g. r. p. router i. d.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

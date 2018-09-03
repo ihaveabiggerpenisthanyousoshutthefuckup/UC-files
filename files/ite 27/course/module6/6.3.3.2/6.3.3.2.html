@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.2 Introduction to DUAL</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Introduction to DUAL</h1>
+        <div>
+          <p>EIGRP uses the DUAL convergence algorithm. Convergence is critical to a network to avoid routing loops. </p>
+          <p></p>
+          <p>Routing loops, even temporary ones, can be detrimental to network performance. Distance vector routing protocols, such as RIP, prevent routing loops with hold-down timers and split horizon. Although EIGRP uses both of these techniques, it uses them somewhat differently; the primary way that EIGRP prevents routing loops is with the DUAL algorithm. </p>
+          <p></p>
+          <p>Click Play in the figure to view the basic operation of DUAL.</p>
+          <p></p>
+          <p>The DUAL algorithm is used to obtain loop-freedom at every instance throughout a route computation. This allows all routers involved in a topology change to synchronize at the same time. Routers that are not affected by the topology changes are not involved in the recomputation. This method provides EIGRP with faster convergence times than other distance vector routing protocols.</p>
+          <p></p>
+          <p>The decision process for all route computations is done by the DUAL Finite State Machine (FSM). An FSM is a workflow model, similar to a flow chart, which is composed of the following:</p>
+          <p>
+            <ul>
+              <li>A finite number of stages (states)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Transitions between those stages</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Operations </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The DUAL FSM tracks all routes and uses EIGRP metrics to select efficient, loop-free paths, and to identify the routes with the least-cost path to be inserted into the routing table.</p>
+          <p></p>
+          <p>Recomputation of the DUAL algorithm can be processor-intensive. EIGRP avoids recomputation whenever possible by maintaining a list of backup routes that DUAL has already determined to be loop-free. If the primary route in the routing table fails, the best backup route is immediately added to the routing table.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows three routers. Each router is connected to each of the other two routers with a serial link.  When you click play, the router two lan goes down and router two sends an update packet to routers one and three.  Once routers one and three receive the update packet, and they send back an acknowledgement packet.  Router two then sends a query packet to routers one and three, which send a reply packet back to router two.  Router two then sends an acknowledgement packet back to routers one and three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

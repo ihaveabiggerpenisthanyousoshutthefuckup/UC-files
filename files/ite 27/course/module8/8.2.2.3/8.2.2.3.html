@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.3 The network Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The network Command</h1>
+        <div>
+          <p>There are several ways to identify the interfaces that will participate in the OSPFv2 routing process.</p>
+          <p>Figure 1 displays the required commands to determine which interfaces on R1 participate in the OSPFv2 routing process for an area. Notice the use of wildcard masks to identify the respective interfaces based on their network addresses. Because this is a single-area OSPF network, all area IDs are set to 0. </p>
+          <p>As an alternative, OSPFv2 can be enabled using the<b> network </b><i>intf-ip-address</i><b> 0.0.0.0</b><b><i> area </i></b><i>area-id </i>router configuration mode command.</p>
+          <p>Figure 2 provides an example of specifying the interface IPv4 address with a quad 0 wildcard mask. Entering<b> network 172.16.3.1 0.0.0.0 area 0 </b>on R1 tells the router to enable interface Serial0/0/0 for the routing process. As a result, the OSPFv2 process will advertise the network that is on this interface (172.16.3.0/30).</p>
+          <p>The advantage of specifying the interface is that the wildcard mask calculation is not necessary. OSPFv2 uses the interface address and subnet mask to determine the network to advertise.</p>
+          <p>Some IOS versions allow the subnet mask to be entered instead of the wildcard mask. The IOS then converts the subnet mask to the wildcard mask format. </p>
+          <p>Use the Syntax Checker in Figure 3 to advertise the networks connected to R2 (172.16.2.0/24, 172.16.3.0/30,  and 192.168.10.8/30).</p>
+          <p></p>
+          <p>
+            <b>Note</b>: While completing the syntax checker, observe the informational messages describing the adjacency between R1 (1.1.1.1) and R2 (2.2.2.2). The IPv4 addressing scheme used for the router ID makes it easy to identify the neighbor.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the C.L.I. commands used to assign an interface to an O.S.P.F. area. The figure begins in global configuration mode. The first command is router O.S.P.F. 10 where ten is an arbitrary process I.D. This command activates O.S.P.F. as the routing protocol.  The next command is used to identify which interfaces will participate in O.S.P.F. It is based on the I.P. address and subnet mask.  In the figure the command is, network 172 dot 16 dot 1 dot zero zero dot zero dot zero dot 255 area zero.  This command activates O.S.P.F. on the interface that is on the specified network.  The next command is, network 172 dot 16 dot 1 dot zero zero dot zero dot zero dot 3 area zero.  The last command is, network 192 dot 168 dot 10 dot 4 zero dot zero dot zero dot 255 area zero.  Figure two shows the C.L.I. commands used to assign interfaces to an O.S.P.F. area with a quad zero.  The figure begins in global configuration mode, and the first command activates O.S.P.F. as the routing protocol. The command is, router O.S.P.F. 10, where ten is an arbitrary process I.D.  The next command is used to identify which interfaces will participate in O.S.P.F. It is based on the I.P. address and a quad zero wildcard mask.  In the figure the command is, network 172 dot 16 dot 1 dot 1 zero dot zero dot zero dot zero area zero.  The next command is, network 172 dot 16 dot 3 dot 1 zero dot zero dot zero dot zero area zero.  The last command is, network 192 dot 168 dot 10 dot 5 zero dot zero dot zero dot zero area zero.  Figure three is an interactive media element that allows the learner to advertise networks in O.S.P.F.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

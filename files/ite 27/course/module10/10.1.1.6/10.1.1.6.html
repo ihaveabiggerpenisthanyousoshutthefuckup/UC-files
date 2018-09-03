@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.6 Default DR/BDR Election Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Default DR/BDR Election Process</h1>
+        <div>
+          <p>How do the DR and BDR get elected? The OSPF DR and BDR election decision is based on the following criteria, in sequential order:</p>
+          <p></p>
+          <p>1. The routers in the network elect the router with the highest interface priority as the DR. The router with the second highest interface priority is elected as the BDR. The priority can be configured to be any number between 0 – 255. The higher the priority, the likelier the router will be selected as the DR. If the priority is set to 0, the router is not capable of becoming the DR. The default priority of multiaccess broadcast interfaces is 1. Therefore, unless otherwise configured, all routers have an equal priority value and must rely on another tie breaking method during the DR/BDR election.</p>
+          <p>2. If the interface priorities are equal, then the router with the highest router ID is elected the DR. The router with the second highest router ID is the BDR.</p>
+          <p></p>
+          <p>Recall that the router ID is determined in one of three ways:</p>
+          <p>
+            <ul>
+              <li>The router ID can be manually configured.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If no router IDs are configured, the router ID is determined by the highest loopback IPv4 address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If no loopback interfaces are configured, the router ID is determined by the highest active IPv4 address.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In an IPv6 network, if there are no IPv4 addresses configured on the router, then the router ID must be manually configured with the<span class="cmd"><b></b></span><b>router-id </b><i>rid</i><span class="cmd"><i></i></span>command; otherwise, OSPFv3 does not start.</p>
+          <p></p>
+          <p>In the figure, all Ethernet router interfaces have a default priority of 1. As a result, based on the selection criteria listed above, the OSPF router ID is used to elect the DR and BDR. R3 with the highest router ID becomes the DR; and R2, with the second highest router ID, becomes the BDR. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Serial interfaces have default priorities set to 0; therefore, they do not elect DR and BDRs.</p>
+          <p></p>
+          <p>The DR and BDR election process takes place as soon as the first router with an OSPF-enabled interface is active on the multiaccess network. This can happen when the preconfigured OSPF routers are powered on, or when OSPF is activated on the interface.. The election process only takes a few seconds. If all of the routers on the multiaccess network have not finished booting, it is possible that a router with a lower router ID becomes the DR. (This can be a lower-end router that takes less time to boot.) </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three routers connected to a switch.  Router two is the D. R. and router three is the B. D. R.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

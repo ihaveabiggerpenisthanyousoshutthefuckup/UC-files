@@ -1,0 +1,1 @@
+Figure is a picture of three people in a wiring closet.  The caption reads, The three-layer hierarchical design model breaks the design up into layers which simplifies the network design and therefore the deployment and management of the network.

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.3.1 Overview of Rapid PVST+</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Overview of Rapid PVST+</h1>
+        <div>
+          <p>RSTP (IEEE 802.1w) is an evolution of the original 802.1D standard and is incorporated into the IEEE 802.1D-2004 standard. The 802.1w STP terminology remains primarily the same as the original IEEE 802.1D STP terminology. Most parameters have been left unchanged, so users that are familiar with STP can easily configure the new protocol. Rapid PVST+ is the Cisco implementation of RSTP on a per-VLAN basis. An independent instance of RSTP runs for each VLAN. </p>
+          <p></p>
+          <p>The figure shows a network running RSTP. S1 is the root bridge with two designated ports in a forwarding state. RSTP supports a new port type. Port F0/3 on S2 is an alternate port in discarding state. Notice that there are no blocking ports. RSTP does not have a blocking port state. RSTP defines port states as discarding, learning, or forwarding. </p>
+          <p></p>
+          <p>RSTP speeds the recalculation of the spanning tree when the Layer 2 network topology changes. RSTP can achieve much faster convergence in a properly configured network, sometimes in as little as a few hundred milliseconds. RSTP redefines the type of ports and their state. If a port is configured to be an alternate port or a backup port, it can immediately change to a forwarding state without waiting for the network to converge. The following briefly describes RSTP characteristics:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>RSTP is the preferred protocol for preventing Layer 2 loops in a switched network environment. Many of the differences were established by Cisco-proprietary enhancements to the original 802.1D. These enhancements, such as BPDUs carrying and sending information about port roles only to neighboring switches, require no additional configuration and generally perform better than the earlier Cisco-proprietary versions. They are now transparent and integrated into the protocol’s operation.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Cisco-proprietary enhancements to the original 802.1D, such as UplinkFast and BackboneFast, are not compatible with RSTP. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>RSTP (802.1w) supersedes the original 802.1D while retaining backward compatibility. Much of the original 802.1D terminology remains and most parameters are unchanged. In addition, 802.1w is capable of reverting back to legacy 802.1D to interoperate with legacy switches on a per-port basis. For example, the RSTP spanning tree algorithm elects a root bridge in exactly the same way as the original 802.1D. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>RSTP keeps the same BPDU format as the original IEEE 802.1D, except that the version field is set to 2 to indicate RSTP and the flags field uses all 8 bits. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>RSTP is able to actively confirm that a port can safely transition to the forwarding state without having to rely on a timer configuration.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three switches, all inter-connected.  Switch one is labeled as the root bridge and all of its ports are designated ports and forwarding.  The ports on switch two and three are labeled as root, designated, and alternate as appropriate.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+﻿<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component>
+
+<!-- instructions -->
+<component id="ID_inst">
+	<text><![CDATA[<b>Activity - Compare EIGRPv4 and EIGRPv6</b><br><br>Indicate whether a feature is associated with just EIGRPv4 or just EIGRPv6, or with both, by clicking in the appropriate field next to each feature listed.]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[10]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>EIGRPv4</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>EIGRPv6</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Both</b>]]></text>
+</component>
+
+
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[Advertises IPv4 Networks]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[Advertises IPv6 Networks]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[Distance Vector]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[DUAL Algorithm]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Default metric: Bandwidth and Delay]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[Transport Protocol: RTP]]></text>
+</component>
+
+<component id="txt_q7">
+   <text><![CDATA[Incremental, partial, and bounded updates]]></text>
+   </component>
+<component id="txt_q8">
+   <text><![CDATA[Neighbor discovery: hello packets]]></text>
+   </component>
+<component id="txt_q9">
+   <text><![CDATA[224.0.0.10 multicast]]></text>
+   </component>
+<component id="txt_q10">
+   <text><![CDATA[FF02::A multicast]]></text>
+   </component>
+
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a9">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a10">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully identified the features associated with EIGRPv4, EIGRPv6, or both.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully identified the features associated with EIGRPv4, EIGRPv6, or both. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

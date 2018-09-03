@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.1 EIGRP Neighbor Adjacency</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Neighbor Adjacency</h1>
+        <div>
+          <p>The goal of any dynamic routing protocol is to learn about remote networks from other routers and to reach convergence in the routing domain. Before any EIGRP update packets can be exchanged between routers, EIGRP must first discover its neighbors. EIGRP neighbors are other routers running EIGRP on directly connected networks.</p>
+          <p></p>
+          <p>EIGRP uses Hello packets to establish and maintain neighbor adjacencies. For two EIGRP routers to become neighbors, several parameters between the two routers must match. For example, two EIGRP routers must use the same EIGRP metric parameters and both must be configured using the same autonomous system number.</p>
+          <p></p>
+          <p>Each EIGRP router maintains a neighbor table, which contains a list of routers on shared links that have an EIGRP adjacency with this router. The neighbor table is used to track the status of these EIGRP neighbors. </p>
+          <p></p>
+          <p>The figure shows two EIGRP routers exchanging initial EIGRP Hello packets. When an EIGRP enabled router receives a Hello packet on an interface, it adds that router to its neighbor table.</p>
+          <p></p>
+          <p>1. A new router (R1) comes up on the link and sends an EIGRP Hello packet through all of its EIGRP-configured interfaces.</p>
+          <p></p>
+          <p>2. Router R2 receives the Hello packet on an EIGRP-enabled interface. R2 replies with an EIGRP update packet that contains all the routes it has in its routing table, except those learned through that interface (split horizon). However, the neighbor adjacency is not established until R2 also sends an EIGRP Hello packet to R1.</p>
+          <p></p>
+          <p>3. After both routers have exchanged Hellos, the neighbor adjacency is established. R1 and R2 update their EIGRP neighbor tables adding the adjacent router as a neighbor.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers.  Each router is running e. i. g. r. p. Router one is sending a hello packet to router two.  Router two is sending an update and hello packet to router one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

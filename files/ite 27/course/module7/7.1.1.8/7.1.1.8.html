@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.8 Summary Route (Cont.)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Summary Route (Cont.)</h1>
+        <div>
+          <p>EIGRP uses the Null0 interface to prevent these types of routing loops. The figure illustrates a scenario where a Null0 route prevents the routing loop illustrated in the previous example:</p>
+          <p></p>
+          <p>1. R1 has a default route, 0.0.0.0/0 via the ISP router.</p>
+          <p>2. R1 sends a routing update to R2 containing the default route.</p>
+          <p>3. R2 installs the default route from R1 in its IPv4 routing table.</p>
+          <p>4. R2’s routing table contains the 172.16.1.0/24, 172.16.2.0/24, and 172.16.3.0/24 subnets in its routing table.</p>
+          <p>5. R2 installs the 172.16.0.0/16 summary route to Null0 in its routing table.</p>
+          <p>6. R2 sends a summarized update to R1 for the 172.16.0.0/16 network.</p>
+          <p>7. R1 installs the summarized route for 172.16.0.0/16 via R2.</p>
+          <p>8. R1 receives a packet for 172.16.4.10. Because R1 has a route for 172.16.0.0/16 via R2, it forwards the packet to R2.</p>
+          <p>9. R2 receives the packet with the destination address 172.16.4.10 from R1. The packet does not match any specific subnet of 172.16.0.0 but does match the 172.16.0.0/16 summary route to Null0. Using the Null0 route, the packet is discarded.</p>
+          <p></p>
+          <p>A summary route on R2 for 172.16.0.0/16 to the Null0 interface discards any packets that begin with 172.16.x.x and that do not have a longer match with any of the subnets: 172.16.1.0/24, 172.16.2.0/24, or 172.16.3.0/24.</p>
+          <p></p>
+          <p>Even if R2 has a default route of 0.0.0.0/0 in its routing table, the Null0 route is a longer match.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The Null0 summary route is removed when autosummarization is disabled using the<b> no auto-summary </b>router configuration mode command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network where router one is connected to i. s. p. and router two.  Router two summarized the one seventy two dot sixteen dot zero dot zero and sent it to router one.  Router two also has a default static route pointing to router one.  In this case, a null zero interface is used for the prevention of a routing loop.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.4.2 HSRP Debug Commands </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>HSRP Debug Commands </h1>
+        <div>
+          <p>The HSRP debug commands allow you to view the operation of HSRP while a router fails or is administratively shutdown. The available HSRP debug commands can be viewed by entering the <b>debug standby ?</b> command, as shown in Figure 1. The topology is shown in Figure 2.</p>
+          <p></p>
+          <p>Use <b>debug standby packets</b> to view the receiving and sending of hello packets every 3 seconds, as shown in Figure 3 for R2. HSRP routers monitor these hello packets and will initiate a state change after 10 seconds if no hellos are heard from an HSRP neighbor.</p>
+          <p></p>
+          <p>HSRP behaves differently, depending on whether the active router fails or is manually shutdown by the administrator. Use <b>debug standby terse</b>, as shown in Figure 4, to view the HSRP events as R1 is powered down and R2 assumes the role of active HSRP router for the 172.16.10.0/24 network.</p>
+          <p></p>
+          <p>Figure 5 shows what happens on R2 when R1 is powered back on. Because R1 is configured with the <b>standby 1 preempt</b> command, it initiates a coup and assumes the role of active router, as highlighted below. The rest of the output shows that R2 actively listens to hello messages during the Speak state until it confirms that R1 is the new active router and R2 is the new standby router.</p>
+          <p></p>
+          <p>If the R1 G0/1 interface is administratively shutdown, then R1 will send an Init message indicating to all HSRP routers on the link that it is resigning the role of active router. As shown in Figure 6, 10 seconds later R2 assumes the role of active HSRP router.</p>
+          <p></p>
+          <p>Notice that R2 starts a passive holddown timer for R1. After 3 minutes, this passive holddown timer expires and R1 (172.16.10.2) is destroyed, meaning it is removed from the HSRP database.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

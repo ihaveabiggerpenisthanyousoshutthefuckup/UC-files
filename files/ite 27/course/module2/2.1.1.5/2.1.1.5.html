@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.5 Default VTP configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Default VTP configuration</h1>
+        <div>
+          <p>The <b>show vtp status</b> privileged EXEC command displays the VTP status. Executing the command on a Cisco 2960 Plus Series switch generates the output shown in the figure.</p>
+          <p></p>
+          <p>The following briefly describes the command output for the <b>show vtp status</b> parameters.</p>
+          <p></p>
+          <p>VTP Version capable and running</p>
+          <p>
+            <ul>
+              <li>Displays the VTP version that the switch is capable of running and the version that it is currently running.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>By default, switches implement version 1.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Most switches support version 2 while newer switches also support version 3.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Domain Name</p>
+          <p>
+            <ul>
+              <li>Name that identifies the administrative domain for the switch.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>By default, the VTP domain name is NULL. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Pruning Mode</p>
+          <p>
+            <ul>
+              <li>Displays whether pruning is enabled or disabled.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>By default, VTP pruning is disabled.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Traps Generation</p>
+          <p>
+            <ul>
+              <li>Displays whether VTP traps are sent to a network management station.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>By default, VTP traps are disabled.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Device ID</p>
+          <p>
+            <ul>
+              <li>The switch MAC address.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Configuration Last Modified</p>
+          <p>
+            <ul>
+              <li>Date and time of the last configuration modification.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Displays the IP address of the switch that caused the configuration change to the database.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Operating Mode</p>
+          <p>
+            <ul>
+              <li>Can be server, client, or transparent.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>By default, a switch is in VTP server mode.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Maximum VLANs Supported Locally</p>
+          <p>
+            <ul>
+              <li>The number of VLANs supported varies across switch platforms.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Number of Existing VLANs</p>
+          <p>
+            <ul>
+              <li>Includes the number of default and configured VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The default number of existing VLANs varies across switch platforms.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Configuration Revision</p>
+          <p>
+            <ul>
+              <li>Current configuration revision number on this switch.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The revision number is a 32-bit number that indicates the level of revision for a VTP frame.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The default configuration number for a switch is zero.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Each time a VLAN is added or removed, the configuration revision number is incremented.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Each VTP device tracks the VTP configuration revision number that is assigned to it.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>MD5 Digest</p>
+          <p>
+            <ul>
+              <li>A 16-byte checksum of the VTP configuration.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the output of the show vtp status command. Figure 2 describes the show vtp status command parameters.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

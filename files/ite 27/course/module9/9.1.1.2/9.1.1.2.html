@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.2 Multiarea OSPF</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Multiarea OSPF</h1>
+        <div>
+          <p>When a large OSPF area is divided into smaller areas, this is called multiarea OSPF. Multiarea OSPF is useful in larger network deployments to reduce processing and memory overhead.</p>
+          <p></p>
+          <p>For instance, any time a router receives new information about the topology, as with additions, deletions, or modifications of a link, the router must rerun the SPF algorithm, create a new SPF tree, and update the routing table. The SPF algorithm is CPU-intensive and the time it takes for calculation depends on the size of the area. Too many routers in one area make the LSDB larger and increase the load on the CPU. Therefore, arranging routers into areas effectively partitions one potentially large database into smaller and more manageable databases.</p>
+          <p></p>
+          <p>Multiarea OSPF requires a hierarchical network design. The main area is called the backbone area (area 0) and all other areas must connect to the backbone area. With hierarchical routing, routing still occurs between the areas (interarea routing). However, the CPU intensive routing operation of recalculating the SPF algorithm is done only for routes within an area. A change in one area does not cause an SPF algorithm recalculation in other areas.</p>
+          <p></p>
+          <p>As illustrated in Figure 1, the hierarchical-topology possibilities of multiarea OSPF have these advantages:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Smaller routing tables </b>- There are fewer routing table entries as network addresses can be summarized between areas. Also, routers in an area may only receive a default route for destination outside their area. For example, R1 summarizes the routes from area 1 to area 0 and R2 summarizes the routes from area 51 to area 0. R1 and R2 also propagate a default static route to area 1 and area 51.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reduced link-state update overhead </b>- Minimizes processing and memory requirements, because there are fewer routers exchanging LSAs with detailed topology information. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reduced frequency of SPF calculations </b>- Localizes impact of a topology change within an area. For instance, it minimizes routing update impact, because LSA flooding stops at the area boundary.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In Figure 2, assume a link fails between two internal routers in area 51. Only the routers in area 51 exchange LSAs that require them to rerun the SPF algorithm for this event. R1 receives a different type of LSA from area 51 and does not recalculate the SPF algorithm. The different types of LSAs are discussed later in this chapter.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows ten routers, which have been divided into three smaller areas. The routers are operating with a higher degree of efficiency due to the smaller routing tables, fewer number of LSAs, and diminished SPF algorithm processes. Figure two shows ten routers, which have been divided into three smaller areas; Area 1, Area 0, and Area 51. Area 51 is showing that LSA exchange only takes place among the routers in its own area and does not cross into the connected Area 0.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

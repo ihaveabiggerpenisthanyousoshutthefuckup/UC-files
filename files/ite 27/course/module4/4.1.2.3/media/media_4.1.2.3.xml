@@ -1,0 +1,59 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Link Aggregation Control Protocol</b>]]></text>
+    </component>
+    <component id="ID_bodyText01">
+        <text>
+            <![CDATA[<b>LACP modes:</b><br/><textformat blockindent='-16'><li><b>On: </b>Channel member without negotiation (no protocol).</li><li><b>Active: </b>Actively asking if the other side can or will participate.</li><li><b>Passive: </b>Passively waiting for the other side.</li></textformat>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>LACP</b>]]></text>
+    </component>
+    <component id="ID_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+			<td colspan="3" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<td bgcolor='#666263' valign="top" ><font color='#ffffff' ><b>S1</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>S2</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Channel Establishment</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>On</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >On</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' >Yes</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Active/Passive</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Active</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Yes</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>On/Active/Passive</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Not Configured</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>No</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>On</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Active</font></td>
+		<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>No</font></td>
+    </tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Passive/On</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Passive</font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>No</font></td>
+	</tr>
+	</table>]]>
+        </text>
+    </component>
+</textcomponents>

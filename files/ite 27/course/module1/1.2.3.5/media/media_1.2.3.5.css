@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+
+#text2_1{
+	position: relative;
+	left: -53px;
+}

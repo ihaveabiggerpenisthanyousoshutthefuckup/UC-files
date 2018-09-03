@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.1 Introduction to Layer 3 Switching</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Introduction to Layer 3 Switching</h1>
+        <div>
+          <p>Inter-VLAN routing using the router-on-a-stick method was simple to implement because routers were usually available in every network. However, as shown in the figure, most modern enterprise networks use multilayer switches to achieve high-packet processing rates using hardware-based switching. Layer 3 switches usually have packet-switching throughputs in the millions of packets per second (pps), whereas traditional routers provide packet switching in the range of 100,000 pps to more than 1 million pps.</p>
+          <p></p>
+          <p>All Catalyst multilayer switches support the following types of Layer 3 interfaces:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Routed port</b> - A pure Layer 3 interface similar to a physical interface on a Cisco IOS router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Switch virtual interface (SVI)</b> - A virtual VLAN interface for inter-VLAN routing. In other words, SVIs are the virtual-routed VLAN interfaces.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>High-performance switches, such as the Catalyst 6500 and Catalyst 4500, perform almost every function involving OSI Layer 3 and higher using hardware-based switching that is based on Cisco Express Forwarding.</p>
+          <p></p>
+          <p>All Layer 3 Cisco Catalyst switches support routing protocols, but several models of Catalyst switches require enhanced software for specific routing protocol features. Catalyst 2960 Series switches running IOS Release 12.2(55) or later, support static routing.</p>
+          <p></p>
+          <p>Catalyst switches use different default settings for interfaces. All members of the Catalyst 3560 and 4500 families of switches use Layer 2 interfaces by default. Members of the Catalyst 6500 family of switches running Cisco IOS use Layer 3 interfaces by default. Depending on which Catalyst family of switches is used, the <b>switchport</b> or <b>no switchport</b> interface configuration mode commands might be present in the running config or startup configuration files.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure demonstrates an organized topology with hosts connecting to a redundant switch cluster which leads to a gateway router. The gateway router connects to a server farm, the internet, and intranet segments of the network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

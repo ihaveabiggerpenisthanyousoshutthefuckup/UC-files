@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.1 Redundancy at OSI Layers 1 and 2</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Redundancy at OSI Layers 1 and 2</h1>
+        <div>
+          <p>The three-tier hierarchical network design that uses core, distribution, and access layers with redundancy, attempts to eliminate a single point of failure on the network. Multiple cabled paths between switches provide physical redundancy in a switched network. This improves the reliability and availability of the network. Having alternate physical paths for data to traverse the network makes it possible for users to access network resources, despite path disruption.</p>
+          <p></p>
+          <p>Click the <b>Play</b> button in Figure 1 to view an animation about redundancy. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PC1 is communicating with PC4 over a redundant network topology.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>When the network link between S1 and S2 is disrupted, the path between PC1 and PC4 is automatically adjusted by the Spanning Tree Protocol (STP) to compensate for the disruption. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>When the network connection between S1 and S2 is restored, the path is then readjusted by STP to route traffic directly from S2 to S1 to get to PC4.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>For many organizations, the availability of the network is essential to supporting business needs; therefore, the network infrastructure design is a critical business element. Path redundancy provides the necessary availability of multiple network services by eliminating the possibility of a single point of failure.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The OSI Layer 1 redundancy is illustrated using multiple links and devices, but more than just physical planning is required to complete the network setup. For the redundancy to work in a systematic way, the use of OSI Layer 2 protocols, such as STP, is also required.</p>
+          <p></p>
+          <p>Redundancy is an important part of the hierarchical design for preventing disruption of network services to users. Redundant networks require the addition of physical paths, but logical redundancy must also be part of the design. However, redundant paths in a switched Ethernet network may cause both physical and logical Layer 2 loops. </p>
+          <p></p>
+          <p>Logical Layer 2 loops may occur due to the natural operation of switches, specifically, the learning and forwarding process. When multiple paths exist between two devices on a network, and there is no spanning tree implementation on the switches, a Layer 2 loop occurs. A Layer 2 loop can result in the three primary issues listed in Figure 2. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is an animation that shows three switches, s.1, s.2, and s.3.  Each switch is connected to the other two with a trunk link.  S.2 has P.C.1, P.C.2, and P.C.3 connected.  S.1 has P.C.4 connected.  P.C.1 is communicating with P.C.4 over the trunk from S.2 to S.1.  The packet travels from P.C.1, to S.2, to S.1, to P.C.4, and back.  Then, the trunk between S.1 and S.2 goes down.  S.2 detects the outage and redirects subsequent packets to S.3.Figure two shows a table listing the following considerations to make when implementing LAN Redundancy: M.A.C. database instability, Broadcast Storms, and Multiple frame transmission.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

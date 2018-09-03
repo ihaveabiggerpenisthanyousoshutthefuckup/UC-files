@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.2.5 Modifying an OSPFv3 Router ID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Modifying an OSPFv3 Router ID</h1>
+        <div>
+          <p>Router IDs sometimes must be changed, for example, if the network administrator has established a new router ID identification scheme. However, after an OSPFv3 router establishes a router ID, that router ID cannot be changed until the router is reloaded or the OSPFv3 process is cleared.</p>
+          <p></p>
+          <p>In Figure 1, notice that the current router ID is 10.1.1.1. The OSPFv3 router ID should be 1.1.1.1. </p>
+          <p></p>
+          <p>In Figure 2, the router ID 1.1.1.1 is being assigned to R1. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Clearing the OSPF process is the preferred method to reset the router ID. </p>
+          <p></p>
+          <p>In Figure 3, the OSPFv3 routing process is cleared using the<b> clear ipv6 ospf process </b>privileged EXEC mode command. Doing this forces OSPF on R1 to renegotiate neighbor adjacencies using the new router ID.</p>
+          <p></p>
+          <p>The<b> show ipv6 protocols </b>command verifies that the router ID has changed.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to modify the router ID for R1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command show i.p.v.6. protocols. The router i.d. is 10 dot 1 dot 1 dot 1.Figure two shows the commands used when changing the router i.d. The first command is, i.p.v.6. router O.S.P.F. 10.  The i.d. is configured using the command, router hyphen i.d. 1 dot 1 dot 1 dot 1.Figure three shows the command used to clear the O.S.P.F. process so the newly configured i.d. can take effect. The command is, clear i.p.v.6. O.S.P.F. process.  The router responds with the following question, reset the selected O.S.P.F.v.3. processes?  The response from the user is either a y for yes or an n for no.  The figure enters y for yes.  The output from the command, show i.p.v.6. protocols, is displayed and the router i.d. is now listed as 1 dot 1 dot 1 dot 1.Figure four is an interactive media element that allows the learner to modify the router I.D. on router R-1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

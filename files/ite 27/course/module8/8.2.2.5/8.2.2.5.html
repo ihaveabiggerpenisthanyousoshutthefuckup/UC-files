@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.5 Configuring Passive Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Passive Interfaces</h1>
+        <div>
+          <p>Use the<b> passive-interface </b>router configuration mode command to prevent the transmission of routing messages through a router interface, but still allow that network to be advertised to other routers, as shown in Figure 1. Specifically, the command stops routing messages from being sent out the specified interface. However, the network that the specified interface belongs to is still advertised in routing messages that are sent out other interfaces. </p>
+          <p></p>
+          <p>For instance, there is no need for R1, R2, and R3 to forward OSPF messages out of their LAN interfaces. The configuration identifies the R1 G0/0 interface as passive. </p>
+          <p></p>
+          <p>It is important to know that a neighbor adjacency cannot be formed over a passive interface. This is because link-state packets cannot be sent or acknowledged.</p>
+          <p></p>
+          <p>The<b> show ip protocols </b>command is then used to verify that the Gigabit Ethernet interface was passive, as shown in Figure 2. Notice that the G0/0 interface is now listed under the Passive Interface(s) section. The network 172.16.1.0 is still listed under Routing for Networks, which means that this network is still included as a route entry in OSPFv2 updates that are sent to R2 and R3.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: OSPFv2 and OSPFv3 both support the<b> passive-interface </b>command. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure the G0/0 LAN interface as a passive interface on R2.</p>
+          <p></p>
+          <p>As an alternative, all interfaces can be made passive using the<b> passive-interface default </b>command. Interfaces that should not be passive can be re-enabled using the<b> no passive-interface </b>command.</p>
+          <p></p>
+          <p>Continue using the Syntax Checker in Figure 3 and configure the G0/0 LAN interface as a passive interface on R3.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: While completing the syntax checker, notice the OSPFv2 informational state messages as the interfaces are all rendered passive and then the two serial interfaces are made non-passive.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the C.L.I. commands used to configure a passive interface on a router running O.S.P.F.  The figure begins in global configuration mode and the first command is, router O.S.P.F. 10, where ten is an arbitrary process I.D. This command activates O.S.P.F. as the routing protocol.  The next command is, passive hyphen interface gigabit ethernet zero slash zero.  This command prevents the transmission of routing messages through the router interface. Figure two shows the output from the command, show i.p. protocols. The line that lists the passive interfaces are highlighted. Here, the gigabit ethernet zero slash zero interface is listed as passive. Figure three is an interactive media element that allows the learner to configure passive interfaces in O.S.P.F.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

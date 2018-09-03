@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.8 Routing Protocol Metrics</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Routing Protocol Metrics</h1>
+        <div>
+          <p>There are cases when a routing protocol learns of more than one route to the same destination. To select the best path, the routing protocol must be able to evaluate and decide between the available paths. This is accomplished through the use of routing metrics.  </p>
+          <p></p>
+          <p>A metric is a measurable value that is assigned by the routing protocol to different routes based on the usefulness of that route. In situations where there are multiple paths to the same remote network, the routing metrics are used to determine the overall “cost” of a path from source to destination. Routing protocols determine the best path based on the route with the lowest cost.  </p>
+          <p></p>
+          <p>Different routing protocols use different metrics. The metric used by one routing protocol is not comparable to the metric used by another. As a result, two different routing protocols might choose different paths to the same destination.</p>
+          <p></p>
+          <p>The following lists some dynamic protocols and the metrics they use:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Routing Information Protocol (RIP) </b>- Hop count</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Open Shortest Path First (OSPF) </b>- Cisco’s cost based on cumulative bandwidth from source to destination</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Enhanced Interior Gateway Routing Protocol (EIGRP) </b>– Minimum bandwidth, delay, load, reliability, and maximum transmission unit (MTU).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The animation in the figure shows that RIP would choose the path with the least amount of hops; whereas, OSPF would choose the path with the highest bandwidth. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three routers that are connected in a triangle layout. Each router is connected to the other two routers.  A computer connected to Router R-1 is sending a data packet to a computer connected to router R-2.  There are two possible paths for the data to follow.  One route is using a 56 k.b.p.s. line and consists of one router hop.  The other path consists of two router hops and each link is a T-1 link at 1.544 mega b.p.s.  The figure is an animation that shows the path RIP would follow and the path O.S.P.F. would follow.  When using hop count as the metric, as in RIP, the packet will travel the first path, through one router.  When using bandwidth as the metric, as is O.S.P.F., the packet will follow the two T-1 links because the two T-1 links is a faster path than the one 56 k.b.p.s. link.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

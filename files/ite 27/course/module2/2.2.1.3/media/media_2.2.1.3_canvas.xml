@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+  <slide type="MBAR">
+  	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF"/>		
+		<element type="ROUTER"  textId="router_text1"  x="40" y="55"  width="600" height="400"  />
+		<element type="TEXT" compId="ID_s1_txt01" x="49" y="205" width="101.9" expand="right" align="left"  color="#FFFFFF"/>
+	</slide>
+	<slide>
+		<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF"/>
+		<element type="TEXT" compId="ID_s2_txt01" x="49" y="231" width="101.9" expand="right" align="left" color="#FFFFFF"/>
+		<element type="TEXT" compId="ID_s2_txt03" x="49" y="165" width="101.9" expand="right" align="left" color="#FFFFFF"/>
+		<element type="TEXT" compId="ID_s2_txt02" x="49" y="311" width="101.9" expand="right" align="left" color="#FFFFFF"/>
+		<element type="ROUTER"  textId="router_text2"  x="40" y="55"  width="600" height="400"/>
+	</slide>
+
+
+
+</slide>
+<text id="router_text1" ><![CDATA[<code>S1# <b>show interfaces FastEthernet 0/4 switchport </b>
+Name: Fa0/4
+Switchport: Enabled
+<font color="#F68026"><b>Administrative Mode: static access</b></font>
+Operational Mode: up
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: native
+Negotiation of Trunking: On
+<font color="#F68026"><b>Access Mode VLAN: 1 </b>(default)</font>
+Trunking Native Mode VLAN: 1 (default)
+
+S1#</code>
+]]></text>
+
+<text id="router_text2" ><![CDATA[<pre>S1# <b>show interfaces f0/4 switchport</b>
+Name: Fa0/4
+Switchport: Enabled
+<font color="#F68026"><b>Administrative Mode: static access</b></font>
+Operational Mode: down
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: native
+
+S1#
+S1# <b>show run</b>
+Building configuration...
+
+
+!
+interface FastEthernet0/4 
+<font color="#F68026"><b>switchport mode access</b></font>
+!
+
+
+S1#</pre>
+]]></text>
+	
+
+</data>

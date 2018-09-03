@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.2 Configuring Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Interfaces</h1>
+        <div>
+          <p>Configuring EtherChannel with LACP requires two steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Specify the interfaces that compose the EtherChannel group using the<b> interface range </b><i>interface </i>global configuration mode command. The<b> range </b>keyword allows you to select several interfaces and configure them all together. A good practice is to start by shutting down those interfaces, so that any incomplete configuration does not create activity on the link.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Create the port channel interface with the<b> channel-group </b><i>identifier</i><b> mode active </b>command in interface range configuration mode. The identifier specifies a channel group number.  The<b> mode active </b>keywords identify this as an LACP EtherChannel configuration.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: EtherChannel is disabled by default.</p>
+          <p></p>
+          <p>In Figure 1, FastEthernet0/1 and FastEthernet0/2 are bundled into EtherChannel interface port channel 1. </p>
+          <p></p>
+          <p>To change Layer 2 settings on the port channel interface, enter port channel interface configuration mode using the <b>interface port-channel</b> command, followed by the interface identifier. In the example, the EtherChannel is configured as a trunk interface with allowed VLANs specified. Also shown in Figure 1, the port channel is configured as a trunk allowing traffic from VLANs 1, 2, and 20.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure EtherChannel on switch S1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the commands required to configure an ether channel.  The commands begin in global configuration mode. The first command is, interface range fast Ethernet zero slash one hyphen two.  This command allows the remaining commands entered to be applied to ports 1 and 2.  The next command is, channel hyphen group 1 mode active, and creates the port channel interface.  The next command is, interface port hyphen channel 1, and moves to the configuration mode for the port channel. The command, switchport mode trunk, configures the interface as a trunk interface.  The last command is, switchport trunk allowed v lan 1 comma 2 comma 20, and it configures allowed V LANs on the link.  Figure two is an interactive activity that allows the learner to configure an ether channel on two ports of a switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

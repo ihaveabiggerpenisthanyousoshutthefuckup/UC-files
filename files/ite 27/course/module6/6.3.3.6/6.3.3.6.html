@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.6 Topology Table: show ip eigrp topology Command (Cont.)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Topology Table: show ip eigrp topology Command (Cont.)</h1>
+        <div>
+          <p>As shown in Figure 1, the first line in the topology table displays:</p>
+          <p>
+            <ul>
+              <li>
+                <b>P </b>- Route in the passive state. When DUAL is not performing its diffusing computations to determine a path for a network, the route is in a stable mode, known as the passive state. If DUAL recalculates or searches for a new path, the route is in an active state and displays an A. All routes in the topology table should be in the passive state for a stable routing domain. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>192.168.1.0/24 </b>- Destination network that is also found in the routing table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>1 successors </b>- Displays the number of successors for this network. If there are multiple equal cost paths to this network, there are multiple successors.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>FD is 3012096 </b>- FD, the EIGRP metric to reach the destination network. This is the metric displayed in the IP routing table.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, the first subentry in the output shows the successor:</p>
+          <p>
+            <ul>
+              <li>
+                <b>via 192.168.10.10 </b>- Next-hop address of the successor, R3. This address is shown in the routing table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>3012096 </b>- FD to 192.168.1.0/24. It is the metric shown in the IP routing table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>2816 </b>- RD of the successor and is R3’s cost to reach this network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Serial 0/0/1 </b>- Outbound interface used to reach this network, also shown in the routing table.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in Figure 3, the second subentry shows the FS, R1 (if there is not a second entry, then there are no FSs):</p>
+          <p>
+            <ul>
+              <li>
+                <b>via 172.16.3.1 </b>- Next-hop address of the FS, R1.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>41024256 </b>- R2’s new FD to 192.168.1.0/24, if R1 became the new successor and would be the new metric displayed in the IP routing table. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>2170112 </b>- RD of the FS, or R1’s metric to reach this network. RD must be less than the current FD of 3,012,096 to meet the FC.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Serial 0/0/0 </b>- This is the outbound interface used to reach FS, if this router becomes the successor.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output of the "show i. p. e. i. g. r. p. topology" command on router two.  The Status, destination network, number of successors, and feasible distance are highlighted in orange. Figure two shows the output of the "show i. p. e. i. g. r. p. topology" command on router two.  The next hop address, feasible distance, reported distance, and outbound interface of the successor route is highlighted in orange. Figure three shows the output of the "show i. p. e. i. g. r. p. topology" command on router two.  The next hop address, feasible distance, reported distance, and outbound interface of the potential feasible successor route is highlighted in orange.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

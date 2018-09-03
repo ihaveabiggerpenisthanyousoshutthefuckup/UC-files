@@ -1,0 +1,14 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>LAN Redundancy</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Wiring Closet</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Backbone with Redundant Links</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Server Farm</b>]]></text>
+	</component>
+</textcomponents>

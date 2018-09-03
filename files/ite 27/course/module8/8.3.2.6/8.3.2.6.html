@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.2.6 Enabling OSPFv3 on Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Enabling OSPFv3 on Interfaces</h1>
+        <div>
+          <p>OSPFv3 uses a different method to enable an interface for OSPF. Instead of using the<b> network</b> router configuration mode command to specify matching interface addresses, OSPFv3 is configured directly on the interface.  </p>
+          <p></p>
+          <p>To enable OSPFv3 on an interface, use the<b> ipv6 ospf </b><i>process-id </i><b>area </b><i>area-id </i>interface configuration mode command. </p>
+          <p></p>
+          <p>The<i> process-id </i>value identifies the specific routing process and must be the same as the process ID used to create the routing process in the<b> ipv6 router ospf </b><i>process-id </i>command.  </p>
+          <p></p>
+          <p>The<i> area-id </i>value is the area to be associated with the OSPFv3 interface. Although any value could have been configured for the area, 0 was selected, because area 0 is the backbone area to which all other areas must attach, as shown in Figure 1. This helps in the migration to multiarea OSPF, if the need arises.</p>
+          <p></p>
+          <p>In Figure 2, OSPFv3 is enabled on the R1 interfaces using the<b> ipv6 ospf 10 area 0 </b>command. The<b> show ipv6 ospf interface brief </b>command displays the active OSPFv3 interfaces. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to enable OSPFv3 on the R2 and R3 interfaces.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the O.S.P.F. reference topology. Figure two shows the commands needed to enable O.S.P.F.v.3. on the interfaces of router R-1.  The figure begins in global configuration mode. The first command is, interface gigabit ethernet zero slash zero.  This is followed by the command i.p.v.6. O.S.P.F. 10 area zero.  The figure then moves to the serial zero slash zero slash zero interface and repeats the command, i.p.v.6. O.S.P.F. 10 area zero.  The figure then moves to the serial zero slash zero slash one interface and repeats the command, i.p.v.6. O.S.P.F. 10 area zero.  The output from the command, shows i.p.v.6. O.S.P.F. interfaces brief, is displayed. The output shows that the three interfaces are all in area zero and are participating in O.S.P.F. version 3.Figure three is an interactive media element that allows the learner to enable O.S.P.F. version 3 on the interfaces on router R-2.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

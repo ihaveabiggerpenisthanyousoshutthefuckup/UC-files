@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.2 Troubleshooting EtherChannel</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting EtherChannel</h1>
+        <div>
+          <p>All interfaces within an EtherChannel must have the same configuration of speed and duplex mode, native and allowed VLANs on trunks, and access VLAN on access ports:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Assign all ports in the EtherChannel to the same VLAN, or configure them as trunks. Ports with different native VLANs cannot form an EtherChannel.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When configuring a trunk on an EtherChannel, verify the trunking mode on the EtherChannel. It is not recommended that you configure trunking mode on individual ports that make up the EtherChannel. But if it is done, verify that the trunking configuration is the same on all interfaces.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An EtherChannel supports the same allowed range of VLANs on all the ports. If the allowed range of VLANs is not the same, the ports do not form an EtherChannel even when PAgP is set to the<b> auto </b>or<b> desirable </b>mode.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The dynamic negotiation options for PAgP and LACP must be compatibly configured on both ends of the EtherChannel.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: It is easy to confuse PAgP or LACP with DTP, because they both are protocols used to automate behavior on trunk links. PAgP and LACP are used for link aggregation (EtherChannel). DTP is used for automating the creation of trunk links. When an EtherChannel trunk is configured, typically EtherChannel (PAgP or LACP) is configured first and then DTP.</p>
+          <p></p>
+          <p>In Figure 1, interfaces F0/1 and F0/2 on switches S1 and S2 are connected with an EtherChannel. The output indicates that the EtherChannel is down. </p>
+          <p></p>
+          <p>In Figure 2, more detailed output indicates that there are incompatible PAgP modes configured on S1 and S2.</p>
+          <p></p>
+          <p>In Figure 3, the PAgP mode on the EtherChannel is changed to desirable and the EtherChannel becomes active.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: EtherChannel and spanning tree must interoperate. For this reason, the order in which EtherChannel-related commands are entered is important, which is why (in Figure 3) you see interface Port-Channel 1 removed and then re-added with the<span class="cmd"><b> channel-group </b></span>command, as opposed to directly changed. If one tries to change the configuration directly, spanning tree errors cause the associated ports to go into blocking or errdisabled state.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show ether channel summary.  This command is used in troubleshooting. In the figure, there is a letter D listed after the ports involved in the ether channel to indicate that the ether channel is down. Figure two shows the output from the command, show run pipe begin interface port hyphen channel.  This command lists more detailed information regarding the ether channel, such as the switch ports that are configured in the ether channel and the mode they are in.  The figure is highlighting the fact that the ports on switch 1 are configured in the port aggregation protocol on mode, and the ports on switch two are configured in the port aggregation protocol desirable mode.  This mismatch will not allow the formation of an ether channel. Figure three shows the reconfiguration of the ports on switch 1 from the on mode to the desirable mode, which allows the Ether Channel to become active.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

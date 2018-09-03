@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.4 Issues with Layer 1 Redundancy: Duplicate Unicast Frames</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Issues with Layer 1 Redundancy: Duplicate Unicast Frames</h1>
+        <div>
+          <p>Broadcast frames are not the only type of frames that are affected by loops. Unknown unicast frames sent onto a looped network can result in duplicate frames arriving at the destination device. An unknown unicast frame is when the switch does not have the destination MAC address in its MAC address table and must forward the frame out all ports, except the ingress port. </p>
+          <p></p>
+          <p>Click the <b>Play</b> button in the figure to view an animation about this issue. When the animation pauses, read the text to the right of the topology. The animation will continue after the short pause.</p>
+          <p>In the animation:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PC1 sends a unicast frame destined for PC4. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>S2 does not have an entry for PC4 in its MAC table. In an attempt to find PC4, it floods the unknown unicast frame out all switch ports, except the port that received the traffic. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The frame arrives at switches S1 and S3. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>S1 has a MAC address entry for PC4, so it forwards the frame out to PC4. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>S3 has an entry in its MAC address table for PC4, so it forwards the unicast frame out Trunk3 to S1. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>S1 receives the duplicate frame and forwards the frame out to PC4. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PC4 has now received the same frame twice.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Most upper-layer protocols are not designed to recognize duplicate transmissions. In general, protocols that make use of a sequence-numbering mechanism assume that the transmission has failed and that the sequence number has recycled for another communication session. Other protocols attempt to hand the duplicate transmission to the appropriate upper-layer protocol to be processed and possibly discarded. </p>
+          <p></p>
+          <p>Layer 2 LAN protocols, such as Ethernet, do not include a mechanism to recognize and eliminate endlessly looping frames. Some Layer 3 protocols implement a TTL mechanism that limits the number of times a Layer 3 networking device can retransmit a packet. Layer 2 devices do not have this mechanism, so they continue to retransmit looping traffic indefinitely. STP, a Layer 2 loop-avoidance mechanism, was developed to address these problems.</p>
+          <p></p>
+          <p>To prevent these issues from occurring in a redundant network, some type of spanning tree must be enabled on the switches. Spanning tree is enabled, by default, on Cisco switches to prevent Layer 2 loops from occurring. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows three switches, s.1, s.2, and s.3.  Each is connected to the other two with a trunk link.  S.2 has P.C.1, P.C.2, and P.C.3 connected.  S.1 has P.C.4 connected.  The animation demonstrates how P.C.4 can receive duplicate unicast frames when a layer two loop exists.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

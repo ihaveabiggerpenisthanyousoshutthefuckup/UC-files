@@ -1,0 +1,111 @@
+﻿<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Link Types</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>Root Bridge</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[Root Port (F)]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[Alternate Port (DIS)]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[Edge Port]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[Designated Ports (F)]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[Root Port (F)]]>
+        </text>
+    </component>
+
+    <component id="ID_bodyTxt01">
+        <text>
+            <![CDATA[Point-to-Point Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt02">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt02">
+        <text>
+            <![CDATA[Point-to-Point Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt03">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt03">
+        <text>
+            <![CDATA[Point-to-Point Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt04">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt04">
+        <text>
+            <![CDATA[Point-to-Point Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt05">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt05">
+        <text>
+            <![CDATA[Point-to-Point Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt06">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt06">
+        <text>
+            <![CDATA[Point-to-Point Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt07">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt07">
+        <text>
+            <![CDATA[Shared Link Type]]>
+        </text>
+    </component>
+    <component id="ID_titleTxt08">
+        <text>
+            <![CDATA[]]>
+        </text>
+    </component>
+    <component id="ID_bodyTxt08">
+        <text>
+            <![CDATA[Shared Link Type]]>
+        </text>
+    </component>
+</textcomponents>

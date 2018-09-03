@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.7 The network Command and Wildcard Mask</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The network Command and Wildcard Mask</h1>
+        <div>
+          <p>By default, when using the<b> network </b>command and an IPv4 network address, such as 172.16.0.0, all interfaces on the router that belong to that classful network address are enabled for EIGRP. However, there may be times when the network administrator does not want to include all interfaces within a network when enabling EIGRP. For example, in Figure 1, assume that an administrator wants to enable EIGRP on R2, but only for the subnet 192.168.10.8 255.255.255.252, on the S0/0/1 interface.</p>
+          <p></p>
+          <p>To configure EIGRP to advertise specific subnets only, use the<i> wildcard-mask </i>option with the network command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-router)# </span>
+            <span class="cmd">
+              <b>network</b>
+            </span>
+            <span class="cmd">
+              <i>network-address</i>
+            </span>
+            <span class="cmd">
+              <b></b>
+            </span>[<span class="cmd"><i>wildcard-mask</i></span>]</p>
+          <p></p>
+          <p>A wildcard mask is similar to the inverse of a subnet mask. In a subnet mask, binary 1s are significant while binary 0s are not. In a wildcard mask, binary 0s are significant, while binary 1s are not. For example, the inverse of subnet mask 255.255.255.252 is 0.0.0.3. </p>
+          <p></p>
+          <p>Calculating a wildcard mask may seem daunting at first but it’s actually pretty easy to do. To calculate the inverse of the subnet mask, subtract the subnet mask from 255.255.255.255 as follows:</p>
+          <p></p>
+          <p>
+            <span class="cmd">   255.255.255.255 </span>
+          </p>
+          <p>
+            <span class="cmd"> - 255.255.255.252  </span>
+          </p>
+          <p>
+            <span class="cmd">   ---------------</span>
+          </p>
+          <p>
+            <span class="cmd">     0.  0.  0.  3   </span>Wildcard mask</p>
+          <p></p>
+          <p>Figure 2 continues the EIGRP network configuration of R2. The<b> network 192.168.10.8 0.0.0.3 </b>command specifically enables EIGRP on the S0/0/1 interface, a member of the 192.168.10.8 255.255.255.252 subnet. </p>
+          <p></p>
+          <p>Configuring a wildcard mask is the official command syntax of the EIGRP <b>network</b> command. However, the Cisco IOS versions also accepts a subnet mask to be used instead. For example, Figure 3 configures the same S0/0/1 interface on R2, but this time using a subnet mask in the<b> network </b>command. Notice in the output of the<b> show running-config </b>command, the IOS converted the subnet mask command to its wildcard mask.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure the EIGRP<b> network </b>commands for router R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p.  The serial interface on router two pointing to router three is circled including the i. p. address of dot nine. Figure two shows the syntax for configuring e. i. g. r. p. network statements for the circled serial interface on router two using the wildcard mask. Figure three shows the output of the "show running dash config" command on router two.  The e. i. g. r. p. section highlights the network just configured. Figure four is an interactive activity that allows the learner to practice configuring e. i. g. r. p. on router three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

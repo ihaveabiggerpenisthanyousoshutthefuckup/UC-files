@@ -1,0 +1,12 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Configure VTP Domain Name  </b>]]></text>
+	</component>
+	
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Configure and Verify the VTP Domain Password  </b>]]></text>
+	</component>
+
+	
+</textcomponents>

@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_titletxt01">
+<text><![CDATA[<b>Types of Spanning Tree Protocols</b>]]></text>
+</component>
+   
+<component id="ID_bodytxt01">
+<text><![CDATA[<textformat blockindent='-14'><ul><li><b>802.1D-1998:</b> The legacy standard for bridging and STP.</li><textformat blockindent='-14'><li><b>CST:</b> Assumes one spanning-tree instance for the entire bridged network, regardless of the number of VLANs.</li></textformat><li><b>PVST+:</b> A Cisco enhancement of STP that provides a separate 802.1D spanning-tree instance for each VLAN configured in the network.</li><li><b>802.1D-2004:</b> An updated bridging and STP standard.</li><li><b>802.1w (RSTP):</b> Improves convergence over 1998 STP by adding roles to ports and enhancing BPDU exchanges.</li><li><b>Rapid PVST+:</b> A Cisco enhancement of RSTP using PVST+.</li><li><b>802.1s (MSTP):</b> Maps multiple VLANs into the same spanning-tree instance.</li></ul></textformat><br/>]]></text>
+</component>
+
+
+
+</textcomponents>

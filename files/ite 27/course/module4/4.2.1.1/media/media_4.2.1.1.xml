@@ -1,0 +1,135 @@
+<textcomponents>
+
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Configuration Settings Match on Both Switches</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[EtherChannel Formed]]></text> 
+</component>
+  
+<component id="ID_s1_table01">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' cellspacing='2' class="mtable">
+	        <tr class="mtable_title">
+				<td colspan="2" bgcolor='#FFFFFF'><font size="12" align='center'><b>S1 Port Configurations</b></font></td>
+			</tr>
+ 
+        <tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#E9E7E8' valign="top" width="90">Speed</td>
+			<td bgcolor='#E9E7E8' valign="top" width="90">1 Gb/s</td>
+		</tr>
+
+			<tr>
+			<td bgcolor='#F2F2F2' valign="top">Duplex</td>
+			<td bgcolor='#F2F2F2' valign="top">Full</td>
+		</tr>
+	    
+	    	<tr>
+			<td bgcolor='#E9E7E8' valign="top">VLAN</td>
+			<td bgcolor='#E9E7E8' valign="top">10</td>
+		</tr>
+	
+	
+	
+
+
+</table>]]></text>
+	</component>
+
+<component id="ID_s1_table02">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' cellspacing='2' class="mtable">
+	        <tr class="mtable_title">
+				<td colspan="2" bgcolor='#FFFFFF'><font size="12" align='center'><b>S2 Port Configurations</b></font></td>
+			</tr>
+ 
+        <tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#E9E7E8' valign="top" width="90">Speed</td>
+			<td bgcolor='#E9E7E8' valign="top" width="90">1 Gb/s</td>
+		</tr>
+
+			<tr>
+			<td bgcolor='#F2F2F2' valign="top">Duplex</td>
+			<td bgcolor='#F2F2F2' valign="top">Full</td>
+		</tr>
+	    
+	    	<tr>
+			<td bgcolor='#E9E7E8' valign="top">VLAN</td>
+			<td bgcolor='#E9E7E8' valign="top">10</td>
+		</tr>
+
+</table>]]></text>
+	</component>
+
+<component id="ID_s2_title">
+	<text><![CDATA[<b>Configuration Settings Do Not Match on Both Switches</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+  <text><![CDATA[EtherChannel Not Formed]]></text> 
+</component>
+
+<component id="ID_s2_table01">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' cellspacing='2' class="mtable">
+	        <tr class="mtable_title">
+				<td colspan="2" bgcolor='#FFFFFF'><font size="12" align='center'><b>S2 Port Configurations</b></font></td>
+			</tr>
+ 
+        <tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#E9E7E8' valign="top" width="90">Speed</td>
+			<td bgcolor='#E9E7E8' valign="top" width="90">1 Gb/s</td>
+		</tr>
+
+			<tr>
+			<td bgcolor='#F2F2F2' valign="top">Duplex</td>
+			<td bgcolor='#F2F2F2' valign="top">Half</td>
+		</tr>
+	    
+	    	<tr>
+			<td bgcolor='#E9E7E8' valign="top">VLAN</td>
+			<td bgcolor='#E9E7E8' valign="top">10</td>
+		</tr>
+
+</table>]]></text>
+	</component>
+
+<component id="ID_s2_table02">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' cellspacing='2' class="mtable">
+	        <tr class="mtable_title">
+				<td colspan="2" bgcolor='#FFFFFF'><font size="12" align='center'><b>S2 Port Configurations</b></font></td>
+			</tr>
+ 
+        <tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#E9E7E8' valign="top" width="90">Speed</td>
+			<td bgcolor='#E9E7E8' valign="top" width="90">1 Gb/s</td>
+		</tr>
+
+			<tr>
+			<td bgcolor='#F2F2F2' valign="top">Duplex</td>
+			<td bgcolor='#F2F2F2' valign="top">Full</td>
+		</tr>
+	    
+	    	<tr>
+			<td bgcolor='#E9E7E8' valign="top">VLAN</td>
+			<td bgcolor='#E9E7E8' valign="top">10</td>
+		</tr>
+
+</table>]]></text>
+	</component>
+</textcomponents>

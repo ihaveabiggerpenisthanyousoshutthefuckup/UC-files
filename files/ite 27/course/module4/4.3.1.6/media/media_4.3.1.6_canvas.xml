@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide width="780">
+		<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+		<element type="IMAGE" x="0" y="0" width="1000" height="490" src="media_4.3.1.6.png" />
+		<element type="TEXTBOX" titleId="ID_instr_title" bodyId="ID_instr_body" x="40" y="55" width="230" height="200" />
+
+		<element type="TEXT" compId="ID_txt01" x="452" y="108" width="500" expand="down" align="left" />
+		<element type="TEXT" compId="ID_txt02" x="452" y="169" width="500" expand="down" align="left" />
+		<element type="TEXT" compId="ID_txt03" x="452" y="230" width="500" expand="down" align="left" />
+		<element type="TEXT" compId="ID_txt04" x="452" y="292" width="500" expand="down" align="left" />
+		<element type="TEXT" compId="ID_txt05" x="452" y="354" width="500" expand="down" align="left" />
+		<element type="TEXT" compId="ID_header01" x="453" y="73" width="480.3" expand="up" align="left" size="13" />
+		<element type="TEXT" compId="ID_header02" x="330" y="72" width="110.5" expand="up" align="left" size="13" />
+		<element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="100" compHeight="36" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="0.3">	
+				<subelement type="DROP" x="330" y="103" match="2"/>
+				<subelement type="DROP" x="330" y="164" match="0"/>
+				<subelement type="DROP" x="330" y="226" match="0"/>
+				<subelement type="DROP" x="330" y="288"  match="1"/>
+				<subelement type="DROP" x="330" y="350" match="1"/>
+				<subelement type="DRAG" compId="ID_drag01" x="102" y="280" />
+				<subelement type="DRAG" compId="ID_drag02" x="102" y="326" />
+				<subelement type="DRAG" compId="ID_drag03" x="102" y="371" />
+				<subelement type="CHECK" x="38" y="444" width="110" height="21" compId="ID_CHECK"/>
+				<subelement type="RESET" x="161" y="444" width="110" height="21" compId="ID_RESET"/>
+				<subelement type="FEEDBACK" x="370" y="150" width="300" height="200" correctTitleId="ID_s1_CORRECT_TITLE" correctBodyId="ID_s1_CORRECT_BODY" wrongTitleId="ID_s1_INCORRECT_TITLE" wrongBodyId="ID_s1_INCORRECT_BODY"/>
+			  </element>
+
+		<element type="TEXT" compId="ID_inst" x="25" y="7" width="954.55" expand="down" align="center" size="17" color="#ffffff" />
+	</slide>
+</data>

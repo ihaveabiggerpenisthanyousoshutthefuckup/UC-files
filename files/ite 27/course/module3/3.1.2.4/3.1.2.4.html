@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.4 Spanning Tree Algorithm: Root Path Cost</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Spanning Tree Algorithm: Root Path Cost</h1>
+        <div>
+          <p>When the root bridge has been elected for the spanning tree instance, the STA starts the process of determining the best paths to the root bridge from all destinations in the broadcast domain. The path information, known as the internal root path cost, is determined by summing up the individual port costs along the path from the switch to the root bridge.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Switches send BPDUs, which include the root path cost. This is the cost of the path from the sending switch to the root bridge. When a switch receives the BPDU, it adds the ingress port cost of the segment to determine its internal root path cost.</p>
+          <p></p>
+          <p>The default port costs are defined by the speed at which the port operates. As shown in Figure 1, 10 Gb/s Ethernet ports have a port cost of 2, 1 Gb/s Ethernet ports have a port cost of 4, 100 Mb/s Fast Ethernet ports have a port cost of 19, and 10 Mb/s Ethernet ports have a port cost of 100. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: As newer and faster Ethernet technologies enter the marketplace, the port cost values may change to accommodate the different speeds available. The non-linear numbers in the table accommodate some improvements to the older Ethernet standard. The values have already been changed to accommodate the 10 Gb/s Ethernet standard. To illustrate the continued change associated with high-speed networking, Catalyst 4500 and 6500 switches support a longer port cost method; for example, 10 Gb/s has a 2000 port cost, 100 Gb/s has a 200 port cost, and 1 Tb/s has a 20 port cost.</p>
+          <p></p>
+          <p>Although switch ports have a default port cost associated with them, the port cost is configurable. The ability to configure individual port costs gives the administrator the flexibility to manually control the spanning tree paths to the root bridge.</p>
+          <p></p>
+          <p>To configure the port cost of an interface (as shown in Figure 2), enter the<b> spanning-tree cost </b><i>value </i>command in interface configuration mode. The value can be between 1 and 200,000,000.</p>
+          <p></p>
+          <p>In the example, switch port F0/1 has been configured with a port cost of 25 using the <b>spanning-tree cost 25 </b>interface configuration mode command on the F0/1 interface.</p>
+          <p></p>
+          <p>To restore the port cost to the default value of 19, enter the<b> no spanning-tree cost </b>interface configuration mode command.</p>
+          <p></p>
+          <p>The internal root path cost is equal to the sum of all the port costs along the path to the root bridge (as shown in Figure 3). Paths with the lowest cost become preferred, and all other redundant paths are blocked. In the example, the internal root path cost from S2 to the root bridge S1 over path 1 is 19 (based on the IEEE-specified individual port cost) while the internal root path cost over path 2 is 38. Because path 1 has a lower overall path cost to the root bridge, it is the preferred path. STP configures the redundant path to be blocked, which prevents a loop from occurring.</p>
+          <p></p>
+          <p>To verify the port and internal root path cost to the root bridge, enter the <b>show spanning-tree</b> command (as shown in Figure 4). The Cost field near the top of the output is the internal root path cost, the total path cost to the root bridge. This value changes depending on how many switch ports must be traversed to get to the root bridge. In the output, each interface is also identified with an individual port cost of 19. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table with four different ethernet link speeds and their associated spanning tree costs. Figure two shows the commands to configure a specific link cost, rather than allowing spanning tree to automatically set it.  It also shows the command to reset from manual assignment back to automatic assignment. Figure three shows the two paths from switch two to switch one (the root bridge) and their costs.  This is necessary to figure out which port on switch two will become the root port. Figure four shows the output from the show spanning dash tree command on switch two.  The cost to the root bridge and the local bridge i.d. are both highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

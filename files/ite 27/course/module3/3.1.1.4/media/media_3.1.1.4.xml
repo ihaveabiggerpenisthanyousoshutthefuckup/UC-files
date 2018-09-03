@@ -1,0 +1,68 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Duplicate Unicast Frames</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[Trunk3]]></text> 
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Trunk2]]></text> 
+</component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[Trunk1]]></text> 
+</component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[PC1 sends a unicast frame to PC4 via S2.]]></text>
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[S2 has no record of PC4 in the MAC address table. It floods the unicast frame out all ports.]]></text>
+</component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[Both S1 and S3 have an entry in their MAC address tables for PC4. Both forward the frame accordingly.]]></text>
+</component>
+<component id="ID_s1_txt07">
+  <text><![CDATA[S1 also forwards the duplicate frame received from S3 to PC4.]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+	<text><![CDATA[<b>S3 MAC Table</b><br/>PC4 = F0/1]]></text>
+</component>
+<component id="ID_s1_txt09">
+	<text><![CDATA[<b>S1 MAC Table</b><br/>PC4 = F0/3]]></text>
+</component>
+<component id="ID_s1_txt10">
+	<text><![CDATA[<b>S2 MAC Table</b><br/>PC1 = F0/11]]></text>
+</component>
+
+  
+  
+	<component id="end">
+		<text><![CDATA[End]]></text>
+	</component>
+
+	<component id="fforward">
+		<text><![CDATA[Fast Forward]]></text>
+	</component>
+
+	<component id="pause">
+		<text><![CDATA[Pause]]></text>
+	</component>
+
+	<component id="play">
+		<text><![CDATA[Play]]></text>
+	</component>
+
+	<component id="rewind">
+		<text><![CDATA[Rewind]]></text>
+	</component>
+
+	<component id="start">
+		<text><![CDATA[Start]]></text>
+	</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Click Play to continue.]]></text>
+	</component>
+
+</textcomponents>

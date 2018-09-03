@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.3 Issues with Layer 1 Redundancy: Broadcast Storms</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Issues with Layer 1 Redundancy: Broadcast Storms</h1>
+        <div>
+          <p>A broadcast storm occurs when there are so many broadcast frames caught in a Layer 2 loop that all available bandwidth is consumed. Consequently, no bandwidth is available for legitimate traffic and the network becomes unavailable for data communication. This is an effective denial of service (DoS).</p>
+          <p></p>
+          <p>A broadcast storm is inevitable on a looped network. As more devices send broadcasts over the network, more traffic is caught in the loop and consumes resources. This eventually creates a broadcast storm that causes the network to fail.</p>
+          <p></p>
+          <p>There are other consequences of broadcast storms. Because broadcast traffic is forwarded out every port on a switch, all connected devices have to process all the broadcast traffic that is being flooded endlessly around the looped network. This can cause the end device to malfunction because of the processing requirements needed to sustain such a high traffic load on the NIC.</p>
+          <p></p>
+          <p>Click the <b>Play</b> button in the figure to view an animation of a broadcast storm. When the animation pauses, read the text to the right of the topology. The animation will continue after the short pause.</p>
+          <p></p>
+          <p>In the animation:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PC1 sends a broadcast frame out onto the looped network. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The broadcast frame loops between all the interconnected switches on the network.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PC4 also sends a broadcast frame out onto the looped network. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The PC4 broadcast frame gets caught in the loop between all the interconnected switches, just like the PC1 broadcast frame. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>As more devices send broadcasts over the network, more traffic is caught in the loop and consumes resources. This eventually creates a broadcast storm that causes the network to fail.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>When the network is fully saturated with broadcast traffic that is looping between the switches, new traffic is discarded by the switch because it is unable to process it.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A broadcast storm can develop in seconds because devices connected to a network are regularly sending out broadcast frames, such as ARP requests. As a result, when a loop is created, the switched network is quickly brought down.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows three switches, s.1, s.2, and s.3.  Each is connected to the other two with a trunk link.  S.2 has P.C.1, P.C.2, and P.C.3 connected.  S.1 has P.C.4 connected.  The animation demonstrates how a broadcast storm can degrade network performance when a layer two loop exists.  The switches continue to forward the broadcasts and replicate them at the same time.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.2 Components </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Components </h1>
+        <div>
+          <p>A systematic approach to troubleshooting is recommended. For example, refer to the flowchart in the figure for diagnosing EIGRP connectivity issues. Click the Troubleshoot buttons in the figure to see troubleshooting questions and tools for each troubleshooting scenario.</p>
+          <p></p>
+          <p>After configuring EIGRP, the first step is to test connectivity to the remote network. If the ping fails, confirm the EIGRP neighbor adjacencies. </p>
+          <p></p>
+          <p>EIGRP neighbors must first establish adjacencies with each other before they can exchange routes. There are a number of common reasons why an EIGRP neighbor adjacency might fail, including:</p>
+          <p>
+            <ul>
+              <li>The interface between the devices is down.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The two routers have mismatching EIGRP autonomous system numbers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Proper interfaces are not enabled for the EIGRP process.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An interface is configured as passive.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Other reasons that affect neighbor adjacencies include misconfigured K values, incompatible Hello and Hold interval times, and misconfigured EIGRP authentication.</p>
+          <p></p>
+          <p>After a neighbor adjacency is established, EIGRP begins the process of exchanging routing information. If two routers are EIGRP neighbors, but there is still a connection issue, there may be a routing problem. Some issues that may cause a connectivity problem for EIGRP include:</p>
+          <p>
+            <ul>
+              <li>Proper networks are not being advertised on remote routers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An incorrectly-configured passive interface, or an ACL, is blocking advertisements of remote networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Automatic summarization is causing inconsistent routing in a discontiguous network.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>If all of the required routes are in the routing table, but the path that traffic takes is not correct, verify the interface bandwidth values.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a flowchart outlining the steps to diagnose e. i. g. r. p. connectivity problems.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

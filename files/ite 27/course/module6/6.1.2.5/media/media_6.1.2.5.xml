@@ -1,0 +1,84 @@
+<textcomponents>
+
+
+<component id="ID_inst">
+	<text><![CDATA[<b>Activity - EIGRP Packet Types</b><br/>Drag the EIGRP packet type to the appropriate definition.]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>EIGRP Packet Definition</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[<b>Packet Type</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+	<text><![CDATA[Used to form neighbor adjacencies.]]></text>
+</component>
+
+<component id="ID_txt04">
+	<text><![CDATA[Confirms the receipt of an EIGRP packet.]]></text>
+</component>
+
+<component id="ID_txt05">
+	<text><![CDATA[Sent to neighbors when an alternative route to a network is required.]]></text>
+</component>
+
+<component id="ID_txt06">
+	<text><![CDATA[Provides DUAL with requested network information.]]></text>
+</component>
+
+<component id="ID_txt07">
+	<text><![CDATA[Unicasts information about a network to a new neighbor.]]></text>
+</component>
+
+
+
+<component id='ID_drag01'>
+	<text><![CDATA[Acknowledgment<br>Packet]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[Hello Packet]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[Update Packet]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[Reply Packet]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[Query Packet]]></text>
+</component>
+
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each EIGRP packet type to its definition.]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each EIGRP packet type to its definition. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

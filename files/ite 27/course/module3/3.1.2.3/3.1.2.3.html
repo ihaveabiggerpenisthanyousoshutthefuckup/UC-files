@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.3 Spanning Tree Algorithm: Root Bridge</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Spanning Tree Algorithm: Root Bridge</h1>
+        <div>
+          <p>As shown in Figure 1, every spanning tree instance (switched LAN or broadcast domain) has a switch designated as the root bridge. The root bridge serves as a reference point for all spanning tree calculations to determine which redundant paths to block.</p>
+          <p></p>
+          <p>An election process determines which switch becomes the root bridge. </p>
+          <p></p>
+          <p>Figure 2 shows the BID fields. The BID is made up of a priority value, an extended system ID, and the MAC address of the switch. The bridge priority value is automatically assigned, but can be modified. The extended system ID is used to specify a VLAN ID or a multiple spanning tree protocol (MSTP) instance ID. The MAC address field initially contains the MAC address of the sending switch.</p>
+          <p></p>
+          <p>All switches in the broadcast domain participate in the election process. After a switch boots, it begins to send out BPDU frames every two seconds. These BPDUs contain the switch BID and the root ID. </p>
+          <p></p>
+          <p>The switch with the lowest BID will become the root bridge. At first, all switches declare themselves as the root bridge. Eventually, the switches exchange BPDUs, and agree on one root bridge.</p>
+          <p></p>
+          <p>As the switches forward their BPDU frames, adjacent switches in the broadcast domain read the root ID information from the BPDU frames. If the root ID from a BPDU received is lower than the root ID on the receiving switch, then the receiving switch updates its root ID, identifying the adjacent switch as the root bridge. However, it may not be an adjacent switch. It could be any other switch in the broadcast domain. The switch then forwards new BPDU frames with the lower root ID to the other adjacent switches. Eventually, the switch with the lowest BID ends up being identified as the root bridge for the spanning tree instance.</p>
+          <p></p>
+          <p>There is a root bridge elected for each spanning tree instance. It is possible to have multiple distinct root bridges for different sets of VLANs. If all ports on all switches are members of VLAN 1, then there is only one spanning tree instance. The extended system ID includes the VLAN ID, and plays a role in how spanning tree instances are determined.</p>
+          <p></p>
+          <p>The BID consists of a configurable bridge priority number and a MAC address. Bridge priority is a value between 0 and 65,535. The default is 32,768. If two or more switches have the same priority, the switch with the lowest MAC address will become the root bridge. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The reason the bridge priority value in Figure 1 displays 32,769 instead of the default value of 32,768 is because STA algorithm also adds the default VLAN number (VLAN 1) to the priority value. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three switches, s.1, s.2, and s.3.  Each is connected to the other two with a trunk link.  S.2 has P.C.1, P.C.2, and P.C.3 connected.  S.1 has P.C.4 connected.  Each switch shows the bridge I.D., priority, and Mac address.  Switch 1 is noted as the root bridge due to the lowest priority value. Figure two shows the bridge I.D. fields.  These include priority, the extended system I.D., and the mac address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

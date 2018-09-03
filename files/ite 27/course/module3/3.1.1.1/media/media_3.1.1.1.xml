@@ -1,0 +1,64 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Redundancy in a Hierarchical Network</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Trunk1]]></text> 
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[Trunk2]]></text> 
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[Trunk3]]></text> 
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[PC1 is communicating with PC4 over Trunk1.]]></text> 
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[Trunk1 is broken between S2 and S1.]]></text> 
+</component>
+<component id="ID_s1_txt06">
+<text><![CDATA[S2 detects the broken connection and forwards the frame to S3.]]></text> 
+</component>
+<component id="ID_s1_txt07">
+<text><![CDATA[S2 detects the restored link and adjusts the path to PC4 accordingly.]]></text> 
+</component>
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+<!--slide 2-->
+<component id='ID_s2_boxTitle'>
+	<text><![CDATA[Considerations When Implementing Redundancy]]></text>
+</component>
+
+<component id="ID_s2_boxBody">
+<text><![CDATA[<textformat blockIndent="-14"><ul><li><b>MAC database instability</b> - Instability in the content of the MAC address table results from copies of the same frame being received on different ports of the switch. Data forwarding can be impaired when the switch consumes the resources that are coping with instability in the MAC address table.</li><br/><li><b>Broadcast storms</b> - Without some loop-avoidance process, each switch may flood broadcasts endlessly. This situation is commonly called a broadcast storm.</li><br/><li><b>Multiple frame transmission</b> - Multiple copies of unicast frames may be delivered to destination stations. Many protocols expect to receive only a single copy of each transmission. Multiple copies of the same frame can cause unrecoverable errors.</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

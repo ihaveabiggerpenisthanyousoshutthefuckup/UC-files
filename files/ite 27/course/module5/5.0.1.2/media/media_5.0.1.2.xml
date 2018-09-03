@@ -1,0 +1,6 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[The best routing path may be found by using a dynamic routing protocol and the metrics used by that protocol.<br/><br/>Some metrics used include:<textformat blockindent="-14"><ul><li>Bandwidth</li><li>Cost</li><li>Delay</li><li>Hops</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

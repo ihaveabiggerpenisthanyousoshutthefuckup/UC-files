@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.9 Changing the OSPF Priority</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.9_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Changing the OSPF Priority</h1>
+        <div>
+          <p>In the topology in Figure 1, R3 is the DR and R2 is the BDR. It has been decided that:</p>
+          <p>
+            <ul>
+              <li>R1 should be the DR and will be configured with a priority of 255.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 should be the BDR and will be left with the default priority of 1.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R3 should never be a DR or BDR and will be configured with a priority of 0.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 changes the R1 interface Gigabit 0/0 priority from 1 to 255. </p>
+          <p></p>
+          <p>Figure 3 changes the R3 interface Gigabit 0/0 priority from 1 to 0. </p>
+          <p></p>
+          <p>The changes do not automatically take effect because the DR and BDR are already elected. Therefore, the OSPF election must be negotiated using one of the following methods:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Shutdown the router interfaces and then re-enable them starting with the DR, then the BDR, and then all other routers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Reset the OSPF process using the<b> clear ip ospf process </b>privileged EXEC mode command on all routers.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 4 displays how to clear the OSPF process on R1. Assume that the<b> clear ip ospf process </b>privileged EXEC mode command has been also been configured on R2 and R3. Notice the OSPF state information generated.</p>
+          <p></p>
+          <p>The output displayed in Figure 5 confirms that R1 is now the DR with a priority of 255 and identifies the new neighbor adjacencies of R1. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 6 to verify the role and adjacencies of R2 and R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three routers connected to a switch.  Router one, router two (the B. D. R.), and router three (the D. R.).Figure two shows the syntax for configuring the interface o. s. p. f. priority on router one to two hundred and fifty five. Figure three shows the syntax for configuring the interface o. s. p. f. priority on router three to zero. Figure four shows the syntax for clearing the o. s. p. f. process. Figure five shows the output from the "show i. p. o. s. p. f. interface gig zero slash zero" command on router one indicating that it is the D. R.  Below that, is the output from the "show i. p. o. s. p. f. neighbor" command. Figure six is an interactive activity that allows the learner to practice using the "show i. p. o. s. p. f. interface" and "show i. p. o. s. p. f. neighbor" commands.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

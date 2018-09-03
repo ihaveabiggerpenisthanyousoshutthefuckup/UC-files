@@ -1,0 +1,63 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>DUAL Finite State Machine</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[Lost connectivity to successor.]]></text>
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[Promote to successor.]]></text> 
+</component>
+
+<component id="ID_txt03">
+	<text><![CDATA[Yes]]></text> 
+</component>
+
+<component id="ID_txt04">
+	<text><![CDATA[Feasible successor?]]></text> 
+</component>
+  
+<component id="ID_txt05">
+	<text><![CDATA[No]]></text> 
+</component>
+
+<component id="ID_txt06">
+	<text><![CDATA[Place destination network in active state.]]></text> 
+</component>
+
+<component id="ID_txt07">
+	<text><![CDATA[Install successor(s) in routing table.]]></text> 
+</component>
+
+<component id="ID_txt08">
+	<text><![CDATA[Select new successor.]]></text> 
+</component>
+
+<component id="ID_txt09">
+	<text><![CDATA[Yes]]></text> 
+</component>
+
+<component id="ID_txt10">
+	<text><![CDATA[Neighbor has one or more routes?]]></text> 
+</component>
+
+<component id="ID_txt11">
+	<text><![CDATA[Query neighbors for new route.]]></text> 
+</component>
+
+<component id="ID_txt12">
+	<text><![CDATA[No]]></text> 
+</component>
+
+<component id="ID_txt13">
+	<text><![CDATA[Install feasible successor(s), if any, in topology table.]]></text> 
+</component>
+
+<component id="ID_txt14">
+	<text><![CDATA[Remove destination network from topology and routing tables.]]></text> 
+</component>
+
+</textcomponents>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.1 Switch Stacking Concepts</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Switch Stacking Concepts</h1>
+        <div>
+          <p>A switch stack can consist of up to nine Catalyst 3750 switches connected through their StackWise ports. One of the switches controls the operation of the stack and is called the stack master. The stack master and the other switches in the stack are stack members. Layer 2 and Layer 3 protocols present the entire switch stack as a single entity to the network. Figure 1 shows the backplane of four Catalyst 3750 switches and how they are connected in a stack.</p>
+          <p></p>
+          <p>Every member is uniquely identified by its own stack member number. All members are eligible masters. If the master becomes unavailable, there is an automatic process to elect a new master from the remaining stack members. One of the factors is the stack member priority value. The switch with the highest stack member priority value becomes the master.</p>
+          <p></p>
+          <p>One of the primary benefits of switch stacks is that you manage the stack through a single IP address. The IP address is a system-level setting and is not specific to the master or to any other member. You can manage the stack through the same IP address even if you remove the master or any other member from the stack.</p>
+          <p></p>
+          <p>The master contains the saved and running configuration files for the stack. Therefore, there is only one configuration file to manage and maintain. The configuration files include the system-level settings for the stack and the interface-level settings for each member. Each member has a current copy of these files for backup purposes.</p>
+          <p></p>
+          <p>The switch is managed as a single switch, including passwords, VLANs, and interfaces. Figure 2 shows the interfaces on a switch stack with four 52-port switches. Notice the first number after the interface type is the stack member number.</p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p>.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>What is RSTP?</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[Root Port (F)]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Designated Port (F)]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Root Bridge</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+<text><![CDATA[Designated Port (F)]]></text>
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[Designated Port (F)]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Alternate Port (DIS)]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Root Port (F)]]></text> 
+  </component>
+
+
+</textcomponents>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.6 Verifying Auto-Summary: Routing Table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Auto-Summary: Routing Table</h1>
+        <div>
+          <p>Examine the routing table to verify that the summarized route was received.</p>
+          <p></p>
+          <p>In the top portion of Figure 1, R3’s routing table is displayed before automatic summarization is enabled. In the bottom portion of the figure, the same routing table is displayed after summarization is enabled using the<b> auto-summary </b>command. Notice that with automatic summarization enabled, R3’s routing table now only contains the single class B network address 172.16.0.0/16. The successor or next-hop router is R1 via 192.168.10.5.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Automatic summarization is only an option with EIGRP for IPv4. Classful addressing does not exist in IPv6; therefore, there is no need for automatic summarization with EIGRP for IPv6.</p>
+          <p></p>
+          <p>A problem associated with automatic route summarization is that a summary address also advertises networks which are not available on the advertising router. For instance, R1 is advertising the summary address of 172.16.0.0/16 but it is really only connected to the 172.16.1.0/24, 172.16.2.0/24, and 172.16.3.0/30 subnets. Therefore, R1 may receive incoming packets to destinations that do not exist. This could be a problem if R1 had a default gateway configured, as it would in turn forward a request to a destination that does not exist.</p>
+          <p></p>
+          <p>EIGRP avoids this problem by adding a network route for the classful network route to the routing table. This network entry routes packets to a Null interface. The Null0 interface, commonly known as "the bit bucket", is a virtual IOS interface that is a route to nowhere. Packets that match a route with a Null0 exit interface are discarded. </p>
+          <p></p>
+          <p>Figure 2 displays the routing table of R1. Notice the two highlighted entries are summary routes for 172.16.0.0/16 and 192.168.10.0/24 to Null0. If R1 receives a packet destined to a network that is advertised by the classful mask but does not exist, it will discard the packet and send a notification message back to the source. </p>
+          <p></p>
+          <p>EIGRP for IPv4 automatically includes a Null0 summary route whenever the following conditions exist:</p>
+          <p>
+            <ul>
+              <li>Automatic summarization is enabled.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>There is at least one subnet that was learned via EIGRP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>There are two or more<b> network </b>EIGRP router configuration mode commands.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show i. p. route e. i. g. r. p." command on router three.  The output is shown once with automatic summarization enabled and once with it disabled.  Figure two shows the output from the "shoe i. p. route" command on router one demonstrating the use of the null zero interface in e. i. g. r. p..</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

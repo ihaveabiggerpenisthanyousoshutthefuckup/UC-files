@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.3 EIGRP Interfaces</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Interfaces</h1>
+        <div>
+          <p>In addition to verifying the autonomous system number, it is necessary to verify that all interfaces are participating in the EIGRP network. The<b> network </b>command that is configured under the EIGRP routing process indicates which router interfaces participates in EIGRP. This command is applied to the classful network address of the interface or to a subnet when the wildcard mask is included. </p>
+          <p></p>
+          <p>In Figure 1, the<b> show ip eigrp interfaces </b>command displays which interfaces are enabled for EIGRP on R1. If connected interfaces are not enabled for EIGRP, then neighbors do not form an adjacency.</p>
+          <p></p>
+          <p>In Figure 2, the "Routing for Networks" section of the<b> show ip protocols </b>command indicates which networks have been configured; any interfaces in those networks participate in EIGRP.</p>
+          <p></p>
+          <p>If the network is not present in this section, use<b> show running-config </b>to ensure that the proper<b> network </b>command was configured.</p>
+          <p></p>
+          <p>In Figure 3, the output from the<b> show running-config </b>command confirms that any interfaces with these addresses, or a subnet of these addresses, are enabled for EIGRP.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Similar commands and troubleshooting criteria also apply to EIGRP for IPv6.</p>
+          <p></p>
+          <p>The following are the equivalent commands used with EIGRP for IPv6:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 protocols </b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 eigrp interfaces</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a router with two serial cables connected. The output from the "show i. p. e. i. g. r. p. interfaces" command from router one is listed. Figure two shows the output from the "show i. p. protocols" command demonstrating which networks e. i. g. r. p. is routing for. Figure three shows the output from the "show running dash config" command demonstrating which networks e. i. g. r. p. is including.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

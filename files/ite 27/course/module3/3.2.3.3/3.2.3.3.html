@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.3.3 Edge Ports</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Edge Ports</h1>
+        <div>
+          <p>An RSTP edge port is a switch port that is never intended to be connected to another switch. It immediately transitions to the forwarding state when enabled. </p>
+          <p></p>
+          <p>The RSTP edge port concept corresponds to the PVST+ PortFast feature. An edge port is directly connected to an end station and assumes that no switch device is connected to it. RSTP edge ports should immediately transition to the forwarding state, thereby skipping the time-consuming original 802.1D listening and learning port states. </p>
+          <p></p>
+          <p>The Cisco RSTP implementation (Rapid PVST+) maintains the PortFast keyword, using the spanning-tree portfast command for edge port configuration. This makes the transition from STP to RSTP seamless. </p>
+          <p></p>
+          <p>Figure 1 shows examples of ports that can be configured as edge ports. Figure 2 shows examples of ports that are non-edge ports.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Configuring an edge port to be attached to another switch is not recommended. This can have negative implications for RSTP because a temporary loop may result, possibly delaying the convergence of RSTP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three switches inter-connected with a forth switch connected to switch 1.  There are three P.C.'s connected to switch 2, and the ports they connect to on switch 2 are highlighted.  There is a router connected to switch 4 and the port it connects to is highlighted.  These highlighted ports are known as edge ports. Figure two shows three switches inter-connected with a forth switch connected to switch 1.  The ports on the links between the switches are highlighted.  These ports are non-edge ports.  These are typically trunk links, and b.p.d.u.'s travel on these links between the switches.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

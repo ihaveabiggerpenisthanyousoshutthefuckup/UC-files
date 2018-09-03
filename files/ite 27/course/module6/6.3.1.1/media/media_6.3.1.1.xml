@@ -1,0 +1,36 @@
+	<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>Discovering Neighbors</b>]]></text> 
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Updated</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Updated</b>]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[R1 EIGRP Neighbor Table]]></text> 
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[R2 EIGRP Neighbor Table]]></text> 
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[Hello, I am Router R1. Is anyone there?]]></text> 
+</component>
+<component id="ID_txt06">
+  <text><![CDATA[Here is all my routing information.]]></text> 
+</component>
+<component id="ID_txt07">
+  <text><![CDATA[Hello, I am Router R2. Is anyone there? ]]></text> 
+</component>
+<component id="ID_txt08">
+  <text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+<component id="ID_txt09">
+  <text><![CDATA[<b>Update</b>]]></text> 
+</component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+</textcomponents>

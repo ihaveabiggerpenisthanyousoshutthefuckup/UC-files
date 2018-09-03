@@ -1,0 +1,25 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt03{
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 3px 0px #000000;
+    -moz-box-shadow: 0 0 3px 0px #000000;
+    box-shadow: 0 0 3px 0px #000000;
+    padding:4px;
+}
+/*html, body {
+	margin:0;
+	height:100%;
+	
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+#ID_router_txt1
+{
+padding-left:4px !important;	
+}*/

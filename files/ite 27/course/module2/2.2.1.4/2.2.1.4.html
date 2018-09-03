@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.4 Interface Issues</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Interface Issues</h1>
+        <div>
+          <p>When enabling inter-VLAN routing on a router, one of the most common configuration errors is to connect the physical router interface to the wrong switch port. This places the router interface in the incorrect VLAN and prevents it from reaching the other devices within the same subnet. </p>
+          <p></p>
+          <p>As shown in the figure, router R1 interface G0/0 is connected to switch S1 port F0/9. Switch port F0/9 is configured for the default VLAN, not VLAN 10. This prevents PC1 from being able to communicate with its default gateway, the router interface. Therefore, the PC is unable to communicate with any other VLANs such as VLAN 30.</p>
+          <p></p>
+          <p>To correct this problem, physically connect the router R1 interface G0/0 to switch S1 port F0/4. This puts the router interface in the correct VLAN and allows inter-VLAN routing. Alternately, change the VLAN assignment of switch port F0/9 to VLAN 10. This also allows PC1 to communicate with router R1 interface G0/0.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure demonstrates a configuration issue pertaining to a switchport incorrectly configured as a default V.lan in a legacy inter-v.lan routing topology.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

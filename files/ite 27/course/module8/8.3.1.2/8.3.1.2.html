@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.1.2 Similarities Between OSPFv2 to OSPFv3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Similarities Between OSPFv2 to OSPFv3</h1>
+        <div>
+          <p>As shown in the figure, the following are similarities between OSPFv2 and OSPFv3:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Link-state </b>- OSPFv2 and OSPFv3 are both classless link-state routing protocols.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Routing algorithm </b>- OSPFv2 and OSPFv3 use the SPF algorithm to make routing decisions.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Metric </b>- The RFCs for both OSPFv2 and OSPFv3 define the metric as the cost of sending packets out the interface. OSPFv2 and OSPFv3 can be modified using the<b> auto-cost reference-bandwidth </b><i>ref-bw </i>router configuration mode command. The command only influences the OSPF metric where it was configured. For example, if this command was entered for OSPFv3, it does not affect the OSPFv2 routing metrics.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Areas </b>- The concept of multiple areas in OSPFv3 is the same as in OSPFv2. Multiareas that minimize link-state flooding and provide better stability with the OSPF domain. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>OSPF packet types </b>- OSPFv3 uses the same five basic packet types as OSPFv2 (Hello, DBD, LSR, LSU, and LSAck).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Neighbor discovery mechanism </b>- The neighbor state machine, including the list of OSPF neighbor states and events, remains unchanged. OSPFv2 and OSPFv3 use the Hello mechanism to learn about neighboring routers and form adjacencies. However, in OSPFv3, there is no requirement for matching subnets to form neighbor adjacencies. This is because neighbor adjacencies are formed using IPv6 link-local addresses, not IPv6 global unicast addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DR/BDR election process </b>- The DR/BDR election process remains unchanged in OSPFv3.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Router ID </b>- Both OSPFv2 and OSPFv3 use a 32-bit number for the router ID represented in dotted-decimal notation. Typically this is an IPv4 address. The OSPF<b> router-id </b>command must be used to configure the router ID. The process in determining the 32-bit Router ID is the same in both protocols. Use an explicitly-configured router ID; otherwise, the highest loopback or configured active IPv4 address becomes the router ID.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure lists the similarities between O.S.P.F. version 2 and O.S.P.F. version 3.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

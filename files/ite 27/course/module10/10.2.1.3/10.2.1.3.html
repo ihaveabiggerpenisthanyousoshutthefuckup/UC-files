@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.1.3 OSPF Troubleshooting Commands </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Troubleshooting Commands </h1>
+        <div>
+          <p>There are many different OSPF commands that can be used to help in the troubleshooting process. The following summarizes the most common of these commands:</p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip protocols </b>(Figure 1) - Used to verify vital OSPFv2 configuration information, including the OSPFv2 process ID, the router ID, networks the router is advertising, the neighbors the router is receiving updates from, and the default administrative distance, which is 110 for OSPF.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip ospf neighbor </b>(Figure 2) - Used to verify that the router has formed an OSPFv2 adjacency with its neighboring routers. Displays the neighbor router ID, neighbor priority, OSPFv2 state, Dead timer, neighbor interface IPv4 address, and interface that the neighbor is accessible through. If the router ID of the neighboring router is not displayed, or if it does not show as a state of FULL or 2WAY, the two routers have not formed an OSPFv2 adjacency. If two routers do not establish adjacency, link-state information will not be exchanged. Incomplete link-state databases can cause inaccurate SPF trees and routing tables. Routes to destination networks may not exist or may not be the most optimum path.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip ospf interface </b>(Figure 3) - Used to display the OSPFv2 parameters configured on an interface, such as the OSPFv2 process ID that the interface is assigned to, the area that the interfaces are in, the cost of the interface, and the Hello and Dead intervals. Adding the interface name and number to the command displays output for a specific interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip ospf </b>(Figure 4) - Used to examine the OSPFv2 process ID and router ID. Additionally, this command displays the OSPFv2 area information, as well as the last time the SPF algorithm was calculated. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route ospf </b>(Figure 5) - Used to display only the OSPFv2 learned routes in the IPv4 routing table. The output shows that R1 has learned about four remote networks through OSPFv2.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>clear ip ospf </b>[<i>process-id</i>]<b> process </b>- Used to reset the OSPFv2 neighbor adjacencies.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: For the equivalent OSPFv3 command, simply substitute<b> ip </b>with<b> ipv6</b>.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show i. p. protocols" command on router one. Figure two shows the output from the "show i. p. o. s. p. f. neighbor" command on router one. Figure three shows the output from the "show i. p. o. s. p. f. interface serial zero slash zero slash zero" command on router one. Figure four shows the output from the "show i. p. o. s. p. f." command on router one. Figure five shows the output from the "show i. p. route o. s. p. f." command on router one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

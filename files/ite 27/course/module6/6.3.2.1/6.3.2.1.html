@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.1 EIGRP Composite Metric</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Composite Metric</h1>
+        <div>
+          <p>By default, EIGRP uses the following values in its composite metric to calculate the preferred path to a network:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Bandwidth </b>- The slowest bandwidth among all of the outgoing interfaces, along the path from source to destination. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Delay </b>- The cumulative (sum) of all interface delay along the path (in tens of microseconds).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The following values can be used, but are not recommended, because they typically result in frequent recalculation of the topology table:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Reliability </b>- Represents the worst reliability between the source and destination, which is based on keepalives.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Load </b>- Represents the worst load on a link between the source and destination, which is computed based on the packet rate and the configured bandwidth of the interface.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Although the MTU is included in the routing table updates, it is not a routing metric used by EIGRP. </p>
+          <p></p>
+          <p>
+            <b>The Composite Metric</b>
+          </p>
+          <p></p>
+          <p>Figure 1 shows the composite metric formula used by EIGRP. The formula consists of values K1 to K5, known as EIGRP metric weights. K1 and K3 represent bandwidth and delay, respectively. K2 represents load, and K4 and K5 represent reliability. By default, K1 and K3 are set to 1, and K2, K4, and K5 are set to 0. The result is that only the bandwidth and delay values are used in the computation of the default composite metric. EIGRP for IPv4 and EIGRP for IPv6 use the same formula for the composite metric.</p>
+          <p></p>
+          <p>The metric calculation method (<i>k</i> values) and the EIGRP autonomous system number must match between EIGRP neighbors. If they do not match, the routers do not form an adjacency.</p>
+          <p></p>
+          <p>The default <i>k</i> values can be changed with the<b> metric weights </b>router configuration mode command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-router)# </span>
+            <span class="cmd">
+              <b>metric weights</b>
+            </span>
+            <span class="cmd">
+              <b></b>
+            </span>
+            <span class="cmd">
+              <i>tos</i>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>k1 k2 k3 k4 k5</i>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Modifying the<b> metric weights </b>value is generally not recommended and beyond the scope of this course. However, its relevance is important in establishing neighbor adjacencies. If one router has modified the metric weights and another router has not, an adjacency does not form.</p>
+          <p></p>
+          <p>
+            <b>Verifying the </b>
+            <b>
+              <i>k</i>
+            </b>
+            <b> Values </b>
+          </p>
+          <p></p>
+          <p>The<b> show ip protocols </b>command is used to verify the <i>k</i> values. The command output for R1 is shown in Figure 2. Notice that the <i>k</i> values on R1 are set to the default. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the mathematical calculation of the e. i. g. r. p. metric.  The formula shows that when the k. values are at their default, parts of the equation are ignored and the default calculation is simply bandwidth plus delay.  The default values for k. 1 and k. 3 are one. The default values for k. 2, k. 4, and k. 5 are zero.  Below is the syntax for configuring the k. values under the e. i. g. r. p. routing configuration. Figure two shows the output of the "show i. p. protocols" command, highlighting the k. values.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

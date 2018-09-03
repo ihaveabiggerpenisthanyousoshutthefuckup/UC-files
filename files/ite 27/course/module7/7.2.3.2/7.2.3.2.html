@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.2 Missing Network Statement</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Missing Network Statement</h1>
+        <div>
+          <p>In Figure 1, R1’s GigabitEthernet 0/1 interface has just been configured with the 10.10.10.1/24 address and is active. R1 and R3 have an established EIGRP neighbor adjacency and are exchanging routing information. However, as shown in Figure 2, a ping test from the R3 router to a R1’s G0/1 interface of 10.10.10.1 is unsuccessful. </p>
+          <p></p>
+          <p>In Figure 3, the output of the<b> show ip protocols command </b>on the R1 router shows that the network 10.10.10.0/24 is not advertised to EIGRP neighbors. Therefore, network 10.10.10.0 must be advertised.</p>
+          <p></p>
+          <p>In Figure 4, R1’s EIGRP process is configured to include the advertisement of the classful 10.0.0.0 network.</p>
+          <p></p>
+          <p>Figure 5 confirms the addition of the 10.10.10.0/24 route in R3’s routing table. Reachability is verified and confirmed by pinging R1’s GigabitEthernet 0/1 interface.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Similar commands and troubleshooting criteria also apply to EIGRP for IPv6.</p>
+          <p></p>
+          <p>The following are the equivalent commands used with EIGRP for IPv6:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 protocols </b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 route</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>To add a missing network statement under IPv6, use the <b>ipv6 eigrp </b><i>autonomous-system</i> command in interface configuration mode: </p>
+          <p>Router(config-if)#<b> ipv6 eigrp </b><i>autonomous-system</i></p>
+          <p>
+            <b>Note</b>: Another form of missing route may result from the router filtering inbound or outbound routing updates. ACLs provide filtering for different protocols, and these ACLs may affect the exchange of routing protocol messages. This can cause routes to be absent from the routing table. Use the <b>show ip protocols </b>command to see if there are any ACLs that are applied to EIGRP. Applying filters to routing updates is beyond the scope of this curriculum.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows two routers connected with a serial cable.  Router one has two lans and router three has one lan. Figure two shows the output from the "ping" command on router three attempting to reach the ten network attached to router one.  This ping is unsuccessful. Figure three shows the output from the "show i. p. protocols" on router one. The output indicates that router one is not including the ten network in its e. i. g. r. p. updates. Figure four shows the syntax for adding the ten network to the e. i. g. r. p. configuration on router one. Figure five sows the output from the "show i. p. route" command on router one along with a successful ping to the ten network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

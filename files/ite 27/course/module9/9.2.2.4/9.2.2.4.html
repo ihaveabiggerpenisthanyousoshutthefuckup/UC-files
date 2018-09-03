@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.4 Verify the Multiarea OSPFv2 LSDB</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify the Multiarea OSPFv2 LSDB</h1>
+        <div>
+          <p>Use the<b> show ip ospf </b>database command to verify the contents of the OSPFv2 LSDB.</p>
+          <p></p>
+          <p>There are many command options available with the<b> show ip ospf database </b>command.</p>
+          <p></p>
+          <p>For example, Figure 1 displays the content of the LSDB of R1. Notice R1 has entries for area 0 and area 1, because ABRs must maintain a separate LSDB for each area to which they belong. In the output, Router Link States in area 0 identifies three routers. The Summary Net Link States section identifies networks learned from other areas and which neighbor advertised the network.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to verify the LSDB of R2 and R3 using the<b> show ip ospf database </b>command. R2 only has interfaces in area 0; therefore, only one LSDB is required. Like R1, R3 contains two LSDBs because it is an ABR.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output received from using the, show i.p. o.s.p.f. database command on a multi area o.s.p.f. router.  The router link states in the L.S.D.B. are highlighted. Figure two is an interactive activity that allows the learner to practice using the show i.p. o.s.p.f. database command on two connected multi area O.S.P.F. routers.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

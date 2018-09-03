@@ -1,0 +1,110 @@
+﻿<textcomponents>
+
+    
+
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity - Determine the Successor and the Feasible Successor Network Topology</b><br><br>Use the network topology as a reference for determining the EIGRP successor and feasible successor in each of the scenarios. Click Button 2 to get started.]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>EIGRP Routing Domain</b>]]></text>
+</component>
+
+
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity - Scenario 1: Determine the Feasible Successor</b><br><br>Determine the successor and feasible successor routes for R2 by dragging the successor and feasible successor labels to the appropriate fields in the topology. Click Button 1 to review. Click Button 3 to continue this activity.]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s2_traget01'>
+	<text><![CDATA[<font color="#393536">Successor</font>]]></text>
+</component>
+
+<component id='ID_s2_traget02'>
+	<text><![CDATA[<font color="#393536"><span style="padding-left:5px;">Feasible Successor</span></font>]]></text>
+</component>
+
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the successor and the feasible successor routes for R2. Click Button 3 to continue.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the successor and the feasible successor routes for R2. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<!--slide03-->
+<component id='ID_s3_inst'>
+	<text><![CDATA[<b>Activity - Scenario 2: Determine the Successor and the Feasible Successor</b><br/><br/>Determine the successor and feasible successor routes for R1 by dragging the successor and feasible successor labels to the appropriate fields in the topology. Click Button 1 to review the topology.
+]]></text>
+</component>
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s3_traget01'>
+	<text><![CDATA[<font color="#393536">Successor</font>]]></text>
+</component>
+
+<component id='ID_s3_traget02'>
+	<text><![CDATA[<font color="#393536"><span style="padding-left:5px;">Feasible Successor</span></font>]]></text>
+</component>
+
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the successor and the feasible successor routes for R1. ]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the successor and the feasible successor routes for R1. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+</textcomponents>

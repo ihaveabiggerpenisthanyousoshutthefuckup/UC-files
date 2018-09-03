@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.2 Challenges in Multiaccess Networks</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Challenges in Multiaccess Networks</h1>
+        <div>
+          <p>Multiaccess networks can create two challenges for OSPF regarding the flooding of LSAs:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Creation of multiple adjacencies </b>- Ethernet networks could potentially interconnect many OSPF routers over a common link. Creating adjacencies with every router is unnecessary and undesirable. This would lead to an excessive number of LSAs exchanged between routers on the same network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Extensive flooding of LSAs </b>- Link-state routers flood their link-state packets when OSPF is initialized, or when there is a change in the topology. This flooding can become excessive.  </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The following formula can be used to calculate the number of required adjacencies. The number of adjacencies required for any number of routers (designated as <i>n</i>) on a multiaccess network is:</p>
+          <p></p>
+          <p>
+            <i>n</i> (<i>n</i> – 1) / 2 </p>
+          <p></p>
+          <p>Figure 1 shows a simple topology of four routers, all of which are attached to the same multiaccess Ethernet network. Without some type of mechanism to reduce the number of adjacencies, collectively these routers would form six adjacencies: 4 (4 - 1) / 2 = 6, as shown in Figure 2. Figure 3 shows that as routers are added to the network, the number of adjacencies increases dramatically.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows four routers connected to a switch. Figure two shows four routers connected to a switch with arrows between each switch and every other switch. Figure three shows a table matching a few numbers of routers with the corresponding number of adjacencies formed.  As the number of routers grows the number of adjacencies grows exponentially.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

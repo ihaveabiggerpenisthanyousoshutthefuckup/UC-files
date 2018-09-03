@@ -1,0 +1,26 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>A Sampling of Cisco Routers</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[<b>800 Series</b><br/>Small branch office routers]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[<b>2900 Series</b><br/>Large branch office routers]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[<b>2000 Series</b><br/>Industrial routers designed to operate in harsh, rugged environments]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[<b>ASR 1000 Series</b><br/>Aggregation Services Routers for the enterprise network edge]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[<b>Cisco CRS</b><br/>Cisco Carrier Routing System for data centers and service providers]]></text>
+</component>
+
+</textcomponents>

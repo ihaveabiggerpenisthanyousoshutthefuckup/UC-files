@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.1 Verifying EtherChannel</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying EtherChannel</h1>
+        <div>
+          <p>There are a number of commands to verify an EtherChannel configuration. First, the<b> show interfaces port-channel </b>command displays the general status of the port channel interface. In Figure 1, the Port Channel 1 interface is up.</p>
+          <p></p>
+          <p>When several port channel interfaces are configured on the same device, use the<b> show etherchannel summary </b>command to simply display one line of information per port channel. In Figure 2, the switch has one EtherChannel configured; group 1 uses LACP. </p>
+          <p></p>
+          <p>The interface bundle consists of the FastEthernet0/1 and FastEthernet0/2 interfaces. The group is a Layer 2 EtherChannel and it is in use, as indicated by the letters SU next to the port channel number.</p>
+          <p></p>
+          <p>Use the<b> show etherchannel port-channel </b>command to display information about a specific port channel interface, as shown in Figure 3. In the example, the Port Channel 1 interface consists of two physical interfaces, FastEthernet0/1 and FastEthernet0/2. It uses LACP in active mode. It is properly connected to another switch with a compatible configuration, which is why the port channel is said to be in use.</p>
+          <p></p>
+          <p>On any physical interface member of an EtherChannel bundle, the<b> show interfaces etherchannel </b>command can provide information about the role of the interface in the EtherChannel, as shown in Figure 4. The interface FastEthernet0/1 is part of the EtherChannel bundle 1. The protocol for this EtherChannel is LACP.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 5 to verify EtherChannel on switch S1. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show interface port hyphen channel 1.  This command displays status information regarding the ether channel. Figure two shows the output from the command, show ether channel summary.  This command displays one line of information per port channel when several port channel interfaces are configured on the same device. Figure three shows the output from the command, show ether channel port hyphen channel.  This command displays information about a specific port channel interface. The figure highlights the protocol and the ports configured in the specified port channel. Figure four shows the output from the command, show interfaces f zero slash one ether channel.  This command displays information about the role of the specified interface in the Ether Channel. The figure is highlighting various ether channel information, such as the port state and the partner port information. Figure five is an interactive activity that allows the learner to run show commands to display status information regarding ether channels on a switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

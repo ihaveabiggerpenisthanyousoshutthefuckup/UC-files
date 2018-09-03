@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <!-- Slide 1-->
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="TEXT" id="ID_static_1" text="F0/1" x="297" y="171" align="center" width="22" />
+        <element type="TEXT" id="ID_static_2" text="F0/2" x="364" y="171" align="center" width="23" />
+        <element type="TEXT" id="ID_static_3" text="F0/2" x="262" y="186" align="center" width="23" />
+        <element type="TEXT" id="ID_static_4" text="F0/1" x="424" y="186" align="center" width="22" />
+        <element type="TEXT" id="ID_static_5" text="F0/2" x="310" y="258" align="center" width="23" />
+        <element type="TEXT" id="ID_static_6" text="F0/1" x="372" y="258" align="center" width="22" />
+        <element type="TEXT" compId="ID_s0_txt10" x="399" y="128" width="68" expand="up" align="center" />
+        <element type="TEXT" compId="ID_s0_txt04" x="17" y="140" width="190" expand="up" align="left" />
+        <element type="TEXT" compId="ID_s0_txt07" x="475" y="140" width="190" expand="up" align="left" />
+        <element type="TEXT" compId="ID_s0_txt01" x="308" y="133" width="89" expand="up" align="center" color="#652c8a" bold="1"/>
+        <element type="TEXT" compId="ID_s0_txt03" x="405" y="218" width="84" expand="right" align="left" color="#652c8a" bold="1"/>
+        <element type="TEXT" compId="ID_s0_txt02" x="222" y="218" width="80" expand="left" align="right" color="#652c8a" bold="1"/>
+        <element type="TEXT" compId="ID_s0_txt05" x="17" y="163" width="190" expand="down" align="left" />
+        <element type="TEXT" compId="ID_s0_txt08" x="475" y="163" width="190" expand="down" align="left" />
+        <element type="TEXT" compId="ID_s0_txt06" x="105" y="278" width="190" expand="down" align="left" />
+        <element type="TEXT" compId="ID_s0_txt09" x="400" y="278" width="190" expand="down" align="left" />
+        <element type="TEXT" subType="TITLE" compId="ID_s0_title" />
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.png"/>
+            <element type="TEXT" compId="ID_s1_caption" x="40" y="435" width="603" expand="up" align="left" />
+        </slide>
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.A.png"/>
+            <element type="TEXT" compId="ID_s2_caption" x="40" y="435" width="603" expand="up" align="left" />
+            <element type="TEXT" compId="ID_s2_txt01" x="172" y="239" width="134" expand="left" align="left" class="orangeCallOut" />
+            <element type="TEXT" id="ID_static_7" text="D" x="382" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_8" text="D" x="413" y="197" align="center" width="15" bold="1"/>
+        </slide>
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.B.png"/>
+            <element type="TEXT" compId="ID_s3_txt01" x="172" y="239" width="134" expand="left" align="left" class="orangeCallOut" />
+            <element type="TEXT" id="ID_static_9" text="R" x="302" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_10" text="D" x="382" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_11" text="D" x="413" y="197" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_12" text="R" x="377" y="245" align="center" width="15" bold="1"/>
+            <element type="TEXT" compId="ID_s3_caption" x="40" y="435" width="603" expand="up" align="left" />
+        </slide>
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.C.png"/>
+            <element type="TEXT" id="ID_static_13" text="R" x="302" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_14" text="D" x="382" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_15" text="?" x="280" y="197" align="center" width="14" bold="1"/>
+            <element type="TEXT" id="ID_static_16" text="D" x="413" y="197" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_17" text="?" x="312" y="245" align="center" width="14" bold="1"/>
+            <element type="TEXT" id="ID_static_18" text="R" x="377" y="245" align="center" width="15" bold="1"/>
+            <element type="TEXT" compId="ID_s4_caption" x="40" y="435" width="603" expand="up" align="left" />
+        </slide>
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.D.png"/>
+            <element type="TEXT" id="ID_static_19" text="R" x="312" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_20" text="D" x="382" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_21" text="D" x="413" y="197" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_22" text="R" x="377" y="245" align="center" width="15" bold="1"/>
+            <element type="TEXT" compId="ID_s5_caption" x="40" y="435" width="603" expand="up" align="left" />
+        </slide>
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.E.png"/>
+            <element type="TEXT" compId="ID_s6_txt01" x="172" y="239" width="134" expand="left" align="left" class="orangeCallOut" />
+            
+            <element type="TEXT" id="ID_static_23" text="R" x="302" y="154" align="center" width="15"  bold="1"/>
+            <element type="TEXT" id="ID_static_24" text="D" x="382" y="154" align="center" width="15"  bold="1"/>
+            <element type="TEXT" id="ID_static_25" text="A" x="280" y="197" align="center" width="16"  bold="1"/>
+            <element type="TEXT" id="ID_static_26" text="D" x="413" y="197" align="center" width="15"  bold="1"/>
+            <element type="TEXT" id="ID_static_27" text="R" x="377" y="245" align="center" width="15"  bold="1"/>
+            <element type="TEXT" compId="ID_s6_caption" x="40" y="435" width="603" expand="up" align="left" />
+        </slide>
+        <slide>
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.5.F.png"/>
+            <element type="TEXT" compId="ID_s7_txt01" x="148" y="239" width="134" expand="left" align="left" class="orangeCallOut" />
+            <element type="TEXT" id="ID_static_28" text="R" x="302" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_29" text="D" x="382" y="154" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_30" text="A" x="280" y="197" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_31" text="D" x="413" y="197" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_32" text="D" x="312" y="245" align="center" width="15" bold="1"/>
+            <element type="TEXT" id="ID_static_33" text="R" x="377" y="245" align="center" width="15" bold="1"/>
+            <element type="TEXT" compId="ID_s7_caption" x="40" y="435" width="603" expand="up" align="left" />
+        </slide>
+    </slide>
+</data>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.4.3 Common HSRP Configuration Issues </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Common HSRP Configuration Issues </h1>
+        <div>
+          <p>The <b>debug</b> commands on the previous page illustrate the expected operation of HSRP. You can also use the <b>debug</b> commands to detect common configuration issues:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The HSRP routers are not connected to the same network segment. Although this could be a physical layer issue, it could also be a VLAN subinterface configuration issue.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The HSRP routers are not configured with IPv4 addresses from the same subnet. HSRP hello packets are local. They are not routed beyond the network segment. Therefore, a standby router would not know when the active router fails.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The HSRP routers are not configured with the same virtual IPv4 address. The virtual IPv4 address is the default gateway for end devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The HSRP routers are not configured with the same HSRP group number. This will cause each router to assume the active role.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>End devices are not configured with the correct default gateway address. Although not directly related to HSRP, configuring the DHCP server with one of the HSRP router’s real IP addresses would mean that end devices would only have connectivity to remote networks when that HSRP router is active.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in the figure to practice troubleshooting HSRP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

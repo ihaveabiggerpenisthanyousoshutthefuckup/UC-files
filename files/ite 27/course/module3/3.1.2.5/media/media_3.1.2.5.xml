@@ -1,0 +1,105 @@
+<textcomponents>
+    <component id="ID_s0_title">
+        <text>
+            <![CDATA[<b>Port Role Decisions</b>]]></text>
+    </component>
+    <component id="ID_s0_txt01">
+        <text>
+            <![CDATA[Trunk3]]>
+        </text>
+    </component>
+    <component id="ID_s0_txt02">
+        <text>
+            <![CDATA[Trunk2]]>
+        </text>
+    </component>
+    <component id="ID_s0_txt03">
+        <text>
+            <![CDATA[Trunk1]]>
+        </text>
+    </component>
+    <component id="ID_s0_txt04">
+        <text>
+            <![CDATA[<b>F0/1</b><br/>Root ID = 24577.000A00333333<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+    </component>
+    <component id="ID_s0_txt05">
+        <text>
+            <![CDATA[<b>F0/2</b><br/>Root ID = 24577.000A00333333<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+    </component>
+    <component id="ID_s0_txt06">
+        <text>
+            <![CDATA[<b>F0/2</b><br/>Root ID = 24577.000A00333333<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+    </component>
+    <component id="ID_s0_txt07">
+        <text>
+            <![CDATA[<b>F0/1</b><br/>Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+    </component>
+    <component id="ID_s0_txt08">
+        <text>
+            <![CDATA[<b>F0/2</b><br/>Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+    </component>
+    <component id="ID_s0_txt09">
+        <text>
+            <![CDATA[<b>F0/1</b><br/>Root ID = 24577.000A00333333<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+    </component>
+    <component id="ID_s0_txt10">
+        <text>
+            <![CDATA[Root<br/>Bridge]]>
+        </text>
+    </component>
+    <component id="ID_s1_caption">
+        <text>
+            <![CDATA[Switch S1 has the lowest bridge priority and is therefore the root bridge.]]>
+        </text>
+    </component>
+    <component id="ID_s2_caption">
+        <text>
+            <![CDATA[Switch S1 configures both of its trunk ports as designated ports.]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[Designated Ports]]>
+        </text>
+    </component>
+    <component id="ID_s3_caption">
+        <text>
+            <![CDATA[Switch S2 configures port F0/1 as a root port.<br/>Switch S3 configures port F0/1 as a root port.]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[Root Ports]]>
+        </text>
+    </component>
+    <component id="ID_s4_caption">
+        <text>
+            <![CDATA[Switch S2 and switch S3 share a common LAN segment. They need to determine which switch has the lower BID to idenfify which switch can configure its port as a designated port.]]>
+        </text>
+    </component>
+    <component id="ID_s5_caption">
+        <text>
+            <![CDATA[Switch S2 and switch S3 exchange BDPU frames. Switch S3 identifies switch S2 as having a lower BID based on the lower MAC address of switch S2.]]>
+        </text>
+    </component>
+    <component id="ID_s6_caption">
+        <text>
+            <![CDATA[Switch S3 configures port F0/2 as an alternate port and enters the blocked state preventing the loop.]]>
+        </text>
+    </component>
+    <component id="ID_s6_txt01">
+        <text>
+            <![CDATA[Alternate Port]]>
+        </text>
+    </component>
+    <component id="ID_s7_caption">
+        <text>
+            <![CDATA[Since switch S2 had the lower BID, it configures its F0/2 port as a designated port to complete the spanning tree.]]>
+        </text>
+    </component>
+    <component id="ID_s7_txt01">
+        <text>
+            <![CDATA[Designated Port]]>
+        </text>
+    </component>
+</textcomponents>

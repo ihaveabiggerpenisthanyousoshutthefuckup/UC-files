@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.2 Verify General Multiarea OSPFv2 Settings</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify General Multiarea OSPFv2 Settings</h1>
+        <div>
+          <p>Use the<b> show ip protocols </b>command to verify the OSPFv2 status. The output of the command reveals which routing protocols are configured on a router. It also includes routing protocol specifics such as the router ID, number of areas in the router, and networks included within the routing protocol configuration. </p>
+          <p></p>
+          <p>Figure 1 displays the OSPFv2 settings of R1. Notice that the command shows there are two areas. The Routing for Networks section identifies the networks and their respective areas.</p>
+          <p></p>
+          <p>Use the<b> show ip ospf interface brief </b>command to display concise OSPFv2-related information of OSPFv2-enabled interfaces. This command reveals useful information, such as the OSPFv2 process ID that the interface is assigned to, the area that the interfaces are in, and the cost of the interface. </p>
+          <p></p>
+          <p>Figure 2 verifies the OSPFv2-enabled interfaces and the areas to which they belong.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to verify general settings on R2 and R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output received from using the show i.p. protocols command in a multi area O.S.P.F. network. The image highlights the number of areas the router belongs to and the networks that are being routed. Figure two shows the output of the, show i.p. o.s.p.f. interface brief command, and highlights the column displaying the areas in which each interface is connected. Figure three shows the output of using the, show i.p. protocols and the, show i.p. o.s.p.f. interface brief command on two routers connected in a multi area O.S.P.F. network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

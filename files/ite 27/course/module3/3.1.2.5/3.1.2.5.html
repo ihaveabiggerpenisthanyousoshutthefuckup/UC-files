@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.5 Port Role Decisions for RSTP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Port Role Decisions for RSTP</h1>
+        <div>
+          <p>In the example, switch S1 is the root bridge. Switches S2 and S3 have root ports configured for the ports connecting back to S1.</p>
+          <p></p>
+          <p>After STP has determined which switch port serves in the root port role on each switch, STP needs to decide which ports have the designated and alternate roles.</p>
+          <p></p>
+          <p>The root bridge automatically configures all of its switch ports in the designated role. Other switches in the topology configure their non-root ports as designated or alternate ports.</p>
+          <p></p>
+          <p>Designated ports are configured for all LAN segments. When two switches are connected to the same LAN segment, and root ports have already been defined, the two switches have to decide which port to configure as a designated port and which port remains the alternate port.</p>
+          <p></p>
+          <p>The switches on the LAN segment exchange BPDU frames, which contain the switch BID. Generally, the switch with the lower BID has its port configured as a designated port while the switch with the higher BID has its port configured as an alternate port. However, keep in mind that the first priority is the lowest path cost to the root bridge and that the sender’s BID is used only if the port costs are equal.</p>
+          <p></p>
+          <p>Each switch determines which port roles are assigned to each of its ports to create the loop-free spanning tree.</p>
+          <p></p>
+          <p>Figures 1 through 7 illustrate how port roles are determined.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

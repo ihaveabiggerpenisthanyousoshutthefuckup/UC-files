@@ -1,0 +1,46 @@
+<textcomponents> 
+
+<component id="ID_title">
+	<text><![CDATA[<b>Type 1 LSA Message Propagation</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Area 2</b>]]></text> 
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[]]></text> 
+</component>
+<component id="ID_txt06">
+  <text><![CDATA[]]></text> 
+</component>
+<component id="ID_txt07">
+  <text><![CDATA[Type 1]]></text> 
+</component>
+<component id="ID_txt08">
+  <text><![CDATA[Type 1]]></text> 
+</component>
+<component id="ID_txt09">
+  <text><![CDATA[Type 1]]></text> 
+</component>
+<component id="ID_txt10">
+  <text><![CDATA[Type 1]]></text> 
+</component>
+  
+  
+<component id="ID_Title_txt01">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_Body_txt01">
+<text><![CDATA[<textformat blockindent='-14'><ul><li>Type 1 LSAs include a list of directly connected network prefixes and link types.</li><li>All routers generate type 1 LSAs.</li><li>Type 1 LSAs are flooded within the area and do not propagate beyond an ABR.</li><li>A type 1 LSA link-state ID is identified by the router ID of the originating router.</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

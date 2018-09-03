@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.3 VTP Advertisements</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VTP Advertisements</h1>
+        <div>
+          <p>VTP includes three types of advertisements:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Summary advertisements</b> - These inform adjacent switches of VTP domain name and configuration revision number.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Advertisement request</b> - These are in response to a summary advertisement message when the summary advertisement contains a higher configuration revision number than the current value.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Subset advertisements </b>- These contain VLAN information including any changes.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>By default, Cisco switches issue summary advertisements every five minutes. Summary advertisements inform adjacent VTP switches of the current VTP domain name and the configuration revision number.</p>
+          <p></p>
+          <p>The configuration revision number is a 32-bit number that indicates the level of revision for a VTP packet. Each VTP device tracks the VTP configuration revision number that is assigned to it.</p>
+          <p></p>
+          <p>This information is used to determine whether the received information is more recent than the current version. Each time that you make a VLAN change in a VTP device, the configuration revision is incremented by one.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: To reset a configuration revision on a switch, change the VTP domain name, and then change the name back to the original name.</p>
+          <p></p>
+          <p>When the switch receives a summary advertisement packet, the switch compares the VTP domain name to its own VTP domain name. If the name is different, the switch simply ignores the packet. If the name is the same, the switch then compares the configuration revision to its own revision. If its own configuration revision number is higher or equal to the packet's configuration revision number, the packet is ignored. If its own configuration revision number is lower, an advertisement request is sent asking for the subset advertisement message.</p>
+          <p></p>
+          <p>The subset advertisement message contains the VLAN information with any changes. When you add, delete, or change a VLAN on the VTP server, the VTP server increments the configuration revision and issues a summary advertisement. One or several subset advertisements follow the summary advertisement containing the VLAN information including any changes. This process is shown in the figure.</p>
+          <p>.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows.the flow of VTP advertisements</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

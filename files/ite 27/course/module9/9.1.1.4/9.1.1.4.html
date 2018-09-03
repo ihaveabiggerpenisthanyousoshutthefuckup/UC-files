@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.1.1.4 Types of OSPF Routers</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Types of OSPF Routers</h1>
+        <div>
+          <p>OSPF routers of different types control the traffic that goes in and out of areas. The OSPF routers are categorized based on the function they perform in the routing domain.</p>
+          <p></p>
+          <p>There are four different types of OSPF routers: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Internal router </b>– This is a router that has all of its interfaces in the same area. All internal routers in an area have identical LSDBs (Figure 1).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Backbone router </b>– This is a router in the backbone area. The backbone area is set to area 0 (Figure 2).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Area Border Router</b>
+                <b>(ABR) </b>– This is a router that has interfaces attached to multiple areas. It must maintain separate LSDBs for each area it is connected to, and can route between areas. ABRs are exit points for the area, which means that routing information destined for another area can get there only via the ABR of the local area. ABRs can be configured to summarize the routing information from the LSDBs of their attached areas. ABRs distribute the routing information into the backbone. The backbone routers then forward the information to the other ABRs. In a multiarea network, an area can have one or more ABRs (Figure 3).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Autonomous System Boundary Router (ASBR) </b>– This is a router that has at least one interface attached to an external internetwork. An external network is a network that is not part of this OSPF routing domain. For example, a network connection to an ISP. An ASBR can import external network information to the OSPF network, and vice versa, using a process called route redistribution (Figure 4).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Redistribution in multiarea OSPF occurs when an ASBR connects different routing domains (e.g., EIGRP and OSPF) and configures them to exchange and advertise routing information between those routing domains. A static route, including a default route, can also be redistributed as an external route into the OSPF routing domain.</p>
+          <p></p>
+          <p>A router can be classified as more than one router type. For example, if a router connects to area 0 and area 1, and in addition maintains routing information for external networks, it falls under three different classifications: a backbone router, an ABR, and an ASBR.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a LAN with three areas; Area 1, Area 0, and Area 51. The routers contained within each of these areas are highlighted as Internal routers. Figure two shows that all routers contained within Area 0, and those connecting to other Areas, are known as backbone routers. Figure three shows that the routers that connect to other areas are known as area border routers (A.B.R.s).Figure four shows that the router connected between areas and connected to the internet is known as an autonomous system boundary router (A.S.B.R).</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

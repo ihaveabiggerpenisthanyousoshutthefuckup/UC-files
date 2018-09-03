@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.2 Features of OSPF</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Features of OSPF</h1>
+        <div>
+          <p>OSPF features, as shown in Figure 1, include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Classless </b>- OSPFv2 is classless by design; therefore, it supports IPv4 VLSM and CIDR.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Efficient </b>- Routing changes trigger routing updates (no periodic updates). It uses the SPF algorithm to choose the best path.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Fast convergence </b>- It quickly propagates network changes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Scalable </b>- It works well in small and large network sizes. Routers can be grouped into areas to support a hierarchical system. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Secure </b>- OSPFv2 supports Message Digest 5 (MD5) and Secure Hash Algorithm (SHA) authentication. OSPFv3 uses Internet Protocol Security (IPsec) to add authentication for OSPFv3 packets. When authentication is enabled, OSPF routers only accept encrypted routing updates from peers with the same pre-shared password.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Administrative distance (AD) is the trustworthiness (or preference) of the route source. OSPF has a default administrative distance of 110. As shown in Figure 2, OSPF has a lower number (making it a preferred routing protocol over IS-IS and RIP) on Cisco devices.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one lists the following features of O.S.P.F.: it is efficient, it has fast convergence, it is scalable, it is secure, and it is classless. Figure two is a table listing the administrative distances of routing protocols. The value of 110 for O.S.P.F. is highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

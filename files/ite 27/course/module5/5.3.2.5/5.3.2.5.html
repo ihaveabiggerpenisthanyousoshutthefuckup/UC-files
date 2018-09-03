@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.5 Flooding the LSP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Flooding the LSP</h1>
+        <div>
+          <p>The fourth step in the link-state routing process is that each router floods the LSP to all neighbors, who then store all LSPs received in a database.</p>
+          <p></p>
+          <p>Each router floods its link-state information to all other link-state routers in the routing area. Whenever a router receives an LSP from a neighboring router, it immediately sends that LSP out all other interfaces except the interface that received the LSP. This process creates a flooding effect of LSPs from all routers throughout the routing area.</p>
+          <p></p>
+          <p>Click <b>Play</b> in the figure to view an animation on LSP flooding.</p>
+          <p></p>
+          <p>In the animation, notice how the LSPs are flooded almost immediately after being received without any intermediate calculations. Link-state routing protocols calculate the SPF algorithm after the flooding is complete. As a result, link-state routing protocols reach convergence very quickly.</p>
+          <p></p>
+          <p>Remember that LSPs do not need to be sent periodically. An LSP only needs to be sent:</p>
+          <p>
+            <ul>
+              <li>During initial startup of the routing protocol process on that router (e.g., router restart)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Whenever there is a change in the topology (e.g., a link going down or coming up, a neighbor adjacency being established or broken)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In addition to the link-state information, other information is included in the LSP, such as sequence numbers and aging information, to help manage the flooding process. This information is used by each router to determine if it has already received the LSP from another router or if the LSP has newer information than what is already contained in the link-state database. This process allows a router to keep only the most current information in its link-state database.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows 4 routers in a diamond pattern. Each router is directly connected to its two neighboring routers.  There is one router in the middle, and it is connected to two of the other routers.  The figure is an animation that shows router R-1 sending out link state packets out all interfaces.  Each receiving router immediately flood the L.S.Ps. upon receiving them.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.4.1 HSRP Failure </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>HSRP Failure </h1>
+        <div>
+          <p>To troubleshoot HSRP, you need to understand the basic operation. Most issues will arise during one of the following HSRP functions:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Failing to successfully elect the active router that controls the virtual IP for the group.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Failure of the standby router to successfully keep track of the active router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Failing to determine when control of the virtual IP for the group should be handed over to another router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Failure of end devices to successfully configure the virtual IP address as the default gateway.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows four multi-layer switches and 2 access layer switches.  P.C. 1 is connected to one of the access switches.  Two of the multi-layer switches are behaving as routers.  The caption on the P.C. reads I cannot reach my default gateway.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

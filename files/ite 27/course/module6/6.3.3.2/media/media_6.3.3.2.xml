@@ -1,0 +1,77 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>DUAL</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+   <text><![CDATA[Update]]></text>
+   </component>
+
+   <component id="ID_txt02">
+   <text><![CDATA[Update]]></text>
+   </component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Ack]]></text>
+   </component>
+
+   <component id="ID_txt04">
+   <text><![CDATA[Ack]]></text>
+   </component>
+
+   <component id="ID_txt05">
+   <text><![CDATA[Query]]></text>
+   </component>
+
+   <component id="ID_txt06">
+   <text><![CDATA[Query]]></text>
+   </component>
+
+     <component id="ID_txt07">
+   <text><![CDATA[Reply]]></text>
+   </component>
+
+   <component id="ID_txt08">
+   <text><![CDATA[Reply]]></text>
+   </component>
+
+    <component id="ID_txt09">
+   <text><![CDATA[<b>DUAL</b>]]></text>
+   </component>
+
+
+    <component id="ID_txt10">
+   <text><![CDATA[<b>DUAL</b>]]></text>
+   </component>
+
+
+    <component id="ID_txt11">
+   <text><![CDATA[<b>DUAL</b>]]></text>
+   </component>
+   
+  <component id="end">
+	<text><![CDATA[End]]></text>
+	</component>
+	
+	<component id="fforward">
+	<text><![CDATA[Fast Forward]]></text>
+	</component>
+	
+	<component id="pause">
+	<text><![CDATA[Pause]]></text>
+	</component>
+	
+	<component id="play">
+	<text><![CDATA[Play]]></text>
+	</component>
+	
+	<component id="rewind">
+	<text><![CDATA[Rewind]]></text>
+	</component>
+	
+	<component id="start">
+	<text><![CDATA[Start]]></text>
+	</component>
+
+
+</textcomponents>

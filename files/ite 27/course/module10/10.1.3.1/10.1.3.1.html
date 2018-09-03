@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.3.1 OSPF Hello and Dead Intervals</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Hello and Dead Intervals</h1>
+        <div>
+          <p>The OSPF Hello and Dead intervals are configurable on a per-interface basis. The OSPF intervals must match or a neighbor adjacency does not occur.</p>
+          <p></p>
+          <p>To verify the currently configured OSPFv2 interface intervals, use the<b> show ip ospf interface </b>command, as shown in Figure 1. The Serial 0/0/0 Hello and Dead intervals are set to the default 10 seconds and 40 seconds respectively. </p>
+          <p></p>
+          <p>Figure 2 provides an example of using a filtering technique to display the OSPFv2 intervals for the OSPF enabled interface Serial 0/0/0 on R1. </p>
+          <p></p>
+          <p>In Figure 3, the<b> show ip ospf neighbor </b>command is used on R1 to verify that R1 is adjacent to R2 and R3. Notice in the output that the Dead Time is counting down from 40 seconds. By default, this value is refreshed every 10 seconds when R1 receives a Hello from the neighbor.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show i. p. o. s. p. f. interface serial zero slash zero slash zero" command.  The timers are highlighted. Figure two shows the output from the "show i. p. o. s. p. f. interface serial zero slash zero slash zero pipe include timer" command.  The hello and dead timers are highlighted. Figure three shows the output from the "show i. p. o. s. p. f. neighbors" command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

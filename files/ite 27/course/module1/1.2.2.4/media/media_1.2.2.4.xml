@@ -1,0 +1,80 @@
+<textcomponents>
+<component id='ID_title'>
+	<text><![CDATA[<b>Activity – Identify the Router Category</b>]]></text>
+</component>
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+<component id='ID_instr_body'>
+	<text><![CDATA[Match each router category to its description. Router categories may be used more than one time.]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Branch Routers</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Network Edge Routers</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">Service Provider Routers</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each router category to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each router category to its description. Please click<br> Reset </b>to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<component id='ID_target_header'>
+	<text><![CDATA[Router Category]]></text>
+</component>
+<component id='ID_text_header'>
+	<text><![CDATA[Router Descriptions]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[Fast performance with high security for data centers, campus,<br>and branch networks.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[End-to-end delivery of subscriber services.]]></text>
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[Simple network configuration and management for LANs and WANs.]]></text>
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[High capacity and scalability with hierarchical quality of service.]]></text>
+</component>   
+
+<component id="ID_txt05">
+  <text><![CDATA[Deliver next-generation Internet experiences across all devices<br>and locations.]]></text>
+</component>   
+</textcomponents>

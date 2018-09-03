@@ -1,0 +1,49 @@
+﻿<textcomponents>
+
+    <component id="ID_s1_title">
+        <text><![CDATA[<b>The VLAN Management Challenge</b>]]></text>
+    </component>
+ 
+    <component id="ID_s2_title">
+        <text><![CDATA[<b>VTP Components</b>]]></text>
+    </component>
+
+    <component id="ID_table01">
+    <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+    <tr>
+    <td bgcolor='#666263' width='138' valign="top"><font color='#ffffff'><b>VTP Components</b></font></td>
+    <td bgcolor='#666263' width='458' valign="top"><font color='#ffffff'><b>Definition</b></font></td>
+    </tr>
+
+    <tr>
+        <td bgcolor='#E9E7E8'>VTP Domain</td>
+        <td bgcolor='#E9E7E8'><textformat blockindent="-16"><ul><li>Consists of one or more interconnected switches.</li><li>All switches in a domain share VLAN configuration details using VTP advertisements.</li><li>Switches that are in different VTP domains do not exchange VTP messages.</li><li>A router or Layer 3 switch defines the boundary of each domain.</li></ul></textformat></td>
+    </tr>
+		
+    <tr>
+        <td bgcolor='#F2F2F2'>VTP Advertisements</td>
+        <td bgcolor='#F2F2F2'><textformat blockindent="-16"><ul><li>Each switch in the VTP domain sends periodic global configuration advertisements from each trunk port to a reserved multicast address.</li><li>Neighboring switches receive these advertisements and update their VTP and VLAN configurations as necessary.</li></ul></textformat></td>
+    </tr>
+
+    <tr>
+        <td bgcolor='#E9E7E8'>VTP Modes</td>
+        <td bgcolor='#E9E7E8'>A switch can be configured in one of three VTP modes: server, client, or transparent.</td>
+    </tr>
+
+    <tr>
+        <td bgcolor='#F2F2F2'>VTP Password</td>
+        <td bgcolor='#F2F2F2'>Switches in the VTP domain can be also be configured with a password.</td>
+    </tr>
+
+</table>]]></text>
+    </component>
+	
+	<component id="ID_s2_txt01">
+        <text><![CDATA[<b>Note:</b> VTP advertisements will not be exchanged if the trunk between the switches is inactive or if the trunk is misconfigured.]]></text>
+    </component>
+
+</textcomponents>

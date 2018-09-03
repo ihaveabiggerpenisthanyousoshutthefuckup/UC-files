@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide type="MBAR">
+<slide>
+<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_photo.jpg" />
+<element type="IMAGE" x="40" y="101" width="600" height="272" subType="STD" src="media_3.3.4.1.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#fff"/>
+</slide>
+
+<slide>
+<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+
+<element type="TEXT" compId="ID_s2_txt01" x="1321" y="215" width="301" expand="right" align="left" size="10" />
+<element type="TEXT" compId="ID_s2_txt02" x="1321" y="328" width="301" expand="right" align="left" size="10" />
+<element type="TEXT" compId="ID_s2_txt03" x="1321" y="443" width="301" expand="right" align="left" size="10" />
+<element type="TEXT" compId="ID_s2_txt04" x="681" y="556" width="301" expand="right" align="left" size="10" />
+
+<element type="TEXT" compId="ID_s2_txt01" x="803" y="126" width="105" expand="right" align="left" size="10" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt02" x="802" y="237" width="105" expand="right" align="left" size="10" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt03" x="802" y="347" width="105" expand="right" align="left" size="10" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt04" x="802" y="464" width="105" expand="right" align="left" size="10" color="#ffffff" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#fff"/>
+</slide>
+</slide>
+
+<text id="ID_router_txt1"><![CDATA[<pre>
+Switch#<b> show running-config | begin interface</b>  
+interface GigabitEthernet1/0/1
+!
+interface GigabitEthernet1/0/2
+!
+interface GigabitEthernet1/0/3
+!
+&lt;output omitted&gt;
+!
+interface GigabitEthernet1/0/52
+!
+interface GigabitEthernet2/0/1
+!
+interface GigabitEthernet2/0/2
+!
+&lt;output omitted&gt;
+!
+interface GigabitEthernet2/0/52
+!
+interface GigabitEthernet3/0/1
+!
+interface GigabitEthernet3/0/2
+!
+&lt;output omitted&gt;
+!
+interface GigabitEthernet3/0/52
+!
+interface GigabitEthernet4/0/1
+!
+interface GigabitEthernet4/0/2
+!
+&lt;output omitted&gt;
+!
+interface GigabitEthernet4/0/52
+!
+Switch#
+</pre>]]></text>
+</data>

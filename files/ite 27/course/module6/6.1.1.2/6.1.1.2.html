@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.1.2 Protocol Dependent Modules</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Protocol Dependent Modules</h1>
+        <div>
+          <p>EIGRP has the capability for routing different protocols, including IPv4 and IPv6. EIGRP does so by using protocol-dependent modules (PDMs). PDMs were also used to support the now obsolete Novell IPX and Apple Computer’s AppleTalk network layer protocols. </p>
+          <p></p>
+          <p>PDMs are responsible for network layer protocol-specific tasks. An example is the EIGRP module that is responsible for sending and receiving EIGRP packets that are encapsulated in IPv4. This module is also responsible for parsing EIGRP packets and informing DUAL of the new information that is received. EIGRP asks DUAL to make routing decisions, but the results are stored in the IPv4 routing table.</p>
+          <p></p>
+          <p>PDMs are responsible for the specific routing tasks for each network layer protocol, including: </p>
+          <p>
+            <ul>
+              <li>Maintaining the neighbor and topology tables of EIGRP routers that belong to that protocol suite</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Building and translating protocol-specific packets for DUAL</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Interfacing DUAL to the protocol-specific routing table</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Computing the metric and passing this information to DUAL</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Implementing filtering and access lists</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Performing redistribution functions to and from other routing protocols</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Redistributing routes that are learned by other routing protocols</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When a router discovers a new neighbor, it records the neighbor’s address and interface as an entry in the neighbor table. One neighbor table exists for each protocol-dependent module, such as IPv4. EIGRP also maintains a topology table. The topology table contains all destinations that are advertised by neighboring routers. There is also a separate topology table for each PDM.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows that e. i. g. r. p. keeps three separate tables for i. p. v. 4 and i. p. v. 6.  These are the neighbors table, the topology table, and the routing table.  There are a total of six tables.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

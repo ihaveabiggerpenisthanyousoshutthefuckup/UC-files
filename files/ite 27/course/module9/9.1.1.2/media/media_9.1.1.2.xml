@@ -1,0 +1,40 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Multiarea OSPF Advantages</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt03">
+  <text><![CDATA[<b>Area 51</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt04">
+  <text><![CDATA[My routing table is smaller as it only contains Area 1 routes and a default route.]]></text> 
+  </component>
+  <component id="ID_s1_txt05">
+  <text><![CDATA[I am now only receiving LSAs from Area 0 and Area 1.]]></text> 
+  </component>
+  <component id="ID_s1_txt06">
+  <text><![CDATA[I now only need to run the SPF algorithm when there is a change in Area 0 or Area 51.]]></text> 
+  </component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Multiarea OSPF Advantages</b>]]></text> 
+  </component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt03">
+  <text><![CDATA[<b>Area 51</b>]]></text> 
+  </component>
+<component id="ID_s2_txt04">
+  <text><![CDATA[Only R2 and routers in Area 51 exchange LSAs and run the SPF algorithm.]]></text> 
+  </component>
+
+</textcomponents>

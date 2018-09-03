@@ -1,0 +1,132 @@
+<textcomponents>
+<!-- s1   -->
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Best Paths To The Root Bridge</b>]]></text>
+</component>
+
+<!--s1 table-->
+
+<component id="ID_s1_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' width='600' class="mtable" >
+ 
+             <tr class="mtable_top">
+                <td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+ 
+            <tr class="mtable_title">
+                <td bgcolor='#666263' width="130"><font color='#FFFFFF'><b>Link Speed</b></font></td>
+                <td bgcolor='#666263'><font color='#FFFFFF'><b>Cost (Revised IEEE Specification)</b></font></td>
+                <td bgcolor='#666263'><font color='#FFFFFF'><b>Cost (Previous IEEE Specification)</b></font></td>
+            </tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>10 Gb/s</td>
+<td bgcolor='#E9E7E8'>2</td>
+<td bgcolor='#E9E7E8'>1</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>1 Gb/s</td>
+<td bgcolor='#F2F2F2'>4</td>
+<td bgcolor='#F2F2F2'>1</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>100 Mb/s</td>
+<td bgcolor='#E9E7E8'>19</td>
+<td bgcolor='#E9E7E8'>10</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>10 Mb/s</td>
+<td bgcolor='#F2F2F2'>100</td>
+<td bgcolor='#F2F2F2'>100</td>
+</tr>
+
+</table>]]></text> 
+</component>
+
+<!-- s2   -->
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Best Paths To The Root Bridge</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Configure Port Cost</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Reset Port Cost</b>]]></text>
+</component>
+
+<!-- s3   -->
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Best Paths To The Root Bridge</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[Trunk3]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[Trunk1]]></text> 
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[Trunk2]]></text> 
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[Root Bridge]]></text> 
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[Bridge ID:<br/>Priority = <font color="#F68026"><b>32769</b></font><br/>MAC Address = 000A00222222]]></text> 
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[Bridge ID:<br/>Priority = <font color="#F68026"><b>24577</b></font><br/>MAC Address = 000A00333333]]></text> 
+</component>
+
+<component id="ID_s3_txt07"> 
+<text><![CDATA[Bridge ID:<br/>Priority = <font color="#F68026"><b>32769</b></font><br/>MAC Address = 000A00111111]]></text> 
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[Root Ports]]></text> 
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[Designated Ports]]></text> 
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[Non-Designated Ports]]></text> 
+</component>
+
+<component id="ID_s3_txt11">
+<text><![CDATA[Path 2]]></text> 
+</component>
+
+<component id="ID_s3_txt12">
+<text><![CDATA[<font color="#7C6D34"><b>Path 1</b></font> Cost = 19 x 1 = <font color="#F68026"><b>19</b></font><br/><font color="#3F863A"><b>Path 2</b></font> Cost = 19 x 2 = <font color="#F68026"><b>38</b></font><br/><br/><font color="#7C6D34"><b>Path 1</b></font> is the preferred path.]]></text> 
+</component>
+
+<component id="ID_s3_txt13">
+<text><![CDATA[Path 1]]></text> 
+</component>
+
+<component id="ID_s3_txt14">
+<text><![CDATA[Path 2]]></text> 
+</component>
+
+<!-- s4   -->
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Best Paths To The Root Bridge</b>]]></text>
+</component>
+
+</textcomponents>

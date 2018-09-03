@@ -1,0 +1,308 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<font color='#FFFFFF'><b>Topology: Troubleshoot Layer 3 Switching Issues</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[Use and refer back to this network topology diagram to correctly answer the three scenarios provided.]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[VLAN 4]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[Layer 2 Switch (SW1)]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[VLAN 3]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[Server]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[VLAN 3]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[Layer 2 Switch (SW2)]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[VLAN 2]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt08">
+        <text>
+            <![CDATA[Layer 3 Switch (SW3)]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt09">
+        <text>
+            <![CDATA[L2 Trunk]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt10">
+        <text>
+            <![CDATA[L2 Trunk]]>
+        </text>
+    </component>
+    <component id="ID_s1_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="mtable_top">
+				<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+				</tr>
+				<tr colspan='2'>
+					<td bgcolor='#666263' class="mtitle"  valign="top" ><font color='#ffffff' size="11" style="font-size:11px">VLAN</font></td>
+					<td bgcolor='#666263'  class="mtitle" valign="top" ><font color='#ffffff' size="11" style="font-size:11px">Subnet</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font color='#393536' size="11" style="font-size:11px">2</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font color='#393536' size="11" style="font-size:11px">10.2.0.0/24</font></td> 
+				</tr>
+
+				<tr>
+					<td bgcolor='#F2F2F2' valign="top"><font color='#393536' size="11" style="font-size:11px">3</font></td>
+					<td bgcolor='#F2F2F2' valign="top"><font color='#393536' size="11" style="font-size:11px">10.3.0.0/24</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#E9E7E8' valign="top"><font color='#393536' size="11" style="font-size:11px">4</font></td>
+					<td bgcolor='#E9E7E8' valign="top"><font color='#393536' size="11" style="font-size:11px">10.4.0.0/24</font></td>
+				</tr>
+			</table>]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<font color='#FFFFFF'><b>Scenario 1: Troubleshoot Layer 3 Switching Issues</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[PC2 is unable to communicate with PC3, but can communicate with all other devices. Click below to select the most likely causes for this issue. More than one answer choice may be selected. Use the Layer 3 switch command output and refer back to the network topology diagram to correctly answer this scenario.]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans01">
+        <text>
+            <![CDATA[VLAN 3 and 4 are shutdown.]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans02">
+        <text>
+            <![CDATA[VLAN 3 IP address is not correct.]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans03">
+        <text>
+            <![CDATA[VLAN 4 has no IP address.]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans04">
+        <text>
+            <![CDATA[VLAN 2 is not configured.]]>
+        </text>
+    </component>
+    <component id="ID_s2_ans05">
+        <text>
+            <![CDATA[10.2.0.0/24 is assigned to the wrong VLAN.]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the Layer 3 switching issues. Please click button 3 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the Layer 3 switching issues. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s2_check'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s2_reset'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<font color='#FFFFFF'><b>Scenario 2: Troubleshoot Layer 3 Switching Issues</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s3_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s3_instr_body'>
+        <text>
+            <![CDATA[PC2 is unable to communicate with any of the other devices, including its own gateway. Click below to select the most likely causes for this issue. More than one answer choice may be selected. Use the Layer 3 switch command output and refer back to the network topology diagram to correctly answer this scenario.]]>
+        </text>
+    </component>
+    <component id='ID_s3_ans01'>
+        <text>
+            <![CDATA[VLAN 2 subnet mask is not correct.]]>
+        </text>
+    </component>
+    <component id='ID_s3_ans02'>
+        <text>
+            <![CDATA[VLAN 3 IP address is not correct.]]>
+        </text>
+    </component>
+    <component id='ID_s3_ans03'>
+        <text>
+            <![CDATA[VLAN 4 subnet mask is not correct.]]>
+        </text>
+    </component>
+    <component id='ID_s3_ans04'>
+        <text>
+            <![CDATA[VLAN 2 is not configured.]]>
+        </text>
+    </component>
+    <component id='ID_s3_ans05'>
+        <text>
+            <![CDATA[VLAN 4  IP address is not correct.]]>
+        </text>
+    </component>
+    <component id='ID_s3_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s3_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the Layer 3 switching issues. Please click button 4 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the Layer 3 switching issues. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s3_check'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s3_reset'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<font color='#FFFFFF'><b>Scenario 3: Troubleshoot Layer 3 Switching Issues</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s4_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s4_instr_body'>
+        <text>
+            <![CDATA[PC1 is unable to communicate with PC2 or PC3, but can communicate with the server. Click below to select the most likely causes for this issue. More than one answer choice may be selected. Use the Layer 3 switch command output and refer back to the network topology diagram to correctly answer this scenario.]]>
+        </text>
+    </component>
+    <component id='ID_s4_ans01'>
+        <text>
+            <![CDATA[The trunk encapsulation is not correct.]]>
+        </text>
+    </component>
+    <component id='ID_s4_ans02'>
+        <text>
+            <![CDATA[VLAN 2 and 3 are being pruned from the trunk links.]]>
+        </text>
+    </component>
+    <component id='ID_s4_ans03'>
+        <text>
+            <![CDATA[The gigabit 0/1 port is not configured as a trunk.]]>
+        </text>
+    </component>
+    <component id='ID_s4_ans04'>
+        <text>
+            <![CDATA[VLAN 2 is not configured.]]>
+        </text>
+    </component>
+    <component id='ID_s4_ans05'>
+        <text>
+            <![CDATA[The gigabit 0/2 port is not configured as a trunk.]]>
+        </text>
+    </component>
+    <component id='ID_s4_ans06'>
+        <text>
+            <![CDATA[SW2 port G1/1 is shutdown.]]>
+        </text>
+    </component>
+    <component id='ID_s4_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s4_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the Layer 3 switching issues.]]>
+        </text>
+    </component>
+    <component id='ID_s4_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s4_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the Layer 3 switching issues. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s4_check'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s4_reset'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+</textcomponents>

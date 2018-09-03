@@ -1,0 +1,22 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt04,#ID_s1_txt05,#ID_s1_txt06,#ID_s1_txt07{
+	background-color: #FFFFFF;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-left: 5px !important;
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+#ID_s1_txt08,#ID_s1_txt09,#ID_s1_txt10{
+	padding-left: 2px;
+	padding-top: 1px;
+	background-color: #E9E7E8;
+	border-color: #666263;
+	border: solid;
+	border-width: 2px;
+}
+
+/*bgColor="#E9E7E8" corner="0" border="2" borderColor="#7B797A"*/

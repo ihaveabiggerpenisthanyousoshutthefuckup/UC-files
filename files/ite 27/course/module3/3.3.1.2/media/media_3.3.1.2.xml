@@ -1,0 +1,80 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Configuring the Bridge ID</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>Method 1</b>]]></text> 
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Method 1</b>]]></text> 
+</component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<b>Method 2</b>]]></text> 
+</component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[<b>Trunk2</b>]]></text> 
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[<b>Trunk3</b>]]></text> 
+</component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[<b>Trunk1</b>]]></text> 
+</component>
+
+
+
+<component id="ID_s2_title">
+		<text><![CDATA[<b>Configure and Verify the BID</b>]]></text>
+	</component>
+
+<component id="ID_s3_title">
+		<text><![CDATA[<b>Configure and Verify the BID</b>]]></text>
+	</component>
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+<component id="ID_SC5" fontface="_typewriter" fontSize="12"  fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans"color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b>
+		]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>Configure the priority for VLAN 1 on S3 to 24576 and return to privileged EXEC mode.</b></font>]]></existingcommands>
+		<command prompt="S3(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 1 priority 24576]]></correctresponse>
+		</command>	
+		<command prompt="S3(config)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Configure S2 to be the secondary root for VLAN 1 and return to privileged EXEC mode.</b></font>]]></instruction>
+		</command>	
+		<command prompt="S2(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 1 root secondary]]></correctresponse>
+		</command>
+		<command prompt="S2(config)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Configure S1 to be the primary root for VLAN 1 and return to privileged EXEC mode.</b></font>]]></instruction>
+		</command>	
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 1 root primary]]></correctresponse>
+		</command>
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Display the current spanning tree status on S1.</b></font>]]></instruction>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show spanning-tree]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_typewriter"><br>VLAN0001 <br>  Spanning tree enabled protocol ieee <br>  Root ID    Priority    20481 <br>             Address     000A.0033.0033 <br>             This bridge is the root <br>             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec <br> <br>  Bridge ID  Priority    20481  (priority 20480 sys-id-ext 1) <br>             Address     000A.0033.0033 <br>             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec <br>             Aging Time  15  sec <br> <br>Interface           Role Sts Cost      Prio.Nbr Type <br>------------------- ---- --- --------- -------- --------------- <br>Fa0/1               Desg FWD 4          128.1    P2p <br>Fa0/2               Desg FWD 4          128.2    P2p <br></font>S1#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>You successfully configured and verified the Bridge ID.</font>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+ 
+</textcomponents>
+
+
+
+

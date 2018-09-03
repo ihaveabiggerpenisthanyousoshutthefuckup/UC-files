@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+
+	<!--Slide 01-->
+	<slide>
+<element type="TEXT" compId="ID_s1_table01" x="40" y="120" width="600" height="200" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#fff"/>
+</slide>
+
+	
+	<!--Slide 02-->
+		<slide>
+<element type="TEXT" compId="ID_s2_txt01" x="45" y="72" width="593" expand="up" align="left" color="#ffffff" />
+<element type="TEXT" compId="ID_s2_txt02" x="45" y="270" width="593" expand="up" align="left" color="#ffffff" />
+<element type="ROUTER" textId="ID_router_txt1" x="49" y="98.3" width="600" height="150" />
+<text id="ID_router_txt1"><![CDATA[<pre>S2# <b>configure terminal</b></br>Enter configuration commands, one per line. End with CNTL/Z.</br>S2(config)# <b>interface f0/1</b></br>S2(config-if)# <b><span class = "orangeColor">spanning-tree cost 25</span></b></br>S2(config-if# <b>end</b></br>S2#</pre>]]></text>
+<element type="ROUTER" textId="ID_router_txt2" x="49" y="295.7" width="600" height="150" />
+<text id="ID_router_txt2"><![CDATA[<pre>S2# <b>configure terminal</b></br>Enter configuration commands, one per line. End with CNTL/Z.</br>S2(config)# <b>interface f0/1</b></br>S2(config-if)# <b><span class = "orangeColor">no spanning-tree cost</span></b></br>S2(config-if)# <b>end</b></br>S2#</pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#fff"/>
+</slide>
+
+
+	<!--Slide 03-->
+		<slide>
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.1.2.4C.png" />
+<element type="TEXT" id="ID_static_1" text="F0/1" x="214" y="150" align="center" width="22" />
+<element type="TEXT" id="ID_static_2" text="F0/2" x="291" y="150" align="center" width="23" />
+<element type="TEXT" id="ID_static_3" text="F0/18" x="248" y="309" align="center" width="30" />
+<element type="TEXT" id="ID_static_4" text="F0/2" x="199" y="166" align="center" width="23" />
+<element type="TEXT" id="ID_static_5" text="F0/1" x="318" y="170" align="center" width="22" />
+<element type="TEXT" id="ID_static_6" text="F0/2" x="243" y="252" align="center" width="23" />
+<element type="TEXT" id="ID_static_7" text="F0/1" x="271" y="252" align="center" width="22" />
+<element type="TEXT" id="ID_static_8" text="F0/11" x="193" y="304" align="center" width="28" />
+<element type="TEXT" id="ID_static_9" text="F0/6" x="298" y="290" align="center" width="23" />
+<element type="TEXT" id="ID_static_10" text="172.17.10.27" x="516" y="178" align="center" width="68" />
+<element type="TEXT" id="ID_static_11" text="172.17.10.23" x="337" y="434" align="center" width="68" />
+<element type="TEXT" id="ID_static_12" text="172.17.10.22" x="227" y="434" align="center" width="68" />
+<element type="TEXT" id="ID_static_13" text="172.17.10.21" x="124" y="434" align="center" width="67" />
+<element type="TEXT" id="ID_static_14" text="F0/3" x="403" y="149" align="center" width="23" />
+<element type="TEXT" compId="ID_s3_txt01" x="217" y="125" width="106" expand="up" align="center" color="#652c8a" />
+<element type="TEXT" compId="ID_s3_txt05" x="90" y="93" width="195" expand="up" align="left" size="10" />
+<element type="TEXT" compId="ID_s3_txt02" x="333" y="210" width="100" expand="right" align="left" color="#652c8a" />
+<element type="TEXT" compId="ID_s3_txt03" x="110" y="209" width="95" expand="down" align="right" color="#652c8a" />
+<element type="TEXT" compId="ID_s3_txt04" x="386" y="163" width="124" expand="down" align="left" color="#f68026" />
+<element type="TEXT" compId="ID_s3_txt06" x="348" y="93" width="195" expand="up" align="left" />
+<element type="TEXT" compId="ID_s3_txt07" x="343" y="272" width="195" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s3_txt11" x="239" y="223" width="57" expand="up+down" align="left" color="#3f863a" />
+<element type="TEXT" compId="ID_s3_txt13" x="243" y="194" width="75" expand="up+down" align="right" color="#7c6d34" />
+<element type="TEXT" compId="ID_s3_txt14" x="232" y="161" width="66" expand="down" align="center" color="#3f863a" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+<element type="TEXT" compId="ID_s3_txt12" x="456" y="381" width="201" expand="up+down" align="left" />
+</slide>
+
+	<!--Slide 04-->
+		<slide>
+<element type="ROUTER" textId="ID_router_txt3" x="40" y="85" width="600" height="300" />
+<text id="ID_router_txt3">
+			<![CDATA[<pre>S2# <b>show spanning-tree</b>
+			
+VLAN001 							
+   Spanning tree enabled protocol ieee 
+   Root ID    Priority  24577 
+	      Address      000A.0033.3333 
+	      <span class = "orangeColor">Cost         19</span> 
+	      Port         1 
+	      Hello Time   2 sec Max Age 20 sec Forward Delay 15 sec 
+		  
+   <span class = "orangeColor">Bridge ID  Priority      32769  (priority 32768 sys-id-ext 1)     </span> 
+              Address 000A.0011.1111 
+	      Hello time 2 sec Max Age 20 sec Forward Delay 15 sec 
+	      Aging Time 300 
+		  
+Interface    Role   Sts  Cost    Prio.Nbr  Type 
+-----------  -----  ---- -----   --------- ----------------- 
+F0/1 	     Root   FWD  <span class = "orangeColor"> 19 </span> 	  128.1     Edge P2p 
+F0/2         Desg   FWD  <span class = "orangeColor"> 19 </span> 	  128.2     Edge P2p</pre>]]></text>
+<element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#fff"/>
+</slide>
+
+
+	</slide>
+</data>
+

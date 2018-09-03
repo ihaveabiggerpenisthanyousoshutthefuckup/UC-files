@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.3.1 Routing Information Protocol</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Routing Information Protocol</h1>
+        <div>
+          <p>The Routing Information Protocol (RIP) was a first generation routing protocol for IPv4 originally specified in RFC 1058. It is easy to configure, making it a good choice for small networks. </p>
+          <p></p>
+          <p>RIPv1 has the following key characteristics:</p>
+          <p>
+            <ul>
+              <li>Routing updates are broadcasted (255.255.255.255) every 30 seconds. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The hop count is used as the metric for path selection.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A hop count greater than 15 hops is deemed infinite (too far). That 15th hop router would not propagate the routing update to the next router. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In 1993, RIPv1 was updated to a classless routing protocol known as RIP version 2 (RIPv2). RIPv2 included the following improvements:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Classless routing protocol </b>- It supports VLSM and CIDR, because it includes the subnet mask in the routing updates. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Increased efficiency </b>- It forwards updates to multicast address 224.0.0.9, instead of the broadcast address 255.255.255.255. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reduced routing entries </b>- It supports manual route summarization on any interface.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Secure </b>- It supports an authentication mechanism to secure routing table updates between neighbors. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The table in the figure summarizes the differences between RIPv1 and RIPv2. </p>
+          <p></p>
+          <p>RIP updates are encapsulated into a UDP segment, with both source and destination port numbers set to UDP port 520.  </p>
+          <p>In 1997, the IPv6 enabled version of RIP was released. RIPng is based on RIPv2. It still has a 15 hop limitation and the administrative distance is 120.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a table that compares RIP version 1 to RIP version 2.  This is a summary of the reading.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

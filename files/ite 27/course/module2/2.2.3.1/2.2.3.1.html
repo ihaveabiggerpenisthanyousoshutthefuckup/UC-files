@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.1 Troubleshoot VTP Issues</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshoot VTP Issues</h1>
+        <div>
+          <p>Common problems with VTP are:</p>
+          <p></p>
+          <p>Incompatible VTP Versions </p>
+          <p>
+            <ul>
+              <li>VTP versions are incompatible with each other. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ensure that all switches are capable of supporting the required VTP version.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Password Issues </p>
+          <p>
+            <ul>
+              <li>If VTP authentication is enabled, switches must all have the same password configured to participate in VTP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ensure that the password is manually configured on all switches in the VTP domain. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Incorrect VTP Domain Name </p>
+          <p>
+            <ul>
+              <li>An improperly configured VTP domain affects VLAN synchronization between switches and if a switch receives the wrong VTP advertisement, the switch discards the message. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>To avoid incorrectly configuring a VTP domain name, set the VTP domain name on only one VTP server switch. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>All other switches in the same VTP domain will accept and automatically configure their VTP domain name when they receive the first VTP summary advertisement. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>All Switches set to VTP Client Mode</p>
+          <p>
+            <ul>
+              <li>If all switches in the VTP domain are set to client mode, you cannot create, delete, and manage VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>To avoid losing all VLAN configurations in a VTP domain, configure two switches as VTP servers.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Incorrect Configuration Revision Number </p>
+          <p>
+            <ul>
+              <li>If a switch with the same VTP domain name but a higher configuration number is added to the domain, invalid VLANs can be propagated and / or valid VLANs can be deleted.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The solution is to reset each switch to an earlier configuration and then reconfigure the correct VLANs. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Before adding a switch to a VTP-enabled network, reset the revision number on the switch to 0 by assigning it to another false VTP domain and then reassigning it to the correct VTP domain name.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">.Figure shows common problems associated with VTP.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

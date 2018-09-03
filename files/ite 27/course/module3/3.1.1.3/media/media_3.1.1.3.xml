@@ -1,0 +1,59 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Broadcast Storms</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[Trunk 1]]></text> 
+  </component>
+  <component id="ID_s1_txt02">
+  <text><![CDATA[Trunk 2]]></text> 
+  </component>
+  <component id="ID_s1_txt03">
+  <text><![CDATA[Trunk 3]]></text> 
+  </component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[PC1 forwards out a broadcast that gets caught in a Layer 2 loop.]]></text> 
+  </component>
+  <component id="ID_s1_txt07">
+  <text><![CDATA[PC4 forwards out a new broadcast that also gets caught in the Layer 2 loop.]]></text> 
+  </component>
+  <component id="ID_s1_txt08">
+  <text><![CDATA[PC3 forwards out another broadcast that gets caught in the Layer 2 loop.]]></text> 
+  </component>
+  <component id="ID_s1_txt09">
+  <text><![CDATA[PC2 forwards out a broadcast frame, but it cannot be processed due to the traffic overload on the network.]]></text> 
+  </component>
+  
+  
+	<component id="end">
+		<text><![CDATA[End]]></text>
+	</component>
+
+	<component id="fforward">
+		<text><![CDATA[Fast Forward]]></text>
+	</component>
+
+	<component id="pause">
+		<text><![CDATA[Pause]]></text>
+	</component>
+
+	<component id="play">
+		<text><![CDATA[Play]]></text>
+	</component>
+
+	<component id="rewind">
+		<text><![CDATA[Rewind]]></text>
+	</component>
+
+	<component id="start">
+		<text><![CDATA[Start]]></text>
+	</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Click Play to continue.]]></text>
+	</component>
+
+
+
+</textcomponents>

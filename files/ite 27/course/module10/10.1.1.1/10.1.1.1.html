@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.1 OSPF Network Types</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Network Types</h1>
+        <div>
+          <p>To configure OSPF adjustments, start with a basic implementation of the OSPF routing protocol.  </p>
+          <p></p>
+          <p>OSPF defines five network types, as shown in Figures 1 to 5:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Point-to-point </b>- Two routers interconnected over a common link. No other routers are on the link. This is often the configuration in WAN links. (Figure 1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Broadcast multiaccess </b>- Multiple routers interconnected over an Ethernet network. (Figure 2)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Nonbroadcast multiaccess (NBMA) </b>- Multiple routers interconnected in a network that does not allow broadcasts, such as Frame Relay. (Figure 3)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Point-to-multipoint </b>- Multiple routers interconnected in a hub-and-spoke topology over an NBMA network. Often used to connect branch sites (spokes) to a central site (hub). (Figure 4)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Virtual links </b>- Special OSPF network used to interconnect distant OSPF areas to the backbone area. (Figure 5)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A multiaccess network is a network with multiple devices on the same shared media, which are sharing communications. Ethernet LANs are the most common example of broadcast multiaccess networks. In broadcast networks, all devices on the network see all broadcast and multicast frames. They are multiaccess networks because there may be numerous hosts, printers, routers, and other devices that are all members of the same network. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows router one connected to router two. Router 2 is connected to the Internet.  Each connection is a point to point link. Figure two shows router one, two, three, and four connected to a switch over a broadcast network. Router two is connected to the Internet with a point to point link. Figure three shows router one, two, and three connected over a frame relay network configured as non broadcast multi access network. Router two is connected to the Internet with a point to point link. Figure four shows router one, two, and three connected over a frame relay network configured as a point to multi point network. Router two is connected to the Internet with a point to point link. Figure five shows three areas.  Area zero has four routers connected to a switch, and router one borders area zero and one. Router two connects to router one with a serial cable, and router two borders area fifty one.  Area fifty one has four routers connected with serial cables.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

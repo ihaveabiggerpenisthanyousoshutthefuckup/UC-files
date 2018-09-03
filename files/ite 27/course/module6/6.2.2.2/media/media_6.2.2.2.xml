@@ -1,0 +1,106 @@
+<textcomponents>
+<!--Slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b><font face="_typewriter">show ip protocols</font> Command</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Routing protocol and Process ID (AS Number)]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[EIGRP Router ID]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[EIGRP Administrative Distances]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[EIGRP Automatic Summarization is disabled.]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[EIGRP Routing Information Sources lists all the EIGRP routing sources the IOS uses to build its IPv4 routing table.]]></text>
+</component>
+
+
+
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Default Administrative Distances</b>]]></text>
+</component>
+
+<component id="ID_s2_table01">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	<tr>
+	<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#077A77'  valign="top"><font color='#ffffff' class="mtitle"><b>Route Source</b></font></td>
+	<td bgcolor='#077A77'  valign="top" width="180"><font color='#ffffff' class="mtitle"><b>Administrative Distance</b></font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>Connected</font></td>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>0</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>Static</font></td>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>1</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#B5D9B3' valign="top"><font color='#393536'>EIGRP summary route</font></td>
+	<td bgcolor='#B5D9B3' valign="top"><font color='#393536'>5</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>External BGP</font></td>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>20</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#F3D0D6' valign="top"><font color='#393536'>Internal EIGRP</font></td>
+	<td bgcolor='#F3D0D6' valign="top"><font color='#393536'>90</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>IGRP</font></td>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>100</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>OSPF</font></td>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>110</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>IS-IS</font></td>
+	<td bgcolor='#ffffff' valign="top"><font color='#393536'>115</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>RIP</font></td>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>120</font></td>
+	</tr>
+		
+	<tr>
+	<td bgcolor='#FACCA8' valign="top"><font color='#393536'>External EIGRP</font></td>
+	<td bgcolor='#FACCA8' valign="top"><font color='#393536'>170</font></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>Internal BGP</font></td>
+	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>200</font></td>
+	</tr>
+
+	
+	</table>]]></text>
+</component>
+
+</textcomponents>

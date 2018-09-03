@@ -1,0 +1,91 @@
+<textcomponents>
+
+<!--slide1 content-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP Packet Types</b>]]></text> 
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Note:</b> IGRP is a distance vector IGP which is not included on this chart.]]></text> 
+</component>
+
+<component id="ID_s1_table">
+		<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' style="width:420px;height:133px;">
+		<tr class="liner">
+			<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="1"  bgcolor='#0E6360' valign="top"><font color='#ffffff'><b>Packet Type</b></font></td>
+			<td colspan="1" bgcolor='#0E6360' valign="top"><font color='#ffffff'><b>Used to...</b></font></td>			
+		</tr>	
+			
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="120" valign="top"><font color='#393536'>Hello</font></td>
+		<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>Discover other EIGRP routers in the network.</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="120" valign="top"><font color='#393536'>Update</font></td>
+		<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>Acknowledge the receipt of any EIGRP packet.</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="120" valign="top"><font color='#393536'>Acknowledgement</font></td>
+		<td  bgcolor="#FFFFFF" valign="top"><font color='#393536'>Convey routing information to known destinations.</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="120" valign="top"><font color='#393536'>Query</font></td>
+		<td  bgcolor="#FFFFFF" valign="top"><font color='#393536'>Request specific information from a neighbor router.</font></td>		 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="120" valign="top"><font color='#393536'>Reply</font></td>
+		<td  bgcolor="#EFF8F7" valign="top"><font color='#393536'>Respond to a query.</font></td>		 
+		</tr>
+	
+	</table>]]></text> 
+	</component>
+	
+	<!--slide2 content-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>EIGRP Messages are Sent Over IP</b>]]></text> 
+</component>
+
+
+<component id="ID_s2_header01">
+<text><![CDATA[<b>EIGRP for IPv4 Over IPv4</b>]]></text> 
+</component>
+
+<component id="ID_s2_header02">
+<text><![CDATA[<b>EIGRP for IPv6 Over IPv6</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[IPv4 Header]]></text> 
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Protocol 88]]></text> 
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[EIGRP for IPv4 Message]]></text> 
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[IPv6 Header]]></text> 
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[Next Header 88]]></text> 
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[EIGRP for IPv6 Message]]></text> 
+</component>
+
+
+
+</textcomponents>

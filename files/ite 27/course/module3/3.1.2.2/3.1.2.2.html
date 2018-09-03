@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.2 Spanning Tree Algorithm: Port Roles</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Spanning Tree Algorithm: Port Roles</h1>
+        <div>
+          <p>IEEE 802.1D STP and RSTP use the Spanning Tree Algorithm (STA) to determine which switch ports on a network must be put in blocking state to prevent loops from occurring. The STA designates a single switch as the root bridge and uses it as the reference point for all path calculations. In the figure, the root bridge (switch S1) is chosen through an election process. All switches that are participating in STP exchange BPDU frames to determine which switch has the lowest bridge ID (BID) on the network. The switch with the lowest BID automatically becomes the root bridge for the STA calculations.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: For simplicity, assume until otherwise indicated that all ports on all switches are assigned to VLAN 1. Each switch has a unique MAC address associated with VLAN 1. </p>
+          <p></p>
+          <p>A BPDU is a messaging frame exchanged by switches for STP. Each BPDU contains a BID that identifies the switch that sent the BPDU. The BID contains a priority value, the MAC address of the sending switch, and an optional extended system ID. The lowest BID value is determined by the combination of these three fields.</p>
+          <p></p>
+          <p>After the root bridge has been determined, the STA calculates the shortest path to the root bridge. Each switch uses the STA to determine which ports to block. While the STA determines the best paths to the root bridge for all switch ports in the broadcast domain, traffic is prevented from being forwarded through the network. The STA considers both path and port costs when determining which ports to block. The path costs are calculated using port cost values associated with port speeds for each switch port along a given path. The sum of the port cost values determines the overall path cost to the root bridge. If there is more than one path to choose from, STA chooses the path with the lowest path cost.</p>
+          <p></p>
+          <p>When the STA has determined which paths are most desirable relative to each switch, it assigns port roles to the participating switch ports. The port roles describe their relation in the network to the root bridge and whether they are allowed to forward traffic:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Root ports</b> - Switch ports closest to the root bridge in terms of overall cost to the root bridge. In the figure, the root port selected by STP on S2 is F0/1, the link between S2 and S1. The root port selected by STP on S3 is F0/1, the link between S3 and S1. Root ports are selected on a per-switch basis.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Designated ports</b> - All non-root ports that are still permitted to forward traffic on the network. In the figure, switch ports (F0/1 and F0/2) on S1 are designated ports. S2 also has its port F0/2 configured as a designated port. Designated ports are selected on a per-segment basis based on the cost of each port on either side of the segment and the total cost calculated by STP for that port to get back to root bridge. If one end of a segment is a root port, then the other end is a designated port. All ports on the root bridge are designated ports. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Alternate and backup ports</b> - Alternate ports and backup ports are in discarding or blocking state to prevent loops. In the figure, the STA configured port F0/2 on S3 in the alternate role. Port F0/2 on S3 is in the blocking state. Alternate ports are selected only on links where neither end is a root port. Notice in the figure that only one end of the segment is blocked. This allows for a faster transition to the forwarding state when necessary. (Blocking ports only come into play when two ports on the same switch provide redundant links through the network.)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Disabled ports</b> - A disabled port is a switch port that is shut down.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Note: </b>The port roles displayed are those defined by RSTP. The role originally defined by the 802.1D STP for alternate and backup ports was non-designated.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three switches, s.1, s.2, and s.3.  Each is connected to the other two with a trunk link.  S.2 has P.C.1, P.C.2, and P.C.3 connected.  S.1 has P.C.4 connected. The diagram shows the different port roles for spanning tree.  Some ports are root ports (forwarding), some are designated ports (forwarding), and some are alternate or non-designated ports (blocking).</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

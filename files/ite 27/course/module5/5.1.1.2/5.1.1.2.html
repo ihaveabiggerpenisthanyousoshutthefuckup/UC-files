@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.2 IGP and EGP Routing Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IGP and EGP Routing Protocols</h1>
+        <div>
+          <p>An autonomous system (AS) is a collection of routers under a common administration such as a company or an organization. An AS is also known as a routing domain. Typical examples of an AS are a company’s internal network and an ISP’s network.  </p>
+          <p></p>
+          <p>The Internet is based on the AS concept; therefore, two types of routing protocols are required: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interior Gateway Protocols (IGP) </b>- Used for routing within an AS. It is also referred to as intra-AS routing. Companies, organizations, and even service providers use an IGP on their internal networks. IGPs include RIP, EIGRP, OSPF, and IS-IS. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Exterior Gateway Protocols (EGP) </b>- Used for routing between ASes. It is also referred to as inter-AS routing. Service providers and large companies may interconnect using an EGP. The Border Gateway Protocol (BGP) is the only currently-viable EGP and is the official routing protocol used on the Internet.  </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Because BGP is the only EGP available, the term EGP is rarely used; instead, most engineers simply refer to BGP. </p>
+          <p></p>
+          <p>The example in the figure provides simple scenarios highlighting the deployment of IGPs, BGP, and static routing: </p>
+          <p>
+            <ul>
+              <li>
+                <b>ISP-1 </b>- This is an AS and it uses IS-IS as the IGP. It interconnects with other autonomous systems and service providers using BGP to explicitly control how traffic is routed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ISP-2 </b>- This is an AS and it uses OSPF as the IGP. It interconnects with other autonomous systems and service providers using BGP to explicitly control how traffic is routed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>AS-1 </b>- This is a large organization and it uses EIGRP as the IGP. Because it is multihomed (i.e., connects to two different service providers), it uses BGP to explicitly control how traffic enters and leaves the AS. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>AS-2 </b>- This is a medium-sized organization and it uses OSPF as the IGP.  It is also multihomed; therefore, it uses BGP to explicitly control how traffic enters and leaves the AS. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>AS-3 </b>- This is a small organization with older routers within the AS; it uses RIP as the IGP. BGP is not required because it is single-homed (i.e., connects to one service provider).  Instead, static routing is implemented between the AS and the service provider. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: BGP is beyond the scope of this course and is not discussed in detail. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows four separate networks interconnected through WAN links.  In the figure, two networks are using O.S.P.F. internally, one is using E.I.G.R.P., and the other is using I.S.-I.S. The WAN links connecting them are all using B.G.P.  One of the O.S.P.F. networks has a stub network attached that is using RIP.  This network utilizes static routing for network access.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.2.3 Propagating a Default Static Route in OSPFv3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Propagating a Default Static Route in OSPFv3</h1>
+        <div>
+          <p>The process of propagating a default static route in OSPFv3 is almost identical to OSPFv2. </p>
+          <p></p>
+          <p>In Figure 1, R2 is single-homed to a service provider. Therefore, all that is required for R2 to reach the Internet is a default static route to the service provider. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In this example, a loopback interface with the IPv6 address of 2001:DB8:FEED:1::1/64 is used to simulate the connection to the service provider. </p>
+          <p></p>
+          <p>Figure 2 displays the current IPv6 routing table of R1. Notice that it has no knowledge of the route to the Internet.</p>
+          <p></p>
+          <p>To propagate a default route, the edge router (R2) must be configured with:</p>
+          <p>
+            <ul>
+              <li>A default static route using the<b> ipv6 route ::/0 </b>{<i>ipv6-address</i> | <i>exit-intf</i>} command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The<b> default-information originate </b>router configuration mode command. This instructs R2 to be the source of the default route information and propagate the default static route in OSPF updates.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The example in Figure 3 shows how to configure an IPv6 default static route to the service provider and propagate that route throughout an OSPFv3 domain.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p. The internal network is highlighted, excluding the link between router two and i. s. p. Figure two shows the output from the "show i. p. v. 6. route o. s. p. f." command on router one. Figure three shows the syntax for configuring a default static route using i. p. v. 6. to the service provider.  Below that, is the syntax for propagating that default static route through the o. s. p. f. routing process.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

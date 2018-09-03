@@ -1,0 +1,109 @@
+<textcomponents>
+    <!--slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Single-Area OSPF</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<b>Area 0</b>]]></text>
+    </component>
+    <!--slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Multiarea OSPF</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[<b>Area 1</b>]]></text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[<b>Area 0</b>]]></text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[<b>Area 51</b>]]></text>
+    </component>
+    <!--slide 3 -->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>EIGRP Protocol-Dependent Modules (PDMs)</b>]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[<b>Neighbor Table - IPv6</b>]]></text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[<b>Neighbor Table - IPv4</b>]]></text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[Net-Hop Router]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[Interface]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[<b>2 Neighbor Tables</b>]]></text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[<b>Topology Table - IPv6</b>]]></text>
+    </component>
+    <component id="ID_s3_txt07">
+        <text>
+            <![CDATA[Destination1]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt08">
+        <text>
+            <![CDATA[Successor]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt09">
+        <text>
+            <![CDATA[Destination2]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt10">
+        <text>
+            <![CDATA[Feasible Successor]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt11">
+        <text>
+            <![CDATA[<b>2 Topology Tables</b>]]></text>
+    </component>
+    <component id="ID_s3_txt12">
+        <text>
+            <![CDATA[<b>Routing Table - IPv6</b>]]></text>
+    </component>
+    <component id="ID_s3_txt13">
+        <text>
+            <![CDATA[<b>Routing Table - IPv4</b>]]></text>
+    </component>
+    <component id="ID_s3_txt14">
+        <text>
+            <![CDATA[<b>2 Routing Tables</b>]]></text>
+    </component>
+    <component id="ID_s3_txt15">
+        <text>
+            <![CDATA[Destination1]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt16">
+        <text>
+            <![CDATA[Successor]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt17">
+        <text>
+            <![CDATA[<b>Topology Table - IPv4</b>]]></text>
+    </component>
+</textcomponents>

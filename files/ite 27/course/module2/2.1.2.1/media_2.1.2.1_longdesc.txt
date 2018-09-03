@@ -1,0 +1,1 @@
+.Graphic shows the reference topology used in the steps to configure VTP

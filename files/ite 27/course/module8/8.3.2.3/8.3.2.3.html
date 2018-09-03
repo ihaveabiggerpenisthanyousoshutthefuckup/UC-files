@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.2.3 Assigning Link-Local Addresses</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Assigning Link-Local Addresses</h1>
+        <div>
+          <p>Link-local addresses created using the EUI-64 format or in some cases, random interface IDs, make it difficult to recognize and remember those addresses. Because IPv6 routing protocols use IPv6 link-local addresses for unicast addressing and next-hop address information in the routing table, it is common practice to make it an easily recognizable address. </p>
+          <p></p>
+          <p>Configuring the link-local address manually provides the ability to create an address that is recognizable and easier to remember. As well, a router with several interfaces can assign the same link-local address to each IPv6 interface. This is because the link-local address is only required for local communications. </p>
+          <p></p>
+          <p>Link-local addresses can be configured manually using the same interface command used to create IPv6 global unicast addresses, but appending the<b> link-local </b>keyword to the<b> ipv6 address </b>command. </p>
+          <p></p>
+          <p>A link-local address has a prefix within the range FE80 to FEBF. When an address begins with this hextet (16-bit segment) the<b> link-local </b>keyword must follow the address. </p>
+          <p></p>
+          <p>The example in Figure 1 configures the same link-local address FE80::1 on the three R1 interfaces. FE80::1 was chosen to make it easy to remember the link-local addresses of R1. </p>
+          <p></p>
+          <p>A quick look at the interfaces as shown in Figure 2 confirms that the R1 interface link-local addresses have been changed to FE80::1.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure and verify link-local address FE80::2 on R2, and the link-local address FE80::3 on R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the commands necessary to configure a specified link local address on an interface.  The first command is, i.p.v.6. address f e 8 0 colon colon 1 link hyphen local. This command configures the address for the gigabit Ethernet interface.  The figure applies the same address to both of the serial interfaces using the same command.  Figure two shows the output from the command, show i.p.v.6. interface brief, and highlights the link local address on each interface. Figure three is an interactive media element that allows the learner to configure link local addresses on router R-2.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

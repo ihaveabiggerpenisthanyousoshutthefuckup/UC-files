@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.2.2 Configuring IPv6 Link-local Addresses</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring IPv6 Link-local Addresses</h1>
+        <div>
+          <p>Link-local addresses are automatically created when an IPv6 global unicast address is assigned to the interface. Global unicast addresses are not required on an interface; however, IPv6 link-local addresses are, as shown in Figure 1.</p>
+          <p></p>
+          <p>Unless configured manually, Cisco routers create the link-local address using FE80::/10 prefix and the EUI-64 process. EUI-64 involves using the 48-bit Ethernet MAC address, inserting FFFE in the middle and flipping the seventh bit. For serial interfaces, Cisco uses the MAC address of an Ethernet interface. A router with several serial interfaces can assign the same link-local address to each IPv6 interface, because link-local addresses only need to be local on the link.</p>
+          <p></p>
+          <p>Link-local addresses created using the EUI-64 format, or in some cases random interface IDs, make it difficult to recognize and remember those addresses. Because IPv6 routing protocols use IPv6 link-local addresses for unicast addressing and next hop address information in the routing table, it is common practice to make it an easily recognizable address. Configuring the link-local address manually provides the ability to create an address that is recognizable and easier to remember.</p>
+          <p></p>
+          <p>Link-local addresses can be configured manually using the same interface configuration mode command used to create IPv6 global unicast addresses, but with different parameters:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ipv6 address</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>link-local-address</i>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>link-local</b>
+            </span>
+          </p>
+          <p></p>
+          <p>A link-local address has a prefix within the range FE80 to FEBF. When an address begins with this hextet (16-bit segment), the<b> link-local </b>keyword must follow the address. </p>
+          <p></p>
+          <p>Figure 2 shows the configuration of a link-local address using the<b> ipv6 address </b>interface configuration mode command. The link-local address FE80::1 is used to make it easily recognizable as belonging to router R1. The same IPv6 link-local address is configured on all of R1’s interfaces. FE80::1 can be configured on each link because it only has to be unique on that link.</p>
+          <p></p>
+          <p>Similar to R1, in Figure 3, router R2 is configured with FE80::2 as the IPv6 link-local address on all of its interfaces.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure FE80::3 as the link-local address on all of R3’s interfaces.</p>
+          <p></p>
+          <p>As shown in Figure 5, the<b> show ipv6 interface brief </b>command is used to verify the IPv6 link-local and global unicast addresses on all interfaces. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p..  I. p. v. 6 lan addresses are used. Figure two shows the syntax for configuring an i. p. v. 6 link local address on the interfaces on router one. Figure three shows the syntax for configuring an i. p. v. 6 link local address on the interfaces on router two. Figure four is an interactive activity that allows the learner to practice configuring the interfaces on router three with link local addresses. Figure five shows the output of the "show i. p. v. 6 interface brief" command on router one, highlighting the link local addresses for each interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

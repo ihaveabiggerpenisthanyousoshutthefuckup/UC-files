@@ -1,0 +1,54 @@
+<textcomponents>
+<component id="ID_s1_title">
+	<text><![CDATA[<b>PVST+ and the Extended System ID</b>]]></text>
+</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Bridge ID = 8 Bytes]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Bridge ID without Extended System ID]]></text> 
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Bridge Priority]]></text> 
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[MAC Address]]></text> 
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[2 Bytes]]></text> 
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[6 Bytes]]></text> 
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[Bridge ID = 8 Bytes]]></text> 
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[Bridge ID with Extended System ID]]></text> 
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[Bridge Priority]]></text> 
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[Extended System ID]]></text> 
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[MAC Address]]></text> 
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[4 Bits]]></text> 
+	</component>
+	<component id="ID_s1_txt13">
+		<text><![CDATA[12 Bits]]></text> 
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[48 Bits]]></text> 
+	</component>
+	<component id="ID_s1_txt15">
+		<text><![CDATA[2 Bytes]]></text> 
+	</component>
+	<component id="ID_s1_txt16">
+		<text><![CDATA[6 Bytes]]></text> 
+	</component>
+
+</textcomponents>

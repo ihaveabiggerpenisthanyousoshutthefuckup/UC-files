@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.3 Verifying EIGRP: Examine the IPv4 routing table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying EIGRP: Examine the IPv4 routing table</h1>
+        <div>
+          <p>Another way to verify that EIGRP and other functions of the router are configured properly is to examine the IPv4 routing tables with the<b> show ip route </b>command. As with any dynamic routing protocol, the network administrator must verify the information in the routing table to ensure that it is populated as expected, based on configurations entered. For this reason, it is important to have a good understanding of the routing protocol configuration commands, as well as the routing protocol operations and the processes used by the routing protocol to build the IP routing table.</p>
+          <p></p>
+          <p>Notice that the outputs used throughout this course are from Cisco IOS 15. Prior to IOS 15, EIGRP automatic summarization was enabled by default. The state of automatic summarization can make a difference in the information displayed in the IPv4 routing table. If a previous version of the IOS is used, automatic summarization can be disabled using the<b> no auto-summary </b>router configuration mode command: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-router)# </span>
+            <span class="cmd">
+              <b>no auto-summary</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 1 shows the topology for R1, R2, and R3.</p>
+          <p></p>
+          <p>In Figure 2, the IPv4 routing table is examined using the<b> show ip route </b>command. EIGRP routes are denoted in the routing table with a<b> D</b>. The letter D was used to represent EIGRP because the protocol is based upon the DUAL algorithm. </p>
+          <p></p>
+          <p>The<b> show ip route </b>command verifies that routes received by EIGRP neighbors are installed in the IPv4 routing table. The<b> show ip route </b>command displays the entire routing table, including remote networks learned dynamically, directly connected and static routes. For this reason, it is normally the first command used to check for convergence. After routing is correctly configured on all routers, the<b> show ip route </b>command reflects that each router has a full routing table, with a route to each network in the topology.</p>
+          <p></p>
+          <p>Notice that R1 has installed routes to three IPv4 remote networks in its IPv4 routing table:</p>
+          <p>
+            <ul>
+              <li>172.16.2.0/24 network, received from router R2 on the Serial0/0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.1.0/24 network, received from router R2 on the Serial0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.10.8/30 network, received from both R2 on the Serial0/0/0 interface, and from R3 on the Serial0/0/1 interface</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>R1 has two paths to the 192.168.10.8/30 network, because its cost or metric to reach that network is the same or equal using both routers. These are known as equal cost routes. R1 uses both paths to reach this network, which is known as load balancing. The EIGRP metric is discussed later in this chapter.</p>
+          <p></p>
+          <p>Figure 3 displays the routing table for R2. Notice similar results are displayed including an equal cost route for the 192.168.10.4/30 network.</p>
+          <p></p>
+          <p>Figure 4 displays the routing table for R3. Similar to the results for R1 and R2, remote networks are learned using EIGRP, including an equal cost route for the 172.16.3.0/30 network.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p. Figure two shows the output of the "show i. p. route" command on router one.  The e. i. g. r. p. routes are highlighted in orange. Figure three shows the output of the "show i. p. route" command on router two.  The e. i. g. r. p. routes are highlighted in orange. Figure four shows the output of the "show i. p. route" command on router three.  The e. i. g. r. p. routes are highlighted in orange.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

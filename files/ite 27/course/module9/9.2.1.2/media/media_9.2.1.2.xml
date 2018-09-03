@@ -1,0 +1,82 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>OSPFv2 Multiarea Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Area 0</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Area 1</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Area 2</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Configuring Multiarea OSPFv2 on R1</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Configuring Multiarea OSPF on R2 & R3</b>]]></text> 
+  </component>
+
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+
+	<component id="ID_s3_SC1" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans"color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font face="_sans"><b>Enter OSPF router configuration mode on R2 using process ID 10, configure the following in order:<ul><li>Configure the Router ID as 2.2.2.2<li>Advertise network 192.168.10.0/30 for area 0<li>Advertise network 192.168.10.4/30 for area 0<li>Advertise network 10.2.1.0/24 for area 0<li>Return to privileged EXEC mode</ul></b></font>]]></existingcommands>
+		<command prompt="R2(config)#">
+		    <correctresponse><![CDATA[router ospf 10]]></correctresponse>
+		</command>
+		<command prompt="R2(config-router)#">
+		    <correctresponse><![CDATA[router-id 2.2.2.2]]></correctresponse>
+		</command>
+		<command prompt="R2(config-router)#">
+		    <correctresponse><![CDATA[network 192.168.10.0 0.0.0.3 area 0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-router)#">
+		    <correctresponse><![CDATA[network 192.168.10.4 0.0.0.3 area 0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-router)#">
+		    <correctresponse><![CDATA[network 10.2.1.0 0.0.0.255 area 0]]></correctresponse>
+		</command>
+		<command prompt="R2(config-router)#">
+		    <correctresponse><![CDATA[end]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_typewriter">R2#<br>*Apr 19 18:11:04.029: %OSPF-5-ADJCHG: Process 10, Nbr 1.1.1.1 on <br>Serial0/0/0 from LOADING to FULL, Loading Done<br>R2#<br>*Apr 19 18:11:06.781: %SYS-5-CONFIG_I: Configured from console by <br>console<br>R2#]]></deviceresponse> 
+			<instruction><![CDATA[<font face="_sans"><b>You are now configuring R3. Enter OSPF router configuration mode on R3 using process ID 10, configure the following in order:<ul><li>Configure the Router ID as 3.3.3.3<li>Advertise interface 192.168.10.6 for area 0<li>Advertise interface 192.168.1.1 for area 2<li>Advertise interface 192.168.2.1 for area 2<li>Return to privileged EXEC mode</ul></b>]]></instruction>
+		</command>
+		<command prompt="R3(config)#">
+		    <correctresponse><![CDATA[router ospf 10]]></correctresponse>
+		</command>
+		<command prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[router-id 3.3.3.3]]></correctresponse>
+		</command>
+		<command prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[network 192.168.10.6 0.0.0.0 area 0]]></correctresponse>
+		</command>
+		<command prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[network 192.168.1.1 0.0.0.0 area 2]]></correctresponse>
+		</command>
+		<command prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[network 192.168.2.1 0.0.0.0 area 2]]></correctresponse>
+		</command>
+		<command prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[end]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_typewriter">*Apr 19 18:12:55.881: %OSPF-5-ADJCHG: Process 10, Nbr 2.2.2.2 on <br>Serial0/0/1 from LOADING to FULL, Loading Done<br>R3#]]></deviceresponse> 
+			<instruction><![CDATA[<font face="_sans"class="syntaxBottomLine"><b>You successfully configured multiarea OSPF on routers R2 and R3.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+</textcomponents>

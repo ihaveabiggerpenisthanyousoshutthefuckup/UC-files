@@ -1,0 +1,51 @@
+﻿<textcomponents>
+
+
+<!-- SLIDE 1 -->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>HSRP Debug Commands</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[ ]]></text>
+	</component>
+
+
+<!-- SLIDE 2 -->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>HSRP Topology</b>]]></text>
+	</component>
+
+	<component id='ID_s2_txt01'>
+		<text><![CDATA[Virtual Router]]></text>
+	</component>
+
+	<component id='ID_s2_txt02'>
+		<text><![CDATA[Virtual IPv4 Address<br/>172.16.10.1<br/>Virtual MAC Address<br/>0000.0C07.AC01]]></text>
+	</component>
+
+
+<!-- SLIDE 3 -->
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>View the HSRP Hello Packets on Standby Router</b>]]></text>
+	</component>
+
+<!-- SLIDE 4 -->
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>R1 Fails and R2 is Elected Active HSRP Router</b>]]></text>
+	</component>
+	<component id="ID_s4_txt01">
+		<text><![CDATA[&lt;output omitted&gt;]]></text>
+	</component>
+
+<!-- SLIDE 5 -->
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>R1 Initiates Coup to Become Active HSRP Router</b>]]></text>
+	</component>
+
+<!-- SLIDE 6 -->
+	<component id="ID_s6_title">
+		<text><![CDATA[<b>R1 is Administratively Shutdown and Resigns as Active HSRP Router</b>]]></text>
+	</component>
+
+</textcomponents>

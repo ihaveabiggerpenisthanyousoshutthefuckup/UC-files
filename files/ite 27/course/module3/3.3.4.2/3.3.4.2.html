@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.4.2 Spanning Tree and Switch Stacks </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Spanning Tree and Switch Stacks </h1>
+        <div>
+          <p>Another benefit to switch stacking is the ability to add more switches to a single STP instance without increasing the STP diameter. The diameter is the maximum number of switches that data must cross to connect any two switches. The IEEE recommends a maximum diameter of seven switches for the default STP timers. For example, in Figure 1 the diameter from S1-4 to S3-4 is nine switches. This design violates the IEEE recommendation.</p>
+          <p></p>
+          <p>The recommended diameter is based on default STP timer values, which are as follows:</p>
+          <p>
+            <ul>
+              <li>Hello Timer (2 seconds) - The interval between BPDU updates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Max Age Timer (20 seconds) - The maximum length of time a switch saves BPDU information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Forward Delay Timer (15 seconds) - The time spent in the listening and learning states.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The formulas used to calculate the diameter are beyond the scope of this course. Refer to the following Cisco document for more information: <a href="http://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/19120-122.html" target="_blank">http://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/19120-122.html</a></p>
+          <p></p>
+          <p>Switch stacks help to maintain or reduce the impact of diameter on STP reconvergence. In a switch stack, all switches use the same bridge ID for a given spanning-tree instance. This means that, if the switches in Figure 1 are stacked, as shown in Figure 2, then the maximum diameter becomes 3 instead of 9.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

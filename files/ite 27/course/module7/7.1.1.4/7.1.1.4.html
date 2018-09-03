@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.4 Verifying Auto-Summary: show ip protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Auto-Summary: show ip protocols</h1>
+        <div>
+          <p>In Figure 1, notice the EIGRP routing domain has three classful networks:</p>
+          <p>
+            <ul>
+              <li>172.16.0.0/16 class B network consisting of 172.16.1.0/24, 172.16.2.0/24, and 172.16.3.0/30 subnets</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.10.0/24 class C network consisting of the 192.168.10.4/30 and 192.168.10.8/30 subnets</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.1.0/24 class C network, which is not subnetted</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The output from R1’s<b> show ip protocols </b>command in Figure 2 shows that automatic summarization is now enabled. The output also indicates the networks that are summarized and on which interfaces. Notice that R1 summarizes two networks in its EIGRP routing updates:</p>
+          <p>
+            <ul>
+              <li>192.168.10.0/24 sent out the GigabitEthernet 0/0 and Serial 0/0/0 interfaces</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>172.16.0.0/16 sent out the Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>R1 has the 192.168.10.4/30 and 192.168.10.8/30 subnets in its IPv4 routing table. As illustrated in Figure 3, R1 summarizes the two subnets as 192.168.10.0/24. It then forwards the summarized address of 192.168.10.0/24 to its neighbors out of its Serial 0/0/0 and GigabitEthernet 0/0 interfaces. Since R1 does not have any EIGRP neighbors connected on its GigabitEthernet 0/0 interface, the summarized routing update is only received by R2. </p>
+          <p></p>
+          <p>R1 also has the 172.16.1.0/24, 172.16.2.0/24, and 172.16.3.0/30 subnets in its IPv4 routing table. As illustrated in Figure 4, R1 summarizes these three subnets as 172.16.0.0/16. It then forwards the summarized address of 172.16.0.0/16 out of its serial 0/0/1 interface to R3. R2 is also configured for automatic summarization and advertises the same summary address 172.16.0.0/16 to R3. In this example R3 would select R1 as the successor to 172.16.0.0/16 because it has a lower feasible distance due to the higher bandwidth of the R3 to R1 serial interface link.</p>
+          <p></p>
+          <p>Notice that the 172.16.0.0/16 summarized update is not sent out R1’s GigabitEthernet 0/0 and Serial 0/0/0 interfaces. This is because these two interfaces are members of the same 172.16.0.0/16 class B network. The 172.16.1.0/24 non-summarized routing update is sent by R1 to R2. </p>
+          <p></p>
+          <p>Summarized updates are only sent out interfaces on different major classful networks. In our example, R1 was advertising the 172.16.0.0/16 network to R3 because the R1 to R3 link is on a different classful network (i.e., 192.168.10.0/24).</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p.. Figure two shows the output from the "show i. p. protocols" command on router one.  Automatic summarization is enabled. Figure three is the standard lab diagram showing that the automatically summarized network for the one ninety two dot one sixty eight dot ten dot zero slash twenty four is advertised out router one's serial zero slash zero slash zero and its gig zero slash zero interfaces. Figure four is the standard lab diagram showing that the automatically summarized network for the one seventy two dot sixteen dot zero dot zero slash sixteen is advertised out router one's serial zero slash zero slash one interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

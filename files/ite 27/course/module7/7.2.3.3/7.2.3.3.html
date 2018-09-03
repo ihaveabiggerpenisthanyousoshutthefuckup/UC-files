@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.3.3 Autosummarization </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Autosummarization </h1>
+        <div>
+          <p>Another issue that may create EIGRP routing problems is EIGRP automatic summarization.</p>
+          <p></p>
+          <p>Figure 1 shows a different network topology than what has been used throughout this chapter. There is no connection between R1 and R3. R1’s LAN has the network address 10.10.10.0/24, while R3’s LAN is 10.20.20.0/24. </p>
+          <p></p>
+          <p>R1 and R3 have their LAN and serial interfaces enabled for EIGRP, as shown in Figure 2. Both routers perform EIGRP automatic summarization.</p>
+          <p></p>
+          <p>EIGRP for IPv4 can be configured to automatically summarize routes at classful boundaries. If there are discontiguous networks, automatic summarization causes inconsistent routing.</p>
+          <p></p>
+          <p>In Figure 3, R2’s routing table shows that it does not receive individual routes for the 10.10.10.0/24 and 10.20.20.0/24 subnets. Both R1 and R3 automatically summarized those subnets to the 10.0.0.0/8 classful boundary when sending EIGRP update packets to R2. The result is that R2 has two equal-cost routes to 10.0.0.0/8 in the routing table, which can result in inaccurate routing and packet loss. Depending upon whether per-packet, per-destination, or CEF load balancing is being used, packets may or may not be forwarded out the proper interface.</p>
+          <p></p>
+          <p>In Figure 4, the<b> show ip protocols </b>command verifies that automatic summarization is performed on both R1 and R3. Notice that both routers summarize the 10.0.0.0/8 network using the same metric.</p>
+          <p></p>
+          <p>Autosummarization is disabled by default in IOS 12.2(33) and IOS 15. To enable automatic summarization, use the<b> auto-summary </b>EIGRP router configuration mode command.</p>
+          <p></p>
+          <p>Before IOS 12.2(33) IOS 15 and, autosummarization was enabled by default. To disable automatic summarization, enter the<b> no auto-summary </b>command in router EIGRP configuration mode.</p>
+          <p></p>
+          <p>The cause of the problem for inconsistent routing is due to the autosummarization feature being enabled. To correct this problem, disable the feature on R1 and R3:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>router eigrp 1</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R1(config-router)# </span>
+            <span class="cmd">
+              <b>no auto-summary</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">---</span>
+          </p>
+          <p>
+            <span class="cmd">R3(config)# </span>
+            <span class="cmd">
+              <b>router eigrp 1</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R3(config-router)# </span>
+            <span class="cmd">
+              <b>no auto-summary</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 5 displays the routing table on R2 after automatic summarization has been disabled on R1 and R3. Notice how R2 now receives the individual 10.10.10.0/24 and 10.20.20.0/24 subnets from R1 and R3, respectively. Accurate routing and connectivity to both subnets is now restored.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Classful networks do not exist in IPv6; therefore EIGRP for IPv6 does not support automatic summarization. All summarization must be accomplished using EIGRP manual summary routes.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram without the extra link between router one and router three.  Both router one and three have a lan in the ten network and both have automatic summarization on for e. i. g. r. p. Therefore, both are advertising the ten network at the classful boundary. Figure two shows the syntax for configuring e. i. g. r. p. on routers one and three including auto summary. Figure three shows the output from the "show i. p. route" command on router two.  This shows that router two has two paths to the ten network. Figure four shows the output from the "show i. p. protocols" command on routers one and three.  The ten network is highlighted to show it is being summarized. Figure five shows the output from the "show i. p. route" command on router two after automatic summarization has been disabled on routers one and three.  The individual ten networks are now listed rather than the summary.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.2.4 Building the Link-State Packet</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Building the Link-State Packet</h1>
+        <div>
+          <p>The third step in the link-state routing process is that each router builds a link-state packet (LSP) containing the state of each directly connected link. </p>
+          <p></p>
+          <p>After a router has established its adjacencies, it can build its LSP that contains the link-state information about its links. A simplified version of the LSP from R1 displayed in the figure would contain the following:</p>
+          <p></p>
+          <p>1. R1; Ethernet network 10.1.0.0/16; Cost 2</p>
+          <p>2. R1 -> R2; Serial point-to-point network; 10.2.0.0/16; Cost 20</p>
+          <p>3. R1 -> R3; Serial point-to-point network; 10.3.0.0/16; Cost 5</p>
+          <p>4. R1 -> R4; Serial point-to-point network; 10.4.0.0/16; Cost 20</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows 4 routers in a diamond pattern. Each router is directly connected to its two neighboring routers.  There is one router in the middle, and it is connected to two of the other routers.  The figure has link costs on each link between routers.  The figure focuses on router R-1, which has three active serial WAN links and a local network on a Fast Ethernet interface.  Figure is showing Router R-1 building a link state packet that it will send out an interface to a neighbor.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt02,#ID_s1_txt03
+{
+	font-weight: bold !important;
+}
+#ID_s1_txt06,#ID_s1_txt07,#ID_s1_txt08,#ID_s1_txt09
+{
+	background-color: #FFFFFF;
+ padding: 5px !important;
+ box-shadow: 1px 1px 1px 1px #888888
+}

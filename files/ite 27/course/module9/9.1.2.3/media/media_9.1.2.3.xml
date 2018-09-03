@@ -1,0 +1,40 @@
+<textcomponents>
+
+	<component id="ID_title">
+	<text><![CDATA[<b>Type 2 LSA Message Propagation</b>]]></text>
+	</component>
+   <component id="ID_txt01">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+  <component id="ID_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[<b>Area 2</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[DR]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[DR]]></text> 
+  </component>
+    <component id="ID_txt07">
+  <text><![CDATA[Type 2]]></text> 
+  </component>
+    <component id="ID_txt08">
+  <text><![CDATA[Type 2]]></text> 
+  </component>
+  
+   
+<component id="ID_Title_txt01">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_Body_txt01">
+<text><![CDATA[<textformat blockindent='-14'><li>Type 2 LSAs identify the routers and the network addresses of the multiaccess links.</li><li>Only a DR generates a type 2 LSA.</li><li>Type 2 LSAs are flooded within the multiaccess network and do not go beyond an ABR.</li><li>A type 2 LSA link-state ID is identified by the DR router ID.</li></textformat>]]></text>
+</component>
+
+</textcomponents>

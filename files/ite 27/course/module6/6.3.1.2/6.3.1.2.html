@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.1.2 EIGRP Topology Table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Topology Table</h1>
+        <div>
+          <p>EIGRP updates contain networks that are reachable from the router sending the update. As EIGRP updates are exchanged between neighbors, the receiving router adds these entries to its EIGRP topology table. </p>
+          <p></p>
+          <p>Each EIGRP router maintains a topology table for each routed protocol configured, such as IPv4 and IPv6. The topology table includes route entries for every destination that the router learns from its directly connected EIGRP neighbors. </p>
+          <p></p>
+          <p>The figure shows the continuation of the initial route discovery process from the previous page. It now shows the update of the topology table. </p>
+          <p></p>
+          <p>When a router receives an EIGRP routing update, it adds the routing information to its EIGRP topology table and replies with an EIGRP acknowledgment. </p>
+          <p></p>
+          <p>1. R1 receives the EIGRP update from neighbor R2 that includes information about the routes that the neighbor is advertising, including the metric to each destination. R1 adds all update entries to its topology table. The topology table includes all destinations advertised by neighboring (adjacent) routers and the cost (metric) to reach each network.</p>
+          <p></p>
+          <p>2. EIGRP update packets use reliable delivery; therefore, R1 replies with an EIGRP acknowledgment packet informing R2 that it has received the update.</p>
+          <p></p>
+          <p>3. R1 sends an EIGRP update to R2 advertising the routes that it is aware of, except those learned from R2 (split horizon).</p>
+          <p></p>
+          <p>4. R2 receives the EIGRP update from neighbor R1 and adds this information to its own topology table.</p>
+          <p></p>
+          <p>5. R2 responds to R1’s EIGRP update packet with an EIGRP acknowledgment. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers. Each router is running e. i. g. r. p. Router one is sending a hello packet to router two.  Router two is sending an update and hello packet to router one.  Router one sends back an acknowledgement packet and an update packet to router two.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

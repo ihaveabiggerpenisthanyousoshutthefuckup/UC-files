@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.3.2 RSTP BPDUs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>RSTP BPDUs</h1>
+        <div>
+          <p>RSTP uses type 2, version 2 BPDUs. The original 802.1D STP uses type 0, version 0 BPDUs. However, a switch running RSTP can communicate directly with a switch running the original 802.1D STP. RSTP sends BPDUs and populates the flag byte in a slightly different manner than in the original 802.1D:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Protocol information can be immediately aged on a port if Hello packets are not received for three consecutive Hello times (six seconds, by default) or if the max age timer expires. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>BPDUs are used as a keepalive mechanism. Therefore, three consecutively missed BPDUs indicate lost connectivity between a bridge and its neighboring root or designated bridge. The fast aging of the information allows failures to be detected quickly.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Note</b>: Like STP, an RSTP switch sends a BPDU with its current information every Hello time period (two seconds, by default), even if the RSTP switch does not receive BPDUs from the root bridge. </p>
+          <p></p>
+          <p>As shown in the figure, RSTP uses the flag byte of version 2 BPDU:</p>
+          <p>
+            <ul>
+              <li>Bits 0 and 7 are used for topology change and acknowledgment. They are in the original 802.1D. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Bits 1 and 6 are used for the Proposal Agreement process (used for rapid convergence).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Bits 2 to 5 encode the role and state of the port.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Bits 4 and 5 are used to encode the port role using a 2-bit code.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table listing the fields for an R.S.T.P. version 2 b.p.d.u..  Another table displays the breakdown for the flags field and its individual bits.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

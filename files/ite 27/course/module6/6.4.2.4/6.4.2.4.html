@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.2.4 The ipv6 eigrp Interface Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The ipv6 eigrp Interface Command</h1>
+        <div>
+          <p>EIGRP for IPv6 uses a different method to enable an interface for EIGRP. Instead of using the<b> network </b>router configuration mode command to specify matching interface addresses, EIGRP for IPv6 is configured directly on the interface.  </p>
+          <p></p>
+          <p>Use the following interface configuration mode command to enable EIGRP for IPv6 on an interface:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)#</span>
+            <span class="cmd">
+              <b> ipv6 eigrp </b>
+            </span>
+            <span class="cmd">
+              <i>autonomous-system</i>
+            </span>
+          </p>
+          <p></p>
+          <p>The <i>autonomous-system</i> value must be the same as the autonomous system number used to enable the EIGRP routing process. Similar to the<b> network </b>command used in EIGRP for IPv4, the<b> ipv6 eigrp </b>interface command:</p>
+          <p>
+            <ul>
+              <li>Enables the interface to form adjacencies and send or receive EIGRP for IPv6 updates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Includes the prefix (network) of this interface in EIGRP for IPv6 routing updates.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 shows the configuration to enable EIGRP for IPv6 on routers R1 and R2 interfaces. Notice the message following the serial 0/0/0 interface in R2: </p>
+          <p></p>
+          <p>
+            <span class="cmd">%DUAL-5-NBRCHANGE: EIGRP-IPv6 2: Neighbor FE80::1 (Serial0/0/0) is up: new adjacency</span>
+          </p>
+          <p></p>
+          <p>This message indicates that R2 has now formed an EIGRP-IPv6 adjacency with the neighbor at link-local address FE80::1. Because static link-local addresses were configured on all three routers, it is easy to determine that this adjacency is with router R1 (FE80::1).</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to enable EIGRP for IPv6 on R3’s interfaces.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Passive Interface with EIGRP for IPv6</b>
+          </p>
+          <p>The same<b> passive-interface </b>command used for IPv4 is used to configure an interface as passive with EIGRP for IPv6. As shown in Figure 3, the<b> show ipv6 protocols </b>command is used to verify the configuration.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the syntax for activating i. p. v. 6 e. i. g. r. p. on each interface on router one and two. Figure two is an interactive activity that allows the learner to practice activating i. p. v. 6 e. i. g. r. p. on each interface on router three. Figure three shows the syntax for configuring a passive interface for e. i .g. r. p. using i. p. v. 6. The command is entered under the routing process and is the same as the i. p. v. 4 command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

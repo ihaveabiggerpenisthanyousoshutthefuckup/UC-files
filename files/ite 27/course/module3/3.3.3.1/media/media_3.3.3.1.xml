@@ -1,0 +1,43 @@
+<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Analyzing the STP Topology</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<font face = "_typewriter" color="#FFFFFF"><b>show cdp neighbors</b></font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<font color="#FFFFFF">Use STP knowledge.</font>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<font face = "_typewriter" color="#FFFFFF"><b>show spanning-tree vlan</b></font>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<font face = "_typewriter" color="#FFFFFF"><b>show spanning-tree vlan</b></font>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Analyze STP]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Discover Layer 2 topology.]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Prepare expected Layer 2 path.]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Verify root bridge.]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Confirm Layer 2 path.]]></text> 
+</component>
+
+</textcomponents>

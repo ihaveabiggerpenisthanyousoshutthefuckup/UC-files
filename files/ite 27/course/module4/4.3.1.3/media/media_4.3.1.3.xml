@@ -1,0 +1,27 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Steps for Router Failover</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Internet or ISP backbone]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Virtual Router]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[New Forwarding<br>Router]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[LAN]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Link or device failure: Standby router becomes the forwarding router.]]></text> 
+</component>
+
+</textcomponents>

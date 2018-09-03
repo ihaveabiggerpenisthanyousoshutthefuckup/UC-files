@@ -1,0 +1,52 @@
+﻿<textcomponents>
+   <component id="ID_title">
+        <text>
+            <![CDATA[<b>HSRP States</b>]]></text>
+    </component>
+  <component id="ID_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width='600' >
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+		<tr>
+		<td width="100px" bgcolor='#666263'><font color='#ffffff'><b>State</b></font></td>
+		<td bgcolor='#666263'><font color='#ffffff'><b>Definition</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>Initial</td>
+		<td bgcolor='#F2F2F2'>This state is entered through a configuration change or when an interface first becomes available.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>Learn</td>
+		<td bgcolor='#E9E7E8'>The router has not determined the virtual IP address and has not yet seen a hello message from the active router. In this state, the router waits to hear from the active router.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>Listen</td>
+		<td bgcolor='#F2F2F2'>The router knows the virtual IP address, but the router is neither the active router nor the standby router. It listens for hello messages from those routers.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>Speak</td>
+		<td bgcolor='#E9E7E8'>The router sends periodic hello messages and actively participates in the election of the active and/or standby router.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>Standby</td>
+		<td bgcolor='#F2F2F2'>The router is a candidate to become the next active router and sends periodic hello messages.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>Active</td>
+		<td bgcolor='#E9E7E8'>The router currently forwards packets that are sent to the group virtual MAC address. The router sends periodic hello messages.</td>
+		</tr>
+
+		</table>]]>
+		        </text>
+		    </component>
+	
+</textcomponents>

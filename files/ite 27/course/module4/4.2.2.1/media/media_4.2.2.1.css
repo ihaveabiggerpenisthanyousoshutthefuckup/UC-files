@@ -1,0 +1,17 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+.orange1
+{
+color:#F68026;
+}
+.textBG{
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 3px 0px #000000;
+    -moz-box-shadow: 0 0 3px 0px #000000;
+    box-shadow: 0 0 3px 0px #000000;
+    padding:4px;
+}

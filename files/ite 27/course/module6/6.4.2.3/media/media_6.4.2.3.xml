@@ -1,0 +1,51 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv6 Routing Process on R1</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>EIGRP for IPv6 Router ID on R1</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>EIGRP for IPv6<font face="_typewriter"> no shutdown </font>on R1</b>]]></text>
+</component>
+<component id="ID_s4_title">
+<text><![CDATA[<b>Configuring EIGRP for IPv6 Routing Process on R2</b>]]></text>
+</component>
+<component id="ID_s5_title">
+<text><![CDATA[<b>Considerations and requirements process</b>]]></text>
+</component>
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+<component id="ID_SC5" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font face="_sans"><b>Enable EIGRP for IPv6 on R3, performing tasks in the following order:<ul><li>Enable IPv6 routing.<li>Enable EIGRP for IPv6 using AS 2.<li>Configure the router ID as 3.0.0.0.<li>Activate the EIGRP for IPv6 process.</b></font>]]></existingcommands>
+		<command prompt="R3(config)#">
+		    <correctresponse><![CDATA[ipv6 unicast-routing]]></correctresponse>
+		</command>
+		<command prompt="R3(config)#">
+		    <correctresponse><![CDATA[ipv6 router eigrp 2]]></correctresponse>
+		</command>
+		<command prompt="R3(config-rtr)#">
+		    <correctresponse><![CDATA[eigrp router-id 3.0.0.0]]></correctresponse>
+		</command>
+		<command prompt="R3(config-rtr)#">
+		    <correctresponse><![CDATA[no shutdown]]></correctresponse>
+		    <deviceresponse><![CDATA[<font face="_typewriter">R3(config-if) #]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>You successfully configured the EIGRP for IPv6 routing process.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+
+</textcomponents>
+
+

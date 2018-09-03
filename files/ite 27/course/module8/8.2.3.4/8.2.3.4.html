@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.4 Default Interface Bandwidths</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Default Interface Bandwidths</h1>
+        <div>
+          <p>All interfaces have default bandwidth values assigned to them. As with reference bandwidth, interface bandwidth values do not actually affect the speed or capacity of the link. Instead, they are used by some routing protocols, like OSPF, to compute the routing metric. Therefore, it is important that the bandwidth value reflect the actual speed of the link so that the routing table has accurate best path information.</p>
+          <p></p>
+          <p>Although the bandwidth values of Ethernet interfaces usually match the link speed, some other interfaces may not. For instance, the actual speed of serial interfaces is often different than the default bandwidth. On Cisco routers, the default bandwidth on most serial interfaces is set to 1.544 Mb/s. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Older serial interfaces may default to 128 kb/s. </p>
+          <p></p>
+          <p>Refer to the example in Figure 1. Notice that the link between:</p>
+          <p>
+            <ul>
+              <li>R1 and R2 should be set to 1,544 kb/s (default value) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 and R3 should be set to 1,024 kb/s</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R1 and R3 should be set to 64 kb/s</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the<b> show interfaces </b>command to view the interface bandwidth setting. Figure 2 displays the serial interface 0/0/0 settings for R1. The bandwidth setting is accurate and therefore the serial interface does not have to be adjusted. </p>
+          <p></p>
+          <p>Figure 3 displays the serial interface 0/0/1 settings for R1. It also confirms that the interface is using the default interface bandwidth 1,544 kb/s. According to the reference topology, this should be set to 64 kb/s. Therefore, the R1 serial 0/0/1 interface must be adjusted.</p>
+          <p></p>
+          <p>Figure 4 displays the resulting cost metric of 647, which is based on the reference bandwidth set to 1,000,000,000 bps and the default interface bandwidth of 1,544 kb/s (1,000,000,000 / 1,544,000).</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the O.S.P.F. reference topology and includes the serial link speeds. The link between router R-1 and router R-2 has a speed of 1,544 kilo b.p.s. The link between R-2 and R-3 is running at 1,024 kilo b.p.s. The link between R-1 and R-3 is running at 64 kilo b.p.s.  Figure two shows the output from the following command run on router R-1, show interfaces serial zero slash zero slash zero.  The figure highlights the line that lists the bandwidth at 1,544 kilo b.p.s.  Figure three shows the output from the following command run on router R-1, show interfaces serial zero slash zero slash one pipe include B.W.  The figure lists the bandwidth at 1,544 kilo b.p.s. Figure four shows the output from the following command run on router R-1, show i.p. O.S.P.F. interface serial zero slash zero slash one being.  The figure highlights the cost of the link is 647.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

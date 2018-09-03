@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.2.2 Wildcard Mask</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Wildcard Mask</h1>
+        <div>
+          <p>OSPFv2 uses the argument combination of<i> network-address wildcard-mask </i>to enable OSPF on interfaces. OSPF is classless by design; therefore, the wildcard mask is always required. When identifying interfaces that are participating in a routing process, the wildcard mask is typically the inverse of the subnet mask configured on that interface. </p>
+          <p></p>
+          <p>A wildcard mask is a string of 32 binary digits used by the router to determine which bits of the address to examine for a match. In a subnet mask, binary 1 is equal to a match and binary 0 is not a match. In a wildcard mask, the reverse is true:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Wildcard mask bit 0 </b>- Matches the corresponding bit value in the address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Wildcard mask bit 1 </b>- Ignores the corresponding bit value in the address.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The easiest method for calculating a wildcard mask is to subtract the network subnet mask from 255.255.255.255.</p>
+          <p></p>
+          <p>The example in Figure 1 calculates the wildcard mask from the network address of 192.168.10.0/24. To do so, the subnet mask 255.255.255.0 is subtracted from 255.255.255.255, providing a result of 0.0.0.255. Therefore, 192.168.10.0/24 is 192.168.10.0 with a wildcard mask of 0.0.0.255.</p>
+          <p></p>
+          <p>The example in Figure 2 calculates the wildcard mask from the network address of 192.168.10.64/26. Again, the subnet mask 255.255.255.192 is subtracted from 255.255.255.255 providing a result of 0.0.0.63. Therefore, 192.168.10.0/26 is 192.168.10.0 with a wildcard mask of 0.0.0.63.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows how to calculate a wildcard mask for a slash 24 network.  This method writes out four sets of 255. The I.P.v.4. subnet mask is listed below.  The subnet mask is then subtracted from the four sets of 255, which results in the wildcard mask.  The figure lists 255 dot 255 dot 255 dot 255 minus 255 dot 255 dot 255 dot zero.  This results in zero dot zero dot zero dot 255 as the wildcard mask. Figure two shows how to calculate a wildcard mask for a slash 26 network.  The figure lists 255 dot 255 dot 255 dot 255 minus 255 dot 255 dot 255 dot 192.  This results in zero dot zero dot zero dot 63 as the wildcard mask.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

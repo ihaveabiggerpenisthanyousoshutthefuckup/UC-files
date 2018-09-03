@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.3.2 Modifying OSPFv2 Intervals</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Modifying OSPFv2 Intervals</h1>
+        <div>
+          <p>It may be desirable to change the OSPF timers so that routers detect network failures in less time. Doing this increases traffic, but sometimes the need for quick convergence is more important than the extra traffic it creates.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The default Hello and Dead intervals are based on best practices and should only be altered in rare situations. </p>
+          <p></p>
+          <p>OSPFv2 Hello and Dead intervals can be modified manually using the following interface configuration mode commands: </p>
+          <p>
+            <ul>
+              <li>
+                <b>ip ospf hello-interval </b>
+                <i>seconds</i>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ip ospf dead-interval </b>
+                <i>seconds</i>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the<b> no ip ospf hello-interval </b>and<b> no ip ospf dead-interval </b>commands to reset the intervals to their default.</p>
+          <p></p>
+          <p>The example in Figure 1 modifies the Hello interval to 5 seconds. Immediately after changing the Hello interval, the Cisco IOS automatically modifies the Dead interval to four times the Hello interval. However, it is always good practice to explicitly modify the timer instead of relying on an automatic IOS feature so that modifications are documented in the configuration. Therefore, the Dead interval is also manually set to 20 seconds on the R1 Serial 0/0/0 interface.</p>
+          <p></p>
+          <p>As displayed by the highlighted OSPFv2 adjacency message in Figure 1, when the Dead Timer on R1 expires, R1 and R2 lose adjacency. The reason is because the values have only been altered on one side of the serial link between R1 and R2. Recall that the OSPF Hello and Dead intervals must match between neighbors. </p>
+          <p></p>
+          <p>Use the<b> show ip ospf neighbor </b>command on R1 to verify the neighbor adjacencies, as shown in Figure 2. Notice that the only neighbor listed is the 3.3.3.3 (R3) router and that R1 is no longer adjacent with the 2.2.2.2 (R2) neighbor. The timers set on Serial 0/0/0 do not affect the neighbor adjacency with R3.</p>
+          <p></p>
+          <p>To restore adjacency between R1 and R2, the R2 Serial 0/0/0 interface Hello interval is set to 5 seconds, as shown in Figure 3. Almost immediately, the IOS displays a message that adjacency has been established with a state of FULL.</p>
+          <p></p>
+          <p>Verify the interface intervals using the<b> show ip ospf interface </b>command, as shown in Figure 4. Notice that the Hello time is 5 seconds and that the Dead Time was automatically set to 20 seconds instead of the default 40 seconds. Remember that the OSPF automatically sets the Dead interval to four times the Hello interval.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the syntax for configuring the hello and dead interval timers on the serial zero slash zero slash zero interface on router one. Figure two shows the output from the "show i. p. o. s. p. f. neighbor" command. Figure three shows the syntax for configuring the hello timer on the serial zero slash zero slash zero interface on router two. Figure four shows the output from the "show i. p. o. s. p. f. interface s. zero slash zero slash zero pipe include timer" command and the "show i. p. o. s. p. f. neighbor" command on router two.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

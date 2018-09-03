@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.5 Modifying a Router ID </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Modifying a Router ID </h1>
+        <div>
+          <p>Sometimes a router ID needs to be changed, for example, when a network administrator establishes a new router ID scheme for the network. However, after a router selects a router ID, an active OSPFv2 router does not allow the router ID to be changed until the router is reloaded or the OSPFv2 process cleared.</p>
+          <p></p>
+          <p>In Figure 1, notice that the current router ID is 192.168.10.5. The router ID should be 1.1.1.1. </p>
+          <p></p>
+          <p>In Figure 2, the router ID 1.1.1.1 is being assigned to R1. Notice how an informational message appears stating that the OSPFv2 process must be cleared or that the router must be reloaded. The reason is because R1 already has adjacencies with other neighbors using the router ID 192.168.10.5. Those adjacencies must be renegotiated using the new router ID 1.1.1.1.</p>
+          <p></p>
+          <p>Clearing the OSPF process is the preferred method to reset the router ID. </p>
+          <p></p>
+          <p>In Figure 3, the OSPFv2 routing process is cleared using the<b> clear ip ospf process </b>privileged EXEC mode command. This forces OSPFv2 on R1 to transition to the Down and Init states. Notice the adjacency change messages from full to down and then from loading to full. The<b> show ip protocols </b>command verifies that the router ID has changed.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to modify the router ID for R1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show i.p. protocols. The line in the output that displays the router I.D. is highlighted. For this router, the I.D. is 192 dot 168 dot 10 dot 5.  Figure two shows the commands used to change the router I.D. and begins in global configuration mode.  The first command is, router O.S.P.F. 10.  This command configures O.S.P.F. on the router and sets the process to 10.  The next command is, router hyphen i.d. one dot one dot one dot one.  This command sets the router I.D.  The router displays the directive for the user to reload or use clear i.p. O.S.P.F. process command for this to take effect.  Figure three shows the command, clear i.p. O.S.P.F. process, being run from privilege exec mode.  This results in the router essentially rebooting the routing protocol.  The figure also highlights router output that shows current adjacencies changing state from full to down, and then changing states from load to full.  The new router I.D. of one dot one dot one dot one is displayed. Figure four is an interactive media element that allows the learner to modify the router I.D.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.3 EIGRP Update and Acknowledgment Packets</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Update and Acknowledgment Packets</h1>
+        <div>
+          <p>
+            <b>EIGRP Update Packets</b>
+          </p>
+          <p>EIGRP sends Update packets to propagate routing information. Update packets are sent only when necessary. EIGRP updates contain only the routing information needed and are sent only to those routers that require it. </p>
+          <p></p>
+          <p>Unlike the older distance vector routing protocol RIP, EIGRP does not send periodic updates and route entries do not age out. Instead, EIGRP sends incremental updates only when the state of a destination changes. This may include when a new network becomes available, an existing network becomes unavailable, or a change occurs in the routing metric for an existing network. </p>
+          <p></p>
+          <p>EIGRP uses the terms <i>partial update</i> and <i>bounded update</i> when referring to its updates. A partial update means that the update only includes information about route changes. A bounded update refers to the sending of partial updates only to the routers that are affected by the changes. Bounded updates help EIGRP minimize the bandwidth that is required to send EIGRP updates.</p>
+          <p></p>
+          <p>EIGRP Update packets use reliable delivery, which means the sending router requires an acknowledgment. Update packets are sent as a multicast when required by multiple routers, or as a unicast when required by only a single router. In the figure, the updates are sent as unicasts because the links are point-to-point.</p>
+          <p></p>
+          <p>
+            <b>EIGRP Acknowledgment Packets</b>
+          </p>
+          <p></p>
+          <p>EIGRP sends Acknowledgment (ACK) packets when reliable delivery is used. An EIGRP acknowledgment is an EIGRP Hello packet without any data. RTP uses reliable delivery for Update, Query, and Reply packets. EIGRP Acknowledgment packets are always sent as an unreliable unicast. Unreliable delivery makes sense; otherwise, there would be an endless loop of acknowledgments.</p>
+          <p></p>
+          <p>In the figure, R2 has lost connectivity to the LAN attached to its Gigabit Ethernet interface. R2 immediately sends an update to R1 and R3 noting the downed route. R1 and R3 respond with an acknowledgment to let R2 know that they have received the update.</p>
+          <p>
+            <b>Note</b>: Some documentation refers to the Hello and acknowledgment as a single type of EIGRP packet. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three interconnected routers.  The router two lan is down.  There is an update packet traveling from router two to routers one and three.  Routers one and three are sending an acknowledgement packet back to router two.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

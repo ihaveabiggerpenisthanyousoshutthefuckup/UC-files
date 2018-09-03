@@ -1,0 +1,79 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<font color='#FFFFFF'><b>Activity - Rapid PVST+</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[Drag the Rapid PVST+ port role names to the appropriate switch port locations provided in the topology. Port role names may be used more than once.]]>
+        </text>
+    </component>
+    <component id='ID_txt01'>
+        <text>
+            <![CDATA[Root Port]]>
+        </text>
+    </component>
+    <component id='ID_txt02'>
+        <text>
+            <![CDATA[Designated Port]]>
+        </text>
+    </component>
+    <component id='ID_txt03'>
+        <text>
+            <![CDATA[Alternate Port]]>
+        </text>
+    </component>
+    <component id='ID_txt05'>
+        <text>
+            <![CDATA[Rapid PVST+ Port Role Names]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_drag01'>
+        <text>
+            <![CDATA[<font color="#393536">RP</font>]]>
+        </text>
+    </component>
+    <component id='ID_drag02'>
+        <text>
+            <![CDATA[<font color="#393536">DP</font>]]>
+        </text>
+    </component>
+    <component id='ID_drag03'>
+        <text>
+            <![CDATA[<font color="#393536">AP</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the Rapid PVST+ port role for each switch port.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the Rapid PVST+ port role for each switch port. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+</textcomponents>

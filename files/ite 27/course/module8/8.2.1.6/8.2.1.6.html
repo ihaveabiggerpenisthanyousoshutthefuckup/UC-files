@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.6 Using a Loopback Interface as the Router ID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Using a Loopback Interface as the Router ID</h1>
+        <div>
+          <p>A router ID can also be assigned using a loopback interface. </p>
+          <p></p>
+          <p>The IPv4 address of the loopback interface should be configured using a 32-bit subnet mask (255.255.255.255). This effectively creates a host route. A 32-bit host route does not get advertised as a route to other OSPF routers. </p>
+          <p></p>
+          <p>The example in the figure displays how to configure a loopback interface with a host route on R1. R1 uses the host route as its router ID, assuming there is no router ID explicitly configured or previously learned.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The <b>router-id</b> command is the preferred method. However, some older versions of the IOS do not recognize the<b> router-id </b>command; therefore, the best way to set the router ID on those routers is by using a loopback interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the commands used to configure a loopback interface on a router to serve as the router I.D.  The figure begins in global configuration mode.  The first command is, interface loopback zero, which moves to interface configuration.  The next command is, i.p. address one dot one dot one dot one 255 dot 255 dot 255 dot 255. This command sets the I.P. address.  This is now the router I.D.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

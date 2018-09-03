@@ -1,0 +1,160 @@
+<textcomponents>  
+
+<component id="ID_title">
+	<text><![CDATA[<b>3.1.4 IA - D Classify Dynamic Routing Protocols]]></text>
+</component>
+
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity, Topology - Determine the Exit Interface for a Given Packet </b><br/>Use this topology diagram as a reference when answering each of the 3 scenarios. Click button 2 now.]]></text>
+</component>
+
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity – Scenario 1: Determine the Exit Interface for a Given Packet </b><br/>Drag each destination IP address to the correct exit interface on Router 3 (R3). Refer to the routing table and topology diagram. Click button 3 to continue. ]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[<b>ROUTER 3 EXIT INTERFACES</b>]]></text>
+</component>
+
+<component id='ID_s2_drag01'>
+	<text><![CDATA[172.16.0.65]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[172.17.0.17]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[192.168.1.2]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[172.18.0.24]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the correct exit interfaces for the destination IP addresses. Click button 3 to continue. ]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the correct exit interfaces for the destination IP addresses. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<component id="ID_s3_inst">
+	<text><![CDATA[<b>Activity – Scenario 2: Determine the Exit Interface for a Given Packet </b><br/>Drag each destination IP address to the correct exit interface on Router 1 (R1). Refer to the routing table and topology diagram. Click button 4 to continue. ]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+	<text><![CDATA[<b>ROUTER 1 EXIT INTERFACES</b>]]></text>
+</component>
+
+<component id='ID_s3_drag01'>
+	<text><![CDATA[172.16.0.65]]></text>
+</component>
+
+<component id='ID_s3_drag02'>
+	<text><![CDATA[172.17.0.17]]></text>
+</component>
+
+<component id='ID_s3_drag03'>
+	<text><![CDATA[192.168.1.2]]></text>
+</component>
+
+<component id='ID_s3_drag04'>
+	<text><![CDATA[172.18.0.24]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the correct exit interfaces for the destination IP addresses. Click button 4 to continue. ]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the correct exit interfaces for the destination IP addresses. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+<component id="ID_s4_inst">
+	<text><![CDATA[<b>Activity – Scenario 3: Determine the Exit Interface for a Given Packet</b><br/>Drag each destination IP address to the correct exit interface on Router 2 (R2). Refer to the routing table and topology diagram. ]]></text>
+</component>
+
+<component id="ID_s4_txt01">
+	<text><![CDATA[<b>ROUTER 2 EXIT INTERFACES</b>]]></text>
+</component>
+
+<component id='ID_s4_drag01'>
+	<text><![CDATA[172.16.0.65]]></text>
+</component>
+
+<component id='ID_s4_drag02'>
+	<text><![CDATA[172.17.0.17]]></text>
+</component>
+
+<component id='ID_s4_drag03'>
+	<text><![CDATA[192.168.1.2]]></text>
+</component>
+
+<component id='ID_s4_drag04'>
+	<text><![CDATA[172.18.0.24]]></text>
+</component>
+
+<component id='ID_s4_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s4_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the correct exit interfaces for the destination IP addresses.]]></text>
+</component>
+
+<component id='ID_s4_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s4_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the correct exit interfaces for the destination IP addresses. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s4_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s4_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

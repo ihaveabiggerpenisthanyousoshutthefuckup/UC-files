@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.4 Verify OSPF Interface Settings</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify OSPF Interface Settings</h1>
+        <div>
+          <p>The quickest way to verify OSPFv2 interface settings is to use the<b> show ip ospf interface </b>command. This command provides a detailed list for every OSPFv2-enabled interface. The command is useful to determine whether the<b> network </b>statements were correctly composed.</p>
+          <p></p>
+          <p>To get a summary of OSPFv2-enabled interfaces, use the<b> show ip ospf interface brief </b>command, as shown in Figure 1. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to retrieve and view a summary of OSPFv2-enabled interfaces on R2 using the<b> show ip ospf interface brief </b>command. Notice that specifying the interface name as done in the<b> show ip ospf interface serial 0/0/1 </b>command provides detailed OSPFv2 information. </p>
+          <p></p>
+          <p>Continue using the Syntax Checker in Figure 2 to get a summary of OSPFv2-enabled interfaces on R3 using the<b> show ip ospf interface brief </b>command. Retrieve and view additional information for the Serial 0/0/0 interface using the<b> show ip ospf interface serial 0/0/0 </b>command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output from the following command run on router R-1, show i.p. O.S.P.F. interface brief.  The output lists the three interfaces participating in O.S.P.F., the i.p. addresses, the costs, and O.S.P.F. area. Figure two is an interactive media element that allows the learner to verify O.S.P.F. interface settings.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

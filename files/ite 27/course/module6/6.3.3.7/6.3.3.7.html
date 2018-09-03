@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.7 Topology Table: No Feasible Successor</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Topology Table: No Feasible Successor</h1>
+        <div>
+          <p>To see how DUAL uses successors and FSs, examine the routing table of R1, assuming the network is converged, as shown in Figure 1. </p>
+          <p></p>
+          <p>Figure 2 displays a partial output from the<b> show ip route </b>command on R1. The route to 192.168.1.0/24 shows that the successor is R3 via 192.168.10.6 with an FD of 2,170,112.</p>
+          <p></p>
+          <p>The IP routing table only includes the best path, the successor. To see if there are any FSs, we must examine the EIGRP topology table. The topology table in Figure 3 only shows the successor 192.168.10.6, which is R3. There are no FSs. By looking at the actual physical topology or network diagram, it is obvious that there is a backup route to 192.168.1.0/24 through R2. R2 is not an FS because it does not meet the FC. Although, looking at the topology, it is obvious that R2 is a backup route, EIGRP does not have a map of the network topology. EIGRP is a distance vector routing protocol and only knows about remote network information through its neighbors.</p>
+          <p></p>
+          <p>DUAL does not store the route through R2 in the topology table. All links can be displayed using the<b> show ip eigrp topology all-links </b>command. This command displays links whether they satisfy the FC or not.</p>
+          <p></p>
+          <p>As shown in Figure 4, the<b> show ip eigrp topology all-links </b>command shows all possible paths to a network, including successors, FSs, and even those routes that are not FSs. R1’s FD to 192.168.1.0/24 is 2,170,112 via the successor R3. For R2 to be considered a FS, it must meet the FC. R2’s RD to R1 to reach 192.168.1.0/24 must be less the R1’s current FD. Per the figure, R2’s RD is 3,012,096, which is higher than R1’s current FD of 2,170,112. </p>
+          <p></p>
+          <p>Even though R2 looks like a viable backup path to 192.168.1.0/24, R1 has no idea that the path is not a potential loop back through itself. EIGRP is a distance vector routing protocol, without the ability to see a complete, loop-free topological map of the network. DUAL’s method of guaranteeing that a neighbor has a loop-free path is that the neighbor’s metric must satisfy the FC. By ensuring that the RD of the neighbor is less than its own FD, the router can assume that this neighboring router is not part of its own advertised route; thus, always avoiding the potential for a loop.</p>
+          <p></p>
+          <p>R2 can be used as a successor if R3 fails; however, there is a longer delay before adding it to the routing table. Before R2 can be used as a successor, DUAL must do further processing.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p. Figure two shows the output of the "show  i. p. route" command on router one.  The feasible distance and next hop router address are highlighted in orange. Figure three shows the output of the "show i. p. e. i. g. r. p. topology" command on router one.  The successor address, distances, and exit interface are highlighted in orange. Figure four shows the output of the "show i. p. e. i. g. r. p. topology" command on router one.  The successor and potential feasible successors address, distances, and exit interface are highlighted in orange.  The later address is not a feasible successor due to the feasibility condition not being met.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

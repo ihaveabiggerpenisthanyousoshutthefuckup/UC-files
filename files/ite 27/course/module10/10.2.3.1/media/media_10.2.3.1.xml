@@ -1,0 +1,27 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>OSPFv3 Topology</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Area 0</b>]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[Internet]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Verify the OSPFv3 Settings on R1</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Verify the OSPFv3 Neighbor Adjacencies on R1</b>]]></text>
+</component>
+<component id="ID_s4_title">
+<text><![CDATA[<b>Display OSPFv3 Parameters</b>]]></text>
+</component>
+<component id="ID_s5_title">
+<text><![CDATA[<b>Verify the OSPFv3 Interface Settings of S0/0/0 on R1</b>]]></text>
+</component>
+<component id="ID_s6_title">
+<text><![CDATA[<b>Verify the OSPFv3 Routes in the Routing Table on R1</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,142 @@
+<textcomponents>
+<!-- Slide 1-->
+	<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity - Scenario 1: Determine EIGRP Fine Tuning Commands</b><br/><br/>EIGRP is taking too long to converge across the congested serial link between Router 1 (R1) and Router 2 (R2). Fine tune the maximum link bandwidth available for EIGRP up to 80% utilization. Drag the command to the appropriate field next to each router. Not all commands will be used. Click Button 2 to continue.]]></text>
+	</component>
+
+
+<!-- Drag and Drop -->  
+
+	<component id='ID_s1_drag01'>
+		<text><![CDATA[<font color="#393536" face="_typewriter"><span>interface s0/0/0<br />ip bandwidth-percent eigrp 1 80</span</font>]]></text>
+	</component>
+	<component id='ID_s1_drag02'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/1<br />ip bandwidth-percent eigrp 80 1</font>]]></text>
+	</component>
+	<component id='ID_s1_drag03'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/0<br />ip bandwidth-percent eigrp 80 1</font>]]></text>
+	</component>
+	<component id='ID_s1_drag04'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/1<br />ip bandwidth-percent eigrp 1 80</font>]]></text>
+	</component>
+
+
+	<component id='ID_s1_CORRECT_TITLE'>
+		<text><![CDATA[<b>Correct</b>]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_BODY'>
+		<text><![CDATA[You have successfully identified the EIGRP fine tuning commands for this scenario. Click Button 2 to continue.]]></text>
+	</component>
+
+
+	<component id='ID_s1_INCORRECT_TITLE'>
+		<text><![CDATA[<b>Incorrect</b>]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully identified the EIGRP fine tuning commands for this scenario. Please click Reset to try again.]]></text>
+	</component>
+
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[<b>Check</b>]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[<b>Reset</b>]]></text>
+	</component>
+<!-- Slide 2-->
+
+	<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity - Scenario 2: Determine EIGRP Fine Tuning Commands</b><br/><br/>The serial link between Router 1 (R1) and Router 2 (R2) is experiencing a high error rate and EIGRP is losing its neighbor adjacency. Fine tune the maximum hello interval for EIGRP up to 120 seconds, and the maximum hold timer for EIGRP up to 240 seconds. Drag the command to the appropriate field next to each router. Not all commands will be used. Click Button 3 to continue.]]></text>
+	</component>
+
+
+<!-- Drag and Drop -->  
+
+	<component id='ID_s2_drag01'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/0<br />ip hello-interval eigrp 120 1<br />ip hold-time eigrp 240 1</font>]]></text>
+	</component>
+	<component id='ID_s2_drag02'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/0<br />ip hello-interval eigrp 1 120<br />ip hold-time eigrp 1 240</font>]]></text>
+	</component>
+	<component id='ID_s2_drag03'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/1<br />ip hello-interval eigrp 1 120<br />ip hold-time eigrp 1 240</font>]]></text>
+	</component>
+	<component id='ID_s2_drag04'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/1<br />ip hello-interval eigrp 120 1<br />ip hold-time eigrp 240 1</font>]]></text>
+	</component>
+
+
+	<component id='ID_s2_CORRECT_TITLE'>
+		<text><![CDATA[<b>Correct</b>]]></text>
+	</component>
+
+	<component id='ID_s2_CORRECT_BODY'>
+		<text><![CDATA[You have successfully identified the EIGRP fine tuning commands for this scenario. Click Button 3 to continue.]]></text>
+	</component>
+
+
+	<component id='ID_s2_INCORRECT_TITLE'>
+		<text><![CDATA[<b>Incorrect</b>]]></text>
+	</component>
+
+	<component id='ID_s2_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully identified the EIGRP fine tuning commands for this scenario. Please click Reset to try again.]]></text>
+	</component>
+
+	<component id='ID_s2_CHECK'>
+		<text><![CDATA[<b>Check</b>]]></text>
+	</component>
+
+	<component id='ID_s2_RESET'>
+		<text><![CDATA[<b>Reset</b>]]></text>
+	</component>
+<!-- Slide 3-->
+
+	<component id="ID_s3_inst">
+		<text><![CDATA[<b>Activity - Scenario 3: Determine EIGRP Fine Tuning Commands</b><br/><br/>The serial link between Router 1 (R1) and Router 2 (R2) was recently upgraded to a 2 gigabit IPv6 link. Fine tune the maximum link bandwidth available for EIGRP down to 5% utilization. Drag the command to the appropriate field next to each router. Not all commands will be used.]]></text>
+	</component>
+
+
+<!-- Drag and Drop -->  
+
+	<component id='ID_s3_drag01'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/0<br />ipv6 bandwidth-percent eigrp 1 5</font>]]></text>
+	</component>
+	<component id='ID_s3_drag02'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/1<br />ip bandwidth-percent eigrp 1 5</font>]]></text>
+	</component>
+	<component id='ID_s3_drag03'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/0<br />ip bandwidth-percent eigrp 1 5</font>]]></text>
+	</component>
+	<component id='ID_s3_drag04'>
+		<text><![CDATA[<font color="#393536" face="_typewriter">interface s0/0/1<br />ipv6 bandwidth-percent eigrp 1 5</font>]]></text>
+	</component>
+
+
+	<component id='ID_s3_CORRECT_TITLE'>
+		<text><![CDATA[<b>Correct</b>]]></text>
+	</component>
+
+	<component id='ID_s3_CORRECT_BODY'>
+		<text><![CDATA[You have successfully identified the EIGRP fine tuning commands for this scenario.]]></text>
+	</component>
+
+
+	<component id='ID_s3_INCORRECT_TITLE'>
+		<text><![CDATA[<b>Incorrect</b>]]></text>
+	</component>
+
+	<component id='ID_s3_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully identified the EIGRP fine tuning commands for this scenario. Please click Reset to try again.]]></text>
+	</component>
+
+	<component id='ID_s3_CHECK'>
+		<text><![CDATA[<b>Check</b>]]></text>
+	</component>
+
+	<component id='ID_s3_RESET'>
+		<text><![CDATA[<b>Reset</b>]]></text>
+	</component>
+</textcomponents>

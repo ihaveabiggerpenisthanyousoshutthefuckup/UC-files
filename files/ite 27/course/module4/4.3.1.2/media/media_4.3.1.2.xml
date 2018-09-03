@@ -1,0 +1,27 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Router Redundancy</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Internet or ISP backbone]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Forwarding<br>Router]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Virtual<br>Router]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Standby<br>Router]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[LAN]]></text> 
+</component>
+
+</textcomponents>

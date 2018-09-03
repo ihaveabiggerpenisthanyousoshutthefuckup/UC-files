@@ -1,0 +1,49 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Default Hello Intervals and Hold Times for EIGRP</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Hello</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Hello</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Hello</b>]]></text>
+</component>
+
+<!--Table-->
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td colspan='4' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#077A77'  valign="top" ><font color='#ffffff' size="11"><b>Bandwidth</b></font></td>
+<td bgcolor='#077A77'  valign="top"><font color='#ffffff' size="11"><b>Example Link</b></font></td>
+<td bgcolor='#077A77'  valign="top"><font color='#ffffff' size="11"><b>Default Hello Interval</b></font></td>
+<td bgcolor='#077A77'  valign="top"><font color='#ffffff' size="11"><b>Default Hold Time</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#ffffff'>1.544 Mb/s</td>
+<td bgcolor='#ffffff'>Multipoint Frame Relay</td>
+<td bgcolor='#ffffff'>60 seconds </td>
+<td bgcolor='#ffffff'>180 seconds</td>
+</tr>
+
+<tr>
+<td bgcolor='#EFF8F7'> Greater than 1.544 Mb/s</td>
+<td bgcolor='#EFF8F7'>T1, Ethernet</td>
+<td bgcolor='#EFF8F7'>5 seconds </td>
+<td bgcolor='#EFF8F7'>15 seconds</td>
+</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

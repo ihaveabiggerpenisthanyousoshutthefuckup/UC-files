@@ -1,0 +1,47 @@
+﻿<textcomponents>
+   <component id="ID_title">
+        <text>
+            <![CDATA[<b>HSRP Command Syntax</b>]]></text>
+    </component>
+  <component id="ID_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' cellspacing='2' class="mtable">
+	        <tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="11"></font></td>
+		</tr>
+
+		  <tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+
+			<tr>
+			<td bgcolor='#666263' width="290" valign="top"><font color='#FFFFFF'><b>Command</b></font></td>
+			<td bgcolor='#666263' width="300" valign="top"><font color='#FFFFFF'><b>Definition</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter">Router(config-if)# <b>standby version 2</b></font></td>
+		<td bgcolor='#E9E7E8'>Configures HSRP to use version 2. HSRP version 1 is the default.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter">Router(config-if)# <b>standby </b>[<i>group-number</i>] <i>ip-address</i></font></td>
+		<td bgcolor='#F2F2F2'>Configures the HSRP virtual IP address that will be used by the specified group. If no group is configured, then the virtual IP address is assigned to group 0.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter">Router(config-if)# <b>standby </b>[<i>group-number</i>] <i>priority </i> [<i>priority-value</i>]</font></td>
+		<td bgcolor='#E9E7E8'>Configures the desired active router with a higher priority than default priority of 100. Range is 0 to 255. If no priority is configured or if priority is equal, than the router with the highest IP address has priority.</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter">Router(config-if)# <b>standby </b>[<i>group-number</i>] <i>preempt</i></font></td>
+		<td bgcolor='#F2F2F2'>Configures a router to preempt the currently active router.</td>
+		</tr>
+
+
+		</table>]]>
+		        </text>
+		    </component>
+	
+</textcomponents>

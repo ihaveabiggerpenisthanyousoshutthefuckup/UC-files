@@ -1,0 +1,216 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>R1 SPF Tree</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>R2 SPF Tree</b>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>R3 SPF Tree</b>]]></text> 
+  </component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>R4 SPF Tree</b>]]></text> 
+  </component>
+  <component id="ID_s5_title">
+  <text><![CDATA[<b>R5 SPF Tree</b>]]></text> 
+  </component>
+  
+  
+  <component id='ID_table01'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+		<tr>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Destination</b></font></td>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Shortest Path</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Cost</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R2 LAN</td>
+		<td bgcolor='#E9E7E8'>R1 to R2</td>
+		<td bgcolor='#E9E7E8'>22</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R3 LAN</td>
+		<td bgcolor='#F2F2F2'>R1 to R3</td>
+		<td bgcolor='#F2F2F2'>7</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R4 LAN</td>
+		<td bgcolor='#E9E7E8'>R1 to R3 to R4</td>
+		<td bgcolor='#E9E7E8'>17</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R5 LAN</td>
+		<td bgcolor='#F2F2F2'>R1 to R3 to R4 to R5</td>
+		<td bgcolor='#F2F2F2'>27</td>
+		</tr>
+</table>]]>
+	</text>
+	</component>
+		
+		
+		
+		<component id='ID_table02'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+		<tr>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Destination</b></font></td>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Shortest Path</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Cost</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R1 LAN</td>
+		<td bgcolor='#E9E7E8'>R2 to R1</td>
+		<td bgcolor='#E9E7E8'>22</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R3 LAN</td>
+		<td bgcolor='#F2F2F2'>R2 to R1 to R3</td>
+		<td bgcolor='#F2F2F2'>27</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R4 LAN</td>
+		<td bgcolor='#E9E7E8'>R2 to R5 to R4</td>
+		<td bgcolor='#E9E7E8'>22</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R5 LAN</td>
+		<td bgcolor='#F2F2F2'>R2 to R5</td>
+		<td bgcolor='#F2F2F2'>12</td>
+		</tr>
+		</table>]]>
+		</text>
+		</component>
+		
+		
+		
+		
+		<component id='ID_table03'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+		<tr>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Destination</b></font></td>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Shortest Path</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Cost</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R1 LAN</td>
+		<td bgcolor='#E9E7E8'>R3 to R1</td>
+		<td bgcolor='#E9E7E8'>7</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R2 LAN</td>
+		<td bgcolor='#F2F2F2'>R3 to R1 to R2</td>
+		<td bgcolor='#F2F2F2'>27</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R4 LAN</td>
+		<td bgcolor='#E9E7E8'>R3 to R4</td>
+		<td bgcolor='#E9E7E8'>12</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R5 LAN</td>
+		<td bgcolor='#F2F2F2'>R3 to R4 to R5</td>
+		<td bgcolor='#F2F2F2'>22</td>
+		</tr>
+		</table>]]>
+		</text>
+		</component>
+		
+		
+		
+		<component id='ID_table04'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+		<tr>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Destination</b></font></td>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Shortest Path</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Cost</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R1 LAN</td>
+		<td bgcolor='#E9E7E8'>R4 to R3 to R1</td>
+		<td bgcolor='#E9E7E8'>17</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R2 LAN</td>
+		<td bgcolor='#F2F2F2'>R4 to R5 to R2</td>
+		<td bgcolor='#F2F2F2'>22</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R3 LAN</td>
+		<td bgcolor='#E9E7E8'>R4 to R3</td>
+		<td bgcolor='#E9E7E8'>12</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R5 LAN</td>
+		<td bgcolor='#F2F2F2'>R4 to R5</td>
+		<td bgcolor='#F2F2F2'>12</td>
+		</tr>
+		</table>]]>
+		</text>
+		</component>
+		
+		
+		<component id='ID_table05'>
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+		<tr>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Destination</b></font></td>
+		<td bgcolor='#666263' width='198' valign="top"><font color='#ffffff'><b>Shortest Path</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Cost</b></font></td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R1 LAN</td>
+		<td bgcolor='#E9E7E8'>R5 to R4 to R3 to R1</td>
+		<td bgcolor='#E9E7E8'>27</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R2 LAN</td>
+		<td bgcolor='#F2F2F2'>R5 to R2</td>
+		<td bgcolor='#F2F2F2'>12</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#E9E7E8'>R3 LAN</td>
+		<td bgcolor='#E9E7E8'>R5 to R4 to R3</td>
+		<td bgcolor='#E9E7E8'>22</td>
+		</tr>
+
+		<tr>
+		<td bgcolor='#F2F2F2'>R4 LAN</td>
+		<td bgcolor='#F2F2F2'>R5 to R4</td>
+		<td bgcolor='#F2F2F2'>12</td>
+		</tr>
+		</table>]]>
+		</text>
+		</component>
+</textcomponents>

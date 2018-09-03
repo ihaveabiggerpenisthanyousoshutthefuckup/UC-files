@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.2 Troubleshooting OSPFv2 Routing Table Issues</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting OSPFv2 Routing Table Issues</h1>
+        <div>
+          <p>In the topology in Figure 1, all of the routers have been configured to support OSPFv2 routing. </p>
+          <p></p>
+          <p>A quick look at the R1 routing table (Figure 2) reveals that it receives default route information, the R2 LAN (172.16.2.0/24) and the link between R2 and R3 (192.168.10.8/30). However, it does not receive the R3 LAN OSPFv2 route. </p>
+          <p></p>
+          <p>The output in Figure 3 verifies the OSPFv2 settings on R3. Notice that R3 only advertises the link between R3 and R2. It does not advertise the R3 LAN (192.168.1.0/24).</p>
+          <p></p>
+          <p>For an interface to be enabled for OSPFv2, a matching<b> network </b>command must be configured under the OSPFv2 routing process. The output in Figure 4 confirms that the R3 LAN is not advertised in OSPFv2. </p>
+          <p></p>
+          <p>The example in Figure 5 adds a<b> network </b>command for the R3 LAN. R3 should now advertise the R3 LAN to its OSPFv2 neighbors.</p>
+          <p></p>
+          <p>The output in Figure 6 verifies that the R3 LAN is now in the routing table of R1. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p. The internal network is highlighted, excluding the link between router two and i. s. p. Figure two shows the output from the "show i. p. route" command on router one. Figure three shows the output from the "show i. p. protocols" command on router three.  The networks for which router three is routing are highlighted. Figure four shows the output from the "show running dash config pipe section router o. s. p. f." command on router three. Figure five shows the syntax for configuring a network for o. s. p. f. Figure six shows the output from the "show i. p. route o. s. p. f." command on router one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

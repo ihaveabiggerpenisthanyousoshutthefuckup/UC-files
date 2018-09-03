@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.4 Link-State Routing Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Link-State Routing Protocols</h1>
+        <div>
+          <p>In contrast to distance vector routing protocol operation, a router configured with a link-state routing protocol can create a complete view or topology of the network by gathering information from all of the other routers.  </p>
+          <p></p>
+          <p>To continue our analogy of sign posts, using a link-state routing protocol is like having a complete map of the network topology. The sign posts along the way from source to destination are not necessary, because all link-state routers are using an identical map of the network. A link-state router uses the link-state information to create a topology map and to select the best path to all destination networks in the topology.  </p>
+          <p></p>
+          <p>Link-state routing protocols do not use periodic updates. In contrast, RIP-enabled routers send periodic updates of their routing information to their neighbors. After the routers have learned about all the required networks (achieved convergence), a link-state update is only sent when there is a change in the topology. For example, the link-state update in the animation is not sent until the 172.16.3.0 network goes down.  </p>
+          <p></p>
+          <p>Click Play in the figure to view link-state operations.  </p>
+          <p></p>
+          <p>Link-state protocols work best in situations where:</p>
+          <p>
+            <ul>
+              <li>The network design is hierarchical, usually occurring in large networks</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Fast adaptation to network changes is crucial</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The administrators are knowledgeable about the implementation and maintenance of a link-state routing protocol</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>There are two link-state IPv4 IGPs:</p>
+          <p>
+            <ul>
+              <li>
+                <b>OSPF </b>- Popular standards-based routing protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IS-IS </b>- Popular in provider networks</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure two shows three routers connected in a triangle design through serial WAN links. Each router is connected to the other two routers.  Each router has two active serial links plus an Ethernet interface, and there are six total network addresses in the figure.  Figure is an animation that shows the process of a link-state routing protocol detecting a failure of a directly connected network and immediately sending out link updates altering other routers of the failure.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

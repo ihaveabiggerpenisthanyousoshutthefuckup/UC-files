@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.6 VTP Caveats</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VTP Caveats</h1>
+        <div>
+          <p>Some network administrators avoid VTP because it could potentially introduce false VLAN information into the existing VTP domain. The configuration revision number is used when determining whether a switch should keep its existing VLAN database, or overwrite it with the VTP update sent by another switch in the same domain with the same password.</p>
+          <p></p>
+          <p>Adding a VTP-enabled switch to an existing VTP domain will wipe out the existing VLAN configurations in the domain if the new switch is configured with different VLANs and has a higher configuration revision number than the existing VTP server. The new switch can be either a VTP server or client switch. This propagation can be difficult to correct. Therefore, when a switch is added to a network, ensure that it has a default VTP configuration.</p>
+          <p></p>
+          <p>As shown in the figure, the S1 switch is the VTP server while the S2 and S3 switches are VTP clients. All switches are in the cisco1 domain and the current VTP revision is 17. In addition to the default VLAN 1, the VTP server (S1) has VLANs 10 and 20 configured. These VLANs have been propagated by VTP to the other two switches.</p>
+          <p></p>
+          <p>A network technician adds S4 to the network to address the need for additional capacity. However, the technician has not erased the startup configuration or deleted the VLAN.DAT file on S4. S4 has the same VTP domain name configured as other two switches but its revision number is 35, which is higher than the revision number on the other two switches.</p>
+          <p></p>
+          <p>S4 has VLAN 1 and is configured with VLAN 30 and 40. But it does not have VLANs 10 and 20 in its database. Unfortunately, because S4 has a higher revision number, the rest of the switches in the domain will sync to S4’s revision. The consequence is that VLANs 10 and 20 will no longer exist on the switches, leaving clients that are connected to ports belonging to those non-existing VLANs without connectivity.</p>
+          <p></p>
+          <p>The VTP configuration revision number is stored in NVRAM (or Flash on some platforms) and is not reset if you erase switch configuration and reload it. To reset VTP configuration revision number to zero you have two options:</p>
+          <p>
+            <ul>
+              <li>Change the switch's VTP domain to a nonexistent VTP domain and then change the domain back to the original name.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Change the switch's VTP mode to transparent and then back to previous VTP mode.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The commands to reset the VTP configuration revision number are discussed in the next topic.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">"The figure shows an Incorrect VTP Configuration Revision Number Scenario.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

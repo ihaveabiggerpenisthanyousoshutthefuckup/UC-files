@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.9 Extended System ID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.9_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Extended System ID</h1>
+        <div>
+          <p>The bridge ID (BID) is used to determine the root bridge on a network. The BID field of a BPDU frame contains three separate fields: </p>
+          <p>
+            <ul>
+              <li>Bridge priority</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Extended system ID</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>MAC address</li>
+            </ul>
+          </p>
+          <p>Each field is used during the root bridge election.</p>
+          <p></p>
+          <p>
+            <b>Bridge Priority</b>
+          </p>
+          <p></p>
+          <p>The bridge priority is a customizable value that can be used to influence which switch becomes the root bridge. The switch with the lowest priority, which implies the lowest BID, becomes the root bridge because a lower priority value takes precedence. For example, to ensure that a specific switch is always the root bridge, set the priority to a lower value than the rest of the switches on the network. The default priority value for all Cisco switches is the decimal value 32768. The range is 0 to 61440 in increments of 4096. Valid priority values are 0, 4096, 8192, 12288, 16384, 20480, 24576, 28672, 32768, 36864, 40960, 45056, 49152, 53248, 57344, and 61440. All other values are rejected. A bridge priority of 0 takes precedence over all other bridge priorities.</p>
+          <p></p>
+          <p>
+            <b>Extended System ID</b>
+          </p>
+          <p></p>
+          <p>Early implementations of IEEE 802.1D were designed for networks that did not use VLANs. There was a single common spanning tree across all switches. For this reason, in older Cisco switches, the extended system ID could be omitted in BPDU frames. As VLANs became common for network infrastructure segmentation, 802.1D was enhanced to include support for VLANs, which required that the VLAN ID be included in the BPDU frame. VLAN information is included in the BPDU frame through the use of the extended system ID. All newer switches include the use of the extended system ID by default.</p>
+          <p></p>
+          <p>As shown in Figure 1, the bridge priority field is 2 bytes or 16-bits in length. 4-bits are used for the bridge priority and 12-bits are used for the extended system ID, which identifies the VLAN participating in this particular STP process. Using these 12 bits for the extended system ID reduces the bridge priority to 4 bits. This process reserves the rightmost 12 bits for the VLAN ID and the far left 4 bits for the bridge priority. This explains why the bridge priority value can only be configured in multiples of 4096, or 2^12. If the far left bits are 0001, then the bridge priority is 4096. If the far left bits are 1111, then the bridge priority is 61440 (= 15 x 4096). The Catalyst 2960 and 3560 Series switches do not allow the configuration of a bridge priority of 65536 (= 16 x 4096) because it assumes use of a 5th bit that is unavailable due to the use of the extended system ID.</p>
+          <p></p>
+          <p>The extended system ID value is a decimal value added to the bridge priority value in the BID to identify the priority and VLAN of the BPDU frame. </p>
+          <p></p>
+          <p>When two switches are configured with the same priority and have the same extended system ID, the switch having the MAC address with the lowest value, expressed in hexadecimal, will have the lower BID. Initially, all switches are configured with the same default priority value. The MAC address is then the deciding factor as to which switch is going to become the root bridge. To ensure that the root bridge decision best meets network requirements, it is recommended that the administrator configure the desired root bridge switch with a lower priority. This also ensures that the addition of new switches to the network does not trigger a new spanning tree election, which can disrupt network communication while a new root bridge is being selected.</p>
+          <p></p>
+          <p>In Figure 2, S1 has a lower priority than the other switches. Therefore, it is preferred as the root bridge for that spanning tree instance.</p>
+          <p></p>
+          <p>When all switches are configured with the same priority, as is the case with all switches kept in the default configuration with a priority of 32768, the MAC address becomes the deciding factor as to which switch becomes the root bridge, as shown in Figure 3.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Note</b>: In the example, the priority of all the switches is 32769. The value is based on the 32768 default priority and the VLAN 1 assignment associated with each switch (32768+1).</p>
+          <p></p>
+          <p>The MAC address with the lowest hexadecimal value is considered to be the preferred root bridge. In the example, S2 has the lowest value for its MAC address and is, therefore, designated as the root bridge for that spanning tree instance.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the bridge i.d. fields in two formats.  One with extended system i.d. and one without.  Without, the priority takes 2 bytes.  With, the priority uses 4 bits and the system i.d. uses the other 12 bits. Figure two shows three switches, each connected to the other two with a trunk link.  Each switch has a caption that displays the root bridge i.d., its bridge i.d., and the path cost.  The priorities are highlighted and switch one is identified as the root bridge because it has the lowest priority. Figure three shows three switches, each connected to the other two with a trunk link.  Each switch has a caption that displays the root bridge i.d., its bridge i.d., and the path cost.  This time the priorities are all the same.  The mac addresses are highlighted and switch two is identified as the root bridge because it has the lowest mac address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.4.2 Multiarea OSPF Troubleshooting Data Structures </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Multiarea OSPF Troubleshooting Data Structures </h1>
+        <div>
+          <p>OSPF stores routing information in four main data structures:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface table -</b> This table includes a list of all active interfaces that have been enabled for OSPF. Type 1 LSAs include the subnets associated with each active interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Neighbor table -</b> This table is used to manage neighbor adjacencies through hello timers and dead timers. Neighbor entries are added and refreshed when a hello is received. Neighbors are removed when the dead timer expires.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Link-state database (LSDB) -</b> This is the primary data structure used by OSPF to store network topology information. It includes full topological information about each area that the OSPF router is connected to, as well as any paths that are available to reach other networks or autonomous systems.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Routing table -</b> After the SPF algorithm is calculated, the best routes to each network are offered to the routing table.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

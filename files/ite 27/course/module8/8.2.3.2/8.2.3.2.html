@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.2 OSPF Accumulates Costs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Accumulates Costs</h1>
+        <div>
+          <p>The cost of an OSPF route is the accumulated value from one router to the destination network. </p>
+          <p></p>
+          <p>For example, in Figure 1, the cost to reach the R2 LAN 172.16.2.0/24 from R1 should be as follows:</p>
+          <p>
+            <ul>
+              <li>Serial link from R1 to R2 cost  = 64</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gigabit Ethernet link on R2 cost =   1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Total cost to reach 172.16.2.0/24 = <b>65</b></li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The routing table of R1 in Figure 2 confirms that the metric to reach the R2 LAN is a cost of 65.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the O.S.P.F. reference topology. Three routers are configured in a triangle. Each router is connected to the other two routers over serial WAN links.  The link between router R-1 and router R-2 has a speed of 1,544 kilo b.p.s., the link between R-2 and R-3 is running at 1,024 kilo b.p.s., and the link between R-1 and R-3 is running at 64 kilo b.p.s.  Each router has a local LAN configured on the gigabit Ethernet zero slash zero interface.  One of the three routers has a loopback interface configured that is simulating a connection to the Internet.  All three routers are in O.S.P.F. area 0.Figure two shows the output from the command, show i.p. route pipe include 172 dot 16 dot 2 dot zero.  The figure highlights the metric to reach the network and that value is 65.  The figure then lists the output from the command, show I.p. route 172 dot 16 dot 2 dot zero. The section in the output that states “route metric is 65” is highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

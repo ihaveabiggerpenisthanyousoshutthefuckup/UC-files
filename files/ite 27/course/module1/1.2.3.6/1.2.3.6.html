@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.3.6 Basic Switch Show Commands</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Basic Switch Show Commands</h1>
+        <div>
+          <p>Switches make use of common IOS commands for configuration, to check for connectivity and to display current switch status. Click buttons 1 to 4 for sample outputs of the commands and the important pieces of information that an administrator can gather from it. </p>
+          <p></p>
+          <p>Interface / Port Related:</p>
+          <p>
+            <ul>
+              <li>
+                <b>show port-security</b>
+                <b></b>- Displays any ports with security activated. To examine a specific interface, include the interface ID. Information included in the output: the maximum addresses allowed, current count, security violation count, and action to be taken. (Figure 1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show port-security address</b>
+                <b></b>- Displays all secure MAC addresses configured on all switch interfaces. (Figure 2)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show interfaces</b>
+                <b></b>- Displays one or all interfaces with line (protocol) status, bandwidth, delay, reliability, encapsulation, duplex, and I/O statistics. (Figure 3)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show mac-address-table</b>
+                <b></b>- Displays all MAC addresses that the switch has learned, how those addresses were learned (dynamic/static), the port number, and the VLAN assigned to the port. (Figure 4)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Like the router, the switch also supports the <b>show cdp neighbors</b> command.</p>
+          <p></p>
+          <p>The same in-band and out-of-band management techniques that apply to routers also applies to switch configuration.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the show port dash security interface fast ethernet zero slash nineteen command on a switch. Figure one shows the output from the show port dash security address command on a switch. Figure one shows the output from the show interfaces fast ethernet zero slash eighteen command on a switch. Figure one shows the output from the show mac dash address dash table command on a switch.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

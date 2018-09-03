@@ -1,0 +1,291 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Activity - Identify VTP Concepts and Operations</b>]]></text>
+	</component>
+
+	<component id="ID_s1_instr_title">
+		<text><![CDATA[Instructions]]></text>
+	</component>
+
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[Choose the correct VTP mode for each definition.]]></text>
+	</component>
+
+	
+	<!--feedback-->
+	<component id='ID_s1_titleCorrect'>
+		<text><![CDATA[Correct]]></text>
+	</component>
+	
+	<component id='ID_s1_correctText'>
+		<text><![CDATA[You have successfully identified the VTP mode.]]></text>
+	</component>
+	
+	<component id='ID_s1_titleIncorrect'>
+		<text><![CDATA[Incorrect]]></text>
+	</component>
+	
+	<component id='ID_s1_incorrectText'>
+		<text><![CDATA[You have not successfully identified the VTP mode. Please click Reset to try again.]]></text>
+	</component>
+	
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+		
+
+
+
+<!--ComboBox 1-->
+
+	<component id="ID_s1_txt01">
+		<text><![CDATA[1. <textformat blockindent='14'>Cannot create, change, or delete VLANs</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt01'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB01_01'>
+		<text><![CDATA[VTP Client]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB01_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB01_03'>
+		<text><![CDATA[VTP Transparent]]></text>
+	</component>
+
+<!--End ComboBox 1-->
+
+<!--ComboBox 2-->
+
+	<component id="ID_s1_txt02">
+		<text><![CDATA[2. <textformat blockindent='14'>VLANs that are created, renamed, or deleted on these are local to that switch only</textformat>]]></text>
+	</component>
+	
+	<component id='ID_s1_CBprompt02'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB02_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB02_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB02_03'>
+		<text><![CDATA[VTP Transparent]]></text> <!--answer-->
+	</component>
+
+<!--End ComboBox 2-->
+
+
+<!--ComboBox 3-->
+	<component id="ID_s1_txt03">
+		<text><![CDATA[3. <textformat blockindent='14'>Where VLANs can be created, deleted, or renamed for the domain</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt03'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB03_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB03_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB03_03'>
+		<text><![CDATA[VTP Transparent]]></text> <!--answer-->
+	</component>
+
+<!--End ComboBox 3-->
+
+
+<!--ComboBox 4-->
+	<component id="ID_s1_txt04">
+		<text><![CDATA[4. <textformat blockindent='14'>Only stores the VLAN information for the entire domain while the switch is on</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt04'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB04_01'>
+		<text><![CDATA[VTP Client]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB04_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB04_03'>
+		<text><![CDATA[VTP Transparent]]></text>
+	</component>
+
+<!--End ComboBox 4-->
+
+<!--ComboBox 5-->
+	<component id="ID_s1_txt05">
+		<text><![CDATA[5. <textformat blockindent='14'>Advertises the VTP domain VLAN information to other VTP-enabled switches in <span class="alignment">the same VTP domain</span></textformat>]]></text>
+	</component>
+
+	-<component id='ID_s1_CBprompt05'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB05_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB05_02'>
+		<text><![CDATA[VTP Server]]></text> <!--answer--> 
+	</component>
+
+	<component id='ID_s1_CB05_03'>
+		<text><![CDATA[VTP Transparent]]></text>
+	</component>
+
+<!--End ComboBox 5-->
+
+
+<!--ComboBox 6-->
+	<component id="ID_s1_txt06">
+		<text><![CDATA[6. <textformat blockindent='14'>Must be configured in this mode to create extended VLANs</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt06'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB06_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB06_02'>
+		<text><![CDATA[VTP Server]]></text>
+	</component>
+
+	<component id='ID_s1_CB06_03'>
+		<text><![CDATA[VTP Transparent]]></text>  <!--answer-->
+	</component>
+
+<!--End ComboBox 6-->
+
+
+<!--ComboBox 7-->
+	<component id="ID_s1_txt07">
+		<text><![CDATA[7. <textformat blockindent='14'>Does not participate in VTP</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt07'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB07_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB07_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB07_03'>
+		<text><![CDATA[VTP Transparent]]></text>  <!--answer-->
+	</component>
+
+
+<!--End ComboBox 7-->
+
+
+<!--ComboBox 8-->
+
+	<component id="ID_s1_txt08">
+		<text><![CDATA[8. <textformat blockindent='14'>Stores the VLAN information for the entire domain in NVRAM</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt08'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB08_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB08_02'>
+		<text><![CDATA[VTP Server]]></text> <!--answer--> 
+	</component>
+
+	<component id='ID_s1_CB08_03'>
+		<text><![CDATA[VTP Transparent]]></text>
+	</component>
+
+<!--End ComboBox 8-->
+
+
+<!--ComboBox 9-->
+
+	<component id="ID_s1_txt09">
+		<text><![CDATA[9. <textformat blockindent='14'>A switch reset deletes the VLAN information</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt09'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB09_01'>
+		<text><![CDATA[VTP Client]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB09_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB09_03'>
+		<text><![CDATA[VTP Transparent]]></text>
+	</component>
+
+<!--End ComboBox 9-->
+
+
+<!--ComboBox 10-->
+
+	<component id="ID_s1_txt10">
+		<text><![CDATA[10. <textformat blockindent='14'>Forwards VTP advertisements without making changes to the local VLAN database</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt10'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB10_01'>
+		<text><![CDATA[VTP Client]]></text>
+	</component>
+
+	<component id='ID_s1_CB10_02'>
+		<text><![CDATA[VTP Server]]></text> 
+	</component>
+
+	<component id='ID_s1_CB10_03'>
+		<text><![CDATA[VTP Transparent]]></text> <!--answer-->
+	</component>
+
+<!--End ComboBox 10-->
+
+
+
+</textcomponents>

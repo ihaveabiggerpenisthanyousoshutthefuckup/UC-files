@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.3.4 Synchronizing OSPF Databases</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Synchronizing OSPF Databases</h1>
+        <div>
+          <p>After the Two-Way state, routers transition to database synchronization states. While the Hello packet was used to establish neighbor adjacencies, the other four types of OSPF packets are used during the process of exchanging and synchronizing LSDBs.</p>
+          <p></p>
+          <p>In the ExStart state, the two routers decide which router will send the DBD packets first. The router with the higher router ID will be the first router to send DBD packets during the Exchange state. In Figure 1, R2 has the higher router ID and sends it’s DBD packets first.</p>
+          <p></p>
+          <p>In the Exchange state, the two routers exchange one or more DBD packets. A DBD packet includes information about the LSA entry header that appears in the router’s LSDB. The entries can be about a link or about a network. Each LSA entry header includes information about the link-state type, the address of the advertising router, the link’s cost, and the sequence number. The router uses the sequence number to determine the newness of the received link-state information.</p>
+          <p></p>
+          <p>In Figure 2, R2 sends a DBD packet to R1. When R1 receives the DBD, it performs the following actions:</p>
+          <p></p>
+          <p>1. It acknowledges the receipt of the DBD using the LSAck packet.</p>
+          <p>2. R1 then sends DBD packets to R2. </p>
+          <p>3. R2 acknowledges R1.</p>
+          <p></p>
+          <p>R1 compares the information received with the information it has in its own LSDB. If the DBD packet has a more current link-state entry, the router transitions to the Loading state.</p>
+          <p></p>
+          <p>For example, in Figure 3, R1 sends an LSR regarding network 172.16.6.0 to R2. R2 responds with the complete information about 172.16.6.0 in an LSU packet. Again, when R1 receives an LSU, it sends an LSAck. R1 then adds the new link-state entries into its LSDB.</p>
+          <p></p>
+          <p>After all LSRs have been satisfied for a given router, the adjacent routers are considered synchronized and in a full state. </p>
+          <p></p>
+          <p>As long as the neighboring routers continue receiving Hello packets, the network in the transmitted LSAs remain in the topology database. After the topological databases are synchronized, updates (LSUs) are sent only to neighbors:</p>
+          <p>
+            <ul>
+              <li>When a change is perceived (incremental updates)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Every 30 minutes </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows two routers connected through a gigabit Ethernet link on the 172 dot 16 dot 5 dot 0 slash 24 network.  Router R-1 has the I.P. address of 172 dot 16 dot 5 dot 1 slash 24 and router R-2 has the I.P. address of 172 dot 16 dot 5 dot 2 slash 24. The second address is the higher router I.D. and therefore becomes the master for the Exchange State. Figure two shows the two routers exchanging D.B.D. packets.  Figure three shows the two routers exchanging L.S.R. packets, L.S.U. packets, and L.S. Ack packets.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

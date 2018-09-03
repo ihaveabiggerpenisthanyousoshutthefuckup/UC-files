@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.4 PVST+ Load Balancing</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PVST+ Load Balancing</h1>
+        <div>
+          <p>The topology in Figure 1 shows three switches with 802.1Q trunks connecting them. There are two VLANs, 10 and 20, that are being trunked across these links. The goal is to configure S3 as the root bridge for VLAN 20 and S1 as the root bridge for VLAN 10. Port F0/3 on S2 is the forwarding port for VLAN 20 and the blocking port for VLAN 10. Port F0/2 on S2 is the forwarding port for VLAN 10 and the blocking port for VLAN 20. </p>
+          <p></p>
+          <p>In addition to establishing a root bridge, it is also possible to establish a secondary root bridge.  A secondary root bridge is a switch that may become the root bridge for a VLAN if the primary root bridge fails. Assuming the other bridges in the VLAN retain their default STP priority, this switch becomes the root bridge if the primary root bridge fails. </p>
+          <p></p>
+          <p>The steps to configure PVST+ on this example topology are:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Select the switches you want for the primary and secondary root bridges for each VLAN. For example, in Figure 1, S3 is the primary bridge for VLAN 20 and S1 is the secondary bridge for VLAN 20.</p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> Configure the switch to be a primary bridge for the VLAN by using the<b> spanning-tree vlan </b><i>number</i><b> root primary </b>command, as shown in Figure 2. </p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Configure the switch to be a secondary bridge for the VLAN by using the<b> spanning-tree vlan </b><i>number</i><b> root secondary </b>command. </p>
+          <p></p>
+          <p>Another way to specify the root bridge is to set the spanning tree priority on each switch to the lowest value so that the switch is selected as the primary bridge for its associated VLAN.</p>
+          <p></p>
+          <p>Notice that in Figure 2, S3 is configured as the primary root bridge for VLAN 20, S1 is configured as the primary root bridge for VLAN 10. S2 retained its default STP priority.</p>
+          <p></p>
+          <p>The figure also shows that S3 is configured as the secondary root bridge for VLAN 10, and S1 is configured as the secondary root bridge for VLAN 20. This configuration enables spanning tree load balancing, with VLAN 10 traffic heading toward root bridge S1 and VLAN 20 traffic heading toward root bridge S3.</p>
+          <p></p>
+          <p>Another way to specify the root bridge is to set the spanning tree priority on each switch to the lowest value so that the switch is selected as the primary bridge for its associated VLAN, as shown in Figure 3. The switch priority can be set for any spanning tree instance. This setting affects the likelihood that a switch is selected as the root bridge. A lower value increases the probability that the switch is selected. The range is 0 to 61,440 in increments of 4,096; all other values are rejected. For example, a valid priority value is 4,096 x 2 = 8,192. </p>
+          <p></p>
+          <p>As shown in Figure 4, the<b> show spanning-tree active </b>command displays spanning tree configuration details for the active interfaces only. The output shown is for S1 configured with PVST+. There are a number of Cisco IOS command parameters associated with the<b> show spanning-tree </b>command.</p>
+          <p></p>
+          <p>In Figure 5, the output shows that the priority for VLAN 10 is 4,096, the lowest of the three respective VLAN priorities. </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 6 to configure and verify spanning tree for S1 and S3. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three switches inter-connected with trunk links.  Switch three is the primary root bridge for v. lan twenty and the secondary root bridge for v. lan ten.  Switch one is the primary root bridge for v. lan ten and secondary for v. lan twenty. Figure two shows the commands to configure the primary and secondary root bridges on switch one and three using the primary and secondary key words. Figure three shows the commands to configure switch one to be root for v. lan ten and three to be root for v. lan twenty using the priority of 4,096.Figure four shows the output from the show spanning dash tree active command on switch one. The output demonstrates that switch one is the root bridge for v. lan ten. Figure five shows the output from the show running dash config command on switch. The spanning tree commands are highlighted. Figure six is an interactive activity that allows the learner to practice configuring switch three as primary root for v. lan twenty and secondary root for v. lan ten.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

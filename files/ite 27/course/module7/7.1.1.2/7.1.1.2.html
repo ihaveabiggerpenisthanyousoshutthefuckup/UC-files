@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.2 EIGRP Automatic Summarization </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Automatic Summarization </h1>
+        <div>
+          <p>One of the most common tuning methods of EIGRP is enabling and disabling automatic route summarization. Route summarization allows a router to group networks together and advertises them as one large group using a single, summarized route. The ability to summarize routes is necessary due to the rapid growth of networks.</p>
+          <p></p>
+          <p>A border router is a router that sits at the edge of a network. This router must be able to advertise all of the known networks within its routing table to a directly-connected network router or ISP router. This convergence can potentially result in very large route tables. Imagine if a single router had 10 different networks and had to advertise all 10 route entries to a connecting router. What if that connecting router also had 10 networks, and had to advertise all 20 routes to an ISP router? If every enterprise router followed this pattern, the routing table of the ISP router would be huge. </p>
+          <p></p>
+          <p>To limit the number of routing advertisements and the size of routing tables, EIGRP provides route summarization features. Summarization decreases the number of entries in routing updates and lowers the number of entries in local routing tables. It also reduces bandwidth utilization for routing updates and results in faster routing table lookups. </p>
+          <p></p>
+          <p>EIGRP can be enabled to perform automatic summarization at classful boundaries. This means that EIGRP automatically recognizes subnets as a single Class A, B, or C network, and creates only one entry in the routing table for the summary route. As a result, all traffic destined for the subnets travels across that one path. </p>
+          <p></p>
+          <p>The figure shows an example of how automatic summarization works. Routers R1 and R2 are both configured using EIGRP for IPv4 with automatic summarization. R1 has three subnets in its routing table: 172.16.1.0/24, 172.16.2.0/24, and 172.16.3.0/24. In the classful network addressing architecture, these subnets are all considered part of a larger class B network, 172.16.0.0/16. Because EIGRP on router R1 is configured for automatic summarization, when it sends its routing update to R2, it summarizes the three /24 subnets as a single network of 172.16.0.0/16. This reduces the number of routing updates sent and the number of entries in R2’s IPv4 routing table.</p>
+          <p></p>
+          <p>All traffic destined for the three subnets travels across the one path. R2 does not maintain routes to individual subnets and no subnet information is learned. </p>
+          <p></p>
+          <p>In an enterprise network, the path chosen to reach the summary route may not be the best choice for the traffic that is trying to reach each individual subnet. The only way that all routers can find the best routes for each individual subnet is for neighbors to send subnet information. In this situation, automatic summarization should be disabled. When automatic summarization is disabled, updates include subnet information. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers directly connected.  Router one has 3 subnets, the one seventy two dot sixteen dot one dot zero slash twenty four, the one seventy two dot sixteen dot two dot zero slash twenty four, and the one seventy two dot sixteen dot three dot zero slash twenty four.  E. I. G. R. P. will automatically summarize these subnets to the classful boundary of one seventy two dot sixteen dot zero dot zero slash sixteen since these are subnets of a class B. network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

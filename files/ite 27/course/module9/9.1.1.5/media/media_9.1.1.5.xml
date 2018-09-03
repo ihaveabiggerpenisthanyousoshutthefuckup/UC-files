@@ -1,0 +1,110 @@
+<textcomponents>
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity – Part 1: Identify Multiarea OSPF Terminology</b><br/>Identify the Multiarea OSPF areas by dragging the name of the area types to the fields provided in the topology. Click Part 2 to continue this activity.]]></text>
+	</component>
+   <component id="ID_s1_txt01">
+  <text><![CDATA[<b>Area 33</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt03">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt04">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+  <component id="ID_s1_txt05">
+  <text><![CDATA[<b>Multiarea OSPF Types</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt06">
+  <text><![CDATA[Backbone<br>Area]]></text> 
+  </component>
+    <component id="ID_s1_txt07">
+  <text><![CDATA[Regular Area]]></text> 
+  </component>
+    <component id="ID_s1_txt08">
+  <text><![CDATA[Type 2]]></text> 
+  </component>
+  <component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the OSPF Multiarea type to the topology. Click Button 2 to continue.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the OSPF Multiarea type to the topology. Please click Reset to try again.]]></text>
+</component>
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity – Part 2: Identify Multiarea OSPF Terminology</b><br/>Identify the Multiarea OSPF router types by dragging the name of the router types to the fields provided in the topology.]]></text>
+	</component>
+   <component id="ID_s2_txt01">
+  <text><![CDATA[<b>Area 33</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt03">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt04">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+  <component id="ID_s2_txt05">
+  <text><![CDATA[<b>Multiarea OSPF Router Types</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt06">
+  <text><![CDATA[<span style="padding-left:5px;">Autonomous System Boundary Router (ASBR)</span>]]></text> 
+  </component>
+    <component id="ID_s2_txt07">
+  <text><![CDATA[Backbone Router (BR)]]></text> 
+  </component>
+    <component id="ID_s2_txt08">
+  <text><![CDATA[Area Border Router (ABR)]]></text> 
+  </component>
+      <component id="ID_s2_txt09">
+  <text><![CDATA[Internal Router]]></text> 
+  </component>
+    
+  <component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the OSPF Multiarea router type to the topology.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the OSPF Multiarea router type to the topology. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

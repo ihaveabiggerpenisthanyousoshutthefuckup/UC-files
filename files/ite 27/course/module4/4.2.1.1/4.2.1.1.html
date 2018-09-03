@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.1.1 Configuration Guidelines</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuration Guidelines</h1>
+        <div>
+          <p>The following guidelines and restrictions are useful for configuring EtherChannel:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>EtherChannel support </b>- All Ethernet interfaces on all modules must support EtherChannel with no requirement that interfaces be physically contiguous, or on the same module.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Speed and duplex </b>- Configure all interfaces in an EtherChannel to operate at the same speed and in the same duplex mode.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>VLAN match </b>- All interfaces in the EtherChannel bundle must be assigned to the same VLAN, or be configured as a trunk (also shown in the figure).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Range of VLANs </b>- An EtherChannel supports the same allowed range of VLANs on all the interfaces in a trunking EtherChannel. If the allowed range of VLANs is not the same, the interfaces do not form an EtherChannel, even when set to<b> auto </b>or<b> desirable </b>mode.</li>
+            </ul>
+          </p>
+          <p>Figure 1 shows a configuration that would allow an EtherChannel to form between S1 and S2. In Figure 3, S1 the ports are configured as half duplex. Therefore, an EtherChannel will not form between S1 and S2.</p>
+          <p></p>
+          <p>If these settings must be changed, configure them in port channel interface configuration mode. Any configuration that is applied to the port channel interface also affects individual interfaces. However, configurations that are applied to the individual interfaces do not affect the port channel interface. Therefore, making configuration changes to an interface that is part of an EtherChannel link may cause interface compatibility issues.</p>
+          <p></p>
+          <p>The port channel can be configured in access mode, trunk mode (most common), or on a routed port.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two topologies. Each topology has two switches. There are connections between the switches on two ports.  In the first topology, the connected ports on each switch are running at one gigabit per second, are in full duplex mode, and are placed in V LAN ten.  This configuration allows the formation of an ether channel.  In the second topology, the ports on each switch are running at one gigabit per second and are placed in V LAN ten. However, one port is running in half duplex mode while the port on the other switch is running in full duplex.  This configuration will not allow the formation of an ether channel.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

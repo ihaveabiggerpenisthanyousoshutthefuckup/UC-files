@@ -1,0 +1,1 @@
+Figure 1 shows the available VLANs on a Catalyst 2960 switch. Figure 2 shows the featyres of normal range and extended range VLANs. .

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.3 Adjusting the Reference Bandwidth</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Adjusting the Reference Bandwidth</h1>
+        <div>
+          <p>OSPF uses a reference bandwidth of 100 Mb/s for any links that are equal to or faster than a fast Ethernet connection. Therefore, the cost assigned to a fast Ethernet interface with an interface bandwidth of 100 Mb/s would equal 1. </p>
+          <p></p>
+          <p>
+            <span class="cmd">
+              <b>Cost =</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>
+                <u>100,000,000 bps</u>
+              </i>
+            </span>
+            <span class="cmd"> / </span>
+            <span class="cmd">
+              <i>
+                <u>100,000,000</u>
+              </i>
+            </span>
+            <span class="cmd">
+              <i> = </i>
+            </span>
+            <span class="cmd">
+              <i>
+                <u>1</u>
+              </i>
+            </span>
+          </p>
+          <p></p>
+          <p>While this calculation works for fast Ethernet interfaces, it is problematic for links that are faster than 100 Mb/s; because the OSPF metric only uses integers as its final cost of a link. If something less than an integer is calculated, OSPF rounds up to the nearest integer. For this reason, from the OSPF perspective, an interface with an interface bandwidth of 100 Mb/s (a cost of 1) has the same cost as an interface with a bandwidth of 100 Gb/s (a cost of 1). </p>
+          <p></p>
+          <p>To assist OSPF in making the correct path determination, the reference bandwidth must be changed to a higher value to accommodate networks with links faster than 100 Mb/s.</p>
+          <p></p>
+          <p>
+            <b>Adjusting the Reference Bandwidth</b>
+          </p>
+          <p></p>
+          <p>Changing the reference bandwidth does not actually affect the bandwidth capacity on the link; rather, it simply affects the calculation used to determine the metric. To adjust the reference bandwidth, use the<b> auto-cost reference-bandwidth </b><i>Mb/s </i>router configuration command. This command must be configured on every router in the OSPF domain. Notice that the value is expressed in Mb/s; therefore, to adjust the costs for:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Gigabit Ethernet </b>-<span class="cmd"><b></b></span><b>auto-cost reference-bandwidth 1000</b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>10 Gigabit Ethernet </b>-<span class="cmd"><b></b></span><b>auto-cost reference-bandwidth 10000</b></li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To return to the default reference bandwidth, use the<b> auto-cost reference-bandwidth 100 </b>command.</p>
+          <p></p>
+          <p>The table in Figure 1 displays the OSPF cost if the reference bandwidth is set to Gigabit Ethernet. Although the metric values increase, OSPF makes better choices because it can now distinguish between FastEthernet and Gigabit Ethernet links.</p>
+          <p></p>
+          <p>Figure 2 displays the OSPF cost if the reference bandwidth is adjusted to accommodate 10 Gigabit Ethernet links. The reference bandwidth should be adjusted anytime there are links faster than FastEthernet (100 Mb/s).</p>
+          <p></p>
+          <p>
+            <b>Note</b>:<b></b> The costs represent whole numbers that have been rounded down.</p>
+          <p></p>
+          <p>In Figure 3, all routers have been configured to accommodate the Gigabit Ethernet link with the<b> auto-cost reference-bandwidth 1000 </b>router configuration command. The new accumulated cost to reach the R2 LAN 172.16.2.0/24 from R1:</p>
+          <p>
+            <ul>
+              <li>Serial link from R1 to R2 cost  = 647</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gigabit Ethernet link on R2 cost =   1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Total cost to reach 172.16.2.0/24 = <b>648</b></li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the<b> show ip ospf interface s0/0/0 </b>command to verify the current OSPFv2 cost assigned to the R1 serial 0/0/0 interface, as shown in Figure 4. Notice how it displays a cost of 647. </p>
+          <p></p>
+          <p>The routing table of R1 in Figure 5 confirms that the metric to reach the R2 LAN is a cost of 648.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table of costs after running the command, auto hyphen cost reference hyphen bandwidth 1,000.  In the table, each calculation is using 1 gigabit for the reference bandwidth. The result lists a cost of 10 for 100 mega b.p.s. and a cost of 1 for gigabit and ten gigabit Ethernet.  Figure two shows a table of costs after running the command, auto hyphen cost reference hyphen bandwidth 10,000.  In the table, each calculation is using 10 gigabit for the reference bandwidth. The result lists a cost of 100 for 100 mega b.p.s., a cost of 10 for gigabit Ethernet, and a cost of 1 for ten gigabit Ethernet. Figure three shows the O.S.P.F. reference topology, and lists the serial link costs after running the command, auto-cost reference-bandwidth 1000.  This command results in the cost of the link between routers R-1 and R-2 to change from 64 to 647.Figure four shows the output from the command, show i.p. O.S.P.F. interface serial zero slash zero slash zero.  The figure highlights the cost being listed as 647 for the link. Figure five shows the output of the command, show i.p. route pipe include 12 dot 16 dot 2 dot zero. The metric of the route is listed as 648 and is highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

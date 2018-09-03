@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.5 Achieving Convergence</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Achieving Convergence</h1>
+        <div>
+          <p>The network has converged when all routers have complete and accurate information about the entire network, as shown in the figure. Convergence time is the time it takes routers to share information, calculate best paths, and update their routing tables. A network is not completely operable until the network has converged; therefore, most networks require short convergence times. </p>
+          <p></p>
+          <p>Convergence is both collaborative and independent. The routers share information with each other, but must independently calculate the impacts of the topology change on their own routes. Because they develop an agreement with the new topology independently, they are said to converge on this consensus. </p>
+          <p></p>
+          <p>Convergence properties include the speed of propagation of routing information and the calculation of optimal paths. The speed of propagation refers to the amount of time it takes for routers within the network to forward routing information.  </p>
+          <p></p>
+          <p>Routing protocols can be rated based on the speed to convergence; the faster the convergence, the better the routing protocol. Generally, older protocols, such as RIP, are slow to converge, whereas modern protocols, such as EIGRP and OSPF, converge more quickly.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the basic information in the routing table for each router.  Each router has all four networks in its table. The only difference between them is the hop count for each network.  R-1 sees its two networks with a hop count of zero, the WAN link between R-2 and R-3 is one hop away, and the LAN off of the Ethernet interface of R-3 is two hops away.  R-2 sees its two networks with a hop count of zero, and each of the LANs off of the Ethernet interfaces of R-1 and R-3 as one hop away.  R-3 sees its two networks with a hop count of zero, the WAN link between R-2 and R-1 is one hop away, and the LAN off of the Ethernet interface of R-1 is two hops away. Figure two shows three routers connected in a triangle design through serial WAN links. Each router is connected to the other two routers.  Each router has two active serial links plus an Ethernet interface, and there are six total network addresses in the figure.  Convergence is the time it takes for all routers to have a complete and accurate picture of the network in their routing tables.  If RIP was being utilized in this network and a network failed, it would be a longer convergence time than either E.I.G.R.P. or O.S.P.F.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

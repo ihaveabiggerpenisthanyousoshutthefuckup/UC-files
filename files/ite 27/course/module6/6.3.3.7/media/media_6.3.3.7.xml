@@ -1,0 +1,58 @@
+<textcomponents>
+<!--slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv4 Topology</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[EIGRP Routing Domain]]></text> 
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Internet]]></text> 
+</component>
+
+<!--slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>R1’s Routing Table Entry for 192.168.1.0/24</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[Feasible Distance]]></text> 
+</component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[Next-hop router (R3) is the successor.]]></text> 
+</component>
+<component id='ID_s2_txt03'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<!--slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>R1’s Topology Table Entry for 192.168.1.0/24</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+  <text><![CDATA[Successor]]></text> 
+</component>
+<component id='ID_s3_txt02'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<!--slide 4-->
+<component id="ID_s4_title">
+<text><![CDATA[<b>R1’s All-links Topology Table Entry for 192.168.1.0/24</b>]]></text>
+</component>
+<component id="ID_s4_txt01">
+  <text><![CDATA[R1’s Feasible Distance]]></text> 
+</component>
+<component id="ID_s4_txt02">
+  <text><![CDATA[R2’s Reported Distance]]></text> 
+</component>
+<component id="ID_s4_txt03">
+  <text><![CDATA[Successor]]></text> 
+</component>
+<component id="ID_s4_txt04">
+  <text><![CDATA[Not a feasible successor]]></text> 
+</component>
+<component id='ID_s4_txt05'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+</textcomponents>

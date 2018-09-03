@@ -1,0 +1,15 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Port Densities</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[24-port switch]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[48-port switch]]></text> 
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Modular switch with up to 1000+ ports]]></text> 
+	</component>
+
+</textcomponents>

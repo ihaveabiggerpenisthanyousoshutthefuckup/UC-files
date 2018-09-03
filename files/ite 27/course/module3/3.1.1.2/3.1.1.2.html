@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.1.2 Issues with Layer 1 Redundancy: MAC Database Instability</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Issues with Layer 1 Redundancy: MAC Database Instability</h1>
+        <div>
+          <p>Ethernet frames do not have a time to live (TTL) attribute. As a result, if there is no mechanism enabled to block continued propagation of these frames on a switched network, they continue to propagate between switches endlessly, or until a link is disrupted and breaks the loop. This continued propagation between switches can result in MAC database instability. This can occur due to broadcast frames forwarding. </p>
+          <p></p>
+          <p>Broadcast frames are forwarded out all switch ports, except the original ingress port. This ensures that all devices in a broadcast domain are able to receive the frame. If there is more than one path for the frame to be forwarded out of, an endless loop can result. When a loop occurs, it is possible for the MAC address table on a switch to constantly change with the updates from the broadcast frames, which results in MAC database instability.</p>
+          <p></p>
+          <p>Click the <b>Play</b> button in the figure to view the animation. When the animation pauses, read the text to the left of the topology. The animation will continue after the short pause.</p>
+          <p></p>
+          <p>In the animation:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>PC1 sends a broadcast frame to S2. S2 receives the broadcast frame on F0/11. When S2 receives the broadcast frame, it updates its MAC address table to record that PC1 is available on port F0/11. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Because it is a broadcast frame, S2 forwards the frame out all ports, including Trunk1 and Trunk2. When the broadcast frame arrives at S3 and S1, the switches update their MAC address tables to indicate that PC1 is available out port F0/1 on S1 and out port F0/2 on S3.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Because it is a broadcast frame, S3 and S1 forward the frame out all ports, except the ingress port. S3 sends the broadcast frame from PC1 to S1. S1 sends the broadcast frame from PC1 to S3. Each switch updates its MAC address table with the incorrect port for PC1. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Each switch forwards the broadcast frame out all of its ports, except the ingress port, which results in both switches forwarding the frame to S2.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>When S2 receives the broadcast frames from S3 and S1, the MAC address table is updated with the last entry received from the other two switches. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>This process repeats over and over again until the loop is broken by physically disconnecting the connections that are causing the loop or powering down one of the switches in the loop. This creates a high CPU load on all switches caught in the loop. Because the same frames are constantly being forwarded back and forth between all switches in the loop, the CPU of the switch must process a lot of data. This slows down performance on the switch when legitimate traffic arrives.</p>
+          <p></p>
+          <p>A host caught in a network loop is not accessible to other hosts on the network. Additionally, due to the constant changes in the MAC address table, the switch does not know out of which port to forward unicast frames. In the example above, the switches will have the incorrect ports listed for PC1. Any unicast frame destined for PC1 loops around the network, just as the broadcast frames do. More and more frames looping around the network eventually creates a broadcast storm.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">This animation shows three switches, s.1, s.2, and s.3.  Each is connected to the other two with a trunk link.  S.2 has P.C.1, P.C.2, and P.C.3 connected.  S.1 has P.C.4 connected.  The animation demonstrates how mac address databases can become unstable when layer two loops exist in a network.  A broadcast can cause the incorrect mac address to port map to exist due to the loop as the broadcast continues to bounce around the network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

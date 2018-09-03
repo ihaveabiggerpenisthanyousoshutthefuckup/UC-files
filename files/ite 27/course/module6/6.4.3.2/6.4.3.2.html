@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.3.2 The show ip protocols Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The show ip protocols Command</h1>
+        <div>
+          <p>The<b> show ipv6 protocols </b>command displays the parameters and other information about the state of any active IPv6 routing protocol processes currently configured on the router. The<b> show ipv6 protocols </b>command displays different types of output specific to each IPv6 routing protocol. </p>
+          <p></p>
+          <p>The output in the figure indicates several EIGRP for IPv6 parameters previously discussed, including:</p>
+          <p></p>
+          <p>1. EIGRP for IPv6 is an active dynamic routing protocol on R1 configured with the autonomous system number 2.</p>
+          <p>2. These are the <i>k</i> values used to calculate the EIGRP composite metric. K1 and K3 are 1, by default, and K2, K4, and K5 are 0, by default.</p>
+          <p>3. The EIGRP for IPv6 router ID of R1 is 1.0.0.0.</p>
+          <p>4. Same as EIGRP for IPv4, EIGRP for IPv6 administrative distances have internal AD of 90 and external of 170 (default values).</p>
+          <p>5. The interfaces enabled for EIGRP for IPv6.</p>
+          <p></p>
+          <p>The output from the<b> show ipv6 protocols </b>command is useful in debugging routing operations. The Interfaces section shows which interfaces EIGRP for IPv6 have been enabled. This is useful in verifying that EIGRP is enabled on all of the appropriate interfaces with the correct autonomous system number.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output from the "show i. p. v. 6 protocols" command on router 1.  The e. i. g. r. p. process i.d., the k. values, router i. d., administrative distance, and interfaces are highlighted in orange.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

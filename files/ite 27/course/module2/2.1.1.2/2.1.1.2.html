@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.2 VTP Modes</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>VTP Modes</h1>
+        <div>
+          <p>A switch can be configured in one of three VTP modes, as described in Figure 1.</p>
+          <p>VTP Server </p>
+          <p>
+            <ul>
+              <li>Advertises the VTP domain VLAN information to other VTP-enabled switches in the same VTP domain</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores the VLAN information for the entire domain in NVRAM</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Creates, deletes, or renames VLANs for the domain</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Default VTP mode</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Client</p>
+          <p>
+            <ul>
+              <li>Cannot create, change, or delete VLANs</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores the VLAN information for the entire domain in RAM</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Must be configured as VTP client</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>VTP Transparent</p>
+          <p>
+            <ul>
+              <li>Does not participate in VTP except to forward VTP advertisements to VTP clients and VTP server</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VLANs that are created, renamed, or deleted on transparent switches are local to that switch only</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Must be configured as VTP transparent</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 summarizes the operation of the three VTP modes</p>
+          <p></p>
+          <p>
+            <b>Note</b>: A switch that is in server or client mode with a higher configuration revision number than the existing VTP server updates all VLAN information in the VTP domain. Configuration revision numbers are discussed later in this chapter. As a best practice, Cisco recommends deploying VTP in transparent mode for better VLAN control, security, and manageability.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">.Figure 1shows the VTP modes. Figure 2 summarises the operation of the three modes</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

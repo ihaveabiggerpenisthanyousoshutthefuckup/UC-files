@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.4.2 Negotiated Interface Modes</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Negotiated Interface Modes</h1>
+        <div>
+          <p>Ethernet interfaces on Catalyst 2960 and Catalyst 3560 Series switches support different trunking modes with the help of DTP:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>switchport mode access </b>- Puts the interface (access port) into permanent nontrunking mode and negotiates to convert the link into a nontrunk link. The interface becomes a nontrunk interface, regardless of whether the neighboring interface is a trunk interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>switchport mode dynamic auto</b> - Makes the interface able to convert the link to a trunk link. The interface becomes a trunk interface if the neighboring interface is set to trunk or desirable mode. The default switchport mode for all Ethernet interfaces is <b>dynamic auto</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>switchport mode dynamic desirable</b> - Makes the interface actively attempt to convert the link to a trunk link. The interface becomes a trunk interface if the neighboring interface is set to trunk, desirable, or dynamic auto mode. This is the default switchport mode on older switches, such as the Catalyst 2950 and 3550 Series switches.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>switchport mode trunk</b> - Puts the interface into permanent trunking mode and negotiates to convert the neighboring link into a trunk link. The interface becomes a trunk interface even if the neighboring interface is not a trunk interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>switchport nonegotiate</b> - Prevents the interface from generating DTP frames. You can use this command only when the interface switchport mode is<b> access </b>or<b> trunk</b>. You must manually configure the neighboring interface as a trunk interface to establish a trunk link.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 illustrates the results of the DTP configuration options on opposite ends of a trunk link connected to Catalyst 2960 switch ports.</p>
+          <p></p>
+          <p>Configure trunk links statically whenever possible. The default DTP mode is dependent on the Cisco IOS Software version and on the platform. To determine the current DTP mode, issue the<b> show dtp interface </b>command as shown in Figure 2.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to determine the DTP mode on interface F0/1.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: A general best practice is to set the interface to<b> trunk </b>and<b> nonegotiate </b>when a trunk link is required. On links where trunking is not intended, DTP should be turned off.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table that displays the resulting link mode based on the port configuration.  The port modes listed are dynamic auto, dynamic desirable, trunk, and access. Figure two shows the output from the "show d. t. p. interface f. zero slash one" command. Figure three is an interactive activity that allows the learner to practice using the "show d. t. p. interface f. zero slash one" command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

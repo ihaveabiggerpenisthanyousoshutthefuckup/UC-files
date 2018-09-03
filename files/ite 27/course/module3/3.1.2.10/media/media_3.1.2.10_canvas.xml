@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+<element type="TEXT" compId="ID_s1_table01" x="354" y="353" width="600.05" height="116" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+<element type="TEXTBOX" titleId="ID_s1_instr_title" bodyId="ID_s1_instr_body" x="25" y="55" width="278" height="163" animated="0" subType="ROLLOVER" />
+<element type="IMAGE" src="media_3.1.2.10.png" x="0" y="0" width="1000" height="490"/>
+		
+<element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="38" compHeight="36" dragIcon=""  dropIcon="" tickPosition="left" dragAlpha="1">	
+
+
+	<subelement type="DROP" x="437" y="139" match="1"/>
+	<subelement type="DROP" x="437" y="219" match="2"/>
+	<subelement type="DROP" x="529" y="81" match="0"/>
+	<subelement type="DROP" x="731" y="85" match="1"/>
+	<subelement type="DROP" x="731" y="136" match="1"/>
+	<subelement type="DROP" x="517" y="233" match="0"/>
+	<subelement type="DROP" x="824" y="140" match="1"/>
+	<subelement type="DROP" x="824" y="221" match="0"/>
+
+<subelement type="DRAG" compId="ID_s1_drag01" x="77" y="268" />
+<subelement type="DRAG" compId="ID_s1_drag02" x="77" y="316" />
+<subelement type="DRAG" compId="ID_s1_drag03" x="77" y="364" />
+<subelement type="CHECK" x="25" y="454" width="126" height="21" compId="ID_s1_CHECK"/>
+		
+		<subelement type="RESET" x="171" y="454" width="126" height="21" compId="ID_s1_RESET"/>
+		
+
+		<subelement type="FEEDBACK" x="340" y="171" width="300" height="150" correctTitleId="ID_s1_CORRECT_TITLE" correctBodyId="ID_s1_CORRECT_BODY" wrongTitleId="ID_s1_INCORRECT_TITLE" wrongBodyId="ID_s1_INCORRECT_BODY"/>
+	  </element> 
+<element type="TEXT" compId="ID_s1_txt02" x="130" y="277" width="140.7" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s1_txt03" x="130" y="325" width="140.7" expand="up+down" align="left" />
+<element type="TEXT" compId="ID_s1_txt04" x="130" y="373" width="140.7" expand="up+down" align="left" />
+<element type="TEXT" id="ID_static_1" text="G1/1" x="462.75" y="256.6" align="center" width="31.1" />
+<element type="TEXT" id="ID_static_2" text="G1/2" x="771" y="107.15" align="center" width="31.1" />
+<element type="TEXT" id="ID_static_3" text="G1/1" x="779" y="79.5" align="center" width="31.1" />
+<element type="TEXT" id="ID_static_4" text="G1/1" x="495" y="104" align="center" width="31.1" />
+<element type="TEXT" id="ID_static_5" text="Fa0/1" x="411.65" y="122.15" align="center" width="29.35" />
+<element type="TEXT" id="ID_static_6" text="Fa0/1" x="416.45" y="257.4" align="center" width="29.35" />
+<element type="TEXT" id="ID_static_7" text="G1/3" x="845" y="123" align="center" width="31.1" />
+<element type="TEXT" id="ID_static_8" text="G1/1" x="845" y="260.05" align="center" width="31.1" />
+</slide>
+</data>

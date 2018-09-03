@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.1.1 Basic EIGRP Troubleshooting Commands </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Basic EIGRP Troubleshooting Commands </h1>
+        <div>
+          <p>EIGRP is commonly used in large enterprise networks. Troubleshooting problems related to the exchange of routing information is an essential skill for a network administrator. This is particularly true for administrators who are involved in the implementation and maintenance of large, routed enterprise networks that use EIGRP as the interior gateway protocol (IGP). There are several commands that are useful when troubleshooting an EIGRP network. </p>
+          <p></p>
+          <p>The<b> show ip eigrp neighbors </b>command verifies that the router recognizes its neighbors. The output in Figure 1 indicates two successful EIGRP neighbor adjacencies on R1.</p>
+          <p></p>
+          <p>In Figure 2, the<b> show ip route </b>command verifies that the router learned the route to a remote network through EIGRP. The output shows that R1 has learned about four remote networks through EIGRP.</p>
+          <p></p>
+          <p>Figure 3 shows the output from the<b> show ip protocols </b>command. This command displays various EIGRP settings.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Similar commands and troubleshooting criteria also apply to EIGRP for IPv6.</p>
+          <p></p>
+          <p>The following are the equivalent commands used with EIGRP for IPv6:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 eigrp neighbors</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 route</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 protocols</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show i. p. e. i. g. r. p. neighbors" command on router one. There are two neighbors listed. Figure two shows the output from the "show i. p. route e. i. g. r. p." command. Figure three shows the output from the "show i. p. protocols" command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

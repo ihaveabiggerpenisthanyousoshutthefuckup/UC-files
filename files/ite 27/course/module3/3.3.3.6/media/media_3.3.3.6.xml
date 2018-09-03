@@ -1,0 +1,176 @@
+<textcomponents>
+
+<!-- Slide 1 -->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Activity - Troubleshoot STP Configuration Issues</b>]]></text>
+</component>
+<component id='ID_s1_inst_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+<component id='ID_s1_inst_body'>
+	<text><![CDATA[Drag the switch name to the space provided to indicate which switch is the root bridge based on the <font face='Courier New'><b>show</b></font> command output.]]></text>
+</component>
+<!-- <component id='ID_s1_txt01'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component> -->
+
+<!-- Drag and Drop -->
+<component id='ID_s1_DS01'>
+	<text><![CDATA[SW1]]></text>
+</component>
+
+<component id='ID_s1_DS02'>
+	<text><![CDATA[SW2]]></text>
+</component>
+
+<component id='ID_s3_DS03'>
+	<text><![CDATA[SW3]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the root bridge. Click button 2 to continue.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the root bridge. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_check'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_reset'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<!-- Slide 2 -->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Activity - Troubleshoot STP Configuration Issues</b>]]></text>
+</component>
+<component id='ID_s2_inst_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+<component id='ID_s2_inst_body'>
+	<text><![CDATA[Use the topology and command output to identify the port that is in STP blocking state. <br>Drag the switch name and port number to the spaces provided.]]></text>
+</component>
+
+
+
+
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<!-- Drag and Drop -->
+<component id='ID_s2_DS01'>
+	<text><![CDATA[SW1]]></text>
+</component>
+
+<component id='ID_s2_DS02'>
+	<text><![CDATA[SW2]]></text>
+</component>
+
+<component id='ID_s2_DS03'>
+	<text><![CDATA[SW3]]></text>
+</component>
+
+<component id='ID_s2_DS04'>
+	<text><![CDATA[Gi 1/1]]></text>
+</component>
+
+<component id='ID_s2_DS05'>
+	<text><![CDATA[Gi 1/2]]></text>
+</component>
+
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the switch and port in STP blocking mode. Click button 3 to continue.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the switch and port in STP blocking mode. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_check'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_reset'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+
+
+
+<!-- Slide 3 -->
+
+<component id='ID_s3_title'>
+	<text><![CDATA[<b>Activity - Troubleshoot STP Configuration Issues</b>]]></text>
+</component>
+<component id='ID_s3_inst_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+<component id='ID_s3_inst_body'>
+	<text><![CDATA[There is a link not participating in STP between two of the switches. Drag the red color “x” to the link that is down based on the <font face='Courier New'><b>show</b></font> command output.]]></text>
+</component>
+
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[Root Bridge]]></text>
+</component>
+
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the broken link.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the link that is down. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_check'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s3_reset'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+</textcomponents>

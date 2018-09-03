@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.3 PortFast and BPDU Guard</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PortFast and BPDU Guard</h1>
+        <div>
+          <p>PortFast is a Cisco feature for PVST+ environments. When a switch port is configured with PortFast that port transitions from blocking to forwarding state immediately, bypassing the usual 802.1D STP transition states (the listening and learning states). You can use PortFast on access ports to allow these devices to connect to the network immediately, rather than waiting for IEEE 802.1D STP to converge on each VLAN. Access ports are ports which are connected to a single workstation or to a server.</p>
+          <p></p>
+          <p>In a valid PortFast configuration, BPDUs should never be received, because that would indicate that another bridge or switch is connected to the port, potentially causing a spanning tree loop. Cisco switches support a feature called BPDU guard. When it is enabled, BPDU guard puts the port in an errdisabled (error-disabled) state on receipt of a BPDU. This will effectively shut down the port. The BPDU guard feature provides a secure response to invalid configurations because you must manually put the interface back into service.</p>
+          <p></p>
+          <p>Cisco PortFast technology is useful for DHCP. Without PortFast, a PC can send a DHCP request before the port is in forwarding state, denying the host from getting a usable IP address and other information. Because PortFast immediately changes the state to forwarding, the PC always gets a usable IP address (if the DHCP server has been configured correctly and communication with the DHCP server has occurred). </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Because the purpose of PortFast is to minimize the time that access ports must wait for spanning tree to converge, it should only be used on access ports. If you enable PortFast on a port connecting to another switch, you risk creating a spanning tree loop.</p>
+          <p></p>
+          <p>To configure PortFast on a switch port, enter the<b> spanning-tree portfast </b>interface configuration mode command on each interface that PortFast is to be enabled, as shown in Figure 2. The<b> spanning-tree portfast default </b>global configuration mode command enables PortFast on all nontrunking interfaces.</p>
+          <p></p>
+          <p>To configure BPDU guard on a Layer 2 access port, use the<b> spanning-tree bpduguard enable </b>interface configuration mode command. The<b> spanning-tree portfast bpduguard default </b>global configuration command enables BPDU guard on all PortFast-enabled ports.</p>
+          <p></p>
+          <p>To verify that PortFast and BPDU guard has been enabled for a switch port, use the<b> show running-config </b>command, as shown in Figure 3.  PortFast and BPDU guard are disabled, by default, on all interfaces.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure and verify switches S1 and S2 with PortFast and BPDU guard.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three switches inter-connected with trunk links.  There are three P.C.'s connected to switch two.  The ports the P.C.'s are connected to are configured with port fast and b.p.d.u. guard since they are edge ports. Figure two shows the commands to configure an edge port to use portfast and b.p.d.u. guard. Figure three shows the output from the show running dash config interface f. 0 slash 11.Figure four is an interactive activity that allows the learner to practice configuring portfast and b.p.d.u. guard on an interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

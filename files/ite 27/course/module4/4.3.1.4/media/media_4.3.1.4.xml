@@ -1,0 +1,152 @@
+﻿<textcomponents>
+
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Activity - Identify FHRP Terminology</b>]]></text>
+</component>
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instruction]]></text>
+</component>
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Drag the FHRP terminology to the appropriate definition. Click Button 2 to continue this activity.]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[A device that routes traffic destined to network segments beyond the source network segment for which the sending node may not have explicit routing information.]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[A set of routers working together to present the illusion of a single router to the hosts on a LAN segment.]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[A Layer 3 address assigned to a protocol that shares the single address among multiple devices.]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[A device that is part of a virtual router group assigned the role of alternate default gateway.]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[The Layer 2 address returned by ARP for an FHRP gateway.]]></text>
+</component>
+<component id='ID_s1_txt06'>
+	<text><![CDATA[A device that is part of a virtual router group assigned to the role of default gateway.]]></text>
+</component>
+
+
+
+<!--Drag and Drop-->
+<component id='ID_s1_traget01'>
+	<text><![CDATA[<font color="#393536">Standby Router</font>]]></text>
+</component>
+
+<component id='ID_s1_traget02'>
+	<text><![CDATA[<font color="#393536">Forwarding Router</font>]]></text>
+</component>
+
+<component id='ID_s1_traget03'>
+	<text><![CDATA[<font color="#393536">Virtual Router</font>]]></text>
+</component>
+
+<component id='ID_s1_traget04'>
+	<text><![CDATA[<font color="#393536">Virtual IP Address</font>]]></text>
+</component>
+
+<component id='ID_s1_traget05'>
+	<text><![CDATA[<font color="#393536">Virtual MAC Address</font>]]></text>
+</component>
+
+<component id='ID_s1_traget06'>
+	<text><![CDATA[<font color="#393536">Default Gateway</font>]]></text>
+</component>
+
+
+
+ 
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each FHRP terminology to their definitions.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each FHRP terminology to their definitions. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<!--slide02-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>Activity - Identify FHRP Terminology</b>]]></text>
+</component>
+
+<component id='ID_s2_instr_title'>
+	<text><![CDATA[Instruction]]></text>
+</component>
+<component id='ID_s2_instr_body'>
+	<text><![CDATA[Drag the FHRP terminology to the FHRP devices in the topology.]]></text>
+</component>
+<component id='ID_s2_txt01'>
+	<text><![CDATA[Core]]></text>
+</component>
+
+
+
+<!--Drag and Drop-->
+<component id='ID_s2_traget01'>
+	<text><![CDATA[<font color="#393536">Virtual Router</font>]]></text>
+</component>
+
+<component id='ID_s2_traget02'>
+	<text><![CDATA[<font color="#393536">Forwarding Router</font>]]></text>
+</component>
+
+<component id='ID_s2_traget03'>
+	<text><![CDATA[<font color="#393536">Standby Router</font>]]></text>
+</component>
+
+<component id='ID_s2_traget04'>
+	<text><![CDATA[<font color="#393536">Default Gateway</font>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the FHRP devices in the topology.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the FHRP devices in the topology. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+</textcomponents>

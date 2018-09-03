@@ -1,0 +1,140 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<font size="17"><b>Activity - Identify Switch Stacking Concepts</b></font>]]></text>
+</component>
+
+<component id="MCTable_title">
+	<text><![CDATA[Switch Stacking Concepts]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Check the appropriate field next to each concept to indicate your answers.]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[8]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>True</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>False</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+	<text><![CDATA[In a switch stack, all switches use the same bridge ID for a given spanning-tree instance.]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[The switch with the lowest stack-member priority-value becomes the master.]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[The IEEE recommends a maximum diameter of nine switches for the default STP timers.]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[A switch stack can consist of up to nine Catalyst 3750 switches connected through their StackWise ports.
+]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[The hello timer is the maximum length of time a switch saves BPDU information.]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[All switch stack members are eligible masters.]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[You can manage the stack through the same IP address even if you remove the master or any other member from the stack.]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[The diameter is the minimum number of switches that data must cross to connect between any two switches.]]></text>
+</component>
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<font size="17">Correct</font>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully identified the switch stacking concepts. ]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<font size="17">Incorrect</font>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully identified the switch stacking concepts. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

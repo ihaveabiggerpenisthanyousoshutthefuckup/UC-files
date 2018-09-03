@@ -1,0 +1,76 @@
+﻿<textcomponents>
+<!--slide01-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity - PVST+ Operation</b>]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Drag the PVST+ Forwarding and Blocking port states to the G1/1 and the G1/2 interfaces for SW3.]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>SW1 Root for VLAN 100</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>SW2 Root for VLAN 200</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+   <text><![CDATA[802.1Q Trunks]]></text>
+   </component>
+
+<!--Drag and Drop-->
+<component id='ID_s1_drag01'>
+	<text><![CDATA[Forwarding Port for <br/>VLAN 100]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[Forwarding Port for <br/>VLAN 200]]></text>
+</component>
+
+<component id="ID_s1_drag03">
+   <text><![CDATA[Blocking Port for <br/>VLAN 100]]></text>
+   </component>
+
+<component id="ID_s1_drag04">
+   <text><![CDATA[Blocking Port for <br/>VLAN 200]]></text>
+   </component>
+
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the PVST+ port states for both VLANs for each switch port.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the PVST+ port states for both VLANs for each switch port. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+
+</textcomponents>

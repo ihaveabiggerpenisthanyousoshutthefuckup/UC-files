@@ -1,0 +1,37 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b><font face="_typewriter">show ipv6 protocols</font> Command</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[Routing protocol and Process ID (AS Number)]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[K values used in composite metric]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[EIGRP Router ID]]></text>
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[EIGRP Administrative Distances]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Interfaces enabled for EIGRP for IPv6]]></text>
+</component>
+</textcomponents>
+
+
+
+
+
+
+ 

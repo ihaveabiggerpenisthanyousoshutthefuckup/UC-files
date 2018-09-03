@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.6 Step 5 – Verify that the VTP Clients Have Received the New VLAN Information</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 5 – Verify that the VTP Clients Have Received the New VLAN Information</h1>
+        <div>
+          <p>On S2, verify that the VLANs configured on S1 have been received and entered into the S2 VLAN database using the <b>show vlan brief</b> command, as shown in Figure 1.</p>
+          <p>As expected, the VLANs configured on the VTP server have propagated to S2. Verify the VTP status on S2, as shown in Figure 2. </p>
+          <p>Notice that the configuration revision number on S2 is the same as the number on the VTP server.</p>
+          <p>Because S2 is operating in VTP client mode, attempts to configure VLANs will not be allowed, as shown in Figure 3.</p>
+          <p>Use the Syntax Checker in Figure 4 to configure and verify VTP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows that the VLANs have been received and entered into S2 database Figure 2 shows VLANs configured on VTP server have propagated to S2. Figure 3 shows that VLANs cannot be configured on the S2 because it is in VTP client mode. Figure 4 is a syntax Checker to configure and verify VTP</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

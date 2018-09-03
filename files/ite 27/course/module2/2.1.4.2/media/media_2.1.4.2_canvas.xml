@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <slide type="MBAR">
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="TEXT" subType="TABLE" compId="ID_table01" x="40" y="70" width="600" height="200" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#FFFFFF" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            <element type="TEXT" compId="ID_s2_txt02" x="51" y="267" width="105" expand="right" align="left" color="#ffffff" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="TEXT" id="ID_static_1" text="F0/1" x="417" y="64" align="center" width="22" />
+            <element type="TEXT" id="ID_static_2" text="F0/1" x="235" y="64" align="center" width="22" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" />
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" />
+            <element type="IMAGE" src="2.1.4.2.png" x="0" y="0" width="680" height="490" />
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC" x="25" y="80" width="630" height="380" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<table width="455" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="3">S1# <strong>show dtp interface f0/1</strong></td> </tr> <tr> <td colspan="3">DTP information for FastEthernet0/1:</td> </tr> <tr> <td width="9" class="orangeColor">&nbsp;</td> <td width="218" class="orangeColor">TOS/TAS/TNS:</td> <td width="106" class="orangeColor">TRUNK/ON/TRUNK</td> </tr> 
+  
+<tr> <td class="orangeColor">&nbsp;</td> <td class="orangeColor">TOT/TAT/TNT:</td> <td class="orang">802.1Q/802.1Q/802.1Q</td> </tr> <tr> <td>&nbsp;</td> <td>Neighbor address 1:</td> <td>0CD996D23F81</td> </tr> <tr> <td>&nbsp;</td> <td>Neighbor address 2:</td> <td>000000000000</td> </tr> <tr> <td>&nbsp;</td> <td>Hello timer expiration (sec/state):</td> <td>12/RUNNING</td> </tr> <tr> <td>&nbsp;</td> <td>Access timer expiration (sec/state):</td> <td>never/STOPPED</td> </tr> <tr> <td>&nbsp;</td> <td>Negotiation timer expiration (sec/state):</td> <td>never/STOPPED</td> </tr> <tr> <td>&nbsp;</td> <td>Multidrop timer expiration (sec/state):</td> <td>never/STOPPED</td> </tr> <tr> <td>&nbsp;</td> <td>FSM state:</td> <td>S6:TRUNK</td> </tr> <tr> <td>&nbsp;</td> <td># times multi &amp; trunk</td> <td>0</td> </tr> <tr> <td>&nbsp;</td> <td>Enabled:</td> <td>sim</td> </tr> <tr> <td>&nbsp;</td> <td>In STP:</td> <td>no</td> </tr> <tr> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> </tr> <tr><td colspan="3"></td></tr></table>]]>
+    </text>
+</data>

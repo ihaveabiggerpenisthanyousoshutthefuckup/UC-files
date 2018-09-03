@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.1.3 IPv6 Link-local Addresses</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 Link-local Addresses</h1>
+        <div>
+          <p>Routers running a dynamic routing protocol, such as EIGRP exchange messages between neighbors on the same subnet or link. Routers only need to send and receive routing protocol messages with their directly connected neighbors. These messages are always sent from the source IP address of the router that is doing the forwarding.  </p>
+          <p></p>
+          <p>IPv6 link-local addresses are ideal for this purpose. An IPv6 link-local address enables a device to communicate with other IPv6-enabled devices on the same link and only on that link (subnet). Packets with a source or destination link-local address cannot be routed beyond the link from where the packet originated.</p>
+          <p></p>
+          <p>EIGRP for IPv6 messages are sent using:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IPv6 address </b>- This is the IPv6 link-local address of the exit interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IPv6 address </b>- When the packet needs to be sent to a multicast address, it is sent to the IPv6 multicast address FF02::A, the all-EIGRP-routers with link-local scope. If the packet can be sent as a unicast address, it is sent to the link-local address of the neighboring router.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: IPv6 link-local addresses are in the FE80::/10 range. The /10 indicates that the first 10 bits are 1111 1110 10xx xxxx, which results in the first hextet having a range of 1111 1110 10<b>00 0000</b> (FE80) to 1111 1110 10<b>11 1111</b> (FEBF).  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers running e. i. g. r. p. and identifies that routing updates are sent to the link local address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

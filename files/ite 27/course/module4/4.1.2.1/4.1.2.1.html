@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.1 Implementation Restrictions</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Implementation Restrictions</h1>
+        <div>
+          <p>EtherChannel can be implemented by grouping multiple physical ports into one or more logical EtherChannel links. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Interface types cannot be mixed; for example, Fast Ethernet and Gigabit Ethernet cannot be mixed within a single EtherChannel. </p>
+          <p></p>
+          <p>The EtherChannel provides full-duplex bandwidth up to 800 Mb/s (Fast EtherChannel) or 8 Gb/s (Gigabit EtherChannel) between one switch and another switch or host. Currently each EtherChannel can consist of up to eight compatibly-configured Ethernet ports. The Cisco IOS switch can currently support six EtherChannels. However, as new IOSs are developed and platforms change, some cards and platforms may support increased numbers of ports within an EtherChannel link, as well as support an increased number of Gigabit EtherChannels. The concept is the same no matter the speeds or number of links that are involved. When configuring EtherChannel on switches, be aware of the hardware platform boundaries and specifications.</p>
+          <p></p>
+          <p>The original purpose of EtherChannel was to increase speed capability on aggregated links between switches. However, this concept was extended as EtherChannel technology became more popular, and now many servers also support link aggregation with EtherChannel. EtherChannel creates a one-to-one relationship; that is, one EtherChannel link connects only two devices. An EtherChannel link can be created between two switches or an EtherChannel link can be created between an EtherChannel-enabled server and a switch. </p>
+          <p></p>
+          <p>The individual EtherChannel group member port configuration must be consistent on both devices. If the physical ports of one side are configured as trunks, the physical ports of the other side must also be configured as trunks within the same native VLAN. Additionally, all ports in each EtherChannel link must be configured as Layer 2 ports.</p>
+          <p></p>
+          <p>Each EtherChannel has a logical port channel interface, illustrated in the figure. A configuration applied to the port channel interface affects all physical interfaces that are assigned to that interface. </p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Note</b>: Layer 3 EtherChannels can be configured on Cisco Catalyst multilayer switches, such as the Catalyst 3560, but these are not explored in this course. A Layer 3 EtherChannel has a single IP address associated with the logical aggregation of switch ports in the EtherChannel.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a Cisco Catalyst twenty nine sixty series switch.  Ports 1 through 6 on the switch are highlighted and labeled as a logical port channel interface.  The same is true for ports nine through twelve.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

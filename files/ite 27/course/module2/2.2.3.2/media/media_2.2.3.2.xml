@@ -1,0 +1,37 @@
+﻿<textcomponents>
+
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Common Problems with Trunks</b>]]></text>
+    </component>
+
+    <component id="ID_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+<tr>
+<td bgcolor='#666263' width='158' valign="top"><font color='#ffffff'><b>VTP Components</b></font></td>
+<td bgcolor='#666263'  valign="top"><font color='#ffffff'><b>Definition</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Trunk mode mismatches</td>
+<td bgcolor='#E9E7E8'><textformat blockindent="-13"><ul><li>For example, one trunk port is configured to trunk and the other side is configured as an access port. Another example is that both sides are configure in DTP auto mode. Other mismatches are also possible.</li><li>This configuration error causes the trunk link to stop working.</li><li>Correct the situation by shutting down the interface, correcting the DTP mode settings, and re-enabling the interface.</li></ul></textformat></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Allowed VLANs on trunks</td>
+<td bgcolor='#F2F2F2'><textformat blockindent="-13"><ul><li>The list of allowed VLANs on a trunk has not been updated with the current VLAN trunking requirements.</li><li>In this situation, unexpected traffic or no traffic is being sent over the trunk.</li><li>Configure the correct VLANs that are allowed on the trunk.</li></ul></textformat></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Native VLAN mismatches</td>
+<td bgcolor='#E9E7E8'><textformat blockindent="-13"><ul><li>When native VLANs do not match, the switches will generate informational messages letting you know of the problem.</li><li>Ensure that both sides of a trunk link are using the same native VLAN.</li></ul></textformat></td>
+</tr>
+</table>]]>
+        </text>
+    </component>
+   
+</textcomponents>

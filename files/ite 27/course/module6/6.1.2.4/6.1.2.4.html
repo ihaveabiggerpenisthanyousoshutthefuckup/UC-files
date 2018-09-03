@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.4 EIGRP Query and Reply Packets</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Query and Reply Packets</h1>
+        <div>
+          <p>
+            <b>EIGRP Query Packets</b>
+          </p>
+          <p></p>
+          <p>DUAL uses Query and Reply packets when searching for networks and other tasks. Queries and replies use reliable delivery. Queries can use multicast or unicast, whereas replies are always sent as unicast. </p>
+          <p></p>
+          <p>In the figure, R2 has lost connectivity to the LAN and it sends out queries to all EIGRP neighbors searching for any possible routes to the LAN. Because queries use reliable delivery, the receiving router must return an EIGRP acknowledgment. The acknowledgment informs the sender of the query that it has received the query message. To keep this example simple, acknowledgments were omitted in the graphic.</p>
+          <p></p>
+          <p>
+            <b>EIGRP Reply Packets</b>
+          </p>
+          <p></p>
+          <p>All neighbors must send a reply, regardless of whether or not they have a route to the downed network. Because replies also use reliable delivery, routers, such as R2, must send an acknowledgment.</p>
+          <p></p>
+          <p>It may not be obvious why R2 would send out a query for a network it knows is down. Actually, only R2’s interface that is attached to the network is down. Another router could be attached to the same LAN and have an alternate path to this same network. Therefore, R2 queries for such a router before completely removing the network from its topology table.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three interconnected routers.  The router two lan is down.  There is a query packet traveling from router two to routers one and three.  Routers one and three are sending a reply packet back to router two.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

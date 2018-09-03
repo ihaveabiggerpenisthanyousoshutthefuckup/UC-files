@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.1.3 Verify Switch Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify Switch Configuration</h1>
+        <div>
+          <p>When a problem is suspected with a switch configuration, use the various verification commands to examine the configuration and identify the problem.</p>
+          <p></p>
+          <p>The screen output in Figure 1 shows the results of the<b> show interfaces </b><i>interface-id</i><b> switchport </b>command. Assume that you have issued these commands because you suspect that VLAN 10 has not been assigned to port F0/4 on switch S1. The top highlighted area shows that port F0/4 on switch S1 is in access mode, but it does not show that it has been directly assigned to VLAN 10. The bottom highlighted area confirms that port F0/4 is still set to the default VLAN. The<b> show running-config </b>and the<b> show interfaces </b><i>interface-id</i><b> switchport </b>commands are useful for identifying VLAN assignment and port configuration issues.</p>
+          <p></p>
+          <p>Figure 2 shows that after a device configuration has changed, communication between router R1 and switch S1 has stopped. The link between the router and the switch is supposed to be a trunk link. The screen output shows the results of the<b> show interfaces </b><i>interface_id</i><b> switchport </b>and the<b> show running-config </b>commands. The top highlighted area confirms that port F0/4 on switch S1 is in access mode, not trunk mode. The bottom highlighted area also confirms that port F0/4 has been configured for access mode.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one demonstrates the results of the, show interface interface-i.d. switchport command. The administrative mode and the access mode V.lan fields are highlighted. Figure two demonstrates the results of the, show interface f 0 slash 4 switchport command and the, show running-configuration command. The administrative mode and the switchport mode access command are highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

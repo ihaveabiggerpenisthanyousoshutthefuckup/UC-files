@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.3 Link Aggregation Control Protocol</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Link Aggregation Control Protocol</h1>
+        <div>
+          <p>
+            <b>LACP</b>
+          </p>
+          <p>LACP is part of an IEEE specification (802.3ad) that allows several physical ports to be bundled to form a single logical channel. LACP allows a switch to negotiate an automatic bundle by sending LACP packets to the peer. It performs a function similar to PAgP with Cisco EtherChannel. Because LACP is an IEEE standard, it can be used to facilitate EtherChannels in multivendor environments. On Cisco devices, both protocols are supported. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: LACP was originally defined as IEEE 802.3ad. However, LACP is now defined in the newer IEEE 802.1AX standard for local and metropolitan area networks.</p>
+          <p></p>
+          <p>LACP provides the same negotiation benefits as PAgP. LACP helps create the EtherChannel link by detecting the configuration of each side and making sure that they are compatible so that the EtherChannel link can be enabled when needed. The figure shows the modes for LACP.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>On </b>- This mode forces the interface to channel without LACP. Interfaces configured in the on mode do not exchange LACP packets.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>LACP active </b>- This LACP mode places a port in an active negotiating state. In this state, the port initiates negotiations with other ports by sending LACP packets.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>LACP passive </b>- This LACP mode places a port in a passive negotiating state. In this state, the port responds to the LACP packets that it receives, but does not initiate LACP packet negotiation.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Just as with PAgP, modes must be compatible on both sides for the EtherChannel link to form. The on mode is repeated, because it creates the EtherChannel configuration unconditionally, without PAgP or LACP dynamic negotiation.</p>
+          <p></p>
+          <p>LACP allows for eight active links, and also eight standby links. A standby link will become active should one of the current active links fail.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure lists the three port modes for the link aggregation control protocol.  The first mode is on, in which the port is a Channel member without negotiation, therefore no protocol.  The second mode is active, in which the port is actively asking if the other side can or will participate.  The third mode is passive, in which the port is passively waiting for the other side.  The figure shows the states of link aggregation control protocol between two switches and when a channel establishment will occur.  This table is a summary of the page text.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

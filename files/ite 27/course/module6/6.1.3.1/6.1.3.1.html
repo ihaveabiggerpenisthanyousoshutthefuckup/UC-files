@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.3.1 Encapsulating EIGRP Messages</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Encapsulating EIGRP Messages</h1>
+        <div>
+          <p>The data portion of an EIGRP message is encapsulated in a packet. This data field is called type, length, value (TLV). The types of TLVs relevant to this course are EIGRP parameters, IP internal routes, and IP external routes. </p>
+          <p></p>
+          <p>The EIGRP packet header is included with every EIGRP packet, regardless of its type. The EIGRP packet header and TLV are then encapsulated in an IPv4 packet. In the IPv4 packet header, the protocol field is set to 88 to indicate EIGRP, and the IPv4 destination address is set to the multicast 224.0.0.10. If the EIGRP packet is encapsulated in an Ethernet frame, the destination MAC address is also a multicast address, 01-00-5E-00-00-0A.</p>
+          <p></p>
+          <p>Figures 1 to 4 show the Data Link Ethernet Frame.  EIGRP for IPv4 is encapsulated in an IPv4 packet. EIGRP for IPv6 would use a similar type of encapsulation. EIGRP for IPv6 is encapsulated using an IPv6 header. The IPv6 destination address would be the multicast address FF02::A and the next header field would be set to 88.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a data link ethernet frame header. The source mac address is the address of the sending interface. The destination mac address is the e. i. g. r. p. multicast mac address. Figure two shows the e. i. g. r. p. data link frames encapsulated in an i. p. packet.  The source i. p. address is the address of the sending interface. The destination i. p. address is the e. i. g. r. p. multicast i. p. address. Figure three shows the e. i. g. r. p. packet header contains the opcode for the e. i. g. r. p. packet type autonomous system number. Figure four shows some types for the type, length, value field for e. i. g. r. p.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

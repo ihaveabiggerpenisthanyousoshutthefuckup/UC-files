@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+       
+        	<element type="IMAGE" src="../../../common/images/page_backgrounds/bg_conceptual.jpg" x="0" y="0" width="680" height="490" />
+        	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_1.2.2.1.png" />
+            <element type="TEXT" compId="ID_txt02" x="159" y="63" width="140" expand="down" align="left" size="10" />
+            <element type="TEXT" compId="ID_txt15" x="264" y="86" width="60" expand="left" align="left" size="10" color="#f68026" />
+            <element type="TEXT" compId="ID_txt14" x="137" y="185" width="60" expand="left" align="left" size="10" color="#f68026" />
+            <element type="TEXT" compId="ID_txt17" x="524" y="80" width="60" expand="left" align="left" size="10" color="#f68026" />
+            <element type="TEXT" compId="ID_txt16" x="399" y="173" width="60" expand="left" align="left" size="10" color="#f68026" />
+            <element type="TEXT" compId="ID_txt01" x="421" y="63" width="118" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_txt05" x="116" y="422" width="78" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_txt04" x="233" y="422" width="84" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_txt26" x="165" y="273" width="118" expand="down" align="center" size="10" />
+            <element type="TEXT" compId="ID_txt18" x="363" y="380" width="55" expand="up+down" align="right" size="10" color="#f68026" />
+            <element type="TEXT" compId="ID_txt08" x="420" y="420" width="71" expand="left" align="right" size="10" />
+            <element type="TEXT" compId="ID_txt19" x="521" y="302" width="60" expand="left" align="left" size="10" color="#f68026" />
+            <element type="TEXT" compId="ID_txt09" x="367" y="306" width="71" expand="up" align="right" size="10" />
+            <element type="TEXT" compId="ID_txt25" x="419" y="273" width="118" expand="down" align="center" size="10" />
+            
+        
+    </slide>
+</data>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.1 Propagating a Default Static Route </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Propagating a Default Static Route </h1>
+        <div>
+          <p>Using a static route to 0.0.0.0/0 as a default route is not routing protocol-dependent. The "quad zero" default static route can be used with any currently supported routing protocols. The default static route is usually configured on the router that has a connection to a network outside the EIGRP routing domain; for example, to an ISP.</p>
+          <p></p>
+          <p>In Figure 1, R2 is the gateway router connecting the EIGRP routing domain to the Internet. When the default static route is configured, it is necessary to propagate that route throughout the EIGRP domain, as shown in Figure 2.</p>
+          <p></p>
+          <p>One method of propagating a default static route within the EIGRP routing domain is by using the<b> redistribute static </b>command. The<b> redistribute static </b>command tells EIGRP to include static routes in its EIGRP updates to other routers. Figure 3 shows the configuration of the default static route and the<b> redistribute static </b>command on router R2. </p>
+          <p></p>
+          <p>Figure 4 verifies that the default route has been received by router R2 and installed in its IPv4 routing table.</p>
+          <p></p>
+          <p>In Figure 5, the<b> show ip protocols </b>command verifies that R2 is redistributing static routes within the EIGRP routing domain.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p. and the internal network is highlighted excluding the link between router two and i. s. p..  Figure two shows router two having a default static route pointing to i. s. p. and propagating it to routers one and three. Figure three shows the syntax for configuring a default static route on router two and propagating it through the e. i. g. r. p. routing process. Figure four shows the output from the "show i. p. route" command on router two demonstrating the default static route is present. Figure five shows the output from the "show i. p. protocols" command on router two demonstrating that e. i. g. r. p. is redistributing static.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

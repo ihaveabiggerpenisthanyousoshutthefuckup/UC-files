@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.6 Fine-tuning Routing Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Fine-tuning Routing Protocols</h1>
+        <div>
+          <p>
+            <b>Managing the Routed Network</b>
+          </p>
+          <p>Advanced routing protocols, such as OSPF and EIGRP are used in large networks.</p>
+          <p></p>
+          <p>Link-state routing protocols such as Open Shortest Path First (OSPF), as shown in Figure 1, works well for larger hierarchical networks where fast convergence is important. OSPF routers establish and maintain neighbor adjacency or adjacencies, with other connected OSPF routers. When routers initiate an adjacency with neighbors, an exchange of link-state updates begins. Routers reach a FULL state of adjacency when they have synchronized views on their link-state database. With OSPF, link state updates are sent when network changes occur. Single Area OSPF configuration and concepts will be covered in Chapter 8.</p>
+          <p></p>
+          <p>Additionally, OSPF supports a two-layer hierarchical design, referred to as multiarea OSPF, as shown in Figure 2. All multiarea OSPF networks must have an Area 0, also called the backbone area. Non-backbone areas must be directly connected to area 0. Chapter 9 titled “Multiarea OSPF” introduces the benefits, operation, and configuration of Multiarea OSPF. Chapter 10, “OSPF Tuning and Troubleshooting”, will cover the more advanced features of OSPF.</p>
+          <p></p>
+          <p>Another popular routing protocol for larger networks is Enhanced Interior Gateway Routing Protocol (EIGRP).  Cisco developed EIGRP as a proprietary distance vector routing protocol with enhanced capabilities. Although configuring EIGRP is relatively simple, the underlying features and options of EIGRP are extensive and robust. For example, EIGRP uses multiple tables to manage the routing process, as shown in Figure 3. EIGRP contains many features that are not found in any other routing protocols. It is an excellent choice for large, multi-protocol networks that employ primarily Cisco devices.</p>
+          <p></p>
+          <p>Chapter 6 titled “EIGRP” introduces the operation and configuration of the EIGRP routing protocol, while chapter 7 titled “EIGRP Tuning and Troubleshooting” covers some of the more advanced configuration options of EIGRP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows several routers connected to each other.  Some are connected with wan links and some with lan links.   They are all part of o.s.p.f. area zero. Figure two shows several routers connected to each other.  Some are connected with wan links and some with lan links. The routers on the left are connected to a lan and are in o.s.p.f. area one, the two in the middle are in o.s.p.f. area zero, and the routers on the right are connected with wan links and are in o.s.p.f. area fifty one. Figure three shows how e.i.g.r.p. uses protocol independent modules.  There are three tables for i.p.v.4. and three for i.p.v.6..</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

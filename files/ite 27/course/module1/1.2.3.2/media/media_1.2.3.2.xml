@@ -1,0 +1,47 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[<b>Out-of-Band Router Configuration</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Ethernet Interface]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[IP Interface]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[IP Network]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[<b>In-Band Router Configuration</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[Console Port]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[PSTN]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[Auxiliary Port]]></text>
+</component>
+
+<component id="ID_txt10">
+   <text><![CDATA[Modem]]></text>
+</component>
+
+<component id="ID_txt11">
+   <text><![CDATA[Modem]]></text>
+</component>
+
+
+</textcomponents>

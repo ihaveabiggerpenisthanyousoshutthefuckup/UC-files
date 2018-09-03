@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.2 Cold Start</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Cold Start</h1>
+        <div>
+          <p>All routing protocols follow the same patterns of operation. To help illustrate this, consider the following scenario in which all three routers are running RIPv2. </p>
+          <p></p>
+          <p>When a router powers up, it knows nothing about the network topology. It does not even know that there are devices on the other end of its links. The only information that a router has is from its own saved configuration file stored in NVRAM. After a router boots successfully, it applies the saved configuration. If the IP addressing is configured correctly, then the router initially discovers its own directly connected networks. </p>
+          <p></p>
+          <p>Click Play in the figure to view an animation of the initial discovery of connected networks for each router. </p>
+          <p></p>
+          <p>Notice how the routers proceed through the boot up process and then discover any directly connected networks and subnet masks. This information is added to their routing tables as follows:</p>
+          <p>
+            <ul>
+              <li>R1 adds the 10.1.0.0 network available through interface FastEthernet 0/0 and 10.2.0.0 is available through interface Serial 0/0/0.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 adds the 10.2.0.0 network available through interface Serial 0/0/0 and 10.3.0.0 is available through interface Serial 0/0/1.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R3 adds the 10.3.0.0 network available through interface Serial 0/0/1 and 10.4.0.0 is available through interface FastEthernet 0/0.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>With this initial information, the routers then proceed to find additional route sources for their routing tables. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three routers connected linearly through WAN links.  Router R-1 is connected to router R-2 through a serial WAN link, and it has a LAN on an Ethernet interface.  R-2 is connected to both R-1 and R-3 through serial WAN links, and therefore has two networks.  R-3 is only connected to R-2 through a serial WAN link, and it has a LAN on an Ethernet interface.  The animation shows the routing table being built as each router adds its own connected networks into the routing table.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

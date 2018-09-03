@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.3.1 Analyzing the STP Topology</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Analyzing the STP Topology</h1>
+        <div>
+          <p>To analyze the STP topology, follow these steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Discover the Layer 2 topology. Use network documentation if it exists or use the<b> show cdp neighbors </b>command to discover the Layer 2 topology.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>After discovering the Layer 2 topology, use STP knowledge to determine the expected Layer 2 path. It is necessary to know which switch is the root bridge.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Use the<b> show spanning-tree vlan </b>command to determine which switch is the root bridge.</p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>Use the<b> show spanning-tree vlan </b>command on all switches to find out which ports are in blocking or forwarding state and confirm your expected Layer 2 path.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a flow chart for analyzing the s.t.p. topology. The flow chart corresponds to the steps from the text on this page.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

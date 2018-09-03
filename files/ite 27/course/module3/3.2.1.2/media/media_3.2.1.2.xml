@@ -1,0 +1,69 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Spanning Tree Protocol Characteristics</b>]]></text>
+    </component>
+    <component id="ID_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+			<td colspan="5" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='5' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+		<tr>
+			
+			<td  bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Protocol</b></font></td>
+			<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Standard</b></font></td>	
+			<td  bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Resources Needed</b></font></td>
+			<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Convergence</b></font></td>	
+			<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Tree Calculation</b></font></td>
+		</tr>
+			
+		
+		<tr>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>STP</font></td>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>802.1D</font></td>	
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Low</font></td>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Slow</font></td>			
+		    <td bgcolor="#E9E7E8" valign="top"><font color='#393536'>All VLANs</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>PVST+</font></td>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Cisco</font></td>			
+		    <td bgcolor="#F2F2F2" valign="top"><font color='#393536'>High</font></td>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Slow</font></td>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Per VLAN</font></td>	
+		</tr>
+		
+		<tr>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>RSTP</font></td>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>802.1w</font></td>	
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Medium</font></td>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Fast</font></td>			
+		    <td bgcolor="#E9E7E8" valign="top"><font color='#393536'>All VLANs</font></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Rapid PVST+</font></td>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Cisco</font></td>			
+		    <td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Very high</font></td>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Fast</font></td>
+			<td bgcolor="#F2F2F2" valign="top"><font color='#393536'>Per VLAN</font></td>	
+		</tr>
+		
+		<tr>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>MSTP</font></td>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>802.1s, Cisco</font></td>	
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Medium or high</font></td>
+			<td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Fast</font></td>			
+		    <td bgcolor="#E9E7E8" valign="top"><font color='#393536'>Per Instance</font></td>
+		</tr>		
+		
+	</table>]]>
+        </text>
+    </component>
+</textcomponents>

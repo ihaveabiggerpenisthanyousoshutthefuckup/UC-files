@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.1 Classifying Routing Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Classifying Routing Protocols</h1>
+        <div>
+          <p>Dynamic routing protocols are used to facilitate the exchange of routing information between routers. A routing protocol is a set of processes, algorithms, and messages that are used to exchange routing information and populate the routing table with the routing protocol's choice of best paths. The purpose of dynamic routing protocols includes:</p>
+          <p>
+            <ul>
+              <li>Discovery of remote networks</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Maintaining up-to-date routing information</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Choosing the best path to destination networks</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ability to find a new best path if the current path is no longer available</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Routing protocols can be classified into different groups according to their characteristics. Specifically, routing protocols can be classified by their:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Purpose </b>- Interior Gateway Protocol (IGP) or Exterior Gateway Protocol (EGP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Operation </b>- Distance vector protocol, link-state protocol, or path-vector protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Behavior</b>
+                <b></b>- Classful (legacy) or classless protocol</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>For example, IPv4 routing protocols are classified as follows: </p>
+          <p>
+            <ul>
+              <li>
+                <b>RIPv1 (legacy) </b>- IGP, distance vector, classful protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IGRP (legacy) </b>- IGP, distance vector, classful protocol developed by Cisco (deprecated from 12.2 IOS and later)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RIPv2 </b>-  IGP, distance vector, classless protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>EIGRP </b>- IGP, distance vector, classless protocol developed by Cisco</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>OSPF </b>- IGP, link-state, classless protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IS-IS </b>- IGP, link-state, classless protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>BGP </b>- EGP, path-vector, classless protocol</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The classful routing protocols, RIPv1 and IGRP, are legacy protocols and are only used in older networks. These routing protocols have evolved into the classless routing protocols, RIPv2 and EIGRP, respectively. Link-state routing protocols are classless by nature. </p>
+          <p></p>
+          <p>The figure displays a hierarchical view of dynamic routing protocol classification.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is a top-down chart that classifies dynamic routing protocols.  The chart breaks them down into interior gateway protocols and exterior gateway protocols.  The interior gateway protocols are further broken down into distance vector routing protocols and link-state routing protocols.  The distance vector protocols are RIP version 1 and 2, and E.I.G.R.P.  The link-state routing protocols are O.S.P.F. and I.S.-I.S.  Exterior routing protocols are considered path-vector routing protocols and the only one is B.G.P. Figures two through four highlight the classification of routing protocols..</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<textcomponents>
+
+<component id="ID_footer">
+<text><![CDATA[<i><b>When designing a multiarea OSPF routing plan, network administrators should consider:</b><br/><textformat blockindent="-10"><ul class="lazyTextBullets"><li>Scalable IP addressing schemes</li><li>Specific multiareas</li><li>Detailed network topology plans</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

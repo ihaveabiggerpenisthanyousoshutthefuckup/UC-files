@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.3.4 Link Types</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Link Types</h1>
+        <div>
+          <p>The link type provides a categorization for each port participating in RSTP by using the duplex mode on the port. Depending on what is attached to each port, two different link types can be identified:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Point-to-Point</b> - A port operating in full-duplex mode typically connects a switch to a switch and is a candidate for a rapid transition to a forwarding state.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Shared</b> - A port operating in half-duplex mode connects a switch to a hub that attaches multiple devices.</li>
+            </ul>
+          </p>
+          <p>In the figure, click each link to learn about the link types.</p>
+          <p></p>
+          <p>The link type can determine whether the port can immediately transition to a forwarding state, assuming certain conditions are met. These conditions are different for edge ports and non-edge ports. Non-edge ports are categorized into two link types: point-to-point and shared. The link type is automatically determined, but can be overridden with an explicit port configuration using the <b>spanning-tree link-type </b>{ <b>point-to-point</b> | <b>shared</b> } command. Characteristics of port roles, with regard to link types, include the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Edge port connections and point-to-point connections are candidates for rapid transition to a forwarding state. However, before the link-type parameter is considered, RSTP must determine the port role. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Root ports do not use the link-type parameter. Root ports are able to make a rapid transition to the forwarding state as soon as the port is in sync (receives a BPDU from the root bridge).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Alternate and backup ports do not use the link-type parameter in most cases. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Designated ports make the most use of the link-type parameter. A rapid transition to the forwarding state for the designated port occurs only if the link-type parameter is set to <b>point-to-point</b>.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three switches all inter-connected.  Switch one is labeled as the root bridge and all of its ports are designated ports and forwarding.  The ports on switch two and three are labeled as root, designated, alternate, and edge ports as appropriate.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

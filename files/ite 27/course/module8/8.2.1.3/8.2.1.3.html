@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.3 Router IDs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Router IDs</h1>
+        <div>
+          <p>Every router requires a router ID to participate in an OSPF domain. The router ID can be defined by an administrator or automatically assigned by the router. The router ID is used by the OSPF-enabled router to: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Uniquely identify the router </b>- The router ID is used by other routers to uniquely identify each router within the OSPF domain and all packets that originate from them. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Participate in the election of the DR </b>- In a multiaccess LAN environment, the election of the DR occurs during initial establishment of the OSPF network. When OSPF links become active, the routing device configured with the highest priority is elected the DR. Assuming there is no priority configured, or there is a tie, then the router with the highest router ID is elected the DR. The routing device with the second highest router ID is elected the BDR. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>But how does the router determine the router ID? As illustrated in the figure, Cisco routers derive the router ID based on one of three criteria, in the following preferential order:</p>
+          <p>
+            <ul>
+              <li>The router ID is explicitly configured using the OSPF<b> router-id</b><i> rid </i>router configuration mode command. The<i> rid </i>value is any 32-bit value expressed as an IPv4 address. This is the recommended method to assign a router ID.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the router ID is not explicitly configured, the router chooses the highest IPv4 address of any of configured loopback interfaces. This is the next best alternative to assigning a router ID.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If no loopback interfaces are configured, then the router chooses the highest active IPv4 address of any of its physical interfaces. This is the least recommended method because it makes it more difficult for administrators to distinguish between specific routers.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>If the router uses the highest IPv4 address for the router ID, the interface does not need to be OSPF-enabled. This means that the interface address does not need to be included in one of the OSPF<span class="cmd"><i></i></span><i>network </i>commands for the router to use that IPv4 address as the router ID. The only requirement is that the interface is active and in the up state.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The router ID looks like an IPv4 address, but it is not routable and, therefore, is not included in the routing table, unless the OSPF routing process chooses an interface (physical or loopback) that is appropriately defined by a<b> network </b>command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a flow chart that details the router I.D. order of precedence.  The first question asks if the router I.D. is explicitly configured.  If the answer is yes, then that is the router I.D.  If the answer is no, the next question is whether a loopback interface is configured?  If the answer is yes, then that is the router I.D.  If the answer is no, then that router I.D. is the highest active configured I.P. address.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

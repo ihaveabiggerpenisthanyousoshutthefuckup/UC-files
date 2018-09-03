@@ -1,0 +1,59 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity - OSPF Best Path Calculations</b><br><br>OSPF routers use the criteria listed below to select the best route to be installed in the routing table. Put these criteria in order by dragging each statement to its appropriate numbered field.]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>Step 1</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[<b>Step 2</b>]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[<b>Step 3</b>]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_ip1_DS'>
+	<text><![CDATA[<font color="#393536">Calculate the best path <br/>routes to external non-<br/>OSPF networks.</font>]]></text>
+</component>
+
+<component id='ID_ip2_DS'>
+	<text><![CDATA[<font color="#393536">Calculate intra-area OSPF routes.</font>]]></text>
+</component>
+
+<component id='ID_ip3_DS'>
+	<text><![CDATA[<font color="#393536">Calculate the best path<br>to interarea<br>OSPF routes.</font>]]></text>
+</component>
+
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have successfully ordered the criteria for OSPF best path calculations.]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully ordered the criteria for OSPF best path calculations. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

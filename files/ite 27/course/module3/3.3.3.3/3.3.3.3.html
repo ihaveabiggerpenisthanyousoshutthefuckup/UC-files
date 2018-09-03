@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.3.3 Overview of Spanning Tree Status</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Overview of Spanning Tree Status</h1>
+        <div>
+          <p>Using the<b> show spanning-tree </b>command without specifying any additional options provides a quick overview of the status of STP for all VLANs that are defined on a switch. If interested only in a particular VLAN, limit the scope of this command by specifying that VLAN as an option.</p>
+          <p></p>
+          <p>Use the<b> show spanning-tree vlan </b><i>vlan_id </i>command to get STP information for a particular VLAN. Use this command to get information about the role and status of each port on the switch. The example output on switch S1 shows all three ports in the forwarding (FWD) state and the role of the three ports as either designated ports or root ports. Any ports being blocked display the output status as “BLK”.</p>
+          <p></p>
+          <p>The output also gives information about the BID of the local switch and the root ID, which is the BID of the root bridge.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows four switches that are inter-connected.  Each port is labeled with its mode, and switch two is labeled as the root bridge.  The output from the show spanning dash tree v. lan one hundred is also displayed.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

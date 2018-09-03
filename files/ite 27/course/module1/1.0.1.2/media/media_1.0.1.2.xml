@@ -1,0 +1,7 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[The three-layer hierarchical design model breaks the design up into layers which simplifies the network design and therefore the deployment and management of the network.]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.2.3.5 Basic Switch CLI commands</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Basic Switch CLI commands</h1>
+        <div>
+          <p>Basic switch configuration includes the hostname for identification, passwords for security, and assignment of IP addresses for connectivity. In-band access requires the switch to have an IP address. Figure 1 shows the commands entered to enable a switch.</p>
+          <p></p>
+          <p>Figure 2 shows the results of the configuration commands that were entered in Figure 1. Verify and save the switch configuration using the<b> copy running-config startup-config </b>command. To clear the switch configuration, use the<b> erase startup-config </b>command and then the<b> reload </b>command. It may also be necessary to erase any VLAN information using the command<b> delete flash:vlan.dat</b>.  When switch configurations are in place, view the configurations using the<b> show running-config </b>command. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows an example of a switch configuration. Figure two shows the output from the show run command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+﻿<textcomponents>
+<!--slide01-->
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity - Types of Spanning Tree Protocols</b><br><br>]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+<component id='ID_instr_body'>
+	<text><![CDATA[Drag the spanning tree protocol type to the appropriate description.]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Cisco enhancement of STP. Provides a separate 802.1D spanning-tree instance for each VLAN.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Cisco enhancement of RSTP.]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Uses one IEEE 802.1D spanning-tree instance for the entire bridged network, regardless of the number of VLANs.]]></text>
+   </component>
+
+<component id="ID_txt04">
+   <text><![CDATA[An evolution of STP that provides faster STP convergence.]]></text>
+   </component>
+   
+<component id="ID_txt05">
+   <text><![CDATA[Maps multiple VLANs that have the same traffic flow requirements into the same spanning-tree instance.]]></text>
+   </component>
+
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[Rapid PVST+]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[STP]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[RSTP]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[PVST+]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[MSTP]]></text>
+</component>
+
+
+
+
+
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each type of STP to its description.]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each type of STP to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+</textcomponents>

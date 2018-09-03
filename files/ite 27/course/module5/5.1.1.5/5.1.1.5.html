@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.5 Classful Routing Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Classful Routing Protocols</h1>
+        <div>
+          <p>The biggest distinction between classful and classless routing protocols is that classful routing protocols do not send subnet mask information in routing updates. Classless routing protocols include subnet mask information in the routing updates. </p>
+          <p></p>
+          <p>The two original IPv4 routing protocols developed were RIPv1 and IGRP. They were created when network addresses were allocated based on classes (i.e., class A, B, or C). At that time, a routing protocol did not need to include the subnet mask in the routing update, because the network mask could be determined based on the first octet of the network address.  </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Only RIPv1 and IGRP are classful. All other IPv4 and IPv6 routing protocols are classless. Classful addressing has never been a part of IPv6. </p>
+          <p></p>
+          <p>The fact that RIPv1 and IGRP do not include subnet mask information in their updates means that they cannot provide variable-length subnet masks (VLSMs) and classless interdomain routing (CIDR).  </p>
+          <p></p>
+          <p>Classful routing protocols also create problems in discontiguous networks. A discontiguous network is when subnets from the same classful major network address are separated by a different classful network address.  </p>
+          <p></p>
+          <p>To illustrate the shortcoming of classful routing, refer to the topology in Figure 1. Notice that the LANs of R1 (172.16.1.0/24) and R3 (172.16.2.0/24) are both subnets of the same class B network (172.16.0.0/16). They are separated by different classful subnets (192.168.1.0/30 and 192.168.2.0/30) of the same class C networks (192.168.1.0/24 and 192.168.2.0/24).</p>
+          <p></p>
+          <p>When R1 forwards an update to R2, RIPv1 does not include the subnet mask information with the update; it only forwards the class B network address 172.16.0.0.  </p>
+          <p></p>
+          <p>R2 receives and processes the update. It then creates and adds an entry for the class B 172.16.0.0/16 network in the routing table, as shown in Figure 2.  </p>
+          <p></p>
+          <p>Figure 3 shows that when R3 forwards an update to R2, it also does not include the subnet mask information and therefore only forwards the classful network address 172.16.0.0. </p>
+          <p></p>
+          <p>In Figure 4, R2 receives and processes the update and adds another entry for the classful network address 172.16.0.0/16 to its routing table. When there are two entries with identical metrics in the routing table, the router shares the load of the traffic equally among the two links. This is known as load balancing.  </p>
+          <p></p>
+          <p>As shown in Figure 5, this has a negative effect on connectivity to a discontiguous network. Notice the erratic behavior of the<b> ping </b>and<b> traceroute </b>commands.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three routers connected linearly through WAN links.  R-1 is connected to R-2 through a serial WAN link, and it has a LAN on an Ethernet interface.  The LAN is network address 172 dot 16 dot 1 dot 0 slash 24.  The WAN link is network 192 dot 168 dot 1 dot 0 slash 24.  R-2 is connected to R3 is through a serial WAN link, and the network address is 192 dot 168 dot 1 dot 0 slash 24.  R-3 has a LAN on an Ethernet interface with network address 172 dot 16 dot 2 dot 0 slash 24.  R-1 is running RIP version 1. Therefore, after every 30 second time period it sends a routing update consisting of the network address 172 dot 16 dot 1 dot 0 without the subnet mask.  Figure two shows R-2 receiving the update and adding the network advertised by R-1 to its routing table, and since it is a class B network the address that is added is 172 dot 16 dot 0 dot 0.  It will add the subnet mask of a slash 16 to the table since the network is a class B network.  Note that the actual network on R1 is using a slash 24.Figure three shows R-3 running RIP version 1. Therefore, after every 30 second time period it sends a routing update consisting of the network address 172 dot 16 dot 2 dot 0 without the subnet mask.  Figure four shows R2 receiving the update and adding the network advertised by R-3 to its routing table, and since it is a class B network the address that is added is 172 dot 16 dot 0 dot 0.  It will add the subnet mask of a slash 16 to the table since the network is a class B network.  Figure five shows the result of a ping and a trace route being sent from R-2 to the address 172 dot 16 dot 1 dot 1.  Some of the pings are received and some are lost.  These results are due to the fact that R-2 has two routes to the 172 dot 16 dot 1 dot 1 host because the routing table shows the class B network of 172 dot 16 dot 0 dot 0 is reachable from both the serial zero slash zero slash zero interface and the serial zero slash zero slash one interface.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

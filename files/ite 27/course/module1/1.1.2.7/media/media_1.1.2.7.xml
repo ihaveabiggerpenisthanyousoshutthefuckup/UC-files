@@ -1,0 +1,86 @@
+<textcomponents>
+
+<component id="ID_title">
+        <text>
+            <![CDATA[<b>Activity – Identify Scalability Terminology</b>]]></text>
+    </component>
+    <component id='ID_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_instr_body'>
+        <text>
+            <![CDATA[Match each network scalability design term to its description.]]>
+        </text>
+    </component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Redundancy</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">Link Aggregation</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">OSPF</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">EIGRP</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each network scalability design term to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each network scalability design term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<component id='ID_target_header'>
+	<text><![CDATA[Terms]]></text>
+</component>
+<component id='ID_text_header'>
+	<text><![CDATA[Descriptions]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[Protocol with distance-vector behaviors.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Alternate data pathway.]]></text>
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[Multiple Ethernet interface links combined into a single bandwidth channel. ]]></text>
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[Protocol which uses a backbone area.]]></text>
+</component>   
+</textcomponents>

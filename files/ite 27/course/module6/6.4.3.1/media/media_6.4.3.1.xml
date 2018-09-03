@@ -1,0 +1,47 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv6 Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+<component id="ID_s2_title">
+<text><![CDATA[<b><font face="_typewriter">show ipv6 eigrp neighbors</font> Command</b>]]></text>
+</component>  
+
+
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<font color="#F68026"><b>FE80::1</b></font/>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[<font color="#F68026"><b>FE80::2</b></font>]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[<font color="#F68026"><b>FE80::3</b></font>]]></text>
+</component>
+
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Neighbor’s IPv6 Link-local Address.]]></text>
+</component>
+
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Local Interface receiving EIGRP for IPv6 Hello packets.]]></text>
+</component>
+
+
+<component id="ID_s2_txt03">
+<text><![CDATA[Seconds remaining before declaring neighbor down.<br/><br/>The current hold time and is reset to the maximum hold time whenever a Hello packet is received.]]></text>
+</component>
+
+
+<component id="ID_s2_txt04">
+<text><![CDATA[Amount of time since this neighbor was added to the neighbor table.]]></text>
+</component>
+
+
+
+</textcomponents>

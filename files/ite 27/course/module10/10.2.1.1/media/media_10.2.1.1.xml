@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>OSPF Adjacencies</b>]]></text>
+</component>
+
+	<component id="ID_Title_txt01">
+		<text><![CDATA[<b>OSPF adjacencies will not form if:</b>]]></text>
+	</component>
+	
+	<component id="ID_Body_txt01">
+		<text><![CDATA[<textformat blockindent='-14' ><ul><li>The interfaces are not on the same network.</li><li>OSPF network types do not match.</li><li>OSPF Hello or Dead Timers do not match.</li><li>Interface to neighbor is incorrectly configured as passive.</li><li>There is a missing or incorrect OSPF <font face="_typewriter"><b>network</b></font> command.</li><li>Authentication is misconfigured.</li><li>Each interface must be properly addressed and in the "up and up" condition.</li></ul></textformat>]]></text>
+	</component>
+
+</textcomponents>

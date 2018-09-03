@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.5 How to Calculate the EIGRP Metric</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>How to Calculate the EIGRP Metric</h1>
+        <div>
+          <p>Although EIGRP automatically calculates the routing table metric used to choose the best path, it is important that the network administrator understands how these metrics were determined.</p>
+          <p></p>
+          <p>The figure shows the composite metric used by EIGRP. Using the default values for K1 and K3, the calculation can be simplified to the slowest bandwidth (or minimum bandwidth), plus the sum of all of the delays. </p>
+          <p></p>
+          <p>In other words, by examining the bandwidth and delay values for all of the outgoing interfaces of the route, we can determine the EIGRP metric as follows: </p>
+          <p>
+            <b>Step 1.  </b>Determine the link with the slowest bandwidth. Use that value to calculate bandwidth (10,000,000/bandwidth).</p>
+          <p>
+            <b>Step 2.  </b>Determine the delay value for each outgoing interface on the way to the destination. Add the delay values and divide by 10 (sum of delay/10). </p>
+          <p>
+            <b>Step 3.  </b>This composite metric produces a 24-bit value; however, EIGRP uses a 32-bit value. Multiplying the 24-bit value with 256 extends the composite metric into 32 bits. Therefore, add the computed values for bandwidth and delay, and multiply the sum by 256 to obtain the EIGRP metric.</p>
+          <p></p>
+          <p>The routing table output for R2 shows that the route to 192.168.1.0/24 has an EIGRP metric of 3,012,096. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the e. i. g. r. p. metric calculation formula and the output of the "show ip route" command on router two.  The metric for one route is highlighted in orange.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

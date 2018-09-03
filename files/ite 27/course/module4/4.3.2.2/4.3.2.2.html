@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.2 HSRP Versions</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>HSRP Versions</h1>
+        <div>
+          <p>The default HSRP version for Cisco IOS 15 is version 1. HSRP version 2 provides the following enhancements:</p>
+          <p>
+            <ul>
+              <li>HSRPv2 expands the number of supported groups. HSRP version 1 supports group numbers from 0 to 255. HSRP version 2 supports group numbers from 0 to 4095.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>HSRPv1 uses the multicast address of 224.0.0.2. HSRP version 2 uses the IPv4 multicast address 224.0.0.102 or the IPv6 multicast address FF02::66 to send hello packets.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>HSRPv1 uses the virtual MAC address range 0000.0C07.AC00 to 0000.0C07.ACFF, where the last two hexadecimal digits indicate the HSRP group number. HSRPv2 uses the MAC address range from 0000.0C9F.F000 to 0000.0C9F.FFFF for IPv4 and 0005.73A0.0000 through 0005.73A0.0FFF for IPv6 addresses. For both IPv4 and IPv6, the last three hexadecimal digits in the MAC address indicate the HSRP group number.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>HSRPv2 adds support for MD5 authentication, which is beyond the scope of this course.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Group numbers are used for more advanced HSRP configurations that are beyond the scope of this course. For our purposes, we will use group number 1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

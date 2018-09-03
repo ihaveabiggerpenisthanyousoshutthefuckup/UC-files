@@ -1,0 +1,7 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+#text_st_01 {line-height:12px;}

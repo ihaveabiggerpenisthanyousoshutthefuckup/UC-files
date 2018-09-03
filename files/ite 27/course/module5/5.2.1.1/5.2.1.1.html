@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.1 Dynamic Routing Protocol Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Dynamic Routing Protocol Operation</h1>
+        <div>
+          <p>All routing protocols are designed to learn about remote networks and to quickly adapt whenever there is a change in the topology. The method that a routing protocol uses to accomplish this depends upon the algorithm it uses and the operational characteristics of that protocol.  </p>
+          <p></p>
+          <p>In general, the operations of a dynamic routing protocol can be described as follows:</p>
+          <p>1. The router sends and receives routing messages on its interfaces. </p>
+          <p>2. The router shares routing messages and routing information with other routers that are using the same routing protocol. </p>
+          <p>3. Routers exchange routing information to learn about remote networks.  </p>
+          <p>4. When a router detects a topology change, the routing protocol can advertise this change to other routers. </p>
+          <p></p>
+          <p>Click <b>Play</b> in the figure to view an animation of a dynamic routing protocol in operation. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers labeled R-1 and R-2 connected through a serial WAN link.  The figure is an animation that begins with R-1 creating a message that contains network routing information and sends that update to the other router.  The receiving router uses this update to build or modify its routing table.  The receiving router will send an update when it detects a change in its networks.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

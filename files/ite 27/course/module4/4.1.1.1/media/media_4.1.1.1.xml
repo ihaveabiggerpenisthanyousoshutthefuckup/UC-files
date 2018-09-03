@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Redundant Links with STP</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Blocked]]></text>
+</component>
+
+<component id="ID_caption">
+<text><![CDATA[By default, STP will block redundant links.]]></text>
+</component>
+
+</textcomponents>

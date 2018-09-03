@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.1 EIGRP Packet Types</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Packet Types</h1>
+        <div>
+          <p>EIGRP uses five different packet types, some in pairs. EIGRP packets are sent using either RTP reliable or unreliable delivery and can be sent as a unicast, multicast, or sometimes both. EIGRP packet types are also called EIGRP packet formats or EIGRP messages.</p>
+          <p></p>
+          <p>As shown in Figure 1, the five EIGRP packet types include:</p>
+          <p></p>
+          <p>
+            <b>Hello packets </b>- Used for neighbor discovery and to maintain neighbor adjacencies.</p>
+          <p>
+            <ul>
+              <li>Sent with unreliable delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Multicast (on most network types)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Update packets </b>- Propagates routing information to EIGRP neighbors.</p>
+          <p>
+            <ul>
+              <li>Sent with reliable delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unicast or multicast</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Acknowledgment packets </b>- Used to acknowledge the receipt of an EIGRP message that was sent using reliable delivery.</p>
+          <p>
+            <ul>
+              <li>Sent with unreliable delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unicast</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Query packets </b>- Used to query routes from neighbors.</p>
+          <p>
+            <ul>
+              <li>Sent with reliable delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unicast or multicast</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Reply packets </b>- Sent in response to an EIGRP query.</p>
+          <p>
+            <ul>
+              <li>Sent with reliable delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unicast</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 shows that EIGRP messages are typically encapsulated in IPv4 or IPv6 packets. EIGRP for IPv4 messages use IPv4 as the network layer protocol. The IPv4 protocol field uses 88 to indicate the data portion of the packet is an EIGRP for IPv4 message. EIGRP for IPv6 messages are encapsulated in IPv6 packets using the next header field of 88. Similar to the protocol field for IPv4, the IPv6 next header field indicates the type of data carried in the IPv6 packet.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table with the five different e. i. g. r. p. packet types and their description. Figure two shows how an e. i. g. r. p. packet is encapsulated in a standard i. p. packet.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

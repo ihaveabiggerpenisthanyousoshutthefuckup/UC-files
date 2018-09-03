@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.2.2.2 EIGRP Parameters</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Parameters</h1>
+        <div>
+          <p>When troubleshooting an EIGRP network, one of the first things to verify is that all routers that are participating in the EIGRP network are configured with the same autonomous system number. The<b> router eigrp </b><i>as-number </i>command starts the EIGRP process and is followed by a number that is the autonomous system number. The value of the<i> as-number </i>argument must be the same in all routers that are in the EIGRP routing domain.</p>
+          <p></p>
+          <p>Figure 1 shows that all routers should be participating in autonomous system number 1. In Figure 2, the<b> show ip protocols </b>command verifies that R1, R2, and R3 all use the same autonomous system number.</p>
+          <p></p>
+          <p>
+            <b>EIGRP for IPv6</b>
+          </p>
+          <p></p>
+          <p>Similar commands and troubleshooting criteria also apply to EIGRP for IPv6.</p>
+          <p></p>
+          <p>The following are the equivalent commands used with EIGRP for IPv6:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router(config)# </span>
+                <span class="cmd">
+                  <b>ipv6 router eigrp </b>
+                </span>
+                <span class="cmd">
+                  <i>as-number</i>
+                </span>
+                <span class="cmd">
+                  <b></b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">Router# </span>
+                <span class="cmd">
+                  <b>show ipv6 protocols</b>
+                </span>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Note</b>: At the top of the output, “IP Routing is NSF aware” refers to Nonstop Forwarding (NSF). This capability allows the EIGRP peers of a failing router to retain the routing information that it has advertised, and to continue using this information until the failed router resumes normal operation and is able to exchange routing information. For more information refer to: <a href="http://www.cisco.com/en/US/docs/ios-xml/ios/iproute_eigrp/configuration/15-mt/eigrp-nsf-awa.html" target="_blank">http://www.cisco.com/en/US/docs/ios-xml/ios/iproute_eigrp/configuration/15-mt/eigrp-nsf-awa.html</a></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p. Figure two shows the output from the "show i. p. protocols" command on routers one, two, and three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

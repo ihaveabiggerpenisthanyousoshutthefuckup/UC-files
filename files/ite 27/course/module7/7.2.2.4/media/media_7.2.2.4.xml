@@ -1,0 +1,116 @@
+<textcomponents> 
+
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Topology</b><br/>Use this topology diagram as a reference for the scenarios. Click Button 2 to continue.]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[<b>EIGRP AS 100</b>]]></text>
+</component>
+
+
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity - Scenario 1: Troubleshoot EIGRP Neighbor Issues</b><br/>EIGRP is having a neighbor adjacency issue and is unable to get route updates from Router 3 (R3). Use the topology diagram and the command output to determine the most likely cause of this issue. Drag the most likely reason for this EIGRP issue to the field next to Router 1 (R1). Click Button 3 to continue. ]]></text>
+</component>
+
+<component id='ID_s2_drag01'>
+	<text><![CDATA[Missing IP address]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[Incorrect IP address]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[Cable disconnected]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[EIGRP not configured]]></text>
+</component>
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the most likely cause of the EIGRP issue for this scenario. Click Button 3 to continue. ]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the most likely cause of the EIGRP issue for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+
+<component id="ID_s3_inst">
+	<text><![CDATA[<b>Activity - Scenario 2: Troubleshoot EIGRP Neighbor Issues</b><br/>EIGRP is having a neighbor adjacency issue and is unable to get route updates from both Router 1 (R1) and Router 3 (R3). Use the topology diagram and the command output to determine the most likely cause of this issue. Drag the most likely reason for this EIGRP issue to the field next to Router 2 (R2).]]></text>
+</component>
+
+
+<component id='ID_s3_drag01'>
+	<text><![CDATA[Auto-summarization]]></text>
+</component>
+
+<component id='ID_s3_drag02'>
+	<text><![CDATA[Missing IP network]]></text>
+</component>
+
+<component id='ID_s3_drag03'>
+	<text><![CDATA[Incorrect AS number]]></text>
+</component>
+
+<component id='ID_s3_drag04'>
+	<text><![CDATA[Hop count is to high]]></text>
+</component>
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the most likely cause of the EIGRP issue for this scenario.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the most likely cause of the EIGRP issue for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+
+
+
+</textcomponents>

@@ -1,0 +1,31 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv4 Topology</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[EIGRP Routing<br/>Domain]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configuring the Bandwidth Value on R1, R2, and R3</b>]]></text>
+</component>  
+<component id="ID_s3_title">
+<text><![CDATA[<b>Verifying the Bandwidth Value</b>]]></text>
+</component>  
+
+
+<component id="ID_s3_txt01">
+<text><![CDATA[It is important that the bandwidth parameters are the same on both sides of the link to ensure proper routing in both directions.]]></text>
+</component>  
+
+<component id="ID_s3_txt02">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component> 
+
+</textcomponents>

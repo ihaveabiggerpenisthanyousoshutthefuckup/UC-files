@@ -1,0 +1,212 @@
+<textcomponents>
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity - Scenario 1: Identify the OSPF LSA Type</b><br/><br/>A router in Area 2 has experienced a link-state change and initiated an OSPF event-triggered update. Each ABR router is sending out an LSA update. Drag the labels for LSA types onto the arrows provided in the network topology. Click Figure 2 to continue this activity.]]></text>
+</component>
+   <component id="ID_s1_txt01">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt03">
+  <text><![CDATA[<b>Area 2</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt04">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+  <component id="ID_s1_txt05">
+  <text><![CDATA[DR]]></text> 
+  </component>
+  <component id="ID_s1_txt06">
+  <text><![CDATA[DR]]></text> 
+  </component>
+    <component id="ID_s1_txt07">
+  <text><![CDATA[Type 1]]></text> 
+  </component>
+    <component id="ID_s1_txt08">
+  <text><![CDATA[Type 2]]></text> 
+  </component>
+      <component id="ID_s1_txt09">
+  <text><![CDATA[Type 3]]></text> 
+  </component>
+    <component id="ID_s1_txt10">
+  <text><![CDATA[Type 4]]></text> 
+  </component>
+  
+  <component id="ID_s1_txt11">
+  <text><![CDATA[Type 5]]></text> 
+  </component>
+  
+  <component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the LSA type(s) for this scenario. Click Figure 2 to continue.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the LSA type(s) for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+
+
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity - Scenario 2: Identify the OSPF LSA Type</b><br/><br/>The DR router in Area 0 is sending out an LSA listing all of the OSPF routers in this area. Drag the labels for LSA types onto the arrows provided in the network topology. Click Figure 3 to continue this activity.]]></text>
+	</component>
+   <component id="ID_s2_txt01">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt03">
+  <text><![CDATA[<b>Area 2</b>]]></text> 
+  </component>
+  <component id="ID_s2_txt04">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+  <component id="ID_s2_txt05">
+  <text><![CDATA[DR]]></text> 
+  </component>
+  <component id="ID_s2_txt06">
+  <text><![CDATA[DR]]></text> 
+  </component>
+    <component id="ID_s2_txt07">
+  <text><![CDATA[Type 1]]></text> 
+  </component>
+    <component id="ID_s2_txt08">
+  <text><![CDATA[Type 2]]></text> 
+  </component>
+      <component id="ID_s2_txt09">
+  <text><![CDATA[Type 3]]></text> 
+  </component>
+    <component id="ID_s2_txt10">
+  <text><![CDATA[Type 4]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt11">
+  <text><![CDATA[Type 5]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt11">
+  <text><![CDATA[Type 5]]></text> 
+  </component>
+
+  <component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the LSA type(s) for this scenario. Click Figure 3 to continue.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the LSA type(s) for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+
+
+
+
+
+
+
+
+
+<component id="ID_s3_inst">
+	<text><![CDATA[<b>Activity - Scenario 3: Identify the OSPF LSA Type</b><br><br/>Each ABR router is sending out an LSA update after learning about the existence of an ASBR router in Area 1. Drag the correct labels for LSA types onto the arrows provided in the network topology.]]></text>
+	</component>
+   <component id="ID_s3_txt01">
+  <text><![CDATA[<b>Area 1</b>]]></text> 
+  </component>
+  <component id="ID_s3_txt02">
+  <text><![CDATA[<b>Area 0</b>]]></text> 
+  </component>
+  <component id="ID_s3_txt03">
+  <text><![CDATA[<b>Area 2</b>]]></text> 
+  </component>
+  <component id="ID_s3_txt04">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+  <component id="ID_s3_txt05">
+  <text><![CDATA[DR]]></text> 
+  </component>
+  <component id="ID_s3_txt06">
+  <text><![CDATA[DR]]></text> 
+  </component>
+    <component id="ID_s3_txt07">
+  <text><![CDATA[Type 1]]></text> 
+  </component>
+    <component id="ID_s3_txt08">
+  <text><![CDATA[Type 2]]></text> 
+  </component>
+      <component id="ID_s3_txt09">
+  <text><![CDATA[Type 3]]></text> 
+  </component>
+    <component id="ID_s3_txt10">
+  <text><![CDATA[Type 4]]></text> 
+  </component>
+  
+  <component id="ID_s3_txt11">
+  <text><![CDATA[Type 5]]></text> 
+  </component>
+  
+  <component id="ID_s3_txt11">
+  <text><![CDATA[Type 5]]></text> 
+  </component>
+
+  <component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the LSA type(s) for this scenario.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the LSA type(s) for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+
+</textcomponents>

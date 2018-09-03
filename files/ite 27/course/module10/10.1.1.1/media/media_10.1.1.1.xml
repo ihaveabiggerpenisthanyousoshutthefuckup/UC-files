@@ -1,0 +1,122 @@
+<textcomponents>
+
+<!--SLIDE 1--> 
+<component id="ID_s1_title">
+<text><![CDATA[<b>OSPF Point-to-Point Network</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Point-to-Point]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[Point-to-Point]]></text> 
+  </component>
+
+<!--SLIDE 2--> 
+<component id="ID_s2_title">
+<text><![CDATA[<b>OSPF Multiaccess Network</b>]]></text>
+</component>
+  <component id="ID_s2_txt01">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+    <component id="ID_s2_txt02">
+  <text><![CDATA[Point-to-Point]]></text> 
+  </component>
+    <component id="ID_s2_txt03">
+  <text><![CDATA[Broadcasts]]></text> 
+  </component>
+    <component id="ID_s2_txt04">
+  <text><![CDATA[Broadcasts]]></text> 
+  </component>
+    <component id="ID_s2_txt05">
+  <text><![CDATA[Broadcasts]]></text> 
+  </component>
+    <component id="ID_s2_txt06">
+  <text><![CDATA[Broadcasts]]></text> 
+  </component>
+  
+<!--SLIDE 3-->  
+  <component id="ID_s3_title">
+<text><![CDATA[<b>OSPF Nonbroadcast Multiaccess Network</b>]]></text>
+</component>
+  <component id="ID_s3_txt01">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+    <component id="ID_s3_txt02">
+  <text><![CDATA[Point-to-Point]]></text> 
+  </component>
+    <component id="ID_s3_txt03">
+  <text><![CDATA[Frame Relay]]></text> 
+  </component>
+    <component id="ID_s3_txt04">
+  <text><![CDATA[Unicasts]]></text> 
+  </component>
+      <component id="ID_s3_txt05">
+  <text><![CDATA[Unicasts]]></text> 
+  </component>
+      <component id="ID_s3_txt06">
+  <text><![CDATA[Unicasts]]></text> 
+  </component>
+  
+  <component id="ID_s3_title_txt">
+		<text><![CDATA[]]></text>
+	</component>
+	
+<component id="ID_s3_body01">
+  <text><![CDATA[<textformat blockindent='-14'><ul><li>In this scenario, R1, R2, and R3 are interconnected over a Frame Relay network.</li><li>Frame Relay does not allow broadcasts.</li><li>OSPF must be configured accordingly to create neighbor adjacencies.</li></ul></textformat>]]></text> 
+  </component>
+  
+<!--SLIDE 4--> 
+<component id="ID_s4_title">
+<text><![CDATA[<b>OSPF Point-to-Multipoint Network</b>]]></text>
+</component>
+<component id="ID_s4_txt01">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+    <component id="ID_s4_txt02">
+  <text><![CDATA[Point-to-Point]]></text> 
+  </component>
+    <component id="ID_s4_txt03">
+  <text><![CDATA[Frame Relay]]></text> 
+  </component>
+
+  <component id="ID_s4_txt04">
+     <text><![CDATA[Point-to-Multipoint]]></text>
+  </component>
+<component id="ID_s4_txt05">
+   <text><![CDATA[Point-to-Multipoint]]></text>
+</component>
+
+    <component id="ID_s4_title_txt">
+		<text><![CDATA[]]></text>
+	</component>
+<component id="ID_s4_body01">
+  <text><![CDATA[<textformat blockindent='-14'><ul><li>In this scenario, R1, R2, and R3 are interconnected over a Frame Relay network.</li><li>Frame Relay does not allow broadcasts.</li><li>OSPF must be configured accordingly to create neighbor adjacencies.</li></ul></textformat>]]></text> 
+  </component>
+
+<!--SLIDE 5--> 
+<component id="ID_s5_title">
+<text><![CDATA[<b>OSPF Virtual Link Network</b>]]></text>
+</component>
+<component id="ID_s5_txt01">
+  <text><![CDATA[Area 0]]></text> 
+  </component>
+    <component id="ID_s5_txt02">
+  <text><![CDATA[Area 1]]></text> 
+  </component>
+    <component id="ID_s5_txt03">
+  <text><![CDATA[Area 51]]></text> 
+  </component>
+  <component id="ID_s5_txt04">
+  <text><![CDATA[Virtual Link]]></text> 
+  </component>
+  
+   <component id="ID_s5_title_txt">
+		<text><![CDATA[]]></text>
+	</component>
+<component id="ID_s5_body01">
+  <text><![CDATA[<textformat blockindent='-14'><ul><li>In this scenario, area 51 cannot connect directly to area 0.</li><li>A special OSPF area must be configured to connect area 51 to area 0.</li><li>The R1 and R2 area 1 must be configured as a virtual link.</li></ul></textformat>]]></text> 
+  </component>
+</textcomponents>

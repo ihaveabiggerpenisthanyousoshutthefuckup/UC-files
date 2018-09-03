@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.8 Passive Interface</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Passive Interface</h1>
+        <div>
+          <p>As soon as a new interface is enabled within the EIGRP network, EIGRP attempts to form a neighbor adjacency with any neighboring routers to send and receive EIGRP updates.  </p>
+          <p></p>
+          <p>At times it may be necessary, or advantageous, to include a directly connected network in the EIGRP routing update, but not allow any neighbor adjacencies off of that interface to form. The<b> passive-interface</b> command can be used to prevent the neighbor adjacencies. There are two primary reasons for enabling the<b> passive-interface </b>command:</p>
+          <p>
+            <ul>
+              <li>To suppress unnecessary update traffic, such as when an interface is a LAN interface, with no other routers connected</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>To increase security controls, such as preventing unknown rogue routing devices from receiving EIGRP updates</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 shows R1, R2, and R3 do not have neighbors on their GigabitEthernet 0/0 interfaces.</p>
+          <p></p>
+          <p>The<b> passive-interface </b>router configuration mode command disables the transmission and receipt of EIGRP Hello packets on these interfaces. </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>router eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-router)# </span>
+            <span class="cmd">
+              <b>passive-interface</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>interface-type interface-number</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 2 shows the<b> passive-interface </b>command configured to suppress Hello packets on the LANs for R1 and R3. R2 is configured using the Syntax Checker.</p>
+          <p></p>
+          <p>Without a neighbor adjacency, EIGRP cannot exchange routes with a neighbor. Therefore, the<b> passive-interface </b>command prevents the exchange of routes on the interface. Although EIGRP does not send or receive routing updates on an interface configured with the<b> passive-interface </b>command, it still includes the address of the interface in routing updates sent out of other non-passive interfaces.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: To configure all interfaces as passive, use the<b> passive-interface default </b>command. To disable an interface as passive, use the<b> no passive-interface </b><i>interface-type interface-number </i>command.</p>
+          <p></p>
+          <p>An example of using the passive interface to increase security controls is when a network must connect to a third-party organization, for which the local administrator has no control, such as when connecting to an ISP network. In this case, the local network administrator would need to advertise the interface link through their own network, but would not want the third-party organization to receive or send routing updates to the local routing device, as this is a security risk. </p>
+          <p></p>
+          <p>
+            <b>Verifying the Passive Interface</b>
+          </p>
+          <p></p>
+          <p>To verify whether any interface on a router is configured as passive, use the<b> show ip protocols </b>privileged EXEC mode command, as shown in Figure 3. Notice that although R3’s GigabitEthernet 0/0 interface is a passive interface, EIGRP still includes the interface’s network address of 192.168.1.0 in its routing updates.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure R2 to suppress EIGRP Hello packets on its GigabitEthernet 0/0 interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p. Each router is sending a hello packet out its lan interface. Figure two shows the syntax for configuring a passive interface on router one and router three. This prevents routing updates from being sent out the lan interface. Figure three shows the output of the "show i. p. protocols" command on router three. The passive interfaces are highlighted. Figure four is an interactive activity that allows the learner to practice configuring e. i. g. r. p. with passive interface command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<textcomponents>
+
+<component id="ID_txt01">		
+<text><![CDATA[Network Operations Center]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>New York</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Osaka</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Boston</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Orlando</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt07x">
+<text><![CDATA[A small, single location company.]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[The company increases its number of employees.]]></text>
+</component>
+<component id="ID_txt09">
+<text><![CDATA[The company grows to multiple locations in the same city.]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[The enterprise grows to multiple cities.]]></text>
+</component>
+<component id="ID_txt11">
+<text><![CDATA[The enterprise hires teleworkers.]]></text>
+</component>
+<component id="ID_txt12">
+<text><![CDATA[The enterprise expands to other countries.<br/><b>Note</b>: Not all enterprise networks are international.]]></text>
+</component>
+<component id="ID_txt13">
+<text><![CDATA[The enterprise centralizes network management in a Network Operations Center (NOC).]]></text>
+</component>
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

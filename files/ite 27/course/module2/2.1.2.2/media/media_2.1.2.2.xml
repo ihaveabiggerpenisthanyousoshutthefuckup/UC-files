@@ -1,0 +1,15 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Configure VTP Server Mode</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Verify VTP Mode</b>]]></text>
+	</component>
+
+
+
+</textcomponents>

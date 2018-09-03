@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.2.3.2.png" />
+	<element type="TEXT" compId="ID_table" x="51" y="139" width="320" height="300" />
+	<element type="TEXT" compId="ID_table1" x="400" y="79" width="230" height="250" />
+	<element type="TEXT" subType="TITLE" compId="ID_title"/>
+	</slide>
+</data>

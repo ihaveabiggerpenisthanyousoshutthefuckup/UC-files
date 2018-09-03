@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.1.1 Types of Spanning Tree Protocols</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Types of Spanning Tree Protocols</h1>
+        <div>
+          <p>Several varieties of spanning tree protocols have emerged since the original IEEE 802.1D. </p>
+          <p></p>
+          <p>The varieties of spanning tree protocols include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>STP</b> - This is the original IEEE 802.1D version (802.1D-1998 and earlier) that provides a loop-free topology in a network with redundant links. Common Spanning Tree (CST) assumes one spanning tree instance for the entire bridged network, regardless of the number of VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PVST+</b> - This is a Cisco enhancement of STP that provides a separate 802.1D spanning tree instance for each VLAN configured in the network. The separate instance supports PortFast, UplinkFast, BackboneFast, BPDU guard, BPDU filter, root guard, and loop guard. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>802.1D-2004</b> - This is an updated version of the STP standard, incorporating IEEE 802.1w.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Rapid Spanning Tree Protocol (RSTP) or IEEE 802.1w</b> - This is an evolution of STP that provides faster convergence than STP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Rapid PVST+</b> - This is a Cisco enhancement of RSTP that uses PVST+. Rapid PVST+ provides a separate instance of 802.1w per VLAN. Each separate instance supports PortFast, BPDU guard, BPDU filter, root guard, and loop guard.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Multiple Spanning Tree Protocol (MSTP)</b> - This is an IEEE standard inspired by the earlier Cisco proprietary Multiple Instance STP (MISTP) implementation. MSTP maps multiple VLANs into the same spanning tree instance. The Cisco implementation of MSTP is MST, which provides up to 16 instances of RSTP and combines many VLANs with the same physical and logical topology into a common RSTP instance. Each instance supports PortFast, BPDU guard, BPDU filter, root guard, and loop guard.</li>
+            </ul>
+          </p>
+          <p>A network professional, whose duties include switch administration, may be required to decide which type of spanning tree protocol to implement.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figures displays the varieties of spanning tree protocols.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

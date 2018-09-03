@@ -1,0 +1,1 @@
+Figure 1 shows a topology with many switches. Figure 2 is a table describing components of VTP..

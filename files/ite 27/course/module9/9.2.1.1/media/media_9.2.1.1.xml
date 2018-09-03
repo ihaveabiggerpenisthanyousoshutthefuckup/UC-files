@@ -1,0 +1,13 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[]]></text> 
+  </component>
+<component id="ID_tbox_title">
+  <text><![CDATA[<b>OSPF Implementation</b>]]></text> 
+  </component>  
+<component id="ID_txt01">
+<text><![CDATA[1. Gather the network requirements and parameters.<br/>2. Define the OSPF parameters.<br/>3. Configure OSPF.<br/>4. Verify the OSPF implementation.]]></text>
+</component>  
+  
+</textcomponents>

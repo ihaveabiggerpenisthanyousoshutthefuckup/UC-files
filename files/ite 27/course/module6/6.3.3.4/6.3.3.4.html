@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.3.4 Feasible Successors, Feasibility Condition, and Reported Distance</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Feasible Successors, Feasibility Condition, and Reported Distance</h1>
+        <div>
+          <p>DUAL can converge quickly after a change in the topology because it can use backup paths to other networks without recomputing DUAL. These backup paths are known as Feasible Successors (FSs).</p>
+          <p></p>
+          <p>An FS is a neighbor that has a loop-free backup path to the same network as the successor, and it satisfies the Feasibility Condition (FC). R2’s successor for the 192.168.1.0/24 network is R3, providing the best path or lowest metric to the destination network. Notice in Figure 1, that R1 provides an alternative path, but is it an FS? Before R1 can be an FS for R2, R1 must first meet the FC.</p>
+          <p></p>
+          <p>The FC is met when a neighbor’s Reported Distance (RD) to a network is less than the local router’s feasible distance to the same destination network. If the reported distance is less, it represents a loop-free path. The reported distance is simply an EIGRP neighbor’s feasible distance to the same destination network. The reported distance is the metric that a router reports to a neighbor about its own cost to that network. </p>
+          <p></p>
+          <p>In Figure 2, R1’s feasible distance to 192.168.1.0/24 is 2,170,112. </p>
+          <p>
+            <ul>
+              <li>R1 reports to R2 that its FD to 192.168.1.0/24 is 2,170,112. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>From R2’s perspective, 2,170,112 is R1’s RD. </li>
+            </ul>
+          </p>
+          <p>R2 uses this information to determine if R1 meets the FC and, therefore, can be an FS. </p>
+          <p></p>
+          <p>As shown in Figure 3, because the RD of R1 (2,170,112) is less than R2’s own FD (3,012,096), R1 meets the FC. </p>
+          <p></p>
+          <p>R1 is now an FS for R2 to the 192.168.1.0/24 network.</p>
+          <p></p>
+          <p>If there is a failure in R2’s path to 192.168.1.0/24 via R3 (successor), then R2 immediately installs the path via R1 (FS) in its routing table. R1 becomes the new successor for R2’s path to this network, as shown in Figure 4.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p.  There is an arrow from router two pointing to the router three lan, and router one is circled with "feasible successor" next to it. Figure two shows the three routers connected with serial links.  Router one is sending router two and three its feasible distance to the router three lan.  The output of the "show i. p. route" command on router one is listed below with the metric or feasible distance highlighted in orange. Figure three shows the output of the "show i. p. route" command on router one and two.  The feasible distance is highlighted.  The caption asks the question, "Does it meet the feasibility condition?" Figure four shows the three routers connected with serial links.  Router two is sending router one the feasible distance to the router three lan. Router one is the new successor.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.2.2.1 Troubleshooting Neighbor Issues</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting Neighbor Issues</h1>
+        <div>
+          <p>This example will highlight how to troubleshoot neighbor problems. In the topology in Figure 1, all of the routers have been configured to support OSPFv2 routing. </p>
+          <p></p>
+          <p>A quick look at the R1 routing table, as shown in Figure 2, reveals that it is not adding any OSPFv2 routes. There are multiple reasons why this could be. However, a prerequisite for the neighbor relationship to form between two routers is OSI Layer 3 connectivity. </p>
+          <p></p>
+          <p>The output in Figure 3 confirms that the S0/0/0 interface is up and active. The successful ping also confirms that the R2 serial interface is active. A successful ping does not mean an adjacency will form because it is possible to have overlapping subnets or misconfigured OSPF parameters. You still have to verify that interfaces on the connected devices share the same subnet. If the ping was not successful, check the cabling and verify that interfaces on connected devices are configured correctly and operational.</p>
+          <p></p>
+          <p>For an interface to be enabled for OSPFv2, a matching<b> network </b>command must be configured under the OSPFv2 routing process. Active OSPFv2 interfaces can be verified using the<b> show ip ospf interface </b>command. The output in Figure 4 verifies that the Serial 0/0/0 interface is enabled for OSPFv2. If connected interfaces on two routers are not enabled for OSPF, the neighbors will not form an adjacency.</p>
+          <p></p>
+          <p>Verify the OSPFv2 settings using the<b> show ip protocols </b>command. The output displayed in Figure 5 verifies that OSPFv2 is enabled and also lists the networks being advertised as enabled by the<b> network </b>command. If an IPv4 address on an interface falls within a network that has been enabled for OSPFv2, the interface will be enabled for OSPFv2. </p>
+          <p></p>
+          <p>However, notice that the Serial 0/0/0 interface is listed as passive. Recall that the<b> passive-interface </b>command stops both outgoing and incoming routing updates because the effect of the command causes the router to stop sending and receiving Hello packets over an interface. For this reason, the routers will not become neighbors.</p>
+          <p></p>
+          <p>To disable the interface as passive, use the<b> no passive-interface </b>router configuration mode command as shown in Figure 6. After you disable the passive interface, the routers become adjacent as indicated by automatically generated information message.</p>
+          <p></p>
+          <p>A quick verification of the routing table as shown in Figure 7 confirms that OSPFv2 is now exchanging routing information.</p>
+          <p></p>
+          <p>Another problem that may arise is when two neighboring routers have mismatched MTU sizes on their connecting interfaces. The MTU size is the largest network layer packet that the router will forward out each interface. Routers default to an MTU size of 1500 bytes. However, this value can be changed for IPv4 packets using the<b> ip mtu </b><i>size </i>interface configuration command or the<b> ipv6 mtu </b><i>size </i>interface command for IPv6 packets. If two connecting routers had mismatched MTU values, they would still attempt to form an adjacency but they would not exchange their LSDBs and the neighbor relationship would fail. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p. The internal network is highlighted, excluding the link between router two and i. s. p. Figure two shows the output from the "show i. p. route" command on router one. Figure three shows the output from the "show i. p. interface brief" command on router one and a successful ping. Figure four shows the output from the "show i. p. o. s. p. f. interface serial zero slash zero slash zero" command. Figure five shows the output from the "show i. p. protocols" ccommand on router one. The serial zero slash zero slash zero is highlighted to identify it as a passive interface. Figure six shows the syntax for configuring serial zero slash zero slash zero so it is not passive. Figure seven shows the output from the "show i.  p. route o. s. p. f." command on router one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

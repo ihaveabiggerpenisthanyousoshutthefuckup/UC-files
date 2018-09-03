@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+  <slide type="MBAR">
+				
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_4.2.1.2.png" />
+			<element type="ROUTER" textId="ID_router_txt1" x="51" y="66" width="600" height="105" />
+			<element type="TEXT" compId="ID_s1_txt01" x="208" y="312" width="104.5" expand="right" align="left" color="#0" />
+			<element type="TEXT" compId="ID_s1_txt02" x="208" y="351" width="104.5" expand="right" align="left" color="#0" />
+			<element type="TEXT" compId="ID_s1_txt03" x="44" y="416" width="596.85" expand="right" align="left" color="#0" />
+			<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+		</slide>
+
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+			<element type="ACTIVITY" subType="SYNTAX" compId="ID_s2_SC5" x="25" y="45" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>
+			<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff"/>
+		</slide>
+  </slide>
+	<text id="ID_router_txt1"><![CDATA[<pre>S1(config)# <b>interface range FastEthernet0/1 - 2</b>
+S1(config-if-range)# <b>channel-group 1 mode active</b>
+Creating a port-channel interface Port-channel 1
+S1(config-if-range)# <b>interface port-channel 1</b>
+S1(config-if)# <b>switchport mode trunk</b>
+S1(config-if)# <b>switchport trunk allowed vlan 1,2,20</b>
+</pre>]]></text>
+</data>
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.3 Network Discovery</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Network Discovery</h1>
+        <div>
+          <p>After initial boot up and discovery, the routing table is updated with all directly connected networks and the interfaces those networks reside on.</p>
+          <p></p>
+          <p>If a routing protocol is configured, the next step is for the router to begin exchanging routing updates to learn about any remote routes.</p>
+          <p></p>
+          <p>The router sends an update packet out all interfaces that are enabled on the router. The update contains the information in the routing table, which currently is all directly connected networks.</p>
+          <p></p>
+          <p>At the same time, the router also receives and processes similar updates from other connected routers. Upon receiving an update, the router checks it for new network information. Any networks that are not currently listed in the routing table are added.  </p>
+          <p></p>
+          <p>Refer to the figure for a topology setup between three routers, R1, R2, and R3 with RIPv2 enabled. Based on this topology, below is a listing of the different updates that R1, R2, and R3 send and receive during initial convergence.</p>
+          <p></p>
+          <p>R1: </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.1.0.0 out the Serial0/0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.2.0.0 out the FastEthernet0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R2 about network 10.3.0.0 and increments the hop count by 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores network 10.3.0.0 in the routing table with a metric of 1</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>R2: </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.3.0.0 out the Serial 0/0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.2.0.0 out the Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R1 about network 10.1.0.0 and increments the hop count by 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores network 10.1.0.0 in the routing table with a metric of 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R3 about network 10.4.0.0 and increments the hop count by 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores network 10.4.0.0 in the routing table with a metric of 1</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>R3: </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.4.0.0 out the Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.3.0.0 out the FastEthernet0/0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R2 about network 10.2.0.0 and increments the hop count by 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores network 10.2.0.0 in the routing table with a metric of 1</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click <b>Play</b> in the figure to view an animation of R1, R2, and R3 starting the initial exchange. </p>
+          <p></p>
+          <p>After this first round of update exchanges, each router knows about the connected networks of their directly connected neighbors. However, did you notice that R1 does not yet know about 10.4.0.0 and that R3 does not yet know about 10.1.0.0? Full knowledge and a converged network do not take place until there is another exchange of routing information. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation that is a continuation of the previous page.  Each router adds their connected networks into an update packet and sends out the packets on each of the active interfaces.  As routers receive and read the packets from the other directly connected routers they will add the newly discovered networks into their own routing tables. They will also add the hop count as the metric for reaching that specific network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

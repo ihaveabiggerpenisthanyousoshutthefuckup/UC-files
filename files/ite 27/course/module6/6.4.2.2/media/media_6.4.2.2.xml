@@ -1,0 +1,75 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv6 Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configuring Link-local Addresses on R1</b>]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Configuring Link-local Addresses on R2</b>]]></text>
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Syntax Checker</b>]]></text>
+</component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Verifying Link-local Addresses on R1</b>]]></text>
+</component>
+
+<component id="ID_s5_txt01">
+<text><![CDATA[Same IPv6 link-local address is configured on all interfaces.]]></text>
+</component>
+
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+<component id="ID_SC4" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font face="_sans"><b>Configure R3’s interfaces with the IPv6 link-local address FE80::3 in the following order:<ul><li>Serial 0/0/0  <li>Serial 0/0/1<li>GigabitEthernet 0/0<li>Use the exit command before configuring the next interface.</b></font>]]></existingcommands>
+		<command prompt="R3(config)#">
+		    <correctresponse><![CDATA[interface serial 0/0/0]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+		    <correctresponse><![CDATA[ipv6 address fe80::3 link-local]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+		    <correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R3(config)#">
+		    <correctresponse><![CDATA[interface serial 0/0/1]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+		    <correctresponse><![CDATA[ipv6 address fe80::3 link-local]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+		    <correctresponse><![CDATA[exit]]></correctresponse>
+		</command>
+		<command prompt="R3(config)#">
+		    <correctresponse><![CDATA[interface gigabitethernet 0/0]]></correctresponse>
+		</command>
+		<command prompt="R3(config-if)#">
+		    <correctresponse><![CDATA[ipv6 address fe80::3 link-local]]></correctresponse>
+		    <deviceresponse><![CDATA[R3(config-if)#]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>You successfully configured the IPv6 link-local address.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+
+</textcomponents>
+

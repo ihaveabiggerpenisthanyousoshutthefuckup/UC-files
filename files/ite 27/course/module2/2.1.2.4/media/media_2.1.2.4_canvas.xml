@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide> 
+<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+<element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400.75" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title" color="#fff"/>
+</slide>
+<text id="ID_router_txt1"><![CDATA[<pre>S2(config)# vtp mode client
+Setting device to VTP Client mode for VLANS.
+S2(config)# vtp domain CCNA
+Changing VTP domain name from NULL to CCNA
+*Mar 1 00:12:22.484: %SW_VLAN-6-VTP_DOMAIN_NAME_CHG: VTP domain name changed to CCNA.
+S2(config)# vtp password cisco12345
+Setting device VTP password to cisco12345
+S2(config)#</pre>]]></text>
+
+</data>

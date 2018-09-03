@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.2 EIGRP Hello Packets</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Hello Packets</h1>
+        <div>
+          <p>EIGRP uses small Hello packets to discover other EIGRP-enabled routers on directly connected links. Hello packets are used by routers to form EIGRP neighbor adjacencies, also known as neighbor relationships.</p>
+          <p></p>
+          <p>EIGRP Hello packets are sent as IPv4 or IPv6 multicasts, and use RTP unreliable delivery. This means that the receiver does not reply with an acknowledgment packet. </p>
+          <p>
+            <ul>
+              <li>The reserved EIGRP multicast address for IPv4 is 224.0.0.10.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The reserved EIGRP multicast address for IPv6 is FF02::A.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>EIGRP routers discover neighbors and establish adjacencies with neighbor routers using the Hello packet. On most modern networks, EIGRP Hello packets are sent as multicast packets every five seconds. However, on multipoint, non-broadcast multiple access (NBMA) networks with access links of T1 (1.544 Mb/s) or slower, Hello packets are sent as unicast packets every 60 seconds. </p>
+          <p></p>
+          <p>Note: NBMA networks using slower interfaces include legacy X.25, Frame Relay, and Asynchronous Transfer Mode (ATM).</p>
+          <p></p>
+          <p>EIGRP also uses Hello packets to maintain established adjacencies. An EIGRP router assumes that as long as it receives Hello packets from a neighbor, the neighbor and its routes remain viable. </p>
+          <p></p>
+          <p>EIGRP uses a Hold timer to determine the maximum time the router should wait to receive the next Hello before declaring that neighbor as unreachable. By default, the hold time is three times the Hello interval, or 15 seconds on most networks and 180 seconds on low-speed NBMA networks. If the hold time expires, EIGRP declares the route as down and DUAL searches for a new path by sending out queries.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three interconnected routers.  Each has a hello packet between them.  There is a table listing the hello timers for different link speeds.  A T 1, or slower, sends hello packets every sixty seconds.  A link faster than a T 1 sends hello packets every five seconds.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<textcomponents>
+<component id="ID_inst">
+  <text><![CDATA[<b>Activity - Identify the Steps in Establishing EIGRP Neighbor Adjacencies</b><br/><br/>Router 1 (R1) and Router 2 (R2) are establishing EIGRP neighbor adjacencies. Order the EIGRP messages by dragging them to the appropriate fields provided.]]></text> 
+</component>
+<component id="ID_drag01">
+  <text><![CDATA[<span style="padding-left:5px;">R2 Routing <br>Information</span>]]></text> 
+</component>
+<component id="ID_drag02">
+  <text><![CDATA[<span style="padding-left:5px;">Hello, I am R2</span>]]></text> 
+</component>
+<component id="ID_drag03">
+  <text><![CDATA[Hello, I am R1]]></text> 
+</component>
+<component id="ID_drag04">
+  <text><![CDATA[<span style="padding-left:5px;">R1 Routing <br>Information</span>]]></text> 
+</component>
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have successfully put the EIGRP neighbor adjacency messages in the correct order.]]></text>
+</component>
+
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully put the EIGRP neighbor adjacency messages in the correct order. Please click Reset to try again.
+]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+</textcomponents>

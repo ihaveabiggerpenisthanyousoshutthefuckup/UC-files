@@ -1,0 +1,1 @@
+.figure 1 shows the output of an attempt to create an extended vlan. Figure 2 shows configuration of an extended vlan. Figure 3 shows vefification of the vlan and figure 4 is a syntax checker to configure and verify Extended vlans.

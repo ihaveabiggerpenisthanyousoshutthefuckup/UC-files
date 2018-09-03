@@ -1,0 +1,1 @@
+Figure 1 shows commands to configure vtp. Figure 2  shows output of dhow vtp status

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.3.4 Load Balancing IPv6</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Load Balancing IPv6</h1>
+        <div>
+          <p>Figure 1 shows the EIGRP for IPv6 network topology.  The serial links in the topology have  the same bandwidth that is used in the EIGRP for IPv4 topology.</p>
+          <p></p>
+          <p>Similar to the previous scenario for IPv4, R3 has two EIGRP equal-cost routes for the network between R1 and R2, 2001:DB8:CAFE:A001::/64. One route is via R1 at FE80::1 and the other route is via R2 at FE80::2. </p>
+          <p></p>
+          <p>Figure 2 shows that the EIGRP metrics are the same in the IPv6 routing table and in the IPv4 routing table for the 2001:DB8:CAFE:A001::/64 and 172.16.3.0/30 networks. This is because the EIGRP composite metric is the same for both EIGRP for IPv6 and for IPv4. </p>
+          <p></p>
+          <p>
+            <b>Unequal-Cost Load Balancing</b>
+          </p>
+          <p></p>
+          <p>EIGRP for IPv4 and IPv6 can also balance traffic across multiple routes that have different metrics. This type of balancing is called unequal-cost load balancing. Setting a value using the<b> variance </b>command in router configuration mode enables EIGRP to install multiple loop-free routes with unequal cost in a local routing table. </p>
+          <p></p>
+          <p>A route learned through EIGRP must meet two criteria to be installed in the local routing table:</p>
+          <p>
+            <ul>
+              <li>The route must be loop-free, being either a feasible successor or having a reported distance that is less than the total distance.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The metric of the route must be lower than the metric of the best route (the successor) multiplied by the variance configured on the router.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>For example, if the variance is set to 1, only routes with the same metric as the successor are installed in the local routing table. If the variance is set to 2, any EIGRP-learned route with a metric less than 2 times the successor metric will be installed in the local routing table.</p>
+          <p></p>
+          <p>To control how trafﬁc is distributed among routes when there are multiple routes for the same destination network that have different costs, use the<b> trafﬁc-share balanced </b>command. Trafﬁc is then distributed proportionately to the ratio of the costs. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab topology.  The link between router one and two shows as sixty four k. b. p. s., the link between router one and router three shows as one thousand five hundred and forty four k. b. p. s., and the link between router two and three shows as one thousand twenty four k. b. p. s. Figure two shows the output from the "show i. p. v. 6. route e. i. g. r. p." command on router three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

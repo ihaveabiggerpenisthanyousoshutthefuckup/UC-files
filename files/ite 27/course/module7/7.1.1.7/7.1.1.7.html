@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.7 Summary Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Summary Route</h1>
+        <div>
+          <p>The following scenario explains how automatic summarization could also cause a routing loop to occur.</p>
+          <p></p>
+          <p>In the figure: </p>
+          <p>1. R1 has a default route, 0.0.0.0/0 via the ISP router. </p>
+          <p>2. R1 sends a routing update to R2 containing the default route.</p>
+          <p>3. R2 installs the default route from R1 in its IPv4 routing table.</p>
+          <p>4. R2’s routing table contains the 172.16.1.0/24, 172.16.2.0/24, and 172.16.3.0/24 subnets in its routing table. </p>
+          <p>5. R2 sends a summarized update to R1 for the 172.16.0.0/16 network.</p>
+          <p>6. R1 installs the summarized route for 172.16.0.0/16 via R2.</p>
+          <p>7. R1 receives a packet for 172.16.4.10. Because R1 has a route for 172.16.0.0/16 via R2, it forwards the packet to R2.</p>
+          <p>8. R2 receives the packet with the destination address 172.16.4.10 from R1. The packet does not match any specific route so using the default route in its routing table R2 forwards the packet back to R1. </p>
+          <p>9. The packet for 172.16.4.10 loops between R1 and R2 until the TTL expires and the packet is dropped.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network where router one is connected to i. s. p. and router two.  Router two summarized the one seventy two dot sixteen dot zero dot zero and sent it to router one.  Router two also has a default static route pointing to router one.  As a result of the summary route, router one sends packets destined for one seventy two dot sixteen dot four dot ten to router two.  As a result of its default static route, router two forwards these packets back to router one.  This is a routing loop.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

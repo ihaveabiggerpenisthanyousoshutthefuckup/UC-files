@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.3 Configuring EIGRP Automatic Summarization </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring EIGRP Automatic Summarization </h1>
+        <div>
+          <p>EIGRP for IPv4 automatic summarization is disabled by default beginning with Cisco IOS Release 15.0(1)M and 12.2(33). Prior to this, automatic summarization was enabled by default. This meant that EIGRP performed automatic summarization each time the EIGRP topology crossed a border between two different major class networks.</p>
+          <p></p>
+          <p>In Figure 1, the output from the<b> show ip protocols </b>command on R1 indicates that EIGRP automatic summarization is disabled. This router is running IOS 15.2; therefore, EIGRP automatic summarization is disabled by default. Figure 2 shows the current routing table for R3. Notice that the IPv4 routing table for R3 contains all of the networks and subnets within the EIGRP routing domain.</p>
+          <p></p>
+          <p>To enable automatic summarization for EIGRP, use the<b> auto-summary </b>command in router configuration mode, as shown in Figure 3:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1(config)# </span>
+            <span class="cmd">
+              <b>router eigrp</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>as-number</i>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R1(config-router)# </span>
+            <span class="cmd">
+              <b>auto-summary</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The<b> no </b>form of this command is used to disable automatic summarization.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to enable automatic summarization for R3. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show i. p. protocols" command on router one.  Automatic summarization disabled is highlighted. Figure two shows the output from the "show i. p. route e. i. g. r. p." command.  The three subnets are listed since automatic summarization is disabled. Figure three shows the result of the "router e. i. g. r. p. one" followed by "auto dash summary" commands on router one and router two.  Figure four is an interactive activity that allows the learner to practice displaying the e. i. g. r. p. routing table and enabling auto summarization.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

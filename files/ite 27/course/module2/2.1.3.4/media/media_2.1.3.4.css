@@ -1,0 +1,9 @@
+@import url('../../../common/styles/media2.css');
+.blue {
+    background-color: #0D658B !important;
+    padding: 4px !important;
+}
+
+.orangeColor {
+    color: #F68026 !important;
+}

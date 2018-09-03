@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.3 Step 2 – Configure the VTP Domain Name and Password</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 2 – Configure the VTP Domain Name and Password</h1>
+        <div>
+          <p>The domain name is configured using the <b>vtp domain </b><i>domain-name</i> global configuration command. In Figure 1, the domain name is configured as <b>CCNA</b> on S1. S1 will then send out a VTP advertisement to S2 and S3. If S2 and S3 have the default configuration with the NULL domain name, then both switches will accept CCNA as the new VTP domain name. A VTP client must have the same domain name as the VTP server before it will accept VTP advertisements.</p>
+          <p></p>
+          <p>For security reasons, a password should be configured using the <b>vtp password </b><i>password</i> command. In Figure 2, the VTP domain password is set to <b>cisco12345</b>. All switches in the VTP domain must use the same VTP domain password.</p>
+          <p></p>
+          <p>Verify the VTP password using the <b>show vtp password</b> command, as shown in Figure 2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows configuring the domain name.  Figure 2 shows configuring and verifying the domain name password.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

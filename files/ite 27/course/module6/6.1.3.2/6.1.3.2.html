@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.3.2 EIGRP Packet Header and TLV</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Packet Header and TLV</h1>
+        <div>
+          <p>Every EIGRP message includes the header, as shown in Figure 1. Important fields include the Opcode field and the Autonomous System Number field. Opcode specifies the EIGRP packet type as follows: </p>
+          <p>
+            <ul>
+              <li>Update</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Query</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Reply</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Hello</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The autonomous system number specifies the EIGRP routing process. Unlike RIP, multiple instances of EIGRP can run on a network. The autonomous system number is used to track each running EIGRP process.</p>
+          <p></p>
+          <p>Figure 2 shows the EIGRP parameters TLV. The EIGRP parameters message includes the weights that EIGRP uses for its composite metric. By default, only bandwidth and delay are weighted. Both are weighted equally; therefore, the K1 field for bandwidth and the K3 field for delay are both set to one (1). The other K values are set to zero (0). </p>
+          <p></p>
+          <p>The Hold Time is the amount of time the EIGRP neighbor receiving this message should wait before considering the advertising router to be down. </p>
+          <p></p>
+          <p>Figure 3 shows the IP Internal Routes TLV. The IP internal message is used to advertise EIGRP routes within an autonomous system. Important fields include the metric fields (delay and bandwidth), the subnet mask field (prefix length), and the destination field. </p>
+          <p></p>
+          <p>Delay is calculated as the sum of delays from source to destination in units of 10 microseconds. Bandwidth is the lowest configured bandwidth of any interface along the route. </p>
+          <p></p>
+          <p>The subnet mask is specified as the prefix length or the number of network bits in the subnet mask. For example, the prefix length for the subnet mask 255.255.255.0 is 24, because 24 is the number of network bits. </p>
+          <p></p>
+          <p>The Destination field stores the address of the destination network. Although only 24 bits are shown in this figure, this field varies based on the value of the network portion of the 32-bit network address. For example, the network portion of 10.1.0.0/16 is 10.1; therefore, the Destination field stores the first 16 bits. Because the minimum length of this field is 24 bits, the remainder of the field is padded with zeros. If a network address is longer than 24 bits (192.168.1.32/27, for example), then the Destination field is extended for another 32 bits (for a total of 56 bits) and the unused bits are padded with zeros.</p>
+          <p></p>
+          <p>Figure 4 shows the IP External Routes TLV. The IP external message is used when external routes are imported into the EIGRP routing process. In this chapter, we will import or redistribute a default static route into EIGRP. Notice that the bottom half of the IP External Routes TLV includes all the fields used by the IP Internal TLV. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The maximum transmission unit (MTU) is not a metric used by EIGRP. The MTU is included in the routing updates, but it is not used to determine the routing metric.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows an expanded view of the e. i. g. r. p. header.  The opcode and autonomous system number are highlighted in orange. Figure two shows the t. l. v. types with the k. values highlighted, along with hold time. Figure three shows a t. l. v. type field for internal routes. Figure four shows a t. l. v. type field for external routes.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

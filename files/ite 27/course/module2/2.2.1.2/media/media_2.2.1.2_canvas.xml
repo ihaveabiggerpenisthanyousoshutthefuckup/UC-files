@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+	
+		<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.1.2_s1.png" />
+<element type="TEXT" id="ID_static_1" text="F0/4" x="298" y="201" align="center" width="23" />
+<element type="TEXT" id="ID_static_2" text="F0/11" x="302" y="263" align="center" width="28" />
+<element type="TEXT" id="ID_static_3" text="F0/6" x="336" y="263" align="center" width="23" />
+<element type="TEXT" id="ID_static_4" text="172.17.10.21" x="180" y="392" align="center" width="67" />
+<element type="TEXT" id="ID_static_5" text="172.17.30.23" x="400" y="392" align="center" width="68" />
+<element type="TEXT" id="ID_static_6" text="F0/5" x="350" y="200" align="center" width="23" />
+<element type="TEXT" id="ID_static_7" text="G0/1" x="350" y="128" align="center" width="24" />
+<element type="TEXT" id="ID_static_8" text="172.17.10.1/24" x="223" y="100" align="center" width="79" />
+<element type="TEXT" id="ID_static_9" text="172.17.30.1/24" x="370" y="100" align="center" width="79" />
+<element type="TEXT" id="ID_static_10" text="G0/0" x="301" y="128" align="center" width="26" />
+<element type="TEXT" compId="ID_s1_txt01" x="168" y="135" width="106" expand="left+right" align="center" />
+<element type="TEXT" compId="ID_s1_txt03" x="140" y="204" width="103" expand="left+right" align="center" class="orangeCallOut" />
+<element type="TEXT" compId="ID_s1_txt04" x="425" y="225" width="116" expand="right" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+</slide>
+
+
+
+<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.1.2_s2.png" />
+<element type="TEXT" compId="ID_s2_txt01" x="398" y="88" width="160" expand="down" align="center" />
+<element type="TEXT" id="ID_static_11" text="F0/5" x="312" y="203" align="center" width="23" />
+<element type="TEXT" id="ID_static_12" text="F0/11" x="302" y="263" align="center" width="28" />
+<element type="TEXT" id="ID_static_13" text="F0/6" x="336" y="263" align="center" width="23" />
+<element type="TEXT" id="ID_static_14" text="172.17.10.21" x="180" y="392" align="center" width="67" />
+<element type="TEXT" id="ID_static_15" text="172.17.30.23" x="400" y="392" align="center" width="68" />
+<element type="TEXT" id="ID_static_16" text="G0/0" x="308" y="130" align="center" width="26" />
+<element type="TEXT" compId="ID_s2_txt05" x="168" y="135" width="106" expand="left+right" align="center" />
+<element type="TEXT" compId="ID_s2_txt03" x="140" y="204" width="103" expand="left+right" align="center" class="orangeCallOut" />
+<element type="TEXT" compId="ID_s2_txt04" x="425" y="225" width="116" expand="left+right" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_s2_title"/>
+</slide>
+
+
+
+<slide>
+	<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.1.2_s3.png" />
+<element type="TEXT" compId="ID_s3_txt01" x="398" y="88" width="160" expand="down" align="center" />
+<element type="TEXT" id="ID_static_17" text="F0/5" x="312" y="201" align="center" width="23" />
+<element type="TEXT" id="ID_static_18" text="F0/6" x="336" y="261" align="center" width="23" />
+<element type="TEXT" id="ID_static_19" text="172.17.10.21" x="148" y="422" align="center" width="67" />
+<element type="TEXT" id="ID_static_20" text="172.17.30.23" x="400" y="392" align="center" width="68" />
+<element type="TEXT" id="ID_static_21" text="G0/0" x="308" y="128" align="center" width="26" />
+<element type="TEXT" id="ID_static_22" text="F0/2" x="281.5" y="286" align="center" width="23" />
+<element type="TEXT" id="ID_static_23" text="F0/11" x="302" y="261" align="center" width="28" />
+<element type="TEXT" compId="ID_s3_txt05" x="168" y="135" width="106" expand="left+right" align="center" />
+<element type="TEXT" compId="ID_s3_txt03" x="109" y="285" width="98" expand="up" align="center" class="orangeCallOut" />
+<element type="TEXT" compId="ID_s3_txt04" x="425" y="225" width="116" expand="left+right" align="center" />
+<element type="TEXT" subType="TITLE" compId="ID_s3_title"/>
+</slide>
+
+
+	</slide>
+	
+	
+	
+	
+	
+	
+	
+	
+</data>

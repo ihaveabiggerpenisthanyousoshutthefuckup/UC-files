@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.4 Exchanging the Routing Information</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Exchanging the Routing Information</h1>
+        <div>
+          <p>At this point the routers have knowledge about their own directly connected networks and about the connected networks of their immediate neighbors. Continuing the journey toward convergence, the routers exchange the next round of periodic updates. Each router again checks the updates for new information. </p>
+          <p></p>
+          <p>Refer to the figure for a topology setup between three routers, R1, R2, and R3. After initial discovery is complete, each router continues the convergence process by sending and receiving the following updates.</p>
+          <p></p>
+          <p>R1: </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.1.0.0 out the Serial 0/0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends an update about networks 10.2.0.0 and 10.3.0.0 out the FastEthernet0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R2 about network 10.4.0.0 and increments the hop count by 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores network 10.4.0.0 in the routing table with a metric of 2</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Same update from R2 contains information about network 10.3.0.0 with a metric of 1. There is no change; therefore, the routing information remains the same</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>R2: </p>
+          <p>
+            <ul>
+              <li>Sends an update about networks 10.3.0.0 and 10.4.0.0 out of Serial 0/0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends an update about networks 10.1.0.0 and 10.2.0.0 out of Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R1 about network 10.1.0.0. There is no change; therefore, the routing information remains the same</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R3 about network 10.4.0.0. There is no change; therefore, the routing information remains the same</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>R3: </p>
+          <p>
+            <ul>
+              <li>Sends an update about network 10.4.0.0 out the Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends an update about networks 10.2.0.0 and 10.3.0.0 out the FastEthernet0/0 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Receives an update from R2 about network 10.1.0.0 and increments the hop count by 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Stores network 10.1.0.0 in the routing table with a metric of 2</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Same update from R2 contains information about network 10.2.0.0 with a metric of 1. There is no change; therefore, the routing information remains the same</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click <b>Play</b> in the figure to view an animation of R1, R2, and R3 sending the latest routing table to their neighbors. </p>
+          <p></p>
+          <p>Distance vector routing protocols typically implement a routing loop prevention technique known as split horizon. Split horizon prevents information from being sent out the same interface from which it was received. For example, R2 does not send an update containing the network 10.1.0.0 out of Serial 0/0/0, because R2 learned about network 10.1.0.0 through Serial 0/0/0. </p>
+          <p></p>
+          <p>After routers within a network have converged, the router can then use the information within the routing table to determine the best path to reach a destination. Different routing protocols have different ways of calculating the best path.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation that is a continuation of the previous page.  Each router will continue to update their routing table as it sends and receives update packets to and from other routers.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

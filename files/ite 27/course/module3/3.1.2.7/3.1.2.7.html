@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.7 802.1D BPDU Frame Format</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>802.1D BPDU Frame Format</h1>
+        <div>
+          <p>The spanning tree algorithm depends on the exchange of BPDUs to determine a root bridge. A BPDU frame contains 12 distinct fields that convey the path and priority information used to determine the root bridge and the paths to the root bridge.</p>
+          <p></p>
+          <p>Click the BPDU fields in Figure 1 to see more detail.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The first four fields identify the protocol, version, message type, and status flags.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The next four fields are used to identify the root bridge and the root path cost to the root bridge.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The last four fields are all timer fields that determine how frequently BPDU messages are sent and how long the information received through the BPDU process is retained. </li>
+            </ul>
+          </p>
+          <p>Figure 2 shows a BPDU frame that was captured using Wireshark. In the example, the BPDU frame contains more fields than previously described. The BPDU message is encapsulated in an Ethernet frame when it is transmitted across the network. The 802.3 header indicates the source and destination addresses of the BPDU frame. This frame has a destination MAC address of 01:80:C2:00:00:00, which is a multicast address for the spanning tree group. When a frame is addressed with this MAC address, each switch that is configured for spanning tree accepts and reads the information from the frame. All other devices on the network disregard the frame.</p>
+          <p></p>
+          <p>In the example, the root ID and the BID are the same in the captured BPDU frame. This indicates that the frame was captured from a root bridge. The timers are all set to the default values.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a table of the b.p.d.u. fields and their size in bytes. Figure two shows a Wireshark capture of a spanning tree packet.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

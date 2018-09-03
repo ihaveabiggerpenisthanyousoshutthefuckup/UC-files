@@ -1,0 +1,92 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Assign Ports to VLANs</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Sample VLAN Port Assignment Configuration</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Assign Ports to VLANs</b>]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Student PC]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[Switch S1:<br/>Port F0/18<br/>VLAN 20]]></text>
+	</component>
+	<component id="ID_s1_table01">
+		<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600" >
+		<tr class="mtable_title">
+		<td colspan="2" bgcolor='#FFFFFF'><font size="12"><b>Cisco Switch IOS Commands</b></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+		<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Enter global configuration mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1# <b>configure terminal</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Enter interface configuration mode.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config)# <b>interface </b><i> interface_id</i></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Set the port to access mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>switchport mode access</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'>Assign the port to a VLAN.</td>
+<td bgcolor='#F2F2F2'><font face="_typewriter">S1(config-if)# <b>switchport access vlan </b><i>vlan_id</i>
+</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8'>Return to the privileged EXEC mode.</td>
+<td bgcolor='#E9E7E8'><font face="_typewriter">S1(config-if)# <b>end</b></font></td>
+</tr>
+
+</table>]]></text>
+	</component>
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	<component id="ID_SC5" fontSize="12" fontFace='_typewriter'  fontColor="#ffffff">
+			<feedback id="fb"><![CDATA[<b><font face="_sans" color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b> ]]></feedback>
+		  <existingcommands><![CDATA[<font face="_sans"><b>Set f0/18 to access mode and assign the port to VLAN 20. Return directly to privileged EXEC mode when complete.</b></font>]]></existingcommands>
+			<command prompt="S1#">
+				   <correctresponse><![CDATA[configure terminal]]></correctresponse>
+							<deviceresponse><![CDATA[Enter configuration commands, one per line.  End with CNTL/Z.]]></deviceresponse>
+		  </command>
+			<command prompt="S1(config)#">
+				   <correctresponse><![CDATA[interface f0/18]]></correctresponse>
+		  </command>
+			<command prompt="S1(config-if)#">
+				   <correctresponse><![CDATA[switchport mode access]]></correctresponse>
+		  </command>
+			<command prompt="S1(config-if)#">
+				   <correctresponse><![CDATA[switchport access vlan 20]]></correctresponse>
+		  </command>
+			<command prompt="S1(config-if)#">
+				   <correctresponse><![CDATA[end]]></correctresponse>
+							<deviceresponse><![CDATA[S1#<br>*Mar 31, 09:34:24.3434: %SYS-5-CONFIG_I: Configured from console by console<br>S1#]]></deviceresponse>
+				   <instruction><![CDATA[<font face="_sans"><b>Display the brief VLAN information.</font>]]></instruction>
+		  </command>
+			<command prompt="S1#">
+				   <correctresponse><![CDATA[show vlan brief]]></correctresponse>
+							<deviceresponse><![CDATA[VLAN Name                             Status    Ports<br>---- -------------------------------- --------- -------------------------------<br>1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4<br>                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8<br>                                                Fa0/9, Fa0/10, Fa0/11, Fa0/12<br>                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16<br>                                                Fa0/17, Fa0/19, Fa0/20, Fa0/21<br>                                                Fa0/22, Fa0/23, Fa0/24, Gig1/1<br>                                                Gig1/2<br>20   Student                          active    Fa0/18<br>1002 fddi-default                     active    <br>1003 token-ring-default               active    <br>1004 fddinet-default                  active    <br>1005 trnet-default                    active    <br>S1#]]></deviceresponse>
+				   <instruction><![CDATA[<font face="_sans"><b>You successfully assigned a port to a VLAN.</font>]]></instruction>
+		  </command>
+<command prompt=""/>
+ </component>
+</textcomponents>

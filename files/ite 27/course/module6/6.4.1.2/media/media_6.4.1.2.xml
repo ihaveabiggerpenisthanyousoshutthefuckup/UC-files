@@ -1,0 +1,77 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Comparing EIGRP for IPv4 and IPv6</b>]]></text>
+</component>
+
+  <component id="ID_table">
+  <text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_top">
+		<td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77'  valign="top" class="mtitle" width="105"><font color='#ffffff' ></font></td>
+		<td bgcolor='#077A77'  valign="top" class="mtitle" width="160"><font color='#ffffff' ><b>EIGRP for IPv4</b></font></td>
+		<td bgcolor='#077A77'  valign="top" class="mtitle"><font color='#ffffff' ><b>EIGRP for IPv6</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Advertised Routes</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >IPv4 networks</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >IPv6 prefixes</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Distance Vector</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >Yes</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >Yes</font></td>
+	</tr>
+
+
+	   <tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Convergence Technology</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >DUAL</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >DUAL</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Metric</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >Bandwidth and delay by default, reliability and load are optional</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >Bandwidth and delay by default, reliability and load are optional</font></td>
+	</tr>
+
+
+	   <tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Transport Protocol</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >RTP</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >RTP</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Update Messages</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >Incremental, partial, and bounded updates</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >Incremental, partial, and bounded updates</font></td>
+	</tr>
+
+
+	   <tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Neighbor Discovery</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >Hello packets</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >Hello packets</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Source and Destination Addresses</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >IPv4 source address and 224.0.0.10 IPv4 multicast destination address</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >IPv6 link-local source address and FF02::A IPv6 multicast destination address</font></td>
+	</tr>
+
+
+	   <tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Authentication</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >MD5, SHA256</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' >MD5, SHA256</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77' valign="top"><font color='#ffffff' >Router ID</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >32-bit router ID</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' >32-bit router ID</font></td>
+	</tr>
+	
+	</table>]]></text>
+  </component>
+</textcomponents>

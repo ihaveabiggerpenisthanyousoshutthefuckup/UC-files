@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.4.3 DUAL: No Feasible Successor</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DUAL: No Feasible Successor</h1>
+        <div>
+          <p>Occasionally, the path to the successor fails and there are no FSs. In this instance, DUAL does not have a guaranteed loop-free backup path to the network, so the path is not in the topology table as an FS. If there are no FSs in the topology table, DUAL puts the network into the active state. DUAL actively queries its neighbors for a new successor. </p>
+          <p></p>
+          <p>R1 is currently using R3 as the successor to 192.168.1.0/24, as shown in Figure 1. However, R1 does not have R2 listed as an FS, because R2 does not satisfy the FC. To understand how DUAL searches for a new successor when there is no FS, a link failure is simulated between R1 and R3.</p>
+          <p></p>
+          <p>Before the link failure is simulated, DUAL debugging is enabled with the<b> debug eigrp fsm </b>command on R1, as shown in Figure 2. A link failure is simulated using the<b> shutdown </b>command on the Serial 0/0/1 interface on R1. </p>
+          <p></p>
+          <p>When the successor is no longer available and there is no feasible successor, DUAL puts the route into an active state. DUAL sends EIGRP queries asking other routers for a path to the network. Other routers return EIGRP replies, letting the sender of the EIGRP query know whether or not they have a path to the requested network. If none of the EIGRP replies have a path to this network, the sender of the query does not have a route to this network. </p>
+          <p></p>
+          <p>The selected <b>debug</b> output in Figure 2 shows the 192.168.1.0/24 network put into the active state and EIGRP queries sent to other neighbors. R2 replies with a path to this network, which becomes the new successor and is installed into the routing table.</p>
+          <p></p>
+          <p>If the sender of the EIGRP queries receives EIGRP replies that include a path to the requested network, the preferred path is added as the new successor and added to the routing table. This process takes longer than if DUAL had an FS in its topology table and was able to quickly add the new route to the routing table. In Figure 3, notice that R1 has a new route to the 192.168.1.0/24 network. The new EIGRP successor is router R2.</p>
+          <p></p>
+          <p>Figure 4 shows that the topology table for R1 now has R2 as the successor with no new FSs. If the link between R1 and R3 is made active again, R3 returns as the successor. However, R2 is still not the FS, because it does not meet the FC.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output of the "show i. p. e. i. g. r. p. topology" command on router one with the successor route highlighted in orange. Figure two shows the output of the "debug e. i. g. r. p. f. s. m." command on router one.  Then the serial interface is shut down and messages are displayed regarding the DUAL process. Figure three shows the output of the "show i. p. route" command on router one with the new successor listed. Figure four shows the output of the "show i. p. e. i. g. r. p. topology" command on router one with the new successor route listed and there is no feasible successor.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Verifying Automatic Summarization is Disabled</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[&lt;output omitted&gt;]]></text>
+	</component>
+	
+	<component id="ID_s1_txt02">
+		<text><![CDATA[&lt;output omitted&gt;]]></text>
+	</component>
+	 
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Verifying Routes are Not Automatically Summarized</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt01">
+		<text><![CDATA[&lt;output omitted&gt;]]></text>
+	</component>
+	
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Configuring Automatic Summarization</b>]]></text>
+	</component>
+	
+	<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>Configuring EIGRP Automatic Summarization on R3</b>]]></text>		
+	</component>
+	<component id="ID_s4_SC5" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font  face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font  face="_sans"><b>Display the current EIGRP routing table on R3 to view the routes prior to summarization.</b></font>]]></existingcommands>
+		<command  prompt="R3#">
+		    <correctresponse><![CDATA[show ip route eigrp]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_sans">&lt;output omitted&gt;</font><font> <br> <br>  172.16.0.0/16 is variably subnetted, 3 subnets, 2 masks <br>D   172.16.1.0/24 [90/2170112] via 192.168.10.5, 02:21:10, Serial0/0/0 <br>D   172.16.2.0/24 [90/3012096] via 192.168.10.9, 02:21:10, Serial0/0/1 <br>D   172.16.3.0/30 [90/41024000] via 192.168.10.9, 02:21:10, Serial0/0/1 <br>                  [90/41024000] via 192.168.10.5, 02:21:10, Serial0/0/0 </font><br>R3#]]></deviceresponse> 
+			<instruction><![CDATA[<font  face="_sans"><b>Complete the following: <ul><li>Configure EIGRP automatic summarization on router R3 for EIGRP AS 1<li>Return to privileged EXEC mode</ul></b>]]></instruction>
+		</command>
+		<command  prompt="R3(config)#">
+		    <correctresponse><![CDATA[router eigrp 1]]></correctresponse>
+		</command>
+		<command  prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[auto-summary]]></correctresponse>
+		</command>
+		<command  prompt="R3(config-router)#">
+		    <correctresponse><![CDATA[end]]></correctresponse>
+			<instruction><![CDATA[<font  face="_sans"><b>Display the EIGRP routing table on R3 to view the routes after automatic summarization.</b>]]></instruction>
+		</command>
+		<command  prompt="R3#">
+		    <correctresponse><![CDATA[show ip route eigrp]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_sans">&lt;output omitted&gt;</font><font  size="9"><br><font>D   172.16.0.0/16 [90/2170112] via 192.168.10.5, 00:12:05, Serial0/0/0<br>  192.168.10.0/24 is variably subnetted, 5 subnets, 3 masks<br>D   192.168.10.0/24 is a summary, 00:11:43, Null0</font><br></font>R3#]]></deviceresponse> 
+			<instruction><![CDATA[<font face="_sans"><b>Display the routing protocol settings on R1.</b>]]></instruction>
+		</command>
+		<command  prompt="R1#">
+		    <correctresponse><![CDATA[show ip protocols]]></correctresponse>
+				<deviceresponse><![CDATA[*** IP Routing is NSF aware *** <br> <br>Routing Protocol is "eigrp 1" <br>  Outgoing update filter list for all interfaces is not set <br>  Incoming update filter list for all interfaces is not set <br>  Default networks flagged in outgoing updates <br>  Default networks accepted from incoming updates <br>  EIGRP-IPv4 Protocol for AS(1) <br>    Metric weight K1=1, K2=0, K3=1, K4=0, K5=0 <br><font face="_sans">&lt;output omitted&gt;</font> <br> <br>Automatic Summarization: enabled <br>    192.168.10.0/24 for Gi0/0, Se0/0/0 <br>      Summarizing 2 components with metric 2169856 <br>    172.16.0.0/16 for Se0/0/1 <br>      Summarizing 3 components with metric 2816 <br><font face="_sans">&lt;output omitted&gt;</font> <br>]]></deviceresponse> 
+			<instruction><![CDATA[<font  face="_sans"><b>Display the EIGRP topology table using the 'all-links' parameter on R3.</b>]]></instruction>
+		</command>
+		<command  prompt="R3#">
+		    <correctresponse><![CDATA[show ip eigrp topology all-links]]></correctresponse>
+				<deviceresponse><![CDATA[<br>P 172.16.0.0/16, 1 successors, FD is 2170112, serno 9<br>        via 192.168.10.5 (2170112/2816), Serial0/0/0<br>        via 192.168.10.9 (3012096/2816), Serial0/0/1<br><font face="_sans">&lt;output omitted&gt;</font> <br>]]></deviceresponse> 
+			<instruction><![CDATA[<font  face="_sans" class="syntaxBottomLine"><b>You successfully configured EIGRP Automatic Summarization on R3.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+  
+</textcomponents>

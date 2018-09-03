@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.1 Verify OSPF Neighbors</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify OSPF Neighbors</h1>
+        <div>
+          <p>Figure 1 shows the reference topology.</p>
+          <p></p>
+          <p>Use the<b> show ip ospf neighbor </b>command to verify that the router has formed an adjacency with its neighboring routers. If the router ID of the neighboring router is not displayed, or if it does not show as being in a state of FULL, the two routers have not formed an OSPFv2 adjacency. </p>
+          <p></p>
+          <p>If two routers do not establish adjacency, link-state information is not exchanged. Incomplete LSDBs can cause inaccurate SPF trees and routing tables. Routes to destination networks may not exist, or may not be the most optimum path.</p>
+          <p></p>
+          <p>Figure 2 displays the neighbor adjacency of R1. For each neighbor, this command displays the following output:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Neighbor ID </b>- The router ID of the neighboring router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Pri </b>- The OSPFv2 priority of the interface. This value is used in the DR and BDR election.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>State </b>- The OSPFv2 state of the interface. FULL state means that the router and its neighbor have identical OSPFv2 LSDBs. On multiaccess networks, such as Ethernet, two routers that are adjacent may have their states displayed as 2WAY. The dash indicates that no DR or BDR is required because of the network type.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dead Time </b>- The amount of time remaining that the router waits to receive an OSPFv2 Hello packet from the neighbor before declaring the neighbor down. This value is reset when the interface receives a Hello packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address </b>- The IPv4 address of the neighbor’s interface to which this router is directly connected.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface </b>- The interface on which this router has formed adjacency with the neighbor.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to verify the R2 and R3 neighbors using the<b> show ip ospf neighbor </b>command.</p>
+          <p>Two routers may not form an OSPFv2 adjacency if:</p>
+          <p>
+            <ul>
+              <li>The subnet masks do not match, causing the routers to be on separate networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>OSPFv2 Hello or Dead Timers do not match.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>OSPFv2 Network Types do not match.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>There is a missing or incorrect OSPFv2<b> network </b>command.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the O.S.P.F. reference topology. Figure two shows the output from the following command run on router R-1, show i.p. O.S.P.F. The figure lists two neighbor routers, routers R-2 and R-3.Figure three is an interactive media element that allows the learner to verify router R-1’s O.S.P.F. neighbors.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

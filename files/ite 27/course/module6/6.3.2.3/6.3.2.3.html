@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.3 Bandwidth Metric </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Bandwidth Metric </h1>
+        <div>
+          <p>The bandwidth metric is a static value used by some routing protocols, such as EIGRP and OSPF, to calculate their routing metric. The bandwidth is displayed in kilobits per second (kb/s). </p>
+          <p></p>
+          <p>On older routers, the serial link bandwidth metric defaults to 1544 kb/s. This is the bandwidth of a T1 connection. On newer routers, such as the Cisco 4321, serial link bandwidth defaults to the clock rate used on the link. The serial links in topology in Figure 1 have been configured with the bandwidths that will be used in this section. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The bandwidths used in this topology were chosen to help explain the calculation of the routing protocol metrics and the process of best path selection. These bandwidth values do not reflect the more common types of connections found in today’s networks. </p>
+          <p></p>
+          <p>Always verify bandwidth with the <b>show interfaces</b> command. The default value of the bandwidth may or may not reflect the actual physical bandwidth of the interface. If actual bandwidth of the link differs from the default bandwidth value, the bandwidth value should be modified.</p>
+          <p></p>
+          <p>
+            <b>Configuring the Bandwidth Parameter</b>
+          </p>
+          <p></p>
+          <p>Because both EIGRP and OSPF use bandwidth in default metric calculations, a correct value for bandwidth is very important to the accuracy of routing information. </p>
+          <p></p>
+          <p>Use the following interface configuration mode command to modify the bandwidth metric: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>bandwidth </b>
+            </span>
+            <span class="cmd">
+              <i>kilobits-bandwidth-value</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Use the <b>no bandwidth</b> command to restore the default value.</p>
+          <p></p>
+          <p>In Figure 2, the link between R1 and R2 has a bandwidth of 64 kb/s, and the link between R2 and R3 has a bandwidth of 1,024 kb/s. The figure shows the configurations used on all three routers to modify the bandwidth on the appropriate serial interfaces. Modify the bandwidth metric on both sides of the link to ensure proper routing in both directions.</p>
+          <p></p>
+          <p>
+            <b>Verifying the Bandwidth Parameter</b>
+          </p>
+          <p></p>
+          <p>Use the<b> show interfaces </b>command to verify the new bandwidth parameters, as shown in Figure 3. </p>
+          <p></p>
+          <p>Modifying the bandwidth value does not change the actual bandwidth of the link. The<b> bandwidth </b>command only modifies the bandwidth metric used by routing protocols, such as EIGRP and OSPF. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p. Figure two shows the syntax for configuring bandwidth on the interfaces of router one, two, and three. Figure three shows the output of the "show interface" command on router one and two to display the bandwidth settings.  The default bandwidth for serial links is 1544 kilobits per second unless specified.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

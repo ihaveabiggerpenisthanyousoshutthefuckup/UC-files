@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.1 Implementing Multiarea OSPF</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Implementing Multiarea OSPF</h1>
+        <div>
+          <p>OSPF can be implemented as single-area or multiarea. The type of OSPF implementation chosen depends on the specific network design requirements and existing topology.</p>
+          <p></p>
+          <p>There are 4 steps to implementing multiarea OSPF, as displayed in the figure. </p>
+          <p></p>
+          <p>Steps 1 and 2 are part of the planning process. </p>
+          <p></p>
+          <p>
+            <b>Step 1. Gather the network requirements and parameters - </b> Gather the network requirements and parameters - This includes determining the number of host and network devices, the IP addressing scheme (if already implemented), the size of the routing domain, the size of the routing tables, the risk of topology changes, whether existing routers can support OSPF, and other network characteristics.</p>
+          <p></p>
+          <p>
+            <b>Step 2. Define the OSPF parameters - </b>Based on information gathered during Step 1, the network administrator must determine if single-area or multiarea OSPF is the preferred implementation. If multiarea OSPF is selected, there are several considerations the network administrator must take into account while determining the OSPF parameters, to include: </p>
+          <p>
+            <ul>
+              <li>
+                <b>IP addressing plan </b>- This governs how OSPF can be deployed and how well the OSPF deployment might scale. A detailed IP addressing plan, along with the IP subnetting information, must be created. A good IP addressing plan should enable the usage of OSPF multiarea design and summarization. This plan more easily scales the network, as well as optimizes OSPF behavior and the propagation of LSA.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>OSPF areas </b>- Dividing an OSPF network into areas decreases the LSDB size and limits the propagation of link-state updates when the topology changes. The routers that are to be ABRs and ASBRs must be identified, as are those ABRs or ASBRs that are to perform any summarization or redistribution.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Network topology </b>- This consists of links that connect the network equipment and belong to different OSPF areas in a multiarea OSPF design. Network topology is important to determine primary and backup links. Primary and backup links are defined by the changing OSPF cost on interfaces. A detailed network topology plan should also be used to determine the different OSPF areas, ABR, and ASBR as well as summarization and redistribution points, if multiarea OSPF is used.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Configure the multiarea OSPF implementation based on the parameters.</p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>Verify the multiarea OSPF implementation based on the parameters.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows an ordered list, which explains the implementation plan steps when configuring multi-area O.S.P.F.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+﻿<textcomponents>
+	<component id="ID_footer">
+		<text><![CDATA[EtherChannel a technology that allows logical links to be created by combining the services of several physical links.]]></text>
+	</component>
+</textcomponents>

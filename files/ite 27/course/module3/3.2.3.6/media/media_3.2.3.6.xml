@@ -1,0 +1,141 @@
+<textcomponents>
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Compare PVST+ and Rapid PVST+</b>]]></text>
+</component>
+
+
+<component id="MCTable_title">
+	<text><![CDATA[Data Type Description]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Click the appropriate field next to each characteristic to indicate whether that characteristic is associated with PVST+, or Rapid PVST+, or both.]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[8]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>PVST+</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Rapid PVST+</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Both</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+	<text><![CDATA[Uses 802.1D to run a separate instance for each VLAN.]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[Possible to have load sharing with some VLANs forwarding on each trunk.]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[CPU processing and trunk bandwidth usage is greater than with STP.]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[The root bridge is determined by the lowest BID + VLAN ID + MAC.]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Cisco proprietary protocol.]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[Ports can transition to Forwarding state without relying on a timer.]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[Port Roles: Root, Designated, Alternate, Edge, Backup.]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[Sends a BPDU Hello message every 2 seconds.]]></text>
+</component>
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[3]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully identified the PVST+ and Rapid PVST+ characteristics.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully identified the PVST+ and Rapid PVST+ characteristics. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

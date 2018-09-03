@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.1.1.8 The OSPF Priority</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.1.1.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The OSPF Priority</h1>
+        <div>
+          <p>The DR becomes the focal point for the collection and distribution of LSAs; therefore, this router must have sufficient CPU and memory capacity to handle the workload. It is possible to influence the DR/BDR election process through configurations.</p>
+          <p></p>
+          <p>If the interface priorities are equal on all routers, the router with the highest router ID is elected the DR. It is possible to configure the router ID to manipulate the DR/BDR election. However, this process only works if there is a stringent plan for setting the router ID on all routers. In large networks, this can be cumbersome. </p>
+          <p></p>
+          <p>Instead of relying on the router ID, it is better to control the election by setting interface priorities. Priorities are an interface-specific value, which means it provides better control on a multiaccess network. This also allows a router to be the DR in one network and a DROTHER in another. </p>
+          <p></p>
+          <p>To set the priority of an interface, use the following commands: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>ip ospf priority </b>
+                <i>value</i>
+                <b></b>- OSPFv2 interface command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipv6 ospf priority </b>
+                <i>value</i>
+                <b></b>- OSPFv3 interface command</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The<i> value </i>can be:</p>
+          <p>
+            <ul>
+              <li>
+                <b>0 </b>- Does not become a DR or BDR.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>1</b> – <b>255 </b>- The higher the priority value, the more likely the router becomes the DR or BDR on the interface.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the figure, all routers have an equal OSPF priority because the priority value defaults to 1 for all router interfaces. Therefore, the router ID is used to determine the DR (R3) and BDR (R2). Changing the priority value on an interface from 1 to a higher value, would enable the router to become a DR or BDR router during the next election. </p>
+          <p></p>
+          <p>If the interface priority is configured after OSPF is enabled, the administrator must shut down the OSPF process on all routers, and then re-enable the OSPF process, to force a new DR/BDR election.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three routers connected to a switch.  Router one, router two (the B. D. R.), and router three (the D. R.).</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

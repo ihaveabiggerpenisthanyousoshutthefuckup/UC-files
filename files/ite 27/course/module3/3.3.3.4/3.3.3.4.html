@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.3.4 Spanning Tree Failure Consequences</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Spanning Tree Failure Consequences</h1>
+        <div>
+          <p>Figure 1 shows a functional STP network. But what happens when there is an STP failure? There are two types of STP failure. First, STP might erroneously block ports that should have gone into the forwarding state. Connectivity might be lost for traffic that would normally pass through this switch, but the rest of the network remains unaffected. Second, STP might erroneously move one or more ports into the forwarding state, as shown for S4 in Figure 2.</p>
+          <p></p>
+          <p>Remember that an Ethernet frame header does not include a TTL field, which means that any frame that enters a bridging loop continues to be forwarded by the switches indefinitely. The only exceptions are frames that have their destination address recorded in the MAC address table of the switches. These frames are simply forwarded to the port that is associated with the MAC address and do not enter a loop. However, any frame that is flooded by a switch enters the loop (Figure 2). This may include broadcasts, multicasts, and unicasts with a globally unknown destination MAC address.</p>
+          <p></p>
+          <p>What are the consequences and corresponding symptoms of STP failure (Figure 3)?</p>
+          <p></p>
+          <p>The load on all links in the switched LAN quickly starts increasing as more and more frames enter the loop. This problem is not limited to the links that form the loop, but also affects any other links in the switched domain because the frames are flooded on all links. When the spanning tree failure is limited to a single VLAN only links in that VLAN are affected. Switches and trunks that do not carry that VLAN operate normally.</p>
+          <p></p>
+          <p>If the spanning tree failure has created a bridging loop, traffic increases exponentially. The switches will then flood the broadcasts out multiple ports. This creates copies of the frames every time the switches forward them.</p>
+          <p></p>
+          <p>When control plane traffic starts entering the loop (for example, routing messages), the devices that are running these protocols quickly start getting overloaded. Their CPUs approach 100 percent utilization while they are trying to process an ever-increasing load of control plane traffic. In many cases, the earliest indication of this broadcast storm in progress is that routers or Layer 3 switches are reporting control plane failures and that they are running at a high CPU load. </p>
+          <p></p>
+          <p>The switches experience frequent MAC address table changes. If a loop exists, a switch may see a frame with a certain source MAC address coming in on one port and then see the another frame with the same source MAC address coming in on a different port a fraction of a second later. This will cause the switch to update the MAC address table twice for the same MAC address.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows four switches that are inter-connected.  Each port is labeled with its mode, and switch two is labeled as the root bridge.  The priorities and mac addresses are listed for each switch. Figure two shows four switches that are inter-connected.  Each port is labeled with its mode, and switch two is labeled as the root bridge.   Switch four has one port that has switched from blocking to forwarding erroneously. Figure three shows four switches that are inter-connected.  Each port is labeled with its mode, and switch two is labeled as the root bridge.  A packet enters the network at switch three and bounces around for ever now that a loop has been introduced into the topology.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

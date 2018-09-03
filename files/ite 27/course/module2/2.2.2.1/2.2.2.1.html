@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.2.1 Errors with IP Addresses and Subnet Masks</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Errors with IP Addresses and Subnet Masks</h1>
+        <div>
+          <p>VLANs correspond to unique subnets on the network. For inter-VLAN routing to operate, a router must be connected to all VLANs, either by separate physical interfaces or by subinterfaces. Each interface, or subinterface, must be assigned an IP address that corresponds to the subnet to which it is connected. This permits devices on the VLAN to communicate with the router interface and enables the routing of traffic to other VLANs connected to the router.</p>
+          <p></p>
+          <p>The following are some common IP addressing errors:</p>
+          <p>
+            <ul>
+              <li>As shown in Figure 1, router R1 has been configured with an incorrect IPv4 address on interface G0/0. This prevents PC1 from being able to communicate with router R1 on VLAN 10. To correct this problem, assign the correct IPv4 address to router R1 interface G0/0 using the<b> ip address 172.17.10.1 255.255.255.0 </b>command. After the router interface has been assigned the correct IP address, PC1 can use the router interface as a default gateway for accessing other VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In Figure 2, PC1 has been configured with an incorrect IPv4 address for the subnet associated with VLAN 10. This prevents PC1 from being able to communicate with router R1 on VLAN 10. To correct this problem, assign the correct IPv4 address to PC1. Depending on the type of PC being used, the configuration details may be different.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In Figure 3, PC1 has been configured with the incorrect subnet mask. According to the subnet mask configured for PC1, PC1 is on the 172.17.0.0 network. The result is that PC1 calculates that PC3, with the IPv4 address 172.17.30.23, is on the same subnet as PC1. PC1 does not forward traffic destined for PC3 to router R1 interface G0/0; therefore, the traffic never reaches PC3. To correct this problem, change the subnet mask on PC1 to 255.255.255.0. Depending on the type of PC being used, the configuration details can be different.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows that a sub interface on a router connected in a legacy inter-v.lan routing topology has been configured with an incorrect i.p. address. This prevents hosts on that v.lan from being properly routed to other v.lans. Figure two demonstrates a host that has been configured with an incorrect i.p. address. This would prevent the host from being able to communicate with the router on a different v.lan. Figure three shows a host that has been configured with an i.p. address of 172 dot 17 dot 10 dot 21 slash 16 on one v.lan and a host located on a different v.lan configured with an i.p. address of 172 dot 17 dot 30 dot 23 slash 24.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

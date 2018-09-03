@@ -1,0 +1,401 @@
+<textcomponents> 
+
+<!-- slide01 content-->
+
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity - Part 1: Calculate the EIGRP Metric from R1 to the 192.168.1.0 Destination Network</b><br/>Router 1 (R1) is calculating the EIGRP metric for reaching the 192.168.1.0 destination network. Drag the correct bandwidth and delay values into the formula in the fields provided. Click Button 2 to continue.]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[Metric]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+	<text><![CDATA[Bandwidth (Kb/s)]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+	<text><![CDATA[Delay]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[84828]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+	<text><![CDATA[Maximum limit of 255 hops]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+	<text><![CDATA[Maximum limit of 15 hops]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+	<text><![CDATA[Forms neighbor adjacencies table]]></text>
+</component>
+
+
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[1,544]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[1,024,000]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[1110]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[768]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[100]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[40,100]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[20,110]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[10,000]]></text>
+</component>
+
+<component id='ID_s1_drag09'>
+	<text><![CDATA[13,021]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the correct bandwidth and delay values used in this EIGRP metric calculation. Click Button 2 to continue. ]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the correct bandwidth and delay values used in this EIGRP metric calculation. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id="ID_s1_table">
+		<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="liner">
+			<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="1"   bgcolor='#154D4C' valign="top"><font color='#ffffff'><b>Media</b></font></td>
+			<td colspan="1"  bgcolor='#154D4C' valign="top"><font color='#ffffff'><b>Delay</b></font></td>			
+		</tr>	
+			
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>Ethernet</font></td>
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>1,000</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>Fast Ethernet</font></td>
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>100</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="80"  valign="top"><font color='#393536'>Gig Ethernet</font></td>
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>10</font></td>			 
+		</tr>	
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="80"  valign="top"><font color='#393536'>Serial WAN</font></td>
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>20,000</font></td>			 
+		</tr>		
+	
+	</table>]]></text> 
+	</component>
+
+<!-- slide02 content-->
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity - Part 2: Calculate the EIGRP Metric from R1 to the 192.168.2.0 Destination Network</b><br/>Router 1 (R1) is calculating the EIGRP metric for reaching the 192.168.2.0 destination network. Drag the correct bandwidth and delay values to the formula in the fields provided. Click Button 3 to continue.]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[Metric]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+	<text><![CDATA[Bandwidth (Kb/s)]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+	<text><![CDATA[Delay]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+	<text><![CDATA[84828]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+	<text><![CDATA[Maximum limit of 255 hops]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+	<text><![CDATA[Maximum limit of 15 hops]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+	<text><![CDATA[Forms neighbor adjacencies table]]></text>
+</component>
+
+
+
+<component id='ID_s2_drag01'>
+	<text><![CDATA[1,544]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[1,024,000]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[1110]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[768]]></text>
+</component>
+
+<component id='ID_s2_drag05'>
+	<text><![CDATA[100]]></text>
+</component>
+
+<component id='ID_s2_drag06'>
+	<text><![CDATA[40,100]]></text>
+</component>
+
+<component id='ID_s2_drag07'>
+	<text><![CDATA[20,110]]></text>
+</component>
+
+<component id='ID_s2_drag08'>
+	<text><![CDATA[10,000]]></text>
+</component>
+
+<component id='ID_s2_drag09'>
+	<text><![CDATA[13,020]]></text>
+</component>
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the correct bandwidth and delay values used in this EIGRP metric calculation. Click Button 3 to continue.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the correct bandwidth and delay values used in this EIGRP metric calculation. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id="ID_s2_table">
+		<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="liner">
+			<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="1"   bgcolor='#154D4C' valign="top"><font color='#ffffff'><b>Media</b></font></td>
+			<td colspan="1"  bgcolor='#154D4C' valign="top"><font color='#ffffff'><b>Delay</b></font></td>			
+		</tr>	
+			
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>Ethernet</font></td>
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>1,000</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>Fast Ethernet</font></td>
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>100</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="80"  valign="top"><font color='#393536'>Gig Ethernet</font></td>
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>10</font></td>			 
+		</tr>	
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="80"  valign="top"><font color='#393536'>Serial WAN</font></td>
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>20,000</font></td>			 
+		</tr>		
+	
+	</table>]]></text> 
+	</component>
+
+<!-- slide03 content-->
+
+<component id="ID_s3_inst">
+	<text><![CDATA[<b>Activity - Part 3: Calculate the EIGRP Metric from R1 to the 192.168.3.0 Destination Network </b><br/>Router 1 (R1) is calculating the EIGRP metric for reaching the 192.168.3.0 destination network. Drag the correct bandwidth and delay values to the formula in the fields provided.]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+	<text><![CDATA[Metric]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+	<text><![CDATA[Bandwidth (Kb/s)]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+	<text><![CDATA[Delay]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+	<text><![CDATA[84828]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+	<text><![CDATA[Maximum limit of 255 hops]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+	<text><![CDATA[Maximum limit of 15 hops]]></text>
+</component>
+
+<component id="ID_s3_txt07">
+	<text><![CDATA[Forms neighbor adjacencies table]]></text>
+</component>
+
+
+
+<component id='ID_s3_drag01'>
+	<text><![CDATA[1,544]]></text>
+</component>
+
+<component id='ID_s3_drag02'>
+	<text><![CDATA[1,024,000]]></text>
+</component>
+
+<component id='ID_s3_drag03'>
+	<text><![CDATA[1110]]></text>
+</component>
+
+<component id='ID_s3_drag04'>
+	<text><![CDATA[768]]></text>
+</component>
+
+<component id='ID_s3_drag05'>
+	<text><![CDATA[100]]></text>
+</component>
+
+<component id='ID_s3_drag06'>
+	<text><![CDATA[40,100]]></text>
+</component>
+
+<component id='ID_s3_drag07'>
+	<text><![CDATA[20,110]]></text>
+</component>
+
+<component id='ID_s3_drag08'>
+	<text><![CDATA[10,000]]></text>
+</component>
+
+<component id='ID_s3_drag09'>
+	<text><![CDATA[13,020]]></text>
+</component>
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the correct bandwidth and delay values used in this EIGRP metric calculation.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the correct bandwidth and delay values used in this EIGRP metric calculation. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id="ID_s3_table">
+		<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+		<tr class="liner">
+			<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="1"   bgcolor='#154D4C' valign="top"><font color='#ffffff'><b>Media</b></font></td>
+			<td colspan="1"  bgcolor='#154D4C' valign="top"><font color='#ffffff'><b>Delay</b></font></td>			
+		</tr>	
+			
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>Ethernet</font></td>
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>1,000</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>Fast Ethernet</font></td>
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>100</font></td>			 
+		</tr>
+		
+		<tr>		
+		<td  bgcolor="#EFF8F7" width="80"  valign="top"><font color='#393536'>Gig Ethernet</font></td>
+		<td  bgcolor="#EFF8F7" width="80" valign="top"><font color='#393536'>10</font></td>			 
+		</tr>	
+		
+		<tr>		
+		<td  bgcolor="#FFFFFF" width="80"  valign="top"><font color='#393536'>Serial WAN</font></td>
+		<td  bgcolor="#FFFFFF" width="80" valign="top"><font color='#393536'>20,000</font></td>			 
+		</tr>		
+	
+	</table>]]></text> 
+	</component>
+</textcomponents>

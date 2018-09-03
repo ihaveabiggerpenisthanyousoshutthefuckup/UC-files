@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>10.3.1.3 Chapter 10: OSPF Tuning and Troubleshooting</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_10.3.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Chapter 10: OSPF Tuning and Troubleshooting</h1>
+        <div>
+          <p>OSPF defines five network types: point-to-point, broadcast multiaccess, nonbroadcast multiaccess, point-to-multipoint, and virtual links. </p>
+          <p></p>
+          <p>Multiaccess networks can create two challenges for OSPF regarding the flooding of LSAs: creation of multiple adjacencies and extensive flooding of LSAs. The solution to managing the number of adjacencies and the flooding of LSAs on a multiaccess network is the DR and BDR. If the DR stops producing Hellos, the BDR promotes itself and assumes the role of DR.</p>
+          <p></p>
+          <p>The routers in the network elect the router with the highest interface priority as DR. The router with the second highest interface priority is elected the BDR. The higher the priority, the likelier the router will be selected as the DR. If set to 0, the router is not capable of becoming the DR. The default priority of multiaccess broadcast interfaces is 1. Therefore, unless otherwise configured, all routers have an equal priority value and must rely on another tie breaking method during the DR/BDR election. If the interface priorities are equal, then the router with the highest router ID is elected the DR. The router with the second highest router ID is the BDR. The addition of a new router does not initiate a new election process. </p>
+          <p></p>
+          <p>To propagate a default route in OSPF, the router must be configured with a default static route and the<b> default-information originate </b>command must be added to the configuration. Verify routes with the<b> show ip route </b>or<b> show ipv6 route </b>command.</p>
+          <p></p>
+          <p>To assist OSPF in making the correct path determination, the reference bandwidth must be changed to a higher value to accommodate networks with links faster than 100 Mb/s. To adjust the reference bandwidth, use the<b> auto-cost reference-bandwidth </b><i>Mbps </i>router configuration mode command. To adjust the interface bandwidth, use the<b> bandwidth </b><i>kilobits </i>interface configuration mode command. The cost can be manually configured on an interface using the<b> ip ospf cost </b><i>value </i>interface configuration mode command. </p>
+          <p></p>
+          <p>The OSPF Hello and Dead intervals must match or a neighbor adjacency does not occur. To modify these intervals, use the following interface commands:</p>
+          <p>
+            <ul>
+              <li>
+                <b>ip ospf hello-interval </b>
+                <i>seconds</i>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ip ospf dead-interval </b>
+                <i>seconds</i>
+                <b></b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipv6 ospf hello-interval </b>
+                <i>seconds</i>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ipv6 ospf dead-interval </b>
+                <i>seconds</i>
+              </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When troubleshooting OSPF neighbors, be aware that the FULL or 2WAY states are normal. The following commands summarize OSPFv2 troubleshooting:<b></b></p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip protocols </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip ospf neighbor </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip ospf interface </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip ospf</b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>show ip route ospf </b>
+              </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>clear ip ospf </b>[<i>process-id</i>]<b> process</b></li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Troubleshooting OSPFv3 is similar to OSPFv2. The following commands are the equivalent commands used with OSPFv3:<b> show ipv6 protocols</b>,<b> show ipv6 ospf neighbor</b>,<b> show ipv6 ospf interface</b>,<b> show ipv6 ospf</b>,<b> show ipv6 route ospf</b>, and<b> clear ipv6 ospf </b>[<i>process-id</i>]<b> process</b>.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows router one, two, three, and four connected to a switch over a broadcast network. Router two is connected to the Internet with a point to point link.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

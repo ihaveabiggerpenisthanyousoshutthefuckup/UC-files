@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.6 The network Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The network Command</h1>
+        <div>
+          <p>EIGRP router configuration mode allows for the configuration of the EIGRP routing protocol. Figure 1 shows that R1, R2, and R3 all have networks that should be included within a single EIGRP routing domain. To enable EIGRP routing on an interface, use the<b> network </b><i>ipv4-network-address</i> router configuration mode command. The <i>ipv4-netword-address</i> is the classful network address for each directly connected network.</p>
+          <p></p>
+          <p>The<b> network </b>command has the same function as in all IGP routing protocols. The<b> network </b>command in EIGRP: </p>
+          <p>
+            <ul>
+              <li>Enables any interface on this router that matches the network address in the<b> network </b>router configuration mode command to send and receive EIGRP updates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The network of the interfaces is included in EIGRP routing updates.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 shows the <b>network</b> commands required to configure EIGRP on R1. In the figure, a single classful<b> network </b>statement,<b> network 172.16.0.0</b>, is used on R1 to include both interfaces in subnets 172.16.1.0/24 and 172.16.3.0/30. Notice that only the classful network address is used.</p>
+          <p></p>
+          <p>Figure 3 shows the<b> network </b>command used to enable EIGRP on R2’s interfaces for subnets 172.16.1.0/24 and 172.16.2.0/24. When EIGRP is configured on R2’s S0/0/0 interface, DUAL sends a notification message to the console stating that a neighbor adjacency with another EIGRP router on that interface has been established. This new adjacency happens automatically because both R1 and R2 use the same autonomous system number (i.e., <b>1</b>), and both routers now send updates on their interfaces in the 172.16.0.0 network.</p>
+          <p></p>
+          <p>DUAL automatically generates the notification message because the <b>eigrp log-neighbor-changes </b>router configuration mode command is enabled by default. Specifically, the command helps verify neighbor adjacencies during configuration of EIGRP and displays any changes in EIGRP neighbor adjacencies, such as when an EIGRP adjacency has been added or removed.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p. Figure two shows the syntax for configuring the network statements under e. i. g. r. p. for router one. Figure three shows the syntax for configuring the network statements under e. i. g. r. p. for router two.  Immediately following this is a dual notification indicating a neighbor adjacency.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

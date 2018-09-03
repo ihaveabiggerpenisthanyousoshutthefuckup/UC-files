@@ -1,0 +1,50 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>EIGRP Replaces TCP with RTP</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>EIGRP PDM Operation</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+	  <text><![CDATA[Application]]></text> 
+	</component>
+	<component id="ID_txt03">
+	  <text><![CDATA[Transport]]></text> 
+	</component>
+	<component id="ID_txt04">
+	  <text><![CDATA[Internet]]></text> 
+	</component>
+	<component id="ID_txt05">
+	  <text><![CDATA[Network Access]]></text> 
+	</component>
+	<component id="ID_txt06">
+	  <text><![CDATA[IPv4<br/>PDM]]></text> 
+	</component>
+	<component id="ID_txt07">
+	  <text><![CDATA[IPv6<br/>PDM]]></text> 
+	</component>
+	<component id="ID_txt08">
+	  <text><![CDATA[RTP]]></text> 
+	</component>
+	<component id="ID_txt09">
+	  <text><![CDATA[IPv4]]></text> 
+	</component>
+	<component id="ID_txt10">
+	  <text><![CDATA[IPv6]]></text> 
+	</component>
+	<component id="ID_txt11">
+	  <text><![CDATA[LAN Connections]]></text> 
+	</component>
+	<component id="ID_txt12">
+	  <text><![CDATA[WAN Connections]]></text> 
+	</component>
+	<component id="ID_txt13">
+	  <text><![CDATA[Neighbor Table]]></text> 
+	</component>
+	<component id="ID_txt14">
+	  <text><![CDATA[Topology Table]]></text> 
+	</component>
+	<component id="ID_txt15">
+	  <text><![CDATA[Routing Table]]></text> 
+	</component>
+</textcomponents>

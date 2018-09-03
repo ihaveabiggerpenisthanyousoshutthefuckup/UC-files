@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.1.2 Configuring Multiarea OSPFv2</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring Multiarea OSPFv2</h1>
+        <div>
+          <p>Figure 1 displays the reference multiarea OSPF topology. In this example:</p>
+          <p>
+            <ul>
+              <li>R1 is an ABR because it has interfaces in area 1 and an interface in area 0.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R2 is an internal backbone router because all of its interfaces are in area 0.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>R3 is an ABR because it has interfaces in area 2 and an interface in area 0.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: This topology is not a typical multiarea OSPF routing domain but is used to show an example configuration.</p>
+          <p></p>
+          <p>There are no special commands required to implement this multiarea OSPF network. A router simply becomes an ABR when it has two<b> network </b>statements in different areas.</p>
+          <p></p>
+          <p>As shown in Figure 2, R1 is assigned the router ID 1.1.1.1. This example enables OSPF on the two LAN interfaces in area 1. The serial interface is configured as part of OSPF area 0. Because R1 has interfaces connected to two different areas, it is an ABR.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 3 to configure multiarea OSPF on R2 and R3. In this Syntax Checker, on R2, use the wildcard mask of the interface network address. On R3, use the 0.0.0.0 wildcard mask for all networks.</p>
+          <p></p>
+          <p>Upon completion of the R2 configuration, notice the informational messages informing of the adjacency with R1 (1.1.1.1).</p>
+          <p></p>
+          <p>Upon completion of the R3 configuration, notice the informational messages informing of an adjacency with R2 (2.2.2.2). Also notice how the IPv4 addressing scheme used for the router ID makes it easy to identify the neighbor. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The inverse wildcard masks used to configure R2 and R3 purposely differ to demonstrate the two alternatives to entering<b> network </b>statements. The interface method used for R3 is simpler because the wildcard mask is always <b>0.0.0.0</b> and does not need to be calculated.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a topology of three routers (R1, R2, and R3) and three O.S.P.F. areas (Area 1, Area 0, and Area 2).Figure two shows how to configure the A.B.R. Router R1 in OSPF Area 1 and Area 0.Figure three shows the syntax necessary to configure multi area O.S.P.F. for two routers (R2 and R3).</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

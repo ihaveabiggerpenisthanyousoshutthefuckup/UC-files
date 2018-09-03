@@ -1,0 +1,21 @@
+<textcomponents>
+ <!--slide1-->
+<component id="ID_s1_header">
+<text><![CDATA[<b>R1 EIGRP Neighbor Table</b>]]></text>
+</component>
+
+  
+  
+  <!--slide2-->
+  
+<component id="ID_s2_header">
+<text><![CDATA[<b>R1 IPv4 Routing Table</b>]]></text>
+</component>
+
+
+<!--slide3-->
+  
+<component id="ID_s3_header">
+<text><![CDATA[<b>R1 Routing Protocol Processes</b>]]></text>
+</component>
+</textcomponents>

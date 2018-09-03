@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.3.2.2 Examining Interface Metric Values</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Examining Interface Metric Values</h1>
+        <div>
+          <p>The <b>show interfaces</b> command displays interface information, including the parameters used to compute the EIGRP metric. The figure shows the <b>show interfaces</b> command for the Serial 0/0/0 interface on R1.</p>
+          <p>
+            <ul>
+              <li>
+                <b>BW </b>- Bandwidth of the interface (in kilobits per second).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DLY </b>- Delay of the interface (in microseconds).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reliability </b>- Reliability of the interface as a fraction of 255 (255/255 is 100% reliability), calculated as an exponential average over five minutes. By default, EIGRP does not include its value in computing its metric.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Txload, Rxload </b>- Transmit and receive load on the interface as a fraction of 255 (255/255 is completely saturated), calculated as an exponential average over five minutes. By default, EIGRP does not include its value in computing its metric.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Throughout this course, bandwidth is referenced as kb/s. However, router output displays bandwidth using the Kbit/sec abbreviation. Router output also displays delay as usec. In this course, delay is referenced as microseconds.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output of the "show i. p. interface" command on router one.  The bandwidth and delay values along with reliability and load are highlighted in orange on all interfaces.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

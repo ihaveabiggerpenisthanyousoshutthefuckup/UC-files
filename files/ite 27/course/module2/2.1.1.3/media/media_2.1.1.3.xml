@@ -1,0 +1,28 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>VTP Advertisements</b>]]></text>
+	</component>
+	
+	<component id='ID_txt01'>
+		<text><![CDATA[New VLAN added]]></text>
+	</component>
+
+	<component id='ID_txt02'>
+		<text><![CDATA[VTP Summary Advertisement]]></text>
+	</component>
+
+	<component id='ID_txt03'>
+		<text><![CDATA[VTP Advertisement Request]]></text>
+	</component>
+
+	<component id='ID_txt04'>
+		<text><![CDATA[VTP Subset Advertisement]]></text>
+	</component>
+<!-- end slide 1 -->
+
+	
+</textcomponents>

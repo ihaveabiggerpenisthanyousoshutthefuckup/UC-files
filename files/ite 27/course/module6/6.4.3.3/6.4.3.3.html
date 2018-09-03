@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.3.3 The EIGRP for IPv6 Routing Table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>The EIGRP for IPv6 Routing Table</h1>
+        <div>
+          <p>As with any routing protocol, the goal is to populate the IP routing table with routes to remote networks and the best paths to reaching those networks. As with IPv4, it is important to examine the IPv6 routing table and determine whether it is populated with the correct routes. </p>
+          <p></p>
+          <p>The IPv6 routing table is examined using the<b> show ipv6 route </b>command. EIGRP for IPv6 routes are denoted in the routing table with a D, as are EIGRP for IPv4 routes in the IPv4 routing table.</p>
+          <p></p>
+          <p>Figure 1 shows that R1 has installed three EIGRP routes to remote IPv6 networks in its IPv6 routing table:</p>
+          <p>
+            <ul>
+              <li>2001:DB8:CAFE:2::/64 via R3  (FE80::3) using its Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:DB8:CAFE:3::/64 via R3 (FE80::3) using its Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:DB8:CAFE:A002::/64 via R3 (FE80::3) using its Serial 0/0/1 interface</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>All three routes are using router R3 as the next-hop router (successor). Notice that the routing table uses the link-local address as the next-hop address. Because each router has had all its interfaces configured with a unique and distinguishable link-local address, it is easy to recognize that the next-hop router via FE80::3 is router R3.</p>
+          <p></p>
+          <p>Figure 2 displays the IPv6 routing table for R2. </p>
+          <p></p>
+          <p>Figure 3 displays the routing table for R3. Notice that R3 has two equal cost paths to the 2001:DB8:CAFE:A001::/64. One path is via R1 at FE80::1 and the other path is via R2 at FE80::2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the "show i. p. v. 6 route" command on router one.  The e. i. g. r. p. routes are highlighted in orange noting they use the i. p. v. 6 addresses. Figure two shows the output from the "show i. p. v. 6 route" command on router two.  The e. i. g. r. p. routes are highlighted in orange noting they use the i. p. v. 6 addresses. Figure three shows the output from the "show i. p. v. 6 route" command on router three.  The e. i. g. r. p. routes are highlighted in orange noting they use the i. p. v. 6 addresses.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

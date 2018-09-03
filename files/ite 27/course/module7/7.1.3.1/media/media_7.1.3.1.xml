@@ -1,0 +1,65 @@
+<textcomponents>
+ 
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv4 Topology</b>]]></text>
+</component> 
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>64 kb/s</b>]]></text>
+</component> 
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>1024 kb/s</b>]]></text>
+</component> 
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>1544 kb/s</b>]]></text>
+</component> 
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+	
+
+  <component id="ID_s2_title">
+<text><![CDATA[<b>Configuring Bandwidth Utilization with EIGRP for IPv4</b>]]></text>
+</component>
+  
+ <component id="ID_s3_title">
+<text><![CDATA[<b></b>]]></text>
+</component>
+  
+<component id="ID_s4_title">
+<text><![CDATA[<b>Configuring Bandwidth Utilization with EIGRP for IPv6</b>]]></text>
+</component>
+
+
+
+<component id="ID_SC4" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF">You must enter the exact and full command.</font><b>***</b> 
+		]]></feedback>		
+		<existingcommands><![CDATA[<font face="_sans"><b>Configure the interfaces between R2 and R3 to limit the EIGRP AS 1 traffic to no more than 75% of the link’s bandwidth. Perform the tasks in the following order:<ul><li>Configure interface serial 0/0/1 on R2<li>Configure interface serial 0/0/1 on R3</ul></b></font>]]></existingcommands>
+		<command  prompt="R2(config)#">
+		    <correctresponse><![CDATA[interface serial 0/0/1]]></correctresponse>
+		</command>
+		<command  prompt="R2(config-if)#">
+		    <correctresponse><![CDATA[ip bandwidth-percent eigrp 1 75]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>You are now configuring R3.</b>]]></instruction>
+		</command>
+		<command  prompt="R3(config)#">
+		    <correctresponse><![CDATA[interface serial 0/0/1]]></correctresponse>
+		</command>
+		<command  prompt="R3(config-if)#">
+		    <correctresponse><![CDATA[ip bandwidth-percent eigrp 1 75]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>You successfully configured bandwidth utilization.</b>]]></instruction>
+		</command>
+		<command prompt=""/>
+	</component>
+	
+	
+</textcomponents>
+

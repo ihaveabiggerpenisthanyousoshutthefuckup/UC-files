@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.1.1 Features of EIGRP </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Features of EIGRP </h1>
+        <div>
+          <p>EIGRP was initially released in 1992 as a proprietary protocol available only on Cisco devices. However, in 2013, Cisco released a basic functionality of EIGRP as an open standard to the IETF, as an informational RFC. This means that other networking vendors can now implement EIGRP on their equipment to interoperate with both Cisco and non-Cisco routers running EIGRP. However, advanced features of EIGRP, such as EIGRP stub, needed for the Dynamic Multipoint Virtual Private Network (DMVPN) deployment, will not be released to the IETF. As an informational RFC, Cisco will continue to maintain control of EIGRP.</p>
+          <p></p>
+          <p>EIGRP includes features of both link-state and distance vector routing protocols. However, EIGRP is still based on the key distance vector routing protocol principle, in which information about the rest of the network is learned from directly connected neighbors.</p>
+          <p></p>
+          <p>EIGRP is an advanced distance vector routing protocol that includes features not found in other distance vector routing protocols like RIP and IGRP.</p>
+          <p></p>
+          <p>In Cisco IOS Release 15.0(1)M, Cisco introduced a new EIGRP configuration option called <b>named EIGRP</b>. Named EIGRP enables the configuration of EIGRP for both IPv4 and IPv6 under a single configuration mode. This helps eliminate configuration complexity that occurs when configuring EIGRP for both IPv4 and IPv6. Named EIGRP is beyond the scope of this course.</p>
+          <p></p>
+          <p>Features of EIGRP include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Diffusing Update Algorithm - </b>As the computational engine that drives EIGRP, the Diffusing Update Algorithm (DUAL) resides at the center of the routing protocol. DUAL guarantees loop-free and backup paths throughout the routing domain. Using DUAL, EIGRP stores all available backup routes for destinations so that it can quickly adapt to alternate routes when necessary. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Establishing Neighbor Adjacencies - </b>EIGRP establishes relationships with directly connected routers that are also enabled for EIGRP. Neighbor adjacencies are used to track the status of these neighbors.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reliable Transport Protocol - </b>The Reliable Transport Protocol (RTP) is unique to EIGRP and provides delivery of EIGRP packets to neighbors. RTP and the tracking of neighbor adjacencies set the stage for DUAL. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Partial and Bounded Updates - </b>EIGRP uses the terms partial and bounded when referring to its updates. Unlike RIP, EIGRP does not send periodic updates and route entries do not age out. The term partial means that the update only includes information about the route changes, such as a new link or a link becoming unavailable. The term bounded refers to the propagation of partial updates that are sent only to those routers that the changes affect. This minimizes the bandwidth that is required to send EIGRP updates.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Equal and Unequal Cost Load Balancing - </b>EIGRP supports equal cost load balancing and unequal cost load balancing, which allows administrators to better distribute traffic flow in their networks. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The term “hybrid routing” protocol may be used in some older documentation to define EIGRP. However, this term is misleading because EIGRP is not a hybrid between distance vector and link-state routing protocols. EIGRP is solely a distance vector routing protocol; therefore, Cisco no longer uses this term to refer to it.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table of routing protocols for i. p. v. 4 and i. p. v. 6 and separates them into interior and exterior routing protocols.  The interior protocols are separated into distance vector and link state routing protocols.  The distance vector protocols are RIP and E. I. G. R. P. for i. p. v. 4 and RIP N. G. and E. I. G. R. P. for i. p. v. 6.  The Link state protocols are O. S. P. F. version 2 and I. S. dash I. S. for i. p. v. 4, and O. S. P. F. version 3 and I. S. dash I. S. for i. p. v. 6.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

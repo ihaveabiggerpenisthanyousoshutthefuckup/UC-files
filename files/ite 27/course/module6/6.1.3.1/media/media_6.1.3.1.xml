@@ -1,0 +1,78 @@
+<textcomponents>
+
+
+<component id="ID_s1_title">
+  <text><![CDATA[<b>Data Link Ethernet Frame Header</b>]]></text> 
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>IP Packet Header</b>]]></text> 
+</component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>EIGRP Packet Header</b>]]></text> 
+</component>
+<component id="ID_s4_title">
+  <text><![CDATA[<b>TLV Types</b>]]></text> 
+</component>
+
+
+
+
+
+<component id="ID_heading1">
+  <text><![CDATA[Data Link Frame Header]]></text> 
+</component>
+<component id="ID_heading2">
+  <text><![CDATA[IP Packet Header]]></text> 
+</component>
+<component id="ID_heading3">
+  <text><![CDATA[EIGRP Packet Header]]></text> 
+</component>
+<component id="ID_heading4">
+  <text><![CDATA[TLV Types]]></text> 
+</component>
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Data Link Frame</b><br/>MAC Source Address = Address of sending interface<br/>MAC Destination Address = Multicast: 01-00-5E-00-00-0A]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Data Link Frame</b><br/>MAC Source Address = Address of sending interface<br/>MAC Destination Address = Multicast: 01-00-5E-00-00-0A]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>IP Packet</b><br/>IPv4 Source Address = Address of sending interface<br/>IPv4 Destination Address = Multicast: 224.0.0.10<br/>Protocol field = 88 for EIGRP]]></text>
+</component>
+
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>Data Link Frame</b><br/>MAC Source Address = Address of sending interface<br/>MAC Destination Address = Multicast: 01-00-5E-00-00-0A]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>IP Packet</b><br/>IPv4 Source Address = Address of sending interface<br/>IPv4 Destination Address = Multicast: 224.0.0.10<br/>Protocol field = 88 for EIGRP]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>EIGRP Packet Header</b><br/>Opcode for EIGRP packet type<br/>Autonomous System Number]]></text>
+</component>
+
+
+
+<component id="ID_s4_txt01">
+<text><![CDATA[<b>Data Link Frame</b><br/>MAC Source Address = Address of sending interface<br/>MAC Destination Address = Multicast: 01-00-5E-00-00-0A]]></text>
+</component>
+
+<component id="ID_s4_txt02">
+<text><![CDATA[<b>IP Packet</b><br/>IPv4 Source Address = Address of sending interface<br/>IPv4 Destination Address = Multicast: 224.0.0.10<br/>Protocol field = 88 for EIGRP]]></text>
+</component>
+
+<component id="ID_s4_txt03">
+<text><![CDATA[<b>EIGRP Packet Header</b><br/>Opcode for EIGRP packet type Autonomous System Number]]></text>
+</component>
+
+<component id="ID_s4_txt04">
+<text><![CDATA[<b>TLV Types</b><br/>Some types include:<br/>0x0001 EIGRP Parameters<br/>0x0102 IP Internal Routes<br/>0x0103 IP External Routes]]></text>
+</component>
+
+</textcomponents>

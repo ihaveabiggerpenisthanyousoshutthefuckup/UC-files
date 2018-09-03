@@ -1,0 +1,119 @@
+<textcomponents>
+<!-- s1  -->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Configure Rapid PVST+</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[VLAN 10]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[VLAN 20]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[802.1Q Trunk]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Root Bridge]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[802.1Q Trunk]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[802.1Q Trunk]]></text>
+</component>
+
+<!-- s2  -->
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configure Rapid PVST+</b>]]></text>
+</component>
+
+
+<component id="ID_s2_table01">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="11"><b>Cisco IOS Command Syntax</b></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+
+
+
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Enter global configuration mode.</font></td>
+<td bgcolor='#E9E7E8' width="165" valign="top"><font color='#393536'><font face="_typewriter"><b>configure terminal</b></font></font></td>
+
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Configure Rapid PVST+ spanning-tree mode.</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'><font face='_typewriter'><b>spanning-tree mode rapid-pvst</b></font></font></td>
+
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Enter interface configuration mode and specify an interface to configure. Valid interfaces include physical ports, VLANs, and port channels.</font></td>
+<td  bgcolor='#E9E7E8' valign="top"><font color='#393536'><font face='_typewriter'><b>interface </b><i>interface-id</i></font></font></td>
+</tr>
+
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Specify that the link type for this port is point-to-point.</font></td>
+<td  bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#393536'><b>spanning-tree link-type<br/>point-to-point</b></font></td>
+
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Return to privileged EXEC mode.</font></td>
+<td  bgcolor='#E9E7E8' valign="top"><font color='#393536'><font face='_typewriter'><b>end</b></font></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Clear all detected STP.</font></td>
+<td  bgcolor='#F2F2F2' valign="top"><font color='#393536'><font face='_typewriter'><b>clear spanning-tree<br/>detected-protocols</b></font></font></td>
+
+</tr>
+
+</table>]]></text> 
+</component>
+
+<!-- s3  -->
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Configure Rapid PVST+</b>]]></text>
+</component>
+
+<!-- s4  -->
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Configure Rapid PVST+</b>]]></text>
+</component>
+
+<component id="ID_s4_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<!-- s5  -->
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Configure Rapid PVST+</b>]]></text>
+</component>
+
+<component id="ID_s5_txt01">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+<component id="ID_s5_txt02">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+</textcomponents>

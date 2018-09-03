@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.1.4 EIGRP Router ID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP Router ID</h1>
+        <div>
+          <p>The EIGRP router ID is used to uniquely identify each router in the EIGRP routing domain. </p>
+          <p></p>
+          <p>The router ID is used in both EIGRP and OSPF routing protocols. However, the role of the router ID is more significant in OSPF. In EIGRP IPv4 implementations, the use of the router ID is not that apparent. EIGRP for IPv4 uses the 32-bit router ID to identify the originating router for redistribution of external routes. The need for a router ID becomes more evident in the discussion of EIGRP for IPv6. While the router ID is necessary for redistribution, the details of EIGRP redistribution are beyond the scope of this curriculum. For purposes of this curriculum, it is only necessary to understand what the router ID is and how it is determined.</p>
+          <p></p>
+          <p>To determine its router ID, a Cisco IOS router will use the following three criteria in order:</p>
+          <p></p>
+          <p>1. Use the address configured with the<b> eigrp router-id </b><i>ipv4-address </i>router configuration mode command.</p>
+          <p></p>
+          <p>2. If the router ID is not configured, choose the highest IPv4 address of any of its loopback interfaces.</p>
+          <p></p>
+          <p>3. If no loopback interfaces are configured, choose the highest active IPv4 address of any of its physical interfaces.</p>
+          <p></p>
+          <p>If the network administrator does not explicitly configure a router ID using the<b> eigrp router-id </b>command, EIGRP generates its own router ID using either a loopback or physical IPv4 address. A loopback address is a virtual interface and is automatically in the up state when configured. The interface does not need to be enabled for EIGRP, meaning that it does not need to be included in one of the EIGRP <b>network</b> commands. However, the interface must be in the up/up state.</p>
+          <p></p>
+          <p>Using the criteria described above, the figure shows the default EIGRP router IDs that are determined by the routers’ highest active IPv4 address.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The<b> eigrp router-id </b>command is used to configure the router ID for EIGRP. Some versions of IOS will accept the command<b> router-id</b>, without first specifying<b> eigrp</b>. The running-config, however, will display<b> eigrp router-id </b>regardless of which command is used.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p. and the internal network is highlighted excluding the link between router two and i. s. p.  There is a callout for each router with the Router i. d. listed.  The router i. d. will become more important with the i. p. v. 6 implementation of e. i. g. r. p.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

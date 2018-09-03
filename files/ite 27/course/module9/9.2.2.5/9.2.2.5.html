@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>9.2.2.5 Verify Multiarea OSPFv3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_9.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify Multiarea OSPFv3</h1>
+        <div>
+          <p>Like OSPFv2, OSPFv3 provides similar OSPFv3 verification commands. Refer to the reference OSPFv3 topology in Figure 1. </p>
+          <p></p>
+          <p>Figure 2 displays the OSPFv3 settings of R1. Notice that the command confirms that there are now two areas. It also identifies each interface enabled for the respective area.</p>
+          <p></p>
+          <p>Figure 3 verifies the OSPFv3-enabled interfaces and the area to which they belong.</p>
+          <p></p>
+          <p>Figure 4 displays the routing table of R1. Notice how the IPv6 routing table displays<b> OI</b> entries in the routing table to identify networks learned from other areas. Specifically, <b>O</b> represents OSPF routes, and <b>I</b> represents interarea, which means that the route originated from another area. Recall that R1 is in area 0, and the 2001:DB8:CAFE:3::/64 subnet is connected to R3 in area 2. The [110/1295] entry in the routing table represents the administrative distance that is assigned to OSPF (110) and the total cost of the routes (cost of 1295).</p>
+          <p></p>
+          <p>Figure 5 displays the content of the LSDB of R1. The command offers similar information to its OSPFv2 counterpart. However, the OSPFv3 LSDB contains additional LSA types not available in OSPFv2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows an I.P. v6 multi area O.S.P.F. v3 topology. Figure two shows the output received from using the, show i.p. v6 protocols command.  The image highlights the number of areas the router belongs to and the networks that are being routed. Figure three shows the output received from using the, show i.p. v.6. o.s.p.f. interface brief command and highlights the column displaying the areas in which each interface is connected. Figure four shows the output of the show i.p. v.6. route o.s.p.f. command which will verify the multi area o.s.p.f. routes.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

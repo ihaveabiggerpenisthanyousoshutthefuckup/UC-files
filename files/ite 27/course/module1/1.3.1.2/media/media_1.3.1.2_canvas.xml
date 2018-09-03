@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+<slide>
+	<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+<element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF"/>
+<element type="ACTIVITY" subType="SYNTAX" compId="ID_SC5" x="185" y="55" width="630" height="390" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall"/>
+</slide>
+</data>

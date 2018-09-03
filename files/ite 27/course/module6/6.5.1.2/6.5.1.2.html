@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.5.1.2 Chapter 6: EIGRP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.5.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Chapter 6: EIGRP</h1>
+        <div>
+          <p>EIGRP (Enhanced Interior Gateway Routing Protocol) is a classless, distance vector routing protocol. EIGRP is an enhancement of another Cisco routing protocol, called IGRP (Interior Gateway Routing Protocol), which is now obsolete. EIGRP was initially released in 1992 as a Cisco proprietary protocol available only on Cisco devices. In 2013, Cisco released a basic functionality of EIGRP as an open standard, to the IETF. </p>
+          <p></p>
+          <p>EIGRP uses the source code of "D" for DUAL in the routing table. EIGRP has a default administrative distance of 90 for internal routes and 170 for routes imported from an external source, such as default routes.</p>
+          <p></p>
+          <p>EIGRP is an advanced distance vector routing protocol that includes features not found in other distance vector routing protocols like RIP. These features include: Diffusing Update Algorithm (DUAL), establishing neighbor adjacencies, Reliable Transport Protocol (RTP), partial and bounded updates, and equal and unequal cost load balancing.</p>
+          <p></p>
+          <p>EIGRP uses PDMs (Protocol Dependent Modules) giving it the capability to support different Layer 3 protocols including IPv4 and IPv6. EIGRP uses RTP (Reliable Transport Protocol) as the transport layer protocol for the delivery of EIGRP packets. EIGRP uses reliable delivery for EIGRP updates, queries and replies; and uses unreliable delivery for EIGRP Hellos and acknowledgments. Reliable RTP means an EIGRP acknowledgment must be returned.</p>
+          <p></p>
+          <p>Before any EIGRP updates are sent, a router must first discover its neighbors. This is done with EIGRP Hello packets. The Hello and hold-down values do not need to match for two routers to become neighbors. The <b>show ip eigrp neighbors </b>command is used to view the neighbor table and verify that EIGRP has established an adjacency with its neighbors.</p>
+          <p></p>
+          <p>EIGRP does not send periodic updates like RIP. EIGRP sends partial or bounded updates, which include only route changes. Updates are sent only to those routers that are affected by the change. EIGRP composite metric uses bandwidth, delay, reliability, and load to determine the best path. By default only bandwidth and delay are used.</p>
+          <p></p>
+          <p>At the center of EIGRP is DUAL (Diffusing Update Algorithm). The DUAL Finite State Machine is used to determine best path and potential backup paths to every destination network. The successor is a neighboring router that is used to forward the packet using the least-cost route to the destination network. Feasible distance (FD) is the lowest calculated metric to reach the destination network through the successor. A feasible successor (FS) is a neighbor who has a loop-free backup path to the same network as the successor, and also meets the feasibility condition. The feasibility condition (FC) is met when a neighbor's reported distance (RD) to a network is less than the local router's feasible distance to the same destination network. The reported distance is simply an EIGRP neighbor's feasible distance to the destination network.</p>
+          <p></p>
+          <p>EIGRP is configured with the<b> router eigrp </b><i>autonomous-system </i>command. The autonomous-system value is actually a process-id and must be the same on all routers in the EIGRP routing domain. The<b> network </b>command is similar to that used with RIP. The network is the classful network address of the directly connected interfaces on the router. A wildcard mask is an optional parameter that can be used to include only specific interfaces.</p>
+          <p></p>
+          <p>EIGRP for IPv6 shares many similarities with EIGRP for IPv4. However, unlike the IPv4 network command, IPv6 is enabled on the interface using the <b>ipv6 eigrp </b><i>autonomous-system</i> interface configuration command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows an expanded view of the e. i. g. r. p. header.  The t. l. v. types with the k. values highlighted, along with hold time.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

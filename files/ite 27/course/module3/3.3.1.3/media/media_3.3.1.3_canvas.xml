@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg" />
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="media_3.3.1.3.png" />
+            <element type="TEXT" id="ID_static_1" text="F0/1" x="281" y="100" align="center" width="22" />
+            <element type="TEXT" id="ID_static_2" text="172.17.10.21" x="218" y="406" align="center" width="67" />
+            <element type="TEXT" id="ID_static_3" text="172.17.10.23" x="454" y="406" align="center" width="68" />
+            <element type="TEXT" id="ID_static_4" text="172.17.10.22" x="332" y="406" align="center" width="68" />
+            <element type="TEXT" id="ID_static_5" text="F0/2" x="436" y="100" align="center" width="23" />
+            <element type="TEXT" id="ID_static_6" text="F0/2" x="243" y="117" align="center" width="23" />
+            <element type="TEXT" id="ID_static_7" text="F0/1" x="484" y="117" align="center" width="22" />
+            <element type="TEXT" id="ID_static_8" text="F0/2" x="321" y="208" align="center" width="23" />
+            <element type="TEXT" id="ID_static_9" text="F0/1" x="408" y="208" align="center" width="22" />
+            <element type="TEXT" id="ID_static_10" text="F0/11" x="297" y="262" align="center" width="28" />
+            <element type="TEXT" id="ID_static_11" text="F0/6" x="409" y="260" align="center" width="23" />
+            <element type="TEXT" id="ID_static_12" text="F0/18" x="352" y="262" align="center" width="30" />
+            <element type="TEXT" compId="ID_s1_txt01" x="328" y="80" width="89" expand="right" align="center" color="#652c8a" />
+            <element type="TEXT" compId="ID_s1_txt02" x="442" y="165" width="80" expand="right" align="left" color="#652c8a" />
+            <element type="TEXT" compId="ID_s1_txt03" x="232" y="165" width="80" expand="left" align="right" color="#652c8a" />
+            <element type="TEXT" compId="ID_s1_txt04" x="74" y="312" width="146" expand="up" align="center" class="orangeCallOut" />
+            <element type="TEXT" compId="ID_s1_txt07" x="310" y="219" width="30" expand="left" align="right" />
+            <element type="TEXT" compId="ID_s1_txt05" x="427" y="111" width="36" expand="left" align="right" />
+            <element type="TEXT" compId="ID_s1_txt06" x="484" y="129" width="36" expand="right" align="left" />
+            <element type="TEXT" compId="ID_s1_txt08" x="290" y="111" width="30" expand="down" align="left" />
+            <element type="TEXT" compId="ID_s1_txt09" x="415" y="219" width="30" expand="right" align="left" />
+            <element type="TEXT" compId="ID_s1_txt10" x="239" y="129" width="30" expand="down" align="right" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="ROUTER" textId="ID_router_txt1" x="40" y="55" width="600" height="400" />
+            <!--<text id="ID_router_txt1"><![CDATA[<pre>S2(config)# interface FastEthernet 0/11 S2(config-if)# spanning-tree portfast %Warning: portfast should only be enabled on ports connected to a single host. Connecting hubs, concentrators, switches, bridges, etc... to this interface when portfast is enabled, can cause temporary bridging loops. Use with CAUTION %Portfast has been configured on FastEthernet0/11 but will only have effect when the interface is in a non-trunking mode. S2(config-if)# spanning-tree bpduguard enable S2(config-if)# end</pre>]]></text>-->
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="ROUTER" textId="ID_router_txt2" x="40" y="55" width="600" height="400" />
+            <!--<text id="ID_router_txt2"><![CDATA[<pre>S2# show running-config interface f0/11 Building configuration... Current configuration : 90 bytes ! interface FastEthernet0/11 spanning-tree portfast spanning-tree bpduguard enable end S2#</pre>]]></text>-->
+            <element type="TEXT" subType="TITLE" compId="ID_s3_title" color="#ffffff" />
+        </slide>
+        <slide>
+            <element type="ACTIVITY" subType="SYNTAX" compId="ID_SC4" x="25" y="55" width="630" height="400" resetId="ID_sc_reset" showMeId="ID_sc_showme" showAllId="ID_sc_showall" />
+            <element type="TEXT" subType="TITLE" compId="ID_s4_title" color="#ffffff" />
+        </slide>
+    </slide>
+    <text id="ID_router_txt1">
+        <![CDATA[<pre>S2(config)# <b>interface FastEthernet 0/11</b>
+S2(config-if)# <span class = "align"><b>spanning-tree portfast</b></span>
+%Warning: portfast should only be enabled on ports connected to a single host. 
+Connecting hubs, concentrators, switches, bridges, etc... to this interface 
+when portfast is enabled, can cause temporary bridging loops.
+ Use with CAUTION
+
+%Portfast has been configured on FastEthernet0/11 but will only
+ have effect when the interface is in a non-trunking mode.
+S2(config-if)# <span class = "align"><b>spanning-tree bpduguard enable</b></span>
+S2(config-if)# <b>end</b></pre>]]></text>
+    <text id="ID_router_txt2">
+        <![CDATA[<pre>S2# <span class = "align"><b>show running-config interface f0/11</b></span>
+Building configuration...
+
+Current configuration : 90 bytes
+!
+interface FastEthernet0/11
+ <span class = "align"><b>spanning-tree portfast</b></span>
+ <span class = "align"><b>spanning-tree bpduguard enable</b></span>
+end
+
+S2#</pre>]]></text>
+</data>

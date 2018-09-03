@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>1.1.2.1 Design for Scalability </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_1.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Design for Scalability </h1>
+        <div>
+          <p>To support a large, medium or small network, the network designer must develop a strategy to enable the network to be available and to scale effectively and easily. Included in a basic network design strategy are the following recommendations:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Use expandable, modular equipment or clustered devices that can be easily upgraded to increase capabilities. Device modules can be added to the existing equipment to support new features and devices without requiring major equipment upgrades.  Some devices can be integrated in a cluster to act as one device to simplify management and configuration.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Design a hierarchical network to include modules that can be added, upgraded, and modified, as necessary, without affecting the design of the other functional areas of the network. For example, creating a separate access layer that can be expanded without affecting the distribution and core layers of the campus network. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Create an IPv4 or IPv6 address strategy that is hierarchical. Careful address planning eliminates the need to re-address the network to support additional users and services. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Choose routers or multilayer switches to limit broadcasts and filter other undesirable traffic from the network. Use Layer 3 devices to filter and reduce traffic to the network core. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in the figure, more advanced network design requirements include:</p>
+          <p>
+            <ul>
+              <li>Implementing redundant links in the network between critical devices and between access layer and core layer devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Implementing multiple links between equipment, with either link aggregation (EtherChannel) or equal cost load balancing, to increase bandwidth. Combining multiple Ethernet links into a single, load-balanced EtherChannel configuration increases available bandwidth. EtherChannel implementations can be used when budget restrictions prohibit purchasing high-speed interfaces and fiber runs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Using a scalable routing protocol and implementing features within that routing protocol to isolate routing updates and minimize the size of the routing table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Implementing wireless connectivity to allow for mobility and expansion.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows graphics that demonstrate different examples of redundancy.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

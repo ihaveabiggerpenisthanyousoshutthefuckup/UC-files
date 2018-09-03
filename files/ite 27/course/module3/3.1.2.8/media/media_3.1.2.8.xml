@@ -1,0 +1,275 @@
+<textcomponents>
+
+<!--Slide 1-->
+
+<component id="ID_title">
+<text><![CDATA[<b>The BPDU Process</b>]]></text>
+</component>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>The BPDU Process</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s1_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s1_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[Root ID = 32769.000A00222222<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[Initally all switches think they are the root bridge. S2 forwards BPDU frames out of all switch ports. The BPDU frame contains the bridge ID and the root ID of S2 indicating that it is the root bridge.]]></text>
+</component>
+
+
+<!--Slide 2-->
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s2_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s2_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s2_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[Root ID =<font color="#F26200"><b> 32769.000A00111111 </b></font><br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[S3 compares the received root ID with its own and identifies S2 as the lower root ID. <br/>S3 updates its root ID with the root ID of S2.<br/>S3 now considers S2 as the root bridge.<br/>S3 updates the path cost to 19 since the BPDU was received on a Fast Ethernet port.]]></text>
+</component>
+
+<component id="ID_s2_txt11">
+<text><![CDATA[<b>BPDU</b><br/>Root ID =<font color="#F26200"><b> 32769.000A00111111</b></font><br/>Path Cost = 19]]></text>
+</component>
+
+
+<!--Slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s3_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s3_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s3_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[Root ID =<font color="#F26200"><b> 24577.000A00333333 </b></font><br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[When S1 compares its root ID with the one in the received BPDU frame received from S2, it identifies the local root ID as the lower value and discards the BPDU from S2. S1 still considers itself the root bridge.]]></text>
+</component>
+
+<component id="ID_s3_txt12">
+<text><![CDATA[<b>BPDU</b><br/>Root ID =<font color="#F26200"><b> 32769.000A00111111</b></font><br/>Path Cost = 19]]></text>
+</component>
+
+
+<!--Slide 4-->
+<component id="ID_s4_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s4_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s4_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s4_txt06"><text><![CDATA[Trunk1]]></text></component>
+<component id="ID_s4_txt07">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s4_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s4_txt09">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s4_txt10">
+<text><![CDATA[S3 forwards BPDU frames out of all switch ports. The BPDU frame contains the root ID of S2 indicating that it is the root bridge.]]></text>
+</component>
+
+
+<!--Slide 5-->
+<component id="ID_s5_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s5_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s5_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s5_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s5_txt07">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s5_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s5_txt09">
+<text><![CDATA[Root ID = <font color="#F26200"><b>32769.000A00111111 </b></font><br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s5_txt10">
+<text><![CDATA[S2 compares the received BPDU root ID with its own and identifies that it matches its own. S2 continues to think it is the root bridge on the network. S2 does not update the path cost.]]></text>
+</component>
+
+<component id="ID_s5_txt11">
+<text><![CDATA[<b>BPDU</b><br/>Root ID =<font color="#F26200"><b> 32769.000A00111111</b></font><br/>Path Cost = 19]]></text>
+</component>
+
+
+<!--Slide 6-->
+<component id="ID_s6_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s6_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s6_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s6_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s6_txt10">
+<text><![CDATA[S1 compares the received BPDU root ID with its own and identifies that its own is lower. S1 continues to think it is the root bridge on the network. S1 does not update the path cost.]]></text>
+</component>
+
+<component id="ID_s6_txt07">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s6_txt08">
+<text><![CDATA[Root ID = <font color="#F26200"><b>24577.000A00333333 </b></font><br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s6_txt12">
+<text><![CDATA[<b>BPDU</b><br/>Root ID =<font color="#F26200"><b> 32769.000A00111111</b></font><br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s6_txt09">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+
+<!--Slide 7-->
+<component id="ID_s7_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s7_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s7_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s7_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s7_txt07">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s7_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A0033333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s7_txt09">
+<text><![CDATA[Root ID = 32769.000A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s7_txt10">
+<text><![CDATA[S1 forwards BPDU frames out of all switch ports. The BPDU frame contains the bridge ID and root ID of S1 indicating that it is the root bridge.]]></text>
+</component>
+
+
+<!--Slide 8-->
+<component id="ID_s8_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s8_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s8_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s8_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s8_txt07">
+<text><![CDATA[Root ID =<font color="#F26200"><b> 24577.000A00333333 </b></font><br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s8_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s8_txt10">
+<text><![CDATA[S3 compares the received root ID with its own and identifies S1 as the lower root ID. S3 updates its root ID with the root ID of S1. S3 now considers S1 as the root bridge. S3 updates the path cost to 19 since the BPDU was received on a Fast Ethernet port.]]></text>
+</component>
+
+<component id="ID_s8_txt11">
+<text><![CDATA[<b>BPDU</b><br/>Root ID =<font color="#F26200"><b> 24577.000A00333333</b></font><br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s8_txt12">
+<text><![CDATA[Root ID = 32769.00A00111111<br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+
+<!--Slide 9-->
+<component id="ID_s9_title">
+<text><![CDATA[<b>slide Title goes here</b>]]></text>
+</component>
+
+<component id="ID_s9_txt02"><text><![CDATA[Root Bridge]]></text></component>
+
+<component id="ID_s9_txt04"><text><![CDATA[Trunk3]]></text></component>
+<component id="ID_s9_txt05"><text><![CDATA[Trunk2]]></text></component>
+<component id="ID_s9_txt06"><text><![CDATA[Trunk1]]></text></component>
+
+<component id="ID_s9_txt07">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 32769.000A00222222<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s9_txt08">
+<text><![CDATA[Root ID = 24577.000A00333333<br/>Bridge ID = 24577.000A00333333<br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s9_txt09">
+<text><![CDATA[<b>BPDU</b><br/>Root ID = <font color="#F26200"><b>24577.000A00333333</b></font><br/>Path Cost = 19]]></text>
+</component>
+
+<component id="ID_s9_txt10">
+<text><![CDATA[S2 compares the received root ID with its own and identifies S1 as the lower root ID. S2 updates its root ID with the root ID of S1. S2 now considers S1 as the root bridge. S2 updates the path cost to 19 since the BPDU was received on a Fast Ethernet port.]]></text>
+</component>
+
+<component id="ID_s9_txt12">
+<text><![CDATA[Root ID =<font color="#F26200"><b> 24577.00A00333333</b></font><br/>Bridge ID = 32769.000A00111111<br/>Path Cost = 19]]></text>
+</component>
+
+</textcomponents>
+
+
+
+
+
+
+
+

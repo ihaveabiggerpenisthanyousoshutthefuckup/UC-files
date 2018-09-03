@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.4.1.3 Chapter 8: Single-Area OSPF</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Chapter 8: Single-Area OSPF</h1>
+        <div>
+          <p>The current version of OSPF for IPv4 is OSPFv2 introduced in RFC 1247 and updated in RFC 2328 by John Moy. In 1999, OSPFv3 for IPv6 was published in RFC 2740.</p>
+          <p></p>
+          <p>OSPF is a link-state routing protocol with a default administrative distance of 110, and is denoted in the routing table with a route source code of<b> O</b>. </p>
+          <p></p>
+          <p>OSPFv2 is enabled with the<b> router ospf </b><i>process-id </i>global configuration mode command. The<i> process-id </i>value is locally significant, which means that it does not need to match other OSPFv2 routers to establish adjacencies with those neighbors.</p>
+          <p></p>
+          <p>The<b> network </b>command used with OSPFv2 has the same function as when used with other IGP routing protocols, but with slightly different syntax. The<i> wildcard-mask </i>value is the inverse of the subnet mask, and the<i> area-id </i>value should be set to<b> 0</b>.</p>
+          <p></p>
+          <p>By default, OSPF Hello packets are sent every 10 seconds on multiaccess and point-to-point segments and every 30 seconds on NBMA segments (Frame Relay, X.25, ATM), and are used by OSPF to establish neighbor adjacencies. The Dead interval is four times the Hello interval, by default. </p>
+          <p></p>
+          <p>For routers to become adjacent, their Hello interval, Dead interval, network types, and subnet masks must match. Use the<b> show ip ospf neighbors </b>command to verify OSPFv2 adjacencies.</p>
+          <p></p>
+          <p>OSPF elects a DR to act as collection and distribution point for LSAs sent and received in the multiaccess network. A BDR is elected to assume the role of the DR should the DR fail. All other routers are known as DROTHERs. All routers send their LSAs to the DR, which then floods the LSA to all other routers in the multiaccess network. </p>
+          <p></p>
+          <p>The<b> show ip protocols </b>command is used to verify important OSPFv2 configuration information, including the OSPF process ID, the router ID, and the networks the router is advertising.</p>
+          <p></p>
+          <p>OSPFv3 is enabled on an interface and not under router configuration mode. OSPFv3 needs link-local addresses to be configured. IPv6 Unicast routing must be enabled for OSPFv3. A 32-bit router-ID is required before an interface can be enabled for OSPFv3. Similar verification commands used for OSPFv2 are used for OSPFv3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the O.S.P.F. Hello packet content.  The figure is highlighting the type, the router I.D., area I.D., network mask, Hello interval, the router priority, the router I.D. of the designated router, the router I.D. of the backup designated router, and the list of neighbors.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" />
+        <element type="ACTIVITY" subType="ANIMATION" movieClipId="anim01" totalFrames="178" />
+        <element type="TEXT" compId="ID_txt01" x="151.5" y="344" width="115" expand="left+right" align="center" />
+        <element type="TEXT" compId="ID_txt02" x="316.5" y="253.6" width="58" expand="down" align="center" />
+        <element type="TEXT" compId="ID_txt03" x="426" y="344" width="115" expand="left+right" align="center" />
+        <element type="TEXT" compId="ID_txt04" x="375" y="78.9" width="136" expand="up+down" align="left" />
+        <element type="TEXT" compId="ID_txt07" x="80" y="389.55" width="520" expand="down" align="left" />
+    </slide>
+</data>

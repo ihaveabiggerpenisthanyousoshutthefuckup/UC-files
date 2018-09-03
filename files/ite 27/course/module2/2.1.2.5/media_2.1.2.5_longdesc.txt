@@ -1,0 +1,1 @@
+Figure 1 shows configuring 3 VLANs on S1. Figure 2 shows verification of those VLANs. Figure 3 shows verifying the VTP status.

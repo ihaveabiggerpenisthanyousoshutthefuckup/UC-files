@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.2.1 EIGRP for IPv6 Network Topology</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>EIGRP for IPv6 Network Topology</h1>
+        <div>
+          <p>Figure 1 shows the network topology that is used for configuring EIGRP for IPv6. If the network is running dual-stack, using both IPv4 and IPv6 on all devices, EIGRP for both IPv4 and IPv6 can be configured on all the routers. However, in this section, the focus is solely on EIGRP for IPv6.</p>
+          <p></p>
+          <p>Only the IPv6 global unicast addresses have been configured on each router. </p>
+          <p></p>
+          <p>Figures 2, 3, and 4 display the starting interface configurations on each router. Notice the interface bandwidth values from the previous EIGRP for IPv4 configuration. Because EIGRP for IPv4 and IPv6 use the same metrics, modifying the bandwidth parameters influences both routing protocols. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p.  I. p. v. 6 lan addresses are used.  Figure two shows the output of the "show running dash config" command on router one listing the interface configuration. Figure three shows the output of the "show running dash config" command on router two listing the interface configuration. Figure four shows the output of the "show running dash config" command on router three listing the interface configuration.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.1 Overview of PVST+</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Overview of PVST+</h1>
+        <div>
+          <p>The original IEEE 802.1D standard defines a CST that assumes only one spanning tree instance for the entire switched network, regardless of the number of VLANs. A network running CST has these characteristics:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>No load sharing is possible. One uplink must block for all VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The CPU is spared. Only one instance of spanning tree must be computed.</li>
+            </ul>
+          </p>
+          <p>Cisco developed PVST+ so that a network can run an independent instance of the Cisco implementation of IEEE 802.1D for each VLAN in the network. With PVST+, it is possible for one trunk port on a switch to block for a VLAN while forwarding for other VLANs. PVST+ can be used to implement Layer 2 load balancing. The switches in a PVST+ environment require greater CPU process and BPDU bandwidth consumption than a traditional CST implementation of STP because each VLAN runs a separate instance of STP.</p>
+          <p></p>
+          <p>In a PVST+ environment, spanning tree parameters can be tuned so that half of the VLANs forward on each uplink trunk. In the figure, port F0/3 on S2 is the forwarding port for VLAN 20, and F0/2 on S2 is the forwarding port for VLAN 10. This is accomplished by configuring one switch to be elected the root bridge for half of the VLANs in the network, and a second switch to be elected the root bridge for the other half of the VLANs. In the figure, S3 is the root bridge for VLAN 20 and S1 is the root bridge for VLAN 10. Multiple STP root bridges per VLAN increases redundancy in the network.</p>
+          <p></p>
+          <p>Networks running PVST+ have these characteristics:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Optimum load balancing can result.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>One spanning tree instance for each VLAN maintained can mean a considerable waste of CPU cycles for all the switches in the network (in addition to the bandwidth that is used for each instance to send its own BPDU). This will only be problematic if a large number of VLANs are configured.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows three switches, all inter-connected with a dot one q. trunk.  This demonstrates that different switches can be the root bridge for different v. lans, and that the ports can be forwarding for one v. lan while blocking for another.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

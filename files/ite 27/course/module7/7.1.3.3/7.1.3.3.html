@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.3.3 Load Balancing IPv4</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Load Balancing IPv4</h1>
+        <div>
+          <p>Equal-cost load balancing is the ability of a router to distribute outbound traffic using all interfaces that have the same metric from the destination address. Load balancing uses network segments and bandwidth more efficiently. For IP, Cisco IOS Software applies load balancing using up to four equal-cost paths by default. </p>
+          <p></p>
+          <p>Figure 1 shows the EIGRP for IPv4 network topology.  In this topology, R3 has two EIGRP equal-cost routes for the network between R1 and R2, 172.16.3.0/30. One route is via R1 at 192.168.10.4/30 and the other route is via R2 at 192.168.10.8/30.</p>
+          <p></p>
+          <p>The<b> show ip protocols </b>command can be used to verify the number of equal-cost paths currently configured on the router. The output in Figure 2 shows that R3 is using the default of four equal-cost paths.</p>
+          <p></p>
+          <p>The routing table maintains both routes. Figure 3 shows that R3 has two EIGRP equal-cost routes for the 172.16.3.0/30 network. One route is via R1 at 192.168.10.5 and the other route is via R2 at 192.168.10.9. Looking at the topology in Figure 1, it may seem as if the path via R1 is the better route because there is a 1544 kb/s link between R3 and R1, whereas the link to R2 is only a 1024 kb/s link. However, EIGRP only uses the slowest bandwidth in its composite metric which is the 64 kb/s link between R1 and R2. Both paths have the same 64 kb/s link as the slowest bandwidth, this results in both paths being equal.</p>
+          <p></p>
+          <p>When a packet is process-switched, load balancing over equal-cost paths occurs on a per-packet basis. When packets are fast-switched, load balancing over equal-cost paths occurs on a per-destination basis. Cisco Express Forwarding (CEF) can perform both per packet and per-destination load balancing.</p>
+          <p></p>
+          <p>Cisco IOS, by default, allows load balancing using up to four equal-cost paths; however, this can be modified. Using the<b> maximum-paths </b>router configuration mode command, up to 32 equal-cost routes can be kept in the routing table. </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-router)# </span>
+            <span class="cmd">
+              <b>maximum-paths</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>value</i>
+            </span>
+          </p>
+          <p></p>
+          <p>The<i> value </i>argument refers to the number of paths that should be maintained for load balancing. If the value is set to<b> 1</b>, load balancing is disabled. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output of the "show i. p. route" command on router three. Figure two shows the output of the "shop i. p. protocols" command on router three.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

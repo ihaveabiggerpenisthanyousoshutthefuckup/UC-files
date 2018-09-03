@@ -1,0 +1,103 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>Layer 3 Switching Implementation and Troubleshooting Plan</b>]]></text>
+</component>
+
+<component id="ID_trans01">
+	<text><![CDATA[Fifth Floor]]></text>
+</component>
+
+<component id="ID_trans02">
+	<text><![CDATA[Limited Access]]></text>
+</component>
+
+<component id="ID_trans03">
+	<text><![CDATA[Blue Parking Garage]]></text>
+</component>
+
+<component id="ID_trans04">
+	<text><![CDATA[Closed for Renovations]]></text>
+</component>
+
+<component id="ID_trans05">
+	<text><![CDATA[Blue Parking Lot]]></text>
+</component>
+
+<component id="ID_trans06">
+	<text><![CDATA[Purple Parking Lot]]></text>
+</component>
+
+<component id="ID_trans07">
+	<text><![CDATA[Danbury Hospital Medical Arts Center]]></text>
+</component>
+
+<component id="ID_trans08">
+	<text><![CDATA[Gold Parking Garage]]></text>
+</component>
+
+<component id="ID_trans09">
+	<text><![CDATA[Red Parking Garage]]></text>
+</component>
+
+<component id="ID_trans10">
+	<text><![CDATA[Orange Parking]]></text>
+</component>
+
+<component id="ID_trans11">
+	<text><![CDATA[Locust Avenue]]></text>
+</component>
+
+<component id="ID_trans12">
+	<text><![CDATA[Main Entrance (1st Floor)]]></text>
+</component>
+
+<component id="ID_trans13">
+	<text><![CDATA[Strock Building]]></text>
+</component>
+
+<component id="ID_trans14">
+	<text><![CDATA[Emergency Entrance (1st Floor)]]></text>
+</component>
+
+<component id="ID_trans15">
+	<text><![CDATA[Tower Building]]></text>
+</component>
+
+<component id="ID_trans16">
+	<text><![CDATA[South Building]]></text>
+</component>
+
+<component id="ID_trans17">
+	<text><![CDATA[Center Building]]></text>
+</component>
+
+<component id="ID_trans18">
+	<text><![CDATA[East Building]]></text>
+</component>
+
+<component id="ID_trans19">
+	<text><![CDATA[West Building]]></text>
+</component>
+
+<component id="ID_trans20">
+	<text><![CDATA[Green Parking Lot]]></text>
+</component>
+
+<component id="ID_trans21">
+	<text><![CDATA[North Building]]></text>
+</component>
+
+<component id="ID_trans22">
+	<text><![CDATA[Hospital Avenue]]></text>
+</component>
+
+<component id="ID_trans23">
+	<text><![CDATA[Side View]]></text>
+</component>
+
+<component id="ID_trans24">
+	<text><![CDATA[5th Floor]]></text>
+</component>
+
+</textcomponents>

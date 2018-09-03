@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.3 Extended System ID and PVST+ Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Extended System ID and PVST+ Operation</h1>
+        <div>
+          <p>In a PVST+ environment, the extended system ID ensures each switch has a unique BID for each VLAN.</p>
+          <p></p>
+          <p>For example, the VLAN 2 default BID would be 32770 (priority 32768, plus the extended system ID of 2). If no priority has been configured, every switch has the same default priority and the election of the root bridge for each VLAN is based on the MAC address. Because the bridge ID is based on the lowest MAC address, the switch chosen to be root bridge might not be the most powerful or the most optimal switch. </p>
+          <p></p>
+          <p>There are situations where the administrator may want a specific switch selected as the root bridge. This may be for a variety of reasons, including:</p>
+          <p>
+            <ul>
+              <li>the switch is more optimally located within the LAN design in regards to the majority of traffic flow patterns for a particular VLAN;</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>the switch has higher processing power, or; </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>the switch is simply easier to access and manage remotely.</li>
+            </ul>
+          </p>
+          <p>To manipulate the root-bridge election, assign a lower priority to the switch that should be selected as the root bridge for the desired VLAN(s).</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the bridge i.d. fields in two formats.  One with extended system i.d. and one without.  Without, the priority takes 2 bytes.  With, the priority uses 4 bits and the system i.d. uses the other 12 bits.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

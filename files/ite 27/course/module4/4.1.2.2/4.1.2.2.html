@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.2 Port Aggregation Protocol</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Port Aggregation Protocol</h1>
+        <div>
+          <p>EtherChannels can be formed through negotiation using one of two protocols, PAgP or LACP. These protocols allow ports with similar characteristics to form a channel through dynamic negotiation with adjoining switches. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: It is also possible to configure a static or unconditional EtherChannel without PAgP or LACP. </p>
+          <p></p>
+          <p>
+            <b>PAgP</b>
+          </p>
+          <p></p>
+          <p>PAgP (pronounced “Pag – P”) is a Cisco-proprietary protocol that aids in the automatic creation of EtherChannel links. When an EtherChannel link is configured using PAgP, PAgP packets are sent between EtherChannel-capable ports to negotiate the forming of a channel. When PAgP identifies matched Ethernet links, it groups the links into an EtherChannel. The EtherChannel is then added to the spanning tree as a single port.</p>
+          <p></p>
+          <p>When enabled, PAgP also manages the EtherChannel. PAgP packets are sent every 30 seconds. PAgP checks for configuration consistency and manages link additions and failures between two switches. It ensures that when an EtherChannel is created, all ports have the same type of configuration.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: In EtherChannel, it is mandatory that all ports have the same speed, duplex setting, and VLAN information. Any port modification after the creation of the channel also changes all other channel ports.</p>
+          <p></p>
+          <p>PAgP helps create the EtherChannel link by detecting the configuration of each side and ensuring that links are compatible so that the EtherChannel link can be enabled when needed. The figure shows the modes for PAgP.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>On </b>- This mode forces the interface to channel without PAgP. Interfaces configured in the on mode do not exchange PAgP packets. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PAgP desirable </b>- This PAgP mode places an interface in an active negotiating state in which the interface initiates negotiations with other interfaces by sending PAgP packets.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PAgP auto </b>- This PAgP mode places an interface in a passive negotiating state in which the interface responds to the PAgP packets that it receives, but does not initiate PAgP negotiation.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The modes must be compatible on each side. If one side is configure to be in auto mode, it is placed in a passive state, waiting for the other side to initiate the EtherChannel negotiation. If the other side is also set to auto, the negotiation never starts and the EtherChannel does not form. If all modes are disabled by using the<b> no </b>command, or if no mode is configured, then the EtherChannel is disabled.</p>
+          <p></p>
+          <p>The on mode manually places the interface in an EtherChannel, without any negotiation. It works only if the other side is also set to on. If the other side is set to negotiate parameters through PAgP, no EtherChannel forms, because the side that is set to on mode does not negotiate.</p>
+          <p></p>
+          <p>No negotiation between the two switches means there is no checking to make sure that all the links in the EtherChannel are terminating on the other side or that there is PAgP compatibility on the other switch.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure lists the three port modes for port aggregation protocol.  The first state is on, in which the channel member is active but without negotiation therefore no protocol.  The second state is desirable, in which the port is actively asking if the other side can or will participate.  The third state is auto, in which the port is passively waiting for the other side.  The figure shows the states of port aggregation protocol between two switches and when a channel establishment will occur.  This table is a summary of the page text.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

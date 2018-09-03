@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.1 Layer 3 Switch Configuration Issues</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Layer 3 Switch Configuration Issues</h1>
+        <div>
+          <p>The issues common to legacy inter-VLAN routing and router-on-a-stick inter-VLAN routing are also manifested in the context of Layer 3 switching. To troubleshoot Layer 3 switching issues, the following items should be checked for accuracy:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>VLANs </b>- VLANs must be defined across all the switches. VLANs must be enabled on the trunk ports. Ports must be in the right VLANs.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SVIs </b>- SVIs must have the correct IP address or subnet mask. SVIs must be up. Each SVI must match with the VLAN number.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Routing </b>- Routing must be enabled. Each interface or network should be added to the routing protocol or static routes entered, where appropriate.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hosts </b>- Hosts must have the correct IP address or subnet mask. Hosts must have a default gateway associated with an SVI or routed port.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To troubleshoot the Layer 3 switching problems, be familiar with the implementation and design layout of the topology.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a topology with two subnets separated by a layer three switch. There are trunk links on either side of the layer three switch leading to the layer two switches.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

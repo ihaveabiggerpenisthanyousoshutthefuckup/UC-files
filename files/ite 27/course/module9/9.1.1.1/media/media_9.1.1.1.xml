@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Issues in a Large OSPF Single Area</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[My routing table is too big and I am running low on memory.]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[I am receiving too many LSAs.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[My SPF algorithm is running too often for me to route properly.]]></text> 
+  </component>
+</textcomponents>

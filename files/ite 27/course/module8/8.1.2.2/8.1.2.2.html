@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.2.2 Types of OSPF Packets</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Types of OSPF Packets</h1>
+        <div>
+          <p>OSPF uses link-state packets (LSPs) to establish and maintain neighbor adjacencies and exchange routing updates. </p>
+          <p></p>
+          <p>The figure shows the five different types of LSPs used by OSPFv2. OSPFv3 has similar packet types. Each packet serves a specific purpose in the OSPF routing process:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Type 1: Hello packet </b>- Used to establish and maintain adjacency with other OSPF routers. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type 2: Database Description (DBD) packet </b>- Contains an abbreviated list of the sending router’s LSDB and is used by receiving routers to check against the local LSDB. The LSDB must be identical on all link-state routers within an area to construct an accurate SPF tree.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type 3: Link-State Request (LSR) packet </b>- Receiving routers can then request more information about any entry in the DBD by sending an LSR. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type 4: Link-State Update (LSU) packet </b>- Used to reply to LSRs and to announce new information. LSUs contain seven different types of LSAs. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type 5: Link-State Acknowledgment (LSAck) packet </b>- When an LSU is received, the router sends an LSAck to confirm receipt of the LSU. The LSAck data field is empty.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a table listing the five types of O.S.P.F. packets.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+
+
+/*.orangeCallOut {background-color:#E9E7E8;border:2px solid #7B797A}*/
+
+#ID_s1_txt05,#ID_s1_txt06,#ID_s1_txt07{
+	background-color: #FFFFFF;
+	padding: 5px 0px 5px 5px !important;
+	border-radius: 4px;
+	box-shadow: 1px 2px 2px #888888;
+}

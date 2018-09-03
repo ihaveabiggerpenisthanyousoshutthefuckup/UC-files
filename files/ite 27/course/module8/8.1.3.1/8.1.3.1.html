@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.3.1 OSPF Operational States</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>OSPF Operational States</h1>
+        <div>
+          <p>When an OSPF router is initially connected to a network, it attempts to:</p>
+          <p>
+            <ul>
+              <li>Create adjacencies with neighbors</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Exchange routing information</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Calculate the best routes </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Reach convergence</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>OSPF progresses through several states while attempting to reach convergence:</p>
+          <p>
+            <ul>
+              <li>Down state</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Init state</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Two-Way state</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>ExStart state</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Exchange state</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Loading state</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Full state</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click the blue boxes in the figure for more information.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a top down chart transitioning through the O.S.P.F. states.  It begins with establishing neighbor adjacencies starting with the down state, moves to the init state, and transitions to the two way state.  Next is the synchronizing O.S.P.F. databases process.  This starts with the Ex-start state, moves to the exchange state, and ends with the loading state.  This moves the O.S.P.F. router to the full state.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

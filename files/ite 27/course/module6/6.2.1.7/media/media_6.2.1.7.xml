@@ -1,0 +1,66 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv4 Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[EIGRP AS 1]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Internet]]></text> 
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Network Command with Wildcard Mask</b>]]></text>
+</component>  
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Enables EIGRP for a specific interface, using 192.168.10.8/30 subnet.]]></text>
+</component>
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Alternative Network Command Configuration Using a Subnet Mask</b>]]></text>
+</component> 
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Configuring the Network Command and Wildcard Mask</b>]]></text>
+</component> 
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+
+<component id="ID_SC5" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+<feedback id="fb"><![CDATA[<b>***</b><font face="_sans" color="#FFFFFF" >You must enter the exact and full command.</font><b>***</b> 
+]]></feedback>		
+<existingcommands><![CDATA[<pre><font face="_sans" ><b>Configure R3 to enable EIGRP on all interfaces in the following order:<ul class="bubbleBullets"><li>Enter router configuration mode using AS 1</li><li>Enable EIGRP for R3’s 192.168.1.0/24 network without using a wildcard mask</li><li>Enable EIGRP for R3’s 192.168.10.4/30 network using a wildcard mask</li><li>Enable EIGRP for R3’s 192.168.10.8/30 network using a wildcard mask</li></ul></b></font><pre>]]></existingcommands>
+<command prompt="R3(config)#">
+<correctresponse><![CDATA[router eigrp 1]]></correctresponse>
+</command>
+<command prompt="R3(config-router)#">
+<correctresponse><![CDATA[network 192.168.1.0]]></correctresponse>
+</command>
+<command prompt="R3(config-router)#">
+<correctresponse><![CDATA[network 192.168.10.4 0.0.0.3]]></correctresponse>
+<deviceresponse><![CDATA[*Feb 28 20:47:22.695: %DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 192.168.10.5 (Serial0/0/0) is up: new adjacency]]></deviceresponse> 
+</command>
+<command prompt="R3(config-router)#">
+<correctresponse><![CDATA[network 192.168.10.8 0.0.0.3]]></correctresponse>
+<deviceresponse><![CDATA[*Feb 28 20:47:06.555: %DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 192.168.10.9 (Serial0/0/1) is up: new <br>R3(config-router)#]]></deviceresponse> 
+<instruction><![CDATA[<font face="_sans" class="syntaxBottomLine"><b>You successfully configured the network command and wildcard mask.</b>]]></instruction>
+</command>
+<command prompt=""/>
+</component>
+
+</textcomponents>
+
+

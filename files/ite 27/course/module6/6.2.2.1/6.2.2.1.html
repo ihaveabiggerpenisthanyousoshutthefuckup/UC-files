@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.1 Verifying EIGRP: Examining Neighbors</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying EIGRP: Examining Neighbors</h1>
+        <div>
+          <p>Before EIGRP can send or receive any updates, routers must establish adjacencies with their neighbors. EIGRP routers establish adjacencies with neighbor routers by exchanging EIGRP Hello packets. </p>
+          <p></p>
+          <p>Use the<b> show ip eigrp neighbors </b>command to view the neighbor table and verify that EIGRP has established an adjacency with its neighbors. For each router, you should be able to see the IPv4 address of the adjacent router and the interface that this router uses to reach that EIGRP neighbor. Using this topology, each router has two neighbors listed in the neighbor table.</p>
+          <p></p>
+          <p>The column headers in the<b> show ip eigrp neighbors </b>command output identify the following:</p>
+          <p>
+            <ul>
+              <li>
+                <b>H </b>- Lists the neighbors in the order that they were learned.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address </b>- IPv4 address of the neighbor.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface </b>- Local interface on which this Hello packet was received.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hold </b>- Current hold time. When a Hello packet is received, this value is reset to the maximum hold time for that interface, and then counts down to zero. If zero is reached, the neighbor is considered down.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Uptime </b>- Amount of time since this neighbor was added to the neighbor table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Smooth Round Trip Timer (SRTT)</b> and <b>Retransmission Timeout</b> (<b>RTO</b>) - Used by RTP to manage reliable EIGRP packets. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Queue Count </b>- Should always be zero. If more than zero, then EIGRP packets wait to be sent. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Sequence Number </b>- Used to track updates, queries, and reply packets. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The<b> show ip eigrp neighbors </b>command is very useful for verifying and troubleshooting EIGRP. </p>
+          <p></p>
+          <p>If a neighbor is not listed after adjacencies have been established with a router’s neighbors, check the local interface to ensure it is activated with the<b> show ip interface brief </b>command. If the interface is active, try to <b>ping</b> the IPv4 address of the neighbor. If the <b>ping</b> fails, it means that the neighbor interface is down and must be activated. If the <b>ping</b> is successful and EIGRP still does not see the router as a neighbor, examine the following configurations:</p>
+          <p>
+            <ul>
+              <li>Are both routers configured with the same EIGRP autonomous system number?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is the directly connected network included in the EIGRP<b> network </b>statements?</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output of the "show i. p. e. i. g. r. p. neighbors" command.  The neighbors i. p. address, local interface, and seconds before declaring neighbor down and uptime are highlighted in orange.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>Router Platforms</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[Branch]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Network Edge]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Service Provider]]></text>
+</component>
+</textcomponents>

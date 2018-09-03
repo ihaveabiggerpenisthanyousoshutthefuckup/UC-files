@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.2 Step 1 – Configure the VTP Server</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 1 – Configure the VTP Server</h1>
+        <div>
+          <p>Confirm that all switches are configured with default settings to avoid any issues with configuration revision numbers. Configure S1 as the VTP server using the <b>vtp mode server</b> global configuration command, as shown in Figure 1</p>
+          <p>Issue the <b>show vtp status</b> command to confirm that S1 is a VTP server, as shown in Figure 2.</p>
+          <p></p>
+          <p>Notice how the configuration revision number is still set to 0 and the number of existing VLANs is 5. This is because no VLANs have yet been configured and the switch does not belong to a VTP domain. The 5 VLANs are the default VLAN 1 and VLANs 1002-1005.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows commands to configure vtp. Figure 2  shows output of dhow vtp status</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

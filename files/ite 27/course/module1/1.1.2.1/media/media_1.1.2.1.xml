@@ -1,0 +1,48 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Design for Scalability</b>]]></text>
+	</component>
+	
+	<component id="ID_top01_txt01">
+		<text><![CDATA[Wiring Closet]]></text>
+	</component>
+	<component id="ID_top01_txt02">
+		<text><![CDATA[Backbone with Redundant Links]]></text>
+	</component>
+	<component id="ID_top01_txt03">
+		<text><![CDATA[Server Farm]]></text>
+	</component>
+	
+	
+	<component id="ID_top02_txt01">
+		<text><![CDATA[EtherChannel]]></text> 
+	</component>
+	<component id="ID_top02_txt02">
+		<text><![CDATA[EtherChannel]]></text> 
+	</component>
+	
+	<component id="ID_top03_txt01">
+		<text><![CDATA[Wireless AP]]></text>
+	</component>
+	<component id="ID_top03_txt02">
+		<text><![CDATA[WAP4410N Wireless-N AP]]></text>
+	</component>
+	<component id="ID_top03_txt03">
+		<text><![CDATA[or]]></text>
+	</component>
+	<component id="ID_top03_txt04">
+		<text><![CDATA[Cisco WAP131 Wireless-N]]></text>
+	</component>
+	
+	<component id="ID_top04_txt01">
+		<text><![CDATA[Area 1]]></text> 
+	</component>
+	<component id="ID_top04_txt02">
+		<text><![CDATA[Area 0]]></text> 
+	</component>
+	<component id="ID_top04_txt03">
+		<text><![CDATA[Area 51]]></text> 
+	</component>
+	
+</textcomponents>

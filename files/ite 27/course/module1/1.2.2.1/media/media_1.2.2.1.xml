@@ -1,0 +1,113 @@
+﻿<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Network Security Organizations</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<b>Security</b>]]></text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[<b>Broadcast Containment</b>]]></text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[Site B]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[Site A]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[Accounting]]>
+        </text>
+    </component>
+    <component id="ID_txt09">
+        <text>
+            <![CDATA[Engineering]]>
+        </text>
+    </component>
+    <component id="ID_txt14">
+        <text>
+            <![CDATA[Access]]>
+        </text>
+    </component>
+    <component id="ID_txt15">
+        <text>
+            <![CDATA[Distribution]]>
+        </text>
+    </component>
+    <component id="ID_txt16">
+        <text>
+            <![CDATA[Access]]>
+        </text>
+    </component>
+    <component id="ID_txt17">
+        <text>
+            <![CDATA[Distribution]]>
+        </text>
+    </component>
+    <component id="ID_txt18">
+        <text>
+            <![CDATA[Access]]>
+        </text>
+    </component>
+    <component id="ID_txt19">
+        <text>
+            <![CDATA[Distribution]]>
+        </text>
+    </component>
+    <component id="ID_txt25">
+        <text>
+            <![CDATA[<b>Logical Grouping</b>]]></text>
+    </component>
+    <component id="ID_txt26">
+        <text>
+            <![CDATA[<b>Locations</b>]]></text>
+    </component>
+    <component id='ID_titleTxt01'>
+        <text>
+            <![CDATA[Broadcast Containment]]>
+        </text>
+    </component>
+    <component id='ID_bodyTxt01'>
+        <text>
+            <![CDATA[Routers limit broadcasts to the local network.]]>
+        </text>
+    </component>
+    <component id='ID_titleTxt02'>
+        <text>
+            <![CDATA[Security]]>
+        </text>
+    </component>
+    <component id='ID_bodyTxt02'>
+        <text>
+            <![CDATA[Routers can be configured with access control lists to filter unwanted traffic.]]>
+        </text>
+    </component>
+    <component id='ID_titleTxt03'>
+        <text>
+            <![CDATA[Locations]]>
+        </text>
+    </component>
+    <component id='ID_bodyTxt03'>
+        <text>
+            <![CDATA[Routers can be used to interconnect geographically separated locations.]]>
+        </text>
+    </component>
+    <component id='ID_titleTxt04'>
+        <text>
+            <![CDATA[Logical Grouping]]>
+        </text>
+    </component>
+    <component id='ID_bodyTxt04'>
+        <text>
+            <![CDATA[Routers logically group users, such as departments within a company, who have common needs or require access to the same resources.]]>
+        </text>
+    </component>
+    
+</textcomponents>

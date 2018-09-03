@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Configure PVST+</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>Primary root bridge for VLAN 20<br/>Secondary root bridge for VLAN 10</b>]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Primary root bridge for VLAN 10<br/>Secondary root bridge for VLAN 20</b>]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[802.1Q Trunk]]></text> 
+</component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[VLAN 10]]></text> 
+</component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[VLAN 20]]></text> 
+</component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[802.1Q Trunk]]></text> 
+</component>
+<component id="ID_s1_txt07">
+  <text><![CDATA[802.1Q Trunk]]></text> 
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Configure PVST+</b>]]></text>
+</component>
+
+
+<component id="ID_s2_txt01">
+  <text><![CDATA[This command forces S3 to be the primary root for VLAN 20.]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[This command forces S3 to be the secondary root for VLAN 10.]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[This command forces S1 to be the primary root for VLAN 10.]]></text> 
+</component>
+<component id="ID_s2_txt04">
+  <text><![CDATA[This command forces S1 to be the secondary root for VLAN 20.]]></text> 
+</component>
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Configure PVST+</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+  <text><![CDATA[This command sets a low priority for S3, making it likely that S3 will be the primary root for VLAN 20.]]></text> 
+  </component>
+<component id="ID_s3_txt02">
+  <text><![CDATA[This command sets a low priority for S1, making it likely that S1 will be the primary root for VLAN 10.]]></text> 
+  </component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Configure PVST+</b>]]></text>
+</component>
+
+<component id="ID_s4_txt01">
+  <text><![CDATA[&lt;output omitted&gt;]]></text> 
+  </component>
+<component id="ID_s4_txt02">
+  <text><![CDATA[&lt;output omitted&gt;]]></text> 
+  </component>
+
+<component id="ID_s5_title">
+<text><![CDATA[<b>Configure PVST+</b>]]></text>
+</component>
+
+<component id="ID_s5_txt01">
+  <text><![CDATA[&lt;output omitted&gt;]]></text> 
+  </component>
+<component id="ID_s5_txt02">
+  <text><![CDATA[&lt;output omitted&gt;]]></text> 
+  </component>
+
+<component id="ID_s6_title">
+<text><![CDATA[<b>Configuring PVST+ Load Balancing</b>]]></text>
+</component>
+
+
+<component id="ID_sc_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+
+
+<component id="ID_SC2" fontface="_typewriter" fontSize="12" fontColor="#ffffff">
+		<feedback id="fb"><![CDATA[<b><font face="_sans"color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b>
+		]]></feedback>
+		<existingcommands><![CDATA[<font face="_sans"><b>Configure the following on S3<ul><li>VLAN 20 as primary root<li>VLAN 10 as secondary root</ul></b></font>]]></existingcommands>
+		<command prompt="S3(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 20 root primary]]></correctresponse>
+		</command>	
+		<command prompt="S3(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 10 root secondary]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Configure the following on S1<ul><li>VLAN 10 as primary root<li>VLAN 20 as secondary root<li>Set VLAN 1 to priority 0<li>Return to privileged EXEC mode</ul></font>]]></instruction>
+		</command>	
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 10 root primary]]></correctresponse>
+		</command>	
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 20 root secondary]]></correctresponse>
+		</command>	
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[spanning-tree vlan 1 priority 0]]></correctresponse>
+		</command>	
+		<command prompt="S1(config)#">
+			<correctresponse><![CDATA[end]]></correctresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Display the spanning-tree status for VLAN 1.</font>]]></instruction>
+		</command>	
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show spanning-tree vlan 1]]></correctresponse>
+				<deviceresponse><![CDATA[<font face="_typewriter" ><br>VLAN0001 <br>  Spanning tree enabled protocol ieee <br>  Root ID    Priority    1 <br>             Address     0019.aa9e.b000 <br>             This bridge is the root <br>             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec <br> <br>  Bridge ID  Priority    1      (priority 0 sys-id-ext 1) <br>             Address     0019.aa9e.b000 <br>             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec <br>             Aging Time  300 sec <br> <br>Interface           Role Sts Cost      Prio.Nbr Type <br>------------------- ---- --- --------- -------- --------------------------- <br>Fa0/2               Desg FWD 19        128.2    P2p <br>Fa0/4               Desg FWD 19        128.4    P2p<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>Display the current configuration filtering the output to begin at spanning-tree.</font>]]></instruction>
+		</command>
+		<command prompt="S1#">
+			<correctresponse><![CDATA[show running-config | begin spanning-tree]]></correctresponse>
+				<deviceresponse><![CDATA[spanning-tree mode pvst <br>spanning-tree extend system-id <br>spanning-tree vlan 1 priority 0 <br>spanning-tree vlan 10 priority 24576 <br>spanning-tree vlan 20 priority 28672 <br>&lt;output omitted&gt;<br>]]></deviceresponse>
+			<instruction><![CDATA[<font face="_sans"><b>You successfully configured PVST+.</font>]]></instruction>
+		</command>
+		<command prompt=""/> 
+	</component>
+
+
+<component id="ID_sc1_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="ID_sc1_showme">
+		<text><![CDATA[Show Me]]></text>
+	</component>
+	<component id="ID_sc1_showall">
+		<text><![CDATA[Show All]]></text>
+	</component>
+
+</textcomponents>
+
+
+
+
+

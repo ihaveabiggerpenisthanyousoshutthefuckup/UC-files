@@ -1,0 +1,16 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>OSPFv2 Multiaccess Broadcast Reference Topology</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Area 0</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>BDR</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>DR</b>]]></text>
+</component>
+
+</textcomponents>

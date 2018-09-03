@@ -1,0 +1,28 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>VTP Versions</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="mtable_top">
+<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'><span style="color:#98D3D1">.</span></font></td>
+</tr>
+    <tr>
+        <td width="190" bgcolor='#666263' valign="top" ><font color='#ffffff'><b>VTP Version</b></font></td>
+        <td width="406.99" bgcolor='#666263'  valign="top" ><font color='#ffffff'><b>Definition</b></font></td>
+
+
+    </tr>
+    <tr>
+        <td bgcolor='#E9E7E8' valign="top"><font color='#393536'>VTP Version 1</font></td>
+        <td bgcolor='#E9E7E8' valign="top"><font color='#393536' ><textformat blockindent="-14"><ul><li>Default VTP mode on all switches.</li><li>Supports normal range VLANs only.</li></ul></textformat></font></td>
+    </tr>
+   <tr>
+        <td bgcolor='#F2F2F2' valign="top"><font color='#393536'>VTP Version 2</font></td>
+        <td bgcolor='#F2F2F2' valign="top"><font color='#393536'><textformat blockindent="-14"><ul><li>Supports normal range VLANs only.</li><li>Supports legacy Token Ring networks.</li><li>Supports advanced features including unrecognized Type-Length-Value (TLV), version-dependent transparent mode, and consistency checks.</li></ul></textformat></font></td>
+    </tr>
+</table>]]>
+</text>
+</component>
+</textcomponents>

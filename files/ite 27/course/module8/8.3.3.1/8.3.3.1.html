@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.3.3.1 Verify OSPFv3 Neighbors</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.3.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify OSPFv3 Neighbors</h1>
+        <div>
+          <p>Use the<b> show ipv6 ospf neighbor </b>command to verify that the router has formed an adjacency with its neighboring routers. If the router ID of the neighboring router is not displayed, or if it does not show as being in a state of FULL, the two routers have not formed an OSPFv3 adjacency. </p>
+          <p></p>
+          <p>If two routers do not establish a neighbor adjacency, link-state information is not exchanged. Incomplete LSDBs can cause inaccurate SPF trees and routing tables. Routes to destination networks may not exist or may not be the most optimum path.</p>
+          <p></p>
+          <p>Figure 1 displays the neighbor adjacency of R1. For each neighbor, this command displays the following output:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Neighbor ID </b>- The router ID of the neighboring router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Pri </b>- The OSPFv3 priority of the interface. Value is used in the DR and BDR election.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>State </b>- The OSPFv3 state of the interface. FULL state means that the router and its neighbor have identical OSPFv3 LSDBs. On multiaccess networks such as Ethernet, two routers that are adjacent may have their states displayed as 2WAY. The dash indicates that no DR or BDR is required because of the network type.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dead Time </b>- The amount of time remaining that the router waits to receive an OSPFv3 Hello packet from the neighbor before declaring the neighbor down. This value is reset when the interface receives a Hello packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface ID </b>- The interface ID or link ID.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface </b>- The interface on which this router has formed adjacency with the neighbor.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to verify the R2 and R3 neighbors using the<b> show ipv6 ospf neighbor </b>command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the following command run on router R-1, show i.p.v.6. O.S.P.F. neighbor.  Figure two is an interactive media element that allows the learner to verify the O.S.P.F.v.3 neighbors for router R-2.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide width="780">
+	<element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+	<element type="IMAGE" x="0" y="0" width="1000" height="490" src="media_3.2.1.3.png" />
+<element type="TEXT" compId="ID_inst" x="25" y="7" width="955" expand="down" align="center" size="17" color="#ffffff" />
+
+
+<element type="TEXT" compId="ID_txt02" x="467" y="168" width="474" expand="down" align="left" />
+<element type="TEXT" compId="ID_txt01" x="467" y="102" width="474" expand="down" align="left" />
+<element type="TEXT" compId="ID_txt04" x="467" y="299" width="471" expand="down" align="left" />
+<element type="TEXT" compId="ID_txt03" x="467" y="235" width="470" expand="down" align="left" />
+<element type="TEXT" compId="ID_txt05" x="467" y="366" width="471" expand="down" align="left" />
+
+<element type="TEXTBOX" titleId="ID_instr_title" bodyId="ID_instr_body" x="17" y="58" width="270" height="165" animated="1" subType="ROLLOVER" />
+
+<element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="false" compWidth="120" compHeight="40" dragIcon="" dropIcon="" tickPosition="left" dragAlpha=".3">
+
+<subelement type="DROP" compId="" clipName="drop_target01" x="345" y="98" match="3"/>
+<subelement type="DROP" compId="" clipName="drop_target02" x="344" y="164" match="0"/>
+<subelement type="DROP" compId="" clipName="drop_target03" x="344" y="230" match="1"/>
+<subelement type="DROP" compId="" clipName="drop_target04" x="344" y="296" match="2"/>
+<subelement type="DROP" compId="" clipName="drop_target05" x="344" y="362" match="4"/>
+
+<subelement type="DRAG" compId="ID_drag01" x="27" clipName="drag_target01" y="246" />
+<subelement type="DRAG" compId="ID_drag02" x="171" clipName="drag_target02" y="246" />
+<subelement type="DRAG" compId="ID_drag03" x="27" clipName="drag_target03" y="301" />
+<subelement type="DRAG" compId="ID_drag04" x="171" clipName="drag_target04" y="301" />
+<subelement type="DRAG" compId="ID_drag05" x="95" clipName="drag_target05" y="356" />
+
+
+<subelement type="CHECK" x="35" y="446" width="110" height="21" compId="ID_CHECK"/>
+<subelement type="RESET" x="160" y="446" width="110" height="21" compId="ID_RESET"/>
+		  
+<subelement type="FEEDBACK" x="368" y="150" width="300" height="167" correctTitleId="ID_CORRECT_TITLE" correctBodyId="ID_CORRECT_BODY" wrongTitleId="ID_INCORRECT_TITLE" wrongBodyId="ID_INCORRECT_BODY"/>
+
+
+
+
+
+
+<!-- 
+<slide buttonType="BLUE" buttonX="25" buttonY="426" buttonWidth="120" buttonHeight="21" compId="ID_CHECK" selected="false" >
+</slide>
+<slide buttonType="BLUE" buttonX="167" buttonY="426" buttonWidth="120" buttonHeight="21" compId="ID_RESET" selected="false" >
+</slide>
+<subelement type="DROP" compId="" clipName="drop_target01" x="345" y="98" />
+<subelement type="DROP" compId="" clipName="drop_target02" x="344" y="164" />
+<subelement type="DROP" compId="" clipName="drop_target03" x="344" y="230" />
+<subelement type="DROP" compId="" clipName="drop_target04" x="344" y="296" />
+<subelement type="DROP" compId="" clipName="drop_target05" x="344" y="362" />
+<subelement type="DRAG" compId="ID_drag03" x="27" clipName="drag_target03" y="301" />
+<subelement type="DRAG" compId="ID_drag01" x="27" clipName="drag_target01" y="246" />
+<subelement type="DRAG" compId="ID_drag04" x="171" clipName="drag_target04" y="301" />
+<subelement type="DRAG" compId="ID_drag02" x="171" clipName="drag_target02" y="246" />
+<subelement type="DRAG" compId="ID_drag05" x="95" clipName="drag_target05" y="356" />
+<element type="TEXTBOX" titleId="" bodyId="" x="324" y="174" width="300" height="200" animated="0" subType="CLOSABLE" /> -->
+</element>
+
+	</slide>
+</data>

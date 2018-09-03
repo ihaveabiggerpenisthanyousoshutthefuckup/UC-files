@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.1 HSRP Overview</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>HSRP Overview</h1>
+        <div>
+          <p>Hot Standby Router Protocol (HSRP) was designed by Cisco to allow for gateway redundancy without any additional configuration on end devices. Routers configured with HSRP work together to present themselves as a single virtual default gateway (router) to end devices, as shown in the figure. One of the routers is selected by HSRP to be the active router. The active router will act as the default gateway for end devices. The other router will become the standby router. If the active router fails, the standby router will automatically assume the role of the active router. It will assume the role of default gateway for end devices. This does not require any configuration changes on the end devices.</p>
+          <p></p>
+          <p>Hosts are configured with a single default gateway address that is recognizable by both the active and standby routers. The default gateway address is a virtual IPv4 address along with a virtual MAC address that is shared amongst both HSRP routers.  End devices use this virtual IPv4 address as their default gateway address. The HSRP virtual IPv4 address is configured by the network administrator. The virtual MAC address is created automatically. Regardless of which physical router is used, the virtual IPv4 and MAC addresses provide consistent default gateway addressing for the end devices.</p>
+          <p></p>
+          <p>Only the active router will receive and forward traffic sent to the default gateway. If the active router fails, or if communication to the active router fails, the standby router will assume the role of the active router.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Add the media transcript</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

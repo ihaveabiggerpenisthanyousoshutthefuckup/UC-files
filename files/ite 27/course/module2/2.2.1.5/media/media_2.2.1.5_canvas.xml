@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+		
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="media_2.2.1.5.png" />
+			<element type="TEXT" subType="TITLE" compId="ID_s1_title"/>
+<element type="TEXT" compId="ID_s1_txt01" x="425.95" y="74" width="159" expand="down" align="center"/>
+<element type="TEXT" id="ID_static_1" text="F0/5" x="284.7" y="214.5" align="center" width="29" />
+<element type="TEXT" id="ID_static_2" text="F0/11" x="275.3" y="279" align="center" width="35" />
+<element type="TEXT" id="ID_static_3" text="F0/6" x="311.9" y="275.5" align="center" width="29" />
+<element type="TEXT" id="ID_static_4" text="172.17.10.21" x="154.45" y="406" align="center" width="71" />
+<element type="TEXT" id="ID_static_5" text="172.17.30.23" x="375.85" y="406" align="center" width="71" />
+<element type="TEXT" id="ID_static_6" text="G0/0" x="283.7" y="145" align="center" width="31" />
+<element type="TEXT" compId="ID_s1_txt02" x="117" y="228" width="103" expand="up" align="center" class="orangeCallOut"/>
+<element type="TEXT" compId="ID_s1_txt03" x="402.25" y="243" width="116" expand="up" align="center" />
+ 		</slide>
+		
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_tables.jpg"/>
+			<element type="TEXT" subType="TITLE" compId="ID_s2_title" color="#FFFFFF"/>
+			<element type="ROUTER" textId="ID_s2_txt001" x="40" y="55" width="600" height="400"/>
+			<element type="TEXT" compId="ID_s2_txt01" width="104" x="51.35" y="76.35" align="left" expand="right" color="#FFFFFF"/>
+			<element type="TEXT" compId="ID_s2_txt02" width="104" x="51.35" y="161.35" align="left" expand="right" color="#FFFFFF"/>
+			<element type="TEXT" compId="ID_s2_txt03" width="104" x="51.35" y="231.85" align="left" expand="right" color="#FFFFFF"/>
+		</slide>	
+</slide>
+<text id="ID_s2_txt001"><![CDATA[<table width="412" border="0" cellspacing="0" cellpadding="0"> <tr> <td colspan="2">R1# <strong>show interfaces</strong></td> </tr> <tr><td width="11">&nbsp;</td> <td width="389">&nbsp;</td> </tr> <tr> <td colspan="2">GigabitEthernet0/0.10 is up,line protocol is down (disabled)</td> </tr> <tr> <td>&nbsp;</td> <td><font color="#F68026"><b>Encapsulation 802.1Q Virtual Lan,Vlan ID 100</b></font></td> </tr> <tr> <td>&nbsp;</td> <td>ARP type :ARPA,ARP Timeout 04:00:00,</td> </tr> <tr> <td>&nbsp;</td> <td>Last clearing of &quot;show interface&quot; counters never</td> </tr> <tr> <td>&nbsp;</td> <td>&nbsp;</td> </tr> <tr> <td colspan="2">R1#</td> </tr> <tr> <td colspan="2">R1# <strong>show run</strong></td> </tr> <tr> <td colspan="2">Building configuration...</td> </tr> <tr> <td colspan="2">Current configuration : 505 bytes</td> </tr> <tr> <td>&nbsp;</td> <td>&nbsp;</td> </tr> <tr> <td colspan="2">!</td> </tr> <tr> <td colspan="2">interface GigabitEthernet0/0.10</td> </tr> <tr> <td>&nbsp;</td><td><font color="#F68026"><b>encapsulation dot1Q 100</b></font></td> </tr> <tr> <td>&nbsp;</td> <td>ip address 172.17.10.1 255.255.255.0</td> </tr> <tr> <td colspan="2">!</td> </tr> <tr> <td colspan="2">interface GigabitEthernet0/0.30</td> </tr></table>]]></text>
+</data>

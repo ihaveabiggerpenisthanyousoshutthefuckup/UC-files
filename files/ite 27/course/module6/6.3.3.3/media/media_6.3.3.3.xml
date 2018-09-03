@@ -1,0 +1,46 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv4 Topology</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>EIGRP Routing Domain</b>]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+	<text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_s1_txt03">
+	<text><![CDATA[<b>Feasible Successor?</b>]]></text> 
+</component>
+<component id="ID_s1_txt04">
+	<text><![CDATA[<b>Successor</b>]]></text> 
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Feasible Distance and the Successor</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Feasible Distance]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Successor]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[&lt;output omitted&gt;]]></text>
+</component>
+
+
+<component id="ID_s2_Title_txt01">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s2_Body_txt01">
+<text><![CDATA[<textformat blockindent='-14'><ul><li>R3, with the address 192.168.10.10, is the successor for 192.168.1.0/24.</li><li>This route has a feasible distance of 3,012,096. </li></ul></textformat>]]></text>
+</component>
+
+
+</textcomponents>

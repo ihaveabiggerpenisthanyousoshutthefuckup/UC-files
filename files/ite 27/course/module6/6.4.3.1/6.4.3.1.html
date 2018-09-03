@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.4.3.1 IPv6 Neighbor Table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.4.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 Neighbor Table</h1>
+        <div>
+          <p>Similar to EIGRP for IPv4, before any EIGRP for IPv6 updates can be sent or received, routers must establish adjacencies with their neighbors, as shown in Figure 1. </p>
+          <p></p>
+          <p>Use the<b> show ipv6 eigrp neighbors </b>command to view the neighbor table and verify that EIGRP for IPv6 has established an adjacency with its neighbors. The output shown in Figure 2 displays the IPv6 link-local address of the adjacent neighbor and the interface that this router uses to reach that EIGRP neighbor. Using meaningful link-local addresses makes it easy to recognize the neighbors R2 at FE80::2 and R3 at FE80::3.</p>
+          <p></p>
+          <p>The column headers in the<b> show ipv6 eigrp neighbors </b>command output identify the following:</p>
+          <p>
+            <ul>
+              <li>
+                <b>H </b>- Lists the neighbors in the order they were learned.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address </b>- IPv6 link-local address of the neighbor.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface </b>- Local interface on which this Hello packet was received.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hold </b>- Current hold time. When a Hello packet is received, this value is reset to the maximum hold time for that interface and then counts down to zero. If zero is reached, the neighbor is considered down.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Uptime </b>- Amount of time since this neighbor was added to the neighbor table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SRTT</b> and <b>RTO </b>- Used by RTP to manage reliable EIGRP packets. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Queue Count </b>- Should always be zero. If it is more than zero, then EIGRP packets are waiting to be sent. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Sequence Number </b>- Used to track updates, queries, and reply packets. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The<b> show ipv6 eigrp neighbors </b>command is useful for verifying and troubleshooting EIGRP for IPv6. If an expected neighbor is not listed, ensure that both ends of the link are up/up using the<b> show ipv6 interface brief </b>command. The same requirements exist for establishing neighbor adjacencies with EIGRP for IPv6 as it does for IPv4. If both sides of the link have active interfaces, check to see:</p>
+          <p>
+            <ul>
+              <li>Are both routers configured with the same EIGRP autonomous system number?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is the interface enabled for EIGRP for IPv6 with the correct autonomous system number?</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram with the extra link between router one and router three.  Router two is connected to i. s. p., and the internal network is highlighted excluding the link between router two and i. s. p.  I. p. v. 6 lan addresses are used. Figure five shows the output from the "show i. p. v. 6 e. i. g. r. p. neighbors" command. The link local interface address, local interfaces, hold time, and uptime are highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

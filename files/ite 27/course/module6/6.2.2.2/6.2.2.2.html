@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.2 Verifying EIGRP: show ip protocols Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying EIGRP: show ip protocols Command</h1>
+        <div>
+          <p>The<b> show ip protocols </b>command is useful to identify the parameters and other information about the current state of any active IPv4 routing protocol processes configured on the router. The<b> show ip protocols </b>command displays different types of output specific to each routing protocol. </p>
+          <p></p>
+          <p>The output in Figure 1 indicates several EIGRP parameters, including:</p>
+          <p></p>
+          <p>1. EIGRP is an active dynamic routing protocol on R1 configured with the autonomous system number 1.</p>
+          <p>2. The EIGRP router ID of R1 is 1.1.1.1. </p>
+          <p>3. The EIGRP administrative distances on R1 are internal AD of 90 and external of 170 (default values). </p>
+          <p>4. By default, EIGRP does not automatically summarize networks. Subnets are included in the routing updates. </p>
+          <p>5. The EIGRP neighbor adjacencies R1 has with other routers used to receive EIGRP routing updates.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Prior to IOS 15, EIGRP automatic summarization was enabled by default. </p>
+          <p></p>
+          <p>The output from the<b> show ip protocols </b>command is useful in debugging routing operations. Information in the Routing Information Sources field can help identify a router suspected of delivering bad routing information. The field lists all the EIGRP routing sources the Cisco IOS software uses to build its IPv4 routing table. For each source, note the following:</p>
+          <p>
+            <ul>
+              <li>IPv4 address </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Administrative distance </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Time the last update was received from this source</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, EIGRP has a default AD of 90 for internal routes and 170 for routes imported from an external source, such as default routes. When compared to other IGPs, EIGRP is the most preferred by the Cisco IOS, because it has the lowest administrative distance. EIGRP has a third AD value of 5, for summary routes. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output of the "show i. p. protocols" command listing e. i. g. r. p. as the current protocol.  The router i. d., a. d., summarization, and networks are highlighted in orange. Figure two shows a table of different protocols and their corresponding administrative distance.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

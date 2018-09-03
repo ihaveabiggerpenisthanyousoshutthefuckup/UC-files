@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide>
+        <element type="IMAGE" x="0" y="0" width="1000" height="490" src="../../../common/images/page_backgrounds/bg_activity.jpg" />
+        <element type="IMAGE" src="media_2.1.4.3.png" x="0" y="0" width="1000" height="490" />
+        <element type="TEXTBOX" titleId="ID_s1_instr_title" bodyId="ID_s1_instr_body" x="23.5" y="65" width="278" height="160" />
+        <element type="TEXT" compId="ID_txt01" x="73" y="235" width="171" expand="down" align="left" class="orangeCallOut" />
+        <element type="TEXT" subType="TITLE" compId="ID_title" color="#FFFFFF" />
+        <element type="TEXT" compId="ID_txt04" x="442" y="126" width="58" expand="down" align="left" />
+        <element type="TEXT" compId="ID_txt03" x="785" y="81" width="58" expand="left" align="right" />
+        <element type="TEXT" compId="ID_txt02" x="475" y="79" width="58" expand="right" align="left" />
+        <element type="TEXT" compId="ID_txt05" x="874" y="126" width="58" expand="down" align="left" />
+        <element type="TEXT" compId="ID_txt06" x="372" y="127" width="45" expand="down" align="right" />
+        <element type="TEXT" compId="ID_txt07" x="364" y="260" width="45" expand="down" align="right" />
+        <element type="TEXT" compId="ID_txt08" x="460" y="302" width="58" expand="down" align="left" />
+        <element type="TEXT" compId="ID_txt09" x="824" y="254" width="45" expand="up" align="center" />
+        <element type="TEXT" compId="ID_txt10" x="871" y="253" width="58" expand="right" align="left" />
+        <element type="TEXT" compId="ID_txt11" x="784" y="306" width="58" expand="left" align="right" />
+        <element type="ACTIVITY" subType="DRAGDROP" method="NORMAL" replicate="true" compWidth="121.5" compHeight="31.25" dragIcon="" dropIcon="" tickPosition="left" dragAlpha="0.3">
+            <subelement type="DROP" x="602.1" y="94.65" match="0" />
+            <subelement type="DROP" x="377.2" y="185" match="0" />
+            <subelement type="DROP" x="602.1" y="185" match="0" />
+            <subelement type="DROP" x="802.3" y="185" match="0" />
+            <subelement type="DROP" x="602.1" y="276.8" match="1" />
+            <subelement type="DRAG" compId="ID_drag01" x="98.5" y="334.75" />
+            <subelement type="DRAG" compId="ID_drag02" x="98.5" y="378" />
+            <subelement type="CHECK" x="56.4" y="443" width="95" height="21" compId="ID_CHECK" />
+            <subelement type="RESET" x="182.3" y="443" width="95" height="21" compId="ID_RESET" />
+            <subelement type="FEEDBACK" x="345" y="165" width="300" height="200" correctTitleId="ID_CORRECT_TITLE" correctBodyId="ID_CORRECT_BODY" wrongTitleId="ID_INCORRECT_TITLE" wrongBodyId="ID_INCORRECT_BODY" />
+        </element>
+    </slide>
+</data>

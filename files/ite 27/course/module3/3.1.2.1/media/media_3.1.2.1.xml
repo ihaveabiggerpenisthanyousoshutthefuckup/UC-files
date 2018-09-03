@@ -1,0 +1,125 @@
+<textcomponents>
+
+<!-- s1    -->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Normal STP Operation</b>]]></text>
+</component>
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Trunk1 </font></b>]]></text> 
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Trunk 2</font></b>]]></text> 
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Trunk 3</font></b>]]></text> 
+</component>
+
+
+<component id="ID_s1_txt09">
+<text><![CDATA[PC1 sends a broadcast frame.]]></text> 
+</component>
+<component id="ID_s1_txt10">
+<text><![CDATA[S2 forwards the broadcast out all ports, except the originating port and the blocked port.]]></text> 
+</component>
+<component id="ID_s1_txt11">
+<text><![CDATA[S1 forwards the broadcast out all ports, except the origination port.]]></text> 
+</component>
+<component id="ID_s1_txt12">
+<text><![CDATA[S3 receives the frame and forwards it back to S2.]]></text> 
+</component>
+<component id="ID_s1_txt13">
+<text><![CDATA[S2 drops the frame because it received it on a blocked port.]]></text> 
+</component>
+
+<!-- s2    -->
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>STP Compensates for Network Failure</b>]]></text>
+</component>
+<component id="ID_s2_txt10">
+<text><![CDATA[<b>Trunk3</font></b>]]></text> 
+</component>
+<component id="ID_s2_txt09">
+<text><![CDATA[<b>Trunk2</font></b>]]></text> 
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[<b>Trunk1</font></b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[The trunk link between S2 and S1 has failed.]]></text> 
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[S2 unblocks the port for Trunk2.]]></text> 
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[PC1 sends a broadcast frame to S2.]]></text> 
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[S2 forwards the broadcast out all switch ports, except the originating port and the failed link for Trunk1.]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[S3 forwards the broadcast out all available switch ports, except the originating port.]]></text> 
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[S1 forwards the broadcast only out of F0/3.]]></text> 
+</component>
+
+
+
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+
+<component id="s2_end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="s2_fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="s2_pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="s2_play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="s2_rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="s2_start">
+<text><![CDATA[Start]]></text>
+</component>
+
+
+
+</textcomponents>

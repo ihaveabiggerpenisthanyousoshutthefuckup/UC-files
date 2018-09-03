@@ -1,0 +1,17 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_s2_txt01,
+#ID_s2_txt02,
+#ID_s2_txt03,
+#ID_s2_txt04,
+#ID_s3_txt01,
+#ID_s3_txt02 {
+    background-color: #FFFFFF !important;
+    box-shadow: 1px 1px 1px #888 !important;
+    padding: 5px !important;
+}
+
+.orangeColor {
+    color: #F68026 !important;
+}

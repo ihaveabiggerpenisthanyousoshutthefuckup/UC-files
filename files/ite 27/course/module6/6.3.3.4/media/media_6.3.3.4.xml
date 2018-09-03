@@ -1,0 +1,87 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>EIGRP for IPv4 Topology</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>EIGRP Routing Domain</b>]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+	<text><![CDATA[Internet]]></text> 
+</component>
+<component id="ID_s1_txt03">
+	<text><![CDATA[<b>Feasible Successor?</b>]]></text> 
+</component>
+<component id="ID_s1_txt04">
+	<text><![CDATA[<b>Successor</b>]]></text> 
+</component>
+
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Sending the Reported Distance</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[RD<br>2,170,112]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+	<text><![CDATA[<b>Feasible Successor?</b>]]></text> 
+</component>
+<component id="ID_s2_txt03">
+	<text><![CDATA[FD<br>2,170,112]]></text> 
+</component>
+<component id="ID_s2_txt04">
+	<text><![CDATA[I will send R2 my feasible distance to reach 192.168.1.0/24 as a reported distance.]]></text> 
+</component>
+<component id="ID_s2_txt05">
+	<text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+
+
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Does It Meet the Feasibility Condition?</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+  <text><![CDATA[<textformat blockindent="-14"><ul><li>R2’s feasible distance to 192.168.1.0 is 3,012,096.</li><li>R1’s reported distance to 192.168.1.0 is 2,170,112.</li><li>R1 meets the feasibility condition.</li></ul></textformat>]]></text> 
+  </component>
+<component id="ID_s3_txt02">
+	<text><![CDATA[&lt;output omitted&gt;]]></text>  
+</component>
+<component id="ID_s3_txt03">
+	<text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+<component id="ID_s3_txt04">
+	<text><![CDATA[Feasible Distance]]></text> 
+</component>
+<component id="ID_s3_txt05">
+	<text><![CDATA[Successor (R3)]]></text> 
+</component>
+<component id="ID_s3_txt06">
+	<text><![CDATA[Feasible Distance<br>Sent to R2 as R1’s Reported Distance]]></text> 
+</component>
+
+
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>Using the Feasible Successor</b>]]></text>
+</component>
+<component id="ID_s4_txt01">
+  <text><![CDATA[<font color="#F68026"><b>FD<br>41,024,256</b></font>]]></text> 
+  </component>
+<component id="ID_s4_txt02">
+	<text><![CDATA[<font color="#F68026"><b>New Successor</b></font>]]></text>  
+</component>
+<component id="ID_s4_txt03">
+	<text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+<component id="ID_s4_txt04">
+	<text><![CDATA[Feasible Distance]]></text> 
+</component>
+<component id="ID_s4_txt05">
+	<text><![CDATA[Successor (R1)]]></text> 
+</component>
+
+
+
+</textcomponents>

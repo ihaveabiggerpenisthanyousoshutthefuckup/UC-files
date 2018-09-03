@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+    <slide type="MBAR">
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="../../../common/images/page_backgrounds/bg_topolgy_multislide.jpg" />
+        <element type="IMAGE" x="0" y="0" width="680" height="490" src="2.1.4.1.png" />
+        <element type="TEXT" id="ID_static_5" text="F0/1" x="210" y="358" align="center" width="22" />
+        <element type="TEXT" id="ID_static_6" text="F0/3" x="432" y="359" align="center" width="23" />
+        <element type="TEXT" id="ID_static_7" text="F0/1" x="285" y="190" align="center" width="22" />
+        <element type="TEXT" id="ID_static_8" text="F0/3" x="368" y="190" align="center" width="23" />
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="2.1.4.1_A.png" />
+            <element type="TEXT" compId="ID_s1_txt01" x="78" y="97" width="226" expand="up" align="left" class="orangeCallOut" />
+            <element type="TEXT" compId="ID_s1_txt02" x="379" y="97" width="226" expand="up" align="left" class="orangeCallOut" />
+            <element type="TEXT" compId="ID_s1_txt03" x="45" y="285" width="221" expand="up" align="left" class="orangeCallOut" />
+            <element type="TEXT" compId="ID_s1_txt04" x="406" y="285" width="221" expand="up" align="left" class="orangeCallOut" />
+            <element type="TEXT" subType="TITLE" compId="ID_s1_title" />
+        </slide>
+        <slide>
+            <element type="IMAGE" x="0" y="0" width="680" height="490" src="2.1.4.1_B.png" />
+            <element type="TEXT" compId="ID_s2_txt01" x="45" y="188" width="226" expand="up" align="left" class="orangeCallOut" />
+            <element type="TEXT" compId="ID_s2_txt02" x="404" y="191" width="226" expand="up" align="left" class="orangeCallOut" />
+            <element type="TEXT" subType="TITLE" compId="ID_s2_title" />
+        </slide>
+    </slide>
+</data>

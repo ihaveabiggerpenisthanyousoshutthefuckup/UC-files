@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.1.2.8 802.1D BPDU Propagation and Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.1.2.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>802.1D BPDU Propagation and Process</h1>
+        <div>
+          <p>Each switch in the broadcast domain initially assumes that it is the root bridge for a spanning tree instance, so the BPDU frames that are sent contain the BID of the local switch as the root ID. By default, BPDU frames are sent every two seconds after a switch is booted. The default value of the Hello timer specified in the BPDU frame is two seconds. Each switch maintains local information about its own BID, the root ID, and the root path cost.</p>
+          <p></p>
+          <p>When adjacent switches receive a BPDU frame, they compare the root ID from the BPDU frame with the local root ID. If the root ID in the received BPDU is lower than the local root ID, the switch updates the local root ID and the ID in its BPDU messages. These messages indicate the new root bridge on the network. If the local root ID is lower than the root ID received in the BPDU frame, the BPDU frame is discarded.</p>
+          <p></p>
+          <p>The distance to the root bridge is indicated by the root path cost in the BPDU. The ingress port cost is then added to the root path cost in the BPDU to determine the internal root path cost from this switch to the root bridge. For example, if the BPDU was received on a Fast Ethernet switch port, the root path cost in the BPDU would be added to the ingress port cost of 19 for a cumulative internal root path cost. This is the cost from this switch to the root bridge. </p>
+          <p></p>
+          <p>After a root ID has been updated to identify a new root bridge, all subsequent BPDU frames sent from that switch contain the new root ID and updated root path cost. That way, all other adjacent switches are able to see the lowest root ID identified at all times. As the BPDU frames pass between other adjacent switches, the path cost is continually updated to indicate the total path cost to the root bridge. Each switch in the spanning tree uses its path costs to identify the best possible path to the root bridge. </p>
+          <p></p>
+          <p>The following summarizes the BPDU process:</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Bridge priority is the initial deciding factor when electing a root bridge. If the bridge priorities of all the switches are the same, the device with the lowest MAC address becomes the root bridge.</p>
+          <p></p>
+          <p>1. In Figure 1, each switch identifies itself as the root bridge. S2 forwards BPDU frames out all switch ports.</p>
+          <p></p>
+          <p>2. In Figure 2, when S3 receives a BPDU from switch S2, S3 compares its root ID with the BPDU frame it received. The priorities are equal, so the switch is forced to examine the MAC address portion to determine which MAC address has a lower value. S2 has a lower MAC address value, so S3 updates its root ID with the S2 root ID. At that point, S3 considers S2 as the root bridge.</p>
+          <p></p>
+          <p>3. In Figure 3, S1 compares its root ID with the one in the received BPDU frame, it identifies its local root ID as the lower value, and discards the BPDU from S2.</p>
+          <p></p>
+          <p>4. In Figure 4, S3 sends out its BPDU frames, and the root ID contained in the BPDU frame is that of S2.</p>
+          <p></p>
+          <p>5. In Figure 5, S2 receives the BPDU frame, and it discards it after verifying that the root ID in the BPDU matched its local root ID. </p>
+          <p></p>
+          <p>6. In Figure 6, S1 discards the BPDU frame received from S3 because S1 has a lower priority value in its root ID.</p>
+          <p></p>
+          <p>7. In Figure 7, S1 sends out its BPDU frames.</p>
+          <p></p>
+          <p>8. In Figure 8, S3 identifies the root ID in the BPDU frame as having a lower value and, therefore, updates its root ID values to indicate that S1 is now the root bridge.</p>
+          <p></p>
+          <p>9. In Figure 9, S2 identifies the root ID in the BPDU frame as having a lower value and, therefore, updates its root ID values to indicate that S1 is now the root bridge.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows three switches, each connected to the other two with a trunk link.  Each switch has a caption that displays the root bridge i.d., its bridge i.d., and the path cost.  Each bridge thinks it is the root bridge until they exchange b.p.d.u.'s and determine otherwise. Figure two shows switch 3 receiving a b.p.d.u. from switch 2 with a lower bridge i.d. so it changes its root bridge to switch 2's bridge i.d.. Figure three shows switch 1 receiving a b.p.d.u. from switch 2.  Switch one has a lower i.d. than switch 2 so it remains the root bridge. Figure four shows switch 3 sending b.p.d.u.'s to switches one and two. Figure five shows switch 2 receiving the b.p.d.u. from switch three.  Switch 2 has a lower i.d. so it remains the root. Figure six shows switch 1 receiving the b.p.d.u. from switch three.  Switch 1 has a lower i.d. so it remains the root. Figure seven shows switch 1 sending b.p.d.u.'s to switches 2 and 3.Figure eight shows switch 3 receiving the b.p.d.u. from switch 1 with a lower i.d. than its already changed root bridge, so it updates its root bridge i.d. to that of switch 1.Figure eight shows switch 2 receiving the b.p.d.u. from switch 1 with a lower i.d. than its already changed root bridge, so it updates its root bridge i.d. to that of switch 1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

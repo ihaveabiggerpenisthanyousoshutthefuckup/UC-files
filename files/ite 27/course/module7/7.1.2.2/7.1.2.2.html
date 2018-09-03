@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.2.2 Verifying the Propagated Default Route</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying the Propagated Default Route</h1>
+        <div>
+          <p>The figure displays a portion of the IPv4 routing tables for R1 and R3.  </p>
+          <p></p>
+          <p>In the routing tables for R1 and R3, notice the routing source and administrative distance for the new default route learned using EIGRP. The entry for the EIGRP learned default route is identified by the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>D </b>- This route was learned from an EIGRP routing update.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>* </b>- The route is a candidate for a default route.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>EX </b>- The route is an external EIGRP route, in this case a static route outside of the EIGRP routing domain.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>170 </b>- This is the administrative distance of an external EIGRP route.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Notice that R1 selects R3 as the successor to the default route because it has a lower feasible distance. Default routes provide a default path to outside the routing domain and, like summary routes, minimize the number of entries in the routing table.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output of the "show i. p. route" command on routers one and three demonstrating that they have learned the default static route through e. i. g. r. p.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

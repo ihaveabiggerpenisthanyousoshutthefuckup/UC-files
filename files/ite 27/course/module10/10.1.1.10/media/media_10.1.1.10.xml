@@ -1,0 +1,263 @@
+<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component>
+<!--slide01-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity - Part 1: Identify Network Types</b><br/><br/>Listed in the table are characteristics of different OSPF network types. Match the OSPF network type to its appropriate characteristic. Not all network types will be used. Click Button 2 to continue this activity.]]></text>
+</component>
+<component id='ID_s1_header01'>
+	<text><![CDATA[<b>OSPF Network Type</b>]]></text>
+</component>
+<component id='ID_s1_header02'>
+	<text><![CDATA[<b>OSPF Network Characteristics</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Connects multiple routers using Ethernet technology]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Connects branch sites (spokes) to a central site (hub)]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+   <text><![CDATA[Connects branch sites to a central site]]></text>
+   </component>
+
+<component id="ID_s1_txt04">
+   <text><![CDATA[Connects two routers directly on a single WAN network]]></text>
+   </component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s1_drag01'>
+	<text><![CDATA[<font color="#393536">Broadcast<br>Multiaccess</font>]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[<font color="#393536">Point-to-Multipoint</font>]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[<font color="#393536">Nonbroadcast<br>Multiaccess</font>]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[<font color="#393536">Point-to-Point</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each OSPF network type to its characteristic. Click Button 2 to continue.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the OSPF network type to its characteristic. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity - Part 2: Identify DR, BDR, and DRother Characteristics</b><br/><br/>Listed are the characteristics of routers configured with the OSPF routing protocol on a multiaccess network. Match the OSPF router characteristic with the appropriate OSPF router type. Click Button 3 to continue.]]></text>
+</component>
+
+
+<!--Number of rows in the table-->
+
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>DR</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>BDR</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>DRother</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Uses multicast 224.0.0.5 to listen to LSAs</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Floods LSAs to all participating routers</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Listens passively to LSAs</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Will promote itself if the DR stops producing hello packets</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>Does not flood LSAs to all routers within the network</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13'>Uses multicast 224.0.0.6 to send LSAs</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[3]]></text>
+</component>
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully matched each OSPF router characteristics to its OSPF router type. Click Button 3 to continue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully matched each OSPF router characteristics to its OSPF router type. Please click Reset to try again.]]></text>
+</component>
+
+
+
+<!--slide03-->
+<component id='ID_s3_inst'>
+	<text><![CDATA[<b>Activity  - Part 3: Order Steps in the DR Election Process</b><br/><br/>Order the steps to elect a DR when using the OSPF routing protocol. Drag each Election Step to its appropriate Step field  (i.e., Step 1, Step 2, Step 2a, etc.)]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s3_txt01'>
+	<text><![CDATA[Step 1]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[Step 2]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+   <text><![CDATA[Step 2a]]></text>
+   </component>
+
+<component id="ID_s3_txt04">
+   <text><![CDATA[Step 2b]]></text>
+   </component>
+
+   <component id="ID_s3_txt05">
+   <text><![CDATA[Step 2c]]></text>
+     </component>
+	 <component id="ID_s3_txt06">
+   <text><![CDATA[If router values from Step 1 are exactly the same, then…]]></text>
+     </component>
+	 
+<component id='ID_s3_drag01'>
+	<text><![CDATA[<font color="#393536">Highest interface <br/>priority value</font>]]></text>
+</component>
+
+<component id='ID_s3_drag02'>
+	<text><![CDATA[<font color="#393536">Highest router ID</font>]]></text>
+</component>
+
+<component id='ID_s3_drag03'>
+	<text><![CDATA[<font color="#393536">Highest manually configured router ID</font>]]></text>
+</component>
+
+<component id='ID_s3_drag04'>
+	<text><![CDATA[<font color="#393536">Highest loopback address</font>]]></text>
+</component>
+
+<component id='ID_s3_drag05'>
+	<text><![CDATA[<font color="#393536">Highest active IP interface address</font>]]></text>
+</component>
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully ordered the DR election steps.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully ordered the DR election steps. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

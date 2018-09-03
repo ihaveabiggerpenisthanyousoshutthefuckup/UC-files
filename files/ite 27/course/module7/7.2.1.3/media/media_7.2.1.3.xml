@@ -1,0 +1,156 @@
+<textcomponents>
+
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity - Scenario 1: Identify the Troubleshooting Command</b><br/>You are unable to reach the 172.16.0.0 network from Router 1 and need to verify that Router 1 has an EIGRP route to this network. Drag the appropriate command to the field next to R1. Click Button 2 to continue.]]></text>
+</component>
+
+
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[<font face="_typewriter">show ip protocols</font>]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[<font face="_typewriter">show ip eigrp neighbors</font>]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[<font face="_typewriter">show ip eigrp interfaces</font>]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[<font face="_typewriter">show ip route</font>]]></text>
+</component>
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the EIGRP command for this scenario. Click Button 2 to continue.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the EIGRP command for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity - Scenario 2: Identify the Troubleshooting Command</b><br/>R1 cannot PING across the serial link to its directly connected router. You need to verify that Router 1 (R1) is connected to another EIGRP router and the port and IP settings for that router. Drag the appropriate command to the field next to R1. Click Button 3 to continue.]]></text>
+</component>
+
+
+<component id='ID_s2_drag01'>
+	<text><![CDATA[<font face="_typewriter">show ip protocols</font>]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[<font face="_typewriter">show ip eigrp neighbors</font>]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[<font face="_typewriter">show ip eigrp interfaces</font>]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[<font face="_typewriter">show ip route</font>]]></text>
+</component>
+
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the EIGRP command for this scenario. Click Button 3 to continue.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the EIGRP command for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+<component id="ID_s3_inst">
+	<text><![CDATA[<b>Activity - Scenario 3: Identify the Troubleshooting Command</b><br/>Not all of your directly connected networks are appearing in the routing tables of the other routers. You need to verify that EIGRP is advertising all your directly connected networks. Drag the appropriate command to the field next to R1.]]></text>
+</component>
+
+
+<component id='ID_s3_drag01'>
+	<text><![CDATA[<font face="_typewriter">show ip protocols</font>]]></text>
+</component>
+
+<component id='ID_s3_drag02'>
+	<text><![CDATA[<font face="_typewriter">show ip eigrp neighbors</font>]]></text>
+</component>
+
+<component id='ID_s3_drag03'>
+	<text><![CDATA[<font face="_typewriter">show ip eigrp interfaces</font>]]></text>
+</component>
+
+<component id='ID_s3_drag04'>
+	<text><![CDATA[<font face="_typewriter">show ip route</font>]]></text>
+</component>
+
+
+
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the EIGRP command for this scenario.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the EIGRP command for this scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+</textcomponents>

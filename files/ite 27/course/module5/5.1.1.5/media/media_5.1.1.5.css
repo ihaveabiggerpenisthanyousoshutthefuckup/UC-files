@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt02,#ID_s3_txt02{
+	color:#fff !important;
+}
+.orangeColor{
+	color:#F68026 !important;
+}

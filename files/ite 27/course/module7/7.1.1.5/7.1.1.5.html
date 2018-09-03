@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.1.1.5 Verifying Auto-Summary: Topology Table</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.1.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Auto-Summary: Topology Table</h1>
+        <div>
+          <p>The routing tables of R1 and R2 contain subnets of the 172.16.0.0/16 network. Therefore, as illustrated in Figure 1, both routers advertise the summary route of 172.16.0.0/16 to R3.</p>
+          <p></p>
+          <p>Use the<b> show ip eigrp topology all-links </b>command to view all incoming EIGRP routes, as shown in Figure 2. The output verifies that R3 has received the 172.16.0.0/16 summary route from both R1 (i.e., 192.168.10.5) and R2 (i.e., 192.168.10.9). Notice that only one successor has been chosen. This would be the link to R1 due to its faster interface bandwidth. </p>
+          <p></p>
+          <p>The<b> all-links </b>option shows all received updates, including routes from feasible successor (FS). In this instance, R2 qualifies as a FS because its reported distance (RD) of 2,816 is less than the feasible distance (FD) of 2,170,112 via R1.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard lab diagram.  Router one and router two are both summarizing the one seventy two dot sixteen dot zero dot zero slash sixteen and advertising this to router three. Figure two shows the output from the "show i. p. e. i. g. r. p. topology all dash links" command on router three. This demonstrates that router three learned a route to the one seventy two dot sixteen dot zero dot zero network from two sources.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<font color='#FFFFFF'><b>Activity - 802.1D RSTP Port Roles</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[Drag the RSTP port role names to their appropriate switch ports in the topology. Port role names may be used more than once.]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[Root Port]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[Designated Port]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[Alternate Port]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[<b>802.1D RSTP Port Role Names</b>]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id="ID_s1_drag01">
+        <text>
+            <![CDATA[RP]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag02">
+        <text>
+            <![CDATA[DP]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag03">
+        <text>
+            <![CDATA[AP]]>
+        </text>
+    </component>
+    <component id="ID_s1_drag04">
+        <text>
+            <![CDATA[EP]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the RSTP port role name for each switch port.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the RSTP port role name for each switch port. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <component id="ID_s1_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+			<td colspan="3" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='3' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+
+<tr>
+<td bgcolor='#666263' valign="top" width="120"><font color='#ffffff'><b></b></font></td>
+<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Priority</b></font></td>
+<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>MAC Address</b></font></td> 
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>S1</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>32769</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>000A00111111</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>S2</font></td>
+<td  bgcolor='#F2F2F2' valign="top"><font color='#393536'>24577</font></td>
+<td  bgcolor='#F2F2F2' valign="top"><font color='#393536'>000A00222222</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>S3</font></td>
+<td  bgcolor='#E9E7E8' valign="top"><font color='#393536'>32769</font></td>
+<td  bgcolor='#E9E7E8' valign="top"><font color='#393536'>000A00333333</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>S4</font></td>
+<td  bgcolor='#F2F2F2' valign="top"><font color='#393536'>32769</font></td>
+<td  bgcolor='#F2F2F2' valign="top"><font color='#393536'>000A00444444</font></td>
+</tr>
+</table>]]>
+        </text>
+    </component>
+</textcomponents>
