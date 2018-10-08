@@ -1,0 +1,73 @@
+Objectives
+
+Part 1: Predict the Path
+
+Part 2: Trace the Route
+
+Part 3: Reflection Questions
+Scenario
+
+PCA and PCB need to communicate. The path that the data takes between these end devices can travel through R1, R2, and R3, or it can travel through R4 and R5. The process by which routers select the best path depends on the routing protocol. We will examine the behavior of two distance vector routing protocols, Enhanced Interior Gateway Routing Protocol (EIGRP) and Routing Information Protocol version 2 (RIPv2).
+Part 1: Predict the Path
+
+Metrics are factors that can be measured. Routing protocols are each designed to consider various metrics when considering which route is the best to send data along. These metrics include, hop count, bandwidth, delay, reliability, path cost, and more.
+Step 1: Consider EIGRP Metrics.
+
+a.  EIGRP can consider many metrics. By default, however, bandwidth and delay are used to determine best path selection.
+
+b.  Based on the metrics, what path would you predict data would take from PCA to PCB? 
+PCA, RA, R1, R2, R3, RB, PCB
+Step 2: Consider RIP Metrics.
+
+a.  What metric(s) are used by RIP?
+Hop count
+
+b.  Based on the metrics, what path would you predict data would take from PCA to PCB? 
+PCA, RA, R4, R5, RB, PCB
+Part 2: Trace the Route
+Step 1: Examine the EIGRP Path.
+
+a.  On RA, view the routing table using the appropriate command. Which protocol codes are listed in the table and what protocols do they represent? C=connected and D=EIGRP
+
+b.  Trace the route from PCA to PCB.
+
+What path does the data take? 64.100.0.254, 64.101.0.2, 64.101.0.6, 64.101.0.10, 64.101.0.14
+
+How many hops away is the destination? 5 hops
+
+What is the minimum bandwidth on the path? 4 Mb/s
+Step 2: Examine the RIPv2 Path.
+
+You may have noticed that, while RIPv2 is configured, the routers ignore the routes that it generates, because they prefer EIGRP. Cisco routers use a scale called administrative distance and we need to change that number for RIPv2 in RA to make the router prefer the protocol.
+
+a.  For reference purposes, show the routing table of RA using the appropriate command. What is the first number between the brackets in each EIGRP route entry? 90
+
+b.  Set the administrative distance for RIPv2 using the following commands. This forces RA to choose RIP routes over EIGRP routes.
+
+RA(config)# router rip
+RA(config-router)# distance 89
+
+c.  Wait a minute and show the routing table again. Which protocol codes are listed in the table and what protocols do they represent? C=connected and R=RIP
+
+d.  Trace the route from PCA to PCB.
+
+What path does the data take? 64.100.0.254, 64.102.0.2, 64.102.0.6, 64.102.0.14
+
+How many hops away is the destination? 4 hops
+
+What is the minimum bandwidth on the path? 1.2 Kb/s
+
+e.  What is the first number between the brackets in each RIP entry? 89
+Part 3: Reflection Questions
+
+1.  What metrics does the RIPv2 routing protocol ignore? Everything but hops
+
+How could this affect its performance? Answer will vary; RIP will ignore a faster bandwidth path
+
+2.  What metrics does the EIGRP routing protocol ignore? Hops.
+
+How could this affect its performance? Answer will vary; It is conceivable that a packet could be dropped if it travels more hops than its TTL value allows.
+
+3.  Which do you prefer for your own Internet access, lower hops or more bandwidth? Open ended answer.
+
+4.  Is one routing protocol suitable for all applications? Why?  Open ended answer.
