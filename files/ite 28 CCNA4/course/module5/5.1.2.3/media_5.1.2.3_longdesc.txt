@@ -1,0 +1,1 @@
+Figure shows two switches, each with two PCs connected. The caption of the interlink between the two switches reads “Trunk, (Native VLAN = 10)”. A box with arrows pointing to each switch port that connects to a PC reads “Disable DTP and set interfaces to access mode”.

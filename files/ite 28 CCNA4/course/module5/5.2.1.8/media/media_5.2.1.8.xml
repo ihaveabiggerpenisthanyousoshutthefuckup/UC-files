@@ -1,0 +1,144 @@
+﻿<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component><component id="MCTable_title"><text><![CDATA[ ]]></text></component>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity – Identify Characteristics of SNMP Versions</b>]]></text>
+</component>
+
+<!-- instructions -->
+<component id="ID_instr_title">
+	<text><![CDATA[Instructions]]></text>
+</component>
+<component id="ID_instr_body">
+	<text><![CDATA[Click the appropriate field to classify each SNMP characteristic as Version 2c, Version 3, or both.]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[8]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+
+
+<component id="txt_col1">
+	<text><![CDATA[<b>Version 2c</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Version 3</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Both</b>]]></text>
+</component>
+
+
+
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[Authenticates the source of management messages.]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[Provides services for security models.]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[Cannot provide encrypted management messages.]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[Supported by Cisco IOS software.]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Provides services for both security models and security levels.]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[Includes expanded error codes with types.]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[Uses community-based forms of security.]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[Used for interoperability and includes message integrity reporting.]]></text>
+</component>
+
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully matched each SNMP characteristic with its version.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully matched each SNMP characteristic with its version. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>
+

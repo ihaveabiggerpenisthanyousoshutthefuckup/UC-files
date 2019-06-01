@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.1.3 A TCP Conversation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>A TCP Conversation</h1>
+        <div>
+          <p>Administrators can control network traffic based on a number of characteristics, including the TCP port being requested. It is easier to understand how an ACL filters traffic by examining the dialogue that occurs during a TCP conversation, such as when requesting a webpage.</p>
+          <p></p>
+          <p>When a client requests data from a web server, IP manages the communication between the PC (source) and the server (destination). TCP manages the communication between the web browser (application) and the network server software.</p>
+          <p></p>
+          <p>The animation shown in Figure 1 illustrates how a TCP/IP conversation takes place. TCP segments are marked with flags that denote their purpose: a SYN starts (synchronizes) the session; an ACK is an acknowledgment that an expected segment was received, and a FIN finishes the session. A SYN/ACK acknowledges that the transfer is synchronized. TCP data segments include the higher level protocol needed to direct the application data to the correct application.</p>
+          <p></p>
+          <p>The TCP data segment also identifies the port which matches the requested service. Figure 2 shows ranges of UDP and TCP ports. Figure 3 shows a listing of well-known port numbers.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is an animation that shows the steps involved in a T.C.P. conversation between devices.  These steps include the three way handshake of sending the T.C.P. synchronization, sending the acknowledgement, sending the data, and sending the FIN packets. Figure two shows the three ranges used for port numbers.  Ports 0 through 1023 are classified as well known ports.  Numbers 1024 through 49151 are registered ports.  Ports 49152 through 65535 are considered private and slash or dynamic ports. Figure 3 lists a dozen of the more common well-known port numbers including FTP (20 and 21), SSH (22), SMTP (25), DNS (53), DHCP (67 and 68), TFTP (69), HTTP (80), POP3 (110), IMAP (143), SNMP (161), and HTTPS (443).</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

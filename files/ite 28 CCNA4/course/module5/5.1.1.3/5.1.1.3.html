@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.3 Telnet Attacks</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Telnet Attacks</h1>
+        <div>
+          <p>The ability to remotely manage a switched LAN infrastructure is an operational requirement; therefore, it must be supported. </p>
+          <p></p>
+          <p>However, the Telnet protocol is inherently insecure and can be leveraged by an attacker to gain remote access to a Cisco network device. There are tools available that allow an attacker to launch attacks against the vty lines on the switch. </p>
+          <p></p>
+          <p>There are two types of Telnet attacks:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Brute Force Password Attack - </b>The attacker may use a list of common passwords, dictionary words, and variations of words to discover the administrative password. If the password is not discovered by the first phase, a second phase begins. The attacker uses specialized password auditing tools such as those shown in the figure. The software creates sequential character combinations in an attempt to guess the password. Given enough time and the right conditions, a brute force password attack can crack almost all passwords.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Telnet DoS Attack - </b>The attacker continuously requests Telnet connections in an attempt to render the Telnet service unavailable and preventing an administrator from remotely accessing a switch. This can be combined with other direct attacks on the network as part of a coordinated attempt to prevent the network administrator from accessing core devices during the breach.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>There are several way to mitigate against Telnet attacks:</p>
+          <p>
+            <ul>
+              <li>Use SSH, rather than Telnet for remote management connections.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use strong passwords that are changed frequently. A strong password should have a mix of upper and lowercase letters and should include numerals and symbols (special characters). </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Limit access to the vty lines using an access control list (ACL) permitting only administrator devices and denying all other devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Authenticate and authorize administrative access to the device using AAA with either TACACS+ or RADIUS protocols.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a specialized password auditing tool used by an attacker trying to guess the password for users.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

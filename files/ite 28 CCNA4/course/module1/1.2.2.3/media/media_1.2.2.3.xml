@@ -1,0 +1,86 @@
+<textcomponents>
+<!--Slide 1-->
+<component id="ID_s1_title">
+      <text><![CDATA[<b>Sample ISDN Topology</b>]]></text>
+   </component>
+   
+<component id="ID_s1_txt01">
+   <text><![CDATA[ISDN]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+   <text><![CDATA[<b>TA</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+   <text><![CDATA[ISDN Terminal Adapter<br/>(TA)]]></text>
+</component>
+
+
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>ISDN BRI</b>]]></text>
+</component>
+
+<component id="ID_s2_txt00">
+   <text><![CDATA[<b>BRI</b>]]></text>
+</component>
+  
+<component id="ID_s2_txt01">
+   <text><![CDATA[2 B Channels]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+   <text><![CDATA[D Channel]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+   <text><![CDATA[64 kb/s]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+   <text><![CDATA[64 kb/s]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+   <text><![CDATA[16 kb/s]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+   <text><![CDATA[144 kb/s]]></text>
+</component>
+
+
+<!--Slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>ISDN PRI</b>]]></text>
+</component>
+ 
+<component id="ID_s3_txt00">
+   <text><![CDATA[<b>PRI</b>]]></text>
+</component>
+ 
+<component id="ID_s3_txt01">
+   <text><![CDATA[23 B Channels (T1)<br/>or<br/>30 B Channels (E1)]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+   <text><![CDATA[D Channel]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+   <text><![CDATA[64 kb/s each]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+   <text><![CDATA[64 kb/s]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+   <text><![CDATA[T1 1.544 Mb/s<br/>or<br/>E1 2.048 Mb/s]]></text>
+</component>
+
+
+
+</textcomponents>

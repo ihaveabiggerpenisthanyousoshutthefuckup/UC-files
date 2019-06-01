@@ -1,0 +1,75 @@
+﻿<textcomponents>
+
+    <component id="ID_s1_title">
+		<text><![CDATA[<b>Hypervisor OS Installation</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Web Server]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+	<text><![CDATA[Email Server]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[SQL Server]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[File Server]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[Hypervisor]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[Hardware]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[<b>Server1</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt12">
+		<text><![CDATA[DHCP Server]]></text>
+	</component>
+	<component id="ID_s1_txt13">
+	<text><![CDATA[AD Server]]></text>
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[RADIUS Server]]></text>
+	</component>
+	<component id="ID_s1_txt15">
+		<text><![CDATA[NMS Server]]></text>
+	</component>
+	<component id="ID_s1_txt16">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt17">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt18">
+		<text><![CDATA[Linux OS]]></text>
+	</component>
+	<component id="ID_s1_txt19">
+		<text><![CDATA[Linux OS]]></text>
+	</component>
+	<component id="ID_s1_txt20">
+		<text><![CDATA[Hypervisor]]></text>
+	</component>
+	<component id="ID_s1_txt21">
+		<text><![CDATA[Hardware]]></text>
+	</component>
+	<component id="ID_s1_txt22">
+		<text><![CDATA[<b>Server2</b>]]></text>
+	</component>
+	
+</textcomponents>

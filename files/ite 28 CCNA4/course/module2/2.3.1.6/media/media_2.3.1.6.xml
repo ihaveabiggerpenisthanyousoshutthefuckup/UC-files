@@ -1,0 +1,71 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Verifying PPP Serial Encapsulation Configuration</b>]]></text>
+</component>
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Verifying PPP Commands</b>]]></text> 
+  </component>
+<component id="ID_s2_table">
+ <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+      <tr class="mtable_title">
+      <td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+    </tr>
+
+  <tr>
+    
+    <td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+  </tr>
+	<tr>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff'><b>Command</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff'><b>Description</b></font></td>
+	</tr>
+	<tr>
+    <td width='170' bgcolor='#E9E7E8'><font face='_typewriter'><b>show interfaces</b></font></td>
+    <td width='428' bgcolor='#E9E7E8'>Displays statistics for all interfaces configured on the router.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><font face='_typewriter'><b>show interfaces serial</b></font></td>
+    <td bgcolor='#F2F2F2'>Displays information about a serial interface.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#E9E7E8'><font face='_typewriter'><b>show ppp multilink</b></font></td>
+    <td bgcolor='#E9E7E8'>Displays information about a PPP multilink interface.</td>
+  </tr>
+	</table>]]></text> 
+  </component>
+
+  <component id="ID_s2_table_html">
+ <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+      <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">Commands used when Verifying PPP</font>
+            </caption>
+
+  <tr>
+    
+    <td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+  </tr>
+  <tr>
+    <th id="Command" scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff'><b>Command</b></font></td>
+    <th id="Description" scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff'><b>Description</b></font></td>
+  </tr>
+  <tr>
+    <td headers="Command" scope="row" width='170' bgcolor='#E9E7E8'><font face='_typewriter'><b>show interfaces</b></font></td>
+    <td headers="Description" width='428' bgcolor='#E9E7E8'>Displays statistics for all interfaces configured on the router.</td>
+  </tr>
+  <tr>
+    <td headers="Command" scope="row" bgcolor='#F2F2F2'><font face='_typewriter'><b>show interfaces serial</b></font></td>
+    <td headers="Description" bgcolor='#F2F2F2'>Displays information about a serial interface.</td>
+  </tr>
+  <tr>
+    <td headers="Command" scope="row" bgcolor='#E9E7E8'><font face='_typewriter'><b>show ppp multilink</b></font></td>
+    <td headers="Description" bgcolor='#E9E7E8'>Displays information about a PPP multilink interface.</td>
+  </tr>
+  </table>]]></text> 
+  </component>
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Verifying PPP Multilink</b>]]></text> 
+  </component>
+  
+</textcomponents>

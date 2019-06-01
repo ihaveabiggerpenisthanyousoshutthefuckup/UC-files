@@ -1,0 +1,1 @@
+Figure shows the standard Packet Tracer Lab graphic, indicating there is a Packet Tracer lab for this section of the curriculum. The lab topology has laptop L 2 and Server 2 connecting to S 2, which connects to R 1. R 1 also connects to S 0. S 0 also has laptop l 0 and P C 0. R1 connects to S 1. Server 1 and laptop L 1 also connect to S 1.

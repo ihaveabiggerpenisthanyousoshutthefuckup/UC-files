@@ -1,0 +1,1 @@
+Figure 1 is a sample three router topology connecting R1, R2, and R3. Figure 2 is the I.P. S.L.A. configuration of R1 which creates I.P. S.L.A. operation 1 which will send pings to 192.168.1.5 every 30 seconds starting now until forever.

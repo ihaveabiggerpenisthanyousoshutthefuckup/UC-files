@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.4.1.2 Debug PPP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.4.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Debug PPP</h1>
+        <div>
+          <p>In addition to the<b> debug ppp </b>command, there are other commands that are available for troubleshooting a PPP connection.</p>
+          <p></p>
+          <p>A good command to use when troubleshooting serial interface encapsulation is the<b> debug ppp packet </b>command, as shown in Figure 1. The figure example depicts packet exchanges under normal PPP operation, including LCP state, LQM procedures, and the LCP magic number.  </p>
+          <p></p>
+          <p>Figure 2 displays the output of the<b> debug ppp negotiation </b>command in a normal negotiation, where both sides agree on NCP parameters. In this case, protocol types IPv4 and IPv6 are proposed and acknowledged. The<b> debug ppp negotiation </b>command enables the network administrator to view the PPP negotiation transactions, identify the problem or stage when the error occurs, and develop a resolution.  The output includes the LCP negotiation, authentication, and NCP negotiation. </p>
+          <p></p>
+          <p>The<b> debug ppp error </b>command is used to display protocol errors and error statistics associated with PPP connection negotiation and operation, as shown in Figure 3. These messages might appear when the Quality Protocol option is enabled on an interface that is already running PPP.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command debug p.p.p. packet.  This output shows all of the p.p.p. packets being sent and received by the router. Figure two shows the output from the command debug p.p.p. negotiation.  This output displays all of the p.p.p. negotiation transactions. Figure three shows the output from the command debug p.p.p. error.  This output shows protocol errors and error statistics.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

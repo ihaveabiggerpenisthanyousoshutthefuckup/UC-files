@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.2.2 Troubleshooting IPv4 ACLs - Example 2</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting IPv4 ACLs - Example 2</h1>
+        <div>
+          <p>In the figure, the 192.168.10.0/24 network cannot use TFTP to connect to the 192.168.30.0/24 network. </p>
+          <p></p>
+          <p>
+            <b>Solution </b>- The 192.168.10.0/24 network cannot use TFTP to connect to the 192.168.30.0/24 network because TFTP uses the transport protocol UDP. Statement 30 in access list 120 allows all other TCP traffic. However, because TFTP uses UDP instead of TCP, it is implicitly denied. Recall that the implied deny any statement does not appear in <b>show access-lists</b> output and therefore matches are not shown.</p>
+          <p></p>
+          <p>Statement 30 should be <b>ip any any</b>.</p>
+          <p></p>
+          <p>This ACL works whether it is applied to G0/0 of R1, or S0/0/1 of R3, or S0/0/0 of R2 in the incoming direction. However, based on the rule about placing extended ACLs closest to the source, the best option is to place it inbound on G0/0 of R1 because it allows undesirable traffic to be filtered without crossing the network infrastructure.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is another example of an error in an A.C.L. and uses the same reference topology.  This figure shows the output from the following command run on R-1, show access hyphen lists 120. Access list number 120 is shown.  This particular A.C.L. has 3 statements.  The first is 10 deny t.c.p. 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255 any e.q. telnet.  The second line is 20 deny t.c.p. 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255 host 192 dot 168 dot 31 dot 12 e.q. s.m.t.p.  The last statement is 30 permit t.c.p. any any.  The fact that line 30 permits only t.c.p. traffic means it will block u.d.p. traffic.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

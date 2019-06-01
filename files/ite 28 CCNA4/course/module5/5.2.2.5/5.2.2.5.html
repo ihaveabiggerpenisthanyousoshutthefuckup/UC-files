@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.5 SNMPv3 Configuration</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SNMPv3 Configuration</h1>
+        <div>
+          <p>The example in Figure 1 configures a standard ACL named PERMIT-ADMIN. It is configured to permit only the 192.168.1.0/24 network. All hosts attached to this network will be allowed to access the SNMP agent running on R1.</p>
+          <p></p>
+          <p>An SNMP view is named SNMP-RO and is configured to include the entire ISO tree from the MIB. On a production network, the network administrator would probably configure this view to include only the MIB OIDs that were necessary for monitoring and managing the network.</p>
+          <p></p>
+          <p>An SNMP group is configured with the name ADMIN. SNMP is set to version 3 with authentication and encryption required. The group is allowed read-only access to the view (SNMP-RO). Access for the group is limited by the PERMIT-ADMIN ACL.</p>
+          <p></p>
+          <p>An SNMP user, BOB, is configured as a member of the group ADMIN. SNMP is set to version 3. Authentication is set to use SHA, and an authentication password is configured. Although R1 supports up to AES 256 encryption, the SNMP management software only supports AES 128. Therefore, the encryption is set to AES 128 and an encryption password is configured.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure R1 with SNMPv3 authentication using an ACL.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a configuration example of securing SNMPv3. Figure 2 is an interactive syntax checker that requires configuring SNMPv3 authentication on R1.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

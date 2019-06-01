@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.2.6 Troubleshooting IPv6 ACLs - Example 1</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting IPv6 ACLs - Example 1</h1>
+        <div>
+          <p>Similar to IPv4 ACLs, use the <b>show ipv6 access-list</b> and <b>show running-config</b> commands to reveal typical IPv6 ACL errors.</p>
+          <p></p>
+          <p>In Figure 1, R1 is configured with an IPv6 ACL to deny FTP access from the :10 network to the :11 network. However, after configuring the ACL, PC1 is still able to connect to the FTP server running on PC2. Referring to the output for the <b>show ipv6 access-list</b> command in Figure 2, matches are shown for the permit statement but not the deny statements. </p>
+          <p></p>
+          <p>
+            <b>Solution:</b> The ACEs in the ACL reveal no problems in their order, or in the criteria of their rules. The next step is to consider how the ACL is applied at the interface using the <b>ipv6 traffic-filter </b>command. Did the ACL get applied using the correct name, the correct interface, and in the correct direction? To check for interface configuration errors, display the running configuration, as shown in Figure 2.</p>
+          <p></p>
+          <p>The ACL was applied using the correct name, but not the correct direction. The direction, in or out, is from the perspective of the router, meaning the ACL is currently applied to traffic before it is forwarded out the G0/0 interface and enters the :10 network.  To correct the issue, remove the ipv6 traffic-filter NO-FTP-TO-11 out and replace it with ipv6 traffic-filter NO-FTP-TO-11 in, as shown in Figure 3. Now PC1’s attempts to access the FTP server are denied, as verified with the <b>show ipv6 access-list</b> command.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the A.C.L. reference network of three routers.  R-2 is at the top of a triangle layout and has a serial WAN connection to both R-1 and R-3.  There is no direct connection between R-1 and R-3.  R-1 has two active gigabit interfaces for local network segments, and each segment has a switch with a computer connected to the switch.  R-1 has the i.p.v.6. network 2 0 0 1 colon D B 8 colon C A F E colon 1 0 colon colon slash 64 on interface gigabit zero slash zero, and the i.p.v.6. network 2 0 0 1 colon D B 8 colon C A F E colon 1 1 colon colon slash 64 on interface gigabit zero slash one.  R-3 has only one active interface with the i.p.v.6. network 2 0 0 1 colon D B 8 colon C A F E colon 3 0 colon colon slash 64 on the gigabit zero slash one interface.  The serial WAN between R-1 and R-2 is 2 0 0 1 colon D B 8 colon F E E D colon 1 colon colon slash 64. The serial WAN between R-2 and R-3 is 2 0 0 1 colon D B 8 colon F E E D colon 2 colon colon slash 64. Figure two shows output for the commands show ipv6 access list and show running-config. The issue is that the A.C.L is applied in the wrong direction on the interface. Figure three shows the correct the A.C.L. by removing the statement and applying it in the correct direction. After PC1 tries to access the F.T.P. server again, the show access-list command shows the matches to the deny statement.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Identify the SDN Type</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Match each type to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each type to its description.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each type to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Drag Items-->
+
+<component id='ID_s1_drag_header'>
+	<text><![CDATA[<font size="15">Terms</font>]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[Device-based]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[Policy-based]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[Controller-based]]></text>
+</component>
+
+<!--Questions-->
+<component id='ID_s1_target_header_01'>
+	<text><![CDATA[Type]]></text>
+</component>
+<component id='ID_s1_text_header_01'>
+	<text><![CDATA[Description]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[Enables programmers to build applications using C, and Java with Python, to integrate and interact with Cisco devices.]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[It uses built-in applications that automate advanced configuration tasks via a guided workflow and user-friendly GUI with no programming skills required.]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[Does not contain a SDN controller.]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[Cisco APIC-EM is an example of this type.]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+  <text><![CDATA[Devices are programmable by applications running on the device itself or on a server in the network.]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+  <text><![CDATA[Similar to policy-based SDN but without the additional policy layer.]]></text> 
+</component>
+
+
+</textcomponents>
+

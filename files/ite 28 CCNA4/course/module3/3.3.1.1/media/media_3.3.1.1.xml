@@ -1,0 +1,37 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>VPNs</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[Business Partner with<br>a Cisco Router]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Regional Office with<br>a Cisco ASA Firewall]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[SOHO with<br>a Cisco Router]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[Mobile Worker with<br>Cisco AnyConnect]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[Corporate]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[Main Site]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[Cisco<br>ASA Firewall]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[Internet]]></text>
+</component>
+</textcomponents>

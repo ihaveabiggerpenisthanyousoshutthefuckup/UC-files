@@ -1,0 +1,31 @@
+
+          <p>PAP provides a simple method for a remote node to establish its identity using a two-way handshake. PAP is not interactive. When the <b>ppp authentication pap</b> command is used, the username and password are sent as one LCP data package as shown in Figure 1, rather than one PPP device sending a login prompt and waiting for a response as in some authentication mechanisms.  </p>
+          <p></p>
+          <p>
+            <b>PAP Process</b>
+          </p>
+          <p></p>
+          <p>After PPP completes the link establishment phase, the remote node repeatedly sends a username-password pair across the link until the receiving node acknowledges it or terminates the connection.</p>
+          <p></p>
+          <p>At the receiving node, the username-password is checked by the device running PPP. This device either allows or denies the connection. An accept or reject message is returned to the requester, as shown in Figure 2.</p>
+          <p></p>
+          <p>PAP is not a strong authentication protocol. Using PAP, passwords are sent across the link in plaintext and there is no protection from playback or repeated trial-and-error attacks. The remote node is in control of the frequency and timing of the login attempts.</p>
+          <p></p>
+          <p>Nonetheless, there are times when using PAP can be justified. Despite its shortcomings, PAP may be used in the following environments:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>A large installed base of client applications that do not support CHAP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Incompatibilities between different vendor implementations of CHAP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Situations where a plaintext password must be available to simulate a login at the remote host</li>
+            </ul>
+          </p>
+        

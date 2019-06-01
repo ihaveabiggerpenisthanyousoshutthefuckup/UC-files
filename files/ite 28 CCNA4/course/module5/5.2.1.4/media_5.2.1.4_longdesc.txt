@@ -1,0 +1,1 @@
+Figure shows a table of SNMP security models and levels.  The columns included are the Model, Level, Authentication, Encryption, and Result.

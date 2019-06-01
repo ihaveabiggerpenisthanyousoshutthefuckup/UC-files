@@ -1,0 +1,16 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuration Supports the SNMP Manager</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<font color="#FFFFFF">SNMP viewer installed.</font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[SNMP]]></text>
+</component>
+
+
+
+</textcomponents>

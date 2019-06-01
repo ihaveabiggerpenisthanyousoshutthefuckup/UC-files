@@ -1,0 +1,1 @@
+The figure shows how many things are loosely connected using independent, use-specific networks. The networks are HVAC, telephone, power, data, video, and physical security. A caption reads “As the IoT evolves, individual networks will be connected together and will include security, analytics, and management.”

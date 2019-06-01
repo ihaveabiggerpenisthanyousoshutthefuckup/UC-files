@@ -1,0 +1,7 @@
+
+          <p>The SPAN feature on Cisco switches sends a copy of each frame entering the source port, out the destination port and toward the packet analyzer or IPS. A session number is used to identify a local SPAN session. </p>
+          <p></p>
+          <p>Figure 1 shows the syntax of the <b>monitor session</b> global configuration command. This command is used to associate a source port and a destination port with a SPAN session. A separate <b>monitor session</b> command is used for each session. A VLAN can be specified instead of a physical port.</p>
+          <p></p>
+          <p>For example, in Figure 2, PCA is connected to F0/1 and a computer with a packet analyzer application is connected to F0/2. The objective is to capture all the traffic that is sent or received by PCA on port F0/1 and send a copy of those frames to the packet analyzer (or IPS) on port F0/2. The SPAN session on the switch will copy all the traffic that it sends and receives on source port F0/1 to the destination port F0/2.</p>
+        

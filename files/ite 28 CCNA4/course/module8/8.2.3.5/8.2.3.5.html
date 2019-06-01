@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.3.5 Transport Layer Troubleshooting – NAT for IPv4</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.3.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Transport Layer Troubleshooting – NAT for IPv4</h1>
+        <div>
+          <p>There are a number of problems with NAT such as not interacting with services like DHCP and tunneling. These can include misconfigured NAT inside, NAT outside, or ACL. Other issues include interoperability with other network technologies, especially those that contain or derive information from host network addressing in the packet. Some of these technologies include: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>BOOTP and DHCP </b>- Both protocols manage the automatic assignment of IPv4 addresses to clients. Recall that the first packet that a new client sends is a DHCP-Request broadcast IPv4 packet. The DHCP-Request packet has a source IPv4 address of 0.0.0.0. Because NAT requires both a valid destination and source IPv4 address, BOOTP and DHCP can have difficulty operating over a router running either static or dynamic NAT. Configuring the IPv4 helper feature can help solve this problem.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DNS </b>- Because a router running dynamic NAT is changing the relationship between inside and outside addresses regularly as table entries expire and are recreated, a DNS server outside the NAT router does not have an accurate representation of the network inside the router. Configuring the IPv4 helper feature can help solve this problem.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SNMP </b>- Similar to DNS packets, NAT is unable to alter the addressing information stored in the data payload of the packet. Because of this, an SNMP management station on one side of a NAT router may not be able to contact SNMP agents on the other side of the NAT router. Configuring the IPv4 helper feature can help solve this problem.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Tunneling and encryption protocols </b>- Encryption and tunneling protocols often require that traffic be sourced from a specific UDP or TCP port, or use a protocol at the transport layer that cannot be processed by NAT. For example, IPsec tunneling protocols and generic routing encapsulation protocols used by VPN implementations cannot be processed by NAT.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows common network technology interoperability areas for the transport layer.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+Figure shows an example of FIFO queuing.

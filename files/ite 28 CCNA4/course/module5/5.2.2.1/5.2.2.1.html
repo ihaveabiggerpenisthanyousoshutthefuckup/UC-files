@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.2.1 Steps for Configuring SNMP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Steps for Configuring SNMP</h1>
+        <div>
+          <p>A network administrator can configure SNMPv2 to obtain network information from network devices. As shown in the figure, the basic steps to configuring SNMP are all in global configuration mode.</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>(Required) Configure the community string and access level (read-only or read-write) with the<b> snmp-server community </b><i>string </i><b>ro | rw </b>command.</p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>(Optional) Document the location of the device using the<b> snmp-server location </b><i>text </i>command.</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>(Optional) Document the system contact using the<b> snmp-server contact </b><i>text </i>command.</p>
+          <p></p>
+          <p>
+            <b>Step 4. </b>(Optional) Restrict SNMP access to NMS hosts (SNMP managers) that are permitted by an ACL: define the ACL and then reference the ACL with the<b> snmp-server community </b><i>string access-list-number-or-name </i>command. This command can be used both to specify a community string and to restrict SNMP access via ACLs. Step 1 and Step 4 can be combined into one step, if desired; the Cisco networking device combines the two commands into one if they are entered separately.</p>
+          <p></p>
+          <p>
+            <b>Step 5. </b>(Optional) Specify the recipient of the SNMP trap operations with the<b> snmp-server host</b><b></b><i>host-id </i>[<b>version</b> {<b>1</b>| <b>2c</b> | <b>3</b> [<b>auth</b> | <b>noauth</b> | <b>priv</b>]}]<i> community-string </i>command. By default, no trap manager is defined.</p>
+          <p></p>
+          <p>
+            <b>Step 6. </b>(Optional) Enable traps on an SNMP agent with the<b> snmp-server enable traps </b><i>notification-types </i>command. If no trap notification types are specified in this command, then all trap types are sent. Repeated use of this command is required if a particular subset of trap types is desired.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: By default, SNMP does not have any traps set. Without this command, SNMP managers must poll for all relevant information. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a worker connected to a network and several basic SNMP configuration commands are listed.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

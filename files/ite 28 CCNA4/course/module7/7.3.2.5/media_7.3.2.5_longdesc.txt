@@ -1,0 +1,1 @@
+In Figure 1, OnePK application is managing the data plane of three devices. In Figure 2, Open Daylight application is run on an SDN controller which is managing the data plane of three devices. In Figure 3, An APIC-EM application implements a policy on the SDN controller which is managing the data plane of three devices.

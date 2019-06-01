@@ -1,0 +1,132 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<font size="17"><b>Activity – Gathering Symptoms of a Network Problem</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_instr_body'>
+        <text>
+            <![CDATA[Match each of the commands used to gather information about network problems to its definition.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_drag01'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show protocols</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag02'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show ipv6 route</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag03'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>telnet</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag04'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>ping</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag05'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>debug ?</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag06'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>traceroute</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag07'>
+        <text>
+            <![CDATA[<font  face="_typewriter" color="#393536"><b>show running-config</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag08'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show ipv6 interface brief</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each command used to gather information about network problems with its definition.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each command used to gather information about network problems with its definition. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <component id='ID_s1_target_header_01'>
+        <text>
+            <![CDATA[Command]]></text>
+    </component>
+    <component id='ID_s1_text_header_01'>
+        <text>
+            <![CDATA[Definition]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[Sends an echo request to an address and waits for a reply.]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[Shows the path a packet takes through the networks.]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[Displays a summary status of all the IP version 6 interfaces on a device.]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[Shows the current configuration of the device.]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[Displays the IP version 6 routing table.]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[Offers a list of options for real-time diagnostics.]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[Shows global and interface specific status of Layer 3 protocols.]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[Connects remotely to a device by IP address or URL.]]>
+        </text>
+    </component>
+</textcomponents>

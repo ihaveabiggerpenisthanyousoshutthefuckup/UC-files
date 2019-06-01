@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.3 Step 1 - Verify the Physical Layer</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 1 - Verify the Physical Layer</h1>
+        <div>
+          <p>All network devices are specialized computer systems. At a minimum, these devices consist of a CPU, RAM, and storage space, allowing the device to boot and run the operating system and interfaces. This allows for the reception and transmission of network traffic. When a network administrator determines that a problem exists on a given device, and that problem might be hardware-related, it is worthwhile to verify the operation of these generic components. The most commonly used Cisco IOS commands for this purpose are<b> show processes cpu</b>,<b> show memory</b>, and<b> show interfaces</b>. This topic discusses the<b> show interfaces </b>command.</p>
+          <p></p>
+          <p>When troubleshooting performance-related issues and hardware is suspected to be at fault, the<b> show interfaces </b>command can be used to verify the interfaces through which the traffic passes. </p>
+          <p></p>
+          <p>The output of the<b> show interfaces </b>command in the figure lists a number of important statistics that can be checked:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Input queue drops </b>- Input queue drops (and the related ignored and throttle counters) signify that at some point, more traffic was delivered to the router than it could process. This does not necessarily indicate a problem. That could be normal during traffic peaks. However, it could be an indication that the CPU cannot process packets in time, so if this number is consistently high, it is worth trying to spot at which moments these counters are increasing and how this relates to CPU usage.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Output queue drops </b>- Output queue drops indicate that packets were dropped due to congestion on the interface. Seeing output drops is normal for any point where the aggregate input traffic is higher than the output traffic. During traffic peaks, packets are dropped if traffic is delivered to the interface faster than it can be sent out. However, even if this is considered normal behavior, it leads to packet drops and queuing delays, so applications that are sensitive to those, such as VoIP, might suffer from performance issues. Consistently seeing output drops can be an indicator that you need to implement an advanced queuing mechanism to implement or modify QoS. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Input errors </b>- Input errors indicate errors that are experienced during the reception of the frame, such as CRC errors. High numbers of CRC errors could indicate cabling problems, interface hardware problems, or, in an Ethernet-based network, duplex mismatches.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Output errors </b>- Output errors indicate errors, such as collisions, during the transmission of a frame. In most Ethernet-based networks today, full-duplex transmission is the norm, and half-duplex transmission is the exception. In full-duplex transmission, operation collisions cannot occur; therefore, collisions and especially late collisions often indicate duplex mismatches.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the output from the show interfaces gigabit ethernet zero slash zero command on router one.  The input and output queues are highlighted.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

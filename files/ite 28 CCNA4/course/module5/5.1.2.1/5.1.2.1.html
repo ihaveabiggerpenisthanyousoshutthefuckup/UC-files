@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.1 Secure the LAN</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Secure the LAN</h1>
+        <div>
+          <p>As noted at the beginning of this chapter, security is only as strong as the weakest link in the system, and Layer 2 is considered to be that weakest link. Therefore, Layer 2 security solutions must be implemented to help secure a network. </p>
+          <p></p>
+          <p>Many network management protocols including Telnet, Syslog, SNMP, TFTP, and FTP are insecure. There are several strategies to help secure Layer 2 of a network:</p>
+          <p>
+            <ul>
+              <li>Always use secure variants of these protocols such as SSH, SCP, SSL, SNMPv3, and SFTP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Always use strong passwords and change them often.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Enable CDP on select ports only.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Secure Telnet access.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use a dedicated management VLAN where nothing but management traffic resides.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use ACLs to filter unwanted access.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure highlights four Cisco switch security solutions to help mitigate Layer 2 attacks.</p>
+          <p></p>
+          <p>This topic covers several Layer 2 security solutions:</p>
+          <p>
+            <ul>
+              <li>Mitigating MAC address table flooding attacks using port security</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Mitigating VLAN attacks</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Mitigating DHCP attacks using DHCP snooping</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Securing administrative access using AAA </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Securing device access using 802.1X port authentication</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: IP Source Guard (IPSG) and Dynamic ARP Inspection (DAI) are advanced switch security solutions discussed in the CCNA Security course. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a pyramid with interactive buttons that describe ways to mitigate layer 2 attacks.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

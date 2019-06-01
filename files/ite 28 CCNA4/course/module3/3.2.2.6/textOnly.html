@@ -1,0 +1,13 @@
+
+          <p>Accessing some web pages might be a problem with PPPoE. When the client requests a web page, a TCP 3-way handshake occurs between the client and the web server. During the negotiation, the client specifies the value of its TCP maximum segment size (MSS). The TCP MSS is the maximum size of the data portion in the TCP segment.</p>
+          <p></p>
+          <p>A host determines the value of its MSS field by subtracting the IP and TCP headers from the Ethernet maximum transmission unit (MTU). On an Ethernet interface, the default MTU is 1500 bytes. Subtracting the IPv4 header of 20 bytes and the TCP header of 20 bytes, the default MSS size will be 1460 bytes, as shown in Figure 1.</p>
+          <p></p>
+          <p>The default MSS size is 1460 bytes, when the default MTU is 1500 bytes. However, PPPoE supports an MTU of only 1492 bytes in order to accommodate the additional 8-byte PPPoE header shown in Figure 2.</p>
+          <p></p>
+          <p>You can verify the PPPoE MTU size in running configuration, as shown in Figure 3. This disparity between the host and PPPoE MTU size can cause the router to drop 1500-byte packets and terminate TCP sessions over the PPPoE network.</p>
+          <p></p>
+          <p>The<b> ip tcp adjust-mss </b><i>max-segment-size</i> interface command helps prevent TCP sessions from being dropped by adjusting the MSS value during the TCP 3-way handshake. In most cases, the optimum value for the <i>max-segment-size</i> argument is 1452 bytes. Figure 4 shows this configuration on R1’s LAN interface.</p>
+          <p></p>
+          <p>The TCP MSS value of 1452, plus the 20-byte IPv4 header, the 20-byte TCP header, and the 8-byte PPPoE header adds up to a 1500-byte MTU as shown in Figure 2.</p>
+        

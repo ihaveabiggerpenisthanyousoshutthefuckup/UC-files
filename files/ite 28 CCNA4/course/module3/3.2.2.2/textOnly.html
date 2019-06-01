@@ -1,0 +1,10 @@
+
+          <p>As shown in Figure 1, the customer’s router is connected to the ISP router using DSL. Both routers have been configured for PPPoE. The <b>show ip interface brief</b> command is issued on R1 to verify the IPv4 address automatically assigned to the dialer interface by the ISP router.</p>
+          <p></p>
+          <p>As shown in Figure 2, the <b>show interface dialer</b> command on R1, verifies the MTU and PPP encapsulation configured on the dialer interface.</p>
+          <p>Figure 3 displays the routing table on R1.</p>
+          <p></p>
+          <p>Notice that two /32 host routes for 10.0.0.0 have been installed in R1’s routing table. The first host route is for the address assigned to the dialer interface. The second host route is the IPv4 address of the ISP. The installation of these two host routes is the default behavior for PPPoE.</p>
+          <p></p>
+          <p>As shown in Figure 4, the <b>show pppoe session</b> command is used to display information about currently active PPPoE sessions. The output displays the local and remote Ethernet MAC addresses of both routers. The Ethernet MAC addresses can be verified by using the <b>show interfaces</b> command on each router.</p>
+        

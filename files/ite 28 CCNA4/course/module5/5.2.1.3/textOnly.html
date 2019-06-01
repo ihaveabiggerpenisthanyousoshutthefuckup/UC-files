@@ -1,0 +1,11 @@
+
+          <p>An NMS periodically polls the SNMP agents residing on managed devices, by querying the device for data using the get request. Using this process, a network management application can collect information to monitor traffic loads and to verify device configurations of managed devices. The information can be displayed via a GUI on the NMS. Averages, minimums, or maximums can be calculated, the data can be graphed, or thresholds can be set to trigger a notification process when the thresholds are exceeded. For example, an NMS can monitor CPU utilization of a Cisco router. The SNMP manager samples the value periodically and presents this information in a graph for the network administrator to use in creating a baseline, creating a report, or viewing real time information. </p>
+          <p></p>
+          <p>Periodic SNMP polling does have disadvantages. First, there is a delay between the time that an event occurs and the time that it is noticed (via polling) by the NMS. Second, there is a trade-off between polling frequency and bandwidth usage. </p>
+          <p></p>
+          <p>To mitigate these disadvantages, it is possible for SNMP agents to generate and send traps to inform the NMS immediately of certain events. Traps are unsolicited messages alerting the SNMP manager to a condition or event on the network. Examples of trap conditions include, but are not limited to, improper user authentication, restarts, link status (up or down), MAC address tracking, closing of a TCP connection, loss of connection to a neighbor, or other significant events. Trap-directed notifications reduce network and agent resources, by eliminating the need for some of SNMP polling requests. </p>
+          <p></p>
+          <p>Figure 1 illustrates the use of an SNMP trap to alert the network administrator that interface G0/0 has failed. The NMS software can send the network administrator a text message, pop up a window on the NMS software, or turn the router icon red in the NMS GUI.</p>
+          <p></p>
+          <p>The exchange of all SNMP messages is illustrated in Figure 2.</p>
+        

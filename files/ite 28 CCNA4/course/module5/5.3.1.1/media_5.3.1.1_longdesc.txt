@@ -1,0 +1,1 @@
+Figure shows the switch S1 is connected by PCs PC1 and PC2 and a laptop. It shows that traffic between PC1 and PC2 is also being sent to the laptop that has a packet analyzer installed.

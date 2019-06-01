@@ -1,0 +1,520 @@
+﻿<textcomponents>
+   
+    <component id="ID_s1_title">
+        <text><![CDATA[<b>IPv4 and IPv6 Packet Headers</b>]]></text>
+    </component> 
+     
+    <component id="ID_txt04">
+        <text><![CDATA[<b>Legend</b>]]></text>
+    </component>
+    
+    <component id="ID_txt05">
+        <text><![CDATA[<b>Legend</b>]]></text>
+    </component>
+    
+    <component id="ID_s1_header1">
+        <text><![CDATA[<b>IPv4 Header</b>]]></text>
+    </component>
+    
+    <component id="ID_s1_header2">
+        <text><![CDATA[<b>IPv6 Header</b>]]></text>
+    </component>
+  
+    <component id="ID_s1_txt01">
+        <text><![CDATA[Version]]></text>
+    </component>
+    
+    <component id="ID_s1_txt02">
+        <text><![CDATA[IHL]]></text>
+    </component>
+    
+    <component id="ID_s1_txt03">
+        <text><![CDATA[Type of Service]]></text>
+    </component>
+    
+    <component id="ID_s1_txt04">
+        <text><![CDATA[Total Length]]></text>
+    </component>
+    
+    <component id="ID_s1_txt05">
+        <text><![CDATA[Identification]]></text>
+    </component>
+    
+    <component id="ID_s1_txt06">
+        <text><![CDATA[Flags]]></text>
+    </component>
+    
+    <component id="ID_s1_txt07">
+        <text><![CDATA[Fragment Offset]]></text>
+    </component>
+    
+    <component id="ID_s1_txt08">
+        <text><![CDATA[Time-to-Live]]></text>
+    </component>
+    
+    <component id="ID_s1_txt09">
+        <text><![CDATA[Protocol]]></text>
+    </component>
+    
+    <component id="ID_s1_txt10">
+        <text><![CDATA[Header Checksum]]></text>
+    </component>
+    
+    <component id="ID_s1_txt11">
+        <text><![CDATA[Source Address]]></text>
+    </component>
+    
+    <component id="ID_s1_txt12">
+        <text><![CDATA[Destination Address]]></text>
+    </component>
+    
+    <component id="ID_s1_txt13">
+        <text><![CDATA[Options]]></text>
+    </component>
+    
+    <component id="ID_s1_txt14">
+        <text><![CDATA[Padding]]></text>
+    </component>
+    
+    <component id="ID_s1_txt15">
+        <text><![CDATA[Version]]></text>
+    </component>
+    
+    <component id="ID_s1_txt16">
+        <text><![CDATA[Traffic Class]]></text>
+    </component>
+    
+    <component id="ID_s1_txt17">
+        <text><![CDATA[Flow Label]]></text>
+    </component>
+    
+    <component id="ID_s1_txt18">
+        <text><![CDATA[Payload Length]]></text>
+    </component>
+    
+    <component id="ID_s1_txt19">
+        <text><![CDATA[Next Header]]></text>
+    </component>
+    
+    <component id="ID_s1_txt20">
+        <text><![CDATA[Hop Limit]]></text>
+    </component>
+    
+    <component id="ID_s1_txt21">
+        <text><![CDATA[Source IP Address]]></text>
+    </component>
+    
+    <component id="ID_s1_txt22">
+        <text><![CDATA[Destination IP Address]]></text>
+    </component>
+    
+
+    <component id="ID_s2_title">
+        <text><![CDATA[<b>Type of Service/Traffic Class Field</b>]]></text>
+    </component>   
+
+    <component id="ID_s2_txt01">
+		<text><![CDATA[<b>Old Use (RFC 791)</b>]]></text>
+    </component>
+
+    <component id="ID_s2_txt02">
+        <text><![CDATA[IPP (3 bits)]]></text>
+    </component>
+
+    <component id="ID_s2_txt03">
+        <text><![CDATA[Unused (5 bits)]]></text>
+    </component>
+
+    <component id="ID_s2_txt04">
+        <text><![CDATA[Type of Service (IPv4) or Traffic Class (IPv6)]]></text>
+    </component>
+
+    <component id="ID_s2_txt05">
+        <text><![CDATA[Rest of IP Header...]]></text>
+    </component>
+
+    <component id="ID_s2_txt06">
+        <text><![CDATA[DSCP (6 bits)]]></text>
+    </component>
+
+    <component id="ID_s2_txt07">
+        <text><![CDATA[ECN (2 bits)]]></text>
+    </component>
+
+    <component id="ID_s2_txt08">
+		<text><![CDATA[<b>Current Use (RFC 2474)</b>]]></text>
+    </component>
+
+
+
+    <component id="ID_s3_title">
+        <text><![CDATA[<b>Assured Forwarding Values</b>]]></text>
+    </component>
+
+    <component id="ID_s3_txt01">
+		<text><![CDATA[Best Queue]]></text>
+    </component>
+
+    <component id="ID_s3_txt02">
+        <text><![CDATA[Worst Queue]]></text>
+    </component>
+
+    <component id="ID_s3_txt03">
+		<text><![CDATA[<b>AFxy</b>]]></text>
+    </component>
+
+    <component id="ID_s3_txt04">
+        <text><![CDATA[DSCP Field]]></text>
+    </component>
+
+    <component id="ID_s3_txt05">
+        <text><![CDATA[Class]]></text>
+    </component>
+
+    <component id="ID_s3_txt06">
+        <text><![CDATA[Drop Preference]]></text>
+    </component>
+
+    <component id="ID_s3_txt07">
+		<text><![CDATA[<b>Example - AF32</b>]]></text>
+    </component>
+
+    <component id="ID_s3_txt08">
+		<text><![CDATA[DSCP Value = 28]]></text>
+    </component>
+
+      
+    <component id="ID_s3_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+				<tr class="mtable_title">
+					<td colspan="4" bgcolor='#FFFFFF'><font size="5"></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+				<tr>
+					<td bgcolor='#666263' valign="top" width="100"><font color='#ffffff'><b></b></font></td>
+					<td bgcolor='#666263' valign="top" width="100"><font color='#ffffff'><b>Low Drop</b></font></td>
+					<td bgcolor='#666263' valign="top" width="100"><font color='#ffffff'><b>Medium Drop</b></font> </td>
+					<td bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>High Drop</b></font> </td>
+				 </tr>
+
+				 <tr>
+					<td bgcolor='#666263'><font color='#ffffff'><b>Class 4</b></font></td>
+					<td bgcolor='#E9E7E8'><font color='#393536'>AF41<br/>(34)</font></td>
+					<td bgcolor='#E9E7E8'><font color='#393536'>AF42<br/>(36)</font></td>
+					<td bgcolor='#E9E7E8'><font color='#393536'>AF43<br/>(38)</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#666263'><font color='#ffffff'><b>Class 3</b></font></td>
+					<td bgcolor='#F2F2F2'><font color='#393536'>AF31<br/>(26)</font></td>
+					<td bgcolor='#F2F2F2'><font color='#393536'>AF32<br/>(28)</font></td>
+					<td bgcolor='#F2F2F2'><font color='#393536'>AF33<br/>(30)</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#666263'><font color='#ffffff'><b>Class 2</b></font></td>
+					<td bgcolor='#E9E7E8'><font color='#393536'>AF21<br/>(18)</font></td>
+					<td bgcolor='#E9E7E8'><font color='#393536'>AF22<br/>(20)</font></td>
+					<td bgcolor='#E9E7E8'><font color='#393536'>AF23<br/>(22)</font></td>
+				</tr>
+				<tr>
+					<td bgcolor='#666263'><font color='#ffffff'><b>Class 1</b></font></td>
+					<td bgcolor='#F2F2F2'><font color='#393536'>AF11<br/>(10)</font></td>
+					<td bgcolor='#F2F2F2'><font color='#393536'>AF12<br/>(12)</font></td>
+					<td bgcolor='#F2F2F2'><font color='#393536'>AF13<br/>(14)</font></td>
+				</tr>
+
+			</table>]]>
+        </text>
+    </component>
+
+    <component id="ID_s3_table_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+                <caption class="mtable_title" colspan="5" bgcolor='#FFFFFF'><font size="3">Assured Forwarding Values</font></caption>
+
+                <tr class="mtable_top">
+                    <td colspan='4' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+                </tr>
+
+                <tr>
+                    <th scope="col" bgcolor='#666263' valign="top" width="100"><font color='#ffffff'><b></b></font></th>
+                    <th id="Low" scope="col" bgcolor='#666263' valign="top" width="100"><font color='#ffffff'><b>Low Drop</b></font></th>
+                    <th id="Medium" scope="col" bgcolor='#666263' valign="top" width="100"><font color='#ffffff'><b>Medium Drop</b></font> </th>
+                    <th id="High" scope="col" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>High Drop</b></font> </th>
+                 </tr>
+
+                 <tr>
+                    <th id="Class4" scope="row" bgcolor='#666263'><font color='#ffffff'><b>Class 4</b></font></td>
+                    <td headers="Class4 Low" bgcolor='#E9E7E8'><font color='#393536'>AF41<br/>(34)</font></td>
+                    <td headers="Class4 Medium" bgcolor='#E9E7E8'><font color='#393536'>AF42<br/>(36)</font></td>
+                    <td headers="Class4 High" bgcolor='#E9E7E8'><font color='#393536'>AF43<br/>(38)</font></td>
+                </tr>
+                <tr>
+                    <th id="Class3" scope="row" bgcolor='#666263'><font color='#ffffff'><b>Class 3</b></font></td>
+                    <td headers="Class3 Low"  bgcolor='#F2F2F2'><font color='#393536'>AF31<br/>(26)</font></td>
+                    <td headers="Class3 Medium"  bgcolor='#F2F2F2'><font color='#393536'>AF32<br/>(28)</font></td>
+                    <td headers="Class3 High"  bgcolor='#F2F2F2'><font color='#393536'>AF33<br/>(30)</font></td>
+                </tr>
+                <tr>
+                    <th id="Class2" scope="row" bgcolor='#666263'><font color='#ffffff'><b>Class 2</b></font></td>
+                    <td  headers="Class2 Low" bgcolor='#E9E7E8'><font color='#393536'>AF21<br/>(18)</font></td>
+                    <td headers="Class2 Medium" bgcolor='#E9E7E8'><font color='#393536'>AF22<br/>(20)</font></td>
+                    <td headers="Class2 High" bgcolor='#E9E7E8'><font color='#393536'>AF23<br/>(22)</font></td>
+                </tr>
+                <tr>
+                    <th id="Class1" scope="row" bgcolor='#666263'><font color='#ffffff'><b>Class 1</b></font></td>
+                    <td   headers="Class1 Low" bgcolor='#F2F2F2'><font color='#393536'>AF11<br/>(10)</font></td>
+                    <td headers="Class1 Medium" bgcolor='#F2F2F2'><font color='#393536'>AF12<br/>(12)</font></td>
+                    <td  headers="Class1 High" bgcolor='#F2F2F2'><font color='#393536'>AF13<br/>(14)</font></td>
+                </tr>
+
+            </table>]]>
+        </text>
+    </component>
+
+    <component id="ID_s4_title">
+        <text><![CDATA[<b>Layer 2 CoS and Layer 3 ToS</b>]]></text>
+    </component>
+
+	<component id="ID_s4_txt01">
+		<text><![CDATA[<b>802.1Q TCI 2 Byte Field</b>]]></text>
+    </component>
+
+	<component id="ID_s4_txt02">
+		<text><![CDATA[PRI CoS (3 bits)]]></text>
+    </component>
+    
+	<component id="ID_s4_txt03">
+		<text><![CDATA[CFI]]></text>
+    </component>    
+
+	<component id="ID_s4_txt04">
+		<text><![CDATA[VLAN ID (12 bits)]]></text>
+    </component>
+
+	<component id="ID_s4_txt05">
+		<text><![CDATA[<b>Type of Service - Old Use</b>]]></text>
+    </component>
+
+	<component id="ID_s4_txt06">
+		<text><![CDATA[IPP (3 bits)]]></text>
+    </component>
+    
+	<component id="ID_s4_txt07">
+		<text><![CDATA[Unused (5 bits)]]></text>
+    </component>  
+    
+	<component id="ID_s4_txt08">
+		<text><![CDATA[<b>Type of Service - Current Use</b>]]></text>
+    </component>
+
+	<component id="ID_s4_txt09">
+		<text><![CDATA[CS (3 bits)]]></text>
+    </component>
+    
+	<component id="ID_s4_txt10">
+		<text><![CDATA[ECN (2 bits)]]></text>
+    </component>    
+      
+	<component id="ID_s4_txt11">
+		<text><![CDATA[DSCP (6 bits)]]></text>
+    </component>   
+
+
+	<component id="ID_s5_title">
+		<text><![CDATA[<b>Mapping CoS to Class Selectors in DSCP</b>]]></text>
+	</component>
+	
+	<component id="ID_s5_txt01">
+		<text><![CDATA[CoS (3 bits)]]></text>
+    </component>    
+   
+	<component id="ID_s5_txt02">
+		<text><![CDATA[DSCP (6 bits)]]></text>
+    </component>    
+    
+	<component id="ID_s5_txt03">
+		<text><![CDATA[* CS 0 represents the default marking value. Therefore, it is usually called the Default Forwarding or DF.]]></text>
+    </component>      
+   
+    <component id="ID_s5_table">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+			<tr class="mtable_title">
+				<td colspan="5" bgcolor='#FFFFFF'><font size="5"></font></td>
+			</tr>
+
+			<tr class="mtable_top">
+				<td colspan='5' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+			</tr>
+
+			<tr>
+				<td bgcolor='#666263' valign="top" width="90"><font color='#ffffff'><b>CoS Value</b></font></td>
+				<td bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>CoS Binary Value</b></font> </td>
+				<td bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>Class Selector (CS)</b></font> </td>
+				<td bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>CS Binary</b></font> </td>
+				<td bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>DSCP Decimal Value</b></font> </td>
+			</tr>
+			
+			<tr>
+				<td bgcolor='#FFFADD'><font color='#393536'>0</font></td>
+				<td bgcolor='#FFFADD'><font color='#393536'>000</font></td>
+				<td bgcolor='#FFFADD'><font color='#393536'>CS0*/DF</font></td>
+				<td bgcolor='#FFFADD'><font color='#393536'>000 000</font></td>
+				<td bgcolor='#FFFADD'><font color='#393536'>0</font></td>
+			</tr>
+			
+			<tr>
+				<td bgcolor='#FDE6D4'><font color='#393536'>1</font></td>
+				<td bgcolor='#FDE6D4'><font color='#393536'>001</font></td>
+				<td bgcolor='#FDE6D4'><font color='#393536'>CS1</font></td>
+				<td bgcolor='#FDE6D4'><font color='#393536'>001 000</font></td>
+				<td bgcolor='#FDE6D4'><font color='#393536'>8</font></td>
+			</tr>
+				
+			<tr>
+				<td bgcolor='#F9D1D2'><font color='#393536'>2</font></td>
+				<td bgcolor='#F9D1D2'><font color='#393536'>010</font></td>
+				<td bgcolor='#F9D1D2'><font color='#393536'>CS2</font></td>
+				<td bgcolor='#F9D1D2'><font color='#393536'>010 000</font></td>
+				<td bgcolor='#F9D1D2'><font color='#393536'>16</font></td>
+			</tr>						
+										
+			<tr>
+				<td bgcolor='#F3D0D6'><font color='#393536'>3</font></td>
+				<td bgcolor='#F3D0D6'><font color='#393536'>011</font></td>
+				<td bgcolor='#F3D0D6'><font color='#393536'>CS3</font></td>
+				<td bgcolor='#F3D0D6'><font color='#393536'>011 000</font></td>
+				<td bgcolor='#F3D0D6'><font color='#393536'>24</font></td>
+			</tr>
+																														
+			<tr>
+				<td bgcolor='#E0D5E6'><font color='#393536'>4</font></td>
+				<td bgcolor='#E0D5E6'><font color='#393536'>100</font></td>
+				<td bgcolor='#E0D5E6'><font color='#393536'>CS4</font></td>
+				<td bgcolor='#E0D5E6'><font color='#393536'>100 000</font></td>
+				<td bgcolor='#E0D5E6'><font color='#393536'>32</font></td>
+			</tr>
+												
+			<tr>
+				<td bgcolor='#CDEAF8'><font color='#393536'>5</font></td>
+				<td bgcolor='#CDEAF8'><font color='#393536'>101</font></td>
+				<td bgcolor='#CDEAF8'><font color='#393536'>CS5</font></td>
+				<td bgcolor='#CDEAF8'><font color='#393536'>101 000</font></td>
+				<td bgcolor='#CDEAF8'><font color='#393536'>40</font></td>
+			</tr>
+			
+			<tr>
+				<td bgcolor='#E9E7E8'><font color='#393536'>6</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>110</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>CS6</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>110 000</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>48</font></td>
+			</tr>
+																																		
+			<tr>
+				<td bgcolor='#E9E7E8'><font color='#393536'>7</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>111</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>CS7</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>111 000</font></td>
+				<td bgcolor='#E9E7E8'><font color='#393536'>56</font></td>
+			</tr>
+
+		</table>]]>
+        </text>
+    </component>
+
+	<component id="ID_s5_table_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+             <caption class="mtable_title" colspan="5" bgcolor='#FFFFFF'><font size="3">CoS values, Class Selectors, and  corresponding DSCP 6-bit value</font></caption>
+
+            <tr class="mtable_top">
+                <td colspan='5' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+
+            <tr>
+                <th id="value" scope="col" bgcolor='#666263' valign="top" width="90"><font color='#ffffff'><b>CoS Value</b></font></th>
+                <th id="Binary" scope="col" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>CoS Binary Value</b></font> </th>
+                <th id="Selector" scope="col" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>Class Selector (CS)</b></font> </th>
+                <th id="CS" scope="col" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>CS Binary</b></font> </th>
+                <th id="Decimal" scope="col" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>DSCP Decimal Value</b></font> </th>
+            </tr>
+            
+            <tr>
+                <td headers="value" scope="row" bgcolor='#FFFADD'><font color='#393536'>0</font></td>
+                <td headers="Binary" bgcolor='#FFFADD'><font color='#393536'>000</font></td>
+                <td headers="Selector" bgcolor='#FFFADD'><font color='#393536'>CS0*/DF</font></td>
+                <td headers="CS" bgcolor='#FFFADD'><font color='#393536'>000 000</font></td>
+                <td headers="Decimal" bgcolor='#FFFADD'><font color='#393536'>0</font></td>
+            </tr>
+            
+            <tr>
+                <td headers="value" scope="row" bgcolor='#FDE6D4'><font color='#393536'>1</font></td>
+                <td headers="Binary" bgcolor='#FDE6D4'><font color='#393536'>001</font></td>
+                <td headers="Selector" bgcolor='#FDE6D4'><font color='#393536'>CS1</font></td>
+                <td headers="CS" bgcolor='#FDE6D4'><font color='#393536'>001 000</font></td>
+                <td headers="Decimal" bgcolor='#FDE6D4'><font color='#393536'>8</font></td>
+            </tr>
+                
+            <tr>
+                <td  headers="value"scope="row" bgcolor='#F9D1D2'><font color='#393536'>2</font></td>
+                <td headers="Binary" bgcolor='#F9D1D2'><font color='#393536'>010</font></td>
+                <td headers="Selector" bgcolor='#F9D1D2'><font color='#393536'>CS2</font></td>
+                <td headers="CS" bgcolor='#F9D1D2'><font color='#393536'>010 000</font></td>
+                <td headers="Decimal" bgcolor='#F9D1D2'><font color='#393536'>16</font></td>
+            </tr>                       
+                                        
+            <tr>
+                <td headers="value" scope="row" bgcolor='#F3D0D6'><font color='#393536'>3</font></td>
+                <td headers="Binary" bgcolor='#F3D0D6'><font color='#393536'>011</font></td>
+                <td headers="Selector" bgcolor='#F3D0D6'><font color='#393536'>CS3</font></td>
+                <td headers="CS" bgcolor='#F3D0D6'><font color='#393536'>011 000</font></td>
+                <td headers="Decimal" bgcolor='#F3D0D6'><font color='#393536'>24</font></td>
+            </tr>
+                                                                                                                        
+            <tr>
+                <td headers="value" scope="row" bgcolor='#E0D5E6'><font color='#393536'>4</font></td>
+                <td headers="Binary" bgcolor='#E0D5E6'><font color='#393536'>100</font></td>
+                <td headers="Selector" bgcolor='#E0D5E6'><font color='#393536'>CS4</font></td>
+                <td headers="CS" bgcolor='#E0D5E6'><font color='#393536'>100 000</font></td>
+                <td headers="Decimal" bgcolor='#E0D5E6'><font color='#393536'>32</font></td>
+            </tr>
+                                                
+            <tr>
+                <td  headers="value"scope="row" bgcolor='#CDEAF8'><font color='#393536'>5</font></td>
+                <td headers="Binary" bgcolor='#CDEAF8'><font color='#393536'>101</font></td>
+                <td headers="Selector" bgcolor='#CDEAF8'><font color='#393536'>CS5</font></td>
+                <td headers="CS" bgcolor='#CDEAF8'><font color='#393536'>101 000</font></td>
+                <td headers="Decimal" bgcolor='#CDEAF8'><font color='#393536'>40</font></td>
+            </tr>
+            
+            <tr>
+                <td headers="value" scope="row" bgcolor='#E9E7E8'><font color='#393536'>6</font></td>
+                <td headers="Binary" bgcolor='#E9E7E8'><font color='#393536'>110</font></td>
+                <td headers="Selector" bgcolor='#E9E7E8'><font color='#393536'>CS6</font></td>
+                <td headers="CS" bgcolor='#E9E7E8'><font color='#393536'>110 000</font></td>
+                <td headers="Decimal" bgcolor='#E9E7E8'><font color='#393536'>48</font></td>
+            </tr>
+                                                                                                                                        
+            <tr>
+                <td headers="value" scope="row" bgcolor='#E9E7E8'><font color='#393536'>7</font></td>
+                <td headers="Binary" bgcolor='#E9E7E8'><font color='#393536'>111</font></td>
+                <td headers="Selector" bgcolor='#E9E7E8'><font color='#393536'>CS7</font></td>
+                <td headers="CS" bgcolor='#E9E7E8'><font color='#393536'>111 000</font></td>
+                <td headers="Decimal" bgcolor='#E9E7E8'><font color='#393536'>56</font></td>
+            </tr>
+
+        </table>]]>
+        </text>
+    </component>
+	
+</textcomponents>

@@ -1,0 +1,1 @@
+Figure 1 shows a table of local SPAN terminology. Figure 2 shows the type of SPAN ports used in a network.

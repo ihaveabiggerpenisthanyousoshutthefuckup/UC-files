@@ -1,0 +1,63 @@
+<textcomponents>
+
+<component id="ID_title">
+		<text><![CDATA[<b>Weighted Fair Queuing Example</b>]]>
+	</text>
+	</component>
+	<component id="ID_text01">
+		<text><![CDATA[Priority Classification]]>
+	</text>
+	</component>
+	<component id="ID_text02">
+		<text><![CDATA[High]]>
+	</text>
+	</component>
+	<component id="ID_text2">
+		<text><![CDATA[High]]>
+	</text>
+	</component>
+	<component id="ID_text03">
+		<text><![CDATA[Medium]]>
+	</text>
+	</component>
+	<component id="ID_text3">
+		<text><![CDATA[Medium]]>
+	</text>
+	</component>
+	<component id="ID_text04">
+		<text><![CDATA[Normal
+]]></text></component>
+<component id="ID_text4">
+		<text><![CDATA[Normal
+]]>
+	</text>
+	</component>
+	
+	<component id="ID_text05">
+		<text><![CDATA[Low]]>
+	</text>
+	</component>
+	<component id="ID_text5">
+		<text><![CDATA[Low]]>
+	</text>
+	</component>
+	<component id="ID_text06">
+		<text><![CDATA[Classify]]>
+	</text>
+	</component>
+	<component id="ID_text07">
+		<text><![CDATA[Ingress Interface
+]]>
+	</text>
+	</component>
+	<component id="ID_text08">
+		<text><![CDATA[Queuing Buffer
+]]>
+	</text>
+	</component>
+	<component id="ID_text09">
+		<text><![CDATA[Egress Interface
+]]>
+	</text>
+</component>
+</textcomponents>

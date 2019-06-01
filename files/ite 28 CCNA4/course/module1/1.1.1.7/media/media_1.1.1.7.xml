@@ -1,0 +1,20 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Connecting Branch Networks</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Central Office]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Branch Office]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Internet WAN]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Regional Office]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Remote Office]]></text>
+	</component>
+</textcomponents>

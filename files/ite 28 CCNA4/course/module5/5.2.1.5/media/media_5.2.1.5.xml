@@ -1,0 +1,135 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Community Strings</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt01a">
+<text><![CDATA[192.168.1.10]]></text>
+</component>
+
+<component id="ID_txt01b">
+<text><![CDATA[192.168.1.5]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Web Server with SNMP Agent]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>ISP Management Network</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[SNMP Management Station]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Central MIB]]></text>
+</component>
+
+<component id="ID_txt08a">
+<text><![CDATA[get 192.168.1.10 2#B7!9]]></text>
+</component>
+
+<component id="ID_txt08b">
+<text><![CDATA[Variable = 10000]]></text>
+</component>
+
+<component id="ID_bubble_01">
+<text><![CDATA[My customer called and their web server is really slow!]]></text>
+</component>
+
+<component id="ID_bubble_02">
+<text><![CDATA[How many users are on their web server?]]></text>
+</component>
+
+<component id="ID_bubble_03">
+<text><![CDATA[Does my community string match 2#B7!9?<br/><b>Yes.</b><br><br>Is 192.168.1.5 an IP address I know?<br/><b>Yes.</b>]]></text>
+</component>
+
+<component id="ID_bubble_04">
+<text><![CDATA[10,000 users? No wonder this web server is slow.]]></text>
+</component>
+
+<component id="ID_info_01">
+<text><![CDATA[A user calls to report a problem.]]></text>
+</component>
+
+<component id="ID_info_02">
+<text><![CDATA[Management station sends a request to the Agent for connection statistics and includes the Community String.]]></text>
+</component>
+
+<component id="ID_info_03">
+<text><![CDATA[The agent verifies Community String and IP address.]]></text>
+</component>
+
+<component id="ID_info_04">
+<text><![CDATA[The agent sends all statistics for number of connections.]]></text>
+</component>
+
+<component id="ID_info_05">
+<text><![CDATA[The Management Station receives the information.]]></text>
+</component>
+
+<!-- controller -->
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+
+<component id="disc-end">
+       <text>
+           <![CDATA[End media]]>
+       </text>
+   </component>
+   <component id="disc-fforward">
+       <text>
+           <![CDATA[Fast Forward media]]>
+       </text>
+   </component>
+   <component id="disc-pause">
+       <text>
+           <![CDATA[Pause media]]>
+       </text>
+   </component>
+   <component id="disc-play">
+       <text>
+           <![CDATA[Play media]]>
+       </text>
+   </component>
+   <component id="disc-rewind">
+       <text>
+           <![CDATA[Rewind media]]>
+       </text>
+   </component>
+   <component id="disc-start">
+       <text>
+           <![CDATA[Start media]]>
+       </text>
+   </component>
+</textcomponents>

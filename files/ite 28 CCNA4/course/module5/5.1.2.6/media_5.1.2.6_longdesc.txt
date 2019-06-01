@@ -1,0 +1,1 @@
+Figure shows a PC, the supplicant, attached to a switch, the authenticator, which is attached to a RADIUS authentication server.

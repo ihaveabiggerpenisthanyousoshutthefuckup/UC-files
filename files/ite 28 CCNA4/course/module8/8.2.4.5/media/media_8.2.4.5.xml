@@ -1,0 +1,85 @@
+﻿<textcomponents>
+
+<!--slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>ARP Table on PC1</b>]]></text>
+</component>
+
+
+<!--slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>IPv6 Neighbor Table on PC1</b>]]></text>
+</component>
+
+
+<!--slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>IPv6 Neighbor Table on R1</b>]]></text>
+</component>
+
+
+<!--slide 4-->
+<component id="ID_s4_title">
+<text><![CDATA[<b>MAC Address Table on Local LAN Switch</b>]]></text>
+</component>
+
+<component id='ID_s4_txt01'>
+	<text><![CDATA[PC1 is connected to Fa0/13 of S1 – within VLAN 10.]]></text>
+</component>
+
+
+<!--slide 5-->
+<component id="ID_s5_title">
+<text><![CDATA[<b>Troubleshooting Example</b>]]></text>
+</component>
+
+<component id='ID_s5_txt01'>
+	<text><![CDATA[<b>MAC Address: 5475.D08E.9AD8</b>]]></text>
+</component>
+
+
+<!--slide 6-->
+<component id="ID_s6_title">
+<text><![CDATA[<b>ARP Table on PC1</b>]]></text>
+</component>
+
+<component id='ID_s6_txt01'>
+	<text><![CDATA[PC1 does not have an entry for the default gateway, 10.1.10.1.]]></text>
+</component>
+
+
+<!--slide 7-->
+<component id="ID_s7_title">
+<text><![CDATA[<b>MAC Address Table Reveals Wrong VLAN for Fa0/1</b>]]></text>
+</component>
+
+<component id="ID_s7_txt01">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_s7_txt02">
+<text><![CDATA[PC1]]></text>
+</component>
+
+
+<!--slide 8-->
+<component id="ID_s8_title">
+<text><![CDATA[<b>Configuring the Correct VLAN</b>]]></text>
+</component>
+
+
+<!--slide 9-->
+<component id="ID_s9_title">
+<text><![CDATA[<b>MAC Address Table on Local LAN Switch</b>]]></text>
+</component>
+
+<component id="ID_s9_txt01">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_s9_txt02">
+<text><![CDATA[PC1]]></text>
+</component>
+
+
+</textcomponents>

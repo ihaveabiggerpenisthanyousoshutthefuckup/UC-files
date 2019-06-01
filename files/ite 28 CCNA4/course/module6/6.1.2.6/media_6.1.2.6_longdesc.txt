@@ -1,0 +1,1 @@
+Figure is an interactive activity that allows the learner to compare traffic characteristics of voice, video, and data.

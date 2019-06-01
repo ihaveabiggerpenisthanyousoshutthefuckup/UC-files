@@ -1,0 +1,1 @@
+The lab shows the following topology: Router Cust1 connects to switch S1 through the Cust1 G0/1 interface and the F0/5 switch interface. S1 connects to switch S3 through ports F0/3 on both switches. S3 connects to the ISP router via port F0/5 on the switch and port G0/1 on the router.

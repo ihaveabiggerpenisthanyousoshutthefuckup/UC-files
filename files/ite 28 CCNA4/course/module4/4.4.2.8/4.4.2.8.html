@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.2.8 Troubleshooting IPv6 ACLs - Example 3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.2.8_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting IPv6 ACLs - Example 3</h1>
+        <div>
+          <p>In Figure 1, R1 is configured with an IPv6 ACL named DENY-ACCESS that should enforce the following policy for the R3 LAN:</p>
+          <p>
+            <ul>
+              <li>Permit access to the :11 network from the :30 network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Deny access to the :10 network</li>
+            </ul>
+          </p>
+          <p>Figure 2 shows the configuration and application of the IPv6 ACL.</p>
+          <p></p>
+          <p>The DENY-ACCESS ACL is supposed to permit access to the :11 network from the :30 network while denying access to the :10 network. However, after applying the ACL to the interface the :10 network is still reachable from the :30 network.</p>
+          <p></p>
+          <p>
+            <b>Solution</b>:  In this situation, the problem is not with how the ACL statements were written but with the location of the ACL. Because IPv6 ACLs must be configured with both a source and a destination, they should be applied closest to the source of the traffic. The DENY-ACCESS ACL was applied in the outbound direction on the R1 G0/1 interface which is closest to the destination. As a result, traffic to the :10 network is completely unaffected because it reaches the :10 network through the other LAN interface, G0/0. You could apply the ACL inbound on the R1 S0/0/0 interface. However, because we have control over R3, the best location would be to configure and apply the ACL closest to the source of the traffic. Figure 3 shows the removal of the ACL on R1 and the correct configuration and application of the ACL on R3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the A.C.L. reference network of three routers.  R-2 is at the top of a triangle layout and has a serial WAN connection to both R-1 and R-3.  There is no direct connection between R-1 and R-3.  R-1 has two active gigabit interfaces for local network segments, and each segment has a switch with a computer connected to the switch.  R-1 has the i.p.v.6. network 2 0 0 1 colon D B 8 colon C A F E colon 1 0 colon colon slash 64 on interface gigabit zero slash zero, and the i.p.v.6. network 2 0 0 1 colon D B 8 colon C A F E colon 1 1 colon colon slash 64 on interface gigabit zero slash one.  R-3 has only one active interface with the i.p.v.6. network 2 0 0 1 colon D B 8 colon C A F E colon 3 0 colon colon slash 64 on the gigabit zero slash one interface.  The serial WAN between R-1 and R-2 is 2 0 0 1 colon D B 8 colon F E E D colon 1 colon colon slash 64. The serial WAN between R-2 and R-3 is 2 0 0 1 colon D B 8 colon F E E D colon 2 colon colon slash 64. Figure two shows the output of the show access-list and show running-config commands. Figure three shows the commands to remove the ipv6 access-list and the ipv6 traffic-filter command from R1. The access-list and ipv6 traffic-filter command is added to R3.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

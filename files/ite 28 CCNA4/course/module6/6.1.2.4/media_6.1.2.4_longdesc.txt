@@ -1,0 +1,1 @@
+Figure 1 shows the comparison between voice sampling and video sampling. Figure 2 shows the characteristics of video traffic and its one-way transmission requirements.

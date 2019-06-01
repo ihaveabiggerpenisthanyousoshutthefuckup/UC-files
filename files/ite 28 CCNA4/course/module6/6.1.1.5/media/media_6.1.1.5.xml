@@ -1,0 +1,120 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Identify Network Transmission Quality Terminology</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Match each term to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each Term to its description.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each Term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Drag Items-->
+
+<component id='ID_s1_drag_header'>
+	<text><![CDATA[<font color="#FFFFFF" size="15">Steps</font>]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[Jitter]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[Packet Loss]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[Propagation delay]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[Bandwidth]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[Code delay]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[Congestion]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[Queue]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[Serialization delay]]></text>
+</component>
+
+<!--Questions-->
+<component id='ID_s1_target_header_01'>
+	<text><![CDATA[<font size="15">Term</font>]]></text>
+</component>
+<component id='ID_s1_text_header_01'>
+	<text><![CDATA[<font size="15">Description</font>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[This happens when congestion occurs.]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[The fixed amount of time it takes to transmit a frame from the NIC to the wire.]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[Holds packets in memory until resources become available to transmit them.]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[The number of bits that can be transmitted in a single second.]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+  <text><![CDATA[The fixed amount of time it takes to compress data at the source before transmitting to the first internetworking device.]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+  <text><![CDATA[When the demand for bandwidth exceeds the amount available.]]></text> 
+</component>
+
+<component id="ID_s1_txt07">
+  <text><![CDATA[Caused by variations in delay.]]></text> 
+</component>
+
+<component id="ID_s1_txt08">
+  <text><![CDATA[The variable amount of time it takes for the frame to traverse the links between the source and destination.]]></text> 
+</component>
+
+</textcomponents>
+

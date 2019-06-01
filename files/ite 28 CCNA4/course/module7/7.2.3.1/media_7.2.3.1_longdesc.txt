@@ -1,0 +1,1 @@
+The figure shows a type 1 hypervisor, the bare metal approach. The server consists of a hardware layer, above that is the hypervisor and above that there are three operating systems displayed, Windows, Linux and UNIX.

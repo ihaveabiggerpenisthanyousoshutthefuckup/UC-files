@@ -1,0 +1,50 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Cloud Computing Services</b>]]></text>
+	</component>
+
+	<component id="ID_s1_header01">
+		<text><![CDATA[<font color="#FFFFFF">SaaS</font>]]></text>
+	</component>
+
+	<component id="ID_s1_header02">
+		<text><![CDATA[<font color="#FFFFFF">PaaS</font>]]></text>
+	</component>
+
+	<component id="ID_s1_header03">
+		<text><![CDATA[<font color="#FFFFFF">IaaS</font>]]></text>
+	</component>
+
+	<component id="ID_s1_header04">
+		<text><![CDATA[<font color="#FFFFFF">ITaaS</font>]]></text>
+	</component>
+	
+	<component id="ID_titleTxt01">
+		<text><![CDATA[Software as a Service]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[Applications delivered over the web to the end users.]]></text>
+	</component>
+
+	<component id="ID_titleTxt02">
+		<text><![CDATA[Platform as a Service]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[Tools and services used to deliver the applications.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt03">
+		<text><![CDATA[Infrastructure as a Service]]></text>
+	</component>
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[Hardware and software to power servers, storage, networks and operating systems.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt04">
+		<text><![CDATA[IT as a Service]]></text>
+	</component>
+	<component id="ID_bodyTxt04">
+		<text><![CDATA[IT professionals support applications, platforms and infrastructure.]]></text>
+	</component>
+
+</textcomponents>

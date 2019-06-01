@@ -1,0 +1,67 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Initiating CHAP</b>]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Central-site Router</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Remote Router</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>CHAP 3-Way Handshake<B>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[Challenge]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[R3 initiates the 3-way handshake and sends a challenge message to R1.]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Responding CHAP</b>]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Central-site Router</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Remote Router</b>]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>CHAP 3-Way Handshake<B>]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[Response]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[Username: R1<br/>Hash: ######]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[R1 responds to R3's CHAP challenge by sending its CHAP username and a hash value that is based on the CHAP password.]]></text>
+</component>
+
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>Completing CHAP</b>]]></text>
+</component>
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>Central-site Router</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>Remote Router</b>]]></text>
+</component>
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>CHAP 3-Way Handshake<B>]]></text>
+</component>
+<component id="ID_s3_txt04">
+<text><![CDATA[Accept/Reject]]></text>
+</component>
+<component id="ID_s3_txt05">
+<text><![CDATA[Using the username and password for R1 in its local database, R3 compares its calculated hash value with the one sent from R1.]]></text>
+</component>
+<component id="ID_s3_txt06">
+<text><![CDATA[username R1 password cisco123]]></text>
+</component>
+
+
+</textcomponents>

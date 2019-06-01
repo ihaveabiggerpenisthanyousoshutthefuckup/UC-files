@@ -1,0 +1,23 @@
+﻿<textcomponents>
+	
+	<component id="ID_title">
+		<text><![CDATA[<b>Sample Dialup Topology</b>]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[Dialup Modem]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[Dialup Modem]]></text>
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[RTPC]]></text>
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[WAN built with an on demand connection using a modem and the voice telephone network]]></text>
+	</component>
+
+</textcomponents>

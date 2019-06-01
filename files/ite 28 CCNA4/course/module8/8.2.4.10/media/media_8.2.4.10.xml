@@ -1,0 +1,8 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Creating Name to IP Mappings</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Unable to Reach DNS Server</b>]]></text>
+	</component>
+</textcomponents>

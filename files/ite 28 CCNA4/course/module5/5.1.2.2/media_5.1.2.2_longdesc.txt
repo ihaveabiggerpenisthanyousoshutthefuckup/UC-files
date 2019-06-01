@@ -1,0 +1,1 @@
+Figure shows a layer 3 switch with a legitimate PC and two attack PCs connected. Figure shows a port security operation on a topology, where the number of permitted MAC addresses on a port is limited to one.

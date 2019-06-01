@@ -1,0 +1,21 @@
+
+          <p>SNMP agents that reside on managed devices collect and store information about the device and its operation. This information is stored by the agent locally in the MIB. The SNMP manager then uses the SNMP agent to access information within the MIB.</p>
+          <p></p>
+          <p>There are two primary SNMP manager requests, get and set. A get request is used by the NMS to query the device for data. A set request is used by the NMS to change configuration variables in the agent device. A set request can also initiate actions within a device. For example, a set can cause a router to reboot, send a configuration file, or receive a configuration file. The SNMP manager uses the get and set actions to perform the operations described in the table in Figure 1.</p>
+          <p></p>
+          <p>The SNMP agent responds to SNMP manager requests as follows:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Get an MIB variable </b>- The SNMP agent performs this function in response to a GetRequest-PDU from the network manager. The agent retrieves the value of the requested MIB variable and responds to the network manager with that value.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Set an MIB variable </b>- The SNMP agent performs this function in response to a SetRequest-PDU from the network manager. The SNMP agent changes the value of the MIB variable to the value specified by the network manager. An SNMP agent reply to a set request includes the new settings in the device. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 illustrates the use of an SNMP GetRequest to determine if interface G0/0 is up/up.  </p>
+        

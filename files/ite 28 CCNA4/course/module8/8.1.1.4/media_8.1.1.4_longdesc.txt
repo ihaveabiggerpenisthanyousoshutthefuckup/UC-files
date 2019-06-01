@@ -1,0 +1,1 @@
+Figure one shows a complex network with three wiring closets and the i.s.p. facility.  The diagram shows the interfaces and i.p. addressing for all devices.  Devices and ports of interest are highlighted. Figure two shows several graphs of C.P.U. utilization trends.

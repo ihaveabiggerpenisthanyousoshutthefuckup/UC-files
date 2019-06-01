@@ -1,0 +1,135 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify the Steps in the LCP Link Negotiation Process</b>]]></text>
+</component>
+
+<component id='ID_txttitle'>
+  <text><![CDATA[Instruction]]></text>
+</component>
+
+<component id='ID_txtbody'>
+  <text><![CDATA[Drag each LCP link negotiation step to its correct location in the flowchart.]]></text>
+</component>
+
+
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[Send<br>Configure-Ack]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[Process Configure-Request]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[Receive Configure-Ack]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[Send<br>Configure-Nak]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[Authentication Phase]]></text>
+</component>
+
+<component id='ID_drag06'>
+	<text><![CDATA[Send<br>Configure-<br/>Reject]]></text>
+</component>
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the LCP link negotiation process steps.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the LCP link negotiation process steps. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>LCP Link Negotiation Steps</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Sends Configure-Request]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[LCP options agreed upon?]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[LCP options not agreed upon?]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[Authentication option?]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[Determine new negotiation parameters.]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[Link is established]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[<b>Legend</b>]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[Initiator]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[Responder]]></text> 
+</component>
+
+<component id="ID_txt11">
+  <text><![CDATA[Yes]]></text> 
+</component>
+   
+<component id="ID_txt12">
+  <text><![CDATA[Yes]]></text> 
+</component>
+   
+<component id="ID_txt13">
+  <text><![CDATA[Yes]]></text> 
+</component>
+   
+<component id="ID_txt14">
+  <text><![CDATA[No]]></text> 
+</component>
+      
+<component id="ID_txt15">
+  <text><![CDATA[No]]></text> 
+</component>
+      
+<component id="ID_txt16">
+  <text><![CDATA[No]]></text> 
+</component>
+   
+</textcomponents>

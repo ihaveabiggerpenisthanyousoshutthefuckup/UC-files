@@ -1,0 +1,57 @@
+
+          <p>Troubleshooting Layer 2 problems can be a challenging process. The configuration and operation of these protocols are critical to creating a functional, well-tuned network. Layer 2 problems cause specific symptoms that, when recognized, will help identify the problem quickly. </p>
+          <p></p>
+          <p>Common symptoms of network problems at the data link layer include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>No functionality or connectivity at the network layer or above </b>- Some Layer 2 problems can stop the exchange of frames across a link, while others only cause network performance to degrade.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Network is operating below baseline performance levels </b>- There are two distinct types of suboptimal Layer 2 operation that can occur in a network. First, the frames take a suboptimal path to their destination but do arrive. In this case, the network might experience high-bandwidth usage on links that should not have that level of traffic.  Second, some frames are dropped. These problems can be identified through error counter statistics and console error messages that appear on the switch or router. In an Ethernet environment, an extended or continuous ping also reveals if frames are being dropped.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Excessive broadcasts </b>- Operating systems use broadcasts and multicasts extensively to discover network services and other hosts. Generally, excessive broadcasts result from one of the following situations: poorly programmed or configured applications, large Layer 2 broadcast domains, or underlying network problems, such as STP loops or route flapping.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Console messages </b>- In some instances, a router recognizes that a Layer 2 problem has occurred and sends alert messages to the console. Typically, a router does this when it detects a problem with interpreting incoming frames (encapsulation or framing problems) or when keepalives are expected but do not arrive. The most common console message that indicates a Layer 2 problem is a line protocol down message.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Issues at the data link layer that commonly result in network connectivity or performance problems include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Encapsulation errors </b>- An encapsulation error occurs because the bits placed in a particular field by the sender are not what the receiver expects to see. This condition occurs when the encapsulation at one end of a WAN link is configured differently from the encapsulation used at the other end.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address mapping errors </b>- In topologies, such as point-to-multipoint or broadcast Ethernet, it is essential that an appropriate Layer 2 destination address be given to the frame. This ensures its arrival at the correct destination. To achieve this, the network device must match a destination Layer 3 address with the correct Layer 2 address using either static or dynamic maps. In a dynamic environment, the mapping of Layer 2 and Layer 3 information can fail because devices may have been specifically configured not to respond to ARP requests, the Layer 2 or Layer 3 information that is cached may have physically changed, or invalid ARP replies are received because of a misconfiguration or a security attack.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Framing errors </b>- Frames usually work in groups of 8-bit bytes. A framing error occurs when a frame does not end on an 8-bit byte boundary. When this happens, the receiver may have problems determining where one frame ends and another frame starts. Too many invalid frames may prevent valid keepalives from being exchanged. Framing errors can be caused by a noisy serial line, an improperly designed cable (too long or not properly shielded), faulty NIC, duplex mismatch, or an incorrectly configured channel service unit (CSU) line clock.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>STP failures or loops </b>- The purpose of the Spanning Tree Protocol (STP) is to resolve a redundant physical topology into a tree-like topology by blocking redundant ports. Most STP problems are related to forwarding loops that occur when no ports in a redundant topology are blocked and traffic is forwarded in circles indefinitely, excessive flooding because of a high rate of STP topology changes. A topology change should be a rare event in a well-configured network. When a link between two switches goes up or down, there is eventually a topology change when the STP state of the port is changing to or from forwarding. However, when a port is flapping (oscillating between up and down states), this causes repetitive topology changes and flooding, or slow STP convergence or re-convergence. This can be caused by a mismatch between the real and documented topology, a configuration error, such as an inconsistent configuration of STP timers, an overloaded switch CPU during convergence, or a software defect.</li>
+            </ul>
+          </p>
+        

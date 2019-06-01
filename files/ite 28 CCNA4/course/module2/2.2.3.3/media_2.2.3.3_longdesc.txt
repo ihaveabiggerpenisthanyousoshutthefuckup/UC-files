@@ -1,0 +1,1 @@
+The figure shows three P.P.P. links between two routers, each highlighting a different configuration option.  The first figure lists authentication options P.A.P. and C.H.A.P.  The second figure displays the compression option. The third figure shows the multilink configuration option.

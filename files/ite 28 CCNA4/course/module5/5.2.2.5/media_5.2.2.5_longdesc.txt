@@ -1,0 +1,1 @@
+Figure 1 shows a configuration example of securing SNMPv3. Figure 2 is an interactive syntax checker that requires configuring SNMPv3 authentication on R1.

@@ -1,0 +1,121 @@
+﻿<textcomponents>
+ 
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Activity - Identify Broadband Wireless Terminology</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_instr_title'>
+		<text><![CDATA[Instructions]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[Match each broadband wireless term to its description.]]></text>
+	</component>
+
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+
+	<component id="ID_s1_CORRECT_TITLE">
+		<text><![CDATA[Correct]]></text>
+	</component>
+
+	<component id="ID_s1_CORRECT_BODY">
+		<text><![CDATA[You have successfully matched each broadband wireless term to its description.]]></text>
+	</component>
+
+	<component id="ID_s1_INCORRECT_TITLE">
+		<text><![CDATA[Incorrect]]></text>
+	</component>
+	
+	<component id="ID_s1_INCORRECT_BODY">
+		<text><![CDATA[You have not successfully matched each broadband wireless term to its description. Please click Reset to try again.]]></text>
+	</component>
+
+	<component id='ID_s1_drag01'>
+		<text><![CDATA[DOCSIS]]></text>
+	</component>
+
+	<component id='ID_s1_drag02'>
+		<text><![CDATA[DSL]]></text>
+	</component>
+
+	<component id='ID_s1_drag03'>
+		<text><![CDATA[Municipal Wi-Fi]]></text>
+	</component>
+
+	<component id='ID_s1_drag04'>
+		<text><![CDATA[DSLAM]]></text>
+	</component>
+
+	<component id='ID_s1_drag05'>
+		<text><![CDATA[HFC]]></text>
+	</component>
+
+	<component id='ID_s1_drag06'>
+		<text><![CDATA[CMTS]]></text>
+	</component>
+
+	<component id='ID_s1_drag07'>
+		<text><![CDATA[2G/3G/4G Wireless]]></text>
+	</component>
+
+	<component id='ID_s1_drag08'>
+		<text><![CDATA[Transceiver]]></text>
+	</component>
+
+	<component id='ID_s1_drag09'>
+		<text><![CDATA[LTE]]></text>
+	</component>
+
+
+
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[Defines the communications and operations support interface that permits the addition of high-speed data transfer to a traditional cable TV system.]]></text>
+	</component>
+
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[A means of providing high speed connections over pre-existing installed copper wire infrastructure.]]></text>
+	</component>
+
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[A mesh network which blankets an area with radio signals.]]></text>
+	</component>
+
+	<component id='ID_s1_txt04'>
+		<text><![CDATA[Located at the CO, this device combines individual DSL connections from subscribers into one-high capacity link to an ISP.]]></text>
+	</component>
+
+	<component id='ID_s1_txt05'>
+		<text><![CDATA[Combining both fiber-optic and coax cabling together into a hybrid cabling infrastructure.]]></text>
+	</component>
+
+	<component id='ID_s1_txt06'>
+		<text><![CDATA[Located at the headend. This device communicates with CMs located in subscriber homes.]]></text>
+	</component>
+
+	<component id='ID_s1_txt07'>
+		<text><![CDATA[Each of these represent major improvements to the cellular networks for high-speed data capacity.]]></text>
+	</component>
+
+	<component id='ID_s1_txt08'>
+		<text><![CDATA[Sometimes referred to as the DSL modem, it connects the subscriber to the DSL network.]]></text>
+	</component>
+
+	<component id='ID_s1_txt09'>
+		<text><![CDATA[Newer and faster technology for high speed cellular data. Considered to be part of 4G.]]></text>
+	</component>
+
+	<component id='ID_s1_target_header_01'>
+		<text><![CDATA[Terms]]></text>
+	</component>
+
+	<component id='ID_s1_text_header_01'>
+		<text><![CDATA[Descriptions]]></text>
+	</component>
+
+</textcomponents>

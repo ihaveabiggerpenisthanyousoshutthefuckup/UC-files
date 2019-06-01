@@ -1,0 +1,176 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Physical Network Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Wiring Closet A</b>]]></text>
+</component>	
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Rack 1<br>Shelf 3]]></text>
+</component>	
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Ethernet-R2-SRV1]]></text>
+</component>	
+
+<component id="ID_s1_txt04">
+<text><![CDATA[WEB/TFTP Server]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[T1-R2-R1<br>(Leased)]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[Rack 2<br>Shelf 1]]></text>
+</component>	
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<b>Building A (Main Office)</b>]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[T1-R2-R3]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[Frame Relay Cloud]]></text>
+</component>
+
+<component id="ID_s1_txt10">
+<text><![CDATA[T1-R2-ISP<br>(Leased)]]></text>
+</component>
+
+<component id="ID_s1_txt11">
+<text><![CDATA[<b>ISP Facility</b>]]></text>
+</component>
+
+<component id="ID_s1_txt12">
+<text><![CDATA[SRV1]]></text>
+</component>
+
+<component id="ID_s1_txt13">
+<text><![CDATA[SRV2]]></text>
+</component>
+
+<component id="ID_s1_txt14">
+<text><![CDATA[WEB Server<br>(co-located at ISP)]]></text>
+</component>
+
+<component id="ID_s1_txt15">
+<text><![CDATA[<b>Wiring Closet S</b>]]></text>
+</component>
+
+<component id="ID_s1_txt16">
+<text><![CDATA[Rack 1<br>Shelf 1]]></text>
+</component>	
+
+<component id="ID_s1_txt17">
+<text><![CDATA[Rack 1<br>Shelf 2]]></text>
+</component>
+
+<component id="ID_s1_txt18">
+<text><![CDATA[Ethernet-R3-S3]]></text>
+</component>
+
+<component id="ID_s1_txt19">
+<text><![CDATA[Ethernet-S3-PC3]]></text>
+</component>
+
+<component id="ID_s1_txt20">
+<text><![CDATA[Conference Room]]></text>
+</component>
+
+<component id="ID_s1_txt21">
+<text><![CDATA[<b>Sales Office (Remote Branch)</b>]]></text>
+</component>
+
+<component id="ID_s1_txt22">
+<text><![CDATA[<b>Building B (Engineering)</b>]]></text>
+</component>
+
+<component id="ID_s1_txt23">
+<text><![CDATA[Ethernet-S2-PC2]]></text>
+</component>	
+
+<component id="ID_s1_txt24">
+<text><![CDATA[Ethernet-R1-S1]]></text>
+</component>
+
+<component id="ID_s1_txt25">
+<text><![CDATA[Ethernet-R1-S2]]></text>
+</component>
+
+<component id="ID_s1_txt26">
+<text><![CDATA[Ethernet-S1-PC1]]></text>
+</component>	
+
+<component id="ID_s1_txt27">
+<text><![CDATA[<b>Wiring Closet B</b>]]></text>
+</component>	
+
+<component id="ID_s1_txt28">
+<text><![CDATA[Ethernet-R2-SRV1]]></text>
+</component>
+
+<component id="ID_s1_txt29">
+<text><![CDATA[Rack 1<br>Shelf 3]]></text>
+</component>	
+
+<component id="ID_s1_txt30">
+<text><![CDATA[Rack 1<br>Shelf 1]]></text>
+</component>
+
+<component id="ID_s1_txt31">
+<text><![CDATA[Rack 1<br>Shelf 2]]></text>
+</component>	
+
+<component id='ID_s1_txt32'>
+<text><![CDATA[Rm 701]]></text>
+</component>
+
+<component id='ID_s1_txt33'>
+<text><![CDATA[Rm 705]]></text>
+</component>
+
+
+
+<!--slide 2-->	
+<component id="ID_s2_title">
+<text><![CDATA[<b>Logical IPv4 Network Topology</b>]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>ISP Facility</b>]]></text>
+</component>
+
+
+<component id="ID_s2_txt05">
+<text><![CDATA[192.168.20.254/24<br>WEB/TFTP Server]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[209.165.201.30/27<br>WEB/TFTP Server]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>Building B</b>]]></text>
+</component>
+<component id="ID_s2_txt08">
+<text><![CDATA[Demo PC]]></text>
+</component>
+<component id="ID_s2_txt09">
+<text><![CDATA[Admin]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[Admin]]></text>
+</component>	
+<component id='ID_s2_txt11'>
+<text><![CDATA[<b>Sales Office (London)</b>]]></text>
+</component>
+
+
+</textcomponents>

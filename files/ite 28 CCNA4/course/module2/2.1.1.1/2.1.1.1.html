@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.1.1 Serial and Parallel Ports</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Serial and Parallel Ports</h1>
+        <div>
+          <p>A common type of WAN connections is the point-to-point connection. As shown in Figure 1, point-to-point connections are used to connect LANs to service provider WANs, and to connect LAN segments within an enterprise network. </p>
+          <p></p>
+          <p>A LAN-to-WAN point-to-point connection is also referred to as a serial connection or leased-line connection. This is because the lines are leased from a carrier (usually a telephone company) and are dedicated for use by the company leasing the lines. Companies pay for a continuous connection between two remote sites, and the line is continuously active and available. Leased lines are a frequently used type of WAN access, and they are generally priced based on the bandwidth required and the distance between the two connected points.</p>
+          <p></p>
+          <p>Understanding how point-to-point serial communication across a leased line works is important to an overall understanding of how WANs function. </p>
+          <p></p>
+          <p>Communications across a serial connection is a method of data transmissions in which the bits are transmitted sequentially over a single channel. This is equivalent to a pipe only wide enough to fit one ball at a time. Multiple balls can go into the pipe, but only one at a time, and they only have one exit point, the other end of the pipe. A serial port is bidirectional, and often referred to as a bidirectional port or a communications port. </p>
+          <p></p>
+          <p>This is in contrast to parallel communications in which bits can be transmitted simultaneously over multiple wires. Click Play in Figure 2 to see an illustration of the difference between serial and parallel connections. A parallel connection theoretically transfers data eight times faster than a serial connection. Based on this theory, a parallel connection sends a byte (eight bits) in the time that a serial connection sends a single bit. However, parallel communications do have issues with crosstalk across wires, especially as the wire length increases. Clock skew is also an issue with parallel communications. Clock skew occurs when data across the various wires does not arrive at the same time, creating synchronization issues. Finally, many parallel communications support only one-direction, outbound only communication, but some support half-duplex communication (two-way communication, but only one way at a time). </p>
+          <p></p>
+          <p>At one time, most PCs included both serial and parallel ports. Parallel ports were used to connect printers, computers, and other devices that required relatively high bandwidth. Parallel ports were also used between internal components. For external communications, a serial bus was primarily used to connect to phone lines and devices that could potentially be further distance than a parallel transfer would allow. Because serial communications are less complex and require simpler circuitry, serial communications are considerably less expensive to implement. Serial communications use fewer wires, cheaper cables, and fewer connector pins.</p>
+          <p></p>
+          <p>On most PCs, parallel ports and RS-232 serial ports have been replaced by the higher speed serial Universal Serial Bus (USB) interfaces. For long-distance communication, many WANs also use serial transmission. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows two routers. Each router is connected to a WAN provided by an Internet Service Provider.  Each router has a LAN on an Ethernet interface. Figure 2 is an animation comparing a serial connection to a parallel connection.  The serial connection sends one bit, while the parallel connection is sending eight bits.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

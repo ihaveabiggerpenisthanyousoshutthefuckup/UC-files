@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.5 Community Strings</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Community Strings</h1>
+        <div>
+          <p>For SNMP to operate, the NMS must have access to the MIB. To ensure that access requests are valid, some form of authentication must be in place.</p>
+          <p></p>
+          <p>SNMPv1 and SNMPv2c use community strings that control access to the MIB. Community strings are plaintext passwords. SNMP community strings authenticate access to MIB objects.</p>
+          <p></p>
+          <p>There are two types of community strings: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Read-only (ro) </b>- Provides access to the MIB variables, but does not allow these variables to be changed, only read. Because security is minimal in version 2c, many organizations use SNMPv2c in read-only mode.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Read-write (rw) </b>- Provides read and write access to all objects in the MIB.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To view or set MIB variables, the user must specify the appropriate community string for read or write access. </p>
+          <p></p>
+          <p>Click Play in the figure to see an animation about how SNMP operates with the community string.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Plaintext passwords are not considered a security mechanism. This is because plaintext passwords are highly vulnerable to man-in-the-middle attacks, in which they are compromised through the capture of packets. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is an animation.  The animation includes a worker on a P.C. as the SNMP management station, a web server with SNMP agent, and a central MIB database.  The manager requests statistics from the web server and finds out there are ten thousand users.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

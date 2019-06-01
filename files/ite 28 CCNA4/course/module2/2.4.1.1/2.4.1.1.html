@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.4.1.1 Troubleshooting PPP Serial Encapsulation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.4.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting PPP Serial Encapsulation</h1>
+        <div>
+          <p>The<b> debug </b>command is used for troubleshooting and is accessed from privileged EXEC mode of the command-line interface. A<b> debug </b>output displays information about various router operations, related traffic generated or received by the router, and any error messages. It can consume a significant amount of resources, and the router is forced to process-switch the packets being debugged. The<b> debug </b>command must not be used as a monitoring tool; rather, it is meant to be used for a short period of time for troubleshooting. </p>
+          <p></p>
+          <p>Use the<b> debug ppp </b>command to display information about the operation of PPP. The figure shows the command syntax. Use the<b> no </b>form of this command to disable debugging output.</p>
+          <p></p>
+          <p>Use the<b> debug ppp </b>command when trying to search the following: </p>
+          <p>
+            <ul>
+              <li>NCPs that are supported on either end of a PPP connection </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Any loops that might exist in a PPP internetwork</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Nodes that are (or are not) properly negotiating PPP connections</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Errors that have occurred over the PPP connection</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Causes for CHAP session failures</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Causes for PAP session failures</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Information specific to the exchange of PPP connections using the Callback Control Protocol (CBCP), used by Microsoft clients</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Incorrect packet sequence number information where MPPC compression is enabled</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure lists the following parameters for the command debug p.p.p.: packet, negotiation, error, authentication, compression, and C.D.C.P.  Packet is used to display the p.p.p. packets being sent and received. Negotiation is used to display the p.p.p. packets during the initial p.p.p. startup. Error is used to display protocol errors. Authentication is used to display authentication protocol messages including CHAP and PAP exchanges. Compression is used to display information specific to the exchange of P.P.P connections using M.P.P.C. C.D.C.P is used to display protocol errors and statistics associated with P.P.P. connection negotiations using M.S.C.B.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

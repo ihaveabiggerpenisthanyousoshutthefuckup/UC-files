@@ -1,0 +1,8 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b></b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Network administrators must use a systematic approach to troubleshooting when network problems occur.]]></text>
+	</component>
+</textcomponents>

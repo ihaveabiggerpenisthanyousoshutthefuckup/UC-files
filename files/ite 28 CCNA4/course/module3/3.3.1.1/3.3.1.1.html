@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.1.1 Introducing VPNs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Introducing VPNs</h1>
+        <div>
+          <p>Organizations need secure, reliable, and cost-effective ways to interconnect multiple networks, such as allowing branch offices and suppliers to connect to a corporation’s headquarter network. Additionally, with the growing number of teleworkers, enterprises have an increasing need for secure, reliable, and cost-effective ways to connect employees working in small office/home office (SOHO) and other remote locations, with resources on corporate sites.</p>
+          <p></p>
+          <p>As shown in the figure, organizations use VPNs to create an end-to-end private network connection over third-party networks, such as the Internet. The tunnel eliminates the distance barrier and enables remote users to access central site network resources. A VPN is a private network created via tunneling over a public network, usually the Internet. A VPN is a communications environment in which access is strictly controlled to permit peer connections within a defined community of interest.</p>
+          <p></p>
+          <p>The first VPNs were strictly IP tunnels that did not include authentication or encryption of the data. For example, Generic Routing Encapsulation (GRE) is a tunneling protocol developed by Cisco that can encapsulate a wide variety of network layer protocol packet types inside IP tunnels but it doesn’t support encryption. This creates a virtual point-to-point link to Cisco routers at remote points over an IP internetwork.</p>
+          <p></p>
+          <p>Today, a secure implementation of VPN with encryption, such as IPsec VPNs, is what is usually meant by virtual private networking.</p>
+          <p>To implement VPNs, a VPN gateway is necessary. The VPN gateway could be a router, a firewall, or a Cisco Adaptive Security Appliance (ASA). An ASA is a standalone firewall device that combines firewall, VPN concentrator, and intrusion prevention functionality into one software image.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows four different VPN connections through an Internet cloud going back to the main corporate building, the main site. The main site has a Cisco ASA firewall used to connect to the Corporate cloud or network. The first type of VPN connection to the main site is a business partner with a Cisco router. The second type of VPN is a regional office with a Cisco ASA firewall. The third type of connection is a SOHO with a Cisco router. The last type of VPN connection is a mobile worker laptop with Cisco AnyConnect installed. </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

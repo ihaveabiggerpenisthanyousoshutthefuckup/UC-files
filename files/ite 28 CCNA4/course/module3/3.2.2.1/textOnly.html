@@ -1,0 +1,12 @@
+
+          <p>With the ability to send and receive PPP frames between the routers, the ISP could continue to use the same authentication model as with analog and ISDN. To make it all work, the client and ISP routers need additional configuration, including PPP configuration, as shown in Figure 1. To understand the configuration, consider the following:</p>
+          <p></p>
+          <p>1. To create a PPP tunnel, the configuration uses a dialer interface. A dialer interface is a virtual interface. The PPP configuration is placed on the dialer interface, not the physical interface. The dialer interface is created using the<b> interface dialer </b><i>number </i>global configuration<i></i>command. The client can configure a static IP address, but will more likely be automatically assigned a public IP address by the ISP.</p>
+          <p></p>
+          <p>2. The PPP CHAP configuration usually defines one-way authentication; therefore, the ISP authenticates the customer. The hostname and password configured on the customer router must match the hostname and password configured on the ISP router. Notice in the figure that the CHAP username and password match the settings on the ISP router.</p>
+          <p></p>
+          <p>3. The physical Ethernet interface that connects to the DSL modem is then enabled with the command<b> pppoe enable</b> interface configuration command. This command enables PPPoE and links the physical interface to the dialer interface. The dialer interface is linked to the Ethernet interface with the<b> dialer pool </b>and <b>pppoe-client</b> interface configuration commands, using the same number. The dialer interface number does not have to match the dialer pool number.</p>
+          <p></p>
+          <p>4. The maximum transmission unit (MTU) should be set down to 1492, versus the default of 1500, to accommodate the PPPoE headers.</p>
+          <p>Use the Syntax Checker in Figure 2 to practice configuring PPPoE.</p>
+        

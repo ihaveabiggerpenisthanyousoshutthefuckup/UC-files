@@ -1,0 +1,189 @@
+﻿<textcomponents>
+
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – Part 1: Identify Public WAN Infrastructure Terminology</b>]]></text>
+</component>
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instruction]]></text>
+</component>
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Match each public WAN access term to its description. Click Button 2 to continue this activity.]]></text>
+</component>
+<!--Drag and Drop-->
+<component id='ID_s1_drag01'>
+	<text><![CDATA[DSL]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[Cable]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[Municipal Wi-Fi]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[WiMAX]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[Satellite Internet]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[3G/4G Cellular]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[VPN Site-to-Site]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[VPN Remote]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each public WAN access term to its description. Click Button 2 to continue.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each public WAN access term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<component id='ID_s1_target_header_01'>
+	<text><![CDATA[Term]]></text>
+</component>
+<component id='ID_s1_text_header_01'>
+	<text><![CDATA[Description]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[Dish and modem-based WAN access option for rural users where Cable and DSL are not available.]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[Cellular, radio-waves WAN access option used with smart phones and tablets.]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[Secure, Internet-based WAN access option used by teleworkers and extranet users.]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+  <text><![CDATA[Radio and directional-antenna WAN access option provided by public organizations.]]></text> 
+</component>
+
+
+
+
+<!-- instructions -->
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity – Part 2: Identify Public WAN Infrastructure Terminology</b>]]></text>
+</component>
+<component id='ID_s2_instr_title'>
+	<text><![CDATA[Instruction]]></text>
+</component>
+<component id='ID_s2_instr_body'>
+	<text><![CDATA[Match each public WAN access term to its description.]]></text>
+</component>
+<!--Drag and Drop-->
+<component id='ID_s2_drag01'>
+	<text><![CDATA[DSL]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[Cable]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[Municipal Wi-Fi]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[WiMAX]]></text>
+</component>
+
+<component id='ID_s2_drag05'>
+	<text><![CDATA[Satellite Internet]]></text>
+</component>
+
+<component id='ID_s2_drag06'>
+	<text><![CDATA[3G/4G Cellular]]></text>
+</component>
+
+<component id='ID_s2_drag07'>
+	<text><![CDATA[VPN Site-to-Site]]></text>
+</component>
+
+<component id='ID_s2_drag08'>
+	<text><![CDATA[VPN Remote]]></text>
+</component>
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each public WAN access term to its description.]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each public WAN access term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<component id='ID_s2_target_header_01'>
+	<text><![CDATA[Term]]></text>
+</component>
+<component id='ID_s2_text_header_01'>
+	<text><![CDATA[Description]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[Entire networks connected together by using VPN routers, firewalls, and security appliances.]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+  <text><![CDATA[WAN access option that uses telephone lines to transport data via multiplexed links.]]></text> 
+</component>
+
+<component id="ID_s2_txt03">
+  <text><![CDATA[High-speed, long distance wireless connections through nearby, special service provider towers.]]></text> 
+</component>
+
+<component id="ID_s2_txt04">
+  <text><![CDATA[A shared WAN access option that transports data using television-signal networks.]]></text> 
+</component>
+
+</textcomponents>

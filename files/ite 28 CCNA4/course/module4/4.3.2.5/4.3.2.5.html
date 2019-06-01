@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.5 Verifying IPv6 ACLs </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying IPv6 ACLs </h1>
+        <div>
+          <p>The commands used to verify an IPv6 access list are similar to those used for IPv4 ACLs. Using these commands, the IPv6 access list RESTRICTED-ACCESS that was configured previously can be verified. Figure 1 shows the output of the <b>show ipv6 interface</b> command. The output confirms that RESTRICTED-ACCESS ACL is configured inbound on the G0/0 interface.</p>
+          <p></p>
+          <p>As shown in Figure 2, the <b>show access-lists</b> command displays all access lists on the router including both IPv4 and IPv6 ACLs. Notice that with IPv6 ACLs the sequence numbers occur at the end of the statement and not the beginning as with IPv4 access lists. Although the statements appear in the order they were entered, they are not always incremented by 10. This is because the remark statements that were entered use a sequence number but are not displayed in the output of the <b>show access-lists</b> command.</p>
+          <p></p>
+          <p>Similar to extended ACLs for IPv4, IPv6 access lists are displayed and processed in the order the statements are entered. Remember, IPv4 standard ACLs use an internal logic which changes their order and processing sequence.</p>
+          <p></p>
+          <p>As shown in Figure 3, the output from the <b>show running-config</b> command includes all of the ACEs and remark statements. Remark statements can come before or after <b>permit</b> or <b>deny</b> statements but should be consistent in their placement. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show i.p.v.6. interface gig zero slash zero.  The output lists the i.p. address and any access lists that are configured on the interface. Figure two shows the output from the command, show access hyphen lists. This command lists the lines configured on the A.C.L.s. Figure three shows the output from the command, show running hyphen config.  This output lists the running configuration file and includes all lines in all configured A.C.L.s.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

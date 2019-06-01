@@ -1,0 +1,19 @@
+
+          <p>There are several software solutions for viewing SNMP output. For our purposes, the Kiwi Syslog Server displays SNMP messages associated with SNMP traps. </p>
+          <p></p>
+          <p>PC1 and R1 are configured to demonstrate output on an SNMP Manager as related to SNMP traps. </p>
+          <p></p>
+          <p>As shown in Figure 1, PC1 is assigned the IP address 192.168.1.3/24. The Kiwi Syslog Server is installed on PC1.</p>
+          <p></p>
+          <p>After R1 is configured, whenever an event occurs which qualifies as a trap, the SNMP traps are sent to the SNMP manager. For instance, if an interface comes up, a trap is sent to the server. Configuration changes on the router also trigger SNMP traps to be sent to the SNMP manager. A list of over 60 trap notification types can be seen with the<b> snmp-server enable traps ? </b>command. In the configuration of R1, no trap notification types are specified in the<b> snmp-server enable traps </b><i>notification-types</i> command, so all traps are sent.</p>
+          <p></p>
+          <p>In Figure 2, a check box is checked in the<b> Setup </b>menu to indicate that the network administrator wants SNMP manager software to listen for SNMP traps on UDP port 162.</p>
+          <p></p>
+          <p>In Figure 3, the top row of the displayed SNMP trap output indicates that interface GigabitEthernet0/0 changed state to up. Also, each time the global configuration mode is entered from privileged EXEC mode, a trap is received by the SNMP manager, as shown in the highlighted row. </p>
+          <p></p>
+          <p>To verify the SNMP configuration, use any of the variations of the<b> show snmp </b>privileged EXEC mode command. The most useful command is simply the<b> show snmp </b>command, as it displays the information that is commonly of interest when examining the SNMP configuration.  Unless there is an involved SNMPv3 configuration, for the most part the other command options only display selected portions of the output of the<b> show snmp </b>command. Figure 4 provides an example of<b> show snmp </b>output.</p>
+          <p></p>
+          <p>The<b> show snmp </b>command output does not display information relating to the SNMP community string or, if applicable, the associated ACL. Figure 5 displays the SNMP community string and ACL information, using the<b> show snmp community</b> command.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 6 to configure and verify SNMP on R1.</p>
+        

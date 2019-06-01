@@ -1,0 +1,46 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+	  <text><![CDATA[<b>Sample DSL Topology</b>]]></text> 
+	</component>
+
+	<component id="ID_txt01">
+	  <text><![CDATA[<b>Teleworker</b>]]></text> 
+	</component>
+
+	<component id="ID_txt02">
+	  <text><![CDATA[Router]]></text> 
+	</component>
+
+	<component id="ID_txt03">
+	  <text><![CDATA[Ethernet]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+	  <text><![CDATA[DSL Modem]]></text> 
+	</component>
+
+	<component id="ID_txt05">
+	  <text><![CDATA[DSLAM<br/>Point of Presence (POP)]]></text> 
+	</component>
+
+	<component id="ID_txt06">
+	  <text><![CDATA[]]></text> 
+	</component>
+
+	<component id="ID_txt07">
+	  <text><![CDATA[Internet]]></text> 
+	</component>
+
+	<component id="ID_txt08">
+	  <text><![CDATA[DSL Service Provider]]></text> 
+	</component>
+
+	<component id="ID_txt09">
+	  <text><![CDATA[WAN Service Provider]]></text> 
+	</component>
+
+	<component id="ID_txt10">
+	  <text><![CDATA[<b>Company Head Office</b>]]></text> 
+	</component>
+</textcomponents>

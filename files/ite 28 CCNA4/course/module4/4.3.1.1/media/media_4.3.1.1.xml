@@ -1,0 +1,21 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>IPv6 ACLs</b>]]></text>
+</component>
+
+<component id="ID_txt01_title">
+  <text><![CDATA[IPv4 ACLs]]></text> 
+  </component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<textformat blockindent="-14"><ul><li class="parent">Standard</li></ul></textformat><ul><li>Numbered</li><li>Named</li></ul><textformat blockindent="-14"><ul><li class="parent">Extended</li></ul></textformat><ul><li>Numbered</li><li>Named</li></ul>]]></text> 
+  </component>
+  
+ <component id="ID_txt02_title">
+  <text><![CDATA[IPv6 ACLs]]></text> 
+  </component> 
+  
+<component id="ID_txt02">
+  <text><![CDATA[<textformat blockindent="-14"><ul><li class="parent">Named only</li><li class="parent">Similar in functionality to IPv4 Extended ACL</li></ul></textformat>]]></text> 
+  </component>
+</textcomponents>

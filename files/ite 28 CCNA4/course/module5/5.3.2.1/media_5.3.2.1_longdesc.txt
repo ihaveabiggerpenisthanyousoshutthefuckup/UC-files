@@ -1,0 +1,1 @@
+Figure 1 shows the syntax of the monitor session global configuration command. Figure 2 shows that PCA is connected to F0/1 of the switch S1 and a computer with a packet analyzer application is connected to Fa0/2 on S1. The monitor session global configuration command is used to send a copy of those frames sent or received on F0/1 to the packet analyzer (or IPS) on port Fa0/2.

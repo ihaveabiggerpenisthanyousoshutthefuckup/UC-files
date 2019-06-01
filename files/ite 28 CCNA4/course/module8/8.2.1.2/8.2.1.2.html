@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.2 IP SLA Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP SLA Configuration</h1>
+        <div>
+          <p>Instead of using <b>ping</b> manually, a network engineer can use the IP SLA ICMP Echo operation to test the availability of network devices. A network device can be any device with IP capabilities (router, switch, PC, server, etc.). The IP SLA ICMP Echo operation provides the following measurements:</p>
+          <p>
+            <ul>
+              <li>Availability monitoring (packet loss statistics)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Performance monitoring (latency and response time)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network operation (end-to-end connectivity)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To verify that the desired IP SLA operation is supported on the source device, use the <b>show ip sla application</b> privileged EXEC mode command.  The output generated in the figure confirms that R1 is capable of supporting IP SLA. However, there are currently no sessions configured.</p>
+          <p></p>
+          <p>To create an IP SLA operation and enter IP SLA configuration mode, use the <b>ip sla </b><i>operation-number</i> global configuration command. The operation number is a unique number used to identify the operation being configured. </p>
+          <p></p>
+          <p>From IP SLA configuration mode, you can configure the IP SLA operation as an ICMP Echo operation and enter ICMP echo configuration mode using the following command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-ip-sla)# </span>
+            <span class="cmd">
+              <b>icmp-echo</b>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>dest-ip-address</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>dest-hostname</i>
+            </span>
+            <span class="cmd">} [</span>
+            <span class="cmd">
+              <b>source-ip</b>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>ip-address</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>hostname</i>
+            </span>
+            <span class="cmd">} | </span>
+            <span class="cmd">
+              <b>source-interface</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>interface-id</i>
+            </span>
+            <span class="cmd">]</span>
+          </p>
+          <p></p>
+          <p>Next, set the rate at which a specified IP SLA operation repeats using the <b>frequency </b><i>seconds </i>command. The range is from 1 to 604800 seconds and the default is 60 seconds.</p>
+          <p></p>
+          <p>To schedule the IP SLA operation, use the following global configuration command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)# </span>
+            <span class="cmd">
+              <b>ip sla schedule </b>
+            </span>
+            <span class="cmd">
+              <i>operation-number </i>
+            </span>
+            <span class="cmd">[</span>
+            <span class="cmd">
+              <b>life </b>
+            </span>
+            <span class="cmd">{</span>
+            <span class="cmd">
+              <b>forever </b>
+            </span>
+            <span class="cmd">| </span>
+            <span class="cmd">
+              <i>seconds</i>
+            </span>
+            <span class="cmd">}] [</span>
+            <span class="cmd">
+              <b>start-time </b>
+            </span>
+            <span class="cmd">{</span>
+            <span class="cmd">
+              <i>hh</i>
+            </span>
+            <span class="cmd">:</span>
+            <span class="cmd">
+              <i>mm </i>
+            </span>
+            <span class="cmd">[:</span>
+            <span class="cmd">
+              <i>ss</i>
+            </span>
+            <span class="cmd">] [</span>
+            <span class="cmd">
+              <i>month day </i>
+            </span>
+            <span class="cmd">| </span>
+            <span class="cmd">
+              <i>day month</i>
+            </span>
+            <span class="cmd">] | </span>
+            <span class="cmd">
+              <b>pending </b>
+            </span>
+            <span class="cmd">| </span>
+            <span class="cmd">
+              <b>now </b>
+            </span>
+            <span class="cmd">| </span>
+            <span class="cmd">
+              <b>after </b>
+            </span>
+            <span class="cmd">
+              <i>hh:mm:ss</i>
+            </span>
+            <span class="cmd">] [</span>
+            <span class="cmd">
+              <b>ageout </b>
+            </span>
+            <span class="cmd">
+              <i>seconds</i>
+            </span>
+            <span class="cmd">] [</span>
+            <span class="cmd">
+              <b>recurring</b>
+            </span>
+            <span class="cmd">]</span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure displays the output of the show i.p. s.l.a. application command. Highighted in the output is supported operations types i.c.m.p. echo.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

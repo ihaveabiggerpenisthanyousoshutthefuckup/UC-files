@@ -1,0 +1,51 @@
+<textcomponents>
+
+<!--slide 1-->
+<component id="ID_title">
+<text><![CDATA[<b>WANs Interconnect Users and LANs</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Campus Backbone]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Building Backbone]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[WAN]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Branch Office]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Telecommuter]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Remote User]]></text>
+</component>
+
+
+<component id="ID_txt07">
+<text><![CDATA[<b>WAN</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Enterprise Campus</b>]]></text>
+</component>
+
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Remote Sites</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Workgroups]]></text>
+</component>
+
+
+</textcomponents>

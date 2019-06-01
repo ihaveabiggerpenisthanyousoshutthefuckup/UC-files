@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.1 PPP Configuration Options</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPP Configuration Options</h1>
+        <div>
+          <p>In the previous section, configurable LCP options were introduced to meet specific WAN connection requirements. PPP may include several LCP options:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Authentication</b> - Peer routers exchange authentication messages. Two authentication choices are Password Authentication Protocol (PAP) and Challenge Handshake Authentication Protocol (CHAP). </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Compression</b> - Increases the effective throughput on PPP connections by reducing the amount of bits that must travel across the link. The protocol decompresses the frame at its destination. Two compression protocols available in Cisco routers are Stacker and Predictor. Click <a href="http://www.cisco.com/c/en/us/support/docs/wan/data-compression/14156-compress-overview.html" target="_blank">here</a> to learn more about Stacker and Predictor.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Error detection</b> - Identifies fault conditions. The Quality and Magic Number options help ensure a reliable, loop-free data link. The Magic Number field helps in detecting links that are in a looped-back condition. Until the Magic-Number Configuration Option has been successfully negotiated, the Magic-Number must be transmitted as zero. Magic numbers are generated randomly at each end of the connection.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PPP Callback</b> - PPP callback is used to enhance security. With this LCP option, a Cisco router can act as a callback client or a callback server. The client makes the initial call, requests that the server call it back, and terminates its initial call. The callback router answers the initial call and makes the return call to the client based on its configuration statements.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Multilink</b> - This alternative provides load balancing over the router interfaces that PPP uses. Multilink PPP, also referred to as MP, MPPP, MLP, or Multilink, provides a method for spreading traffic across multiple physical WAN links while providing packet fragmentation and reassembly, proper sequencing, multivendor interoperability, and load balancing on inbound and outbound traffic. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When options are configured, a corresponding field value is inserted into the LCP option field.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table of configurable options field codes in P.P.P.  The table is a summary of the text.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

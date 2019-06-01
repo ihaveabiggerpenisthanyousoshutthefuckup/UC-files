@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.4.1.1 GRE Introduction</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.4.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>GRE Introduction</h1>
+        <div>
+          <p>Generic Routing Encapsulation (GRE) is one example of a basic, non-secure, site-to-site VPN tunneling protocol. GRE is a tunneling protocol developed by Cisco that can encapsulate a wide variety of protocol packet types inside IP tunnels. GRE creates a virtual point-to-point link to Cisco routers at remote points, over an IP internetwork.</p>
+          <p></p>
+          <p>GRE is designed to manage the transportation of multiprotocol and IP multicast traffic between two or more sites, that may only have IP connectivity. It can encapsulate multiple protocol packet types inside an IP tunnel.</p>
+          <p>As shown in the figure, a tunnel interface supports a header for each of the following:</p>
+          <p>
+            <ul>
+              <li>An encapsulated protocol (or passenger protocol), such as IPv4, IPv6, AppleTalk, DECnet, or IPX</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An encapsulation protocol (or carrier), such as GRE</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A transport delivery protocol, such as IP, which is the protocol that carries the encapsulated protocol</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a topology for generic routing encapsulation. A cloud is shown with a router at each end of the cloud. A LAN connection that sits outside the cloud connects to each router. A pipe connection extends from the router on the left to the router on the right. Above the pipe are the words GRE tunnel (carrier protocol). Below the pipe are the words IP network (transport protocol). 5 rectangles adjacent to one another extend from left to right below the topology figure. The 5 rectangles are labeled from left to right as IP, GRE, IP, TCP, and data. The first two (IP and GRE) are the same color. The remaining 3 rectangles are all the same, but a different color from the first two. The last three rectangles on the right (IP, TCP, and data) are grouped with the heading original IP packet (passenger protocol). </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

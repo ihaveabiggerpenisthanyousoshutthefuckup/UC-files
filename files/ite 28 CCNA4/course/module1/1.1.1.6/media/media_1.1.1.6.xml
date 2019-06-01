@@ -1,0 +1,34 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Connecting a Campus Network</b>]]></text>
+	</component>
+	
+	
+<component id="ID_txt01">
+  <text><![CDATA[<b>Business Campus</b><br/>Hundreds of employees work on one or more floors, or in neighboring buildings.]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<b>Multiple LANs</b><br/>(Campus)]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<b>Engineering & Production</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<b>Finance & Accounting</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<b>Marketing & Sales</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[Firewall]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[Internet]]></text> 
+</component>
+</textcomponents>

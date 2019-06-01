@@ -1,0 +1,120 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Identify SPAN Terminology</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Drag each Term to the field next to its appropriate Description.]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each SPAN term to its description.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each SPAN term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Drag Items-->
+
+<component id='ID_s1_drag_header'>
+	<text><![CDATA[<font color="#FFFFFF" size="15">Terms</font>]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[SPAN]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[Egress Traffic]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[Source Port]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[SPAN Session]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[Port Mirroring]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[Destination Port]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[Ingress Traffic]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[RSPAN]]></text>
+</component>
+
+<!--Questions-->
+<component id='ID_s1_target_header_01'>
+	<text><![CDATA[<font size="15">Terms</font>]]></text>
+</component>
+<component id='ID_s1_text_header_01'>
+	<text><![CDATA[<font size="15">Descriptions</font>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[A feature on Cisco switches is a type of port mirroring that sends copies of the frame entering a port, out another port on the same switch]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[Traffic that leaves the switch]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[Monitored with use of the SPAN feature]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[An association of a destination port with one or more source ports]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+  <text><![CDATA[A feature that allows a switch to make a copy of Ethernet frames, and then send it out a port with a packet analyzer attached for capture]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+  <text><![CDATA[Monitors source ports, usually where a packet analyzer, IDS or IPS is connected]]></text> 
+</component>
+
+<component id="ID_s1_txt07">
+  <text><![CDATA[Traffic that enters the switch]]></text> 
+</component>
+
+<component id="ID_s1_txt08">
+  <text><![CDATA[Allows source and destination ports to be in different switches]]></text> 
+</component>
+
+</textcomponents>
+

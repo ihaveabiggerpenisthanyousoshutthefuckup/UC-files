@@ -1,0 +1,134 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<font size="17"><b>Activity – Identify Commands Used for Measuring Data</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_instr_body'>
+        <text>
+            <![CDATA[Match each network performance command to its definition.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_drag01'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show interfaces</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag02'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show ip route</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag03'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show ip cache flow</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag04'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show arp</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag05'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show vlan</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag06'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show version</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag07'>
+        <text>
+            <![CDATA[<font  face="_typewriter" color="#393536"><b>show running-config</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_drag08'>
+        <text>
+            <![CDATA[<font face="_typewriter" color="#393536"><b>show ip interface brief</b></font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each network performance command to its definition.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each network performance command to its definition. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id="ID_s1_CHECK">
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id="ID_s1_RESET">
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id='ID_s1_target_header_01'>
+        <text>
+            <![CDATA[Command]]></text>
+    </component>
+    <component id='ID_s1_text_header_01'>
+        <text>
+            <![CDATA[Definition]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[Uptime and information about device software and hardware.]]>
+        </text>
+    </component>
+    <component id="ID_txt02">
+        <text>
+            <![CDATA[Detailed settings and status for device interfaces.]]>
+        </text>
+    </component>
+    <component id="ID_txt03">
+        <text>
+            <![CDATA[Contents of the routing table.]]>
+        </text>
+    </component>
+    <component id="ID_txt04">
+        <text>
+            <![CDATA[Summarized table of the up/down status of all device interfaces.]]>
+        </text>
+    </component>
+    <component id="ID_txt05">
+        <text>
+            <![CDATA[Contents of the address resolution table.]]>
+        </text>
+    </component>
+    <component id="ID_txt06">
+        <text>
+            <![CDATA[Summary of VLANs and access ports on a switch.]]>
+        </text>
+    </component>
+    <component id="ID_txt07">
+        <text>
+            <![CDATA[Summary of the Netflow accounting statistics.]]>
+        </text>
+    </component>
+    <component id="ID_txt08">
+        <text>
+            <![CDATA[Current configuration of the device.]]>
+        </text>
+    </component>
+</textcomponents>

@@ -1,0 +1,1 @@
+Figure shows a pyramid with interactive buttons that describe ways to mitigate layer 2 attacks.

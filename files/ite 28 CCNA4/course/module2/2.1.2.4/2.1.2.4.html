@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.4 Troubleshooting a Serial Interface</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting a Serial Interface</h1>
+        <div>
+          <p>The output of the<b> show interfaces serial </b>command displays information specific to serial interfaces. Add the specific interface number you wish to investigate, such as <b>show interface serial 0/0/0</b>. When HDLC is configured, “encapsulation HDLC” should be reflected in the output, as highlighted in Figure 1. “Serial 0/0/0 is up, line protocol is up”, indicates that the line is up and functioning; “encapsulation HDLC”, indicates that the default serial encapsulation (HDLC) is enabled.</p>
+          <p></p>
+          <p>The<b> show interfaces serial</b> command returns one of six possible states: </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is up </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is down, line protocol is down </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is down </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is up (looped) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is up, line protocol is down (disabled) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial x is administratively down, line protocol is down</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Of the six possible states, there are five problem states. Figure 2 lists the five problem states, the issues associated with that state, and how to troubleshoot the issue.</p>
+          <p></p>
+          <p>The<b> show controllers </b>command is another important diagnostic tool when troubleshooting serial lines, as shown in Figure 3. The output indicates the state of the interface channels and whether a cable is attached to the interface. In the figure, interface serial 0/0/0 has a V.35 DCE cable attached. The command syntax varies, depending on the platform. Cisco 7000 series routers use a cBus controller card for connecting serial links. With these routers, use the<b> show controllers cbus </b>command. </p>
+          <p></p>
+          <p>If the electrical interface output displays as “UNKNOWN” instead of “V.35”, “EIA/TIA-449”, or some other electrical interface type, the likely problem is an improperly connected cable. A problem with the internal wiring of the card is also possible. If the electrical interface is unknown, the corresponding display for the<b> show interfaces serial </b>command shows that the interface and line protocol are down.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to practice troubleshooting a serial interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the output from the command, show interface serial zero slash zero slash zero.  The figure highlights the status of the interface, which is shown here as up with the line protocol up.  The figure also highlights the encapsulation setting, which is H.D.L.C. Figure two shows a table listing the six possible combinations that can be returned by the command, show interfaces serial.  The table lists possible causes and suggests corrective actions for each. Figure three shows the output from the command, show controllers serial zero slash zero slash zero.  The figure highlights the state of the serial cable. In this example it is set to D.C.E. V dot thirty five.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.3 Filtering Traffic with Extended ACLs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Filtering Traffic with Extended ACLs</h1>
+        <div>
+          <p>The example shown in Figure 1 denies FTP traffic from subnet 192.168.11.0 that is going to subnet 192.168.10.0, but permits all other traffic. Remember that FTP uses TCP ports 20 and 21; therefore, the ACL requires both port name keywords <b>ftp</b> and <b>ftp-data</b> or <b>eq 20</b> and <b>eq 21</b> to deny FTP.</p>
+          <p></p>
+          <p>If using port numbers instead of port names, the commands would be written as:</p>
+          <p></p>
+          <p>
+            <span class="cmd">
+              <b>access-list 101 deny tcp 192.168.11.0 0.0.0.255 192.168.10.0 0.0.0.255 eq 20</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">
+              <b>access-list 101 deny tcp 192.168.11.0 0.0.0.255 192.168.10.0 0.0.0.255 eq 21</b>
+            </span>
+          </p>
+          <p></p>
+          <p>To prevent the implied <b>deny any</b> statement at the end of the ACL from blocking all traffic, the <b>permit ip any any</b> statement is added. Without at least one <b>permit</b> statement in an ACL, all traffic on the interface where that ACL was applied would be dropped. The ACL should be applied inbound on the G0/1 interface so that traffic from the 192.168.11.0/24 LAN is filtered as it enters the router interface.</p>
+          <p></p>
+          <p>The example shown in Figure 2, denies Telnet traffic from any source to the 192.168.11.0/24 LAN, but allows all other IP traffic. Because traffic destined for the 192.168.11.0/24 LAN is outbound on interface G0/1, the ACL would be applied to G0/1 using the <b>out</b> keyword. Note the use of the <b>any</b> keywords in the permit statement. This permit statement is added to ensure that no other traffic is blocked. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The examples in Figures 1 and 2 both use the <b>permit ip any any</b> statement at the end of the ACL. For greater security the <b>permit 192.168.11.0 0.0.0.255 any</b> command may be used.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a router with a local network segment on each of two gigabit Ethernet interfaces.  Each segment consists of a switch and a computer.  The gigabit Ethernet zero slash zero interface is on the 192 dot 168 dot 10 dot zero network, and the zero slash one interface is on the 192 dot 168 dot 11 dot zero network.  The figure shows the creation of an A.C.L. that denies FTP traffic from the subnet dot 11 subnet going to the dot 10 subnet.  The first command for this A.C.L. is, access hyphen list 101 deny t.c.p. 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255 any e.q. f.t.p.  The next command is, access hyphen list 101 deny t.c.p. 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255 any e.q. f.t.p. hyphen data.  The last command permits all other traffic and it is, access hyphen list 101 permit i.p. any any.  The A.C.L. is then applied to the gigabit Ethernet interface in the inbound direction with the command, i.p. access hyphen group 101 in. Figure two shows an A.C.L. that denies Telnet traffic from any source to the 192 dot 168 dot 11 dot zero slash 24 LAN, but allows all other IP traffic.  The first command is, access hyphen list 102 deny t.c.p. any 192 dot 168 dot 11 dot zero zero dot zero dot zero dot 255 any e.q. 23.  The last command permits all other traffic and it is, access hyphen list 102 permit i.p. any any.  The A.C.L. is then applied to the gigabit Ethernet interface in the outbound direction with the command, i.p. access hyphen group 102 out.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

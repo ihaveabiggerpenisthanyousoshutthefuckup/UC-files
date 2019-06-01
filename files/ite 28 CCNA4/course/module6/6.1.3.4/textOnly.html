@@ -1,0 +1,17 @@
+
+          <p>WFQ is an automated scheduling method that provides fair bandwidth allocation to all network traffic. WFQ applies priority, or weights, to identified traffic and classifies it into conversations or flows, as shown in the figure.</p>
+          <p></p>
+          <p>WFQ then determines how much bandwidth each flow is allowed relative to other flows. The flow-based algorithm used by WFQ simultaneously schedules interactive traffic to the front of a queue to reduce response time. It then fairly shares the remaining bandwidth among high-bandwidth flows. WFQ allows you to give low-volume, interactive traffic, such as Telnet sessions and voice, priority over high-volume traffic, such as FTP sessions. When multiple file transfers flows are occurring simultaneously, the transfers are given comparable bandwidth.</p>
+          <p></p>
+          <p>WFQ classifies traffic into different flows based on packet header addressing, including such characteristics as source and destination IP addresses, MAC addresses, port numbers, protocol, and Type of Service (ToS) value. The ToS value in the IP header can be used to classify traffic. ToS will be discussed later in the chapter.</p>
+          <p></p>
+          <p>Low-bandwidth traffic streams, which comprise the majority of traffic, receive preferential service, allowing their entire offered loads to be sent in a timely fashion. High-volume traffic streams share the remaining capacity proportionally among themselves.</p>
+          <p></p>
+          <p>
+            <b>Limitations</b>
+          </p>
+          <p></p>
+          <p>WFQ is not supported with tunneling and encryption because these features modify the packet content information required by WFQ for classification.</p>
+          <p></p>
+          <p>Although WFQ automatically adapts to changing network traffic conditions, it does not offer the degree of precision control over bandwidth allocation that CBWFQ offers.</p>
+        

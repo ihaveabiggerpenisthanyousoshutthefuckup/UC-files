@@ -1,0 +1,1 @@
+Figure shows the standard Packet Tracer Lab graphic, indicating there is a Packet Tracer lab for this section of the curriculum. The lab graphic contains three P.Cs connected to S.W.1 P.C.1, P.C.2, and P.c.3. SW1 connects to R.T.1 to create the 172.31.1.96/27 network. R.T.1 connects to the Internet via a WAN link and network 209.165.1.0/30.

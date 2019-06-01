@@ -1,0 +1,171 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>SNMP Security Model and Levels</b>]]></text>
+</component>
+
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="mtable_title">
+					<td colspan="5" bgcolor='#FFFFFF'><font size="5"></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='5' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+	<tr>
+		<td bgcolor='#666263' class="mtitle" width="65" ><font  color='#ffffff'><b>Model</b></font></td>
+		<td bgcolor='#666263' class="mtitle" width="90"><font  color='#ffffff'><b>Level</b></font></td>
+		<td bgcolor='#666263' class="mtitle" width="95"><font  color='#ffffff'><b>Authentication</b></font></td>
+		<td bgcolor='#666263' class="mtitle" width="90"><font  color='#ffffff'><b>Encryption</b></font></td>
+		<td bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Result</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top" >SNMPv1</td>
+		<td bgcolor='#E9E7E8' valign="top">noAuthNoPriv</td>
+		<td bgcolor='#E9E7E8' valign="top">Community string</td>
+		<td bgcolor='#E9E7E8' valign="top">No</td>
+		<td bgcolor='#E9E7E8' valign="top">Uses a community string match for authentication.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top">SNMPv2c</td>
+		<td bgcolor='#F2F2F2' valign="top">noAuthNoPriv</td>
+		<td bgcolor='#F2F2F2' valign="top">Community string</td>
+		<td bgcolor='#F2F2F2' valign="top">No</td>
+		<td bgcolor='#F2F2F2' valign="top">Uses a community string match for authentication.</td>
+	</tr> 
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top" >SNMPv3</td>
+		<td bgcolor='#E9E7E8' valign="top">noAuthNoPriv</td>
+		<td bgcolor='#E9E7E8' valign="top">Username</td>
+		<td bgcolor='#E9E7E8' valign="top">No</td>
+		<td bgcolor='#E9E7E8' valign="top">Uses a username match for authentication (an improvement over SNMPv2c).</td>
+	</tr> 
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top">SNMPv3</td>
+		<td bgcolor='#F2F2F2' valign="top">authNoPriv</td>
+		<td bgcolor='#F2F2F2' valign="top">Message Digest 5 (MD5) or Secure Hash Algorithm (SHA)</td>
+		<td bgcolor='#F2F2F2' valign="top">No</td>
+		<td bgcolor='#F2F2F2' valign="top">Provides authentication based on the HMAC-MD5 or HMAC-SHA algorithms.</td>	
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top" >SNMPv3</td>
+		<td bgcolor='#E9E7E8' valign="top">authPriv (requires the cryptographic software image)</td>
+		<td bgcolor='#E9E7E8' valign="top">MD5 or SHA</td>
+		<td bgcolor='#E9E7E8' valign="top">Data Encryption Standard (DES) or Advanced Encryption Standard (AES)</td>
+		<td bgcolor='#E9E7E8' valign="top">Provides authentication based on the HMAC-MD5 or HMAC-SHA algorithms. Allows specifying the User-based Security Model (USM) with these encryption algorithms:<textformat blockindent="-14"><li>DES 56-bit encryption in addition to authentication based on the CBC-DES (DES-56) standard.</li></textformat><textformat blockindent="-14"><li>3DES 168-bit encryption.</li></textformat><textformat blockindent="-14"><li>AES 128-bit, 192-bit, or 256-bit encryption.</li></textformat></td>
+	</tr>
+</table>
+]]>
+</text>
+</component>
+<component id='ID_table1'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="mtable_title">
+					<td colspan="5" bgcolor='#FFFFFF'><font size="5"></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='5' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+	<tr>
+		<td bgcolor='#666263' class="mtitle" width="65" ><font  color='#ffffff'><b>Model</b></font></td>
+		<td bgcolor='#666263' class="mtitle" width="90"><font  color='#ffffff'><b>Level</b></font></td>
+		<td bgcolor='#666263' class="mtitle" width="95"><font  color='#ffffff'><b>Authentication</b></font></td>
+		<td bgcolor='#666263' class="mtitle" width="90"><font  color='#ffffff'><b>Encryption</b></font></td>
+		<td bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Result</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top" >SNMPv1</td>
+		<td bgcolor='#E9E7E8' valign="top">noAuthNoPriv</td>
+		<td bgcolor='#E9E7E8' valign="top">Community string</td>
+		<td bgcolor='#E9E7E8' valign="top">No</td>
+		<td bgcolor='#E9E7E8' valign="top">Uses a community string match for authentication.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top">SNMPv2c</td>
+		<td bgcolor='#F2F2F2' valign="top">noAuthNoPriv</td>
+		<td bgcolor='#F2F2F2' valign="top">Community string</td>
+		<td bgcolor='#F2F2F2' valign="top">No</td>
+		<td bgcolor='#F2F2F2' valign="top">Uses a community string match for authentication.</td>
+	</tr> 
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top" >SNMPv3</td>
+		<td bgcolor='#E9E7E8' valign="top">noAuthNoPriv</td>
+		<td bgcolor='#E9E7E8' valign="top">Username</td>
+		<td bgcolor='#E9E7E8' valign="top">No</td>
+		<td bgcolor='#E9E7E8' valign="top">Uses a username match for authentication (an improvement over SNMPv2c).</td>
+	</tr> 
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top">SNMPv3</td>
+		<td bgcolor='#F2F2F2' valign="top">authNoPriv</td>
+		<td bgcolor='#F2F2F2' valign="top">Message Digest 5 (MD5) or Secure Hash Algorithm (SHA)</td>
+		<td bgcolor='#F2F2F2' valign="top">No</td>
+		<td bgcolor='#F2F2F2' valign="top">Provides authentication based on the HMAC-MD5 or HMAC-SHA algorithms.</td>	
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top" >SNMPv3</td>
+		<td bgcolor='#E9E7E8' valign="top">authPriv (requires the cryptographic software image)</td>
+		<td bgcolor='#E9E7E8' valign="top">MD5 or SHA</td>
+		<td bgcolor='#E9E7E8' valign="top">Data Encryption Standard (DES) or Advanced Encryption Standard (AES)</td>
+		<td bgcolor='#E9E7E8' valign="top">Provides authentication based on the HMAC-MD5 or HMAC-SHA algorithms. Allows specifying the User-based Security Model (USM) with these encryption algorithms:<ul><li>DES 56-bit encryption in addition to authentication based on the CBC-DES (DES-56) standard.</li><li>3DES 168-bit encryption.</li><li>AES 128-bit, 192-bit, or 256-bit encryption.</li></ul></td>
+	</tr>
+</table>
+]]>
+</text>
+</component>
+
+<component id='ID_table1_html'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+				 <caption class="mtable_title" colspan="5" bgcolor='#FFFFFF'><font size="3">SNMP Security Model and Levels</font></caption>
+
+				<tr class="mtable_top">
+					<td colspan='5' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+	<tr>
+		<th id="Model" scope="col" bgcolor='#666263' class="mtitle" width="65" ><font  color='#ffffff'><b>Model</b></font></th>
+		<th id="Level" scope="col" bgcolor='#666263' class="mtitle" width="90"><font  color='#ffffff'><b>Level</b></font></th>
+		<th id="Authentication" scope="col" bgcolor='#666263' class="mtitle" width="95"><font  color='#ffffff'><b>Authentication</b></font></th>
+		<th id="Encryption" scope="col" bgcolor='#666263' class="mtitle" width="90"><font  color='#ffffff'><b>Encryption</b></font></th>
+		<th id="Result" scope="col" bgcolor='#666263' class="mtitle"><font  color='#ffffff'><b>Result</b></font></th>
+	</tr>
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#E9E7E8' valign="top" >SNMPv1</td>
+		<td headers="Level" bgcolor='#E9E7E8' valign="top">noAuthNoPriv</td>
+		<td headers="Authentication" bgcolor='#E9E7E8' valign="top">Community string</td>
+		<td headers="Encryption" bgcolor='#E9E7E8' valign="top">No</td>
+		<td headers="Result" bgcolor='#E9E7E8' valign="top">Uses a community string match for authentication.</td>
+	</tr>
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#F2F2F2' valign="top">SNMPv2c</td>
+		<td headers="Level" bgcolor='#F2F2F2' valign="top">noAuthNoPriv</td>
+		<td headers="Authentication" bgcolor='#F2F2F2' valign="top">Community string</td>
+		<td headers="Encryption" bgcolor='#F2F2F2' valign="top">No</td>
+		<td headers="Result" bgcolor='#F2F2F2' valign="top">Uses a community string match for authentication.</td>
+	</tr> 
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#E9E7E8' valign="top" >SNMPv3</td>
+		<td headers="Level" bgcolor='#E9E7E8' valign="top">noAuthNoPriv</td>
+		<td headers="Authentication" bgcolor='#E9E7E8' valign="top">Username</td>
+		<td headers="Encryption" bgcolor='#E9E7E8' valign="top">No</td>
+		<td headers="Result" bgcolor='#E9E7E8' valign="top">Uses a username match for authentication (an improvement over SNMPv2c).</td>
+	</tr> 
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#F2F2F2' valign="top">SNMPv3</td>
+		<td headers="Level" bgcolor='#F2F2F2' valign="top">authNoPriv</td>
+		<td headers="Authentication" bgcolor='#F2F2F2' valign="top">Message Digest 5 (MD5) or Secure Hash Algorithm (SHA)</td>
+		<td headers="Encryption" bgcolor='#F2F2F2' valign="top">No</td>
+		<td headers="Result" bgcolor='#F2F2F2' valign="top">Provides authentication based on the HMAC-MD5 or HMAC-SHA algorithms.</td>	
+	</tr>
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#E9E7E8' valign="top" >SNMPv3</td>
+		<td headers="Level" bgcolor='#E9E7E8' valign="top">authPriv (requires the cryptographic software image)</td>
+		<td headers="Authentication" bgcolor='#E9E7E8' valign="top">MD5 or SHA</td>
+		<td headers="Encryption" bgcolor='#E9E7E8' valign="top">Data Encryption Standard (DES) or Advanced Encryption Standard (AES)</td>
+		<td headers="Result" bgcolor='#E9E7E8' valign="top">Provides authentication based on the HMAC-MD5 or HMAC-SHA algorithms. Allows specifying the User-based Security Model (USM) with these encryption algorithms:<ul><li>DES 56-bit encryption in addition to authentication based on the CBC-DES (DES-56) standard.</li><li>3DES 168-bit encryption.</li><li>AES 128-bit, 192-bit, or 256-bit encryption.</li></ul></td>
+	</tr>
+</table>
+]]>
+</text>
+</component>
+</textcomponents>

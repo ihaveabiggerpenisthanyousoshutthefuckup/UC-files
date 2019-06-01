@@ -1,0 +1,19 @@
+
+          <p>In Figure 1, R1 is configured with an IPv6 ACL named DENY-ACCESS that should enforce the following policy for the R3 LAN:</p>
+          <p>
+            <ul>
+              <li>Permit access to the :11 network from the :30 network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Deny access to the :10 network</li>
+            </ul>
+          </p>
+          <p>Figure 2 shows the configuration and application of the IPv6 ACL.</p>
+          <p></p>
+          <p>The DENY-ACCESS ACL is supposed to permit access to the :11 network from the :30 network while denying access to the :10 network. However, after applying the ACL to the interface the :10 network is still reachable from the :30 network.</p>
+          <p></p>
+          <p>
+            <b>Solution</b>:  In this situation, the problem is not with how the ACL statements were written but with the location of the ACL. Because IPv6 ACLs must be configured with both a source and a destination, they should be applied closest to the source of the traffic. The DENY-ACCESS ACL was applied in the outbound direction on the R1 G0/1 interface which is closest to the destination. As a result, traffic to the :10 network is completely unaffected because it reaches the :10 network through the other LAN interface, G0/0. You could apply the ACL inbound on the R1 S0/0/0 interface. However, because we have control over R3, the best location would be to configure and apply the ACL closest to the source of the traffic. Figure 3 shows the removal of the ACL on R1 and the correct configuration and application of the ACL on R3.</p>
+        

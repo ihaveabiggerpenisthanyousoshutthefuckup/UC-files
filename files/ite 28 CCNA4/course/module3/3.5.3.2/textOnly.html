@@ -1,0 +1,26 @@
+
+          <p>In this a single-homed BGP topology, Company-A in AS 65000 uses eBGP to advertise its 198.133.219.0/24 network to ISP-1 at AS 65001. ISP-1 advertises a default route in its eBGP updates to Company-A.</p>
+          <p></p>
+          <p>
+            <b>Note:</b> BGP is usually not necessary in single-homed AS. It is used here to provide a simple configuration example.</p>
+          <p></p>
+          <p>Figure 1 shows the BGP configuration for Company-A. Customers typically use private IPv4 address space for internal devices within their own network. Using NAT, the Company-A router translates these private IPv4 addresses to one of its public IPv4 addresses, advertised by BGP to the ISP.</p>
+          <p></p>
+          <p>The <b>router bgp</b><i>as-number</i> global configuration command enables BGP and identifies the AS number for Company-A. A router can belong to only a single AS, so only a single BGP process can run on a router.</p>
+          <p></p>
+          <p>The <b>neighbor</b><i> ip-address </i><b>remote-as</b><b><i></i></b><i>as-number</i><b><i></i></b>router configuration<b></b>command identifies the BGP peer and its AS number. Notice that the ISP AS number is different than the Company-A AS number. This informs the BGP process that the neighbor is in a different AS and is therefore, an external BGP neighbor.</p>
+          <p></p>
+          <p>The <b>network</b><i>network-address</i><b></b>[<b>mask</b><i>network-mask</i>]<i></i>router configuration command<i></i>enters the <i>network-address</i> into the local BGP table. The BGP table contains all routes learned via BGP or advertised using BGP. eBGP will then advertise the <i>network-address</i> to its eBGP neighbors.</p>
+          <p></p>
+          <p>The <b>mask</b><i>network-mask</i> command parameter must be used when the network advertised is different than its classful equivalent. In this example, the 198.133.219.0/24 is equivalent to a class C network. Class C networks have a /24 subnet mask, so in this case the <b>mask</b> option is not required. If Customer-A was advertising the 198.133.0.0/16 network, then the <b>mask</b> option would be required. Otherwise BGP would advertise the network with a /24 classful mask.</p>
+          <p></p>
+          <p>
+            <b>Note:</b> In contrast to an IGP protocol, the <i>network-address</i> used in the <b>network</b> command does not have to be a directly connected network. The router only needs to have a route to this network in its routing table.</p>
+          <p></p>
+          <p>Figure 2 shows the BGP configuration for ISP-1.</p>
+          <p></p>
+          <p>The eBGP commands on the ISP-1 router are similar to the configuration on Company-A. Notice how the <b>network 0.0.0.0 </b>command is used to advertise a default network to Company-A.</p>
+          <p></p>
+          <p>
+            <b>Note:</b>  Although the <b>network 0.0.0.0</b> command is a valid BGP configuration option, there are better ways to advertise a default route in eBGP. However, these methods are beyond the scope of this course.</p>
+        

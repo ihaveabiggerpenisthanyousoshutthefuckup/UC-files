@@ -1,0 +1,249 @@
+<textcomponents>
+    <!-- slide 1-->
+    <component id='ID_s1_title'>
+        <text>
+            <![CDATA[<b>Activity – Evaluating Extended ACL Statements</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[Click Buttons 2, 3, and 4 to complete the activity. Click Button 1 to review the topology at any time.]]>
+        </text>
+    </component>
+    <component id='ID_txt01'>
+        <text>
+            <![CDATA[ACL 103 applied to Fa0/0 inbound]]>
+        </text>
+    </component>
+    <!-- slide 2-->
+    <component id='ID_s2_title'>
+        <text>
+            <![CDATA[<b>Activity – Evaluating Extended ACL Statements</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[<b>Scenario 1</b> – Refer to the topology in the first figure. This scenario provides the extended ACL 103 and the source and destination combinations in the table. Based on this information, determine whether packets will be permitted or denied. Drag Permit or Deny to the field next to each source and destination combination. Click Button 3 to continue.]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[Source]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[Destination]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[Permit or Deny]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag01'>
+        <text>
+            <![CDATA[<font>Permit</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag02'>
+        <text>
+            <![CDATA[<font >Deny</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You successfully determined whether the packets will be permitted or denied. Click Button 3 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully determined whether the packets will be permitted or denied. Please click Reset to again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <!-- slide 3-->
+    <component id='ID_s3_title'>
+        <text>
+            <![CDATA[<b>Activity – Evaluating Extended ACL Statements</b>]]></text>
+    </component>
+    <component id='ID_s3_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s3_instr_body'>
+        <text>
+            <![CDATA[<b>Scenario 2</b> – Refer to the topology in the first figure. This scenario provides the extended ACL 104 and the source and destination combinations in the table. Based on this information, determine whether packets will be permitted or denied. Drag Permit or Deny to the field next to each source and destination combination. Click Button 4 to continue.]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[Source]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[Destination]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[Protocol]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[Permit or Deny]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag01'>
+        <text>
+            <![CDATA[<font>Permit</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag02'>
+        <text>
+            <![CDATA[<font >Deny</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_BODY'>
+        <text>
+            <![CDATA[You successfully determined whether the packets will be permitted or denied. Click Button 4 to continue. ]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully determined whether the packets will be permitted or denied. Please click Reset to again.]]>
+        </text>
+    </component>
+    <component id='ID_s2_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s2_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <!-- slide 4-->
+    <component id='ID_s4_title'>
+        <text>
+            <![CDATA[<b>Activity – Evaluating Extended ACL Statements</b>]]></text>
+    </component>
+    <component id='ID_s4_instr_title'>
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id='ID_s4_instr_body'>
+        <text>
+            <![CDATA[<b>Scenario 3</b> – Refer to the topology in the first figure.This scenario provides the extended ACL 105 and the source and destination combinations in the table. Based on this information, determine whether packets will be permitted or denied. Drag Permit or Deny to the field next to each source and destination combination.]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[Source]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[Destination]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[Protocol]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[Permit or Deny]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag01'>
+        <text>
+            <![CDATA[<font>Permit</font>]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag02'>
+        <text>
+            <![CDATA[<font >Deny</font>]]>
+        </text>
+    </component>
+    <component id='ID_s4_drag01'>
+        <text>
+            <![CDATA[<font>Permit</font>]]>
+        </text>
+    </component>
+    <component id='ID_s4_drag02'>
+        <text>
+            <![CDATA[<font >Deny</font>]]>
+        </text>
+    </component>
+    <component id='ID_s3_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s3_CORRECT_BODY'>
+        <text>
+            <![CDATA[You successfully determined whether the packets will be permitted or denied. ]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully determined whether the packets will be permitted or denied. Please click Reset to again.]]>
+        </text>
+    </component>
+    <component id='ID_s3_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s3_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+</textcomponents>

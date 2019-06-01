@@ -1,0 +1,1 @@
+Figure shows a switch with a DHCP server connected to a port that is configured as a trusted port.  The switch is connected to another switch that has a DHCP client computer on an untrusted port and an attacker rouge DHCP computer on an untrusted port.  The rogue computer cannot act as a server since the port is an untrusted port.  

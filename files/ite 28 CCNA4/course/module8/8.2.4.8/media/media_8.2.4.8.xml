@@ -1,0 +1,14 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Successful PC Telnet Connection Over IPv6</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Testing the HTTP Transport Layer over IPv6 from PC1</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Successful Router Telnet Connection Over IPv6</b>]]></text>
+	</component>
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>Testing the HTTP Transport Layer over IPv6 from R1</b>]]></text>
+	</component>
+</textcomponents>

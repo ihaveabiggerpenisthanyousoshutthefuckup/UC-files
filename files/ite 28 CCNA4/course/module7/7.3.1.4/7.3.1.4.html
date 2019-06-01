@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.1.4 SDN Architecture</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SDN Architecture</h1>
+        <div>
+          <p>In a traditional router or switch architecture, the control plane and data plane functions occur in the same device. Routing decisions and packet forwarding are the responsibility of the device operating system.</p>
+          <p></p>
+          <p>Software defined networking (SDN) is a network architecture that has been developed to virtualize the network. For example, SDN can virtualize the control plane. Also known as controller-based SDN, SDN moves the control plane from each network device to a central network intelligence and policy-making entity called the SDN controller. The two architectures are shown in Figure 1.</p>
+          <p></p>
+          <p>The SDN controller is a logical entity that enables network administrators to manage and dictate how the data plane of virtual switches and routers should handle network traffic. It orchestrates, mediates, and facilitates communication between applications and network elements.</p>
+          <p></p>
+          <p>The SDN framework is illustrated in Figure 2. Note the use of Application Programming Interfaces (APIs) within the SDN framework. An API is a set of standardized requests that define the proper way for an application to request services from another application. The SDN controller uses northbound APIs to communicate with the upstream applications. These APIs help network administrators shape traffic and deploy services. The SDN controller also uses southbound APIs to define the behavior of the downstream virtual switches and routers. OpenFlow is the original and widely implemented southbound API. The Open Networking Foundation is responsible for maintaining the OpenFlow standard.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Traffic in a modern data center is described as North-South (going between external data center users and the data center servers) and East-West (going between data center servers).</p>
+          <p></p>
+          <p>Visit this website to learn more about SDN, OpenFlow, and the Open Networking Foundation: <a href="https://www.opennetworking.org/sdn-resources/sdn-definition" target="_blank">https://www.opennetworking.org/sdn-resources/sdn-definition</a></p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the traditional architecture shown on the left. It has three device, each with its own control plane and data plane. SDN architecture on the right has three devices with, each with a data plane that is controlled by a centralized SDN controller. Figure 2 show the SDN framework, which consists of the application layer where business applications, cloud orchestration and SDN applications are located. Northbound APIs interface with the next layer, which is the control plane layer. It includes routing, traffic engineering, and mobility. Southbound APIs interface with the next layer, which is the data plane layer, where routers and switches forward traffic</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

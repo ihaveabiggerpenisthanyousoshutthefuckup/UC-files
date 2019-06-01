@@ -1,0 +1,12 @@
+
+          <p>Three commands can be used to verify eBGP, as shown in Figure 1.</p>
+          <p></p>
+          <p>Figure 2 shows the output for Company-A’s IPv4 routing table. Notice how the origin code <b>B</b> identifies that the route was learned using BGP. Specifically, in this example, Company-A has received a BGP advertised default route from ISP-1.</p>
+          <p></p>
+          <p>Figure 3 shows the output of Company-A’s BGP table. The first entry 0.0.0.0 with a next hop of 209.165.201.1 is the default route advertised by ISP-1. The AS path displays the single AS of 65001 because the 0.0.0.0/0 network advertised by ISP-1, originated from the same AS. Most BGP table entries show multiple autonomous system numbers in the path, listing the sequence of AS numbers required to reach the destination network.</p>
+          <p></p>
+          <p>The second entry 198.133.219.0/24 is the network advertised by the Company-A router to ISP-1. The next hop address of 0.0.0.0 indicates that the 198.133.219.0/24 network originated from this router.</p>
+          <p></p>
+          <p>Figure 4 displays the status of BGP connection on Company-A. The first line displays the local IPv4 address used to peer with another BGP neighbor and this router’s local AS number. The address and AS number of the remote BGP neighbor is shown at the bottom of the output.</p>
+          <p>Use the Syntax Checker in Figure 5 to practice configuring and verifying BGP.</p>
+        

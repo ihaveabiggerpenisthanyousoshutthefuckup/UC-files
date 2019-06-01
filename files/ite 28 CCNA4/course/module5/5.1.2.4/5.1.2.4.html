@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.4 Mitigate DHCP Attacks</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Mitigate DHCP Attacks</h1>
+        <div>
+          <p>A DHCP spoofing attack occurs when a rogue DHCP server is connected to the network and provides false IP configuration parameters to legitimate clients. DHCP spoofing is dangerous because clients can be leased IP information for malicious DNS server addresses, malicious default gateways, and malicious IP assignments.</p>
+          <p></p>
+          <p>Security best practices recommend using DHCP snooping to mitigate DHCP spoofing attacks. </p>
+          <p></p>
+          <p>When DHCP snooping is enabled on an interface or VLAN and a switch receives a DHCP packet on an untrusted port, the switch compares the source packet information with that held in the DHCP Snooping Binding Database. The switch will deny packets containing any of the following information:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Unauthorized DHCP server messages coming from an untrusted port</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unauthorized DHCP client messages not adhering to the DHCP Snooping Binding Database or rate limits</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In a large network, the DHCP Snooping Binding Database may take time to build after it is enabled. For example, it could take two days for DHCP snooping to complete the database if DHCP lease time is four days.</p>
+          <p></p>
+          <p>DHCP snooping recognizes two types of ports:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Trusted DHCP ports</b> - Only ports connecting to upstream DHCP servers should be trusted. These ports should lead to legitimate DHCP servers replying with DHCP Offer and DHCP Ack messages. Trusted ports must be explicitly identified in the configuration.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Untrusted ports</b> - These ports connect to hosts that should not be providing DHCP server messages. By default, all switch ports are untrusted.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure provides a visual example of how DHCP snooping ports should be assigned on a network. Notice how the trusted ports always lead to the legitimate DHCP server while all other ports (i.e., access ports connecting to endpoints) are untrusted by default.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: For more information on DHCP snooping, refer to the CCNA Security course.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a switch with a DHCP server connected to a port that is configured as a trusted port.  The switch is connected to another switch that has a DHCP client computer on an untrusted port and an attacker rouge DHCP computer on an untrusted port.  The rogue computer cannot act as a server since the port is an untrusted port.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

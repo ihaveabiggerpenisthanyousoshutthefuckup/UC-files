@@ -1,0 +1,29 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Generic Routing Encapsulation</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>GRE Tunnel</b><br/>(Carrier Protocol)]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>IP Network</b><br/>(Transport Protocol)]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Original IP Packet</b><br/>(Passenger Protocol)]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[IP]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[GRE]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[IP]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[TCP]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[Data]]></text>
+	</component>
+</textcomponents>

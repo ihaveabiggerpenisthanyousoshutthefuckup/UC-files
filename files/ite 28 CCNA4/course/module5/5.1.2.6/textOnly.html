@@ -1,0 +1,28 @@
+
+          <p>Network user authentication can be provided with AAA server-based authentication. The 802.1X protocol/standard can be used to authenticate network devices on the corporate network. There is another protocol used to secure computers connecting to a LAN. </p>
+          <p></p>
+          <p>The IEEE 802.1X standard defines a port-based access control and authentication protocol. IEEE 802.1X restricts unauthorized workstations from connecting to a LAN through publicly accessible switch ports. The authentication server authenticates each workstation that is connected to a switch port before making available any services offered by the switch or the LAN.</p>
+          <p></p>
+          <p>With 802.1X port-based authentication, the devices in the network have specific roles, as shown in the figure:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Client (Supplicant)</b> - This is usually the 802.1X-enabled port on the device. The device requests access to LAN and switch services and then responds to requests from the switch. In the figure, the device is a PC running 802.1X-compliant client software. Another client supplicant is the 802.1X-compliant wireless device such as a laptop or tablet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Switch (Authenticator)</b> – This controls physical access to the network based on the authentication status of the client. The switch acts as an intermediary (proxy) between the client and the authentication server. It requests identifying information from the client, verifies that information with the authentication server, and relays a response to the client. The switch uses a RADIUS software agent, which is responsible for encapsulating and de-encapsulating the EAP (Extensible Authentication Protocol) frames and interacting with the authentication server. Another device that could act as authenticator is a wireless access point acting as the intermediary between the wireless client and the authentication server.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Authentication server</b> – This performs the actual authentication of the client. The authentication server validates the identity of the client and notifies the switch or other authenticator such as a wireless access point whether the client is authorized to access the LAN and switch services. Because the switch acts as the proxy, the authentication service is transparent to the client. The RADIUS security system with EAP extensions is the only supported authentication server.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: For more information on 802.1X, refer to the CCNA Security course. </p>
+        

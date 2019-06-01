@@ -1,0 +1,289 @@
+﻿<textcomponents>
+    <component id="ID_s1_inst">
+        <text>
+            <![CDATA[<b>Activity – Part 1: Identify WAN Technologies</b>]]></text>
+    </component>
+    <component id="ID_s1_instr_title">
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id="ID_s1_instr_body">
+        <text>
+            <![CDATA[Choose the WAN technology network type that best matches the network description and the figure. Click Button 2 to continue this activity.<br><br><b>Network Description</b><textformat blockindent='-18'><li>Small- to medium-sized business</li><li>Hundreds of employees</li><li>Multiple campus LANs</li><li>In-house IT staff and network support</li></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[Marketing & Sales]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[Finance & Accounting]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[Engineering & Production]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[Internet]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt06'>
+        <text>
+            <![CDATA[Firewall]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag01'>
+        <text>
+            <![CDATA[Small Office<br>Network]]></text>
+    </component>
+    <component id='ID_s1_drag02'>
+        <text>
+            <![CDATA[Campus<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag03'>
+        <text>
+            <![CDATA[Branch<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag04'>
+        <text>
+            <![CDATA[Distributed<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[<b>Correct</b>]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the WAN technology network type. Click Button 2 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[<b>Incorrect</b>]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the WAN technology network type. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <!-- slide02 content-->
+    <component id="ID_s2_inst">
+        <text>
+            <![CDATA[<b>Activity – Part 2: Identify WAN Technologies</b>]]></text>
+    </component>
+    <component id="ID_s2_instr_title">
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id="ID_s2_instr_body">
+        <text>
+            <![CDATA[Choose the WAN technology network type that best matches the network description and the figure. Click Button 3 to continue this activity.<br><br><b>Network Description</b><textformat blockindent='-18'><ul><li>Very large sized business</li><li>Thousands of employees</li><li>Home, branch, and regional offices, teleworkers, and a central office</li><li>In-house IT staff and network support</li><li>Converged network and application services</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[Internet]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag01'>
+        <text>
+            <![CDATA[Small Office<br>Network]]></text>
+    </component>
+    <component id='ID_s2_drag02'>
+        <text>
+            <![CDATA[Campus<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag03'>
+        <text>
+            <![CDATA[Branch<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag04'>
+        <text>
+            <![CDATA[Distributed<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s2_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the WAN technology network type. Click Button 3 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s2_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the WAN technology network type. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s2_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s2_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <!-- slide03 content-->
+    <component id="ID_s3_inst">
+        <text>
+            <![CDATA[<b>Activity – Part 3: Identify WAN Technologies</b>]]></text>
+    </component>
+    <component id="ID_s3_instr_title">
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id="ID_s3_instr_body">
+        <text>
+            <![CDATA[Choose the WAN technology network type that best matches the network description and the figure. Click Button 4 to continue this activity.<br><br><b>Network Description</b><textformat blockindent='-18'><ul><li>Medium-sized business</li><li>Hundreds of employees</li><li>Several remote, branch, and regional offices – one central office</li><li>In-house IT staff and network support</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[Internet]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag01'>
+        <text>
+            <![CDATA[Small Office<br>Network]]></text>
+    </component>
+    <component id='ID_s3_drag02'>
+        <text>
+            <![CDATA[Campus<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag03'>
+        <text>
+            <![CDATA[Branch<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag04'>
+        <text>
+            <![CDATA[Distributed<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s3_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s3_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the WAN technology network type. Click Button 4 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s3_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the WAN technology network type. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s3_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s3_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <!-- slide04 content-->
+    <component id="ID_s4_inst">
+        <text>
+            <![CDATA[<b>Activity – Part 4: Identify WAN Technologies</b>]]></text>
+    </component>
+    <component id="ID_s4_instr_title">
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id="ID_s4_instr_body">
+        <text>
+            <![CDATA[Choose the WAN technology network type that best matches the network description and the figure.<br><br><b>Network Description</b><textformat blockindent='-18'><ul><li>Small-sized business</li><li>A limited number of employees</li><li>LAN focus of operations with broadband</li><li>Connectivity to the Internet</li><li>Outsourced IT support</li></ul></textformat>]]>
+        </text>
+    </component>
+    <component id="ID_s4_txt02">
+        <text>
+            <![CDATA[Internet]]>
+        </text>
+    </component>
+    <component id='ID_s4_drag01'>
+        <text>
+            <![CDATA[Small Office<br>Network]]></text>
+    </component>
+    <component id='ID_s4_drag02'>
+        <text>
+            <![CDATA[Campus<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s4_drag03'>
+        <text>
+            <![CDATA[Branch<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s4_drag04'>
+        <text>
+            <![CDATA[Distributed<br>Network]]>
+        </text>
+    </component>
+    <component id='ID_s4_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s4_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the WAN technology network type.]]>
+        </text>
+    </component>
+    <component id='ID_s4_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s4_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the WAN technology network type. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s4_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s4_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+</textcomponents>

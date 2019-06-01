@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.2.3 PPP – Network Control Protocol (NCP)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPP – Network Control Protocol (NCP)</h1>
+        <div>
+          <p>PPP permits multiple network layer protocols to operate on the same communications link. For every network layer protocol used, PPP uses a separate NCP, as shown in Figure 1. For example, IPv4 uses IP Control Protocol (IPCP) and IPv6 uses IPv6 Control Protocol (IPv6CP).</p>
+          <p></p>
+          <p>NCPs include functional fields containing standardized codes to indicate the network layer protocol that PPP encapsulates. Figure 2 lists the PPP protocol field numbers. Each NCP manages the specific needs required by its respective network layer protocols. The various NCP components encapsulate and negotiate options for multiple network layer protocols. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the P.P.P. layered architecture at the Network layer.  The figure highlights the Network layer and is showing support for both I.P. version 4 and I.P. version 6.  P.P.P. uses N.C.P’s to negotiate the Layer 3 protocols that will be used to carry data packets. They provide functional fields containing standardized codes to indicate the network layer protocol type that P.P.P. encapsulates. Figure two is a table listing P.P.P. protocol field numbers.  The table includes the hexadecimal value of 8 0 2 1 for the I.P. version 4 protocol and 8 0 5 7 is for the I.P. version 6 protocol.  The value C 0 2 3 is for the password authentication protocol and C 2 2 3 is for the challenge handshake authentication protocol.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

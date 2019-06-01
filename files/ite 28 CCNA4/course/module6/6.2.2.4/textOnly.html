@@ -1,0 +1,28 @@
+
+          <p>Before a packet can have a QoS policy applied to it, the packet has to be classified. Classification and marking allows us to identify or “mark” types of packets.  Classification determines the class of traffic to which packets or frames belong. Only after traffic is marked can policies be applied to it.</p>
+          <p></p>
+          <p>How a packet is classified depends on the QoS implementation. Methods of classifying traffic flows at Layer 2 and 3 include using interfaces, ACLs, and class maps. Traffic can also be classified at Layers 4 to 7 using Network Based Application Recognition (NBAR).</p>
+          <p></p>
+          <p>
+            <b>Note:</b> NBAR is a classification and protocol discovery feature of Cisco IOS software that works with QoS features. NBAR is out of scope for this course.</p>
+          <p></p>
+          <p>Marking means that we are adding a value to the packet header. Devices receiving the packet look at this field to see if it matches a defined policy. Marking should be done as close to the source device as possible. This establishes the trust boundary.</p>
+          <p></p>
+          <p>How traffic is marked usually depends on the technology. The table in the figure describes some the marking fields used in various technologies. The decision of whether to mark traffic at Layers 2 or 3 (or both) is not trivial and should be made after consideration of the following points:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Layer 2 marking of frames can be performed for non-IP traffic.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Layer 2 marking of frames is the only QoS option available for switches that are not “IP aware”.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Layer 3 marking will carry the QoS information end-to-end.</li>
+            </ul>
+          </p>
+        

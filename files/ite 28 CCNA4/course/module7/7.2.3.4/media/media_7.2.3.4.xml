@@ -1,0 +1,141 @@
+<textcomponents>
+
+<!-- Slide 1-->
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Identify Type 1 Hypervisor Terminology</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Place each term in the appropriate location within the hypervisor.]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+	<!--Drag Items-->
+	<component id='ID_s1_drag01a'>
+		<text><![CDATA[Linux OS]]></text>
+	</component>
+	
+	<component id='ID_s1_drag01b'>
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+
+	<component id='ID_s1_drag01c'>
+		<text><![CDATA[UNIX OS]]></text>
+	</component>
+
+	<component id='ID_s1_drag02'>
+		<text><![CDATA[Hypervisor]]></text>
+	</component>
+	
+	<component id='ID_s1_drag03'>
+		<text><![CDATA[Hardware]]></text>
+	</component>
+	
+	<component id='ID_s1_drag04'>
+		<text><![CDATA[Server]]></text>
+	</component>
+	<!--Drag Items End-->
+
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_TITLE'>
+		<text><![CDATA[Correct]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_BODY'>
+		<text><![CDATA[You have successfully matched each term to its location. Click Button 2 to continue.]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_TITLE'>
+		<text><![CDATA[Incorrect]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully matched each term to its location. Please click Reset to try again.]]></text>
+	</component>
+<!-- End Slide 1 -->
+	
+	
+	
+<!-- Slide 2 -->
+
+	<component id="ID_s2_title">
+	<text><![CDATA[<b>Activity - Identify Type 2 Hypervisor Terminology</b>]]></text>
+	</component>
+
+	<component id='ID_s2_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+	</component>
+
+	<component id='ID_s2_instr_body'>
+	<text><![CDATA[Place each term in the appropriate location within the hypervisor.]]></text>
+	</component>
+	
+<!--Drag and Drop-->
+	<component id='ID_s2_drag01a'>
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+
+	<component id='ID_s2_drag01b'>
+		<text><![CDATA[Linux OS]]></text>
+	</component>
+	
+	<component id='ID_s2_drag01c'>
+		<text><![CDATA[UNIX OS]]></text>
+	</component>
+	
+	<component id='ID_s2_drag02'>
+		<text><![CDATA[Hypervisor]]></text>
+	</component>
+	
+	<component id='ID_s2_drag03'>
+		<text><![CDATA[Operating System]]></text>
+	</component>
+	
+	<component id='ID_s2_drag05'>
+		<text><![CDATA[Host]]></text>
+	</component>
+
+	<component id='ID_s2_drag04'>
+		<text><![CDATA[Hardware]]></text>
+	</component>
+	
+
+
+	<component id='ID_s2_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_s2_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+	
+	<component id='ID_s2_CORRECT_TITLE'>
+		<text><![CDATA[Correct]]></text>
+	</component>
+
+	<component id='ID_s2_CORRECT_BODY'>
+		<text><![CDATA[You have successfully matched each term to its location.]]></text>
+	</component>
+
+	<component id='ID_s2_INCORRECT_TITLE'>
+		<text><![CDATA[Incorrect]]></text>
+	</component>
+
+	<component id='ID_s2_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully matched each term to its location. Please click Reset to try again.]]></text>
+	</component>
+	
+</textcomponents>

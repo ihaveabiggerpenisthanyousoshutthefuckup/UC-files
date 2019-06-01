@@ -1,0 +1,75 @@
+
+          <p>SNMPv3 can be secured with the four steps. The figure shows the syntax. The following describes each step:</p>
+          <p></p>
+          <p>
+            <b>Step 1</b>. Configure a standard ACL that will permit access for authorized SNMP managers.</p>
+          <p></p>
+          <p>
+            <b>Step 2</b>. Configure an SNMP view with the <b>snmp-server view</b> global configuration command to identify which MIB Object Identifiers (OIDs) the SNMP manager will be able to read. Configuring a view is required to limit SNMP messages to read-only access.</p>
+          <p></p>
+          <p>
+            <b>Step 3</b>. Configure SNMP group features with the <b>snmp-server group</b> global configuration command. This command has the following parameters (refer to the figure for the syntax):</p>
+          <p>
+            <ul>
+              <li>Configures a name for the group.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sets the SNMP version.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Specifies the required authentication and encryption.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Associates the view from Step 2 to the group.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Specifies read or read write access.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Filters the group with the ACL configured in Step 1.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 4</b>. Configure SNMP group user features with the <b>snmp-server user</b> global configuration command. The command has the following parameters:</p>
+          <p>
+            <ul>
+              <li>Configures a username.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Associates the user with the group name that was configured in Step 3.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sets the SNMP version.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sets the authentication type. SHA is preferred and should be supported by the SNMP management software. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sets the encryption type. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configures an encryption password.</li>
+            </ul>
+          </p>
+        

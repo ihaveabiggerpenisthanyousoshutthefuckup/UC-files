@@ -1,0 +1,35 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>SNMP Best Practices</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Managed routers with<br>SNMP and Syslog agents]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Managed switch with<br>SNMP and Syslog agents]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[NMS using SNMP to monitor and manage network devices. NMS also receives Syslog messages from network devices.]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Managed switch with<br>SNMP and Syslog agents]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Managed switch with<br>SNMP and Syslog agents]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,23 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Tunneling to Create a PPP Link over Ethernet</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Customer]]></text> 
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[PPP Tunnel]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>ISP</b>]]></text> 
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[Tunnel]]></text> 
+</component>
+<component id="ID_txt05">
+  <text><![CDATA[PPP]]></text> 
+</component>
+<component id="ID_txt06">
+  <text><![CDATA[IP Packet]]></text> 
+</component>
+</textcomponents>

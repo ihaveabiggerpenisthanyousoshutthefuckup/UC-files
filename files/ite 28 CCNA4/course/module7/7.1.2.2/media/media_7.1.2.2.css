@@ -1,0 +1,5 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_set03_title,#ID_set02_title,#ID_set01_title{
+	height:80px!important;
+}

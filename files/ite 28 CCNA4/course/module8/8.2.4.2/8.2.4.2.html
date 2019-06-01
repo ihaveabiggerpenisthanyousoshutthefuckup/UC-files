@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.2 End-to-End Connectivity Problem Initiates Troubleshooting</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>End-to-End Connectivity Problem Initiates Troubleshooting</h1>
+        <div>
+          <p>Usually what initiates a troubleshooting effort is the discovery that there is a problem with end-to-end connectivity.  Two of the most common utilities used to verify a problem with end-to-end connectivity are<b> ping </b>and<b> traceroute</b>, as shown in Figure 1.</p>
+          <p></p>
+          <p>Ping is probably the most widely-known connectivity-testing utility in networking and has always been part of Cisco IOS Software.  It sends out requests for responses from a specified host address. The<b> ping </b>command uses a Layer 3 protocol that is a part of the TCP/IP suite called ICMP. Ping uses the ICMP echo request and ICMP echo reply packets. If the host at the specified address receives the ICMP echo request, it responds with an ICMP echo reply packet. Ping can be used to verify end-to-end connectivity for both IPv4 and IPv6. Figure 2 shows a successful ping from PC1 to SRV1, at address 172.16.1.100.</p>
+          <p></p>
+          <p>The<b> traceroute </b>command in Figure 3 illustrates the path the IPv4 packets take to reach their destination. Similar to the<b> ping </b>command, the Cisco IOS<b> traceroute </b>command can be used for both IPv4 and IPv6. The<b> tracert </b>command is used with Windows operating system. The trace generates a list of hops, router IP addresses and the final destination IP address that are successfully reached along the path. This list provides important verification and troubleshooting information. If the data reaches the destination, the trace lists the interface on every router in the path. If the data fails at some hop along the way, the address of the last router that responded to the trace is known. This address is an indication of where the problem or security restrictions reside.</p>
+          <p></p>
+          <p>As stated, the ping and traceroute utilities can be used to test and diagnose end-to-end IPv6 connectivity by providing the IPv6 address as the destination address. When using these utilities, the Cisco IOS utility recognizes whether the address is an IPv4 or IPv6 address and uses the appropriate protocol to test connectivity. Figure 4 shows the<b> ping </b>and<b> traceroute </b>commands on router R1 used to test IPv6 connectivity.</p>
+          <p></p>
+          <p>
+            <b>Note:</b> The <b>traceroute</b> command is commonly performed when the <b>ping</b> command fails. If the <b>ping</b> succeeds, the <b>traceroute</b> command is commonly not needed because the technician knows that connectivity exists.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a standard c.c.n.a. lab topology with addressing and a p.c. using ping and trace route to test end to end connectivity. Figure two shows the output from the ping command on p.c. one to the server. Figure three shows the output from the trace route command on p.c. one to the server. Figure four shows the output from the ping and trace route commands on router one using i.p.v. 6 addresses.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

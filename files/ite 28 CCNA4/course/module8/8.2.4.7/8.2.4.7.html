@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.7 Step 5 - Verify Correct Path</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 5 - Verify Correct Path</h1>
+        <div>
+          <p>
+            <b>Troubleshooting the Network Layer</b>
+          </p>
+          <p>When troubleshooting, it is often necessary to verify the path to the destination network. Figure 1 shows the reference topology indicating the intended path for packets from PC1 to SRV1.</p>
+          <p></p>
+          <p>In Figure 2, the<b> show ip route </b>command is used to examine the IPv4 routing table.</p>
+          <p></p>
+          <p>The IPv4 and IPv6 routing tables can be populated by the following methods:</p>
+          <p>
+            <ul>
+              <li>Directly connected networks</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Local host or local routes</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Static routes</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Dynamic routes</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Default routes</li>
+            </ul>
+          </p>
+          <p>The process of forwarding IPv4 and IPv6 packets is based on the longest bit match or longest prefix match. The routing table process will attempt to forward the packet using an entry in the routing table with the greatest number of far left matching bits. The number of matching bits is indicated by the route’s prefix length. </p>
+          <p></p>
+          <p>Figure 3 shows a similar scenario with IPv6. To verify that the current IPv6 path matches the desired path to reach destinations, use the<b> show ipv6 route </b>command on a router to examine the routing table. After examining the IPv6 routing table, R1 does have a path to 2001:DB8:ACAD:4::/64 via R2 at FE80::2.</p>
+          <p></p>
+          <p>The following list, along with Figure 4, describes the process for both the IPv4 and IPv6 routing tables. If the destination address in a packet:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Does not match an entry in the routing table, then the default route is used. If there is not a default route that is configured, the packet is discarded.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Matches a single entry in the routing table, then the packet is forwarded through the interface that is defined in this route.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Matches more than one entry in the routing table and the routing entries have the same prefix length, then the packets for this destination can be distributed among the routes that are defined in the routing table.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Matches more than one entry in the routing table and the routing entries have different prefix lengths, then the packets for this destination are forwarded out of the interface that is associated with the route that has the longer prefix match.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example</b>
+          </p>
+          <p>Devices are unable to connect to the server SRV1 at 172.16.1.100.  Using the<b> show ip route </b>command, the administrator should check to see if a routing entry exists to network 172.16.1.0/24. If the routing table does not have a specific route to SRV1’s network, the network administrator must then check for the existence of a default or summary route entry in the direction of the 172.16.1.0/24 network. If none exists, then the problem may be with routing and the administrator must verify that the network is included within the dynamic routing protocol configuration, or add a static route.  </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard c.c.n.a. lab topology with i.p.v. 4 and i.p.v. 6 addressing displayed.  Figure two shows the output from the show i.p. route command on router one. Figure three shows the output from the show i.p.v. 6 route command on router one. Figure four shows a flowchart for troubleshooting network layer issues.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,417 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Activity Part 1 - Compare QoS Model Benefits</b>]]></text>
+    </component>
+    <component id="ID_s1_instr_title">
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id="ID_s1_instr_body">
+        <text>
+            <![CDATA[Choose the correct model for each benefit.]]>
+        </text>
+    </component>
+    <component id='ID_s1_titleCorrect'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s1_correctText'>
+        <text>
+            <![CDATA[You have successfully identified the correct QoS models.]]>
+        </text>
+    </component>
+    <component id='ID_s1_titleIncorrect'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s1_incorrectText'>
+        <text>
+            <![CDATA[You have not successfully identified the correct QoS models. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[1. <textformat blockindent='14'>Per-request policy admission control</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CBprompt01'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB01_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB01_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB01_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[2. <textformat blockindent='14'>No special QoS mechanisms are required</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CBprompt02'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB02_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB02_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB02_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[3. <textformat blockindent='14'>Provides many different levels of quality</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CBprompt03'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB03_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB03_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB03_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[4. <textformat blockindent='14'>Scalability is only limited by bandwidth limits, in which case all traffic is equally affected</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CBprompt04'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB04_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB04_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB04_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[5. <textformat blockindent='14'>Signaling of dynamic port numbers such as H.323</textformat>]]>
+        </text>
+    </component>
+    -
+    <component id='ID_s1_CBprompt05'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB05_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB05_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB05_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[6. <textformat blockindent='14'>Explicit end-to-end resource admission control</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CBprompt06'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB06_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB06_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB06_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[7. <textformat blockindent='14'>Highly scalable</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CBprompt07'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB07_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB07_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s1_CB07_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Activity Part 2 - Compare QoS Model Drawbacks</b>]]></text>
+    </component>
+    <component id="ID_s2_instr_title">
+        <text>
+            <![CDATA[Instructions]]>
+        </text>
+    </component>
+    <component id="ID_s2_instr_body">
+        <text>
+            <![CDATA[Choose the correct model for each drawback.]]>
+        </text>
+    </component>
+    <component id='ID_s2_titleCorrect'>
+        <text>
+            <![CDATA[Correct]]>
+        </text>
+    </component>
+    <component id='ID_s2_correctText'>
+        <text>
+            <![CDATA[You have successfully identified the correct QoS models. ]]>
+        </text>
+    </component>
+    <component id='ID_s2_titleIncorrect'>
+        <text>
+            <![CDATA[Incorrect]]>
+        </text>
+    </component>
+    <component id='ID_s2_incorrectText'>
+        <text>
+            <![CDATA[You have not successfully identified the correct QoS models. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s2_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s2_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[1. <textformat blockindent='14'>Resource intensive due to the stateful architecture requirement for continuous signaling</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CBprompt01'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB01_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB01_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB01_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[2. <textformat blockindent='14'>No absolute guarantee of service quality</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CBprompt02'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB02_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB02_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB02_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[3. <textformat blockindent='14'>No packets have preferential treatment</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CBprompt03'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB03_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB03_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB03_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[4. <textformat blockindent='14'>There are no guarantees of delivery</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CBprompt04'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB04_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB04_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB04_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt05">
+        <text>
+            <![CDATA[5. <textformat blockindent='14'>Requires a set of complex mechanisms to work in concert throughout the network</textformat>]]>
+        </text>
+    </component>
+    -
+    <component id='ID_s2_CBprompt05'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB05_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB05_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB05_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt06">
+        <text>
+            <![CDATA[6. <textformat blockindent='14'>Flow-based approach not scalable to large implementations such as the Internet</textformat>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CBprompt06'>
+        <text>
+            <![CDATA[Select an answer ...]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB06_01'>
+        <text>
+            <![CDATA[Best Effort]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB06_02'>
+        <text>
+            <![CDATA[Integrated Services]]>
+        </text>
+    </component>
+    <component id='ID_s2_CB06_03'>
+        <text>
+            <![CDATA[Differentiated Services]]>
+        </text>
+    </component>
+</textcomponents>

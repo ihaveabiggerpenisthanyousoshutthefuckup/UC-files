@@ -1,0 +1,41 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>PPP Authentication Protocols</b>]]></text> 
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>Remote Router</b>]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Remote Router</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Central-site Router</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Central-site Router</b>]]></text> 
+  </component>
+
+<component id="ID_txt07">
+  <text><![CDATA[<b>PAP 2-Way Handshake</b>]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[Username: R1<br/>Password: cisco123]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[Accept/Reject]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>CHAP 3-Way Handshake</b>]]></text> 
+  </component>
+<component id="ID_txt10B">
+  <text><![CDATA[Challenge]]></text> 
+  </component>
+
+<component id="ID_txt11">
+  <text><![CDATA[Username: R1<br/>Hash: ######]]></text> 
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[Accept/Reject]]></text> 
+  </component>
+</textcomponents>

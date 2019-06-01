@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.3 QoS Tools</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>QoS Tools</h1>
+        <div>
+          <p>There are three categories of QoS tools, as described in the table in Figure 1:</p>
+          <p>
+            <ul>
+              <li>Classification and marking tools</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Congestion avoidance tools</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Congestion management tools</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Refer to Figure 2 to help understand the sequence of how these tools are used when QoS is applied to packet flows. </p>
+          <p></p>
+          <p>As shown in the figure, ingress packets (gray squares) are classified and their respective IP header is marked (colored squares).  To avoid congestion, packets are then allocated resources based on defined policies. Packets are then queued and forwarded out the egress interface based on their defined QoS shaping and policing policy.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Classification and marking can be done on ingress or egress, whereas other QoS actions such queuing and shaping are usually done on egress.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a table of three categories of QoS tools. Figure 2 shows the sequence of how the three tools are used when QoS is applied to packet flow.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

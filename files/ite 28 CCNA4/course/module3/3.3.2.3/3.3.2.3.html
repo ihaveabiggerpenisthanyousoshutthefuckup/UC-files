@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.3 DMVPN</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DMVPN</h1>
+        <div>
+          <p>Dynamic Multipoint VPN (DMVPN) is a Cisco software solution for building multiple VPNs in an easy, dynamic, and scalable manner. The goal is to simplify the configuration while easily and flexibly connecting central office sites with branch sites. This is called hub-to-spoke, as shown in Figure 1.</p>
+          <p></p>
+          <p>With DMVPNs, branch sites can also communicate directly with other branch sites, as shown in Figure 2.</p>
+          <p>DMVPN is built using the following technologies:</p>
+          <p>
+            <ul>
+              <li>Next Hop Resolution Protocol (NHRP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Multipoint Generic Routing Encapsulation (mGRE) tunnels</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP Security (IPsec) encryption</li>
+            </ul>
+          </p>
+          <p>NHRP is a Layer 2 resolution and caching protocol similar to Address Resolution Protocol (ARP). NHRP creates a distributed mapping database of public IP addresses for all tunnel spokes. NHRP is a client server protocol consisting of the NHRP hub known as the Next Hop Server (NHS), and the NHRP spokes known as the Next Hop Clients (NHCs).</p>
+          <p></p>
+          <p>Generic Routing Encapsulation (GRE) is a tunneling protocol developed by Cisco that can encapsulate a wide variety of protocol packet types inside IP tunnels. An mGRE tunnel interface allows a single GRE interface to support multiple IPsec tunnels. With mGRE, dynamically allocated tunnels are created through a permanent tunnel source at the hub and dynamically allocated tunnel destinations, created as necessary, at the spokes. This reduces the size and simplifies the complexity of the configuration.</p>
+          <p></p>
+          <p>Like other VPN types, DMVPN relies on IPsec to provide secure transport of private information over public networks, such as the Internet.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows an example of DMVPN hub-to-spoke tunnels. At the top edge of a cloud is a router labeled hub. On three other points on the edge of the same cloud are routers labeled spoke A, spoke B, and spoke C. A line representing a hub-to-spoke tunnel connects from the hub router to each of the 3 spoke routers.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+Figure 1 shows a table of remote SPAN terminology. Figure 2 shows the type of RSPAN ports used in a network.

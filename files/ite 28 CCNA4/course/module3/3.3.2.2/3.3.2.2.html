@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.2 Remote Access VPNs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Remote Access VPNs</h1>
+        <div>
+          <p>Where a site-to-site VPN is used to connect entire networks, a remote-access VPN supports the needs of telecommuters, mobile users, and extranet, consumer-to-business traffic. A remote-access VPN is created when VPN information is not statically set up, but instead allows for dynamically changing information, and can be enabled and disabled. Remote-access VPNs support a client/server architecture, where the VPN client (remote host) gains secure access to the enterprise network via a VPN server device at the network edge, as shown in the figure.</p>
+          <p></p>
+          <p>Remote-access VPNs are used to connect individual hosts that must access their company network securely over the Internet. Internet connectivity used by telecommuters is typically a broadband connection.</p>
+          <p></p>
+          <p>VPN client software may need to be installed on the mobile user’s end device; for example, each host may have Cisco AnyConnect Secure Mobility Client software installed. When the host tries to send any traffic, the Cisco AnyConnect VPN Client software encapsulates and encrypts this traffic. The encrypted data is then sent over the Internet to the VPN gateway at the edge of the target network. Upon receipt, the VPN gateway behaves as it does for site-to-site VPNs.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The Cisco AnyConnect Secure Mobility Client software builds on prior Cisco AnyConnect VPN Client and Cisco VPN Client offerings to improve the always-on VPN experience across more laptop and smart phone-based mobile devices. This client supports IPv6.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a topology for a remote-access VPN. Outside the Internet cloud is a laptop labeled client initiates VPN connection. On the other side of the Internet cloud, another router sits on the edge of the cloud and is within a building. Also in the building is a security device labeled VPN terminating device. There is a pipe connection between the laptop and the VPN terminating device.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

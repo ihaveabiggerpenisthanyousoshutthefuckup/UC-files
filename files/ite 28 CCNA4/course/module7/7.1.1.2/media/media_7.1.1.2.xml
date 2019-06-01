@@ -1,0 +1,29 @@
+﻿<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Converged Networks</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>HVAC</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Telephone</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>Power</b>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Data</b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b>Video</b>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[<b>Physical Security</b>]]></text>
+	</component>
+
+	<component id="ID_caption">
+		<text><![CDATA[As the IoT evolves, individual networks will be connected together and will include security, analytics, and management.]]></text>
+	</component>
+	
+</textcomponents>

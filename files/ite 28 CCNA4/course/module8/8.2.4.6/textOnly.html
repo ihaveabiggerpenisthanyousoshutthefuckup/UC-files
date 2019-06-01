@@ -1,0 +1,28 @@
+
+          <p>If there is no detailed route on the router or if the host is configured with the wrong default gateway, then communication between two endpoints in different networks does not work. Figure 1 illustrates that PC1 uses R1 as its default gateway. Similarly, R1 uses R2 as its default gateway or gateway of last resort.</p>
+          <p></p>
+          <p>If a host needs access to resources beyond the local network, the default gateway must be configured. The default gateway is the first router on the path to destinations beyond the local network.  </p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example 1</b>
+          </p>
+          <p>Figure 2 shows the<b> show ip route </b>Cisco IOS command and the<b> route print </b>Windows command to verify the presence of the IPv4 default gateway.</p>
+          <p></p>
+          <p>In this example, the R1 router has the correct default gateway, which is the IPv4 address of the R2 router. However, PC1 has the wrong default gateway. PC1 should have the default gateway of R1 router 10.1.10.1. This must be configured manually if the IPv4 addressing information was manually configured on PC1. If the IPv4 addressing information was obtained automatically from a DHCPv4 server, then the configuration on the DHCP server must be examined. A configuration problem on a DHCP server usually affects multiple clients.</p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example 2</b>
+          </p>
+          <p>In IPv6, the default gateway can be configured manually, using stateless autoconfiguration (SLAAC), or by using DHCPv6. With SLAAC, the default gateway is advertised by the router to hosts using ICMPv6 Router Advertisement (RA) messages. The default gateway in the RA message is the link-local IPv6 address of a router interface. If the default gateway is configured manually on the host, which is very unlikely, the default gateway can be set either to the global IPv6 address or to the link-local IPv6 address.</p>
+          <p></p>
+          <p>As shown in Figure 3, use the <b>show ipv6 route</b> Cisco IOS command to check for the IPv6 default route on R1 and use the <b>ipconfig</b> Windows command to verify if a PC has an IPv6 default gateway. </p>
+          <p></p>
+          <p>R1 has a default route via router R2, but notice the<b> ipconfig </b>command reveals the absence of an IPv6 global unicast address and an IPv6 default gateway. PC1 is enabled for IPv6 because it has an IPv6 link-local address. The link-local address is automatically created by the device. Checking the network documentation, the network administrator confirms that hosts on this LAN should be receiving their IPv6 address information from the router using SLAAC. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In this example, other devices on the same LAN using SLAAC would also experience the same problem receiving IPv6 address information.</p>
+          <p></p>
+          <p>Using the<b> show ipv6 interface GigabitEthernet 0/0 </b>command in Figure 4, it can be seen that although the interface has an IPv6 address, it is not a member of the All-IPv6-Routers multicast group FF02::2. This means the router is not enabled as an IPv6 router. Therefore, it is not sending out ICMPv6 RAs on this interface. In Figure 5, R1 is enabled as an IPv6 router using the<b> ipv6 unicast-routing </b>command. The<b> show ipv6 interface GigabitEthernet 0/0 </b>command now reveals that R1 is a member of FF02::2, the All-IPv6-Routers multicast group.</p>
+          <p></p>
+          <p>To verify that PC1 has the default gateway set, use the<b> ipconfig </b>command on the Microsoft Windows PC or the<b> ifconfig </b>command on Linux and Mac OS X. In Figure 6, PC1 has an IPv6 global unicast address and an IPv6 default gateway. The default gateway is set to the link-local address of router R1, FE80::1. </p>
+        

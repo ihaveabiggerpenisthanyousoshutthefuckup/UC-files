@@ -1,0 +1,123 @@
+﻿<textcomponents>  
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>3.1.4 IA - D Classify Dynamic Routing Protocols</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+	<text><![CDATA[<b>3.1.4 IA - D Classify Dynamic Routing Protocols</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>MAC Address: 5475.D08E.9AD8</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+	<text><![CDATA[<b>SRV1</b>]]></text>
+</component>
+
+<component id="ID_s1_inst">
+	<text><![CDATA[<b>Activity – Part 1: Troubleshooting Network Issues</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Identify the PC1 command that will help verify end-to-end connectivity. PC1 can reach its gateway but cannot reach SRV1. Click Button 2 to continue to Part 2.]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>ipconfig -all</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>arp -all</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>netstat -all</b></font>]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>traceroute</b></font>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the command to troubleshoot this network issue. Click Button 2 to continue.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the command to troubleshoot this network issue. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<component id="ID_s2_inst">
+	<text><![CDATA[<b>Activity – Part 2: Troubleshooting Network Issues</b>]]></text>
+</component>
+
+<component id='ID_s2_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s2_instr_body'>
+	<text><![CDATA[Identify the PC1 command that will help verify DNS connectivity. PC1 cannot reach the URL for srv1.example.com but can ping 172.16.1.100.]]></text>
+</component>
+
+<component id='ID_s2_drag01'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>ipconfig -all</b></font>]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>arp -all</b></font>]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>netstat -all</b></font>]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[<font face="_typewriter" color="#393536"><b>traceroute</b></font>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully identified the command to troubleshoot this network issue.]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully identified the command to troubleshoot this network issue. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+</textcomponents>

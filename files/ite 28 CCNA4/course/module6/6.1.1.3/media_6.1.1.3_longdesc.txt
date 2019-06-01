@@ -1,0 +1,1 @@
+Figure 1 shows three examples of typical congestion points, aggregation, speed mismatch, and LAN to WAN. Figure 2 shows a table of source of delay.

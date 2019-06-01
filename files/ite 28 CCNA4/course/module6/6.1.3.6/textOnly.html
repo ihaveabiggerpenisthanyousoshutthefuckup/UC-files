@@ -1,0 +1,7 @@
+
+          <p>The LLQ feature brings strict priority queuing (PQ) to CBWFQ. Strict PQ allows delay-sensitive data such as voice to be sent before packets in other queues. LLQ provides strict priority queuing for CBWFQ, reducing jitter in voice conversations, as shown in the figure.</p>
+          <p></p>
+          <p>Without LLQ, CBWFQ provides WFQ based on defined classes with no strict priority queue available for real-time traffic. The weight for a packet belonging to a specific class is derived from the bandwidth you assigned to the class when you configured it. Therefore, the bandwidth assigned to the packets of a class determines the order in which packets are sent. All packets are serviced fairly based on weight; no class of packets may be granted strict priority. This scheme poses problems for voice traffic that is largely intolerant of delay, especially variation in delay. For voice traffic, variations in delay introduce irregularities of transmission manifesting as jitter in the heard conversation.</p>
+          <p></p>
+          <p>With LLQ, delay-sensitive data is sent first, before packets in other queues are treated. LLQ allows delay-sensitive data such as voice to be sent first (before packets in other queues), giving delay-sensitive data preferential treatment over other traffic. Although it is possible to enqueue various types of real-time traffic to the strict priority queue, Cisco recommends that only voice traffic be directed to the priority queue.</p>
+        

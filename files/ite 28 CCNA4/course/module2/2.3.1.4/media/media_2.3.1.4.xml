@@ -1,0 +1,90 @@
+<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>PPP Link Quality Monitoring</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	<tr class="mtable_top">		
+		<td colspan='2' bgcolor='#666263'><font size='1' color='#0E6360'>.</font></td>
+	</tr>
+	<tr colspan='2'>
+		<td bgcolor='#666263' width="149" ><font color='#ffffff'><b>Keyword</b></font></td>
+		<td bgcolor='#666263' width="448" ><font color='#ffffff'><b>Description</b></font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face="_typewriter" color='#000000' size="11"><i>percentage</i></font></td>
+		<td bgcolor='#E9E7E8' valign="top"><font color='#393536' size="11">Specifies the link quality threshold. Range is 1 to 100.</font></td>
+	</tr>	
+	</table>]]>
+        </text>
+    </component>
+
+    <component id="ID_s1_txt01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+               
+               <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">ppp quality percentage Command</font>
+            </caption>
+
+    <tr>     
+        <td colspan='2' bgcolor='#666263' class="mtable_top"><font size='1' color='#0E6360'>.</font></td>
+    </tr>
+    <tr colspan='2'>
+        <th id="Keyword" scope="col" bgcolor='#666263' width="149" ><font color='#ffffff'><b>Keyword</b></font></td>
+        <th id="Description" scope="col" bgcolor='#666263' width="448" ><font color='#ffffff'><b>Description</b></font></td>
+        
+    </tr>
+    <tr>
+        <td headers="Keyword" scope="row" bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><i>percentage</i></font></td>
+        <td headers="Description" bgcolor='#E9E7E8' valign="top"><font>Specifies the link quality threshold. Range is 1 to 100.</font></td>
+    </tr>   
+    </table>]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text><![CDATA[<font face="_sans">Router(config-if) <b># ppp quality</b> <i>percentage</i></font>]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>PPP Link Quality Monitoring Command</b>]]></text>
+    </component>
+    <component id="ID_s2_SC5" fontFace="_typewriter" fontSize="12" fontColor="#ffffff">
+        <feedback id="fb">
+            <![CDATA[<b><font size="12" face="_sans" color="#FFFFFF">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b>
+		]]></feedback>
+        <existingcommands><![CDATA[<font size="12" face="_sans"><b>On R1‘s interface S0/0/1 configure PPP encapsulation with compression and LQM. Perform the tasks in the following order:<ul><li>Configure IPv4 address 10.0.1.5/30<li>Configure IPv6 address 2001:DB8:CAFE:3::1/64<li>Configure PPP Encapsulation<li>Configure PPP compression using predictor<li>Configure PPP LQM with a percentage of 90%</b></font>]]></existingcommands>
+        <command prompt="R1(config)#">
+            <correctresponse><![CDATA[interface S0/0/1]]></correctresponse>
+        </command>
+        <command prompt="R1(config-if)#">
+            <correctresponse><![CDATA[ip address 10.0.1.5 255.255.255.252]]></correctresponse>
+        </command>
+        <command prompt="R1(config-if)#">
+            <correctresponse><![CDATA[ipv6 address 2001:db8:cafe:3::1/64]]></correctresponse>
+        </command>
+        <command prompt="R1(config-if)#">
+            <correctresponse><![CDATA[encapsulation ppp]]></correctresponse>
+        </command>
+        <command prompt="R1(config-if)#">
+            <correctresponse><![CDATA[compress predictor]]></correctresponse>
+        </command>
+        <command prompt="R1(config-if)#">
+        <correctresponse><![CDATA[ppp quality 90]]></correctresponse>
+        <instruction><![CDATA[<font size="12" face="_sans"><b>You successfully configured PPP link quality monitoring.</font>]]></instruction>
+        </command>
+        <command prompt="" />
+    </component>
+    <component id="ID_sc2_reset">
+        <text><![CDATA[Reset]]></text>
+    </component>
+    <component id="ID_sc2_showme">
+        <text><![CDATA[Show Me]]></text>
+    </component>
+    <component id="ID_sc2_showall">
+        <text><![CDATA[Show All]]></text>
+    </component>
+</textcomponents>

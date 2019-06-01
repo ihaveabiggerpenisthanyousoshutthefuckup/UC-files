@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.1.1.4 Steps to Establish a Network Baseline</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.1.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Steps to Establish a Network Baseline</h1>
+        <div>
+          <p>The initial network performance baseline sets the stage for measuring the effects of network changes and subsequent troubleshooting efforts. Therefore it is important to plan for it carefully. </p>
+          <p></p>
+          <p>To establish and capture an initial network baseline, perform the following steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>Determine what types of data to collect.</p>
+          <p></p>
+          <p>When conducting the initial baseline, start by selecting a few variables that represent the defined policies. If too many data points are selected, the amount of data can be overwhelming, making analysis of the collected data difficult. Start out simply and fine-tune along the way. Some good starting measures are interface utilization and CPU utilization. </p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>Identify devices and ports of interest.</p>
+          <p></p>
+          <p>Use the network topology to identify those devices and ports for which performance data should be measured. Devices and ports of interest include:</p>
+          <p>
+            <ul>
+              <li>Network device ports that connect to other network devices</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Servers</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Key users</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Anything else considered critical to operations</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A logical network topology diagram can be useful in identifying key devices and ports to monitor. For example, in Figure 1 the network administrator has highlighted the devices and ports of interest to monitor during the baseline test. The devices of interest include PC1 (the Admin terminal), and SRV1 (the Web/TFTP server). The ports of interest include those ports on R1, R2, and R3 that connect to the other routers or to switches, and on R2, the port that connects to SRV1 (G0/0). </p>
+          <p></p>
+          <p>By shortening the list of ports that are polled, the results are concise, and the network management load is minimized. Remember that an interface on a router or switch can be a virtual interface, such as a switch virtual interface (SVI).</p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Determine the baseline duration.</p>
+          <p></p>
+          <p>The length of time and the baseline information being gathered must be sufficient for establishing a typical picture of the network. It is important that daily trends of network traffic are monitored. It is also important to monitor for trends that occur over a longer period of time, such as weekly or monthly. For this reason, when capturing data for analysis, the period specified should be, at a minimum, seven days long.</p>
+          <p></p>
+          <p>Figure 2 shows examples of several screenshots of CPU utilization trends captured over a daily, weekly, monthly, and yearly period. In this example, notice that the work week trends are too short to reveal the recurring utilization surge every weekend on Saturday evening, when a database backup operation consumes network bandwidth. This recurring pattern is revealed in the monthly trend. A yearly trend as shown in the example may be too long of a duration to provide meaningful baseline performance details. However, it may help identify long term patterns which should be analyzed further. Typically, a baseline needs to last no more than six weeks, unless specific long-term trends need to be measured. Generally, a two-to-four-week baseline is adequate.</p>
+          <p></p>
+          <p>Baseline measurements should not be performed during times of unique traffic patterns, because the data would provide an inaccurate picture of normal network operations. Baseline analysis of the network should be conducted on a regular basis. Perform an annual analysis of the entire network or baseline different sections of the network on a rotating basis. Analysis must be conducted regularly to understand how the network is affected by growth and other changes.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a complex network with three wiring closets and the i.s.p. facility.  The diagram shows the interfaces and i.p. addressing for all devices.  Devices and ports of interest are highlighted. Figure two shows several graphs of C.P.U. utilization trends.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

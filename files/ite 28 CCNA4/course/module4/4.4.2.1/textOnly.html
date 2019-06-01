@@ -1,0 +1,8 @@
+
+          <p>Using the <b>show</b> commands described earlier reveals most of the common ACL errors. The most common errors are entering ACEs in the wrong order and not applying adequate criteria to the ACL rules. </p>
+          <p></p>
+          <p>In the figure, host 192.168.10.10 has no Telnet connectivity with 192.168.30.12. When viewing the output of the <b>show access-lists</b> command, matches are shown for the first deny statement. This is an indicator that this statement has been matched by traffic.</p>
+          <p></p>
+          <p>
+            <b>Solution </b>- Look at the order of the ACEs. Host 192.168.10.10 has no connectivity with 192.168.30.12 because of the order of rule 10 in the access list. Because the router processes ACLs from the top down, statement 10 denies host 192.168.10.10, so statement 20 can never be matched. Statements 10 and 20 should be reversed. The last line allows all other non-TCP traffic that falls under IP (ICMP, UDP, etc.).</p>
+        

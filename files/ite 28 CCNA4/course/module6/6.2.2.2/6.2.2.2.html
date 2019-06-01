@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.2 Avoiding Packet Loss</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Avoiding Packet Loss</h1>
+        <div>
+          <p>Packet loss is usually the result of congestion on an interface. Most applications that use TCP experience slowdown because TCP automatically adjusts to network congestion. Dropped TCP segments cause TCP sessions to reduce their window sizes. Some applications do not use TCP and cannot handle drops (fragile flows).</p>
+          <p></p>
+          <p>The following approaches can prevent drops in sensitive applications:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Increase link capacity to ease or prevent congestion.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Guarantee enough bandwidth and increase buffer space to accommodate bursts of traffic from fragile flows. There are several mechanisms available in Cisco IOS QoS software that can guarantee bandwidth and provide prioritized forwarding to drop-sensitive applications. Examples being WFQ, CBWFQ, and LLQ.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Prevent congestion by dropping lower-priority packets before congestion occurs. Cisco IOS QoS provides queuing mechanisms that start dropping lower-priority packets before congestion occurs. An example being weighted random early detection (WRED).</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure is a close-up photo of network cables connecting to a network switch. The cables are organized into groups by color and connecting to a network switch. </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

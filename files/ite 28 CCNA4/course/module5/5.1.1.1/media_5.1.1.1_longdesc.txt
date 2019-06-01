@@ -1,0 +1,1 @@
+Figure shows two column with communication protocol models. On the left column is the OSI model and on the right is the TCP/IP model. An arrow line is extended from the Layer 2 of the TCP/IP model and upward to the application layer. At the Layer 2, a caption reads “Initial Compromise”. In the middle of the upward arrow line, a caption reads “Compromised”.

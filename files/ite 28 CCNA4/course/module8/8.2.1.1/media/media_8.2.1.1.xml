@@ -1,0 +1,25 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>IP SLA Operation</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[Generated ICMP traffic to measure network response]]></text>
+	</component>
+
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[IP SLA Source]]></text>
+	</component>
+	
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[DNS Server]]></text>
+	</component>
+	
+<!-- end slide 1 -->
+
+	
+</textcomponents>

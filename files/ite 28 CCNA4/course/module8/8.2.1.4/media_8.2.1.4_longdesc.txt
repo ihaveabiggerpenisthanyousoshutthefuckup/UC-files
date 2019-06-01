@@ -1,0 +1,1 @@
+Figure 1 displays the output of the show i.p. s.l.a. configuration command. Figure 2 displays the output of the show i.p. s.l.a. statistics command..

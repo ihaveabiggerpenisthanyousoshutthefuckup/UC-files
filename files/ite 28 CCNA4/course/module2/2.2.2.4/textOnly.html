@@ -1,0 +1,42 @@
+
+          <p>A PPP frame consists of six fields. The following descriptions summarize the PPP frame fields illustrated in the figure: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Flag</b> - A single byte that indicates the beginning or end of a frame. The Flag field consists of the binary sequence 01111110. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address</b> - A single byte that contains the binary sequence 11111111, the standard broadcast address. PPP does not assign individual station addresses. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Control</b> - A single byte that contains the binary sequence 00000011, which calls for transmission of user data in an unsequenced frame. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Protocol</b> - Two bytes that identify the protocol encapsulated in the information field of the frame. The 2-byte Protocol field identifies the protocol of the PPP payload. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data</b> - Zero or more bytes that contain the datagram for the protocol specified in the protocol field. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Frame Check Sequence (FCS) </b>– This is normally 16 bits (2 bytes). If the receiver’s calculation of the FCS does not match the FCS in the PPP frame, the PPP frame is silently discarded.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>LCPs can negotiate modifications to the standard PPP frame structure. Modified frames, however, are always distinguishable from standard frames.</p>
+        

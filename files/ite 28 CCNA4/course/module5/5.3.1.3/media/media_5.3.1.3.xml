@@ -1,0 +1,126 @@
+﻿<textcomponents>
+<!-- slide 1 -->
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>SPAN Terminology</b>]]></text>
+</component>
+
+
+<component id="ID_s1_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="mtable_title">
+					<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+<tr>
+<td bgcolor='#666263'  valign="top" width="175"  class="mtitle"><font color='#ffffff' size="11"><b>Term</b></font></td>
+<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>Definition</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top">Ingress traffic</td>
+<td bgcolor='#E9E7E8' valign="top">This is traffic that enters the switch.</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top">Egress traffic</td>
+<td bgcolor='#F2F2F2' valign="top">This is traffic that leaves the switch.</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top">Source (SPAN) port</td>
+<td bgcolor='#E9E7E8' valign="top">This is a port that is monitored with use of the SPAN feature.</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top">Destination (SPAN) port</td>
+<td bgcolor='#F2F2F2' valign="top">This is a port that monitors source ports, usually where a packet analyzer, IDS or IPS is connected. This port is also called the monitor port.</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top">SPAN session</td>
+<td bgcolor='#E9E7E8' valign="top">This is an association of a destination port with one or more source ports.</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top">Source VLAN</td>
+<td bgcolor='#F2F2F2' valign="top">This is the VLAN monitored for traffic analysis.</td>
+</tr>
+
+</table>]]></text>
+</component>
+
+<component id="ID_s1_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">SPAN Terminology</font></caption>
+
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+<tr>
+<th id="Term" scope="col" bgcolor='#666263'  valign="top" width="175"  class="mtitle"><font color='#ffffff' size="11"><b>Term</b></font></th>
+<th id="Definition" scope="col" bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>Definition</b></font></th>
+</tr>
+
+<tr>
+<td headers="Term" scope="row" bgcolor='#E9E7E8' valign="top">Ingress traffic</td>
+<td headers="Definition" bgcolor='#E9E7E8' valign="top">This is traffic that enters the switch.</td>
+</tr>
+
+<tr>
+<td headers="Term" scope="row" bgcolor='#F2F2F2' valign="top">Egress traffic</td>
+<td headers="Definition" bgcolor='#F2F2F2' valign="top">This is traffic that leaves the switch.</td>
+</tr>
+
+<tr>
+<td headers="Term" scope="row" bgcolor='#E9E7E8' valign="top">Source (SPAN) port</td>
+<td headers="Definition" bgcolor='#E9E7E8' valign="top">This is a port that is monitored with use of the SPAN feature.</td>
+</tr>
+
+<tr>
+<td headers="Term" scope="row" bgcolor='#F2F2F2' valign="top">Destination (SPAN) port</td>
+<td headers="Definition" bgcolor='#F2F2F2' valign="top">This is a port that monitors source ports, usually where a packet analyzer, IDS or IPS is connected. This port is also called the monitor port.</td>
+</tr>
+
+<tr>
+<td headers="Term" scope="row" bgcolor='#E9E7E8' valign="top">SPAN session</td>
+<td headers="Definition" bgcolor='#E9E7E8' valign="top">This is an association of a destination port with one or more source ports.</td>
+</tr>
+
+<tr>
+<td headers="Term" scope="row" bgcolor='#F2F2F2' valign="top">Source VLAN</td>
+<td headers="Definition" bgcolor='#F2F2F2' valign="top">This is the VLAN monitored for traffic analysis.</td>
+</tr>
+
+</table>]]></text>
+</component>
+
+<!--  end slide 1 -->
+
+
+<!-- slide 2 -->
+
+<component id="ID_s2_title">
+	<text><![CDATA[<b>SPAN Ports</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+	<text><![CDATA[Source Port (Ingress)]]></text>
+</component>
+<component id="ID_s2_txt02">
+	<text><![CDATA[Source Port (Egress)]]></text>
+</component>
+<component id="ID_s2_txt03">
+	<text><![CDATA[Destination Port<br/>(Monitor Port)]]></text>
+</component>
+<component id="ID_s2_txt04">
+	<text><![CDATA[Sniffer]]></text>
+</component>
+
+<!--  end slide 2 -->
+
+</textcomponents>

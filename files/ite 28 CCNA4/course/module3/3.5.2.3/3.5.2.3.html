@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.5.2.3 BGP Options</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.5.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>BGP Options</h1>
+        <div>
+          <p>BGP is used by autonomous systems to advertise networks that originated within their AS or in the case of ISPs, the networks that originated from other autonomous systems.</p>
+          <p></p>
+          <p>For example, a company connecting to their ISP using BGP would advertise their network addresses to their ISP. The ISP would then advertise these networks to other ISPs (BGP peers). Eventually, all other autonomous systems on the Internet would learn about the networks initially originated by the company.</p>
+          <p></p>
+          <p>There are three common ways an organization can choose to implement BGP in a multi-homed environment:</p>
+          <p></p>
+          <p>
+            <b>Default Route Only</b>
+          </p>
+          <p>ISPs advertise a default route to Company-A, as shown in Figure 1. The arrows indicate that the default is configured on the ISPs, not on the Company-A. This is the simplest method to implement BGP. However, because the company only receives a default route from both ISPs, sub-optimal routing may occur. For example, Company-A may choose to use ISP-1’s default route when sending packets to a destination network in ISP-2’s AS.</p>
+          <p></p>
+          <p>
+            <b>Default Route and ISP Routes</b>
+          </p>
+          <p>ISPs advertise their default route and their network to Company-A, as shown in Figure 2. This option allows Company-A to forward traffic to the appropriate ISP for networks advertised by that ISP. For example, Company-A would choose ISP-1 for networks advertised by ISP-1. For all other networks, one of the two default routes can be used, which means sub-optimal routing may still occur for all other Internet routes.</p>
+          <p></p>
+          <p>
+            <b>All Internet Routes</b>
+          </p>
+          <p>ISPs advertise all Internet routes to Company-A, as shown in Figure 3. Because Company-A receives all Internet routes from both ISPs, Company-A can determine which ISP to use as the best path to forward traffic for any network. Although this solves the issue of sub-optimal routing, the Company-A’s BGP router must contain all Internet routes, which would currently include routes to over 550,000 networks.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 show when only a default route is used. A cloud labeled AS 65000 Company-A has two edge routers. One of the edge routers connects to an edge router within the AS 65001 ISP-1 cloud. The other edge router connects to an edge router within a cloud labeled AS 65002 ISP-2. The AS 65001 ISP-1 cloud and AS 65002 ISP-2 cloud both connect to the same Internet cloud. The edge router within the AS 65001 ISP-1 cloud has a default route to the edge router within the AS 65000 Company-A cloud and the connection is an eBGP one. Likewise, the edge router within the AS 65002 ISP-2 cloud has a default route configured on it pointing toward the edge router within the AS 65000 Company-A cloud. This connection between AS 65002 and AS 65001 is also an eBGP one. Figure 2 has the same topology as Figure 1. The difference is that ISP-1 sends a default routes and all the ISP-1 routes to AS 65000 Company-A. ISP-2 sends a default route and all of the ISP-2 routes. Figure 3 shows how both ISP-1 and ISP-2 routers can send a default route and all of the Internet routes to Company-A, but the two Company-A edge routers would have to be able to handle all the networks of the world.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

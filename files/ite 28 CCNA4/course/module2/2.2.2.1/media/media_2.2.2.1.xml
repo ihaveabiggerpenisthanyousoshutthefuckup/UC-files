@@ -1,0 +1,59 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>PPP Layered Architecture: Physical Layer</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[Network Control Protocol (NCP)]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[Authentication, Other Options<BR/>Link Control Protocol (LCP)]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[Synchronous or Asynchronous <br/><b>Physical Media</b>]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[Network Layer]]></text> 
+</component>
+  
+<component id="ID_txt08">
+  <text><![CDATA[Data Link Layer]]></text> 
+</component>
+  
+<component id="ID_txt09">
+<text><![CDATA[<b>Physical Layer</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>IPv4</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>IPv6</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[IPCP]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[IPv6CP]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>PPP</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[At the Physical Layer PPP Can Use]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<textformat blockindent="-14"><ul><li>Synchronous physical media, such as leased line services</li><li>Asynchronous physical media, such as those that use basic telephone service for modem dialup connections</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

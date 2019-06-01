@@ -1,0 +1,1 @@
+The figure for VPN Internet connections shows three type of VPNs connect to an Internet cloud: Branch office, mobile user, and SOHO. Each type has a pipe connection labeled VPN going into the Internet cloud. Another pipe connection goes from the Internet cloud to a building labeled Central Site. 

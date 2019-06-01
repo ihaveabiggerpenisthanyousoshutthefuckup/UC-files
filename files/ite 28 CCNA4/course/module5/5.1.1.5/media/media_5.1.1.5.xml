@@ -1,0 +1,40 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Switch Spoofing Attack</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[802.1Q]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Trunk]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[VLAN 10]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[802.1Q]]></text> 
+</component>
+
+<component id="ID_txt05">
+	<text><![CDATA[<b>Unauthorized<br/>Trunk</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[Server1]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[<b>Attacker gains access to the server VLAN.</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[Server2]]></text> 
+</component>
+
+</textcomponents>

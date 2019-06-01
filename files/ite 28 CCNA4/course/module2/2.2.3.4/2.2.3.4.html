@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.4 NCP Explained</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>NCP Explained</h1>
+        <div>
+          <p>After the LCP has configured and authenticated the basic link, the appropriate NCP is invoked to complete the specific configuration of the network layer protocol being used. When the NCP has successfully configured the network layer protocol, the network protocol is in the open state on the established LCP link. At this point, PPP can carry the corresponding network layer protocol packets. </p>
+          <p></p>
+          <p>
+            <b>IPCP Example</b>
+          </p>
+          <p></p>
+          <p>As an example of how the NCP layer works, the NCP configuration of IPv4 is shown in the figure. After LCP has established the link, the routers exchange IPCP messages, negotiating options specific to IPv4. IPCP is responsible for configuring, enabling, and disabling the IPv4 modules on both ends of the link.</p>
+          <p></p>
+          <p>IPCP negotiates two options:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Compression</b> - Allows devices to negotiate an algorithm to compress TCP and IP headers and save bandwidth. The Van Jacobson TCP/IP header compression reduces the size of the TCP/IP headers to as few as 3 bytes. This can be a significant improvement on slow serial lines, particularly for interactive traffic. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4-Address</b> - Allows the initiating device to specify an IPv4 address to use for routing IP over the PPP link, or to request an IPv4 address for the responder. Prior to the advent of broadband technologies such as DSL and cable modem services, dialup network devices commonly used the IPv4 address option.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>After the NCP process is complete, the link goes into the open state and LCP takes over again in a link maintenance phase. Link traffic consists of any possible combination of LCP, NCP, and network layer protocol packets. When data transfer is complete, NCP terminates the protocol link and LCP terminates the PPP connection.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the P.P.P. N.C.P. operation process.  In the figure, two routers have initiated a P.P.P. connection and begin the I.P. version 4 data exchange.  When data transfer is complete, N.C.P. terminates the protocol link and L.C.P. terminates the P.P.P. connection.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

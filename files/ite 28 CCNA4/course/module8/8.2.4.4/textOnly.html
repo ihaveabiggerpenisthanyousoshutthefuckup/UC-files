@@ -1,0 +1,45 @@
+
+          <p>Another common cause for interface errors is a mismatched duplex mode between two ends of an Ethernet link. In many Ethernet-based networks, point-to-point connections are now the norm, and the use of hubs and the associated half-duplex operation is becoming less common. This means that most Ethernet links today operate in full-duplex mode, and while collisions were seen as normal for an Ethernet link, collisions today often indicate that duplex negotiation has failed, and the link is not operating in the correct duplex mode.</p>
+          <p></p>
+          <p>The IEEE 802.3ab Gigabit Ethernet standard mandates the use of autonegotiation for speed and duplex. In addition, although it is not strictly mandatory, practically all Fast Ethernet NICs also use autonegotiation by default. The use of autonegotiation for speed and duplex is the current recommended practice. </p>
+          <p></p>
+          <p>However, if duplex negotiation fails for some reason, it might be necessary to set the speed and duplex manually on both ends. Typically, this would mean setting the duplex mode to full-duplex on both ends of the connection. If this does not work, running half-duplex on both ends is preferred over a duplex mismatch.</p>
+          <p></p>
+          <p>Duplex configuration guidelines include:</p>
+          <p>
+            <ul>
+              <li>Autonegotiation of speed and duplex is recommended.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If autonegotiation fails, manually set the speed and duplex on interconnecting ends.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Point-to-point Ethernet links should always run in full-duplex mode.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Half-duplex is uncommon and typically encountered only when legacy hubs are used.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example</b>
+          </p>
+          <p></p>
+          <p>In the previous scenario, the network administrator needed to add additional users to the network. To incorporate these new users, the network administrator installed a second switch and connected it to the first. Soon after S2 was added to the network, users on both switches began experiencing significant performance problems connecting with devices on the other switch, as shown in Figure 1.  </p>
+          <p></p>
+          <p>The network administrator notices a console message on switch S2:</p>
+          <p></p>
+          <p>
+            <span class="cmd">*Mar  1 00:45:08.756: %CDP-4-DUPLEX_MISMATCH: duplex mismatch discovered on FastEthernet0/20 (not half duplex), with Switch FastEthernet0/20 (half duplex).</span>
+          </p>
+          <p></p>
+          <p>Using the<b> show interfaces fa 0/20 </b>command, the network administrator examines the interface on S1 used to connect to S2 and notices it is set to full-duplex, as shown in Figure 2. The network administrator now examines the other side of the connection, the port on S2. Figure 3 shows that this side of the connection has been configured for half-duplex. The network administrator corrects the setting to <b>duplex auto</b> to automatically negotiate the duplex. Because the port on S1 is set to full-duplex, S2 also uses full-duplex.</p>
+          <p></p>
+          <p>The users report that there are no longer any performance problems.</p>
+        

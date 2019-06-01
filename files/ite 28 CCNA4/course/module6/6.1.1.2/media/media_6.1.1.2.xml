@@ -1,0 +1,50 @@
+﻿<textcomponents>
+    <!-- slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Using Queues to Prioritize Communications</b>]]></text>
+    </component>
+    <component id='ID_txt01'>
+        <text>
+            <![CDATA[Voice Over IP]]>
+        </text>
+    </component>
+    <component id='ID_txt02'>
+        <text>
+            <![CDATA[Financial Transaction]]>
+        </text>
+    </component>
+    <component id='ID_txt03'>
+        <text>
+            <![CDATA[Web Page]]>
+        </text>
+    </component>
+    <component id='ID_txt04'>
+        <text>
+            <![CDATA[High Priority Queue]]>
+        </text>
+    </component>
+    <component id='ID_txt05'>
+        <text>
+            <![CDATA[Medium Priority Queue]]>
+        </text>
+    </component>
+    <component id='ID_txt06'>
+        <text>
+            <![CDATA[Low Priority Queue]]>
+        </text>
+    </component>
+
+    <component id='ID_txt07'>
+        <text>
+            <![CDATA[All communication types have some access to the media. One particular type of traffic cannot take all of the bandwidth.]]>
+        </text>
+    </component>
+    <component id='ID_txt08'>
+        <text>
+            <![CDATA[Link to Network]]>
+        </text>
+    </component>
+    <!-- end slide 1 -->
+    
+</textcomponents>

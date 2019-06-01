@@ -1,0 +1,1 @@
+The figure displays historical operating installation with eight servers: a web server, Email server, SQL server, LAN server, DHCP server, Active Directory server, AAA RADIUS server and a Network Management server. The first six servers are Windows servers and the last two are Linux servers.

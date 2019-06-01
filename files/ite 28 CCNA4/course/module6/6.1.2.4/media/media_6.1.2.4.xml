@@ -1,0 +1,68 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Voice and Video Sampling Comparison</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[<b>Voice Packets</b>]]></text>
+	</component>
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[<b>Bytes</b>]]></text>
+	</component>
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[Audio Samples]]></text>
+	</component>
+	<component id='ID_s1_txt04'>
+		<text><![CDATA[20 ms]]></text>
+	</component>
+	<component id='ID_s1_txt05'>
+		<text><![CDATA[<b>Time</b>]]></text>
+	</component>
+	<component id='ID_s1_txt06'>
+		<text><![CDATA[<b>Video Packets</b>]]></text>
+	</component>
+	<component id='ID_s1_txt07'>
+		<text><![CDATA[Video Frame]]></text>
+	</component>
+	<component id='ID_s1_txt08'>
+		<text><![CDATA[Video Frame]]></text>
+	</component>
+	<component id='ID_s1_txt09'>
+		<text><![CDATA[Video Frame]]></text>
+	</component>
+	<component id='ID_s1_txt10'>
+		<text><![CDATA[33 ms]]></text>
+	</component>
+
+<!-- end slide 1 -->
+
+
+<!-- slide 2 -->
+
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Video Traffic Characteristics</b>]]></text>
+	</component>
+	
+	<component id='ID_s2_txt01_title'>
+		<text><![CDATA[Video]]></text>
+	</component>
+
+	<component id='ID_s2_txt01_body'>
+		<text><![CDATA[<textformat blockindent="-16"><ul><li>Bursty</li><li>Greedy</li><li>Drop sensitive</li><li>Delay sensitive</li><li>UDP priority</li></ul></textformat>]]></text>
+	</component>
+
+	<component id="ID_s2_txtbox_title">
+	  <text><![CDATA[One-Way Requirements]]></text> 
+	</component> 
+
+	<component id="ID_s2_txtbox_body">
+		<text><![CDATA[<textformat blockindent="-16"><ul><li>Latency ≤ 200-400 ms</li><li>Jitter ≤ 30-50 ms</li><li>Loss ≤ 0.1-1%</li><li>Bandwidth (384 Kb/s - 20+ Mb/s)</li></ul></textformat>]]></text> 
+  </component> 
+
+<!-- end slide 2 -->
+	
+</textcomponents>

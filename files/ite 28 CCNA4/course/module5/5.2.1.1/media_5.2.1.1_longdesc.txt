@@ -1,0 +1,1 @@
+Figure shows a host, acting as an SNMP manager, on a network.  There are three other devices connected to the same network acting as SNMP agents: a router, a switch, and a firewall. The SNMP Manager sends SNMP get and set packets to SNMP agents. SNMP agents send trap packets to the SNMP Manager.

@@ -1,0 +1,35 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Questions that a Network Baseline Answers</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[The network baseline determines the "personality" of a network under normal conditions.]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[How does the network perform during a normal or average day?]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Where are the most errors occurring?]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Which devices should be monitored and what alert thresholds should be set?]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[What part of the network is least used?]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[What part of the network is most heavily used?]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Can the network meet the identified policies?]]></text>
+</component>
+
+</textcomponents>

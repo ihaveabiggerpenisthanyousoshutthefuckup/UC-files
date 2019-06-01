@@ -1,0 +1,1 @@
+Figure 1 shows verification of the SPAN session using the show monitor command. Figure 2 is an interactive activity that allows learners to configure and verify SPAN.

@@ -1,0 +1,1 @@
+Figure 1 shows Ethernet Class of Service (CoS) values are used for traffic marking at Layer 2. Figure 2 shows a table of description of each CoS value.

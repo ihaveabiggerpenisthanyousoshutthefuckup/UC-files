@@ -1,0 +1,23 @@
+
+          <p>ACLs can be configured to apply to inbound traffic and outbound traffic as shown in Figure 1. The last statement of an ACL is always an implicit deny. This statement is automatically inserted at the end of each ACL even though it is not visible in show command output.</p>
+          <p></p>
+          <p>As shown in Figure 2, you can configure one ACL per protocol, per direction, per interface:</p>
+          <p>
+            <ul>
+              <li>
+                <b>One ACL per protocol</b> - To control traffic flow on an interface, an ACL must be defined for each protocol enabled on the interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>One ACL per direction</b> - ACLs control traffic in one direction at a time on an interface. Two separate ACLs must be created to control inbound and outbound traffic.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>One ACL per interface</b> - ACLs control traffic for an interface, for example, GigabitEthernet 0/0.</li>
+            </ul>
+          </p>
+        

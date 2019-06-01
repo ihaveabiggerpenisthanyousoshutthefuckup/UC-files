@@ -1,0 +1,1 @@
+The lab shows the following topology: Router R1 connects to the ISP router using a serial link. Connected to the ISP in the ISP cloud is a Web Server.

@@ -1,0 +1,62 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+		<text><![CDATA[<b>Dedicated Servers</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>Web Server</b></FONT><br/>Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>
+	
+	<component id="ID_s1_txt04">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>Email Server</b></FONT><br/>Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>
+	
+	<component id="ID_s1_txt07">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>SQL Server</b></FONT><br/>Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>                                             <br/>
+	</component>
+	
+	<component id="ID_s1_txt10">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>File Server</b></FONT><br/>Windows OS]]></text>
+	</component>
+    <component id="ID_s1_txt12">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>
+	
+	<component id="ID_s1_txt13">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>DHCP Server</b></FONT><br/>Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt15">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>
+	
+	<component id="ID_s1_txt16">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>Active Directory (AD) Server</b></FONT><br/>Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt18">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>
+	
+	<component id="ID_s1_txt19">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>AAA RADIUS Server</b></FONT><br/>Linux OS]]></text>
+	</component>
+	<component id="ID_s1_txt21">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>
+	
+	<component id="ID_s1_txt22">
+		<text><![CDATA[<FONT color="#652C8A" size="13"><b>Network Management Server (NMS)</b></FONT><br/>Linux OS]]></text>
+	</component>
+	<component id="ID_s1_txt24">
+		<text><![CDATA[<b>Hardware</b><br/>CPU, Memory, NIC, Disk]]></text>
+	</component>	
+	
+</textcomponents>

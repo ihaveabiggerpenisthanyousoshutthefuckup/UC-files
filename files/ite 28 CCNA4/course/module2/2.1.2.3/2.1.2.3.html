@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.1.2.3 Configuring HDLC Encapsulation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring HDLC Encapsulation</h1>
+        <div>
+          <p>Cisco HDLC is the default encapsulation method used by Cisco devices on synchronous serial lines. </p>
+          <p></p>
+          <p>Use Cisco HDLC as a point-to-point protocol on leased lines between two Cisco devices. If connecting non-Cisco devices, use synchronous PPP.</p>
+          <p></p>
+          <p>If the default encapsulation method has been changed, use the<b> encapsulation hdlc </b>command in interface configuration mode to re-enable HDLC. </p>
+          <p></p>
+          <p></p>
+          <p>As shown in the figure, there are two steps to re-enable HDLC encapsulation:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Enter the interface configuration mode of the serial interface.</p>
+          <p>
+            <b>Step 2.</b> Enter the<b> encapsulation hdlc </b>command to specify the encapsulation protocol on the interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the steps used to configure H.D.L.C. encapsulation.  The figure begins in global configuration mode and the first command moves to the desired interface. The first command is, interface serial zero slash zero slash zero.  The next command is encapsulation h d  l c</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

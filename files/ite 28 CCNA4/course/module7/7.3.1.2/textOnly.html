@@ -1,0 +1,22 @@
+
+          <p>A network device contains the following planes:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Control plane</b> - This is typically regarded as the brains of a device. It is used to make forwarding decisions. The control plane contains Layer 2 and Layer 3 route forwarding mechanisms, such as routing protocol neighbor tables and topology tables, IPv4 and IPv6 routing tables, STP, and the ARP table. Information sent to the control plane is processed by the CPU.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data plane</b> - Also called the forwarding plane, this plane is typically the switch fabric connecting the various network ports on a device. The data plane of each device is used to forward traffic flows. Routers and switches use information from the control plane to forward incoming traffic out the appropriate egress interface. Information in the data plane is typically processed by a special data plane processor, such as a digital signal processor (DSP), without the CPU getting involved.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The example in Figure 1 illustrates how Cisco Express Forwarding (CEF) uses the control plane and data plane to process packets.</p>
+          <p></p>
+          <p>CEF is an advanced, Layer 3 IP switching technology that enables forwarding of packets to occur at the data plane without consulting the control plane. In CEF, the control plane’s routing table pre-populates the CEF Forwarding Information Base (FIB) table in the data plane. The control plane’s ARP table pre-populates the adjacency table. Packets are then forwarded directly by the data plane based on the information contained in the FIB and adjacency table, without needing to consult the information in the control plane.</p>
+          <p></p>
+          <p>To virtualize the network, the control plane function is removed from each device and is performed by a centralized controller, as shown in Figure 2. The centralized controller communicates control plane functions to each device. Each device can now focus on forwarding data while the centralized controller manages data flow, increases security, and provides other services.</p>
+        

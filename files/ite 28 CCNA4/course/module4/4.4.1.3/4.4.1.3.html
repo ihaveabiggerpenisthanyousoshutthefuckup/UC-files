@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.1.3 Standard ACL Decision Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Standard ACL Decision Process</h1>
+        <div>
+          <p>Standard ACLs only examine the source IPv4 address. The destination of the packet and the ports involved are not considered. </p>
+          <p></p>
+          <p>The decision process for a standard ACL is mapped in the figure. Cisco IOS software tests addresses against the conditions in the ACL one by one. The first match determines whether the software accepts or rejects the address. Because the software stops testing conditions after the first match, the order of the conditions is critical. If no conditions match, the address is rejected.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a flow chart depicting how a standard A.C.L. works. An incoming packet enters a router and a decision to be made is if there is a standard access list on this interface. If no, the decision is then to determine if the destination IP address in the routing table. The results of this decision is discussed later. If there is a standard A.C.L. on the interface, the decision is to determine if the source address matches an A.C.L. list entry. If no, then the decision is if this was the last entry in the A.C.L. If yes, the packet is trashed and a destination not found message is sent. If no, you move to the next statement to proceed through the A.C.L. list entries. If the source address does match an A.C. L. list entry, then determine if that entry is a permit or deny condition. If it is a deny condition trash the packet and the router sends a destination not found message. If the entry is a permit, the decision must be made to determine if the destination IP address is in the routing table. If no, then trash the packet and a destination not found message is sent. If the destination IP address is in the routing table, the packet is sent to the outgoing interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

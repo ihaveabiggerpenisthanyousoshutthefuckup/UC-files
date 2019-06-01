@@ -1,0 +1,170 @@
+﻿<textcomponents>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Severity Levels</b>]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[High level]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[Low level]]>
+        </text>
+    </component>
+    <component id="ID_s1_table01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+
+		
+		<td colspan='5' bgcolor='#666263' class="mtable_top"><font size='1' color='#666263'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+        <td width='60' bgcolor='#666263'><font  color="#FFFFFF"><b></b></font></td>
+		<td width='45' bgcolor='#666263'><font  color="#FFFFFF"><b>Level</b></font></td>
+		<td width='95' bgcolor='#666263'><font  color="#FFFFFF"><b>Keyword</b></font></td>
+		<td bgcolor='#666263'><font  color="#FFFFFF"><b>Description</b></font></td>
+		<td width='100' bgcolor='#666263'><font  color="#FFFFFF"><b>Definition</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F68026'><font  color="#141414"><b>Highest Level</b></font></td>
+		<td bgcolor='#E9E7E8'>0</td>
+		<td bgcolor='#E9E7E8'>emergencies</td>
+		<td bgcolor='#E9E7E8'>System is unusable</td>
+		<td bgcolor='#E9E7E8'>LOG_EMERG</td>
+	</tr>
+	<tr>
+		<td bgcolor='#D9852A'></td>
+		<td bgcolor='#F2F2F2'>1</td>
+		<td bgcolor='#F2F2F2'>alerts</td>
+		<td bgcolor='#F2F2F2'>Immediate action is needed</td>
+		<td bgcolor='#F2F2F2'>LOG_ALERT</td>
+		</tr>
+		<tr>
+		<td bgcolor='#C0892D'></td>
+		<td bgcolor='#E9E7E8'>2</td>
+		<td bgcolor='#E9E7E8'>critical</td>
+		<td bgcolor='#E9E7E8'>Critical conditions exist </td>
+		<td bgcolor='#E9E7E8'>LOG_CRIT</td>
+		</tr>
+		<tr>
+		<td bgcolor='#A88E31'></td>
+		<td bgcolor='#F2F2F2'>3</td>
+		<td bgcolor='#F2F2F2'>errors</td>
+		<td bgcolor='#F2F2F2'>Error conditions exist</td>
+		<td bgcolor='#F2F2F2'>LOG_ERR</td>
+		</tr>
+		<tr>
+		<td bgcolor='#8F9235'></td>
+		<td bgcolor='#E9E7E8'>4</td>
+		<td bgcolor='#E9E7E8'>warnings</td>
+		<td bgcolor='#E9E7E8'>Warning conditions exist</td>
+		<td bgcolor='#E9E7E8'>LOG_WARNING</td>
+		</tr>
+		<tr>
+		<td bgcolor='#779638'></td>
+		<td bgcolor='#F2F2F2'>5</td>
+		<td bgcolor='#F2F2F2'>notifications</td>
+		<td bgcolor='#F2F2F2'>Normal (but significant) condition</td>
+		<td bgcolor='#F2F2F2'>LOG_NOTICE</td>
+		</tr>	
+		<tr>
+		<td bgcolor='#609B3C'></td>
+		<td bgcolor='#E9E7E8'>6</td>
+		<td bgcolor='#E9E7E8'>informational</td>
+		<td bgcolor='#E9E7E8'>Informational messages only</td>
+		<td bgcolor='#E9E7E8'>LOG_INFO</td>
+		</tr>
+		<tr>
+		<td bgcolor='#479F3F'><font  color="#141414"><b>Lowest Level</b></font></td>
+		<td bgcolor='#F2F2F2'>7</td>
+		<td bgcolor='#F2F2F2'>debugging</td>
+		<td bgcolor='#F2F2F2'>Debugging messages</td>
+		<td bgcolor='#F2F2F2'>LOG_DEBUG</td>
+		</tr>	
+		</table>]]>
+        </text>
+    </component>
+
+    <component id="ID_s1_table01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+
+ 	<caption class="mtable_title" colspan="5" bgcolor='#FFFFFF'><font size="3">Severity Levels</font></caption>
+
+  	<tr class="mtable_title">
+		<td colspan='5' bgcolor='#666263' class="mtable_top"><font size='1' color='#666263'><span style="color:#98D3D1">.</span></font></td>
+	</tr>
+	<tr>
+        <th scope="col" width='60' bgcolor='#666263'><font  color="#FFFFFF"><b></b></font></th>
+		<th id="Level" scope="col" width='45' bgcolor='#666263'><font  color="#FFFFFF"><b>Level</b></font></th>
+		<th id="Keyword" scope="col" width='95' bgcolor='#666263'><font  color="#FFFFFF"><b>Keyword</b></font></th>
+		<th id="Description" scope="col" bgcolor='#666263'><font  color="#FFFFFF"><b>Description</b></font></th>
+		<th id="Definition" scope="col" width='100' bgcolor='#666263'><font  color="#FFFFFF"><b>Definition</b></font></th>
+	</tr>
+	<tr>
+		<th id="Highest" scope="row" bgcolor='#F68026'><font  color="#141414"><b>Highest Level</b></font></td>
+		<td headers="Highest Level" bgcolor='#E9E7E8'>0</td>
+		<td headers="Highest Keyword" bgcolor='#E9E7E8'>emergencies</td>
+		<td headers="Highest Description" bgcolor='#E9E7E8'>System is unusable</td>
+		<td headers="Highest Definition" bgcolor='#E9E7E8'>LOG_EMERG</td>
+	</tr>
+	<tr>
+		<td scope="row" bgcolor='#D9852A'></td>
+		<td headers="Level" bgcolor='#F2F2F2'>1</td>
+		<td headers="Keyword" bgcolor='#F2F2F2'>alerts</td>
+		<td headers="Description" bgcolor='#F2F2F2'>Immediate action is needed</td>
+		<td headers="Definition" bgcolor='#F2F2F2'>LOG_ALERT</td>
+		</tr>
+		<tr>
+		<td scope="row" bgcolor='#C0892D'></td>
+		<td headers="Level" bgcolor='#E9E7E8'>2</td>
+		<td headers="Keyword" bgcolor='#E9E7E8'>critical</td>
+		<td headers="Description" bgcolor='#E9E7E8'>Critical conditions exist </td>
+		<td headers="Definition" bgcolor='#E9E7E8'>LOG_CRIT</td>
+		</tr>
+		<tr>
+		<td scope="row" bgcolor='#A88E31'></td>
+		<td headers="Level" bgcolor='#F2F2F2'>3</td>
+		<td headers="Keyword" bgcolor='#F2F2F2'>errors</td>
+		<td headers="Description" bgcolor='#F2F2F2'>Error conditions exist</td>
+		<td headers="Definition" bgcolor='#F2F2F2'>LOG_ERR</td>
+		</tr>
+		<tr>
+		<td scope="row" bgcolor='#8F9235'></td>
+		<td headers="Level" bgcolor='#E9E7E8'>4</td>
+		<td headers="Keyword" bgcolor='#E9E7E8'>warnings</td>
+		<td headers="Description" bgcolor='#E9E7E8'>Warning conditions exist</td>
+		<td headers="Definition" bgcolor='#E9E7E8'>LOG_WARNING</td>
+		</tr>
+		<tr>
+		<td scope="row" bgcolor='#779638'></td>
+		<td headers="Level" bgcolor='#F2F2F2'>5</td>
+		<td headers="Keyword" bgcolor='#F2F2F2'>notifications</td>
+		<td headers="Description" bgcolor='#F2F2F2'>Normal (but significant) condition</td>
+		<td headers="Definition" bgcolor='#F2F2F2'>LOG_NOTICE</td>
+		</tr>	
+		<tr>
+		<td scope="row" bgcolor='#609B3C'></td>
+		<td headers="Level" bgcolor='#E9E7E8'>6</td>
+		<td headers="Keyword" bgcolor='#E9E7E8'>informational</td>
+		<td headers="Description" bgcolor='#E9E7E8'>Informational messages only</td>
+		<td headers="Definition" bgcolor='#E9E7E8'>LOG_INFO</td>
+		</tr>
+		<tr>
+		<th id="Lowest" scope="row" bgcolor='#479F3F'><font  color="#141414"><b>Lowest Level</b></font></td>
+		<td headers="Lowest Level" bgcolor='#F2F2F2'>7</td>
+		<td headers="Lowest Keyword" bgcolor='#F2F2F2'>debugging</td>
+		<td headers="Lowest Description" bgcolor='#F2F2F2'>Debugging messages</td>
+		<td headers="Lowest Definition" bgcolor='#F2F2F2'>LOG_DEBUG</td>
+		</tr>	
+		</table>]]>
+        </text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Limiting Messages to the Syslog Server</b>]]></text>
+    </component>
+</textcomponents>

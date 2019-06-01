@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.5 SDN Types</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SDN Types</h1>
+        <div>
+          <p>The Cisco Application Policy Infrastructure Controller - Enterprise Module (APIC-EM) extends ACI aimed at enterprise and campus deployments.  To better understand APIC-EM, it is helpful to take a broader look at the three types of SDN:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Device-based SDN </b>- In this type of SDN, the devices are programmable by applications running on the device itself or on a server in the network, as shown in Figure 1. Cisco OnePK is an example of a device-based SDN. It enables programmers to build applications using C, and Java with Python, to integrate and interact with Cisco devices.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Controller-based SDN </b>- This type of SDN uses a centralized controller that has knowledge of all devices in the network, as shown in Figure 2. The applications can interface with the controller responsible for managing devices and manipulating traffic flows throughout the network. The Cisco Open SDN Controller is a commercial distribution of OpenDaylight.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Policy-based SDN </b>- This type of SDN is similar to controller-based SDN where a centralized controller has a view of all devices in the network, as shown in Figure 3. Policy-based SDN includes an additional Policy layer that operates at a higher level of abstraction. It uses built-in applications that automate advanced configuration tasks via a guided workflow and user-friendly GUI. No programming skills are required. Cisco APIC-EM is an example of this type of SDN.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">In Figure 1, OnePK application is managing the data plane of three devices. In Figure 2, Open Daylight application is run on an SDN controller which is managing the data plane of three devices. In Figure 3, An APIC-EM application implements a policy on the SDN controller which is managing the data plane of three devices.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

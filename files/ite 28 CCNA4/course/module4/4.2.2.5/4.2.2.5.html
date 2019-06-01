@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.2.2.5 Verifying Extended ACLs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.2.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verifying Extended ACLs</h1>
+        <div>
+          <p>After an ACL has been configured and applied to an interface, use Cisco IOS <b>show</b> commands to verify the configuration. In the figure, the top example shows the Cisco IOS command used to display the contents of all ACLs. The bottom example shows the result of issuing the <b>show ip interface g0/0</b> command on router R1. </p>
+          <p></p>
+          <p>Unlike standard ACLs, extended ACLs do not implement the same internal logic and hashing function. The output and sequence numbers displayed in the <b>show access-lists</b> command output is the order in which the statements were entered. Host entries are not automatically listed prior to range entries.</p>
+          <p></p>
+          <p>The <b>show ip interface</b> command is used to verify the ACL on the interface and the direction in which it was applied. The output from this command includes the number or name of the access list and the direction in which the ACL was applied. The capitalized ACL names BROWSING and SURFING stand out in the screen output.</p>
+          <p></p>
+          <p>After an ACL configuration has been verified, the next step is to confirm that the ACLs work as planned; blocking and permitting traffic as expected. </p>
+          <p></p>
+          <p>The guidelines discussed earlier in this section, suggest that ACLs should be configured on a test network and then implemented on the production network.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows how to verify an A.C.L.  The first command is run in privilege exec mode and it is, show access hyphen lists.  This lists the access lists on the router along with the lines in each one.  The two access lists created in the previous page are listed.  The second command is, show i.p. interface gig zero slash zero.  This lists the access lists that are configured on the interface along with the direction.  The figure shows that the outgoing list is browsing and the inbound list is surfing.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

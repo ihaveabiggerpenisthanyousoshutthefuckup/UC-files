@@ -1,0 +1,1 @@
+The figure shows asymmetric DSL in the electromagnetic spectrum. On the left is the POTS area from 0 to approximately 4 KHz. After that area is the ADSL data area. The upstream range is 26 to approximately 138 KHz. The downstream range is from the 138 to approximately 1100 KHz range.

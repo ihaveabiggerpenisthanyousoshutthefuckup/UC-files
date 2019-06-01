@@ -1,0 +1,1 @@
+Figure 1 shows a physical network topology with three wiring closets and the ISP facility.  The diagram shows the building, rack, and shelf of the network devices as well as the room for the end devices. Figure 2 shows a logical network topology with three wiring closets and the ISP facility.  The diagram shows the interfaces and i.p. addressing for all devices.

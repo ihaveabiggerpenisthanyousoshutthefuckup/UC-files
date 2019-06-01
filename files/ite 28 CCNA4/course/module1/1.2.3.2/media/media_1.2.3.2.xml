@@ -1,0 +1,42 @@
+﻿<textcomponents>
+	<component id="ID_title">
+	  <text><![CDATA[<b>Sample Cable Topology</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt01">
+	  <text><![CDATA[<b>Teleworker</b>]]></text> 
+	</component>
+
+	<component id="ID_txt02">
+	  <text><![CDATA[Router]]></text> 
+	</component>
+
+	<component id="ID_txt03">
+	  <text><![CDATA[Cable Modem]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+	  <text><![CDATA[Ethernet]]></text> 
+	</component>
+
+	<component id="ID_txt05">
+	  <text><![CDATA[Internet]]></text> 
+	</component>
+
+	<component id="ID_txt06">
+	  <text><![CDATA[WAN Service Provider]]></text> 
+	</component>
+
+	<component id="ID_txt07">
+	  <text><![CDATA[<b>Company Head Office</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt08">
+	  <text><![CDATA[Cable Service Provider]]></text> 
+	</component>
+	
+	<component id="ID_txt09">
+	  <text><![CDATA[Cable Modem Termination System<br/>(CMTS)]]></text> 
+	</component>
+
+</textcomponents>

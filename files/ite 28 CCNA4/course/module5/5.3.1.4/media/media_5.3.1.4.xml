@@ -1,0 +1,64 @@
+﻿<textcomponents>
+    <!-- slide 1 -->
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>RSPAN Terminology</b>]]></text>
+    </component>
+    <component id='ID_s1_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">    
+        
+            <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">RSPAN Terminology</font></caption>
+
+        <tr class="mtable_top">
+                <td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+     
+    <tr>
+        <th id="Term" scope="col" bgcolor='#666263' width="200"><font color='#FFFFFF'><b>Term</b></font></th>
+        <th id="Definition" scope="col" bgcolor='#666263' width="390"><font color='#FFFFFF'><b>Definition</b></font></th>
+    </tr>
+    <tr>
+        <td headers="Term" scope="row" bgcolor='#E9E7E8'>RSPAN source session</td>
+        <td headers="Definition" bgcolor='#E9E7E8'>This is the source port/VLAN to copy traffic from.</td>
+    </tr>
+    <tr>
+        <td headers="Term" scope="row" bgcolor='#F2F2F2'>RSPAN destination session</td>
+        <td headers="Definition" bgcolor='#F2F2F2'>This is the destination VLAN/port to send the traffic to.</td>
+    </tr>
+    <tr>
+        <td headers="Term" scope="row" bgcolor='#E9E7E8'>RSPAN VLAN</td>
+        <td headers="Definition" bgcolor='#E9E7E8'><textformat blockindent="-16"><ul><li>A unique VLAN is required to transport the traffic from one switch to another.</li><li>The VLAN is configured with the<font face="_typewriter"><b> remote-span </b></font>vlan configuration command.</li><li>This VLAN must be defined on all switches in the path and must also be allowed on trunk ports between the source and destination.</li></ul></textformat></td>
+    </tr>
+    
+</table>]]>
+        </text>
+    </component>
+    <!--  end slide 1 -->
+    <!-- slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>RSPAN Ports</b>]]></text>
+    </component>
+    <component id="ID_s2_txt01">
+        <text>
+            <![CDATA[PC1-PC2 Unicast Traffic]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt02">
+        <text>
+            <![CDATA[Duplicated Traffic]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt03">
+        <text>
+            <![CDATA[Sniffer]]>
+        </text>
+    </component>
+    <component id="ID_s2_txt04">
+        <text>
+            <![CDATA[Trunk Link<br/>(RSPAN VLAN)]]>
+        </text>
+    </component>
+    <!--  end slide 2 -->
+</textcomponents>

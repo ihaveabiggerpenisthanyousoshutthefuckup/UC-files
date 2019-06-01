@@ -1,0 +1,89 @@
+﻿<textcomponents>
+<!--Slide 1-->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[Computer Architecture Abstraction Layers]]></text>
+	</component>
+
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Services]]></text>
+	</component>
+
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<font color="#652C8A">Web, Email, and File Servers</font>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt03">
+		<text><![CDATA[OS]]></text>
+	</component>
+
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Firmware (ROM)]]></text>
+	</component>
+
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Hardware<br>CPU, Memory, NIC, Disk]]></text>
+	</component>
+
+
+
+<!--End Slide 1-->
+
+
+<!--Slide 2-->
+
+	<component id="ID_s2_title">
+		<text><![CDATA[Virtual Architecture Abstraction Layers]]></text>
+	</component>
+
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Service]]></text>
+	</component>
+	
+	<component id="ID_s2_txt02">
+		<text><![CDATA[Service]]></text>
+	</component>
+	
+	<component id="ID_s2_txt03">
+		<text><![CDATA[Service]]></text>
+	</component>
+	
+	<component id="ID_s2_txt04">
+		<text><![CDATA[<font color="#652C8A">Web Server</font>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt05">
+		<text><![CDATA[<font color="#652C8A">Email Server</font>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt06">
+		<text><![CDATA[<font color="#652C8A">File Server</font>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt07">
+		<text><![CDATA[OS]]></text>
+	</component>
+
+	<component id="ID_s2_txt08">
+		<text><![CDATA[OS]]></text>
+	</component>
+
+	<component id="ID_s2_txt09">
+		<text><![CDATA[OS]]></text>
+	</component>
+
+	<component id="ID_s2_txt10">
+		<text><![CDATA[<font color="#077A77">Hypervisor</font>]]></text>
+	</component>
+
+	<component id="ID_s2_txt11">
+		<text><![CDATA[Firmware (ROM)]]></text>
+	</component>
+
+	<component id="ID_s2_txt12">
+		<text><![CDATA[Hardware<br>CPU, Memory, NIC, Disk]]></text>
+	</component>
+
+<!--End Slide 2-->
+
+</textcomponents>

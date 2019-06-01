@@ -1,0 +1,14 @@
+
+          <p>The procedural steps for configuring extended ACLs are the same as for standard ACLs. The extended ACL is first configured, and then it is activated on an interface. However, the command syntax and parameters are more complex to support the additional features provided by extended ACLs. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The internal logic applied to the ordering of standard ACL statements does not apply to extended ACLs. The order in which the statements are entered during configuration is the order they are displayed and processed.</p>
+          <p></p>
+          <p>Figure 1 shows the common command syntax for extended IPv4 ACLs. Note that there are many keywords and parameters for extended ACLs. It is not necessary to use all of the keywords and parameters when configuring an extended ACL. Recall that the <b>?</b> can be used to get help when entering complex commands. </p>
+          <p></p>
+          <p>Figure 2 shows an example of an extended ACL. In this example, the network administrator has configured ACLs to restrict network access to allow website browsing only from the LAN attached to interface G0/0 to any external network. ACL 103 allows traffic coming from any address on the 192.168.10.0 network to go to any destination, subject to the limitation that the traffic is using ports 80 (HTTP) and 443 (HTTPS) only.</p>
+          <p></p>
+          <p>The nature of HTTP requires that traffic flow back into the network from websites accessed from internal clients. The network administrator wants to restrict that return traffic to HTTP exchanges from requested websites, while denying all other traffic. ACL 104 does that by blocking all incoming traffic, except for previously established connections. The permit statement in ACL 104 allows inbound traffic using the <b>established</b> parameter.</p>
+          <p></p>
+          <p>The <b>established</b> parameter allows only responses to traffic that originates from the 192.168.10.0/24 network to return to that network. A match occurs if the returning TCP segment has the ACK or reset (RST) bits set, which indicates that the packet belongs to an existing connection. Without the <b>established</b> parameter in the ACL statement, clients could send traffic to a web server, but not receive traffic returning from the web server.</p>
+        

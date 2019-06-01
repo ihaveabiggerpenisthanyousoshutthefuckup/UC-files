@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.5 Configuring PPP with Authentication</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring PPP with Authentication</h1>
+        <div>
+          <p>The following provides examples for configuring PPP PAP and PPP CHAP authentication. </p>
+          <p></p>
+          <p>
+            <b>Configuring PAP </b>
+            <b>Authentication</b>
+          </p>
+          <p></p>
+          <p>Figure 1 is an example of a two-way PAP authentication configuration. Both routers authenticate and are authenticated, so the PAP authentication commands mirror each other. The PAP username and password that each router sends must match those specified with the<b> username </b><i>name</i><b> password </b><i>password </i>command of the other router.</p>
+          <p></p>
+          <p>PAP provides a simple method for a remote node to establish its identity using a two-way handshake. This is done only on initial link establishment. The hostname on one router must match the username the other router has configured for PPP. The passwords must also match. Specify the username and password parameters, use the following command: <b>ppp pap sent-username </b><i>name </i><b>password </b><i>password</i>.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure PAP authentication on router R1’s serial 0/0/1 interface.</p>
+          <p></p>
+          <p>
+            <b>Configuring CHAP Authentication</b>
+          </p>
+          <p></p>
+          <p>CHAP periodically verifies the identity of the remote node using a three-way handshake. The hostname on one router must match the username the other router has configured. The passwords must also match. This occurs on initial link establishment and can be repeated any time after the link has been established. Figure 3 is an example of a CHAP configuration.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure CHAP authentication on router R1’s serial 0/0/1 interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the configuration file for two routers using PAP authentication between them.  The password set on each router, the fact that the usernames are configured to be the hostname of the connecting router, and the fact that the password is the same password on each router is highlighted.  The figure also highlights the command p.p.p. pap sent hyphen username R 1 password same one.  In this line the actual password is same one. Figure two is an interactive activity that allows the learner to configure PAP authentication on a serial interface on a router. Figure three shows the configuration file for two routers using CHAP authentication between them.  The password set on each router, the fact that the usernames are configured to be the hostname of the connecting router, and the fact that the password is the same password on each router is highlighted.  The figure also highlights the command p.p.p. authentication CHAP. Figure four is an interactive activity that allows the learner to configure CHAP authentication on a serial interface on a router.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

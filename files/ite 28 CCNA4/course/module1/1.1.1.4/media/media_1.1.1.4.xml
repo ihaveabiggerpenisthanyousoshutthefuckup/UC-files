@@ -1,0 +1,11 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>SPAN Engineering</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[SPAN Engineering HQ]]></text>
+</component>
+
+</textcomponents>

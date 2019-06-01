@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.2.5 Extended ACL Placement Example</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Extended ACL Placement Example</h1>
+        <div>
+          <p>The basic rule for placing an extended ACL is to place it as close to the source as possible. This prevents unwanted traffic from being sent across multiple networks only to be denied when it reaches its destination. However, network administrators can only place ACLs on devices that they control. Therefore, placement must be determined in the context of where the control of the network administrator extends. </p>
+          <p></p>
+          <p>In the figure, the administrator of Company A, which includes the 192.168.10.0/24 and 192.168.11.0/24 networks (referred to as .10 and .11 in this example) wants to control traffic to Company B. Specifically, the administrator wants to deny Telnet and FTP traffic from the .11 network to Company B’s 192.168.30.0/24 (.30, in this example) network. At the same time, all other traffic from the .11 network must be permitted to leave Company A without restriction.</p>
+          <p></p>
+          <p>There are several ways to accomplish these goals. An extended ACL on R3 that blocks Telnet and FTP from the .11 network would accomplish the task, but the administrator does not control R3. In addition, this solution also allows unwanted traffic to cross the entire network, only to be blocked at the destination. This affects overall network efficiency.</p>
+          <p></p>
+          <p>A better solution is to place an extended ACL on R1 that specifies both source and destination addresses (.11 network and .30 network, respectively), and enforces the rule, "Telnet and FTP traffic from the .11 network is not allowed to go to the .30 network." The figure shows two possible interfaces on R1 to apply the extended ACL:</p>
+          <p>
+            <ul>
+              <li>
+                <b>R1 S0/0/0 interface (outbound) </b>- One possibility is to apply an extended ACL outbound on the S0/0/0 interface. Because the extended ACL can examine both source and destination addresses, only FTP and Telnet packets from 192.168.11.0/24 will be denied. Other traffic from 192.168.11.0/24 and other networks will be forwarded by R1. The disadvantage of placing the extended ACL on this interface is that all traffic exiting S0/0/0 must be processed by the ACL including packets from 192.168.10.0/24.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>R1 G0/1 interface (inbound)</b> - Applying an extended ACL to traffic entering the G0/1 interface means that only packets from the 192.168.11.0/24 network are subject to ACL processing on R1. Because the filter is to be limited to only those packets leaving the 192.168.11.0/24 network, applying the extended ACL to G0/1 is the best solution.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows the same topology as the previous page. However, now the goal of the A.C.L. is to block F.T.P. and telnet traffic from a network segment on R-1 from reaching a network segment on R-3.  The A.C.L. is best placed on router R-1, on the LAN interface and in the inbound direction.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

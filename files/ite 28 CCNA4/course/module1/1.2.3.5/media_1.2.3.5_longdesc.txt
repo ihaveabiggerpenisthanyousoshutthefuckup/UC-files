@@ -1,0 +1,1 @@
+Figure 1 shows how two remote branch sites connect to the head office using a V.P.N. tunnel. Figure 2 shows how teleworkers can connect to the head office using a V.P.N. tunnel 

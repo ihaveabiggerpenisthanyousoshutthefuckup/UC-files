@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.10 Step 8 - Verify DNS</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.10_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 8 - Verify DNS</h1>
+        <div>
+          <p>The DNS protocol controls the DNS, a distributed database with which you can map hostnames to IP addresses. When you configure DNS on the device, you can substitute the hostname for the IP address with all IP commands, such as<b> ping </b>or<b> telnet</b>.</p>
+          <p></p>
+          <p>To display the DNS configuration information on the switch or router, use the<b> show running-config </b>command. When there is no DNS server installed, it is possible to enter names to IP mappings directly into the switch or router configuration. Use the<b> ip host </b>command to enter name to IPv4 mapping to the switch or router. The<b> ipv6 host </b>command is used for the same mappings using IPv6. These commands are demonstrated in Figure 1. Because IPv6 network numbers are long and difficult to remember, DNS is even more important for IPv6 than for IPv4. </p>
+          <p></p>
+          <p>To display the name-to-IP-address mapping information on the Windows-based PC, use the<b> nslookup </b>command.</p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example</b>
+          </p>
+          <p>The output in Figure 2 indicates that either the client was unable to reach the DNS server or the DNS service on the 10.1.1.1 device was not running. At this point, the troubleshooting needs to focus on communications with the DNS server, or to verify the DNS server is running properly.</p>
+          <p></p>
+          <p>To display the DNS configuration information on a Microsoft Windows PC, use the<b> nslookup </b>command. There should be DNS configured for IPv4, IPv6, or both. DNS can provide IPv4 and IPv6 addresses at the same time, regardless of the protocol that is used to access the DNS server.</p>
+          <p></p>
+          <p>Because domain names and DNS are a vital component of accessing servers on the network, many times the user thinks the “network is down” when the problem is actually with the DNS server.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the commands for configuring host entries mapping an i.p. address to a hostname using both i.p.v. 4 and i.p.v. 6 addressing.  Each is followed by a ping to verify these entries. Figure two shows the output from the n.s. lookup Server command on p.c. one.  The lookup times out.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

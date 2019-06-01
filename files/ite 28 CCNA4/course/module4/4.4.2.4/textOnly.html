@@ -1,0 +1,6 @@
+
+          <p>In the figure, host 192.168.30.12 is able to Telnet to connect to 192.168.31.12, but company policy states that this connection should not be allowed. Output from the <b>show access-lists 140</b> command indicate that the permit statement has been matched.</p>
+          <p></p>
+          <p>
+            <b>Solution </b>- Host 192.168.30.12 can use Telnet to connect to 192.168.31.12 because there are no rules that deny host 192.168.30.12 or its network as the source. Statement 10 of access list 140 denies the router interface on which traffic enters the router. The host IPv4 address in statement 10 should be 192.168.30.12.</p>
+        

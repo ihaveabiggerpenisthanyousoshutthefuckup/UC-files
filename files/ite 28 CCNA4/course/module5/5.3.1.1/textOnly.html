@@ -1,0 +1,11 @@
+
+          <p>A packet analyzer (also known as a sniffer, packet sniffer, or traffic sniffer) is a valuable tool to help monitor and troubleshoot a network. A packet analyzer is typically software that captures packets entering and exiting a network interface card (NIC). For example, Wireshark is a packet analyzer that is commonly used to capture and analyze packets on a local computer.</p>
+          <p></p>
+          <p>What if a network administrator wanted to capture packets from many other key devices and not just the local NIC? A solution is to configure networking devices to copy and send traffic going to ports of interest to a port connected to a packet analyzer. The administrator could then analyze network traffic from various sources in the network.</p>
+          <p></p>
+          <p>However, the basic operation of a modern switched network disables the packet analyzer ability to capture traffic from other sources. For instance, a user running Wireshark can only capture traffic going to their NIC. They cannot capture traffic between another host and a server. The reason is because a Layer 2 switch populates its MAC address table based on the source MAC address and the ingress port of the Ethernet frame. After the table is built, the switch only forwards traffic destined for a MAC address directly to the corresponding port. This prevents a packet analyzer connected to another port on the switch from “hearing” other switch traffic.</p>
+          <p></p>
+          <p>The solution to this dilemma is to enable port mirroring. The port mirroring feature allows a switch to copy and send Ethernet frames from specific ports to the destination port connected to a packet analyzer. The original frame is still forwarded in the usual manner. </p>
+          <p></p>
+          <p>An example of port mirroring is shown in the figure. Notice how traffic between PC1 and PC2 is also being sent to the laptop that has a packet analyzer installed.</p>
+        

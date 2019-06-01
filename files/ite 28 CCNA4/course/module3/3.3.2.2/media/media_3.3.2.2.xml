@@ -1,0 +1,17 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Remote-Access VPNs</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Remote-Access VPN]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Internet<b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Client initiates VPN connection]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[VPN Terminating Device]]></text>
+	</component>
+</textcomponents>

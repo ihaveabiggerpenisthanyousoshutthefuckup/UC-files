@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<textcomponents>
+
+
+  
+  <component id="ID_s1_title">
+    <text><![CDATA[<b>SNMP Trap</b>]]></text>
+  </component>
+  <component id="ID_s1_txt01">
+    <text><![CDATA[SNMP TRAP]]></text>
+  </component>
+  <component id="ID_s1_txt02">
+    <text><![CDATA[The MIB]]></text>
+  </component>
+  <component id="ID_s1_txt03">
+    <text><![CDATA[G0/0]]></text>
+  </component>
+  <component id="ID_s1_txt04">
+    <text><![CDATA[<font color="#FFFFFF">Send text, turn red, etc.</font>]]></text>
+  </component>
+  <component id="ID_s1_txt05">
+    <text><![CDATA[<font color="#FFFFFF">The G0/0 interface failed!<br/>Take a look!</font>]]></text>
+  </component>
+  
+  
+  
+  <component id="ID_s2_title">
+    <text><![CDATA[<b>SNMP Operations</b>]]></text>
+  </component>  
+  <component id="ID_s2_txt01">
+    <text><![CDATA[Manager]]></text>
+  </component>
+  <component id="ID_s2_txt02">
+    <text><![CDATA[Managed Device]]></text>
+  </component>
+  <component id="ID_s2_txt03">
+    <text><![CDATA[Agent]]></text>
+  </component>
+  <component id="ID_s2_txt04">
+    <text><![CDATA[MIB]]></text>
+  </component>
+  <component id="ID_s2_txt05">
+    <text><![CDATA[<font face="_typewriter" color="#000000" >get-request</font>]]></text>
+  </component>
+  <component id="ID_s2_txt06">
+    <text><![CDATA[Retrieves value of specific MIB variable.]]></text>
+  </component>
+  <component id="ID_s2_txt07">
+    <text><![CDATA[<font face="_typewriter" color="#000000" >get-next-request</font>]]></text>
+  </component>
+  <component id="ID_s2_txt08">
+    <text><![CDATA[Retrieves next instance of MIB variable.]]></text>
+  </component>
+  <component id="ID_s2_txt09">
+    <text><![CDATA[<font face="_typewriter" color="#000000" >set-request</font>]]></text>
+  </component>
+  <component id="ID_s2_txt10">
+    <text><![CDATA[Modifies the value of a MIB variable.]]></text>
+  </component>
+  <component id="ID_s2_txt11">
+    <text><![CDATA[<font face="_typewriter" color="#000000" >get-response</font>]]></text>
+  </component>
+  <component id="ID_s2_txt12">
+    <text><![CDATA[Contains values of requested variable.]]></text>
+  </component>
+  <component id="ID_s2_txt13">
+    <text><![CDATA[<font face="_typewriter" color="#000000" >trap</font>]]></text>
+  </component>
+  <component id="ID_s2_txt14">
+    <text><![CDATA[Transmits an unsolicited alarm condition.]]></text>
+  </component>
+  
+  
+  
+</textcomponents>

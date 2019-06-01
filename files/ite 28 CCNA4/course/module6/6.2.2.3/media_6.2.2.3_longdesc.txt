@@ -1,0 +1,1 @@
+Figure 1 shows a table of three categories of QoS tools. Figure 2 shows the sequence of how the three tools are used when QoS is applied to packet flow.

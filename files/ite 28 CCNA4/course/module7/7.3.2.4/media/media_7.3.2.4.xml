@@ -1,0 +1,26 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Spine-Leaf Topology</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Cisco Nexus 9500 Switches</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Spine</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[40GigE]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>Cisco Nexus 9300 Switches</b>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Leaf</b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[10GigE]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[All other network devices]]></text>
+	</component>
+</textcomponents>

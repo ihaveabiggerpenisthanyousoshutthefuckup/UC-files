@@ -1,0 +1,23 @@
+
+          <p>Although IPv4 and IPv6 ACLs are similar, there are three significant differences between them: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The first difference is the command used to apply an IPv6 ACL to an interface. IPv4 uses the command <b>ip access-group</b> to apply an IPv4 ACL to an IPv4 interface. IPv6 uses the <b>ipv6 traffic-filter</b> command to perform the same function for IPv6 interfaces. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unlike IPv4 ACLs, IPv6 ACLs do not use wildcard masks. Instead, the prefix-length is used to indicate how much of an IPv6 source or destination address should be matched.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The last major difference has to with the addition of two implicit permit statements at the end of each IPv6 access list. At the end of every IPv4 standard or extended ACL is an implicit <b>deny any</b> or <b>deny ip any any</b>. IPv6 includes a similar <b>deny ipv6 any any</b> statement at the end of each IPv6 ACL. The difference is IPv6 also includes two other implicit statements by default:  <b>permit icmp any any nd-na </b>and <b>permit icmp any any nd-ns.</b></li>
+            </ul>
+          </p>
+          <p></p>
+          <p>These two statements allow the router to participate in the IPv6 equivalent of ARP for IPv4. Recall that ARP is used in IPv4 to resolve Layer 3 addresses to Layer 2 MAC addresses. As shown in the figure, IPv6 uses ICMP Neighbor Discovery (ND) messages to accomplish the same thing. ND uses Neighbor Solicitation (NS) and Neighbor Advertisement (NA) messages.  </p>
+          <p></p>
+          <p>ND messages are encapsulated in IPv6 packets and require the services of the IPv6 network layer while ARP for IPv4 does not use Layer 3.  Because IPv6 uses the Layer 3 service for neighbor discovery, IPv6 ACLs need to implicitly permit ND packets to be sent and received on an interface. Specifically, both Neighbor Discovery - Neighbor Advertisement (nd-na) and Neighbor Discovery - Neighbor Solicitation (nd-ns) messages are permitted.</p>
+        

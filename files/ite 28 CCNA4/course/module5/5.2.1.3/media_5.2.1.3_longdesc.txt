@@ -1,0 +1,1 @@
+Figure 1 shows a worker sending an SNMP get to check the MIB variable on G0/0 on the router R1. R1 G0/0 interface is down, so the router one sends an SNMP trap to the SNMP manager. The manager can be configured to send a text alert to the network administrator. Figure two shows the exchange of all SNMP messages.

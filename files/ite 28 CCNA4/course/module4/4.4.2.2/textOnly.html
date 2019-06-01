@@ -1,0 +1,10 @@
+
+          <p>In the figure, the 192.168.10.0/24 network cannot use TFTP to connect to the 192.168.30.0/24 network. </p>
+          <p></p>
+          <p>
+            <b>Solution </b>- The 192.168.10.0/24 network cannot use TFTP to connect to the 192.168.30.0/24 network because TFTP uses the transport protocol UDP. Statement 30 in access list 120 allows all other TCP traffic. However, because TFTP uses UDP instead of TCP, it is implicitly denied. Recall that the implied deny any statement does not appear in <b>show access-lists</b> output and therefore matches are not shown.</p>
+          <p></p>
+          <p>Statement 30 should be <b>ip any any</b>.</p>
+          <p></p>
+          <p>This ACL works whether it is applied to G0/0 of R1, or S0/0/1 of R3, or S0/0/0 of R2 in the incoming direction. However, based on the rule about placing extended ACLs closest to the source, the best option is to place it inbound on G0/0 of R1 because it allows undesirable traffic to be filtered without crossing the network infrastructure.</p>
+        

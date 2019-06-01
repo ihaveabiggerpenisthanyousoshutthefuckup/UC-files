@@ -1,0 +1,1 @@
+Figure is a screenshot of the Cisco I.o.T. Filed Network Director software which is used to help manage and automate the I.o.T. The sample screenshot shows which field devices are down on a map of a city suburb.

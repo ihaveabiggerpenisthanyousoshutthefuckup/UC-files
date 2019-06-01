@@ -1,0 +1,1 @@
+The figure shows an example of DMVPN hub-to-spoke tunnels. At the top edge of a cloud is a router labeled hub. On three other points on the edge of the same cloud are routers labeled spoke A, spoke B, and spoke C. A line representing a hub-to-spoke tunnel connects from the hub router to each of the 3 spoke routers.

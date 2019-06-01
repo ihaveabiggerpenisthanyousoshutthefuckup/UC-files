@@ -1,0 +1,14 @@
+
+          <p>In addition to understanding the various technologies available for broadband Internet access, it is also important to understand the underlying data link layer protocol used by the ISP to form a connection.</p>
+          <p></p>
+          <p>A commonly used data link layer protocol by ISPs is PPP. PPP can be used on all serial links including those links created with dial-up analog and ISDN modems. To this day, the link from a dialup user to an ISP, using analog modems, likely uses PPP. Figure 1 shows a basic representation of that analog dial connection with PPP.</p>
+          <p></p>
+          <p>Additionally, ISPs often use PPP as the data link protocol over broadband connections. There are several reasons for this. First, PPP supports the ability to assign IP addresses to remote ends of a PPP link. With PPP enabled, ISPs can use PPP to assign each customer one public IPv4 address. More importantly, PPP supports CHAP authentication. ISPs often want to use CHAP to authenticate customers because during authentication, ISPs can check accounting records to determine whether the customer’s bill is paid, prior to letting the customer connect to the Internet.</p>
+          <p></p>
+          <p>These technologies came to market in the following order, with varying support for PPP:</p>
+          <p>1. Analog modems for dialup that could use PPP and CHAP</p>
+          <p>2. ISDN for dialup that could use PPP and CHAP</p>
+          <p>3. DSL, which did not create a point-to-point link and could not support PPP and CHAP</p>
+          <p></p>
+          <p>ISPs value PPP because of the authentication, accounting, and link management features. Customers appreciate the ease and availability of the Ethernet connection. However, Ethernet links do not natively support PPP. PPP over Ethernet (PPPoE) provides a solution to this problem. As shown in Figure 2, PPPoE allows the sending of PPP frames encapsulated inside Ethernet frames.</p>
+        

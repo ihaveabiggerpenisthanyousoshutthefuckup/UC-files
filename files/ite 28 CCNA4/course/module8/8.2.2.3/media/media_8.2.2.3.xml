@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+	<!-- Slide 01-->
+		<component id="ID_s1_title">
+			<text><![CDATA[<b>Digital Multimeter</b>]]></text>
+		</component>
+
+		<component id="ID_s1_txt01">
+			<text><![CDATA[Fluke 179 Digital Multimeter]]></text>
+		</component>	
+		
+	<!-- Slide 02-->
+		<component id="ID_s2_title">
+			<text><![CDATA[<b>Cable Testers</b>]]></text>
+		</component>
+
+	
+	<!-- Slide 03-->
+		<component id="ID_s3_title">
+			<text><![CDATA[<b>Cable Analyzer</b>]]></text>
+		</component>
+
+	
+	<!-- Slide 04-->
+		<component id="ID_s4_title">
+			<text><![CDATA[<b>OptiView XG Network Analysis Tablet</b>]]></text>
+		</component>
+		
+	
+	<!-- Slide 05-->
+		<component id="ID_s5_title">
+			<text><![CDATA[<b>Cisco NAM Devices and Software</b>]]></text>
+		</component>
+		
+		<component id="ID_s5_txt01">
+		<text><![CDATA[Cisco Nexus 7000 Series NAM (NAM-NX1)]]></text>
+		</component>
+		
+		<component id="ID_s5_txt02">
+		<text><![CDATA[Cisco Catalyst 65xx Series NAM (NAM-3)]]></text>
+		</component>
+		
+		<component id="ID_s5_txt03">
+		<text><![CDATA[Cisco Prime NAM 2300 Series Appliance]]></text>
+		</component>
+		
+		<component id="ID_s5_txt04">
+		<text><![CDATA[Cisco Prime Virtual NAM (vNAM)]]></text>
+		</component>
+		
+		<component id="ID_s5_txt05">
+		<text><![CDATA[Cisco Prime NAM for Cisco Nexus 1110]]></text>
+		</component>
+		
+		<component id="ID_s5_txt06">
+		<text><![CDATA[Cisco Prime NAM for ISR G2 SRE]]></text>
+		</component>
+
+	<!-- Slide 06-->
+		<component id="ID_s6_title">
+			<text><![CDATA[<b>NAM Web Interface</b>]]></text>
+		</component>
+
+</textcomponents>
+

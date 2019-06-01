@@ -1,0 +1,131 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Identify the Security Best Practice</b>]]></text>
+</component>
+
+<component id="MCTable_title">
+	<text><![CDATA[Security Best Practice]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Check True or False next to each security best practice statement.]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[7]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>True</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>False</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+	<text><![CDATA[Have all devices refer to the same database of usernames and passwords hosted on a central server.]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[RADIUS is considered to be the most secure authentication protocol.]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[Always use Telnet instead of SSH for remote access.]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[Only ports connecting to upstream DHCP servers should be trusted.]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Always use TACACS+ to communicate between a router and AAA servers because all TACACS+ protocol exchanges are encrypted.]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[802.1X port-based authentication adds security to the access layer.]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[When an 802.1X port is in the unauthorized state, the port allows all traffic except for 802.1X protocol packets.]]></text>
+</component>
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<font size="17">Correct</font>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully determined which security best practice statements are true and which are false.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<font size="17">Incorrect</font>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully identified the security best practices. Please click Reset to try again. ]]></text>
+</component>
+
+</textcomponents>

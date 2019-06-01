@@ -1,0 +1,25 @@
+
+          <p>The Cisco ACI fabric is composed of the APIC and the Cisco Nexus 9000 series switches using two-tier spine-leaf topology, as shown in the figure. The leaf switches always attach to the spines, but they never attach to each other. Similarly, the spine switches only attach to the leaf and core switches (not shown). In this two-tier topology, everything is one hop from everything else.</p>
+          <p></p>
+          <p>The Cisco APICs and all other devices in the network physically attach to leaf switches.</p>
+          <p></p>
+          <p>When compared to SDN, the APIC controller does not manipulate the data path directly. Instead, the APIC centralizes the policy definition and programs the leaf switches to forward traffic based on the defined policies.</p>
+          <p></p>
+          <p>For virtualization, ACI supports multivendor hypervisor environments that would connect to the leaf switches, including the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Microsoft (Hyper-V/SCVMM/Azure Pack)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Red Hat Enterprise Linux OS (KVM OVS/OpenStack)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VMware (ESX/vCenter/vShield)</li>
+            </ul>
+          </p>
+        

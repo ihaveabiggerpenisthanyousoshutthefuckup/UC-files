@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.1.1 IP SLA Concepts</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IP SLA Concepts</h1>
+        <div>
+          <p>Network administrators must be proactive and continually monitor and test the network. The goal is to discover a network failure as early as possible. A useful tool for this task is the Cisco IOS IP Service Level Agreement (SLA).</p>
+          <p></p>
+          <p>IP SLAs use generated traffic to measure network performance between two networking devices, multiple network locations, or across multiple network paths. In the example in the figure, R1 is the IP SLA source that monitors the connection to the DNS server by periodically sending ICMP requests to the server. </p>
+          <p></p>
+          <p>Network engineers use IP SLAs to simulate network data and IP services to collect network performance information in real time. Performance monitoring can be done anytime, anywhere, without deploying a physical probe.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Ping and traceroute are probe tools. A physical probe is different. It is a device that can be inserted somewhere in the network to collect and monitor traffic. The use of physical probes is beyond the scope of this course.</p>
+          <p></p>
+          <p>Measurements provided by the various IP SLA operations can be used for troubleshooting networks by providing consistent, reliable measurements that immediately identify problems and save troubleshooting time. </p>
+          <p></p>
+          <p>There are additional benefits for using IP SLAs:</p>
+          <p>
+            <ul>
+              <li>Service-level agreement monitoring, measurement, and verification</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network performance monitoring to provide continuous, reliable, and predictable measurements to measure the jitter, latency, or packet loss in the network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP service network health assessment to verify that the existing QoS is sufficient for new IP services</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Edge-to-edge network availability monitoring for proactive connectivity verification of network resources</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Multiple IP SLA operations can be running on the network, or on a device, at any time. IP SLA information can be displayed using CLI commands or through SNMP.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: SNMP notifications based on the data gathered by an IP SLA operation is beyond the scope of this course.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure displays a network topology consisting of router R1 connecting through a cloud to router R2 which has a D.N.S Server connected to it. R1 has a label underneath it identifying it as the I.P. S.L.A. source. There is also a bidirectional orange arrow above the topology with the text above it stating Generated I.C.M.P. traffic to measure network response.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+<textcomponents>
+    <component id="MCTable_title">
+        <text>
+            <![CDATA[ ]]>
+        </text>
+    </component>
+    <component id="MCTable_title">
+        <text>
+            <![CDATA[ ]]>
+        </text>
+    </component>
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Activity – Part 1: Identify PPP Features and Operations</b>]]></text>
+    </component>
+     <component id="ID_s1_instr_title">
+        <text>
+            <![CDATA[Instruction]]></text>
+    </component>
+     <component id="ID_s1_instr_body">
+        <text>
+            <![CDATA[Create the order of operation in the layered network architecture diagram by dragging the PPP-layered architecture labels to the appropriate fields provided. Not all labels will be used. Click Button 2 to continue this activity.]]></text>
+    </component>
+    <component id="ID_s1_txt01">
+        <text>
+            <![CDATA[<b>IPv4</b>]]></text>
+    </component>
+    <component id="ID_s1_txt02">
+        <text>
+            <![CDATA[<b>IPv6</b>]]></text>
+    </component>
+    <component id="ID_s1_txt03">
+        <text>
+            <![CDATA[<b>Other Layer 3 Protocols</b>]]></text>
+    </component>
+    <component id="ID_s1_txt04">
+        <text>
+            <![CDATA[<b>OSI Model Layer Name</b>]]></text>
+    </component>
+    <component id="ID_s1_txt05">
+        <text>
+            <![CDATA[IPCP]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt06">
+        <text>
+            <![CDATA[IPXCP and Others]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt07">
+        <text>
+            <![CDATA[Network Layer]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt08">
+        <text>
+            <![CDATA[<b>PPP Sublayer</b>]]></text>
+    </component>
+    <component id="ID_s1_txt09">
+        <text>
+            <![CDATA[Compression]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt10">
+        <text>
+            <![CDATA[Other Options]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt11">
+        <text>
+            <![CDATA[<b>PPP Sublayer</b>]]></text>
+    </component>
+    <component id="ID_s1_txt12">
+        <text>
+            <![CDATA[Physical Media]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt13">
+        <text>
+            <![CDATA[Physical Layer]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt14">
+        <text>
+            <![CDATA[IPv6CP]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt15">
+        <text>
+            <![CDATA[Network Control Protocol (NCP)]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt16">
+        <text>
+            <![CDATA[Link Control Protocol (LCP)]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt17">
+        <text>
+            <![CDATA[Authentication]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt18">
+        <text>
+            <![CDATA[HDLC]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt19">
+        <text>
+            <![CDATA[Transport Layer]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt20">
+        <text>
+            <![CDATA[Synchronous]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt21">
+        <text>
+            <![CDATA[Data Link Layer]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt22">
+        <text>
+            <![CDATA[Asynchronous]]>
+        </text>
+    </component>
+    <component id="ID_s1_txt23">
+        <text>
+            <![CDATA[Multi-Synchronous]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully identified the PPP order of operation on the layered network architecture diagram. Click Button 2 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully identified the PPP order of operation on the network architecture diagram. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Activity – Part 2: Identify LCP and NCP Functions</b>]]></text>
+    </component>
+     <component id="ID_s2_instr_title">
+        <text>
+            <![CDATA[Instruction]]></text>
+    </component>
+     <component id="ID_s2_instr_body">
+        <text>
+            <![CDATA[Determine whether each characteristic describes LCP or NCP by clicking the appropriate field. Click Button 3 to continue this activity.]]></text>
+    </component>
+    <!-- buttons -->
+    <component id="ID_Button01">
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id="ID_Button02">
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+    <!--Number of rows in the table-->
+    <component id="txt_numrows">
+        <text>
+            <![CDATA[7]]>
+        </text>
+    </component>
+    <!--Number of columns for the answers in the table. Do not count the question column-->
+    <component id="txt_numcols">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <!--Answer column headers-->
+    <component id="txt_col1">
+        <text>
+            <![CDATA[<b>LCP</b>]]></text>
+    </component>
+    <component id="txt_col2">
+        <text>
+            <![CDATA[<b>NCP</b>]]></text>
+    </component>
+    <!--Question text - blockindent code moves the text away from the left edge a bit-->
+    <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+    <component id="txt_q1">
+        <text>
+            <![CDATA[Negotiate and set up control options on the WAN circuit.]]>
+        </text>
+    </component>
+    <component id="txt_q2">
+        <text>
+            <![CDATA[Manage packets from several network layer protocols.]]>
+        </text>
+    </component>
+    <component id="txt_q3">
+        <text>
+            <![CDATA[Establish, configure, and test the data link connection.]]>
+        </text>
+    </component>
+    <component id="txt_q4">
+        <text>
+            <![CDATA[Terminate the link.]]>
+        </text>
+    </component>
+    <component id="txt_q5">
+        <text>
+            <![CDATA[Bring network layer protocols up and down.]]>
+        </text>
+    </component>
+    <component id="txt_q6">
+        <text>
+            <![CDATA[Determine whether the link is functioning properly.]]>
+        </text>
+    </component>
+    <component id="txt_q7">
+        <text>
+            <![CDATA[Encapsulate and negotiate options for IPv4, IPv6, and IPX.]]>
+        </text>
+    </component>
+    <!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+    <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+    <component id="txt_a1">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a2">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <component id="txt_a3">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a4">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a5">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <component id="txt_a6">
+        <text>
+            <![CDATA[1]]>
+        </text>
+    </component>
+    <component id="txt_a7">
+        <text>
+            <![CDATA[2]]>
+        </text>
+    </component>
+    <!-- Correct Feedback -->
+    <component id="ID_titleCorrect">
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id="ID_correctText">
+        <text>
+            <![CDATA[You have successfully identified the LCP and NCP characteristics. Click Button 3 to continue.]]>
+        </text>
+    </component>
+    <!-- Incorrect Feedback -->
+    <component id="ID_titleIncorrect">
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id="ID_IncorrectText">
+        <text>
+            <![CDATA[You have not successfully identified the LCP and NCP characteristics. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>Activity – Part 3: Identify PPP Frame Format</b>]]></text>
+    </component>
+     <component id="ID_s3_instr_title">
+        <text>
+            <![CDATA[Instruction]]></text>
+    </component>
+     <component id="ID_s3_instr_body">
+        <text>
+            <![CDATA[Order the PPP frame fields into the standard PPP frame format by dragging the field names to the appropriate spaces.]]></text>
+    </component>
+    <component id="ID_s3_txt01">
+        <text>
+            <![CDATA[FCS]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt02">
+        <text>
+            <![CDATA[Address]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt03">
+        <text>
+            <![CDATA[Control]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt04">
+        <text>
+            <![CDATA[Data]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt05">
+        <text>
+            <![CDATA[Flag]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt06">
+        <text>
+            <![CDATA[Protocol]]>
+        </text>
+    </component>
+    <component id="ID_s3_txt07">
+        <text>
+            <![CDATA[<b>PPP Frame</b>]]></text>
+    </component>
+    <component id='ID_s3_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s3_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully ordered the PPP frame fields.]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s3_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully ordered the PPP frame fields. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s3_CHECK'>
+        <text>
+            <![CDATA[Check]]></text>
+    </component>
+    <component id='ID_s3_RESET'>
+        <text>
+            <![CDATA[Reset]]></text>
+    </component>
+</textcomponents>

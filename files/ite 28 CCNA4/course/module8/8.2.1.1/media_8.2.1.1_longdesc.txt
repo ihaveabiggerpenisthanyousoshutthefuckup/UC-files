@@ -1,0 +1,1 @@
+Figure displays a network topology consisting of router R1 connecting through a cloud to router R2 which has a D.N.S Server connected to it. R1 has a label underneath it identifying it as the I.P. S.L.A. source. There is also a bidirectional orange arrow above the topology with the text above it stating Generated I.C.M.P. traffic to measure network response.

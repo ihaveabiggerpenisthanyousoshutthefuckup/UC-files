@@ -1,0 +1,55 @@
+<textcomponents>
+
+<component id="ID_title">
+   <text><![CDATA[<b>PPP Layered Architecture: LCP Layer</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[Network Control Protocol (NCP)]]></text> 
+</component>
+  
+<component id="ID_txt05">
+  <text><![CDATA[Authentication, Other Options<BR/><b>Link Control Protocol (LCP)</b>]]></text> 
+</component>
+  
+<component id="ID_txt06">
+  <text><![CDATA[Synchronous or Asynchronous<BR/>Physical Media]]></text> 
+</component>
+  
+<component id="ID_txt07">
+  <text><![CDATA[Network Layer]]></text> 
+</component>
+  
+<component id="ID_txt08">
+  <text><![CDATA[<b>Data Link Layer</b>]]></text> 
+</component>
+  
+<component id="ID_txt09">
+   <text><![CDATA[Physical Layer]]></text>
+</component>
+
+<component id="ID_txt10">
+   <text><![CDATA[<b>IPv4</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+   <text><![CDATA[<b>IPv6</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+   <text><![CDATA[IPCP]]></text>
+</component>
+
+<component id="ID_txt13">
+   <text><![CDATA[IPv6CP]]></text>
+</component>
+
+<component id="ID_txt14">
+   <text><![CDATA[<b>PPP</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+   <text><![CDATA[PPP uses LCP to offer service options. These service options are primarily used for negotiation and frame checking when implementing the point-to-point controls specified by an administrator.]]></text>
+</component>
+
+</textcomponents>

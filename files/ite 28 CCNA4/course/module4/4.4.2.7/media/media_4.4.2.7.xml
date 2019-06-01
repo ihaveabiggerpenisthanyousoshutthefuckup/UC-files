@@ -1,0 +1,21 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>IPv6 Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<textformat blockindent="-18"><ul><li>Permit access to the :10 network.</li><li>Deny access to the :11 network.</li><li>Permit SSH access to PC2.</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Verify the IPv6 ACL Configuration and Application</b>]]></text> 
+</component>
+
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Replace the IPv6 ACL Host Statement</b>]]></text> 
+</component>
+
+<component id="ID_s4_title">
+  <text><![CDATA[<b>Reorder the IPv6 ACL Statements</b>]]></text> 
+</component>
+</textcomponents>

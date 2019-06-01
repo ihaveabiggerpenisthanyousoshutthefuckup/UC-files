@@ -1,0 +1,85 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>Standard and Cisco HLDC Frame Format</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[<b>Standard HDLC</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Flag]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Address]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[Control]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[Data]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[FCS]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[Flag]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[Supports only single-protocol environments.]]></text>
+</component>
+
+<component id="ID_txt09">
+   <text><![CDATA[<b>Cisco HDLC</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+   <text><![CDATA[Flag]]></text>
+</component>
+
+<component id="ID_txt11">
+   <text><![CDATA[Address]]></text>
+</component>
+
+<component id="ID_txt12">
+   <text><![CDATA[Control]]></text>
+</component>
+
+<component id="ID_txt13">
+   <text><![CDATA[Protocol]]></text>
+</component>
+
+<component id="ID_txt14">
+   <text><![CDATA[Data]]></text>
+</component>
+
+<component id="ID_txt15">
+   <text><![CDATA[FCS]]></text>
+</component>
+
+<component id="ID_txt16">
+   <text><![CDATA[Flag]]></text>
+</component>
+
+<component id="ID_txt17">
+   <text><![CDATA[Uses a protocol data field to support multiprotocol environments.]]></text>
+</component>
+
+<component id="ID_txt18">
+   <text><![CDATA[Supports only single-protocol environments.]]></text>
+</component>
+
+
+
+
+
+
+
+
+</textcomponents>

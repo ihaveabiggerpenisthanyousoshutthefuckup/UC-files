@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>7.3.2.4 Spine-Leaf Topology</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_7.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Spine-Leaf Topology</h1>
+        <div>
+          <p>The Cisco ACI fabric is composed of the APIC and the Cisco Nexus 9000 series switches using two-tier spine-leaf topology, as shown in the figure. The leaf switches always attach to the spines, but they never attach to each other. Similarly, the spine switches only attach to the leaf and core switches (not shown). In this two-tier topology, everything is one hop from everything else.</p>
+          <p></p>
+          <p>The Cisco APICs and all other devices in the network physically attach to leaf switches.</p>
+          <p></p>
+          <p>When compared to SDN, the APIC controller does not manipulate the data path directly. Instead, the APIC centralizes the policy definition and programs the leaf switches to forward traffic based on the defined policies.</p>
+          <p></p>
+          <p>For virtualization, ACI supports multivendor hypervisor environments that would connect to the leaf switches, including the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Microsoft (Hyper-V/SCVMM/Azure Pack)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Red Hat Enterprise Linux OS (KVM OVS/OpenStack)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VMware (ESX/vCenter/vShield)</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows the ACI Spine-Leaf Topology. At the top the topology is the Spine with two Cisco Nexus 9500 switches. Each of the two 9500 switches are connected to four Cisco Nexus 9300 switches using 40 gigabit Ethernet links. The 9300 switches are part of the Leaf layer. The four 9300 switches are connected to a server labeled “All other network devices” using multiple 10 gigabit Ethernet links. The diagram also shows the 9300 switches connected to a box showing the word APIC with the symbols of a clock, an alarm, a lock and a person.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

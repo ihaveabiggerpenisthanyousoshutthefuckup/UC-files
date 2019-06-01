@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.4 PPP Link Quality Monitoring Command</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPP Link Quality Monitoring Command</h1>
+        <div>
+          <p>LCP provides an optional link quality determination phase. In this phase, LCP tests the link to determine whether the link quality is sufficient to use Layer 3 protocols. </p>
+          <p></p>
+          <p>The<b> ppp quality </b><i>percentage </i>command ensures that the link meets the quality requirement set; otherwise, the link closes down.</p>
+          <p></p>
+          <p>The percentages are calculated for both incoming and outgoing directions. The outgoing quality is calculated by comparing the total number of packets and bytes sent, to the total number of packets and bytes received by the destination node. The incoming quality is calculated by comparing the total number of packets and bytes received to the total number of packets and bytes sent by the destination node. </p>
+          <p></p>
+          <p>If the link quality percentage is not maintained and the configured threshold, the link is deemed to be of poor quality and is taken down. LQM implements a time lag so that the link does not bounce up and down.</p>
+          <p></p>
+          <p>The configuration <b>ppp quality 80</b>, shown in Figure 1, sets minimum quality to 80%.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 2 to configure PPP encapsulation, compression, and LQM on router R1’s Serial 0/0/1 interface.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers connecting to a WAN cloud using P.P.P.  The figure shows the output from the configuration file, and is highlighting the line that reads p.p.p. quality eighty.  The command used to configure the quality is p.p.p quality.  This command is followed by a value between one and one hundred. Figure two is an interactive activity that allows the learner to configure a serial interface with an i.p. version 4 address, an i.p. version 6 address, p.p.p. encapsulation, compression, and a quality percentage.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

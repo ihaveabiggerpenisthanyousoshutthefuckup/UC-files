@@ -1,0 +1,1 @@
+Figure shows two lists. The top list is the voice characteristics. The bottom list is voice traffic one-way requirements.

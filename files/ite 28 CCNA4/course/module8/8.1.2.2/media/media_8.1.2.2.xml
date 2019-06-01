@@ -1,0 +1,214 @@
+﻿<textcomponents>
+
+ 
+    <component id="ID_s1_title">
+        <text>
+            <![CDATA[<b>Five Steps to Gathering Information</b>]]></text>
+    </component>
+    <component id='ID_s1_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+		<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>	
+		 
+		
+
+		<tr>
+			<td bgcolor='#666263' width="100"><font color='#FFFFFF'><b>Step 1</b></font></td>
+			<td bgcolor='#E9E7E8'>Gather information</td>
+		</tr>
+
+		<tr>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Step 2</b></font></td>
+			<td bgcolor='#F2F2F2'>Determine ownership</td>
+		</tr>
+
+		<tr>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Step 3</b></font></td>
+			<td bgcolor='#E9E7E8'>Narrow the scope</td>
+		</tr>
+
+		<tr>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Step 4</b></font></td>
+			<td bgcolor='#F2F2F2'>Gather symptoms from suspected devices</td> 
+		</tr>
+
+		<tr>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Step 5</b></font></td>
+			<td bgcolor='#E9E7E8'>Document symptoms</td> 
+		</tr>
+	</table>]]>
+        </text>
+    </component>
+
+<component id='ID_s1_table_html'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+		 <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">Five Steps to Gathering Information</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>	
+		 
+		<tr>
+			<th id="Step1" scope="col" bgcolor='#666263' width="100"><font color='#FFFFFF'><b>Step 1</b></font></th>
+			<td headers="Step 1" scope="col" bgcolor='#E9E7E8'>Gather information</th>
+		</tr>
+
+		<tr>
+			<th id="Step2" scope="row" bgcolor='#666263'><font color='#FFFFFF'><b>Step 2</b></font></td>
+			<td headers="Step2" bgcolor='#F2F2F2'>Determine ownership</td>
+		</tr>
+
+		<tr>
+			<th id="Step3" scope="row" bgcolor='#666263'><font color='#FFFFFF'><b>Step 3</b></font></td>
+			<td headers="Step3" bgcolor='#E9E7E8'>Narrow the scope</td>
+		</tr>
+
+		<tr>
+			<th id="Step4" scope="row" bgcolor='#666263'><font color='#FFFFFF'><b>Step 4</b></font></td>
+			<td headers="Step4" bgcolor='#F2F2F2'>Gather symptoms from suspected devices</td> 
+		</tr>
+
+		<tr>
+			<th id="Step5" scope="row" bgcolor='#666263'><font color='#FFFFFF'><b>Step 5</b></font></td>
+			<td headers="Step5" bgcolor='#E9E7E8'>Document symptoms</td> 
+		</tr>
+	</table>]]>
+        </text>
+    </component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Useful Information Gathering Cisco IOS Commands</b>]]></text>
+	</component>
+ 	<component id='ID_s2_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+		<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>	
+		 
+		<tr>
+			<td bgcolor='#666263' width="180"><font color='#FFFFFF'><b>Command</b></font></td>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Description</b></p></font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>ping </b>{<i>host</i>|<i>ip-address</i>}</font></td>
+			<td bgcolor='#E9E7E8'>Sends an echo request packet to an address, then waits for a reply. The <font face="_typewriter" color="#000000"><i>host </i></font>or<font face="_typewriter" color="#000000"><i> ip-address </i></font>variable is the IP alias or IP address of the target system.</td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>traceroute </b>{<i>destination</i>}</font></td>
+			<td bgcolor='#F2F2F2'>Identifies the path a packet takes through the networks. The<font face="_typewriter" color="#000000"><i> destination </i></font>variable is the hostname or IP address of the target system.</td>
+		</tr>
+
+		<tr>
+			<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>telnet </b>{<i>host</i>|<i>ip-address</i>}</font></td>
+			<td bgcolor='#E9E7E8'>Connects to an IP address using the Telnet application.</td>
+		</tr>
+
+		<tr>
+			<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>ssh -l </b><i>userid ip-address</i></font></td>
+			<td bgcolor='#F2F2F2'>Connects to an IP address using SSH.</td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>show ip interface brief<br/>show ipv6 interface brief</b></font></td>
+			<td bgcolor='#E9E7E8'>Displays a summary of the status of all interfaces on a device.</td> 
+		</tr>
+
+		<tr>
+			<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>show ip route<br/>show ipv6 route</b></font></td>
+			<td bgcolor='#F2F2F2'>Displays the current IPv4 and IPv6 routing tables, which contains the routes to all known network destinations.</td> 
+		</tr>
+
+		<tr>
+			<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>show running-config</b></font></td>
+			<td bgcolor='#E9E7E8'>Displays contents of currently running configuration file.</td> 
+		</tr>
+
+		<tr>
+			<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>[no] debug ?</b></font></td>
+			<td bgcolor='#F2F2F2'>Displays a list of options for enabling or disabling debugging events.</td> 
+		</tr>
+
+		<tr>
+			<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>show protocols</b></font></td>
+			<td bgcolor='#E9E7E8'>Displays the configured protocols and shows the global and interface-specific status of any configured Layer 3 protocol.</td> 
+		</tr>
+	</table>]]>
+        </text>
+     </component>
+
+     <component id='ID_s2_table_html'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+		 <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">Useful Information Gathering Cisco IOS Commands</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>	
+		 
+		<tr>
+			<th id="Command" scope="col" bgcolor='#666263' width="180"><font color='#FFFFFF'><b>Command</b></font></th>
+			<th id="Description" scope="col" bgcolor='#666263'><font color='#FFFFFF'><b>Description</b></p></font></th>
+		</tr>
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>ping </b>{<i>host</i>|<i>ip-address</i>}</font></td>
+			<td headers="Description" bgcolor='#E9E7E8'>Sends an echo request packet to an address, then waits for a reply. The <font face="_typewriter" color="#000000"><i>host </i></font>or<font face="_typewriter" color="#000000"><i> ip-address </i></font>variable is the IP alias or IP address of the target system.</td>
+		</tr>
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>traceroute </b>{<i>destination</i>}</font></td>
+			<td headers="Description" bgcolor='#F2F2F2'>Identifies the path a packet takes through the networks. The<font face="_typewriter" color="#000000"><i> destination </i></font>variable is the hostname or IP address of the target system.</td>
+		</tr>
+
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>telnet </b>{<i>host</i>|<i>ip-address</i>}</font></td>
+			<td headers="Description" bgcolor='#E9E7E8'>Connects to an IP address using the Telnet application.</td>
+		</tr>
+
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>ssh -l </b><i>userid ip-address</i></font></td>
+			<td headers="Description" bgcolor='#F2F2F2'>Connects to an IP address using SSH.</td>
+		</tr>
+		
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>show ip interface brief<br/>show ipv6 interface brief</b></font></td>
+			<td headers="Description" bgcolor='#E9E7E8'>Displays a summary of the status of all interfaces on a device.</td> 
+		</tr>
+
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>show ip route<br/>show ipv6 route</b></font></td>
+			<td headers="Description" bgcolor='#F2F2F2'>Displays the current IPv4 and IPv6 routing tables, which contains the routes to all known network destinations.</td> 
+		</tr>
+
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>show running-config</b></font></td>
+			<td headers="Description" bgcolor='#E9E7E8'>Displays contents of currently running configuration file.</td> 
+		</tr>
+
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#F2F2F2'><font face="_typewriter" color="#000000"><b>[no] debug ?</b></font></td>
+			<td headers="Description" bgcolor='#F2F2F2'>Displays a list of options for enabling or disabling debugging events.</td> 
+		</tr>
+
+		<tr>
+			<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000"><b>show protocols</b></font></td>
+			<td headers="Description" bgcolor='#E9E7E8'>Displays the configured protocols and shows the global and interface-specific status of any configured Layer 3 protocol.</td> 
+		</tr>
+	</table>]]>
+        </text>
+     </component>
+  
+</textcomponents>

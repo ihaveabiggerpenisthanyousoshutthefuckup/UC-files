@@ -1,0 +1,234 @@
+﻿<textcomponents>
+    <component id='ID_s1_title'>
+        <text>
+            <![CDATA[<b>BGP Configuration Commands</b>]]></text>
+    </component>
+    <component id='ID_s1_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">	
+		
+		<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">BGP Configuration Commands</font>
+            </caption>
+
+		<tr class="mtable_top">
+                <td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+	 
+	<tr>
+		<td bgcolor='#666263' width="200"><font color='#FFFFFF'><b>Command</b></font></td>
+		<td bgcolor='#666263' width="390"><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">Router# <b>show ip route</b></font></td>
+		<td bgcolor='#E9E7E8'>Verify routes advertised by the BGP neighbor are present in the IPv4 routing table.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">Router# <b>show ip bgp</b></font></td>
+		<td bgcolor='#F2F2F2'>Verify that received and advertised IPv4 networks are in the BGP table.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">Router# <b>show ip bgp summary</b></font></td>
+		<td bgcolor='#E9E7E8'>Verify IPv4 BGP neighbors and other BGP information.</td>
+	</tr>
+	
+</table>]]>
+        </text>
+    </component>
+    <component id='ID_s1_table_html'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+            	
+		<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">BGP Configuration Commands</font>
+            </caption>
+		<tr class="mtable_top">
+                <td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+            </tr>
+	 
+	<tr>
+		<th id="Command" scope="col" bgcolor='#666263' width="200"><font color='#FFFFFF'><b>Command</b></font></td>
+		<th id="Description" scope="col" bgcolor='#666263' width="390"><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">Router# <b>show ip route</b></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>Verify routes advertised by the BGP neighbor are present in the IPv4 routing table.</td>
+	</tr>
+	<tr>
+		<td headers="Command" scope="row" bgcolor='#F2F2F2'><font face="_typewriter" color="#000000">Router# <b>show ip bgp</b></font></td>
+		<td headers="Description" bgcolor='#F2F2F2'>Verify that received and advertised IPv4 networks are in the BGP table.</td>
+	</tr>
+	<tr>
+		<td headers="Command" scope="row" bgcolor='#E9E7E8'><font face="_typewriter" color="#000000">Router# <b>show ip bgp summary</b></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>Verify IPv4 BGP neighbors and other BGP information.</td>
+	</tr>
+	
+</table>]]>
+        </text>
+    </component>
+    <!-- slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Company-A IPv4 Routing Table</b>]]></text>
+    </component>
+    <component id='ID_s2_txt01'>
+        <text>
+            <![CDATA[<b>AS 65000</b><br/>Company-A]]></text>
+    </component>
+    <component id='ID_s2_txt02'>
+        <text>
+            <![CDATA[<b>AS 65001</b><br/>ISP-1]]></text>
+    </component>
+    <component id='ID_s2_txt03'>
+        <text>
+            <![CDATA[<b>Internet</b>]]></text>
+    </component>
+    <component id='ID_s2_txt04'>
+        <text>
+            <![CDATA[<b>eBGP</b>]]></text>
+    </component>
+    <component id='ID_s2_txt05'>
+        <text>
+            <![CDATA[&lt;output omitted&gt;]]>
+        </text>
+    </component>
+    <!-- end slide 2 -->
+    <!-- slide 3 -->
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>Company-A BGP Table </b>]]></text>
+    </component>
+    <component id='ID_s3_txt01'>
+        <text>
+            <![CDATA[<b>AS 65000</b><br/>Company-A]]></text>
+    </component>
+    <component id='ID_s3_txt02'>
+        <text>
+            <![CDATA[<b>AS 65001</b><br/>ISP-1]]></text>
+    </component>
+    <component id='ID_s3_txt03'>
+        <text>
+            <![CDATA[<b>Internet</b>]]></text>
+    </component>
+    <component id='ID_s3_txt04'>
+        <text>
+            <![CDATA[<b>eBGP</b>]]></text>
+    </component>
+    <!-- end slide 3 -->
+    <!-- slide 4 -->
+    <component id="ID_s4_title">
+        <text>
+            <![CDATA[<b>Company-A BGP Connections</b>]]></text>
+    </component>
+    <component id='ID_s4_txt01'>
+        <text>
+            <![CDATA[<b>AS 65000</b><br/>Company-A]]></text>
+    </component>
+    <component id='ID_s4_txt02'>
+        <text>
+            <![CDATA[<b>AS 65001</b><br/>ISP-1]]></text>
+    </component>
+    <component id='ID_s4_txt03'>
+        <text>
+            <![CDATA[<b>Internet</b>]]></text>
+    </component>
+    <component id='ID_s4_txt04'>
+        <text>
+            <![CDATA[<b>eBGP</b>]]></text>
+    </component>
+    <!-- end slide 4 -->
+    <!-- slide 5 -->
+    <component id='ID_s5_title'>
+        <text>
+            <![CDATA[<b>Configure and Verify eBGP</b>]]></text>
+    </component>
+    <!--Syntax Checker Button Text-->
+    <component id="ID_s5_reset">
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id="ID_s5_showme">
+        <text>
+            <![CDATA[Show Me]]>
+        </text>
+    </component>
+    <component id="ID_s5_showall">
+        <text>
+            <![CDATA[Show All]]>
+        </text>
+    </component>
+    <!--End Syntax Checker Button Text-->
+    <component id="ID_s4_SC" fontSize="12" fontFace='_typewriter' fontColor="#ffffff">
+        <feedback id="fb">
+            <![CDATA[<b><font face="_sans" color="#ffffff">***You must enter the exact and full command. Commands that include a name or password are case-sensitive.***</font></b> ]]></feedback>
+        <existingcommands>
+            <![CDATA[<font face="_sans"><b><ul>Configure eBGP on the Company-A router as follows:<li>Enter Global Configuration mode on Company-A router.</li><li>Enable the BGP routing process for AS number 65000.</li><li>Specify that the BGP neighbor at IP address 209.165.201.1 has AS number 65001.</li><li>Advertise Company-A's internal network address of 198.133.219.0/24.</li><li>Exit Global Configuration mode using the end command.</li></b></font>]]>
+        </existingcommands>
+        <command prompt="Company-A#">
+            <correctresponse>
+                <![CDATA[ configure terminal]]>
+            </correctresponse>
+        </command>
+        <command prompt="Company-A(config)#">
+            <correctresponse>
+                <![CDATA[ router bgp 65000]]>
+            </correctresponse>
+        </command>
+        <command prompt="Company-A(config-router)#">
+            <correctresponse>
+                <![CDATA[ neighbor 209.165.201.1 remote-as 65001]]>
+            </correctresponse>
+        </command>
+        <command prompt="Company-A(config-router)#">
+            <correctresponse>
+                <![CDATA[ network 198.133.219.0 mask 255.255.255.0]]>
+            </correctresponse>
+        </command>
+        <command prompt="Company-A(config-router)#">
+            <correctresponse>
+                <![CDATA[ end]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[Company-A#<br>]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>Verify that the routes advertised by the BGP neighbor are present in the IPv4 routing table.</font>]]>
+            </instruction>
+        </command>
+        <command prompt="Company-A#">
+            <correctresponse>
+                <![CDATA[ show ip route]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP<br><br>Gateway of last resort is 209.165.201.1 to network 0.0.0.0<br><br>B*    0.0.0.0/0 [20/0] via 209.165.201.1, 00:36:03<br>      198.133.219.0/24 is variably subnetted, 2 subnets, 2 masks<br>C        198.133.219.0/24 is directly connected, GigabitEthernet0/0<br>L        198.133.219.1/32 is directly connected, GigabitEthernet0/0<br>      209.165.201.0/24 is variably subnetted, 2 subnets, 2 masks<br>C        209.165.201.0/27 is directly connected, GigabitEthernet0/1<br>L        209.165.201.2/32 is directly connected, GigabitEthernet0/1<br>Company-A#]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>Verify that the received and advertised IPv4 networks are in the BGP table.</font>]]>
+            </instruction>
+        </command>
+        <command prompt="Company-A#">
+            <correctresponse>
+                <![CDATA[ show ip bgp]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[BGP table version is 3, local router ID is 209.165.201.2<br>Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, <br>              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, <br>              x best-external, a additional-path, c RIB-compressed, <br>Origin codes: i - IGP, e - EGP, ? - incomplete<br>RPKI validation codes: V valid, I invalid, N Not found<br><br>     Network          Next Hop            Metric LocPrf Weight Path<br> *>  0.0.0.0          209.165.201.1            0             0 65001 i<br> *>  198.133.219.0/24 0.0.0.0                  0  	       32768 i<br>Company-A#]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>Verify IPv4 BGP neighbors and other BGP information.</font>]]>
+            </instruction>
+        </command>
+        <command prompt="Company-A#">
+            <correctresponse>
+                <![CDATA[ show ip bgp summary]]>
+            </correctresponse>
+            <deviceresponse>
+                <![CDATA[BGP router identifier 209.165.201.2, local AS number 65000<br>BGP table version is 3, main routing table version 3<br>2 network entries using 288 bytes of memory<br>2 path entries using 160 bytes of memory<br>2/2 BGP path/bestpath attribute entries using 320 bytes of memory<br>1 BGP AS-PATH entries using 24 bytes of memory<br>0 BGP route-map cache entries using 0 bytes of memory<br>0 BGP filter-list cache entries using 0 bytes of memory<br>BGP using 792 total bytes of memory<br>BGP activity 2/0 prefixes, 2/0 paths, scan interval 60 secs<br><br>Neighbor        V        AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd<br>209.165.201.1   4     65001      66      66        3    0    0 00:56:11           1<br>Company-A#<br>]]>
+            </deviceresponse>
+            <instruction>
+                <![CDATA[<font face="_sans"><b>You have successfully configured and eBGP.</font>]]>
+            </instruction>
+        </command>
+        <command prompt="" />
+    </component>
+</textcomponents>

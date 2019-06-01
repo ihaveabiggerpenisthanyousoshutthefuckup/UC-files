@@ -1,0 +1,1 @@
+Figure shows a network with two segments connected to a Layer 3 switch, each segment is connected through a Layer 2 switch. The Layer 3 switch is also connected to two routers.  Each router is connected to the Internet.  Also attached to the layer three switch is a worker on an SNMP management station.  All three switches are managed with SNMP and Syslog agents.

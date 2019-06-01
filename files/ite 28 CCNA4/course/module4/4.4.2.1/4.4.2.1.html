@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.2.1 Troubleshooting IPv4 ACLs - Example 1</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Troubleshooting IPv4 ACLs - Example 1</h1>
+        <div>
+          <p>Using the <b>show</b> commands described earlier reveals most of the common ACL errors. The most common errors are entering ACEs in the wrong order and not applying adequate criteria to the ACL rules. </p>
+          <p></p>
+          <p>In the figure, host 192.168.10.10 has no Telnet connectivity with 192.168.30.12. When viewing the output of the <b>show access-lists</b> command, matches are shown for the first deny statement. This is an indicator that this statement has been matched by traffic.</p>
+          <p></p>
+          <p>
+            <b>Solution </b>- Look at the order of the ACEs. Host 192.168.10.10 has no connectivity with 192.168.30.12 because of the order of rule 10 in the access list. Because the router processes ACLs from the top down, statement 10 denies host 192.168.10.10, so statement 20 can never be matched. Statements 10 and 20 should be reversed. The last line allows all other non-TCP traffic that falls under IP (ICMP, UDP, etc.).</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network of three routers.  R-2 is at the top of a triangle layout and has a serial WAN connection to both R-1 and R-3.  There is no direct connection between R-1 and R-3.  Routers R-1 and R-3 each have two active gigabit interfaces for local network segments, and each segment has a switch with a computer connected to the switch.  R-1 has network 192 dot 168 dot 10 dot zero on interface gigabit zero slash zero, and network 192 dot 168 dot 11 dot zero on interface gigabit zero slash one.  R-3 has network 192 dot 168 dot 30 dot zero on interface gigabit zero slash zero, and network 192 dot 168 dot 31 dot zero on interface gigabit zero slash one.  All segments are class C networks with a slash 24.  This is the reference topology for the next series of pages.  This figure shows the output from the following command run on R-3, show access hyphen lists. There is one A.C.L. that has 3 statements.  The first is 10 deny t.c.p. 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255, and there have been 12 packet matches.  The second line is 20 permit t.c.p. 192 dot 168 dot 10 dot zero zero dot zero dot zero dot 255 any e.q. telnet, and there have been no matches. The last statement is 30 permit i.p. any any.  The fact that line 10 denies everything from the specified network causes line 20 to never have a match.  These two statements need to be reversed.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

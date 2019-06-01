@@ -1,0 +1,26 @@
+
+          <p>Local SPAN is when traffic on a switch is mirrored to another port on that switch. Various terms are used to identify incoming and outgoing ports. The table in Figure 1 describes commonly used SPAN terms. Figure 2 identifies the SPAN ports.</p>
+          <p></p>
+          <p>A SPAN session is the association between source ports (or VLANs) and a destination port.</p>
+          <p></p>
+          <p>Traffic entering or leaving the source port (or VLAN) is replicated by the switch on the destination port. Although SPAN can support multiple source ports under the same session or an entire VLAN as the traffic source, a SPAN session does not support both. Both Layer 2 and Layer 3 ports can be configured as source ports.</p>
+          <p></p>
+          <p>There are three important things to consider when configuring SPAN:</p>
+          <p>
+            <ul>
+              <li>The destination port cannot be a source port, and the source port cannot be a destination port.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The number of destination ports is platform-dependent. Some platforms allow for more than one destination port.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The destination port is no longer a normal switch port. Only monitored traffic passes through that port.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The SPAN feature is said to be local when the monitored ports are all located on the same switch as the destination port. This feature is in contrast to Remote SPAN (RSPAN).</p>
+        

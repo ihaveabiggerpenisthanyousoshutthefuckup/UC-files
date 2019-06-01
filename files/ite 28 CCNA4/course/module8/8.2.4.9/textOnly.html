@@ -1,0 +1,14 @@
+
+          <p>On routers, there may be ACLs configured that prohibit protocols from passing through the interface in the inbound or outbound direction.</p>
+          <p></p>
+          <p>Use the<b> show ip access-lists </b>command to display the contents of all IPv4 ACLs and the<b> show ipv6 access-list </b>command to show the contents of all IPv6 ACLs configured on a router. The specific ACL can be displayed by entering the ACL name or number as an option for this command; you can display a specific ACL. The<b> show ip interfaces </b>and<b> show ipv6 interfaces </b>commands display IPv4 and IPv6 interface information that indicates whether any IP ACLs are set on the interface.</p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example</b>
+          </p>
+          <p>To prevent spoofing attacks, the network administrator decided to implement an ACL preventing devices with a source network address of 172.16.1.0/24 from entering the inbound S0/0/1 interface on R3, as shown in Figure 1. All other IP traffic should be allowed.</p>
+          <p></p>
+          <p>However, shortly after implementing the ACL, users on the 10.1.10.0/24 network were unable to connect to devices on the 172.16.1.0/24 network, including SRV1. The<b> show ip access-lists </b>command shows that the ACL is configured correctly, as shown in Figure 2. The <b>show ip interfaces serial 0/0/1 </b>command reveals that the ACL was never applied to the inbound interface on Serial 0/0/1. Further investigation reveals that the ACL was accidentally applied to the G0/0 interface, blocking all outbound traffic from the 172.16.1.0/24 network. </p>
+          <p></p>
+          <p>After correctly placing the IPv4 ACL on the Serial 0/0/1 inbound interface, as shown in Figure 3, devices are able to successfully connect to the server.</p>
+        

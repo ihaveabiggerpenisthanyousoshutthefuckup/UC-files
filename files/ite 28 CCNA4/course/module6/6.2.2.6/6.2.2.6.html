@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.2.2.6 Marking at Layer 3</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.2.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Marking at Layer 3</h1>
+        <div>
+          <p>IPv4 and IPv6 specify an 8-bit field in their packet headers to mark packets. As shown in Figure 1, both IPv4 and IPv6 support an 8-bit field for marking, the Type of Service (ToS) field for IPv4 and the Traffic Class field for IPv6.</p>
+          <p></p>
+          <p>These fields are used to carry the packet marking as assigned by the QoS classification tools. The field is then referred to by receiving devices to forward the packets based on the appropriate assigned QoS policy.</p>
+          <p></p>
+          <p>Figure 2 displays the contents of the 8-bit field. In RFC 791, the original IP standard specified the IP Precedence (IPP) field to be used for QoS markings. However, in practice, these three bits did not provide enough granularity to implement QoS. </p>
+          <p></p>
+          <p>RFC 2474 supersedes RFC 791 and redefines the ToS field by renaming and extending the IPP field. The new field, as shown in Figure 2, has 6-bits allocated for QoS. Called the Differentiated Services Code Point (DSCP) field, these six bits offer a maximum of 64 possible classes of service. The remaining two IP Extended Congestion Notification (ECN) bits can be used by ECN-aware routers to mark packets instead of dropping them. The ECN marking informs downstream routers that there is congestion in the packet flow.</p>
+          <p></p>
+          <p>The 64 DSCP values are organized into three categories: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Best-Effort (BE)</b> -  This is the default for all IP packets. The DSCP value is 0. The per-hop behavior is normal routing. When a router experiences congestion, these packets will be dropped. No QoS plan is implemented.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Expedited Forwarding (EF) </b>- RFC 3246 defines EF as the DSCP decimal value 46 (binary <b>101</b>110). The first 3 bits (101) map directly to the Layer 2 CoS value 5 used for voice traffic. At Layer 3, Cisco recommends that EF only be used to mark voice packets.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Assured Forwarding (AF)</b> - RFC 2597 defines AF to use the 5 most significant DSCP bits to indicate queues and drop preference. As shown in Figure 3, the first 3 most significant bits are used to designate the class. Class 4 is the best queue and Class 1 is the worst queue. The 4th and 5th most significant bits are used to designate the drop preference. The 6th most significant bit is set to zero. The AFxy formula shows how the AF values are calculated. For example, AF32 belongs to class 3 (binary 011) and has a medium drop preference (binary 10). The full DSCP value is 28 because you include the 6th 0 bit (binary 011100). </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Because the first 3 most significant bits of the DSCP field indicate the class, these bits are also called the Class Selector (CS) bits. As shown in Figure 4, these 3 bits map directly to the 3 bits of the CoS field and the IPP field to maintain compatibility with 802.1p and RFC 791. </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p>The table in Figure 5 shows how the CoS values map to the Class Selectors and the corresponding DSCP 6-bit value. This same table can be used to map IPP values to the Class Selectors.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the field IPv4 and IPv6 header that is used for traffic marking. Figure 2 shows the contents of the 8-bit field (Type of Service for IPv4 or Traffic Class for IPv6). Figure 3 shows the Assured Forwarding values (AF) defined by RFC 2597. Figure 4 shows the direct mapping of CS bits and CoS bits. Figure 5 shows how the CoS values map to the Class Selectors and the corresponding DSCP 6-bit value.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

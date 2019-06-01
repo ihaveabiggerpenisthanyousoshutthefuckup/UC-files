@@ -1,0 +1,9 @@
+
+          <p>The SDN controller defines the data flows that occur in the SDN Data Plane. A flow is a sequence of packets traversing a network that share a set of header field values. For example, a flow could consist of all packets with the same source and destination IP addresses, or all packets with the same VLAN identifier.</p>
+          <p></p>
+          <p>Each flow traveling through the network must first get permission from the SDN controller, which verifies that the communication is permissible according to the network policy. If the controller allows a flow, it computes a route for the flow to take and adds an entry for that flow in each of the switches along the path.</p>
+          <p></p>
+          <p>All complex functions are performed by the controller. The controller populates flow tables. Switches manage the flow tables. In the figure, an SDN controller communicates with OpenFlow-compatible switches using the OpenFlow protocol. This protocol uses Transport Layer Security (TLS) to securely send control plane communications over the network. Each OpenFlow switch connects to other OpenFlow switches. They can also connect to end-user devices that are part of a packet flow.</p>
+          <p></p>
+          <p>Within each switch, a series of tables implemented in hardware or firmware are used to manage the flows of packets through the switch. To the switch, a flow is a sequence of packets that matches a specific entry in a flow table. </p>
+        

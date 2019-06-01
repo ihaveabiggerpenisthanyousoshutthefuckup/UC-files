@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.2 Mitigate MAC Address Flooding Table Attacks</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Mitigate MAC Address Flooding Table Attacks</h1>
+        <div>
+          <p>The simplest and most effective method to prevent MAC table flooding attacks is to enable port security. </p>
+          <p></p>
+          <p>Port security allows an administrator to statically specify MAC addresses for a port, or to permit the switch to dynamically learn a limited number of MAC addresses. By limiting the number of permitted MAC addresses on a port to one, port security can be used to control unauthorized expansion of the network, as shown in the figure.</p>
+          <p></p>
+          <p>When MAC addresses are assigned to a secure port, the port does not forward frames with source MAC addresses outside the group of defined addresses. When a port configured with port security receives a frame, the source MAC address of the frame is compared to the list of secure source addresses that were manually configured, or auto configured (learned), on the port.</p>
+          <p></p>
+          <p>If a port is configured as a secure port and the maximum number of MAC addresses is reached, any additional attempts to connect by unknown MAC addresses will generate a security violation. The figure summarizes these points.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a layer 3 switch with a legitimate PC and two attack PCs connected. Figure shows a port security operation on a topology, where the number of permitted MAC addresses on a port is limited to one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

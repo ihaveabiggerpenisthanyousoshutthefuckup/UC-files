@@ -1,0 +1,68 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Inbound and Outbound ACLs</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[Inbound ACL]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[Outbound ACL]]></text> 
+</component>
+  
+<component id="ID_s1_txt03">
+  <text><![CDATA[An inbound ACL filters packets coming into a specific interface and before they are routed to the outbound interface.]]></text> 
+</component>
+  
+<component id="ID_s1_txt04">
+  <text><![CDATA[An outbound ACL filters packets after being routed, regardless of the inbound interface.]]></text> 
+</component>
+
+<!-- end slide 1 -->
+
+<!-- slide 2 -->
+
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>ACL Traffic Filtering on a Router</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt01">
+		<text><![CDATA[<b>IPv4</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt02">
+		<text><![CDATA[<b>IPv4</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt01_1">
+		<text><![CDATA[<b>IPv6</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt02_1">
+		<text><![CDATA[<b>IPv6</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt03">
+		<text><![CDATA[One list per interface, per direction, and per protocol]]></text>
+	</component>
+
+	<component id="ID_s2_txt04">
+		<text><![CDATA[With two interfaces and two protocols running, this router could have a total of 8 separate ACLs applied.]]></text>
+	</component>
+
+	<component id="ID_s2_txt05">
+		<text><![CDATA[The Rules for Applying ACLs]]></text>
+	</component>
+
+	<component id="ID_s2_txt06">
+		<text><![CDATA[You can only have one ACL per protocol, per interface, and per direction:<textformat blockindent="-14"><ul><li>One ACL per protocol (e.g., IPv4 or IPv6)</li><li>One ACL per direction (i.e., IN or OUT)</li><li>One ACL per interface (e.g., GigabitEthernet0/0)</li></ul></textformat>]]></text>
+	</component>
+
+<!-- end slide 2 -->
+	
+</textcomponents>

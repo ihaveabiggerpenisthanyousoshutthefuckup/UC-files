@@ -1,0 +1,105 @@
+<textcomponents>
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Example IPv6 ACL</b>]]></text>
+    </component>
+    <component id="ID_s3_title">
+        <text>
+            <![CDATA[<b>IPv6 Topology</b>]]></text>
+    </component>
+    <component id='ID_s1_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">	
+
+	
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>  
+	 
+	<tr>
+		<td bgcolor='#666263' width="150"><font color='#FFFFFF'><b>Parameter</b></font></td>
+		<td bgcolor='#666263'><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' width="150"><font face='_typewriter' color='#000000'><b>deny | permit</b></font></td>
+		<td bgcolor='#E9E7E8'>Specifies whether to deny or permit the packet.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' width="240"><font face='_typewriter' color='#000000'><i>protocol</i></font></td>
+		<td bgcolor='#F2F2F2'>Enter the name or number of an Internet protocol, or an integer representing an IPv6 protocol number.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  width="260"><font face='_typewriter' color='#000000'><i>source-ipv6-prefix/prefix-length<br/><br/>destination-ipv6-address</i></font></td>
+		<td bgcolor='#E9E7E8'>The source or destination IPv6 network or class of networks for which to set deny or permit conditions.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' width="240"><font face='_typewriter' color='#000000'><b>any</b></font></td>
+		<td bgcolor='#F2F2F2'>Enter <font face='_typewriter' color='#000000'><b>any </b></font>as an abbreviation for the IPv6 prefix ::/0. This matches all addresses.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  width="260"><font face='_typewriter' color='#000000'><b>host</b></font></td>
+		<td bgcolor='#E9E7E8'>For <font face='_typewriter' color='#000000'><b>host </b><i>source-ipv6-address </i></font> or <font face='_typewriter' color='#000000'><i>destination-ipv6-address</i></font>, enter the source or destination IPv6 host address for which to set deny or permit conditions.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' width="240"><font face='_typewriter' color='#000000'><i>operator</i></font></td>
+		<td bgcolor='#F2F2F2'>(Optional) An operand that compares the source or destination ports of the specified protocol. Operands are lt (less than), gt (greater than), eq (equal), neq (not equal), and range.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  width="260"><font face='_typewriter' color='#000000'><i>port-number</i></font></td>
+		<td bgcolor='#E9E7E8'>(Optional) A decimal number or the name of a TCP or UDP port for filtering TCP or UDP, respectively.</td>
+	</tr>
+	
+</table>]]>
+        </text>
+    </component>
+
+    <component id='ID_s1_table_html'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">	
+
+	     <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">IPv6 ACL Command Syntax</font>
+            </caption>
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>  
+	 
+	<tr>
+		<th id="Parameter" scope="col" bgcolor='#666263' width="150"><font color='#FFFFFF'><b>Parameter</b></font></td>
+		<th id="Description" scope="col" bgcolor='#666263'><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' width="150"><font face='_typewriter' color='#000000'><b>deny | permit</b></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>Specifies whether to deny or permit the packet.</td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' width="240"><font face='_typewriter' color='#000000'><i>protocol</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2'>Enter the name or number of an Internet protocol, or an integer representing an IPv6 protocol number.</td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8'  width="260"><font face='_typewriter' color='#000000'><i>source-ipv6-prefix/prefix-length<br/><br/>destination-ipv6-address</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>The source or destination IPv6 network or class of networks for which to set deny or permit conditions.</td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' width="240"><font face='_typewriter' color='#000000'><b>any</b></font></td>
+		<td headers="Description" bgcolor='#F2F2F2'>Enter <font face='_typewriter' color='#000000'><b>any </b></font>as an abbreviation for the IPv6 prefix ::/0. This matches all addresses.</td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8'  width="260"><font face='_typewriter' color='#000000'><b>host</b></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>For <font face='_typewriter' color='#000000'><b>host </b><i>source-ipv6-address </i></font> or <font face='_typewriter' color='#000000'><i>destination-ipv6-address</i></font>, enter the source or destination IPv6 host address for which to set deny or permit conditions.</td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' width="240"><font face='_typewriter' color='#000000'><i>operator</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2'>(Optional) An operand that compares the source or destination ports of the specified protocol. Operands are lt (less than), gt (greater than), eq (equal), neq (not equal), and range.</td>
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8'  width="260"><font face='_typewriter' color='#000000'><i>port-number</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>(Optional) A decimal number or the name of a TCP or UDP port for filtering TCP or UDP, respectively.</td>
+	</tr>
+	
+</table>]]>
+        </text>
+    </component>
+</textcomponents>

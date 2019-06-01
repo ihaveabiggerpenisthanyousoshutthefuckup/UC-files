@@ -1,0 +1,32 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Six Pillars of the IoT System</b>]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[Applications]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Network Connectivity]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Fog Computing]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Security (Cyber and Physical)]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Data Analytics]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Management and Automation]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Application Enablement Platform]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[Internet of Things]]></text>
+	</component>
+	
+</textcomponents>

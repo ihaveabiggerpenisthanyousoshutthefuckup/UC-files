@@ -1,0 +1,73 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Benefits and Drawbacks of Best-Effort Model</b>]]></text>
+	</component>
+	
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3' class="mtable">
+
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<td width="298" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>Benefits</b></font> </td>
+		<td width="298" bgcolor='#666263' valign="top"><font color='#ffffff'><b>Drawbacks</b></font> </td>
+	 </tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font color='#393536'>The model is the most scalable.</td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>There are no guarantees of delivery.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Scalability is only limited by bandwidth limits, in which case all traffic is equally affected.</td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Packets will arrive whenever they can and in any order possible, if they arrive at all.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'>No special QoS mechanisms are required.</td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>No packets have preferential treatment.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font color='#393536'>It is the easiest and quickest model to deploy.</td>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Critical data is treated the same as casual email is treated.</td>
+	</tr>
+
+</table>]]></text>
+</component>
+
+<component id="ID_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3' class="mtable">
+
+ <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">Benefits and Drawbacks of Best-Effort Model</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<th id="Benefits" scope="col" width="298" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>Benefits</b></font></th>
+		<th id="Drawbacks" scope="col" width="298" bgcolor='#666263' valign="top"><font color='#ffffff'><b>Drawbacks</b></font></th>
+	 </tr>
+	<tr>
+		<td headers="Benefits" scope="row" bgcolor='#E9E7E8'><font color='#393536'>The model is the most scalable.</td>
+		<td headers="Drawbacks"  bgcolor='#E9E7E8'><font color='#393536'>There are no guarantees of delivery.</td>
+	</tr>
+	<tr>
+		<td headers="Benefits"  scope="row" bgcolor='#F2F2F2'><font color='#393536'>Scalability is only limited by bandwidth limits, in which case all traffic is equally affected.</td>
+		<td headers="Drawbacks" bgcolor='#F2F2F2'><font color='#393536'>Packets will arrive whenever they can and in any order possible, if they arrive at all.</td>
+	</tr>
+	<tr>
+		<td headers="Benefits" scope="row" bgcolor='#E9E7E8'>No special QoS mechanisms are required.</td>
+		<td headers="Drawbacks" bgcolor='#E9E7E8'><font color='#393536'>No packets have preferential treatment.</td>
+	</tr>
+	<tr>
+		<td headers="Benefits"  scope="row" bgcolor='#F2F2F2'><font color='#393536'>It is the easiest and quickest model to deploy.</td>
+		<td headers="Drawbacks" bgcolor='#F2F2F2'><font color='#393536'>Critical data is treated the same as casual email is treated.</td>
+	</tr>
+
+</table>]]></text>
+</component>
+	
+</textcomponents>

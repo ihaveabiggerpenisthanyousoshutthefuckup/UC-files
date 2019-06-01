@@ -1,0 +1,29 @@
+
+          <p>After an IPv6 ACL is configured, it is linked to an interface using the <b>ipv6 traffic-filter </b>command: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)#</span>
+            <span class="cmd">
+              <b> ipv6 traffic-filter</b>
+            </span>
+            <span class="cmd">
+              <i> access-list-name </i>
+            </span>
+            <span class="cmd">{</span>
+            <span class="cmd">
+              <b>in </b>
+            </span>
+            <span class="cmd">|</span>
+            <span class="cmd">
+              <b> out</b>
+            </span>
+            <span class="cmd">}</span>
+          </p>
+          <p></p>
+          <p>The figure shows the NO-R3-LAN-ACCESS ACL configured previously and the commands used to apply the IPv6 ACL inbound to the S0/0/0 interface. Applying the ACL to the inbound S0/0/0 interface will deny packets from 2001:DB8:CAFE:30::/64 to both of the LANs on R1.</p>
+          <p></p>
+          <p>To remove an ACL from an interface, first enter the <b>no ipv6 traffic-filter </b>command on the interface, and then enter the global <b>no ipv6 access-list</b> command to remove the access list.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: IPv4 and IPv6 both use the <b>access-class</b> command to apply an access list to VTY ports.</p>
+        

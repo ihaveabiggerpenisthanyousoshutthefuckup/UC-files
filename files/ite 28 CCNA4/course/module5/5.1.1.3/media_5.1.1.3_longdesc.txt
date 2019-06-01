@@ -1,0 +1,1 @@
+Figure shows a specialized password auditing tool used by an attacker trying to guess the password for users.

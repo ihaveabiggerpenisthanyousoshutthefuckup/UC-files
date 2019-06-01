@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.4.2.2 Verify GRE</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.4.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Verify GRE</h1>
+        <div>
+          <p>There are several commands that can be used to monitor and troubleshoot GRE tunnels. To determine whether the tunnel interface is up or down, use the<b> show ip interface brief </b>command, as shown in Figure 1.</p>
+          <p></p>
+          <p>To verify the state of a GRE tunnel, use the <b>show interface tunnel </b>command. The line protocol on a GRE tunnel interface is up as long as there is a route to the tunnel destination. Before implementing a GRE tunnel, IP connectivity must already be in effect between the IP addresses of the physical interfaces on opposite ends of the potential GRE tunnel. The tunnel transport protocol is displayed in the output, also shown in Figure 1.</p>
+          <p></p>
+          <p>If OSPF has also been configured to exchange routes over the GRE tunnel, verify that an OSPF adjacency has been established over the tunnel interface using the<b> show ip ospf neighbor </b>command. In Figure 2, note that the peering address for the OSPF neighbor is on the IP network created for the GRE tunnel.</p>
+          <p></p>
+          <p>In Figure 3, use the Syntax Checker to configure and verify a GRE tunnel on R2 followed by R1.</p>
+          <p></p>
+          <p>GRE is considered a VPN because it is a private network that is created by tunneling over a public network. Using encapsulation, a GRE tunnel creates a virtual point-to-point link to Cisco routers at remote points over an IP internetwork. The advantages of GRE are that it can be used to tunnel non-IP traffic over an IP network, allowing for network expansion by connecting multiprotocol subnetworks across a single-protocol backbone environment. GRE also supports IP multicast tunneling. This means that routing protocols can be used across the tunnel, enabling dynamic exchange of routing information in the virtual network. Finally, it is common practice to create IPv6 over IPv4 GRE tunnels, where IPv6 is the encapsulated protocol and IPv4 is the transport protocol. In the future, these roles will likely be reversed as IPv6 takes over as the standard IP protocol.</p>
+          <p></p>
+          <p>However, GRE does not provide encryption or any other security mechanisms. Therefore, data sent across a GRE tunnel is not secure. If secure data communication is needed, IPsec or SSL VPNs should be configured.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the commands used to verify the GRE tunnel is up (show ip interface brief and interface Tunnel 0. Figure 2 shows that it is important to verify the routing protocol neighbor adjacency when a GRE tunnel is used, The example given for router R1 is show ip ospf neighbor. Figure 3 is the syntax checker to configure and verify a GRE tunnel. The same topology is used as in the previous figures and it shows the GRE Tunnel Configuration topology with router R1 to the left connecting through S0/0/0 to the Internet cloud. Out the right side of the Internet cloud is a connection to router R2 via S0/0/0. A GRE tunnel cylinder is above the internet cloud. Both the left and right sides of the tunnel are labeled Tunnel 0. Tunnel0 on the left is 192.168.2.1. Tunnel 0 on the right is 192.168.2.2. R1 S0/0/0 is 209.165.201.1 and R2 S0/0/0 is 198.133.219.87. </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

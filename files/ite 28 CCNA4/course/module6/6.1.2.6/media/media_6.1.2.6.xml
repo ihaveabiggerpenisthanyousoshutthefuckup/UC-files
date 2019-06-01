@@ -1,0 +1,166 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+	<text><![CDATA[<font size="17"><b>Activity – Compare Traffic Characteristics</b></font>]]></text>
+</component>
+
+
+<component id="MCTable_title">
+	<text><![CDATA[Traffic Characteristic]]></text>
+</component>
+
+<component id='ID_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_instr_body'>
+	<text><![CDATA[Click the appropriate field next to each traffic characteristic to indicate your answers.]]></text>
+</component>
+
+
+<!-- buttons -->
+<component id="ID_s1_CHECK">
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_s1_RESET">
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[11]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Voice</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Video</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Data</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+
+<component id="txt_q1">
+	<text><![CDATA[Can be very greedy consuming a large portion of network capacity]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[Without QoS and a significant amount of extra bandwidth capacity, this traffic typically degrades]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[Cannot be retransmitted if lost]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[Must receive a higher UDP priority]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[Requires at least 384 Kbs of bandwidth]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[Traffic can be predictable and smooth]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[Does not consume a lot of network resources]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[Traffic can be smooth or bursty]]></text>
+</component>
+
+<component id="txt_q9">
+	<text><![CDATA[Traffic can be unpredictable, inconsistent, and bursty]]></text>
+</component>
+
+<component id="txt_q10">
+	<text><![CDATA[Very sensitive to delays and dropped packets]]></text>
+</component>
+
+<component id="txt_q11">
+	<text><![CDATA[If packets are lost in transit, they will be resent]]></text>
+</component>
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a9">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a10">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a11">
+	<text><![CDATA[3]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<font size="17">Correct</font>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully classified the traffic characteristics.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<font size="17">Incorrect</font>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully classified the traffic characteristics. Please click Reset to try again.]]></text>
+</component>
+
+
+</textcomponents>

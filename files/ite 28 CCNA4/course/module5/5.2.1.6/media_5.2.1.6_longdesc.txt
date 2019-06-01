@@ -1,0 +1,1 @@
+Figure 1 shows portions of the MIB structure. Figure 2 shows a graph of CPU usage by SNMP graphing tool. Figure 3 shows a CLI command used to retrieve information from the MIB database. Figure 4 shows a screenshot from Cisco SNMP Navigator software.

@@ -1,0 +1,6 @@
+
+          <p>In the figure, host 192.168.30.12 can use Telnet to connect to 192.168.31.12, but according to the security policy, this connection should not be allowed. Output from the <b>show access-lists 150</b> command indicate that no matches have occurred for the deny statement as expected.</p>
+          <p></p>
+          <p>
+            <b>Solution </b>- Host 192.168.30.12 can use Telnet to connect to 192.168.31.12 because of the direction in which access list 150 is applied to the G0/1 interface. Statement 10 denies any source address to connect to host 192.168.31.12 using Telnet. However, this filter should be applied outbound on G0/1 to filter correctly. </p>
+        

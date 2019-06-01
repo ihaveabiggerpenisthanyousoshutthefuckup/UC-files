@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.1.2 Applying ACLs to an Interface</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Applying ACLs to an Interface</h1>
+        <div>
+          <p>ACLs can be configured to apply to inbound traffic and outbound traffic as shown in Figure 1. The last statement of an ACL is always an implicit deny. This statement is automatically inserted at the end of each ACL even though it is not visible in show command output.</p>
+          <p></p>
+          <p>As shown in Figure 2, you can configure one ACL per protocol, per direction, per interface:</p>
+          <p>
+            <ul>
+              <li>
+                <b>One ACL per protocol</b> - To control traffic flow on an interface, an ACL must be defined for each protocol enabled on the interface.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>One ACL per direction</b> - ACLs control traffic in one direction at a time on an interface. Two separate ACLs must be created to control inbound and outbound traffic.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>One ACL per interface</b> - ACLs control traffic for an interface, for example, GigabitEthernet 0/0.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows a router with a packet going into a port. The packet will be processed by an inbound A.C.L. The figure also shows a packet exiting the router. This packet will be processed by an outbound A.C.L. Figure two shows a router with two active interfaces. The inbound and outbound interfaces are running I.P.v.4. and I.P.v.6..  With two interfaces and two protocols running, this router could have a total of eight separate A.C.L.s. applied.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

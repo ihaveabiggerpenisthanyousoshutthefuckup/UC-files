@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.3.1.4 Remote SPAN</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Remote SPAN</h1>
+        <div>
+          <p>Remote SPAN (RSPAN) allows source and destination ports to be in different switches. RSPAN is useful when the packet analyzer or IPS is on a different switch than the traffic being monitored. </p>
+          <p></p>
+          <p>The table in Figure 1 describes RSPAN terms.</p>
+          <p></p>
+          <p>Figure 2 illustrates how RSPAN is forwarded between two switches. Notice how RSPAN extends SPAN by enabling remote monitoring of multiple switches across the network. </p>
+          <p></p>
+          <p>RSPAN uses two sessions. One session is used as the source and one session is used to copy or receive the traffic from a VLAN. The traffic for each RSPAN session is carried over trunk links in a user-specified RSPAN VLAN that is dedicated (for that RSPAN session) in all participating switches. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Configuring RSPAN is covered in the CCNA Security course.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a table of remote SPAN terminology. Figure 2 shows the type of RSPAN ports used in a network.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

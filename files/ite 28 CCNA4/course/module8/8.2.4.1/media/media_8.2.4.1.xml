@@ -1,0 +1,8 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Components of End-to-End Troubleshooting</b>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>MAC Address: 5475.D08E.9AD8</b>]]></text>
+	</component>
+</textcomponents>

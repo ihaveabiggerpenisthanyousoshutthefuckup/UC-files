@@ -1,0 +1,1 @@
+Figure is an animation.  The animation includes a worker on a P.C. as the SNMP management station, a web server with SNMP agent, and a central MIB database.  The manager requests statistics from the web server and finds out there are ten thousand users.

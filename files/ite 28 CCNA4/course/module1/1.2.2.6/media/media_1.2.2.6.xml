@@ -1,0 +1,23 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Sample Ethernet WAN Topology</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Branch Office</b><br/>(Main St.)]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Internet]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Head Office</b><br/>(Downtown)]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Service Provider Metro Ethernet]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Branch Office</b><br/>(Suburb)]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b>Branch Office</b><br/>(Industrial Park)]]></text>
+	</component>
+</textcomponents>

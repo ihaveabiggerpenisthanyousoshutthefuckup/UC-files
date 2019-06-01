@@ -1,0 +1,178 @@
+<textcomponents>
+<component id="ID_s1_title">
+  <text><![CDATA[<b>Configuring Extended ACLs</b>]]></text> 
+</component>
+
+  <component id="ID_s1_table">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+	<tr>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<td bgcolor='#666263' valign="top" width="155"><font color='#ffffff' ><b>Parameter</b></font></td>
+		<td bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Description</b></font></td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>access-list-number</i></font></td>
+		<td bgcolor='#E9E7E8' valign="top">Identifies the access list using a number in the range 100 to 199 (for an extended IP ACL) and 2000 to 2699 (expanded IP ACLs).</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><B>deny</B></font></td>
+		<td bgcolor='#F2F2F2' valign="top">Denies access if the conditions are matched.</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><B>permit</B></font></td>
+		<td bgcolor='#E9E7E8' valign="top">Permits access if the conditions are matched.</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><B>remark</B></font></td>
+		<td bgcolor='#F2F2F2' valign="top">Adds a remark about entries in an IP access list to make the list easier to understand and scan.</td>
+		
+    </tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>protocol</i></font></td>
+		<td bgcolor='#E9E7E8' valign="top">Name or number of an Internet protocol. Common keywords include<font face='_typewriter' color='#000000'><b> icmp</b></font>,<font face='_typewriter' color='#000000'><b> ip</b></font>,<font face='_typewriter' color='#000000'><b> tcp</b></font>, or<font face='_typewriter' color='#000000'><b> udp</b></font>. To match any Internet protocol (including ICMP, TCP, and UDP) use the <font face='_typewriter' color='#000000'><b>ip </b></font>keyword.</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>source</i></font></td>
+		<td bgcolor='#F2F2F2' valign="top">Number of the network or host from which the packet is being sent.</td>
+		
+    </tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>source-wildcard</i></font></td>
+		<td bgcolor='#E9E7E8' valign="top">Wildcard bits to be applied to source.</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>destination</i></font></td>
+		<td bgcolor='#F2F2F2' valign="top">Number of the network or host to which the packet is being sent.</td>
+		
+    </tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>destination-wildcard</i></font></td>
+		<td bgcolor='#E9E7E8' valign="top">Wildcard bits to be applied to the destination.</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>operator</i></font></td>
+		<td bgcolor='#F2F2F2' valign="top">(Optional) Compares source or destination ports. Possible operands include <font face='_typewriter' color='#000000'><B>lt </B></font>(less than), <font face='_typewriter' color='#000000'><B>gt </B></font>(greater than),  <font face='_typewriter' color='#000000'><B>eq </B></font>(equal), <font face='_typewriter' color='#000000'><B>neq </B></font>(not equal), and <font face='_typewriter' color='#000000'><B>range </B></font>(inclusive range).</td>
+		
+    </tr>
+	<tr>
+		<td bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>port</i></font></td>
+		<td bgcolor='#E9E7E8' valign="top">(Optional) The decimal number or name of a TCP or UDP port.</td>
+		
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>established</i></font></td>
+		<td bgcolor='#F2F2F2' valign="top">(Optional) For the TCP protocol only; indicates an established connection.</td>
+		
+    </tr>
+	
+	</table>]]></text>
+  </component>
+
+   <component id="ID_s1_table_html">
+  <text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable" width="600">
+  	<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">Configuring Extended ACLs</font>
+            </caption>
+
+		<td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+	</tr>
+	<tr>
+	
+		
+		<th id="Parameter" scope="col" bgcolor='#666263' valign="top" width="155"><font color='#ffffff' ><b>Parameter</b></font></td>
+		<th id="Description" scope="col" bgcolor='#666263'  valign="top" ><font color='#ffffff' ><b>Description</b></font></td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>access-list-number</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top">Identifies the access list using a number in the range 100 to 199 (for an extended IP ACL) and 2000 to 2699 (expanded IP ACLs).</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><B>deny</B></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top">Denies access if the conditions are matched.</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><B>permit</B></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top">Permits access if the conditions are matched.</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><B>remark</B></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top">Adds a remark about entries in an IP access list to make the list easier to understand and scan.</td>
+		
+    </tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>protocol</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top">Name or number of an Internet protocol. Common keywords include<font face='_typewriter' color='#000000'><b> icmp</b></font>,<font face='_typewriter' color='#000000'><b> ip</b></font>,<font face='_typewriter' color='#000000'><b> tcp</b></font>, or<font face='_typewriter' color='#000000'><b> udp</b></font>. To match any Internet protocol (including ICMP, TCP, and UDP) use the <font face='_typewriter' color='#000000'><b>ip </b></font>keyword.</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>source</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top">Number of the network or host from which the packet is being sent.</td>
+		
+    </tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>source-wildcard</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top">Wildcard bits to be applied to source.</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>destination</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top">Number of the network or host to which the packet is being sent.</td>
+		
+    </tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>destination-wildcard</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top">Wildcard bits to be applied to the destination.</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>operator</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top">(Optional) Compares source or destination ports. Possible operands include <font face='_typewriter' color='#000000'><B>lt </B></font>(less than), <font face='_typewriter' color='#000000'><B>gt </B></font>(greater than),  <font face='_typewriter' color='#000000'><B>eq </B></font>(equal), <font face='_typewriter' color='#000000'><B>neq </B></font>(not equal), and <font face='_typewriter' color='#000000'><B>range </B></font>(inclusive range).</td>
+		
+    </tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#E9E7E8' valign="top"><font face='_typewriter' color='#000000'><i>port</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top">(Optional) The decimal number or name of a TCP or UDP port.</td>
+		
+	</tr>
+	<tr>
+		<td headers="Parameter" scope="row" bgcolor='#F2F2F2' valign="top"><font face='_typewriter' color='#000000'><i>established</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top">(Optional) For the TCP protocol only; indicates an established connection.</td>
+		
+    </tr>
+	
+	</table>]]></text>
+  </component>
+  
+  <!-- slide 2-->
+  
+  <component id="ID_s2_title">
+  <text><![CDATA[<b>Configuring Extended ACLs</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01"><text><![CDATA[<textformat blockindent="-14"><ul><li>ACL 103 allows requests to ports 80 and 443.</li><li>ACL 104 allows established HTTP and HTTPS replies.</li></ul></textformat>]]></text> 
+</component>
+
+
+
+
+
+</textcomponents>

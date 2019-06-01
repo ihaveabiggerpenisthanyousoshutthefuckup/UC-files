@@ -1,0 +1,10 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#canvasDiv{
+	top:45px;
+}
+#txt_col1,#txt_col2,#txt_col3,#txt_col4{
+	width:80px !important;
+}

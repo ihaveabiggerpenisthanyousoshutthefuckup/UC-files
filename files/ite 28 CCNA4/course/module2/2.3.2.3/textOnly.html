@@ -1,0 +1,15 @@
+
+          <p>After authentication is established with PAP, it does not re-authenticate. This leaves the network vulnerable to attack. Unlike PAP, which only authenticates once, CHAP conducts periodic challenges to make sure that the remote node still has a valid password value. The password value is variable and changes unpredictably while the link exists. CHAP uses the <b>ppp authentication chap </b>command.</p>
+          <p></p>
+          <p>
+            <b>CHAP Process</b>
+          </p>
+          <p></p>
+          <p>After the PPP link establishment phase is complete, the local router sends a challenge message to the remote node, as shown in Figure 1. </p>
+          <p></p>
+          <p>The remote node responds with a value that is calculated using a one-way hash function. This is typically Message Digest 5 (MD5) based on the password and challenge message, as shown in Figure 2. </p>
+          <p></p>
+          <p>The local router checks the response against its own calculation of the expected hash value. If the values match, the initiating node acknowledges the authentication, as shown in Figure 3. If the values do not match, the initiating node immediately terminates the connection.</p>
+          <p></p>
+          <p>CHAP provides protection against a playback attack by using a variable challenge value that is unique and unpredictable. Because the challenge is unique and random, the resulting hash value is also unique and random. The use of repeated challenges limits the time of exposure to any single attack. The local router, or a third-party authentication server, is in control of the frequency and timing of the challenges.</p>
+        

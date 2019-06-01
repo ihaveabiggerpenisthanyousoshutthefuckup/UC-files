@@ -1,0 +1,10 @@
+
+          <p>To help understand how to configure a simple IP SLA, refer to the topology in Figure 1. </p>
+          <p></p>
+          <p>The configuration in Figure 2 configures an IP SLA operation with an operation number of 1. Multiple IP SLA operations may be configured on a device. Each operation can be referred to by its operation-number. The <b>icmp-echo</b> command identifies the destination address to be monitored. In the example, it is set to monitor R3’s S1 interface. The <b>frequency</b> command is setting the IP SLA rate to 30 second intervals.</p>
+          <p></p>
+          <p>The <b>ip sla schedule</b> command is scheduling the IP SLA operation number 1 to start immediately (now) and continue until manually cancelled (forever).</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Use the <b>no ip sla schedule </b><i>operation-number</i> command to cancel the SLA operation. The SLA operation configuration is preserved and can be rescheduled when needed.</p>
+        

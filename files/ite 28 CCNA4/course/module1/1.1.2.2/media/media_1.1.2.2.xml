@@ -1,0 +1,58 @@
+﻿<textcomponents>
+<component id="ID_title">
+	<text><![CDATA[<b>WAN Terminology</b>]]></text>
+</component>
+	
+<component id='ID_header01'>
+	<text><![CDATA[<b>Company (Subscriber)</b>]]></text>
+</component>
+
+<component id='ID_header02'>
+	<text><![CDATA[<b>WAN Service Provider</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Data Terminal Equipment (DTE)]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Data Communications Equipment (DCE)]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Customer Premises Equipment (CPE)]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[WAN Service Provider Network]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Toll Network]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[Local Loop]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[Local Central Office (CO)]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[CO Switch]]></text>
+</component>
+
+<component id='ID_txt09'>
+	<text><![CDATA[Cable Junction Box (Demarcation Point)]]></text>
+</component>
+
+<component id='ID_txt10'>
+	<text><![CDATA[Enterprise Edge]]></text>
+</component>
+
+<component id='ID_txt11'>
+	<text><![CDATA[Service Provider Edge]]></text>
+</component>
+
+</textcomponents>

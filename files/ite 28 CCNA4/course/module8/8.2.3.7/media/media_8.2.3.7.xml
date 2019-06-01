@@ -1,0 +1,164 @@
+﻿<textcomponents><component id="MCTable_title"><text><![CDATA[ ]]></text></component><component id="MCTable_title"><text><![CDATA[ ]]></text></component>
+
+<!-- instructions -->
+<component id="ID_inst">
+<text><![CDATA[<b>Activity – Symptoms and Causes for Network Issues</b>]]></text>
+</component>
+
+<component id="ID_instr_title">
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id="ID_instr_body">
+	<text><![CDATA[Choose the probable OSI layer associated with each issue.]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+<text><![CDATA[7]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+<text><![CDATA[5]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+<text><![CDATA[<b> 1 </b>]]></text>
+</component>
+
+<component id="txt_col2">
+<text><![CDATA[<b> 2 </b>]]></text>
+</component>
+
+<component id="txt_col3">
+<text><![CDATA[<b> 3 </b>]]></text>
+</component>
+
+<component id="txt_col4">
+<text><![CDATA[<b> 4 </b>]]></text>
+</component>
+
+<component id="txt_col5">
+<text><![CDATA[<b> 5, 6 or 7 </b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+<text><![CDATA[ACLs are misconfigured and blocking all web traffic.]]></text>
+</component>
+
+<component id="txt_q2">
+<text><![CDATA[STP loops and route flapping are generating a broadcast storm.]]></text>
+</component>
+
+<component id="txt_q3">
+<text><![CDATA[SSH error messages display unknown/untrusted certificates.]]></text>
+</component>
+
+<component id="txt_q4">
+<text><![CDATA[SNMP messages are unable to traverse NAT.]]></text>
+</component>
+
+<component id="txt_q5">
+<text><![CDATA[Traffic is congested on a low capacity link and frames are lost.]]></text>
+</component>
+
+<component id="txt_q6">
+<text><![CDATA[The DNS server is not configured with the correct URLs.]]></text>
+</component>
+
+<component id="txt_q7">
+<text><![CDATA[The routing table is missing routes and has unknown networks listed.]]></text>
+</component>
+
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a2">
+<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+<text><![CDATA[5]]></text>
+</component>
+
+<component id="txt_a4">
+<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a5">
+<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+<text><![CDATA[5]]></text>
+</component>
+
+<component id="txt_a7">
+<text><![CDATA[3]]></text>
+</component>
+
+
+
+<component id="ID_text01">
+<text><![CDATA[<b>OSI Layers</b>]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully chosen the probable OSI layer for each network issue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[You have not successfully chosen the probable OSI layer for each network issue. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_osi_txt07'>
+	<text><![CDATA[7. Application]]></text>
+</component>
+<component id='ID_osi_txt06'>
+	<text><![CDATA[6. Presentation]]></text>
+</component>
+<component id='ID_osi_txt05'>
+	<text><![CDATA[5. Session]]></text>
+</component>
+<component id='ID_osi_txt04'>
+	<text><![CDATA[4. Transport]]></text>
+</component>
+<component id='ID_osi_txt03'>
+	<text><![CDATA[3. Network]]></text>
+</component>
+<component id='ID_osi_txt02'>
+	<text><![CDATA[2. Data Link ]]></text>
+</component>
+<component id='ID_osi_txt01'>
+	<text><![CDATA[1. Physical]]></text>
+</component>
+
+</textcomponents>
+

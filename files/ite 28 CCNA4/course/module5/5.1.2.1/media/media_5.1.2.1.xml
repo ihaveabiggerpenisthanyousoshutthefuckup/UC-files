@@ -1,0 +1,51 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Cisco Solutions to Mitigate Layer 2 Attacks</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[IPSG]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[DAI]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[DHCP Snooping]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[Port Security]]></text>
+	</component>
+	
+	<component id="ID_titleTxt01">
+		<text><![CDATA[IP Source Guard (IPSG)]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[IP Source Guard prevents MAC and IP address spoofing attacks.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt02">
+		<text><![CDATA[Dynamic ARP Inspection (DAI)]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[Dynamic ARP inspection prevents ARP spoofing and ARP poisoning attacks.]]></text>
+	</component>
+
+	<component id="ID_titleTxt03">
+		<text><![CDATA[DHCP Snooping]]></text>
+	</component>
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[DHCP snooping prevents DHCP starvation and DHCP spoofing attacks.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt04">
+		<text><![CDATA[Port Security]]></text>
+	</component>
+	<component id="ID_bodyTxt04">
+		<text><![CDATA[Port security prevents many types of attacks including CAM table overflow attacks and DHCP starvation attacks.]]></text>
+	</component>
+
+</textcomponents>

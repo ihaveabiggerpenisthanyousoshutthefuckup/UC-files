@@ -1,0 +1,8 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuring HDLC Encapsulation</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<textformat blockindent="-14"><ul><li>Enable HDLC encapsulation</li><li>HDLC is the default encapsulation on synchronous serial interfaces</li></ul><textformat>]]></text> 
+  </component>
+</textcomponents>

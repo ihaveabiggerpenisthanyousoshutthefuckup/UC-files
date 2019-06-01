@@ -1,0 +1,27 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b> </b>]]></text>
+	</component>
+	
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[Corporate Network]]></text>
+	</component>
+
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[Excessive Traffic from Faulty NIC]]></text>
+	</component>
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[Duplicated Traffic]]></text>
+	</component>
+	<component id='ID_s1_txt04'>
+		<text><![CDATA[<font color="#FFFFFF">I think PC1 may have a bad NIC.</font>]]></text>
+	</component>
+
+<!-- end slide 1 -->
+
+	
+</textcomponents>

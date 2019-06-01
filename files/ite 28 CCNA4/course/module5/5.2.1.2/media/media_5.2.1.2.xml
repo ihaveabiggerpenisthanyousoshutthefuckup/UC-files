@@ -1,0 +1,116 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>SNMP Operations</b>]]></text>
+</component>
+
+
+<component id="ID_s1_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+				<tr class="mtable_title">
+					<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+				</tr>
+
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+
+<tr>
+<td bgcolor='#666263'  valign="top" width="120"  class="mtitle"><font color='#ffffff' size="11"><b>Operation</b></font></td>
+<td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>Description</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><b>get-request</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">Retrieves a value from a specific variable.</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face="_typewriter"><b>get-next-request</b></font></td>
+<td bgcolor='#F2F2F2' valign="top">Retrieves a value from a variable within a table; the SNMP manager does not need to know the exact variable name. A sequential search is performed to find the needed variable from within a table.</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><b>get-bulk-request</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">Retrieves large blocks of data, such as multiple rows in a table, that would otherwise require the transmission of many small blocks of data. (Only works with SNMPv2 or later.)</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face="_typewriter"><b>get-response</b></font></td>
+<td bgcolor='#F2F2F2' valign="top">Replies to a <font face="_typewriter"><b>get-request, get-next-request, </b></font>and <font face="_typewriter"><b>set-request </b></font>sent by an NMS.</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><b>set-request</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">Stores a value in a specific variable.</td>
+</tr>
+
+</table>]]></text>
+</component>
+
+<component id="ID_s1_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+				 <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">SNMP Operations</font></caption>
+
+				<tr class="mtable_top">
+					<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+				</tr>
+
+
+<tr>
+<th id="Operation" scope="col" bgcolor='#666263'  valign="top" width="120"  class="mtitle"><font color='#ffffff' size="11"><b>Operation</b></font></th>
+<th id="Description" scope="col" bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff' size="11"><b>Description</b></font></th>
+</tr>
+
+<tr>
+<td headers="Operation" scope="row" bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><b>get-request</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Retrieves a value from a specific variable.</td>
+</tr>
+
+<tr>
+<td headers="Operation" scope="row" bgcolor='#F2F2F2' valign="top"><font face="_typewriter"><b>get-next-request</b></font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Retrieves a value from a variable within a table; the SNMP manager does not need to know the exact variable name. A sequential search is performed to find the needed variable from within a table.</td>
+</tr>
+
+<tr>
+<td headers="Operation" scope="row" bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><b>get-bulk-request</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Retrieves large blocks of data, such as multiple rows in a table, that would otherwise require the transmission of many small blocks of data. (Only works with SNMPv2 or later.)</td>
+</tr>
+
+<tr>
+<td headers="Operation" scope="row" bgcolor='#F2F2F2' valign="top"><font face="_typewriter"><b>get-response</b></font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Replies to a <font face="_typewriter"><b>get-request, get-next-request, </b></font>and <font face="_typewriter"><b>set-request </b></font>sent by an NMS.</td>
+</tr>
+
+<tr>
+<td headers="Operation" scope="row" bgcolor='#E9E7E8' valign="top"><font face="_typewriter"><b>set-request</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Stores a value in a specific variable.</td>
+</tr>
+
+</table>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>SNMP Get Request</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[SNMP GET]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[The MIB]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[G0/0]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[<font color="#FFFFFF">I want to check the MIB variable to find out if G0/0 is up/up.</font>]]></text>
+</component>
+
+</textcomponents>

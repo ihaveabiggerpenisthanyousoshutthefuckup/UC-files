@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.2.1.4 SNMP Versions</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.2.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>SNMP Versions</h1>
+        <div>
+          <p>There are several versions of SNMP:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>SNMPv1 </b>- The Simple Network Management Protocol, a Full Internet Standard, defined in RFC 1157.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SNMPv2c </b>- Defined in RFCs 1901 to 1908; utilizes community-string-based Administrative Framework.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SNMPv3 </b>- Interoperable standards-based protocol originally defined in RFCs 2273 to 2275; provides secure access to devices by authenticating and encrypting packets over the network. It includes these security features: message integrity to ensure that a packet was not tampered with in transit; authentication to determine that the message is from a valid source, and encryption to prevent the contents of a message from being read by an unauthorized source.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>All versions use SNMP managers, agents, and MIBs. Cisco IOS software supports the above three versions. Version 1 is a legacy solution and not often encountered in networks today; therefore, this course focuses on versions 2c and 3. </p>
+          <p></p>
+          <p>Both SNMPv1 and SNMPv2c use a community-based form of security. The community of managers able to access the agent's MIB is defined by an ACL and password.</p>
+          <p></p>
+          <p>Unlike SNMPv1, SNMPv2c includes a bulk retrieval mechanism and more detailed error message reporting to management stations. The bulk retrieval mechanism retrieves tables and large quantities of information, minimizing the number of round-trips required. The SNMPv2c improved error-handling includes expanded error codes that distinguish different kinds of error conditions. These conditions are reported through a single error code in SNMPv1. Error return codes in SNMPv2c include the error type.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: SNMPv1 and SNMPv2c offer minimal security features. Specifically, SNMPv1 and SNMPv2c can neither authenticate the source of a management message nor provide encryption. SNMPv3 is most currently described in RFCs 3410 to 3415. It adds methods to ensure the secure transmission of critical data between managed devices.</p>
+          <p></p>
+          <p>SNMPv3 provides for both security models and security levels. A security model is an authentication strategy set up for a user and the group within which the user resides. A security level is the permitted level of security within a security model. A combination of the security level and the security model determine which security mechanism is used when handling an SNMP packet. Available security models are SNMPv1, SNMPv2c, and SNMPv3. </p>
+          <p></p>
+          <p>The table in the figure identifies the characteristics of the different combinations of security models and levels.</p>
+          <p></p>
+          <p>A network administrator must configure the SNMP agent to use the SNMP version supported by the management station. Because an agent can communicate with multiple SNMP managers, it is possible to configure the software to support communications using SNMPv1, SNMPv2c, or SNMPv3.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a table of SNMP security models and levels.  The columns included are the Model, Level, Authentication, Encryption, and Result.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

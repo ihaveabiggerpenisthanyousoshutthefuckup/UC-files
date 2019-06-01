@@ -1,0 +1,8 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b></b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Companies must select the appropriate WAN technologies, services, and devices to meet the changing business requirements.]]></text>
+	</component>
+</textcomponents>

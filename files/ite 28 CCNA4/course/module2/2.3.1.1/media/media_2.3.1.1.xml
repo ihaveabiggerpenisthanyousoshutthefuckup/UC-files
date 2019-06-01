@@ -1,0 +1,110 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Configurable Options Field Codes</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+      <tr class="mtable_title">
+      <td colspan="4" bgcolor='#FFFFFF'><font size="5"></font></td>
+    </tr>
+
+  <tr>
+    
+    <td colspan='4' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+  </tr>
+ 
+  <tr>
+    <td bgcolor='#666263'  valign="top" width="120" class="mtitle"><font color='#ffffff'><b>Option Name</b></font></td>
+    <td bgcolor='#666263'  valign="top" width="90" class="mtitle"><font color='#ffffff'><b>Option Type</b></font></td>
+    <td bgcolor='#666263'  valign="top" width="90" class="mtitle"><font color='#ffffff'><b>Option Length</b></font></td>
+    <td bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#E9E7E8'>Authentication Protocol</td>
+    <td bgcolor='#E9E7E8'>3</td>
+    <td bgcolor='#E9E7E8'>5 or 6</td>
+    <td bgcolor='#E9E7E8'>This field indicates the authentication protocol, either PAP or CHAP. </td>
+  </tr> 
+  <tr>
+    <td bgcolor='#F2F2F2'>Protocol Compression</td>
+    <td bgcolor='#F2F2F2'>7</td>
+    <td bgcolor='#F2F2F2'>2</td>
+    <td bgcolor='#F2F2F2'>A flag indicating that the PPP protocol ID be compressed to a single octet when the 2-byte protocol ID is in the range 0x00-00 to 0x00-FF.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#E9E7E8'>Address and Control Field Compression</td>
+    <td bgcolor='#E9E7E8'>8</td>
+    <td bgcolor='#E9E7E8'>2</td>
+    <td bgcolor='#E9E7E8'>A flag indicating that the PPP Address field (always set to 0xFF) and the PPP Control field (always set to 0x03) be removed from the PPP header. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Magic Number (Error Detection)</td>
+    <td bgcolor='#F2F2F2'>5</td>
+    <td bgcolor='#F2F2F2'>6 </td>
+    <td bgcolor='#F2F2F2'>This is a random number chosen to distinguish a peer and detect looped back lines.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#E9E7E8'>Callback</td>
+    <td bgcolor='#E9E7E8'>13 or 0x0D</td>
+    <td bgcolor='#E9E7E8'>3</td>
+    <td bgcolor='#E9E7E8'>A 1-octet indicator of how callback is to be determined. </td>
+  </tr>
+</table>]]>
+        </text>
+    </component>
+    <component id="ID_txt01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+     <caption  class="mtable_title" colspan="4" bgcolor='#FFFFFF'>
+                <font size="3">Configurable Options Field Codes</font>
+            </caption>
+
+  <tr>
+    
+    <td colspan='4' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+  </tr>
+ 
+  <tr>
+    <th id="Name" scope="col" bgcolor='#666263'  valign="top" width="120" class="mtitle"><font color='#ffffff'><b>Option Name</b></font></td>
+    <th id="Type" scope="col" bgcolor='#666263'  valign="top" width="90" class="mtitle"><font color='#ffffff'><b>Option Type</b></font></td>
+    <th id="Length" scope="col" bgcolor='#666263'  valign="top" width="90" class="mtitle"><font color='#ffffff'><b>Option Length</b></font></td>
+    <th id="Description" scope="col" bgcolor='#666263'  valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></td>
+  </tr>
+  <tr>
+    <td headers="Name" scope="row" bgcolor='#E9E7E8'>Authentication Protocol</td>
+    <td headers="Type" bgcolor='#E9E7E8'>3</td>
+    <td headers="Length" bgcolor='#E9E7E8'>5 or 6</td>
+    <td headers="Description" bgcolor='#E9E7E8'>This field indicates the authentication protocol, either PAP or CHAP. </td>
+  </tr> 
+  <tr>
+    <td headers="Name" scope="row" bgcolor='#F2F2F2'>Protocol Compression</td>
+    <td headers="Type" bgcolor='#F2F2F2'>7</td>
+    <td headers="Length" bgcolor='#F2F2F2'>2</td>
+    <td headers="Description" bgcolor='#F2F2F2'>A flag indicating that the PPP protocol ID be compressed to a single octet when the 2-byte protocol ID is in the range 0x00-00 to 0x00-FF.</td>
+  </tr>
+  <tr>
+    <td headers="Name" scope="row" bgcolor='#E9E7E8'>Address and Control Field Compression</td>
+    <td headers="Type" bgcolor='#E9E7E8'>8</td>
+    <td headers="Length" bgcolor='#E9E7E8'>2</td>
+    <td headers="Description" bgcolor='#E9E7E8'>A flag indicating that the PPP Address field (always set to 0xFF) and the PPP Control field (always set to 0x03) be removed from the PPP header. </td>
+  </tr>
+  <tr>
+    <td headers="Name" scope="row" bgcolor='#F2F2F2'>Magic Number (Error Detection)</td>
+    <td headers="Type" bgcolor='#F2F2F2'>5</td>
+    <td headers="Length" bgcolor='#F2F2F2'>6 </td>
+    <td headers="Description" bgcolor='#F2F2F2'>This is a random number chosen to distinguish a peer and detect looped back lines.</td>
+  </tr>
+  <tr>
+    <td headers="Name" scope="row" bgcolor='#E9E7E8'>Callback</td>
+    <td headers="Type" bgcolor='#E9E7E8'>13 or 0x0D</td>
+    <td headers="Length" bgcolor='#E9E7E8'>3</td>
+    <td headers="Description" bgcolor='#E9E7E8'>A 1-octet indicator of how callback is to be determined. </td>
+  </tr>
+</table>]]>
+        </text>
+    </component>
+</textcomponents>

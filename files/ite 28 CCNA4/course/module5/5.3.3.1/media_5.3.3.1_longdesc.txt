@@ -1,0 +1,1 @@
+Figure shows the switch S1 is connected to PC1, PC2, a worker, and a Layer 3 switch which connects to the Corporate Network. The worker connects to the SPAN port on S1. PC1 is sending excessive traffic from faulty NIC to the Corporate Network. The traffic is duplicated to the worker.

@@ -1,0 +1,138 @@
+﻿<textcomponents>
+
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Commands for Data Collection</b>]]></text>
+</component>
+
+<component id="ID_table02">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+<tr>
+<td bgcolor='#666263' width='200' valign="top" class="mtitle"><font color='#ffffff'><b>Command</b></font></td>
+<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show version</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">Shows uptime, version information for device software and hardware.</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show ip interface</b>[<b>brief</b>]<br/><b>show ipv6 interface</b>[<b>brief</b>]</font></td>
+<td bgcolor='#F2F2F2' valign="top">Shows all the configuration options that are set on an interface. Use the <font face="_typewriter" color="#000000"><b>brief</b></font> keyword to only show up/down status of IP interfaces and the IP address is of each interface.</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show interfaces </b>[<i>interface_type interface_num</i>]</font></td>
+<td bgcolor='#E9E7E8' valign="top">Shows detailed output for each interface. To show detailed output for only a single interface, include the interface type and number in the command (e.g. gigabitethernet 0/0).</td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show ip route<br/>show ipv6 route</b></font></td>
+<td bgcolor='#F2F2F2' valign="top">Shows the contents of the routing table.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show arp<br/>show ipv6 neighbors</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">Shows the contents of the ARP table (IPv4) and the neighbor table (IPv6).</td> 
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show running-config</b></font></td>
+<td bgcolor='#F2F2F2' valign="top">Shows current configuration.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show port</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">Shows the status of ports on a switch.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show vlan</b></font></td>
+<td bgcolor='#F2F2F2' valign="top">Shows the status of VLANs on a switch.</td> 
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show tech-support</b></font></td>
+<td bgcolor='#E9E7E8' valign="top">This command is useful for collecting a large amount of information about the device for troubleshooting purposes. It executes multiple <font face="_typewriter"><b> show </b></font>commands which can be provided to technical support representatives when reporting a problem.</td> 
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show ip cache flow</b></font></td>
+<td bgcolor='#F2F2F2' valign="top">Displays a summary of the NetFlow accounting statistics.</td> 
+</tr>
+ 
+</table>]]></text> 
+</component>
+
+<component id="ID_table02_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	 <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">Commands for Data Collection</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+<tr>
+<th id="Command" scope="col" bgcolor='#666263' width='200' valign="top" class="mtitle"><font color='#ffffff'><b>Command</b></font></th>
+<th id="Description" scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></th>
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show version</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Shows uptime, version information for device software and hardware.</td>
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show ip interface</b>[<b>brief</b>]<br/><b>show ipv6 interface</b>[<b>brief</b>]</font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Shows all the configuration options that are set on an interface. Use the <font face="_typewriter" color="#000000"><b>brief</b></font> keyword to only show up/down status of IP interfaces and the IP address is of each interface.</td>
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show interfaces </b>[<i>interface_type interface_num</i>]</font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Shows detailed output for each interface. To show detailed output for only a single interface, include the interface type and number in the command (e.g. gigabitethernet 0/0).</td>
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show ip route<br/>show ipv6 route</b></font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Shows the contents of the routing table.</td> 
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show arp<br/>show ipv6 neighbors</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Shows the contents of the ARP table (IPv4) and the neighbor table (IPv6).</td> 
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show running-config</b></font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Shows current configuration.</td> 
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show port</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">Shows the status of ports on a switch.</td> 
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show vlan</b></font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Shows the status of VLANs on a switch.</td> 
+</tr>
+
+<tr>
+<td headers="Command" scope="row" bgcolor='#E9E7E8' valign="top"><font face ="_typewriter" color="#000000"><b>show tech-support</b></font></td>
+<td headers="Description" bgcolor='#E9E7E8' valign="top">This command is useful for collecting a large amount of information about the device for troubleshooting purposes. It executes multiple <font face="_typewriter"><b> show </b></font>commands which can be provided to technical support representatives when reporting a problem.</td> 
+</tr>
+<tr>
+<td headers="Command" scope="row" bgcolor='#F2F2F2' valign="top"><font face ="_typewriter" color="#000000"><b>show ip cache flow</b></font></td>
+<td headers="Description" bgcolor='#F2F2F2' valign="top">Displays a summary of the NetFlow accounting statistics.</td> 
+</tr>
+ 
+</table>]]></text> 
+</component>
+</textcomponents>

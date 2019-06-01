@@ -1,0 +1,47 @@
+
+          <p>Authentication is a feature that needs to be implemented correctly or the security of your serial connection may be compromised. Always verify your configuration with the<b> show interfaces serial </b>command, in the same way as you did without authentication.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Never assume your authentication configuration works without testing it using the previously covered show commands. If there are issues, debugging allows you to verify the issue is with authentication and correct any deficiencies. For debugging PPP authentication, use the<b> debug ppp authentication </b>command.</p>
+          <p></p>
+          <p>The figure shows an example output of the<b> debug ppp authentication </b>command. The following is an interpretation of the output:</p>
+          <p></p>
+          <p>Line 1 says that the router is unable to authenticate on interface Serial0 because the peer did not send a name.</p>
+          <p></p>
+          <p>Line 2 says the router was unable to validate the CHAP response because USERNAME pioneer was not found. </p>
+          <p></p>
+          <p>Line 3 says no password was found for pioneer. Other possible responses at this line might have been no name received to authenticate, unknown name, no secret for given name, short MD5 response received, or MD5 compare failed. </p>
+          <p></p>
+          <p>In the last line, the code 4 means that a failure has occurred. Other code values are as follows:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>1 - Challenge </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2 - Response </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>3 - Success </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>4 - Failure</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>id - 3 is the ID number per LCP packet format</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>len - 48 is the packet length without the header</li>
+            </ul>
+          </p>
+        

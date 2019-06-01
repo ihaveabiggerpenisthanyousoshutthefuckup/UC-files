@@ -1,0 +1,47 @@
+﻿<textcomponents>
+
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>DMVPN Hub-to-Spoke and Spoke-to-Spoke Tunnels</b>]]></text>
+	</component>
+	<component id="ID_s2_text01">
+		<text><![CDATA[Hub]]></text>
+	</component>
+	<component id="ID_s2_text02">
+		<text><![CDATA[Spoke A]]></text>
+	</component>
+	<component id="ID_s2_text03">
+		<text><![CDATA[Spoke B]]></text>
+	</component>
+	<component id="ID_s2_text04">
+		<text><![CDATA[Spoke C]]></text>
+	</component>
+	<component id="ID_s2_text05">
+		<text><![CDATA[Hub-to-Spoke Tunnels]]></text>
+	</component>
+	<component id="ID_s2_text06">
+		<text><![CDATA[Spoke-to-Spoke Tunnels]]></text>
+	</component>
+
+
+<component id="ID_s1_title">
+		<text><![CDATA[<b>DMVPN Hub-to-Spoke Tunnels
+</b>]]></text>
+	</component>
+
+	<component id="ID_s1_text01">
+		<text><![CDATA[Hub]]></text>
+	</component>
+	<component id="ID_s1_text02">
+		<text><![CDATA[Spoke A]]></text>
+	</component>
+	<component id="ID_s1_text03">
+		<text><![CDATA[Spoke B]]></text>
+	</component>
+	<component id="ID_s1_text04">
+		<text><![CDATA[Spoke C]]></text>
+	</component>
+<component id="ID_s1_text05">
+		<text><![CDATA[Hub-to-Spoke Tunnels]]></text>
+	</component>
+
+</textcomponents>

@@ -1,0 +1,1 @@
+Figure 1 shows a SNMPv3 topology with authentication. An NMS is communicating with managed nodes through an encrypted tunnel.

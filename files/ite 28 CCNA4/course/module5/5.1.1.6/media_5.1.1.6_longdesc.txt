@@ -1,0 +1,1 @@
+Figure shows a network of three switches, one client computer, and a DHCP server.  A rogue DHCP server is inserted into the network by an attacker in an attempt to initiate a DHCP spoofing attack.

@@ -1,0 +1,98 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Data Traffic Characteristics</b>]]></text>
+	</component>
+	
+	<component id='ID_txt01_title'>
+		<text><![CDATA[Data]]></text>
+	</component>
+
+	<component id='ID_txt01_body'>
+		<text><![CDATA[<textformat blockindent="-16"><ul><li>Smooth/bursty</li><li>Benign/greedy</li><li>Drop insensitive</li><li>Delay insensitive</li><li>TCP retransmits</li></ul></textformat>]]></text>
+	</component>
+
+	<component id="ID_txtbox_title">
+	  <text><![CDATA[One-Way Requirements]]></text> 
+	</component> 
+
+	<component id="ID_txtbox_body">
+		<text><![CDATA[<textformat blockindent="-16"><ul><li>Latency ≤ 200-400 ms</li><li>Jitter ≤ 30-50 ms</li><li>Loss ≤ 0.1-1%</li><li>Bandwidth (384Kbps-20 + Mbps)</li></ul></textformat>]]></text> 
+  </component> 
+
+<!-- end slide 1 -->
+
+<!-- slide 2 -->
+    <component id="ID_s2_title">
+        <text>
+            <![CDATA[<b>Factors to Consider for Data Delay</b>]]></text>
+    </component>
+    
+    <component id='ID_s2_table'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+	
+		<tr class="mtable_title">
+			<td colspan="3" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>	
+		 
+		<tr>
+			<td bgcolor='#666263' width="90"><font color='#FFFFFF'><b>Factor</b></font></td>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Mission Critical</b></p></font></td>
+			<td bgcolor='#666263'><font color='#FFFFFF'><b>Not Mission Critical</b></p></font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#E9E7E8'>Interactive</td>
+			<td bgcolor='#E9E7E8'>Prioritize for the lowest delay of all data traffic and strive for a 1 to 2 seconds response time.</td>
+			<td bgcolor='#E9E7E8'>Applications could benefit from lower delay.</td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>Not interactive</td>
+			<td bgcolor='#F2F2F2'>Delay can vary greatly as long as the necessary minimum bandwidth is supplied.</td>
+			<td bgcolor='#F2F2F2'>Gets any leftover bandwidth after all voice, video, and other data application needs are met.</td>
+		</tr>
+		
+	</table>]]>
+        </text>
+    </component>
+
+    <component id='ID_s2_table_html'>
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	 <caption class="mtable_title" colspan="3" bgcolor='#FFFFFF'><font size="3">Factors to Consider for Data Delay</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='3' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>	
+		 
+		<tr>
+			<th id="Factor" scope="col" bgcolor='#666263' width="90"><font color='#FFFFFF'><b>Factor</b></font></th>
+			<th id="Mission" scope="col" bgcolor='#666263'><font color='#FFFFFF'><b>Mission Critical</b></p></font></th>
+			<th id="Critical" scope="col" bgcolor='#666263'><font color='#FFFFFF'><b>Not Mission Critical</b></p></font></th>
+		</tr>
+		<tr>
+			<td headers="Factor" scope="row" bgcolor='#E9E7E8'>Interactive</td>
+			<td headers="Mission" bgcolor='#E9E7E8'>Prioritize for the lowest delay of all data traffic and strive for a 1 to 2 seconds response time.</td>
+			<td headers="Critical" bgcolor='#E9E7E8'>Applications could benefit from lower delay.</td>
+		</tr>
+		<tr>
+			<td headers="Factor" scope="row" bgcolor='#F2F2F2'>Not interactive</td>
+			<td headers="Mission" bgcolor='#F2F2F2'>Delay can vary greatly as long as the necessary minimum bandwidth is supplied.</td>
+			<td headers="Critical" bgcolor='#F2F2F2'>Gets any leftover bandwidth after all voice, video, and other data application needs are met.</td>
+		</tr>
+		
+	</table>]]>
+        </text>
+    </component>
+    
+<!-- end slide 2 -->
+     
+</textcomponents>

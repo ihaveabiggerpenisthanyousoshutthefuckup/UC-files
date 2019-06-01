@@ -1,0 +1,31 @@
+
+          <p>After a standard IPv4 ACL is configured, it is linked to an interface using the <b>ip access-group</b> command in interface configuration mode:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config-if)# </span>
+            <span class="cmd">
+              <b>ip access-group</b>
+            </span>
+            <span class="cmd"> {</span>
+            <span class="cmd">
+              <i>access-list-number</i>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <i>access-list-name</i>
+            </span>
+            <span class="cmd"> } {</span>
+            <span class="cmd">
+              <b>in</b>
+            </span>
+            <span class="cmd"> | </span>
+            <span class="cmd">
+              <b>out</b>
+            </span>
+            <span class="cmd"> }</span>
+          </p>
+          <p></p>
+          <p>To remove an ACL from an interface, first enter the <b>no ip access-group </b>command on the interface, and then enter the global <b>no access-list</b> command to remove the entire ACL.</p>
+          <p></p>
+          <p>The figure shows an example of an ACL designed to permit a single network. Only traffic from the 192.168.10.0/24 network will be permitted out the Serial 0/0/0 interface.</p>
+        

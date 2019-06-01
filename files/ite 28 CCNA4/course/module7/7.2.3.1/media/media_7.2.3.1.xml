@@ -1,0 +1,26 @@
+﻿<textcomponents>
+
+    <component id="ID_s1_title">
+		<text><![CDATA[<b>Type 1 Hypervisor – “Bare Metal” Approach</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Windows OS]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+	<text><![CDATA[Linux OS]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[UNIX OS]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Hypervisor]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Hardware]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[<b>Server</b>]]></text>
+	</component>
+	
+</textcomponents>

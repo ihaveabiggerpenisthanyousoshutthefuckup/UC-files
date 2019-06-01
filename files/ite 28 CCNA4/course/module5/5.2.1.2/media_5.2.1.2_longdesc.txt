@@ -1,0 +1,1 @@
+Figure 1 shows a table of SNMP operations and their descriptions. Figure 2 shows a worker sending an SNMP GET packet to check the MIB variable on G0/0 interface on the router R1.

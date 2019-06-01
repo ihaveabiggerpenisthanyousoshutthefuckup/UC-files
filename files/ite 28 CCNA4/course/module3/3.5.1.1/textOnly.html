@@ -1,0 +1,19 @@
+
+          <p>RIP, EIGRP and OSPF are Interior Gateway Protocols (IGPs). ISPs and their customers, such as corporations and other enterprises, usually use an IGP to route traffic within their networks. IGPs are used to exchange routing information within a company network or an autonomous system (AS).</p>
+          <p></p>
+          <p>Border Gateway Protocol (BGP) is an Exterior Gateway Protocol (EGP) used for the exchange of routing information between autonomous systems, such as ISPs, companies, and content providers (e.g., YouTube, Netflix, etc.).  </p>
+          <p></p>
+          <p>In BGP, every AS is assigned a unique 16-bit or 32-bit AS number which uniquely identifies it on the Internet.  An example of how IGPs are used is shown in the figure.</p>
+          <p></p>
+          <p>
+            <b>Note:</b> There are also private AS numbers. However, private AS numbers are beyond the scope of this course.</p>
+          <p></p>
+          <p>Internal routing protocols use a specific metric, such as OSPF’s cost, for determining the best paths to destination networks. BGP does not use a single metric like IGPs. BGP routers exchange several path attributes including a list of AS numbers (hop by hop) necessary to reach a destination network.  For example, in Figure 1 AS 65002 may use the AS-path of 65003 and 65005 to reach a network within the content provider AS 65005. BGP is known as a path vector routing protocol.</p>
+          <p></p>
+          <p>
+            <b>Note:</b> AS-path is one of several attributes that may be used by BGP to determine best path. However, path attributes and BGP best path determination are beyond the scope of this course.</p>
+          <p></p>
+          <p>BGP updates are encapsulated over TCP on port 179. Therefore, BGP inherits the connection-oriented properties of TCP, which ensures that BGP updates are transmitted reliably.</p>
+          <p></p>
+          <p>IGP routing protocols are used to route traffic within the same organization and administered by a single organization. In contrast, BGP is used to route between networks administered by two different organizations. BGP is used by an AS to advertise its networks and in some cases, networks that it learned about from other autonomous systems, to the rest of the Internet.</p>
+        

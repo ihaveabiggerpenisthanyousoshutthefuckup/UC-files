@@ -1,0 +1,362 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Activity - Compare Queuing Algorithms</b>]]></text>
+	</component>
+
+	<component id="ID_s1_instr_title">
+		<text><![CDATA[Instructions]]></text>
+	</component>
+
+	<component id="ID_s1_instr_body">
+		<text><![CDATA[Choose the correct algorithm for each characteristic.]]></text>
+	</component>
+
+	
+	<!--feedback-->
+	<component id='ID_s1_titleCorrect'>
+		<text><![CDATA[Correct]]></text>
+	</component>
+	
+	<component id='ID_s1_correctText'>
+		<text><![CDATA[You have successfully identified the Queuing algorithms.]]></text>
+	</component>
+	
+	<component id='ID_s1_titleIncorrect'>
+		<text><![CDATA[Incorrect]]></text>
+	</component>
+	
+	<component id='ID_s1_incorrectText'>
+		<text><![CDATA[You have not successfully identified the Queuing algorithms.Please click Reset to try again.]]></text>
+	</component>
+	
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+		
+
+
+
+<!--ComboBox 1-->
+
+	<component id="ID_s1_txt01">
+		<text><![CDATA[1. <textformat blockindent='14'>The bandwidth assigned to the packets of a class determines the order in<br><span class="align">which packets are sent</span></textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt01'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB01_01'>
+		<text><![CDATA[FIFO]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB01_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB01_03'>
+		<text><![CDATA[CBWFQ]]></text>
+	</component>
+
+	<component id='ID_s1_CB01_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 1-->
+
+<!--ComboBox 2-->
+
+	<component id="ID_s1_txt02">
+		<text><![CDATA[2. <textformat blockindent='14'>Simultaneously schedules interactive traffic to the front of a queue to <br><span class="align">reduce response time</span></textformat>]]></text>
+	</component>
+	
+	<component id='ID_s1_CBprompt02'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB02_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB02_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB02_03'>
+		<text><![CDATA[CBWFQ]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB02_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 2-->
+
+
+<!--ComboBox 3-->
+	<component id="ID_s1_txt03">
+		<text><![CDATA[3. <textformat blockindent='14'>Important or time-sensitive traffic can be dropped when congestion occurs <br><span class="align">on the router or switch interface</span></textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt03'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB03_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB03_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB03_03'>
+		<text><![CDATA[CBWFQ]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB03_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 3-->
+
+
+<!--ComboBox 4-->
+	<component id="ID_s1_txt04">
+		<text><![CDATA[4. <textformat blockindent='14'>Provides support for user-defined traffic classes</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt04'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB04_01'>
+		<text><![CDATA[FIFO]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB04_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB04_03'>
+		<text><![CDATA[CBWFQ]]></text>
+	</component>
+
+	<component id='ID_s1_CB04_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 4-->
+
+<!--ComboBox 5-->
+	<component id="ID_s1_txt05">
+		<text><![CDATA[5. <textformat blockindent='14'>Allows delay-sensitive data such as voice to be sent before packets in other <br><span class="align">queues</span></textformat>]]></text>
+	</component>
+
+	-<component id='ID_s1_CBprompt05'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB05_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB05_02'>
+		<text><![CDATA[WFQ]]></text> <!--answer--> 
+	</component>
+
+	<component id='ID_s1_CB05_03'>
+		<text><![CDATA[CBWFQ]]></text>
+	</component>
+
+	<component id='ID_s1_CB05_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 5-->
+
+
+<!--ComboBox 6-->
+	<component id="ID_s1_txt06">
+		<text><![CDATA[6. <textformat blockindent='14'>Effective for large links that have little delay and minimal congestion</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt06'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB06_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB06_02'>
+		<text><![CDATA[WFQ]]></text>
+	</component>
+
+	<component id='ID_s1_CB06_03'>
+		<text><![CDATA[CBWFQ]]></text>  <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB06_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 6-->
+
+
+<!--ComboBox 7-->
+	<component id="ID_s1_txt07">
+		<text><![CDATA[7. <textformat blockindent='14'>Applies priority, or weights, to identify traffic and classify it into conversations <br><span class="align">or flows</span></textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt07'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB07_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB07_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB07_03'>
+		<text><![CDATA[CBWFQ]]></text>  <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB07_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+
+<!--End ComboBox 7-->
+
+
+<!--ComboBox 8-->
+
+	<component id="ID_s1_txt08">
+		<text><![CDATA[8. <textformat blockindent='14'>A automated scheduling method that provides fair bandwidth allocation to all <br><span class="align">network traffic</span></textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt08'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB08_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB08_02'>
+		<text><![CDATA[WFQ]]></text> <!--answer--> 
+	</component>
+
+	<component id='ID_s1_CB08_03'>
+		<text><![CDATA[CBWFQ]]></text>
+	</component>
+
+	<component id='ID_s1_CB08_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 8-->
+
+
+<!--ComboBox 9-->
+
+	<component id="ID_s1_txt09">
+		<text><![CDATA[9. <textformat blockindent='14'>Packets satisfying the match criteria for a class constitute the traffic for that <br><span class="align">class</span></textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt09'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB09_01'>
+		<text><![CDATA[FIFO]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB09_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB09_03'>
+		<text><![CDATA[CBWFQ]]></text>
+	</component>
+
+	<component id='ID_s1_CB09_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 9-->
+
+
+<!--ComboBox 10-->
+
+	<component id="ID_s1_txt10">
+		<text><![CDATA[10. <textformat blockindent='14'>Classifies traffic into different flows based on packet header addressing</textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt10'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB10_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB10_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB10_03'>
+		<text><![CDATA[CBWFQ]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB10_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+
+<!--End ComboBox 10-->
+
+<!--ComboBox 11-->
+
+	<component id="ID_s1_txt11">
+		<text><![CDATA[11. <textformat blockindent='14'>A FIFO queue is reserved for each class, and traffic belonging to a class is <br><span class="align1">directed to the queue for that class</span></textformat>]]></text>
+	</component>
+
+	<component id='ID_s1_CBprompt11'>
+		<text><![CDATA[Select an answer ...]]></text>
+	</component>
+	
+	<component id='ID_s1_CB11_01'>
+		<text><![CDATA[FIFO]]></text>
+	</component>
+
+	<component id='ID_s1_CB11_02'>
+		<text><![CDATA[WFQ]]></text> 
+	</component>
+
+	<component id='ID_s1_CB11_03'>
+		<text><![CDATA[CBWFQ]]></text> <!--answer-->
+	</component>
+
+	<component id='ID_s1_CB11_04'>
+		<text><![CDATA[LLQ]]></text>
+	</component>
+
+<!--End ComboBox 11-->
+
+
+<!--End Slide 1-->
+
+
+</textcomponents>

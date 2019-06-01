@@ -1,0 +1,19 @@
+
+          <p>Packet filtering controls access to a network by analyzing the incoming and outgoing packets and forwarding them or discarding them based on given criteria. Packet filtering can occur at Layer 3 or Layer 4. Standard ACLs only filter at Layer 3. Extended ACLs filter at Layer 3 and Layer 4. </p>
+          <p></p>
+          <p>For example, an ACL could be configured to logically, "Permit web access to users from network A but deny all other services to network A users. Deny HTTP access to users from network B, but permit network B users to have all other access." Refer to the figure to examine the decision path the packet filter uses to accomplish this task.</p>
+          <p></p>
+          <p>For this scenario, the packet filter looks at each packet as follows:</p>
+          <p>
+            <ul>
+              <li>If the packet is a TCP SYN from Network A using Port 80, it is allowed to pass. All other access is denied to those users.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the packet is a TCP SYN from Network B using Port 80, it is blocked. However, all other access is permitted.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>This is just a simple example. Multiple rules can be configured to further permit or deny services to specific users.</p>
+        

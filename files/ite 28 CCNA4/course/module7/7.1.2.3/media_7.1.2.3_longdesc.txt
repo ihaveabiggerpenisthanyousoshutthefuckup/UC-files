@@ -1,0 +1,1 @@
+The figures on this page display three different types of network security devices. Figure 1 shows a Cisco ISA 3000 industrial security appliance. Figure 2 shows a Cisco ASA Firewall device. Figure 3 shows two types of Cisco Video Surveillance IP Cameras.

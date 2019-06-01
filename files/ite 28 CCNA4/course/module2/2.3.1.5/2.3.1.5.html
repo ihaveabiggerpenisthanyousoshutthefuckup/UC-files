@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.1.5 PPP Multilink Commands</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.1.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPP Multilink Commands</h1>
+        <div>
+          <p>Multilink PPP (also referred to as MP, MPPP, MLP, or Multilink) provides a method for spreading traffic across multiple physical WAN links. Multilink PPP also provides packet fragmentation and reassembly, proper sequencing, multivendor interoperability, and load balancing on inbound and outbound traffic. </p>
+          <p></p>
+          <p>MPPP allows packets to be fragmented and sends these fragments simultaneously over multiple point-to-point links to the same remote address. The multiple physical links come up in response to a user-defined load threshold. MPPP can measure the load on just inbound traffic, or on just outbound traffic, but not on the combined load of both inbound and outbound traffic.</p>
+          <p></p>
+          <p>Configuring MPPP requires two steps, as shown in the figure. </p>
+          <p></p>
+          <p>
+            <b>Step 1. </b> Create a multilink bundle. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The<b> interface multilink </b><i>number </i>command creates the multilink interface. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>In interface configuration mode, an IP address is assigned to the multilink interface. In this example, both IPv4 and IPv6 addresses are configured on routers R3 and R4.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The interface is enabled for multilink PPP. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The interface is assigned a multilink group number.  </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Step 2. </b> Assign interfaces to the multilink bundle. </p>
+          <p></p>
+          <p>Each interface that is part of the multilink group:</p>
+          <p>
+            <ul>
+              <li>Is enabled for PPP encapsulation.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is enabled for multilink PPP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is bound to the multilink bundle using the PPP multilink group number configured in Step 1.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>To disable PPP multilink, use the<b> no ppp multilink </b>command on each of the bundled interfaces. For example:</p>
+          <p></p>
+          <p>
+            <span class="cmd">R3(config)# </span>
+            <span class="cmd">
+              <b>interface s0/0/0</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R3(config-if)# </span>
+            <span class="cmd">
+              <b>no ppp multilink</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R3(config-if)# </span>
+            <span class="cmd">
+              <b>interface s0/0/1</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">R3(config-if)# </span>
+            <span class="cmd">
+              <b>no ppp multilink</b>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two routers connected using two serial ports from each router and forming a p.p.p. multilink bundle.  The figure shows the output from the configuration file, and is highlighting the lines that refer to the bundle.  The first highlighted section creates the bundle and the first line is p.p.p multilink.  The second line is p.p.p. multilink group 1.  Each of the two serial interfaces used in the multilink bundle have the same two lines as in the configuration file.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

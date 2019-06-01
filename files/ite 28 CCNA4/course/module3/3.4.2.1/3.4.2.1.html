@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.4.2.1 Configure GRE</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.4.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configure GRE</h1>
+        <div>
+          <p>GRE is used to create a VPN tunnel between two sites, as shown in Figure 1. To implement a GRE tunnel, the network administrator must first learn the IP addresses of the endpoints. After that, there are five steps to configuring a GRE tunnel:</p>
+          <p>
+            <b>Step 1.</b> Create a tunnel interface using the <b>interface tunnel </b><i>number</i><i></i>command.</p>
+          <p>
+            <b>Step 2.</b> Configure an IP address for the tunnel interface. This is normally a private IP address.</p>
+          <p>
+            <b>Step 3.</b> Specify the tunnel source IP address.</p>
+          <p>
+            <b>Step 4.</b> Specify the tunnel destination IP address.</p>
+          <p>
+            <b>Step 5.</b> (Optional) Specify GRE tunnel mode as the tunnel interface mode. GRE tunnel mode is the default tunnel interface mode for Cisco IOS software.</p>
+          <p></p>
+          <p>The sample configuration in Figure 2 illustrates a basic GRE tunnel configuration for router R1.</p>
+          <p></p>
+          <p>The configuration of R2 in Figure 3 mirrors the configuration of R1.</p>
+          <p></p>
+          <p>The minimum configuration requires specification of the tunnel source and destination addresses. The IP subnet must also be configured to provide IP connectivity across the tunnel link. Both tunnel interfaces have the tunnel source set as the local serial S0/0/0 interface and the tunnel destination set as the peer router serial S0/0/0 interface. A private IP address is commonly assigned to the tunnel interface on both routers. OSPF has also been configured to exchange routes over the GRE tunnel.</p>
+          <p></p>
+          <p>The individual GRE tunnel command descriptions are displayed in Figure 4.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: When configuring GRE tunnels, it can be difficult to remember which IP networks are associated with the physical interfaces and which IP networks are associated with the tunnel interfaces. Remember that before a GRE tunnel is created, the physical interfaces have already been configured. The <b>tunnel source</b> and <b>tunnel destination</b> commands reference the IP addresses of the preconfigured physical interfaces. The <b>ip address</b> command on the tunnel interfaces refers to an IP network (usually a private IP network) specifically selected for the purposes of the GRE tunnel.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the GRE Tunnel Configuration topology with router R1 to the left connecting through S0/0/0 to the Internet cloud. Out the right side of the Internet cloud is a connection to router R2 via S0/0/0. A GRE tunnel cylinder is above the internet cloud. Both the left and right sides of the tunnel are labeled Tunnel 0. Figure 2 adds IP addressing information to the topology. Tunnel0 on the left is 192.168.2.1. Tunnel 0 on the right is 192.168.2.2. R1 S0/0/0 is 209.165.201.1 and R2 S0/0/0 is 198.133.219.87. The figure shows the tunnel and OSPF configuration commands for R1. Figure 3 shows the same topology and IP addressing information along with the tunnel and OSPF configuration for R2. Figure 4 has the commands used to create a GRE tunnel and a description of each command in a table. The table has 2 columns—command and description. The first command is tunnel mode gre ip which specifies that the mode of the tunnel interface is GRE over IP. The second command is tunnel source followed by an IP address. This command specifies the tunnel source address. The third command is tunnel destination followed by a IP address which is used to specify the tunnel destination address. The last command is ip address followed by an address and a subnet mask. This is used to specify the IP address of the tunnel interface.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

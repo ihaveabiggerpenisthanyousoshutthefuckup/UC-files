@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.2 Configuring IPv6 ACLs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Configuring IPv6 ACLs</h1>
+        <div>
+          <p>In IPv6 there are only named ACLs. The configuration is similar to that of an IPv4 extended named ACL. </p>
+          <p></p>
+          <p>Figure 1 shows the command syntax for IPv6 ACLs. The syntax is similar to the syntax used for an IPv4 extended ACL. One significant difference is the use of the IPv6 prefix-length instead of an IPv4 wildcard mask.</p>
+          <p></p>
+          <p>There are three basic steps to configure an IPv6 ACL:</p>
+          <p></p>
+          <p>
+            <b>Step 1. </b>From global configuration mode, use the <b>ipv6 access-list </b><i>name </i>command to create an IPv6 ACL. Like IPv4 named ACLs, IPv6 names are alphanumeric, case sensitive, and must be unique. Unlike IPv4, there is no need for a standard or extended option. </p>
+          <p></p>
+          <p>
+            <b>Step 2. </b>From the named ACL configuration mode, use the <b>permit</b> or <b>deny</b> statements to specify one or more conditions to determine if a packet is forwarded or dropped. </p>
+          <p></p>
+          <p>
+            <b>Step 3. </b>Return to privileged EXEC mode with the <b>end</b> command.</p>
+          <p></p>
+          <p>Figure 2 demonstrates the steps to create an IPv6 ACL with a simple example based on the previous topology. The first statement names the IPv6 access list NO-R3-LAN-ACCESS. Similar to IPv4 named ACLs, capitalizing IPv6 ACL names is not required, but makes them stand out when viewing the running-config output.</p>
+          <p></p>
+          <p>The second statement denies all IPv6 packets from the 2001:DB8:CAFE:30::/64 destined for any IPv6 network. The third statement allows all other IPv6 packets.</p>
+          <p></p>
+          <p>Figure 3 shows the ACL in context with the topology.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the common command syntax and options for an i.p.v.6. A.C.L.  The command starts with the key phrase, i.p.v.6. access hyphen list.  This is followed by the name of the A.C.L.  Next is either a permit or deny statement, the protocol, the source and destination addresses, the option of the keyword any to match all addresses, or the keyword host to apply to a specific host, an operator such as equals, and the optional port name or number. Figure two shows an example creating an i.p.v.6. A.C.L.  The first command is, i.p.v.6. access hyphen list no hyphen R.3 hyphen lan hyphen access.  The next command is, deny i.p.v.6. 2 0 0 1 colon d b 8 colon c a f e colon 3 0 colon colon slash 30 any.  The last command is, permit i.p.v.6. any any. Figure three shows the topology from figure one and the commands from figure two in one figure for reference.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

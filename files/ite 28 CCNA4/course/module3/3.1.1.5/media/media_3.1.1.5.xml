@@ -1,0 +1,40 @@
+<textcomponents>
+
+<!--SLIDE 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Municipal WiFi (Mesh) Implementation</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>Access Point</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<b>Backhaul Node</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt03">
+		<text><![CDATA[<b>To the Internet</b>]]></text>
+	</component>
+
+
+<!--SLIDE 2-->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Mobile Broadband Implementation</b>]]></text>
+	</component>
+
+
+<!--SLIDE 3-->
+	<component id="ID_s3_title">
+  		<text><![CDATA[<b>Two-Way Satellite Implementation</b>]]></text> 
+	</component>
+	
+	<component id="ID_s3_txt01">
+	  <text><![CDATA[Satellite Service Subscriber]]></text>
+	</component>
+	  
+	<component id="ID_s3_txt02">
+	  <text><![CDATA[Satellite Internet Service Provider (ISP)]]></text>
+	</component>
+
+</textcomponents>

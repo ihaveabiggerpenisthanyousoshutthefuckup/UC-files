@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.2.3.2 LCP Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.2.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>LCP Operation</h1>
+        <div>
+          <p>LCP operation includes provisions for link establishment, link maintenance, and link termination. LCP operation uses three classes of LCP frames to accomplish the work of each of the LCP phases:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Link-establishment frames establish and configure a link (Configure-Request, Configure-Ack, Configure-Nak, and Configure-Reject).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Link-maintenance frames manage and debug a link (Code-Reject, Protocol-Reject, Echo-Request, Echo-Reply, and Discard-Request).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Link-termination frames terminate a link (Terminate-Request and Terminate-Ack).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>Link Establishment</b>
+          </p>
+          <p>Link establishment is the first phase of LCP operation, as seen in Figure 1. This phase must complete successfully, before any network layer packets can be exchanged. During link establishment, the LCP opens the connection and negotiates the configuration parameters. The link establishment process starts with the initiating device sending a Configure-Request frame to the responder. The Configure-Request frame includes a variable number of configuration options needed to set up on the link. </p>
+          <p></p>
+          <p>The initiator includes the options for how it wants the link created, including protocol or authentication parameters. The responder processes the request: </p>
+          <p>
+            <ul>
+              <li>If the options are not acceptable or not recognized, the responder sends a Configure-Nak or Configure-Reject message. If this occurs and the negotiation fails, the initiator must restart the process with new options. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>If the options are acceptable, the responder responds with a Configure-Ack message and the process moves on to the authentication stage. The operation of the link is handed over to the NCP.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When NCP has completed all necessary configurations, including validating authentication if configured, the line is available for data transfer. During the exchange of data, LCP transitions into link maintenance.</p>
+          <p></p>
+          <p>
+            <b>Link Maintenance</b>
+          </p>
+          <p>During link maintenance, LCP can use messages to provide feedback and test the link, as shown in Figure 2:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Echo-Request, Echo-Reply, and Discard-Request</b> - These frames can be used for testing the link.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Code-Reject and Protocol-Reject</b> - These frame types provide feedback when one device receives an invalid frame. The sending device will resend the packet.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Link Termination</b>
+          </p>
+          <p>After the transfer of data at the network layer completes, the LCP terminates the link, as shown in Figure 3. NCP only terminates the network layer and NCP link. The link remains open until the LCP terminates it. If the LCP terminates the link before NCP, the NCP session is also terminated. </p>
+          <p></p>
+          <p>PPP can terminate the link at any time. This might happen because of the loss of the carrier, authentication failure, link quality failure, the expiration of an idle-period timer, or the administrative closing of the link. The LCP closes the link by exchanging Terminate packets. The device initiating the shutdown sends a Terminate-Request message. The other device replies with a Terminate-Ack. A termination request indicates that the device sending it needs to close the link. When the link is closing, PPP informs the network layer protocols so that they may take appropriate action.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows more details regarding the P.P.P. link establishment.  The first router sends an L.C.P. configure request to the receiving router, which in turn will send an L.C.P. configure acknowledgement back. Figure two shows P.P.P. link maintenance messages being sent between the two routers.  The figure shows echo requests, echo reply messages, and code reject messages being sent between them. Figure three shows one router sending an L.C.P. terminate request message to the other router, which in turn responds with an L.C.P. terminate ack message.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+          <p>One of the most basic and common LAN switch attacks is the MAC address flooding attack. This attack is also known as a MAC address table overflow attack, or a CAM table overflow attack. </p>
+          <p></p>
+          <p>Consider what happens when a switch receives incoming frames. The MAC address table in a switch contains the MAC addresses associated with each physical port, and the associated VLAN for each port. When a Layer 2 switch receives a frame, the switch looks in the MAC address table for the destination MAC address. All Catalyst switch models use a MAC address table for Layer 2 switching. As frames arrive on switch ports, the source MAC addresses are recorded in the MAC address table. If an entry exists for the MAC address, the switch forwards the frame to the correct port. If the MAC address does not exist in the MAC address table, the switch floods the frame out of every port on the switch, except the port where the frame was received. </p>
+          <p></p>
+          <p>Figures 1 through 3 illustrate this default switch behaviour.</p>
+          <p></p>
+          <p>In Figure 1, host A sends traffic to host B. The switch receives the frames and adds the source MAC address of host A to its MAC address table. The switch then looks up the destination MAC address in its MAC address table. If the switch does not find the destination MAC in the MAC address table, it copies the frame and floods (broadcasts) it out of every switch port, except the port where it was received.</p>
+          <p></p>
+          <p>In Figure 2, host B receives and processes the frame. It then sends a reply to host A. The switch receives the incoming frame from host B. The switch then adds the source MAC address and port assignment for host B to its MAC address table. The switch then looks for the destination MAC address in its MAC address table and forwards the frames out of Port 1 towards host A. </p>
+          <p></p>
+          <p>The MAC address table of the switch eventually learns all MAC addresses connected to it and forwards frames between communicating ports only. In Figure 3 for example, any frame sent by host A (or any other host) to host B is forwarded out port 2 of the switch. It is not broadcasted out every port because the switch knows the location of the destination MAC address.</p>
+          <p></p>
+          <p>An attacker can exploit this default switch behaviour to create a MAC address flooding attack. MAC address tables are limited in size. MAC flooding attacks exploit this limitation with fake source MAC addresses until the switch MAC address table is full and the switch is overwhelmed. </p>
+          <p></p>
+          <p>Figures 4 and 5 illustrate how a MAC address table flooding attack is generated.</p>
+          <p></p>
+          <p>In Figure 4, an attacker uses a network attack tool and continuously sends frames with fake, randomly-generated source and destination MAC addresses to the switch. The switch keeps updating its MAC address table with the information in the fake frames. </p>
+          <p></p>
+          <p>Eventually, the MAC address table becomes full of fake MAC addresses and enters into what is known as fail-open mode. In this mode, the switch broadcasts all frames to all machines on the network. As a result, the attacker can capture all of the frames, even frames that are not addressed to its MAC address table.</p>
+          <p></p>
+          <p>In Figure 5, the switch is in fail-open mode and broadcasts all received frames out of every port. Therefore, frames sent from host A to host B are also broadcast out of port 3 on the switch and seen by the attacker.</p>
+          <p></p>
+          <p>Configure port security on the switch to mitigate MAC address table overflow attacks.</p>
+        

@@ -1,0 +1,25 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>What is PPP?</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[HDLC is the default encapsulation method on a serial link.]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Use PPP encapsulation to connect a Cisco router to a non-Cisco router.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>PPP</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[HDLC-Like Encapsulation]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[LCP]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[NCPs]]></text> 
+  </component>
+</textcomponents>

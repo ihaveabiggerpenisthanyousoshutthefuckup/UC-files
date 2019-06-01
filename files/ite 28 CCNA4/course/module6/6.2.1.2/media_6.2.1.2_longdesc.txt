@@ -1,0 +1,1 @@
+Figure shows a table of three models for implementing QoS, Best-effort, Integrated services (IntServ), and Differentiated services (DiffServ).

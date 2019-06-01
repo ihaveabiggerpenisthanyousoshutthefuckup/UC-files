@@ -1,0 +1,35 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#txt_q1,#txt_q2,#txt_q3{line-height:12px!important;}
+#txt_q4{letter-spacing:-0.1px;line-height:12px!important;}
+#txt_q5{letter-spacing:-0.1px;line-height:12px!important;}
+#txt_q6{letter-spacing:-0.1px;margin-top:6px!important;line-height:12px!important;}
+.spacing{
+line-height:12px!important;
+}
+
+#txt_col1,#txt_col2,#txt_col6{
+	margin-top: 28px;
+}
+#txt_col3,#txt_col5{
+	margin-top: 15px;
+}
+
+@media only screen and (device-width: 768px) {
+#txt_q1,#txt_q2,#txt_q3{line-height:12px!important;}
+#txt_q4{letter-spacing:-0.1px;line-height:12px!important;}
+#txt_q5{letter-spacing:-0.1px;line-height:12px!important;}
+#txt_q6{letter-spacing:-0.1px;margin-top:6px!important;line-height:12px!important;}
+.spacing{
+line-height:12px!important;
+}
+#txt_q1,#txt_q4{
+	margin-top:5px!important;
+}
+#mc_table{
+	height:319px !important;
+	}
+}

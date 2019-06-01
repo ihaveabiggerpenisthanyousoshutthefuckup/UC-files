@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.1.6 DHCP Attacks</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>DHCP Attacks</h1>
+        <div>
+          <p>DHCP is the protocol that automatically assigns a host a valid IP address out of a DHCP pool. </p>
+          <p></p>
+          <p>There are two types of DHCP attacks which can be performed against a switched network: </p>
+          <p>
+            <ul>
+              <li>
+                <b>DHCP spoofing attack</b> - An attacker configures a fake DHCP server on the network to issue IP addresses to clients. This type of attack forces the clients to use both a false Domain Name System (DNS) server and a computer which is under the control of the attacker as their default gateway.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DHCP starvation attack</b> - An attacker floods the DHCP server with bogus DHCP requests and eventually leases all of the available IP addresses in the DHCP server pool. After these IP addresses are issued, the server cannot issue any more addresses, and this situation produces a denial-of-service (DoS) attack as new clients cannot obtain network access. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: A DoS attack is any attack that is used to overload specific devices and network services with illegitimate traffic, thereby preventing legitimate traffic from reaching those resources.</p>
+          <p></p>
+          <p>DHCP starvation is often used before a DHCP spoofing attack to deny service to the legitimate DHCP server. This makes it easier to introduce a fake DHCP server into the network.</p>
+          <p></p>
+          <p>Configure DHCP snooping and port security on the switch to mitigate DHCP attacks. </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows a network of three switches, one client computer, and a DHCP server.  A rogue DHCP server is inserted into the network by an attacker in an attempt to initiate a DHCP spoofing attack.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

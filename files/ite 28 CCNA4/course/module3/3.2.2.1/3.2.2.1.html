@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.1 PPPoE Configuration</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPPoE Configuration</h1>
+        <div>
+          <p>With the ability to send and receive PPP frames between the routers, the ISP could continue to use the same authentication model as with analog and ISDN. To make it all work, the client and ISP routers need additional configuration, including PPP configuration, as shown in Figure 1. To understand the configuration, consider the following:</p>
+          <p></p>
+          <p>1. To create a PPP tunnel, the configuration uses a dialer interface. A dialer interface is a virtual interface. The PPP configuration is placed on the dialer interface, not the physical interface. The dialer interface is created using the<b> interface dialer </b><i>number </i>global configuration<i></i>command. The client can configure a static IP address, but will more likely be automatically assigned a public IP address by the ISP.</p>
+          <p></p>
+          <p>2. The PPP CHAP configuration usually defines one-way authentication; therefore, the ISP authenticates the customer. The hostname and password configured on the customer router must match the hostname and password configured on the ISP router. Notice in the figure that the CHAP username and password match the settings on the ISP router.</p>
+          <p></p>
+          <p>3. The physical Ethernet interface that connects to the DSL modem is then enabled with the command<b> pppoe enable</b> interface configuration command. This command enables PPPoE and links the physical interface to the dialer interface. The dialer interface is linked to the Ethernet interface with the<b> dialer pool </b>and <b>pppoe-client</b> interface configuration commands, using the same number. The dialer interface number does not have to match the dialer pool number.</p>
+          <p></p>
+          <p>4. The maximum transmission unit (MTU) should be set down to 1492, versus the default of 1500, to accommodate the PPPoE headers.</p>
+          <p>Use the Syntax Checker in Figure 2 to practice configuring PPPoE.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows a sample PPPoE configuration for a customer router. The first section labeled 1 is PPP and IP on dialer with the following commands: interface dialer 2, encapsulation ppp, ip address negotiated. The second section labeled 2 is authenticate inbound only with the following commands: ppp chap hostname Fred, ppp chap password Barney. An arrow extends from these two commands to a box that has the following words: ISP router, user: Fred, password: Barney, Status: Paid in full. The next configuration commands are as follows: ip mtu 1492, dialer pool 1, no shutdown, interface gigabitethernet0/1, no ip address, pppoe enable, pppoe-client dial-pool-number 1, no shutdown. A box labeled 3 shows arrows pointing to the number 1 in the dialer pool 1 command and to the number 1 in the pppoe-client dial-pool-number 1 command. The words inside the number 3 box is as follows: dialer pool must match. Item 4 is beside the command ip mtu 1492 command.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

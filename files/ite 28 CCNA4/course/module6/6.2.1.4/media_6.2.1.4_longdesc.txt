@@ -1,0 +1,1 @@
+Figure 1 shows an example of simple IntServ QoS model. Figure 2 shows a table of benefits and drawbacks of IntServ QoS model.

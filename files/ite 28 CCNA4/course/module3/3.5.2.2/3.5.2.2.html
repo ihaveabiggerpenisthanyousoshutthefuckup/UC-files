@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.5.2.2 When not to use BGP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.5.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>When not to use BGP</h1>
+        <div>
+          <p>BGP should not be used when at least one of the following conditions exist:</p>
+          <p>
+            <ul>
+              <li>There is a single connection to the Internet or another AS. This is known as single-homed. In this case, Company-A may run an IGP with the ISP or, Company-A and the ISP will each use static routes, as shown in the figure. Although it is recommended only in unusual situations, for the purposes of this course, you will configure single-homed BGP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When there is a limited understanding of BGP.  A misconfiguration of a BGP router can have far reaching affects beyond the local AS, negatively impacting routers throughout the Internet.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Note</b>: There are some single-homed situations where BGP may be appropriate, such as the need for a specific routing policy. However, routing policies are beyond the scope of this course.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">To show a single-homed connection, a company-A cloud with internal routers has one router that connects to a router inside a cloud labeled AS 65001 ISP-1. An arrow points away from Company-A toward AS 65001 ISP-1 with the words default static route. An arrow points away from the AS 65001 cloud toward the Company-A cloud with the words static route given. Within the AS 65001 ISP-1 cloud are several routers. An Internet cloud attaches to the AS 65001 cloud. </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

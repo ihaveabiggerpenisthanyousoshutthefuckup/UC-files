@@ -1,0 +1,64 @@
+﻿<textcomponents>
+	<component id="ID_title01">
+		<text><![CDATA[<b>Transport Layer Symptoms and Causes</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Symptoms</b><textformat blockindent='-17'><ul><li>Connectivity Issues</li><li>Access Issues</li></ul><textformat>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Causes</b><textformat blockindent='-17'><ul><li>ACL configurations</li><li>NAT configurations</li></ul><textformat>]]></text>
+	</component>
+
+<component id='ID_osi_txt07'>
+	<text><![CDATA[7. Application]]></text>
+</component>
+<component id='ID_osi_txt06'>
+	<text><![CDATA[6. Presentation]]></text>
+</component>
+<component id='ID_osi_txt05'>
+	<text><![CDATA[5. Session]]></text>
+</component>
+<component id='ID_osi_txt04'>
+	<text><![CDATA[4. Transport]]></text>
+</component>
+<component id='ID_osi_txt03'>
+	<text><![CDATA[3. Network]]></text>
+</component>
+<component id='ID_osi_txt02'>
+	<text><![CDATA[2. Data Link ]]></text>
+</component>
+<component id='ID_osi_txt01'>
+	<text><![CDATA[1. Physical]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Common ACL Misconfigurations</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Common ACL Misconfigurations</b><textformat blockindent='-14'><ul><li>Selection of traffic flow</li><li>Order of ACL entries</li><li>Implicit <b>deny any</b></li><li>Address and IPv4 wildcard masks</li><li>Selection of transport layer protocol</li><li>Source and destination ports</li><li>Use of the<font face="_typewriter"><b> established </b></font> keyword</li><li>Uncommon protocols</li></ul><textformat>]]></text>
+</component>
+
+<component id='ID2_osi_txt07'>
+	<text><![CDATA[7. Application]]></text>
+</component>
+<component id='ID2_osi_txt06'>
+	<text><![CDATA[6. Presentation]]></text>
+</component>
+<component id='ID2_osi_txt05'>
+	<text><![CDATA[5. Session]]></text>
+</component>
+<component id='ID2_osi_txt04'>
+	<text><![CDATA[4. Transport]]></text>
+</component>
+<component id='ID2_osi_txt03'>
+	<text><![CDATA[3. Network]]></text>
+</component>
+<component id='ID2_osi_txt02'>
+	<text><![CDATA[2. Data Link ]]></text>
+</component>
+<component id='ID2_osi_txt01'>
+	<text><![CDATA[1. Physical]]></text>
+</component>
+
+</textcomponents>

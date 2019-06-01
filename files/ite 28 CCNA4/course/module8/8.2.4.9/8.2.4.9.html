@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>8.2.4.9 Step 7 - Verify ACLs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_8.2.4.9_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Step 7 - Verify ACLs</h1>
+        <div>
+          <p>On routers, there may be ACLs configured that prohibit protocols from passing through the interface in the inbound or outbound direction.</p>
+          <p></p>
+          <p>Use the<b> show ip access-lists </b>command to display the contents of all IPv4 ACLs and the<b> show ipv6 access-list </b>command to show the contents of all IPv6 ACLs configured on a router. The specific ACL can be displayed by entering the ACL name or number as an option for this command; you can display a specific ACL. The<b> show ip interfaces </b>and<b> show ipv6 interfaces </b>commands display IPv4 and IPv6 interface information that indicates whether any IP ACLs are set on the interface.</p>
+          <p></p>
+          <p>
+            <b>Troubleshooting Example</b>
+          </p>
+          <p>To prevent spoofing attacks, the network administrator decided to implement an ACL preventing devices with a source network address of 172.16.1.0/24 from entering the inbound S0/0/1 interface on R3, as shown in Figure 1. All other IP traffic should be allowed.</p>
+          <p></p>
+          <p>However, shortly after implementing the ACL, users on the 10.1.10.0/24 network were unable to connect to devices on the 172.16.1.0/24 network, including SRV1. The<b> show ip access-lists </b>command shows that the ACL is configured correctly, as shown in Figure 2. The <b>show ip interfaces serial 0/0/1 </b>command reveals that the ACL was never applied to the inbound interface on Serial 0/0/1. Further investigation reveals that the ACL was accidentally applied to the G0/0 interface, blocking all outbound traffic from the 172.16.1.0/24 network. </p>
+          <p></p>
+          <p>After correctly placing the IPv4 ACL on the Serial 0/0/1 inbound interface, as shown in Figure 3, devices are able to successfully connect to the server.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the standard c.c.n.a. lab topology with i.p.v. 4 and i.p.v. 6 addressing displayed.  The call-out from router three states that to prevent spoofing attacks, deny all packets with a source address of one seventy two dot sixteen dot one dot zero slash twenty four from entering serial zero slash zero slash zero. Figure two shows the output from the show i.p. access dash lists command on router three, followed by the output from the show i.p. interface serial zero slash zero slash one pipe include access list command, followed by the output from the show i.p. interface gigabit ethernet zero slash zero slash one pipe include access list command. Figure three shows the commands for removing the access list one hundred from inbound on gigabit ethernet zero slash zero and adding it to inbound on serial zero slash zero slash one.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

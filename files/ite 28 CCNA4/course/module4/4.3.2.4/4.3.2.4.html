@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.3.2.4 IPv6 ACL Examples </title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.3.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>IPv6 ACL Examples </h1>
+        <div>
+          <p>
+            <b>Deny FTP</b>
+          </p>
+          <p></p>
+          <p>The topology for the examples is shown in Figure 1.</p>
+          <p></p>
+          <p>In the first example (Figure 2), router R1 is configured with an IPv6 access list to deny FTP traffic to 2001:DB8:CAFE:11::/64. Ports for both FTP data (port 20) and FTP control (port 21) need to be blocked. Because the filter is applied inbound on the G0/1 interface on R1, only traffic from the 2001:DB8:CAFE:10::/64 network will be denied.</p>
+          <p></p>
+          <p>
+            <b>Restricted Access</b>
+          </p>
+          <p></p>
+          <p>In the second example (Figure 3), an IPv6 ACL is configured to give the LAN on R3 limited access to the LANs on R1. Comments are added in the configuration to document the ACL. The following features have been labelled in the ACL:</p>
+          <p></p>
+          <p>1. The first two permit statements allow access from any device to the web server at 2001:DB8:CAFE:10::10. </p>
+          <p></p>
+          <p>2. All other devices are denied access to the 2001:DB8:CAFE:10::/64 network.</p>
+          <p></p>
+          <p>3. PC3 at 2001:DB8:CAFE:30::12 is permitted Telnet access to PC2 which has the IPv6 address 2001:DB8:CAFE:11::11.</p>
+          <p></p>
+          <p>4. All other devices are denied Telnet access to PC2.</p>
+          <p></p>
+          <p>5. All other IPv6 traffic is permitted to all other destinations.</p>
+          <p></p>
+          <p>6. The IPv6 access list is applied to interface G0/0 in the inbound direction, so only the 2001:DB8:CAFE:30::/64 network is affected.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one is showing the reference topology for i.p.v.6. A.C.L.s. Figure two lists the commands used to create an A.C.L. that will deny f.t.p.  The commands begin in global configuration mode. The first command is, i.p.v.6. access hyphen list no hyphen f.t.p. hyphen to hyphen 11.  This command creates the named i.p.v.6. A.C.L.  The next two commands deny the f.t.p. protocol, and they are, deny t.c.p. any 2 0 0 1 colon D B 8 colon C A F E colon 1 1 colon colon slash 64 e.q. f.t.p., and deny t.c.p. any 2 0 0 1 colon D B 8 colon C A F E colon 1 1 colon colon slash 64 e.q. f.t.p. hyphen data.  The next command allows other data traffic and the command is, permit i.p.v.6. any any.  The next command moves to the appropriate interface with the command interface gigabit Ethernet zero slash zero.  The last command applies the A.C.L. to the interface, and it is, i.p.v.6. traffic hyphen filter no hyphen f.t.p. hyphen to hyphen 11 in. Figure three shows a detailed example of an A.C.L. used for restricting access.  First an A.C.L. is created via the command, i.p.v.6. access hyphen list restricted hyphen access.  Next a remark is entered with the command, remark permit access only h.t.t.p. and h.t.t.p.s to network.  The following two permits statements follow, permit t.c.p. any host 2 0 0 1 colon D B 8 colon C A F E colon 1 0 colon colon 10 e.q. 80 and the command permit t.c.p. any host 2 0 0 1 colon D B 8 colon C A F E colon 1 0 colon colon 10 e.q. 443.  These two lines are referred to in comment 1 in the text.  Comment two in the text refers to the command, deny i.p.v.6. any 2 0 0 1 colon D B 8 colon C A F E colon 1 0 colon colon slash 64.  This blocks all other traffic.  Comment 3 in the text is for the command, permit t.c.p. host 2 0 0 1 colon D B 8 colon C A F E colon 3 0 colon colon 12 host 2 0 0 1 colon D B 8 colon C A F E colon 1 1 colon colon 11 e.q. 23.  This line permits a specific computer access to another specific computer.  Comment 4 in the text is for the command, deny t.c.p. any host 2 0 0 1 colon D B 8 colon C A F E colon 1 1 colon colon 11 e.q. 23.  This line blocks all other telnet traffic.  All other i.p. traffic is allowed with the command, permit i.p.v.6. any any.  The last comment is number 5 and it is for the command, i.p.v.6. traffic hyphen filter restricted hyphen acess in.  This line applies the named i.p.v.6. A.C.L. to the gigabit Ethernet zero slash zero interface in the inbound direction.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

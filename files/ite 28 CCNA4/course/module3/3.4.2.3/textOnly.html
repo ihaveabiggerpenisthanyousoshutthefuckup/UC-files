@@ -1,0 +1,21 @@
+
+          <p>Issues with GRE are usually due to one or more of the following misconfigurations:</p>
+          <p>
+            <ul>
+              <li>The tunnel interface IP addresses are not on the same network or the subnet masks do not match.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The interfaces for the tunnel source and/or tunnel destination are not configured with the correct IP address or are in the down state.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Static or dynamic routing is not properly configured. </li>
+            </ul>
+          </p>
+          <p>Use the <b>show ip interface brief</b> command on both routers to verify that the tunnel interface is up and configured with the correct IP addresses for the physical interface and the tunnel interface. Also, verify that the source interface on each router is up and configured with the correct IP addresses, as shown in Figure 1.</p>
+          <p></p>
+          <p>Routing can cause an issue. Both routers need a default route pointing to the Internet. Also, both routers will need the correct dynamic or static routing configured. You can use the <b>show ip ospf neighbor</b> command to verify neighbor adjacency, as shown on the previous page. Regardless of the routing used, you can also use <b>show ip route</b> to verify that networks are being passed between the two routers, as shown in Figure 2.</p>
+        

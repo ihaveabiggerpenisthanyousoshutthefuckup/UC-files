@@ -1,0 +1,1 @@
+Figure displays the output of the show i.p. s.l.a. application command. Highighted in the output is supported operations types i.c.m.p. echo.

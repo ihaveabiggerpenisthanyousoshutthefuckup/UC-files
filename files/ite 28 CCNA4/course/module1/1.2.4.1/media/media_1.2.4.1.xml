@@ -1,0 +1,11 @@
+﻿<textcomponents>
+
+	<component id='ID_title'>
+		<text><![CDATA[<b>WAN Access Considerations</b>]]></text>
+	</component>
+
+	<component id="ID_bullets">
+		<text><![CDATA[<textformat blockindent='-18'><ul><li>What is the purpose of the WAN?</li><li>What is the geographic scope?</li><li>What are the traffic requirements?</li></ul></textformat>]]></text>
+	</component>
+
+</textcomponents>

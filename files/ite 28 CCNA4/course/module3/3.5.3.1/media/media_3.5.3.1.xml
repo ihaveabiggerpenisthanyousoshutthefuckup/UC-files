@@ -1,0 +1,68 @@
+﻿<textcomponents>
+
+<!--slide 2-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>BGP Configuration Commands</b>]]></text>
+</component>
+
+<component id='ID_s1_table'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">	
+
+	
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>  
+	 
+	<tr>
+		<td bgcolor='#666263' width="150"><font color='#FFFFFF'><b>Command</b></font></td>
+		<td bgcolor='#666263'><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8' width="150"><font face="_typewriter" color="#000000">Router(config)#<b> router bgp </b><i>as-number</i></font></td>
+		<td bgcolor='#E9E7E8'>Enables a BGP routing process, and places the router in router configuration mode.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' width="240"><font face="_typewriter" color="#000000">Router(config-router)#<b> neighbor </b><i>ip-address</i><b> remote-as </b><i>as-number</i></font></td>
+		<td bgcolor='#F2F2F2'>Specifies a BGP neighbor. The as-number is the neighbor’s AS number.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'  width="260"><font face="_typewriter" color="#000000">Router(config-router)#<b> network </b><i>network-address </i> [<b>mask </b><i>network-mask</i>]</font></td>
+		<td bgcolor='#E9E7E8'>Advertises a network address to an eBGP neighbor as being originated by this AS.  The network-mask is the subnet mask of the network.</td>
+	</tr>
+	
+</table>]]></text>
+</component>
+
+
+<component id='ID_s1_table_html'>
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">	
+
+	<caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">BGP Configuration Commands</font>
+            </caption>
+		
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>  
+	 
+	<tr>
+		<th id="Command" scope="col" bgcolor='#666263' width="150"><font color='#FFFFFF'><b>Command</b></font></td>
+		<th id="Description" scope="col" bgcolor='#666263'><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td headers="Command" scope="row" bgcolor='#E9E7E8' width="150"><font face="_typewriter" color="#000000">Router(config)#<b> router bgp </b><i>as-number</i></font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>Enables a BGP routing process, and places the router in router configuration mode.</td>
+	</tr>
+	<tr>
+		<td headers="Command" scope="row" bgcolor='#F2F2F2' width="240"><font face="_typewriter" color="#000000">Router(config-router)#<b> neighbor </b><i>ip-address</i><b> remote-as </b><i>as-number</i></font></td>
+		<td headers="Description" bgcolor='#F2F2F2'>Specifies a BGP neighbor. The as-number is the neighbor’s AS number.</td>
+	</tr>
+	<tr>
+		<td headers="Command" scope="row" bgcolor='#E9E7E8'  width="260"><font face="_typewriter" color="#000000">Router(config-router)#<b> network </b><i>network-address </i> [<b>mask </b><i>network-mask</i>]</font></td>
+		<td headers="Description" bgcolor='#E9E7E8'>Advertises a network address to an eBGP neighbor as being originated by this AS.  The network-mask is the subnet mask of the network.</td>
+	</tr>
+	
+</table>]]></text>
+</component>
+</textcomponents>

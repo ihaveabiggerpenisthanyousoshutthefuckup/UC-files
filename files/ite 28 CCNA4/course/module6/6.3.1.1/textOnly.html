@@ -1,0 +1,84 @@
+
+          <p>The quality of network transmission is impacted by the bandwidth of the links between the source and destination, the sources of delay as packets are routed to the destination, and jitter or the variation in delay of the received packets. Without QoS mechanisms in place, packets are processed in the order in which they are received. When congestion occurs, time-sensitive packets will be dropped with the same frequency as packets that are not time-sensitive.</p>
+          <p></p>
+          <p>Voice packets require latency of no more than 150 milliseconds (ms). Jitter should be no more than 30 ms, and voice packet loss should be no more than 1%. Voice traffic requires at least 30 Kb/s of bandwidth.</p>
+          <p></p>
+          <p>Video packets require latency no more than 400 milliseconds (ms). Jitter should be no more than 50 ms, and video packet loss should be no more than 1%. Video traffic requires at least 384 Kb/s of bandwidth.</p>
+          <p></p>
+          <p>For data packets, two factors impact the Quality of Experience (QoE) for end users: </p>
+          <p>
+            <ul>
+              <li>Does the data come from an interactive application?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is the data mission critical?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The four queuing algorithms discussed in this chapter are as follows:</p>
+          <p>
+            <ul>
+              <li>
+                <b>First in First Out (FIFO)</b> - Packets are forwarded in the order in which they are received.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Weighted Fair Queuing (WFQ)</b> - Packets are classified into different flows based on header information including the ToS value.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Class-Based Weighted Fair Queuing (CBWFQ)</b> - Packets are assigned to user-defined classes based on matches to criteria such as protocols, ACLs, and input interfaces. The network administrator can assign bandwidth, weight, and maximum packet limit to each class.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Low Latency Queuing (LLQ)</b> - Delay-sensitive data such as voice is added to a priority queue so that it can be sent first (before packets in other queues).</li>
+            </ul>
+          </p>
+          <p>The three queuing models discussed in the chapter are as follows:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Best-Effort</b> - This is the default queuing model for interfaces. All packets are treated in the same way. There is no QoS. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Integrated Services (IntServ)</b> - IntServ provides a way to deliver the end-to-end QoS that real-time applications require by explicitly managing network resources to provide QoS to specific user packet streams, sometimes called microflows.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Differentiated Services (DiffServ)</b> - DiffServ uses a soft QoS approach that depends on network devices that are set up to service multiple classes of traffic each with varying QoS requirements. Although there is no QoS guarantee, the DiffServ model is more cost-effective and scalable than IntServ.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>QoS tools include the following:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Classification and Marking</b> - Classification determines the class of traffic to which packets or frames belong. Marking means that we are adding a value to the packet header. Devices receiving the packet look at this field to see if it matches a defined policy.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Congestion Avoidance</b> - Congestion avoidance tools monitor network traffic loads in an effort to anticipate and avoid congestion. As queues fill up to the maximum threshold, a small percentage of packets are dropped. Once the maximum threshold is passed, all packets are dropped. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Shaping and Policing</b> - Shaping retains excess packets in a queue and then schedules the excess for later transmission over increments of time. Shaping is used on outbound traffic. Policing either drops or remarks excess traffic. Policing is often applied to inbound traffic.</li>
+            </ul>
+          </p>
+        

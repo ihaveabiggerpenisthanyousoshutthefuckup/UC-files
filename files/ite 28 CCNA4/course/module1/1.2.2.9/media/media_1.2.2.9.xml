@@ -1,0 +1,328 @@
+<textcomponents>
+    <!-- Slide 1-->
+    <component id='ID_s1_inst'>
+        <text>
+            <![CDATA[<b>Activity – Part 1: Identify WAN Access Technologies</b>]]></text>
+    </component>
+    <component id='ID_s1_instr_title'>
+        <text>
+            <![CDATA[Instruction]]>
+        </text>
+    </component>
+    <component id='ID_s1_instr_body'>
+        <text>
+            <![CDATA[Match each private WAN access term to its description. Not all terms will be used. Click Button 2 to continue this activity.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s1_drag01'>
+        <text>
+            <![CDATA[<font color="#393536">Leased Line</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag02'>
+        <text>
+            <![CDATA[<font color="#393536">Dialup</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag03'>
+        <text>
+            <![CDATA[<font color="#393536">ISDN</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag04'>
+        <text>
+            <![CDATA[<font color="#393536">Frame Relay</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag05'>
+        <text>
+            <![CDATA[<font color="#393536">ATM</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag06'>
+        <text>
+            <![CDATA[<font color="#393536">Ethernet WAN</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag07'>
+        <text>
+            <![CDATA[<font color="#393536">MPLS</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_drag08'>
+        <text>
+            <![CDATA[<font color="#393536">VSAT</font>]]>
+        </text>
+    </component>
+    <component id='ID_s1_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s1_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id='ID_s1_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s1_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each private WAN access term to its description. Click Button 2 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s1_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s1_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each private WAN access term to its description. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s1_text_header_01'>
+        <text>
+            <![CDATA[Description]]></text>
+    </component>
+    <component id='ID_s1_target_header_01'>
+        <text>
+            <![CDATA[Term]]></text>
+    </component>
+    <component id='ID_s1_txt01'>
+        <text>
+            <![CDATA[Converts analog to digital signals to provide a switched WAN connection over telephone lines.]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt06'>
+        <text>
+            <![CDATA[Satellite to router communications for WAN connections.]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt07'>
+        <text>
+            <![CDATA[A permanent, dedicated WAN connection which uses a T- or E-carrier system.]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt08'>
+        <text>
+            <![CDATA[Includes MetroE, EoMPLS, and VPLS as WAN connection options.]]>
+        </text>
+    </component>
+    <component id='ID_s1_txt09'>
+        <text>
+            <![CDATA[Analog telephone lines are used to provide a switched WAN connection.]]>
+        </text>
+    </component>
+    <!-- Slide 2 -->
+    <component id='ID_s2_inst'>
+        <text>
+            <![CDATA[<b>Activity – Part 2: Identify WAN Access Technologies</b>]]></text>
+    </component>
+    <component id='ID_s2_instr_title'>
+        <text>
+            <![CDATA[Instruction]]>
+        </text>
+    </component>
+    <component id='ID_s2_instr_body'>
+        <text>
+            <![CDATA[Match each private WAN access term to its description. Not all terms will be used. Click Button 3 to continue this activity.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s2_drag01'>
+        <text>
+            <![CDATA[<font color="#393536">Leased Line</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag02'>
+        <text>
+            <![CDATA[<font color="#393536">Dialup</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag03'>
+        <text>
+            <![CDATA[<font color="#393536">ISDN</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag04'>
+        <text>
+            <![CDATA[<font color="#393536">Frame Relay</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag05'>
+        <text>
+            <![CDATA[<font color="#393536">ATM</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag06'>
+        <text>
+            <![CDATA[<font color="#393536">Ethernet WAN</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag07'>
+        <text>
+            <![CDATA[<font color="#393536">MPLS</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_drag08'>
+        <text>
+            <![CDATA[<font color="#393536">VSAT</font>]]>
+        </text>
+    </component>
+    <component id='ID_s2_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s2_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id='ID_s2_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s2_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully matched each private WAN access term to its description. Click Button 3 to continue.]]>
+        </text>
+    </component>
+    <component id='ID_s2_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s2_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully matched each private WAN access term to its description. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s2_text_header_01'>
+        <text>
+            <![CDATA[Description]]></text>
+    </component>
+    <component id='ID_s2_target_header_01'>
+        <text>
+            <![CDATA[Term]]></text>
+    </component>
+    <component id='ID_s2_txt01'>
+        <text>
+            <![CDATA[Connects multiple sites using virtual circuits and data-link connection identifiers.]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt06'>
+        <text>
+            <![CDATA[A popular replacement for traditional Frame Relay and ATM WAN access technologies.]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt07'>
+        <text>
+            <![CDATA[Service providers and short-path labeling are used for leased lines, Ethernet WANs, and Frame Relay WANs.]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt08'>
+        <text>
+            <![CDATA[Considered the most expensive of all WAN access technologies.]]>
+        </text>
+    </component>
+    <component id='ID_s2_txt09'>
+        <text>
+            <![CDATA[Delivers data using fixed, 53-byte packet cells over permanent and switched virtual circuits.]]>
+        </text>
+    </component>
+    <!-- Slide 3 -->
+    <component id='ID_s3_inst'>
+        <text>
+            <![CDATA[<b>Activity – Part 3: Identify WAN Access Technologies</b>]]></text>
+    </component>
+    <component id='ID_s3_instr_title'>
+        <text>
+            <![CDATA[Instruction]]>
+        </text>
+    </component>
+    <component id='ID_s3_instr_body'>
+        <text>
+            <![CDATA[Match each private WAN access term to its type.]]>
+        </text>
+    </component>
+    <!--Drag and Drop-->
+    <component id='ID_s3_drag01'>
+        <text>
+            <![CDATA[<font color="#393536">Leased Line</font>]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag02'>
+        <text>
+            <![CDATA[<font color="#393536">Circuit-Switched</font>]]>
+        </text>
+    </component>
+    <component id='ID_s3_drag03'>
+        <text>
+            <![CDATA[<font color="#393536">Packet-Switched</font>]]>
+        </text>
+    </component>
+    <component id='ID_s3_CHECK'>
+        <text>
+            <![CDATA[Check]]>
+        </text>
+    </component>
+    <component id='ID_s3_RESET'>
+        <text>
+            <![CDATA[Reset]]>
+        </text>
+    </component>
+    <component id='ID_s3_CORRECT_TITLE'>
+        <text>
+            <![CDATA[Correct]]></text>
+    </component>
+    <component id='ID_s3_CORRECT_BODY'>
+        <text>
+            <![CDATA[You have successfully classified each private WAN access option to its type.]]>
+        </text>
+    </component>
+    <component id='ID_s3_INCORRECT_TITLE'>
+        <text>
+            <![CDATA[Incorrect]]></text>
+    </component>
+    <component id='ID_s3_INCORRECT_BODY'>
+        <text>
+            <![CDATA[You have not successfully classified each private WAN access option to its type. Please click Reset to try again.]]>
+        </text>
+    </component>
+    <component id='ID_s3_text_header_01'>
+        <text>
+            <![CDATA[Type]]></text>
+    </component>
+    <component id='ID_s3_target_header_01'>
+        <text>
+            <![CDATA[Term]]></text>
+    </component>
+    <component id='ID_s3_txt01'>
+        <text>
+            <![CDATA[Dialup]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt06'>
+        <text>
+            <![CDATA[Metro Ethernet]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt07'>
+        <text>
+            <![CDATA[T1/E1, T3/E3]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt08'>
+        <text>
+            <![CDATA[ISDN]]>
+        </text>
+    </component>
+    <component id='ID_s3_txt09'>
+        <text>
+            <![CDATA[Frame Relay]]>
+        </text>
+    </component>
+</textcomponents>

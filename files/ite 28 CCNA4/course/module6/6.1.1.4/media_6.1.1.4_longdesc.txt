@@ -1,0 +1,1 @@
+Figure 1 shows how playout delay buffer can compensate for jitter. Figure 2 shows an example of packet drop due to excessive jitter.

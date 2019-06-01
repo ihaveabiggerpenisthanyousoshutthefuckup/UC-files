@@ -1,0 +1,76 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>Cable System</b>]]></text>
+   </component>
+   
+<component id="ID_txt01">
+   <text><![CDATA[Antenna Site]]></text>
+</component>
+
+<component id="ID_txt02">
+   <text><![CDATA[Transportation System]]></text>
+</component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Trunk]]></text>
+</component>
+
+<component id="ID_txt04">
+   <text><![CDATA[Headend]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[Amplifier]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[Subscriber Drop Cable]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[Distribution Cable (Feeder)]]></text>
+</component>
+
+<component id="ID_btn01_header">
+   <text><![CDATA[Antenna Site]]></text>
+</component>
+
+<component id="ID_btn01_body">
+   <text><![CDATA[The location of an antenna site is chosen for optimum reception of over-the-air, satellite, and sometimes point-to-point signals. The main receiving antennas and satellite dishes are located at the antenna site.]]></text>
+</component>
+
+<component id="ID_btn02_header">
+   <text><![CDATA[Transportation Network]]></text>
+</component>
+
+<component id="ID_btn02_body">
+   <text><![CDATA[A transportation network links a remote antenna site to a headend or a remote headend to the distribution network. The transportation network can be microwave, coaxial supertrunk, or fiber optic.]]></text>
+</component>
+
+<component id="ID_btn03_header">
+   <text><![CDATA[Headend]]></text>
+</component>
+
+<component id="ID_btn03_body">
+   <text><![CDATA[This is where signals are first received, processed, formatted, and then distributed downstream to the cable network. The headend facility is usually unmanned, under security fencing, and is similar to a telephone company central office.]]></text>
+</component>
+
+<component id="ID_btn04_header">
+   <text><![CDATA[Amplifier]]></text>
+</component>
+
+<component id="ID_btn04_body">
+   <text><![CDATA[In a classic cable system called a tree-and-branch cable system, the distribution network consists of trunk and feeder cables. The trunk is the backbone that distributes signals throughout the community service area to the feeder and typically uses 0.750 inch (19 mm) diameter coaxial cable. The feeder branches flow from a trunk and reach all of the subscribers in the service area via coaxial cables. The feeder cable is usually a 0.50 inch (13 mm) diameter coaxial cable.]]></text>
+</component>
+
+<component id="ID_btn05_header">
+   <text><![CDATA[Subscriber Drop]]></text>
+</component>
+
+
+<component id="ID_btn05_body">
+   <text><![CDATA[A subscriber drop connects the subscriber to the cable services. The subscriber drop is a connection between the feeder part of a distribution network and the subscriber terminal device (for example, TV set, Blu-ray players, High Definition TV set-top box, or cable modem). A subscriber drop consists of radio grade (RG) coaxial cabling (usually 59-series or 6-series coaxial cable), grounding and attachment hardware, passive devices, and a set-top box.]]></text>
+</component>
+
+
+</textcomponents>

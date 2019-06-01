@@ -1,0 +1,18 @@
+
+          <p>An extended ACL can be edited in one of two ways:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Method 1 Text editor </b>- Using this method, the ACL is copied and pasted into the text editor where the changes are made. The current access list is removed using the<b> no access-list </b>command. The modified ACL is then pasted back into the configuration. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Method 2 Sequence numbers </b>- Sequence numbers can be used to delete or insert an ACL statement. The <b>ip access-list extended </b><i>name </i>command is used to enter named-ACL configuration mode. If the ACL is numbered instead of named, the ACL number is used in the<i> name </i>parameter. ACEs can be inserted or removed.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the figure the administrator needs to edit the ACL named SURFING to correct a typo in the source network statement. To view the current sequence numbers, the <b>show access-lists</b> command is used. The statement to be edited is identified as statement 10. The original statement is removed with the<b> no </b><i>sequence_# </i>command. The corrected statement is added replacing the original statement.</p>
+        

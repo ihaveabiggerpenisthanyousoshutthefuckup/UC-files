@@ -1,0 +1,22 @@
+
+          <p>BGP is used by autonomous systems to advertise networks that originated within their AS or in the case of ISPs, the networks that originated from other autonomous systems.</p>
+          <p></p>
+          <p>For example, a company connecting to their ISP using BGP would advertise their network addresses to their ISP. The ISP would then advertise these networks to other ISPs (BGP peers). Eventually, all other autonomous systems on the Internet would learn about the networks initially originated by the company.</p>
+          <p></p>
+          <p>There are three common ways an organization can choose to implement BGP in a multi-homed environment:</p>
+          <p></p>
+          <p>
+            <b>Default Route Only</b>
+          </p>
+          <p>ISPs advertise a default route to Company-A, as shown in Figure 1. The arrows indicate that the default is configured on the ISPs, not on the Company-A. This is the simplest method to implement BGP. However, because the company only receives a default route from both ISPs, sub-optimal routing may occur. For example, Company-A may choose to use ISP-1’s default route when sending packets to a destination network in ISP-2’s AS.</p>
+          <p></p>
+          <p>
+            <b>Default Route and ISP Routes</b>
+          </p>
+          <p>ISPs advertise their default route and their network to Company-A, as shown in Figure 2. This option allows Company-A to forward traffic to the appropriate ISP for networks advertised by that ISP. For example, Company-A would choose ISP-1 for networks advertised by ISP-1. For all other networks, one of the two default routes can be used, which means sub-optimal routing may still occur for all other Internet routes.</p>
+          <p></p>
+          <p>
+            <b>All Internet Routes</b>
+          </p>
+          <p>ISPs advertise all Internet routes to Company-A, as shown in Figure 3. Because Company-A receives all Internet routes from both ISPs, Company-A can determine which ISP to use as the best path to forward traffic for any network. Although this solves the issue of sub-optimal routing, the Company-A’s BGP router must contain all Internet routes, which would currently include routes to over 550,000 networks.</p>
+        

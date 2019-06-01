@@ -1,0 +1,21 @@
+
+          <p>Packet loss is usually the result of congestion on an interface. Most applications that use TCP experience slowdown because TCP automatically adjusts to network congestion. Dropped TCP segments cause TCP sessions to reduce their window sizes. Some applications do not use TCP and cannot handle drops (fragile flows).</p>
+          <p></p>
+          <p>The following approaches can prevent drops in sensitive applications:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Increase link capacity to ease or prevent congestion.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Guarantee enough bandwidth and increase buffer space to accommodate bursts of traffic from fragile flows. There are several mechanisms available in Cisco IOS QoS software that can guarantee bandwidth and provide prioritized forwarding to drop-sensitive applications. Examples being WFQ, CBWFQ, and LLQ.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Prevent congestion by dropping lower-priority packets before congestion occurs. Cisco IOS QoS provides queuing mechanisms that start dropping lower-priority packets before congestion occurs. An example being weighted random early detection (WRED).</li>
+            </ul>
+          </p>
+        

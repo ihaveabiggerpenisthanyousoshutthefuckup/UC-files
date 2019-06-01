@@ -1,0 +1,61 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>PPP Compression</b>]]></text>
+    </component>
+    <component id="ID_txt01">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+      <tr class="mtable_title">
+      <td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+    </tr>
+
+  <tr>
+    
+    <td colspan='2' bgcolor='#4E4C4D' class="mtable_top"><font size='1' color='#4E4C4D'>.</font></td>
+  </tr>
+	<tr>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Keyword</b></font></td>
+		<td bgcolor='#666263' valign="top"><font color='#ffffff'><b>Description</b></font></td>
+		
+	</tr>
+
+  <tr>
+		<td bgcolor='#E9E7E8' width="160"><font color='#393536' face="_typewriter"><b>predictor</b></font></td>
+		<td bgcolor='#E9E7E8'><font color='#393536'>(Optional) Specifies that a predictor compression algorithm will be used.</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' width="160"><font face="_typewriter"><b>stac</b></font></td>
+		<td bgcolor='#F2F2F2'><font>(Optional) Specifies that a Stacker (LZS) compression algorithm will be used.</font></td>
+	</tr>	
+  
+	</table>]]>
+        </text>
+    </component>
+    <component id="ID_txt01_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+            <caption  class="mtable_title" colspan="2" bgcolor='#FFFFFF'>
+                <font size="3">PPP Compression Command Options</font>
+            </caption>
+	<tr>
+		<td colspan='2' bgcolor='#666263' class="mtable_top"><font size='1' color='#0E6360'>.</font></td>
+	</tr>
+	<tr colspan='2'>
+		<th id="Keyword" scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Keyword</b></font></td>
+		<th id="Description" scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Description</b></font></td>
+		
+	</tr>
+	<tr>
+		<td headers="Keyword" scope="row" bgcolor='#E9E7E8' valign="top" width="160"><font face="_typewriter"><b>predictor</b></font></td>
+		<td headers="Description" bgcolor='#E9E7E8' valign="top"><font>(Optional) Specifies that a predictor compression algorithm will be used.</font></td>
+	</tr>	
+	<tr>
+		<td headers="Keyword" scope="row" bgcolor='#F2F2F2' valign="top" width="160"><font face="_typewriter"><b>stac</b></font></td>
+		<td headers="Description" bgcolor='#F2F2F2' valign="top"><font>(Optional) Specifies that a Stacker (LZS) compression algorithm will be used.</font></td>
+	</tr>	
+	</table>]]>
+        </text>
+    </component>
+</textcomponents>

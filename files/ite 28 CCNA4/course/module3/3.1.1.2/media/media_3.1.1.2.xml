@@ -1,0 +1,89 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>End-to-End Data Propagation Over Cable</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Servers (Provisioning, Cache, Web, Email)]]></text> 
+  </component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Headend]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[CMTS]]></text> 
+  </component>
+
+  <component id="ID_txt04">
+  <text><![CDATA[Fiber]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Node]]></text> 
+  </component>
+
+  <component id="ID_txt06">
+  <text><![CDATA[Cable Modem]]></text> 
+  </component>
+
+  <component id="ID_txt07">
+  <text><![CDATA[<b>Distribution Area</b>]]></text> 
+  </component>
+
+  <component id="ID_txt08">
+  <text><![CDATA[Coaxial Cable]]></text> 
+  </component>
+  
+  
+<component id="ID_btn01_header">
+   <text><![CDATA[CMTS]]></text>
+</component>
+
+<component id="ID_btn01_body">
+   <text><![CDATA[A cable modem termination system (CMTS) is a component that exchanges digital signals with cable modems on a cable network. A headend CMTS communicates with CMs that are located in subscriber homes.]]></text>
+</component>
+
+<component id="ID_btn02_header">
+   <text><![CDATA[Fiber]]></text>
+</component>
+
+<component id="ID_btn02_body">
+   <text><![CDATA[The trunk portion of the cable network is usually fiber optic cable.]]></text>
+</component>
+
+<component id="ID_btn03_header">
+   <text><![CDATA[Node]]></text>
+</component>
+
+<component id="ID_btn03_body">
+   <text><![CDATA[Nodes convert optical signals to RF signals.]]></text>
+</component>
+
+<component id="ID_btn04_header">
+   <text><![CDATA[Distribution Area]]></text>
+</component>
+
+<component id="ID_btn04_body">
+   <text><![CDATA[A distribution network segment (feeder segment) is from 500 to as many as 2000 subscribers.]]></text>
+</component>
+
+
+<component id="ID_btn05_header">
+   <text><![CDATA[Cable Modem]]></text>
+</component>
+
+
+<component id="ID_btn05_body">
+   <text><![CDATA[A cable modem enables you to receive data at high speeds. Typically, the cable modem attaches to a standard Ethernet card in the computer.]]></text>
+</component>
+
+
+
+<component id="ID_btn06_header">
+   <text><![CDATA[Coaxial Cable]]></text>
+</component>
+
+
+<component id="ID_btn06_body">
+   <text><![CDATA[Coaxial feeder cables originate from the node and carry RF signals to the subscribers.]]></text>
+</component>
+
+</textcomponents>

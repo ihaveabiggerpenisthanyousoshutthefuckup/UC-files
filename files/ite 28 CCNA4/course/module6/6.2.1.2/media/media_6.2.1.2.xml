@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Models for Implementing QoS</b>]]></text>
+	</component>
+	
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3' class="mtable">
+
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<td width="149" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>Model</b></font> </td>
+		<td width="449" bgcolor='#666263' valign="top"><font color='#ffffff'><b>Description</b> </font> </td>
+	 </tr>
+	<tr>
+		<td bgcolor='#E9E7E8'><font color='#393536'>Best-effort model</td>
+		<td bgcolor='#E9E7E8'><font color='#393536'><textformat blockindent="-16"><ul><li>Not really an implementation as QoS is not explicitly configured.</li><li>Use when QoS is not required.</li></ul></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2'><font color='#393536'>Integrated services (IntServ)</td>
+		<td bgcolor='#F2F2F2'><font color='#393536'><textformat blockindent="-16"><ul><li>Provides very high QoS to IP packets with guaranteed delivery.</li></ul><ul><li>It defines a signaling process for applications to signal to the network that they require special QoS for a period and that bandwidth should be reserved.</li></ul><ul><li>However, IntServ can severely limit the scalability of a network.</li></ul></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E9E7E8'>Differentiated services (DiffServ)</td>
+		<td bgcolor='#E9E7E8'><font color='#393536'><textformat blockindent="-16"><ul><li>Provides high scalability and flexibility in implementing QoS.</li><li>Network devices recognize traffic classes and provide different levels of QoS to different traffic classes.</li></ul></textformat></td>
+	</tr>
+
+</table>]]></text>
+</component>
+
+<component id="ID_table_html">
+<text><![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3' class="mtable">
+
+ 	<caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">Models for Implementing QoS</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+	<tr>
+		<th id="Model" scope="col" width="149" bgcolor='#666263' valign="top" class="width"><font color='#ffffff'><b>Model</b></font></th>
+		<th id="Description" scope="col" width="449" bgcolor='#666263' valign="top"><font color='#ffffff'><b>Description</b></font></th>
+	 </tr>
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#E9E7E8'><font color='#393536'>Best-effort model</td>
+		<td headers="Description" bgcolor='#E9E7E8'><font color='#393536'><textformat blockindent="-16"><ul><li>Not really an implementation as QoS is not explicitly configured.</li><li>Use when QoS is not required.</li></ul></textformat></td>
+	</tr>
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#F2F2F2'><font color='#393536'>Integrated services (IntServ)</td>
+		<td headers="Description" bgcolor='#F2F2F2'><font color='#393536'><textformat blockindent="-16"><ul><li>Provides very high QoS to IP packets with guaranteed delivery.</li></ul><ul><li>It defines a signaling process for applications to signal to the network that they require special QoS for a period and that bandwidth should be reserved.</li></ul><ul><li>However, IntServ can severely limit the scalability of a network.</li></ul></textformat></td>
+	</tr>
+	<tr>
+		<td headers="Model" scope="row" bgcolor='#E9E7E8'>Differentiated services (DiffServ)</td>
+		<td headers="Description" bgcolor='#E9E7E8'><font color='#393536'><textformat blockindent="-16"><ul><li>Provides high scalability and flexibility in implementing QoS.</li><li>Network devices recognize traffic classes and provide different levels of QoS to different traffic classes.</li></ul></textformat></td>
+	</tr>
+
+</table>]]></text>
+</component>
+	
+</textcomponents>

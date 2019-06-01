@@ -1,0 +1,21 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>IPv6 Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Deny FTP access to the :11 network.]]></text>
+</component>
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Verify the IPv6 ACL Configuration and Application</b>]]></text> 
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Correct and Verify the IPv6 ACL</b>]]></text> 
+</component>
+
+</textcomponents>

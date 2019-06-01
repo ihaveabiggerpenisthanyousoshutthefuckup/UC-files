@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.6 PPPoE MTU Size</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPPoE MTU Size</h1>
+        <div>
+          <p>Accessing some web pages might be a problem with PPPoE. When the client requests a web page, a TCP 3-way handshake occurs between the client and the web server. During the negotiation, the client specifies the value of its TCP maximum segment size (MSS). The TCP MSS is the maximum size of the data portion in the TCP segment.</p>
+          <p></p>
+          <p>A host determines the value of its MSS field by subtracting the IP and TCP headers from the Ethernet maximum transmission unit (MTU). On an Ethernet interface, the default MTU is 1500 bytes. Subtracting the IPv4 header of 20 bytes and the TCP header of 20 bytes, the default MSS size will be 1460 bytes, as shown in Figure 1.</p>
+          <p></p>
+          <p>The default MSS size is 1460 bytes, when the default MTU is 1500 bytes. However, PPPoE supports an MTU of only 1492 bytes in order to accommodate the additional 8-byte PPPoE header shown in Figure 2.</p>
+          <p></p>
+          <p>You can verify the PPPoE MTU size in running configuration, as shown in Figure 3. This disparity between the host and PPPoE MTU size can cause the router to drop 1500-byte packets and terminate TCP sessions over the PPPoE network.</p>
+          <p></p>
+          <p>The<b> ip tcp adjust-mss </b><i>max-segment-size</i> interface command helps prevent TCP sessions from being dropped by adjusting the MSS value during the TCP 3-way handshake. In most cases, the optimum value for the <i>max-segment-size</i> argument is 1452 bytes. Figure 4 shows this configuration on R1’s LAN interface.</p>
+          <p></p>
+          <p>The TCP MSS value of 1452, plus the 20-byte IPv4 header, the 20-byte TCP header, and the 8-byte PPPoE header adds up to a 1500-byte MTU as shown in Figure 2.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the MTU and MSS. The figure shows 5 rectangles labeled from left to right as follows: Ethernet, IPv4, TCP, payload, and FCS. There are three lines of arrows above the rectangles. The top arrow extends across the payload rectangle and is labeled TCP MSS. The second arrow down from the top extends from the IPv4 rectangle to the far right side of the payload rectangle and is labeled IP MTU. The third arrow down from the top extends from the same rectangles (IPv4, TCP, and Payload) and is labeled Ethernet MTU. Under the IPv4 box is 20 bytes. Under the TCP box is 20 bytes. Under the payload box is 1460 bytes. The arrow showing the amount of data contained in the IPv4, TCP, and payload boxes is labeled 1500 bytes. Figure 2 shows the adjusted MSS with PPPoE header. There are 6 rectangles labeled from left to right as follows: Ethernet, PPPoE, IPv4, TCP, payload, and FCS. There are three lines of arrows above the rectangles. The top arrow spans across the payload rectangle and is labeled TCP MSS. The second arrow down from the top extends from the IPv4 rectangle to the far right side of the payload rectangle and is labeled IP MTU. The third arrow down from the top extends from the same rectangles (IPv4, TCP, and Payload) and is labeled Ethernet MTU. Under the PPPoE box is 8 bytes, Under the IPv4 box is 20 bytes. Under the TCP box is 20 bytes. Under the payload box is 1452 bytes. The arrow showing the amount of data contained in the IPv4, TCP, and payload boxes is labeled 1492 bytes. Figure 3 shows how to verify the MTU size on the dialer interface.On the left is a LAN connected to the R1 customer router labeled G0/0. Coming out of the right of R1 via G0/1 is a cable that goes to a modem. G0/1 is labeled .1 and the modem is labeled 10.1.3.0/24. The modem connects to another modem located inside the ISP cloud. The ISP modem connects to router R2 via interface G0/1 that is labeled .2. R2 is also inside the ISP cloud. The following output is shown: R1# show running-config | section interface dialer2, interface dialer2, (the following line is highlighted) mtu 1492, ipa ddress negotiated, encapsulation ppp, <output omitted>. Figure 4 is the same topology as Figure 3 and shows adjusting the TCP MSS. The following output is shown: R1(config)# interface g0/0, R1(config-if)# ip tcp adjust-mss 1452.  </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

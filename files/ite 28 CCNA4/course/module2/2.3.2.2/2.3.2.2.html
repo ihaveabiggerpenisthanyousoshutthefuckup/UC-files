@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>2.3.2.2 Password Authentication Protocol (PAP)</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_2.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Password Authentication Protocol (PAP)</h1>
+        <div>
+          <p>PAP provides a simple method for a remote node to establish its identity using a two-way handshake. PAP is not interactive. When the <b>ppp authentication pap</b> command is used, the username and password are sent as one LCP data package as shown in Figure 1, rather than one PPP device sending a login prompt and waiting for a response as in some authentication mechanisms.  </p>
+          <p></p>
+          <p>
+            <b>PAP Process</b>
+          </p>
+          <p></p>
+          <p>After PPP completes the link establishment phase, the remote node repeatedly sends a username-password pair across the link until the receiving node acknowledges it or terminates the connection.</p>
+          <p></p>
+          <p>At the receiving node, the username-password is checked by the device running PPP. This device either allows or denies the connection. An accept or reject message is returned to the requester, as shown in Figure 2.</p>
+          <p></p>
+          <p>PAP is not a strong authentication protocol. Using PAP, passwords are sent across the link in plaintext and there is no protection from playback or repeated trial-and-error attacks. The remote node is in control of the frequency and timing of the login attempts.</p>
+          <p></p>
+          <p>Nonetheless, there are times when using PAP can be justified. Despite its shortcomings, PAP may be used in the following environments:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>A large installed base of client applications that do not support CHAP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Incompatibilities between different vendor implementations of CHAP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Situations where a plaintext password must be available to simulate a login at the remote host</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows the initiation of a P.P.P. connection.  In the figure, router 1 is attempting to connect to router 3.  Router 1 sends a username and a password to router 3.  Figure two shows that router 3 will evaluate the username and password via its local database. Router 3 will either accept or reject the connection.  This is the PAP 2 way handshake.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

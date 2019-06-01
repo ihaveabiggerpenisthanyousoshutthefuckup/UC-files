@@ -1,0 +1,17 @@
+﻿<textcomponents>
+
+<!--SLIDE 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Switch Frame Duplication for Packet Capture</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[PC1-PC2 Unicast Traffic]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Duplicated Traffic]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Sniffer]]></text>
+	</component>
+	
+</textcomponents>

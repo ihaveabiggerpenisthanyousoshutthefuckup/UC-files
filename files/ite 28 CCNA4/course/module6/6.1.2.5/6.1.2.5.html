@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>6.1.2.5 Data</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_6.1.2.5_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Data</h1>
+        <div>
+          <p>Most applications use either TCP or UDP. Unlike UDP, TCP performs error recovery. Data applications that have no tolerance for data loss, such as email and web pages, use TCP to ensure that, if packets are lost in transit, they will be resent. Data traffic can be smooth or bursty. Network control traffic is usually smooth and predictable. When there is a topology change, the network control traffic may burst for a few seconds. But the capacity of today’s networks can easily handle the increase in network control traffic as the network converges.</p>
+          <p></p>
+          <p>However, some TCP applications can be very greedy, consuming a large portion of network capacity. FTP will consume as much bandwidth as it can get when you download a large file, such as a movie or game. Figure 1 summarizes data traffic characteristics.</p>
+          <p></p>
+          <p>Although data traffic is relatively insensitive to drops and delays compared to voice and video, a network administrator still needs to consider the quality of the user experience, sometimes referred to as Quality of Experience or QoE. The two main factors a network administrator needs to ask about the flow of data traffic are the following:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Does the data come from an interactive application?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is the data mission critical?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 is compares these two factors.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows the data traffic characteristics. Figure 2 shows and compares two factors to consider for data delay, interactive or not interactive.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

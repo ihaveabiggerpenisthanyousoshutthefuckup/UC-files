@@ -1,0 +1,10 @@
+
+          <p>Similar to IPv4 ACLs, use the <b>show ipv6 access-list</b> and <b>show running-config</b> commands to reveal typical IPv6 ACL errors.</p>
+          <p></p>
+          <p>In Figure 1, R1 is configured with an IPv6 ACL to deny FTP access from the :10 network to the :11 network. However, after configuring the ACL, PC1 is still able to connect to the FTP server running on PC2. Referring to the output for the <b>show ipv6 access-list</b> command in Figure 2, matches are shown for the permit statement but not the deny statements. </p>
+          <p></p>
+          <p>
+            <b>Solution:</b> The ACEs in the ACL reveal no problems in their order, or in the criteria of their rules. The next step is to consider how the ACL is applied at the interface using the <b>ipv6 traffic-filter </b>command. Did the ACL get applied using the correct name, the correct interface, and in the correct direction? To check for interface configuration errors, display the running configuration, as shown in Figure 2.</p>
+          <p></p>
+          <p>The ACL was applied using the correct name, but not the correct direction. The direction, in or out, is from the perspective of the router, meaning the ACL is currently applied to traffic before it is forwarded out the G0/0 interface and enters the :10 network.  To correct the issue, remove the ipv6 traffic-filter NO-FTP-TO-11 out and replace it with ipv6 traffic-filter NO-FTP-TO-11 in, as shown in Figure 3. Now PC1’s attempts to access the FTP server are denied, as verified with the <b>show ipv6 access-list</b> command.</p>
+        

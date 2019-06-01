@@ -1,0 +1,42 @@
+﻿<textcomponents>
+	<component id="ID_title">
+	  <text><![CDATA[<b>Sample Leased Line Topology</b>]]></text> 
+	</component>
+
+	<component id="ID_txt01">
+	  <text><![CDATA[New York Office]]></text> 
+	</component>
+
+	<component id="ID_txt02">
+	  <text><![CDATA[Service Provider Network]]></text> 
+	</component>
+
+	<component id="ID_txt03">
+	  <text><![CDATA[London Office]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+	  <text><![CDATA[The standard in the<br>U.S.]]></text> 
+	</component>
+
+	<component id="ID_txt05">
+	  <text><![CDATA[The standard in<br>Europe.]]></text> 
+	</component>
+	
+	<component id="ID_txt06">
+	  <text><![CDATA[<b>T3</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt07">
+	  <text><![CDATA[<b>E3</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt09">
+	  <text><![CDATA[<b>CSU/DSU</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt10">
+	  <text><![CDATA[<b>CSU/DSU</b>]]></text> 
+	</component>
+
+</textcomponents>

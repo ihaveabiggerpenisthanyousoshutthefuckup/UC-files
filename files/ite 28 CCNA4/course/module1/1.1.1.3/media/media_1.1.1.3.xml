@@ -1,0 +1,73 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+		<text><![CDATA[<b>Point-to-Point Topology</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Site A]]></text> 
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Site B]]></text> 
+	</component>
+	
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+		<text><![CDATA[<b>Hub-and-Spoke Topology</b>]]></text>
+	</component>
+	
+<component id="ID_s2_txt01">
+		<text><![CDATA[Hub]]></text> 
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[Spoke A]]></text> 
+	</component>
+	<component id="ID_s2_txt03">
+		<text><![CDATA[Spoke B]]></text> 
+	</component>
+	<component id="ID_s2_txt04">
+		<text><![CDATA[Spoke C]]></text> 
+	</component>
+
+<!--Slide 3-->
+<component id="ID_s3_title">
+		<text><![CDATA[<b>Full Mesh Topology</b>]]></text>
+	</component>
+	
+<component id="ID_s3_txt01">
+		<text><![CDATA[Site A]]></text> 
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[Site B]]></text> 
+	</component>
+	<component id="ID_s3_txt03">
+		<text><![CDATA[Site C]]></text> 
+	</component>
+	<component id="ID_s3_txt04">
+		<text><![CDATA[Site D]]></text> 
+	</component>
+	
+
+<!--Slide 4-->
+<component id="ID_s4_title">
+		<text><![CDATA[<b>Dual-Homed Topology</b>]]></text>
+	</component>
+	
+<component id="ID_s4_txt01">
+		<text><![CDATA[Hubs]]></text> 
+	</component>
+	<component id="ID_s4_txt02">
+		<text><![CDATA[Spoke A]]></text> 
+	</component>
+	<component id="ID_s4_txt03">
+		<text><![CDATA[Spoke B]]></text> 
+	</component>
+	<component id="ID_s4_txt04">
+		<text><![CDATA[Spoke C]]></text> 
+	</component>
+
+
+
+
+
+</textcomponents>

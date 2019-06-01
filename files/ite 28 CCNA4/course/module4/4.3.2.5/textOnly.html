@@ -1,0 +1,9 @@
+
+          <p>The commands used to verify an IPv6 access list are similar to those used for IPv4 ACLs. Using these commands, the IPv6 access list RESTRICTED-ACCESS that was configured previously can be verified. Figure 1 shows the output of the <b>show ipv6 interface</b> command. The output confirms that RESTRICTED-ACCESS ACL is configured inbound on the G0/0 interface.</p>
+          <p></p>
+          <p>As shown in Figure 2, the <b>show access-lists</b> command displays all access lists on the router including both IPv4 and IPv6 ACLs. Notice that with IPv6 ACLs the sequence numbers occur at the end of the statement and not the beginning as with IPv4 access lists. Although the statements appear in the order they were entered, they are not always incremented by 10. This is because the remark statements that were entered use a sequence number but are not displayed in the output of the <b>show access-lists</b> command.</p>
+          <p></p>
+          <p>Similar to extended ACLs for IPv4, IPv6 access lists are displayed and processed in the order the statements are entered. Remember, IPv4 standard ACLs use an internal logic which changes their order and processing sequence.</p>
+          <p></p>
+          <p>As shown in Figure 3, the output from the <b>show running-config</b> command includes all of the ACEs and remark statements. Remark statements can come before or after <b>permit</b> or <b>deny</b> statements but should be consistent in their placement. </p>
+        

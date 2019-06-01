@@ -1,0 +1,19 @@
+﻿<textcomponents>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[Hybrid]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[Public]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[Private]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[Community]]></text>
+	</component>
+	
+</textcomponents>

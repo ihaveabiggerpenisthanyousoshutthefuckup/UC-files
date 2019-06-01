@@ -1,0 +1,47 @@
+
+          <p>The MIB organizes variables hierarchically. MIB variables enable the management software to monitor and control the network device. Formally, the MIB defines each variable as an object ID (OID). OIDs uniquely identify managed objects in the MIB hierarchy. The MIB organizes the OIDs based on RFC standards into a hierarchy of OIDs, usually shown as a tree.</p>
+          <p></p>
+          <p>The MIB tree for any given device includes some branches with variables common to many networking devices and some branches with variables specific to that device or vendor. </p>
+          <p></p>
+          <p>RFCs define some common public variables. Most devices implement these MIB variables. In addition, networking equipment vendors, like Cisco, can define their own private branches of the tree to accommodate new variables specific to their devices. Figure 1 shows portions of the MIB structure defined by Cisco Systems, Inc. Note how the OID can be described in words or numbers to help locate a particular variable in the tree. OIDs belonging to Cisco, are numbered as follows: .iso (1).org (3).dod (6).internet (1).private (4).enterprises (1).cisco (9).  Therefore the OID is 1.3.6.1.4.1.9.</p>
+          <p></p>
+          <p>Because the CPU is one of the key resources, it should be measured continuously. CPU statistics should be compiled on the NMS and graphed. Observing CPU utilization over an extended time period allows the administrator to establish a baseline estimate for CPU utilization. Threshold values can then be set relative to this baseline. When CPU utilization exceeds this threshold, notifications are sent. An SNMP graphing tool can periodically poll SNMP agents, such as a router, and graph the gathered values. Figure 2 illustrates 5-minute samples of router CPU utilization over the period of a few weeks. </p>
+          <p></p>
+          <p>The data is retrieved via the snmpget utility, issued on the NMS. Using the snmpget utility, one can manually retrieve real-time data or have the NMS run a report which would give you a period of time that you could use the data to get the average. The snmpget utility requires that the SNMP version, the correct community, the IP address of the network device to query, and the OID number are set. Figure 3 demonstrates the use of the freeware snmpget utility, which allows quick retrieval of information from the MIB. </p>
+          <p></p>
+          <p>Figure 3 shows a sample snmpget utility command with several parameters, including: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">-v2c</span>
+                <b></b>- version of SNMP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">-c</span>
+                <span class="cmd">community</span>
+                <b></b>- SNMP password, called a community string</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">10.250.250.14</span>
+                <b></b>- IP address of monitored device</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">1.3.6.1.4.1.9.2.1.58.0</span>
+                <b></b>- OID of MIB variable</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The last line shows the response. The output shows a shortened version of the MIB variable. It then lists the actual value in the MIB location. In this case, the 5-minute exponential moving average of the CPU busy percentage is 11 percent. The utility gives some insight into the basic mechanics of how SNMP works. However, working with long MIB variable names like 1.3.6.1.4.1.9.2.1.58.0 can be problematic for the average user. More commonly, the network operations staff uses a network management product with an easy-to-use GUI, with the entire MIB data variable naming transparent to the user.</p>
+          <p></p>
+          <p>The Cisco SNMP Navigator on the <a href="http://cisco.com/" target="_blank">http://cisco.com</a> website allows a network administrator to research details about a particular OID. Figure 4 displays an example associated with a configuration change on a Cisco 2960 switch.</p>
+        

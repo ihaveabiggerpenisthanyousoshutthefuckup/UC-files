@@ -1,0 +1,33 @@
+
+          <p>Diagnosing and solving problems is an essential skill for network administrators. There is no single recipe for troubleshooting, and a particular problem can be diagnosed in many different ways. However, by employing a structured approach to the troubleshooting process, an administrator can reduce the time it takes to diagnose and solve a problem.</p>
+          <p></p>
+          <p>Throughout this topic, the following scenario is used. The client host PC1 is unable to access applications on Server SRV1 or Server SRV2. The figure shows the topology of this network. PC1 uses SLAAC with EUI-64 to create its IPv6 global unicast address. EUI-64 creates the Interface ID using the Ethernet MAC address, inserting FFFE in the middle, and flipping the seventh bit. </p>
+          <p></p>
+          <p>When there is no end-to-end connectivity, and the administrator chooses to troubleshoot with a bottom-up approach, these are common steps the administrator can take:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> Check physical connectivity at the point where network communication stops. This includes cables and hardware. The problem might be with a faulty cable or interface, or involve misconfigured or faulty hardware. </p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> Check for duplex mismatches.</p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Check data link and network layer addressing on the local network. This includes IPv4 ARP tables, IPv6 neighbor tables, MAC address tables, and VLAN assignments.</p>
+          <p></p>
+          <p>
+            <b>Step 4.</b> Verify that the default gateway is correct.</p>
+          <p></p>
+          <p>
+            <b>Step 5.</b> Ensure that devices are determining the correct path from the source to the destination. Manipulate the routing information if necessary. </p>
+          <p></p>
+          <p>
+            <b>Step 6.</b> Verify the transport layer is functioning properly. Telnet can also be used to test transport layer connections from the command line.</p>
+          <p></p>
+          <p>
+            <b>Step 7.</b> Verify that there are no ACLs blocking traffic.</p>
+          <p></p>
+          <p>
+            <b>Step 8.</b> Ensure that DNS settings are correct. There should be a DNS server that is accessible.</p>
+          <p></p>
+          <p>The outcome of this process is operational, end-to-end connectivity. If all of the steps have been performed without any resolution, the network administrator may either want to repeat the previous steps or escalate the problem to a senior administrator.</p>
+        

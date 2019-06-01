@@ -1,0 +1,1 @@
+Figure shows the steps and commands to secure SNMPv3.

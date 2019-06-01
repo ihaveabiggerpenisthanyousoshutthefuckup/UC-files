@@ -1,0 +1,67 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>SDN Operation</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[SDN Controller]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[OpenFlow Protocol Over TLS]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>OpenFlow Switch</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Meter Table]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Group Table]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Secure Channel]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[<b>Software</b>]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[Flow Table]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[Flow Table]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[Flow Table]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[<b>Hardware/Firmware</b>]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[OpenFlow Switches]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[End Devices]]></text>
+	</component>
+	
+	
+	<component id="ID_titleTxt01">
+		<text><![CDATA[Meter Table]]></text>
+	</component>
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[The table triggers a variety of performance-related actions on a flow.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt02">
+		<text><![CDATA[Group Table]]></text>
+	</component>
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[A flow table may direct a flow to a Group Table, which may trigger a variety of actions that affect one or more flows.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt03">
+		<text><![CDATA[Flow Table]]></text>
+	</component>
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[This table matches incoming packets to a particular flow and specifies the functions that are to be performed on the packets. There may be multiple flow tables that operate in a pipeline fashion.]]></text>
+	</component>
+
+</textcomponents>

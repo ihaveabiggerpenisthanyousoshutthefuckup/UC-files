@@ -1,0 +1,112 @@
+<textcomponents>
+    <component id="ID_title">
+        <text>
+            <![CDATA[<b>Guidelines When Questioning Users</b>]]></text>
+    </component>
+    <component id="ID_table02">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	<tr class="mtable_title">
+			<td colspan="2" bgcolor='#FFFFFF'><font size="5"></font></td>
+		</tr>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+<tr>
+<td  bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff' ><b>Guidelines</b></font></td>
+<td bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Example End-user Questions</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Ask questions that are pertinent to the problem.</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>What does not work?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Use each question as a means to either eliminate or discover possible problems.</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Are the things that do work and the things that do not work related?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Speak at a technical level that the user can understand.</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Has the thing that does not work ever worked?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Ask the user when the problem was first noticed. </font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>When was the problem first noticed?</font></td> 
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Determine if anything happened since the last time the device worked.</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>What has changed since the last time it did work?</font></td> 
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Ask the user to recreate the problem, if possible.</font></td>
+<td bgcolor='#F2F2F2' valign="top"><font color='#393536'>Can you reproduce the problem? </font></td> 
+</tr>
+
+<tr>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>Determine the sequence of events that took place before the problem happened.</font></td>
+<td bgcolor='#E9E7E8' valign="top"><font color='#393536'>When exactly does the problem occur?</font></td> 
+</tr>
+
+</table>]]>
+        </text>
+    </component>
+    <component id="ID_table02_html">
+        <text>
+            <![CDATA[<table header='none' bordercolor='#FFFFFF' borderwidth='2' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' class="mtable">
+
+	 <caption class="mtable_title" colspan="2" bgcolor='#FFFFFF'><font size="3">Guidelines when Questioning Users</font></caption>
+
+		<tr class="mtable_top">
+			<td colspan='2' bgcolor='#4E4C4D'><font size='1' color='#4E4C4D'>.</font></td>
+		</tr>
+<tr>
+<th id="Guidelines" scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff' ><b>Guidelines</b></font></th>
+<th id="Example" scope="col" bgcolor='#666263' valign="top" class="mtitle"><font color='#ffffff'><b>Example End-user Questions</b></font></th>
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#E9E7E8' valign="top"><font color='#393536'>Ask questions that are pertinent to the problem.</font></td>
+<td headers="Example" bgcolor='#E9E7E8' valign="top"><font color='#393536'>What does not work?</font></td>
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#F2F2F2' valign="top"><font color='#393536'>Use each question as a means to either eliminate or discover possible problems.</font></td>
+<td headers="Example" bgcolor='#F2F2F2' valign="top"><font color='#393536'>Are the things that do work and the things that do not work related?</font></td>
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#E9E7E8' valign="top"><font color='#393536'>Speak at a technical level that the user can understand.</font></td>
+<td headers="Example" bgcolor='#E9E7E8' valign="top"><font color='#393536'>Has the thing that does not work ever worked?</font></td>
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#F2F2F2' valign="top"><font color='#393536'>Ask the user when the problem was first noticed. </font></td>
+<td headers="Example" bgcolor='#F2F2F2' valign="top"><font color='#393536'>When was the problem first noticed?</font></td> 
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#E9E7E8' valign="top"><font color='#393536'>Determine if anything happened since the last time the device worked.</font></td>
+<td headers="Example" bgcolor='#E9E7E8' valign="top"><font color='#393536'>What has changed since the last time it did work?</font></td> 
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#F2F2F2' valign="top"><font color='#393536'>Ask the user to recreate the problem, if possible.</font></td>
+<td headers="Example" bgcolor='#F2F2F2' valign="top"><font color='#393536'>Can you reproduce the problem? </font></td> 
+</tr>
+
+<tr>
+<td headers="Guidelines" scope="row" bgcolor='#E9E7E8' valign="top"><font color='#393536'>Determine the sequence of events that took place before the problem happened.</font></td>
+<td headers="Example" bgcolor='#E9E7E8' valign="top"><font color='#393536'>When exactly does the problem occur?</font></td> 
+</tr>
+
+</table>]]>
+        </text>
+    </component>
+</textcomponents>

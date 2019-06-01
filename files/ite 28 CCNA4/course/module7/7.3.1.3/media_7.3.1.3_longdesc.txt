@@ -1,0 +1,1 @@
+Figure showing the logos of OpenFlow and Openstack cloud software.

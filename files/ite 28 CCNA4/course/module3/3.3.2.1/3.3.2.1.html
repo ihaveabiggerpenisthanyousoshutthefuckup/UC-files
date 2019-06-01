@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.3.2.1 Site-to-Site VPNs</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.3.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Site-to-Site VPNs</h1>
+        <div>
+          <p>A site-to-site VPN is created when devices on both sides of the VPN connection are aware of the VPN configuration in advance, as shown in the figure. The VPN remains static, and internal hosts have no knowledge that a VPN exists. In a site-to-site VPN, end hosts send and receive normal TCP/IP traffic through a VPN “gateway”. The VPN gateway is responsible for encapsulating and encrypting outbound traffic for all traffic from a particular site. The VPN gateway then sends it through a VPN tunnel over the Internet to a peer VPN gateway at the target site. Upon receipt, the peer VPN gateway strips the headers, decrypts the content, and relays the packet toward the target host inside its private network.</p>
+          <p></p>
+          <p>A site-to-site VPN is an extension of a classic WAN network. Site-to-site VPNs connect entire networks to each other, for example, they can connect a branch office network to a company headquarters network. In the past, a leased line or Frame Relay connection was required to connect sites, but because most corporations now have Internet access, these connections can be replaced with site-to-site VPNs.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">The figure shows a topology for a site-to-site VPN with a laptop labeled client has no knowledge of VPN connect to a device located on the edge of an Internet cloud labeled VPN terminating device. On the other side of the Internet cloud, another router sits on the edge of the cloud and is within a building. Also in the building is a security device labeled VPN terminating device. There is a pipe connection between both VPN terminating devices.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

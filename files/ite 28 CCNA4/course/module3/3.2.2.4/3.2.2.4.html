@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>3.2.2.4 PPPoE Negotiation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_3.2.2.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>PPPoE Negotiation</h1>
+        <div>
+          <p>Verify PPP negotiation using the <b>debug ppp negotiation</b> command. Figure 1 displays part of the debug output after R1’s G0/1 interface has been enabled.</p>
+          <p></p>
+          <p>There are four main points of failure in a PPP negotiation:</p>
+          <p>
+            <ul>
+              <li>No response from the remote device (the ISP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Link Control Protocol (LCP) not open</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Authentication failure</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP Control Protocol (IPCP) failure</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure 1 shows examining the PPP negotiation process. On the left is a LAN connected to the R1 customer router labeled G0/0. Coming out of the right of R1 via G0/1 is a cable that goes to a modem. G0/1 is labeled .1 and the modem is labeled 10.1.3.0/24. The modem connects to another modem located inside the ISP cloud. The ISP modem connects to router R2 via interface G0/1 that is labeled .2. R2 is also inside the ISP cloud. The following output is shown: R1# debug ppp negotiation, *Sep 20 19:05:05.239: Vi2 PPP: phase is AUTHENTICATING, by the peer, *Sep 20 19:05:05:05.239: Vi2 LCP: (rest of the line is highlighted) state is open, <output omitted>, *Sep 20 19:05:05.247: Vi2 CHAP: using hostname from interface CHAP, *Sep 20 19:05:05.247: Vi2 CHAP: using hostname from interface CHAP, *Sep 20 19:05:05.247: Vi2 CHAP: 0 response id 1 len 26 from “Fred”, *Sep 20 19:05:05.255: Vi2 (rest of the line is highlighted) CHAP: I SUCCESS id 1 len 4, (rest of the line is highlighted), *Sep 20 19:05:05.259: Vi2 IPCP: address 10.1.3.2 (0x0306a010302), *Sep 20 19:05:05.259: Vi2 IPCP: event [receive confack] state[acksent to open], *Sep 20 19:05:05.271: Vi2 (rest of line is highlighted): IPCP: State is open. *Sep 20 19:05:05.271: Di2 (rest of line is highlighted) IPCP: Install negotiated IP interface address 10.1.3.2. *Sep 20 19:05:05.271: Di2 Added to neighbor route AVL tree: topoid 0, address 10.1.3.2. *Sep 20 19:05:05.271: Di2 IPCP: (rest of line is highlighted) Install route to 10.1.3.2. R1# (rest of line is highlighted) undebug all.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

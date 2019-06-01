@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.1.1.1 ACLs and the Wildcard Mask</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.1.1.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>ACLs and the Wildcard Mask</h1>
+        <div>
+          <p>
+            <b>Note</b>: This section includes a brief review of standard IPv4 ACL operation and configuration. If you require additional review, refer to Chapter 7, Access Control Lists in the <i>Routing and Switching Essentials v6</i> course. </p>
+          <p></p>
+          <p>An ACL is a sequential list of permit or deny statements, known as access control entries (ACEs). ACEs are also commonly called ACL statements. When network traffic passes through an interface configured with an ACL, the router compares the information within the packet against each ACE, in sequential order, to determine if the packet matches one of the ACEs. </p>
+          <p></p>
+          <p>IPv4 ACEs include the use of wildcard masks. A wildcard mask is a string of 32 binary digits used by the router to determine which bits of the address to examine for a match.</p>
+          <p></p>
+          <p>Figure 1 shows how different wildcard masks filter IPv4 addresses. In the example, remember that binary 0 signifies a bit that must match, and binary 1 signifies a bit that can be ignored.</p>
+          <p></p>
+          <p>Figure 2 provides three examples of wildcard masks that match subnets.</p>
+          <p></p>
+          <p>In the first example the wildcard mask stipulates that every bit in the IPv4 192.168.1.1 must match exactly.</p>
+          <p></p>
+          <p>In the second example, the wildcard mask stipulates that anything will match.</p>
+          <p></p>
+          <p>In the third example, the wildcard mask stipulates that any host within the 192.168.1.0/24 network will match.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure one shows five 8 bit wildcard masks.  Example one is, zero zero zero zero zero zero zero zero, which will match all address bits in the octet.  Example two is, zero zero one one one one one one, which will match the first two bits and ignore that last six address bits.  Example three is zero zero zero zero one one one one will match the first four bits and ignore the last four bits.  Example four is one one one one one one zero zero, which will ignore the first six address bits and match the last two.  Example five is one one one one one one one one, which will ignore all the bits in the octet. Figure two lists three examples of I.P.v.4. addresses and wildcard masks.  Example one has a wildcard mask of 32 zeros, therefore it instructs the A.C.L. to match the exact I.P. address.  Example two has a wildcard mask of 32 ones, therefore any I.P. address will be a match.  Example three has a wildcard mask of 24 zeros starting from the left and working right, followed by eight ones.  This effectively matches a class C network where the first 24 bits are matched.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

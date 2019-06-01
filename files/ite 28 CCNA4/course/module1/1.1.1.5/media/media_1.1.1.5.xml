@@ -1,0 +1,18 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Connecting a Small Office</b>]]></text>
+	</component>
+	
+		<component id="ID_txt01">
+		<text><![CDATA[<b>Small Office</b><br/>(Few Employees)]]></text>
+	</component>
+		<component id="ID_txt02">
+		<text><![CDATA[Small single LAN for sharing peripherals and Internet access]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Broadband Access to Internet]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Internet]]></text>
+	</component>
+</textcomponents>

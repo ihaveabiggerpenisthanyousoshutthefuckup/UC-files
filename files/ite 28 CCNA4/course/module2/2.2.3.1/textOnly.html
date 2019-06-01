@@ -1,0 +1,26 @@
+
+          <p>There are three phases of establishing a PPP session, as shown in the figure:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Phase 1: Link establishment and configuration negotiation</b> - Before PPP exchanges any network layer datagrams, such as IP, the LCP must first open the connection and negotiate configuration options. This phase is complete when the receiving router sends a configuration-acknowledgment frame back to the router initiating the connection. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Phase 2: Link quality determination (optional)</b> - The LCP tests the link to determine whether the link quality is sufficient to bring up network layer protocols. The LCP can delay transmission of network layer protocol information until this phase is complete. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Phase 3: Network layer protocol configuration negotiation</b> - After the LCP has finished the link quality determination phase, the appropriate NCP can separately configure the network layer protocols, and bring them up and take them down at any time. If the LCP closes the link, it informs the network layer protocols so that they can take appropriate action.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The link remains configured for communications until explicit LCP or NCP frames close the link, or until some external event occurs such as an inactivity timer expiring, or an administrator intervening. </p>
+          <p></p>
+          <p>The LCP can terminate the link at any time. This is usually done when one of the routers requests termination, but can happen because of a physical event, such as the loss of a carrier or the expiration of an idle-period timer.</p>
+        

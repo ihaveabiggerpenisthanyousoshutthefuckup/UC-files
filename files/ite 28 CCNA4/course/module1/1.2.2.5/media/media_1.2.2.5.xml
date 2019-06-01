@@ -1,0 +1,71 @@
+﻿<textcomponents>
+	
+<component id="ID_title">
+  <text><![CDATA[<b>Sample ATM Topology</b>]]></text> 
+</component>
+	
+<component id="ID_txt01_03">
+  <text><![CDATA[<b>IP TV Broadcast Server</b>]]></text> 
+</component>
+
+<component id="ID_txt02_03">
+  <text><![CDATA[Web Server]]></text> 
+</component>
+
+<component id="ID_txt03_03">
+  <text><![CDATA[VoIP]]></text> 
+</component>
+
+<component id="ID_txt04_03">
+  <text><![CDATA[Email]]></text> 
+</component>
+
+<component id="ID_txt05_03">
+  <text><![CDATA[ATM Switch]]></text> 
+</component>
+
+<component id="ID_txt06_03">
+  <text><![CDATA[Service Provider Network]]></text> 
+</component>
+
+<component id="ID_txt07_03">
+  <text><![CDATA[ATM Switch]]></text> 
+</component>
+
+<component id="ID_txt08_03">
+  <text><![CDATA[WAN]]></text> 
+</component>
+
+<component id="ID_txt09_03">
+  <text><![CDATA[<b>Corporate Head Office</b>]]></text> 
+</component>
+
+<component id="ID_txt10_03">
+  <text><![CDATA[<b>Branch Office</b>]]></text> 
+</component>
+
+<component id="ID_txt11_03">
+  <text><![CDATA[LAN]]></text> 
+</component>
+
+<component id="ID_txt12_03">
+  <text><![CDATA[Video]]></text> 
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[1]]></text> 
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[2]]></text> 
+</component>
+<component id="ID_txt03">
+  <text><![CDATA[3]]></text> 
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[4]]></text> 
+</component>
+
+
+
+</textcomponents>

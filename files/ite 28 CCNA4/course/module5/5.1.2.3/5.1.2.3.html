@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>5.1.2.3 Mitigate VLAN Attacks</title>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Mitigate VLAN Attacks</h1>
+        <div>
+          <p>The figure shows the best way to prevent basic VLAN attacks:</p>
+          <p>
+            <ul>
+              <li>Disable DTP (auto trunking) negotiations on non-trunking ports and explicitly force the access ports by using the <b>switchport mode access</b> interface configuration command..</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Manually enable the trunk link on a trunking port using the<b> switchport mode trunk</b> interface configuration command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Disable DTP (auto trunking) negotiations on trunking and non-trunking ports using the <b>switchport nonegotiate</b> interface configuration command. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Set the native VLAN to be something other than VLAN 1. Set it on an unused VLAN using the <b>switchport trunk native vlan </b><i>vlan_number </i>interface configuration mode command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Disable unused ports and assign them to an unused VLAN.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure shows two switches, each with two PCs connected. The caption of the interlink between the two switches reads “Trunk, (Native VLAN = 10)”. A box with arrows pointing to each switch port that connects to a PC reads “Disable DTP and set interfaces to access mode”.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

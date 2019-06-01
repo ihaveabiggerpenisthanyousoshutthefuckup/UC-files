@@ -1,0 +1,1 @@
+Figure 1 shows the data traffic characteristics. Figure 2 shows and compares two factors to consider for data delay, interactive or not interactive.

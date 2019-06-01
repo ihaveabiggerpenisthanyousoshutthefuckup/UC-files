@@ -1,0 +1,27 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Sample Wireless Topology</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[ISP Network]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[Internet Backbone]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[WiMAX 802.16 Transmitter]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[Home Local Area Network]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+		<text><![CDATA[Non-Line-of-Sight Transmission]]></text>
+	</component>
+	
+	
+</textcomponents>

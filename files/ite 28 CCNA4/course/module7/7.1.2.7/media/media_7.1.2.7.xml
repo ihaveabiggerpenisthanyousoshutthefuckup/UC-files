@@ -1,0 +1,101 @@
+﻿<textcomponents>
+
+
+<!-- slide 1 -->
+<component id="ID_s1_title">
+		<text><![CDATA[<b>Activity - Identify the IoT Pillars</b>]]></text>
+	</component>
+	
+	<component id='ID_s1_instr_title'>
+		<text><![CDATA[Instructions]]></text>
+	</component>
+
+	<component id='ID_s1_instr_body'>
+		<text><![CDATA[Drag each pillar to match its description.]]></text>
+	</component>
+
+	<component id='ID_s1_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_s1_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+
+	<component id="ID_s1_CORRECT_TITLE">
+		<text><![CDATA[Correct]]></text>
+	</component>
+
+	<component id="ID_s1_CORRECT_BODY">
+		<text><![CDATA[You have successfully matched each pillar to its description.]]></text>
+	</component>
+
+	<component id="ID_s1_INCORRECT_TITLE">
+		<text><![CDATA[Incorrect]]></text>
+	</component>
+	
+	<component id="ID_s1_INCORRECT_BODY">
+		<text><![CDATA[You have not successfully matched each pillar to its description. Please click Reset to try again.]]></text>
+	</component>
+
+	<component id='ID_s1_drag01'>
+		<text><![CDATA[Data Analytics]]></text>
+	</component>
+
+	<component id='ID_s1_drag02'>
+		<text><![CDATA[Fog Computing]]></text>
+	</component>
+
+	<component id='ID_s1_drag03'>
+		<text><![CDATA[Management and Automation]]></text>
+	</component>
+
+	<component id='ID_s1_drag04'>
+		<text><![CDATA[Network Connectivity]]></text>
+	</component>
+
+	<component id='ID_s1_drag05'>
+		<text><![CDATA[Application Enablement Platform]]></text>
+	</component>
+
+	<component id='ID_s1_drag06'>
+		<text><![CDATA[Security]]></text>
+	</component>
+
+	<component id='ID_s1_txt01'>
+		<text><![CDATA[Enables end devices to connect to a local integrated computing, networking, and storage systems]]></text>
+	</component>
+
+	<component id='ID_s1_txt02'>
+		<text><![CDATA[Enables an organization to quickly and effectively discover, contain, and remediate an attack to minimize damage]]></text>
+	</component>
+
+	<component id='ID_s1_txt03'>
+		<text><![CDATA[Consists of distributed network infrastructure components and IoT-specific, application-specific interfaces]]></text>
+	</component>
+
+	<component id='ID_s1_txt04'>
+		<text><![CDATA[Includes management tools such as the Cisco IoT Field Network Director]]></text>
+	</component>
+
+	<component id='ID_s1_txt05'>
+		<text><![CDATA[Identifies devices that can be used to provide IoT connectivity to various industries]]></text>
+	</component>
+
+	<component id='ID_s1_txt06'>
+		<text><![CDATA[Provides the infrastructure for application hosting and application mobility between Cloud and Fog computing]]></text>
+	</component>
+
+	<component id='ID_s1_target_header_01'>
+		<text><![CDATA[Pillar]]></text>
+	</component>
+
+	<component id='ID_s1_text_header_01'>
+		<text><![CDATA[Description]]></text>
+	</component>
+
+
+<!-- end slide 1 -->
+
+	
+</textcomponents>

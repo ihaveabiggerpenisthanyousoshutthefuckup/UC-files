@@ -1,0 +1,20 @@
+﻿<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>ACL Issues</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>MAC Address: 5475.D08E.9AD8</b>]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<font color="#FFFFFF">To prevent spoofing attacks, deny all packets with a source address of 172.16.1.0/24 from entering Serial 0/0/1.</font>]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[<b>SRV1</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Display ACLs and ACL Placement on R1</b>]]></text>
+	</component>
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Changing ACL Placement</b>]]></text>
+	</component>
+</textcomponents>

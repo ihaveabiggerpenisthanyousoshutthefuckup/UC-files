@@ -1,0 +1,1 @@
+Figure is an interactive activity that allows the learner to determine Truth/False for each security best practices.

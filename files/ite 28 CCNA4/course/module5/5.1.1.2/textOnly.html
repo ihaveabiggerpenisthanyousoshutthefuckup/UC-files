@@ -1,0 +1,22 @@
+
+          <p>The Cisco Discovery Protocol (CDP) is a proprietary Layer 2 link discovery protocol. It is enabled on all Cisco devices by default. CDP can automatically discover other CDP-enabled devices and help auto-configure their connection. Network administrators also use CDP to help configure and troubleshoot network devices.</p>
+          <p></p>
+          <p>CDP information is sent out CDP-enabled ports in periodic, unencrypted broadcasts. CDP information includes the IP address of the device, IOS software version, platform, capabilities, and the native VLAN. The device receiving the CDP message updates its CDP database. </p>
+          <p></p>
+          <p>CDP information is extremely useful in network troubleshooting. For example, CDP can be used to verify Layer 1 and 2 connectivity. If an administrator cannot ping a directly connected interface, but still receives CDP information, then the problem is most likely related to the Layer 3 configuration. </p>
+          <p></p>
+          <p>However, the information provided by CDP can also be used by an attacker to discover network infrastructure vulnerabilities.</p>
+          <p></p>
+          <p>In the figure, a sample Wireshark capture displays the contents of a CDP packet. The attacker is able to identify the Cisco IOS software version used by the device. This allows the attacker to determine whether there were any security vulnerabilities specific to that particular version of IOS. </p>
+          <p></p>
+          <p>CDP broadcasts are sent unencrypted and unauthenticated. Therefore, an attacker could interfere with the network infrastructure by sending crafted CDP frames containing bogus device information to directly-connected Cisco devices. </p>
+          <p></p>
+          <p>To mitigate the exploitation of CDP, limit the use of CDP on devices or ports. For example, disable CDP on edge ports that connect to untrusted devices. </p>
+          <p></p>
+          <p>To disable CDP globally on a device, use the <b>no cdp run</b> global configuration mode command. To enable CDP globally, use the <b>cdp run</b> global configuration command. </p>
+          <p></p>
+          <p>To disable CDP on a port, use the <b>no cdp enable</b> interface configuration command. To enable CDP on a port, use the <b>cdp enable</b> interface configuration command.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Link Layer Discovery Protocol (LLDP) in also vulnerable to reconnaissance attacks. Configure<b> no lldp run </b>to disable LLDP globally. To disable LLDP on the interface, configure<b> no lldp transmit </b>and<b> no lldp receive</b>. </p>
+        

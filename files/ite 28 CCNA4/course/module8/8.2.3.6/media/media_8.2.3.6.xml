@@ -1,0 +1,112 @@
+﻿<textcomponents>
+	<component id="ID_title01">
+		<text><![CDATA[<b>Application Layer</b>]]></text>
+	</component>
+		<component id="ID_txt01">
+		<text><![CDATA[<b>Causes</b><textformat blockindent='-14'><li>General network issues</li><li>Connectivity issues</li><li>Neighbor issues</li><li>Topology database</li><li>Routing table</li><textformat>]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Symptoms</b><textformat blockindent='-14'><li>Network failure</li><li>Suboptimal performance</li> <textformat>]]>
+		</text>
+	</component>
+
+	<component id="ID_txt03">
+	   <text><![CDATA[HTTP, Telnet, FTP, TFTP, SMTP, POP, IMAP, SNMP, NTP, DNS, NNTP]]></text></component>
+
+
+<component id="ID_txt04">
+   <text><![CDATA[NFS]]></text>
+</component>
+
+<component id="ID_txt05">
+   <text><![CDATA[XDR]]></text>
+</component>
+
+<component id="ID_txt06">
+   <text><![CDATA[RPC]]></text>
+</component>
+
+<component id="ID_txt07">
+   <text><![CDATA[TCP, UDP]]></text>
+</component>
+
+<component id="ID_txt08">
+   <text><![CDATA[<b>Routing Protocols</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+   <text><![CDATA[IP]]></text>
+</component>
+
+<component id="ID_txt10">
+   <text><![CDATA[<b>ICMP</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+   <text><![CDATA[ARP, RARP]]></text>
+</component>
+
+<component id="ID_txt12">
+   <text><![CDATA[Not Specified]]></text>
+</component>
+
+<component id="ID_txt13">
+   <text><![CDATA[Application]]></text>
+</component>
+
+<component id="ID_txt14">
+   <text><![CDATA[Transport]]></text>
+</component>
+
+<component id="ID_txt15">
+   <text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt16">
+   <text><![CDATA[Network]]></text>
+</component>
+
+
+<component id="ID_txt17">
+   <text><![CDATA[<b>OSI Reference Model</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+   <text><![CDATA[<b>TCP/IP Reference Model</b>]]></text>
+</component>
+
+<component id="ID_txt19">
+   <text><![CDATA[*]]></text>
+</component>
+
+<component id="ID_txt20">
+   <text><![CDATA[*]]></text>
+</component>
+
+<component id="ID_txt21">
+   <text><![CDATA[*]]></text>
+</component>
+
+<component id='ID_osi_txt07'>
+  <text><![CDATA[7. Application]]></text>
+</component>
+<component id='ID_osi_txt06'>
+  <text><![CDATA[6. Presentation]]></text>
+</component>
+<component id='ID_osi_txt05'>
+  <text><![CDATA[5. Session]]></text>
+</component>
+<component id='ID_osi_txt04'>
+  <text><![CDATA[4. Transport]]></text>
+</component>
+<component id='ID_osi_txt03'>
+  <text><![CDATA[3. Network]]></text>
+</component>
+<component id='ID_osi_txt02'>
+  <text><![CDATA[2. Data Link ]]></text>
+</component>
+<component id='ID_osi_txt01'>
+  <text><![CDATA[1. Physical]]></text>
+</component>
+
+</textcomponents>

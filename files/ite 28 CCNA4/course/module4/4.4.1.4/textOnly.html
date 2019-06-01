@@ -1,0 +1,5 @@
+
+          <p>The figure shows the logical decision path used by an extended ACL built to filter on source and destination addresses, and protocol and port numbers. In this example, the ACL first filters on the source address, then on the port and protocol of the source. It then filters on the destination address, then on the port and protocol of the destination, and makes a final permit or deny decision. </p>
+          <p></p>
+          <p>Recall that entries in ACLs are processed one after the other, so a 'No' decision does not necessarily equal a 'Deny'. As you go through the logical decision path, note that a 'No' means go to the next entry until a condition is matched.</p>
+        

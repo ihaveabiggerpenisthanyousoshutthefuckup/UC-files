@@ -1,0 +1,18 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>IPv6 Topology</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Permit access to the :11 network.<br/>Deny access to the :10 network.]]></text>
+</component>
+
+<component id="ID_s2_title">
+  <text><![CDATA[<b>Verify the IPv6 ACL Configuration and Application</b>]]></text> 
+</component>
+
+<component id="ID_s3_title">
+  <text><![CDATA[<b>Remove ACL on R1, then Configure and Apply ACL on R2</b>]]></text> 
+</component>
+
+</textcomponents>

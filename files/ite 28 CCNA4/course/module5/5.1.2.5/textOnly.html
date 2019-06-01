@@ -1,0 +1,58 @@
+
+          <p>To keep malicious users from gaining access to sensitive network equipment and services, administrators must enable access control. Access control limits who or what can use specific resources. It also limits the services or options that are available after access is granted.</p>
+          <p></p>
+          <p>There are different methods of implementing authentication on a Cisco device, and each method offers varying levels of security. The Authentication, Authorization, and Accounting (AAA) framework is used to help secure device access. AAA Authentication can be used to authenticate users for administrative access or it can be used to authenticate users for remote network access. </p>
+          <p></p>
+          <p>Cisco provides two common methods of implementing AAA services:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Local AAA Authentication</b> -Local AAA uses a local database for authentication. This method is sometimes known as self-contained authentication. This method stores usernames and passwords locally in the Cisco router, and users authenticate against the local database. Local AAA is ideal for small networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Server-Based AAA Authentication</b> - Server-based AAA authentication is a much more scalable solution. With server-based method, the router accesses a central AAA server. The AAA server contains the usernames and password for all users and serves as a central authentication system for all infrastructure devices.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 1 illustrates how local AAA authentication works:</p>
+          <p>
+            <ul>
+              <li>The client establishes a connection with the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The AAA router prompts the user for a username and password.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The router authenticates the username and password using the local database, and the user is provided access to the network based on the information in the local database.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 illustrates how server-based AAA authentication works:</p>
+          <p>
+            <ul>
+              <li>The client establishes a connection with the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The AAA router prompts the user for a username and password.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The router authenticates the username and password using a remote AAA server.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in Figure 3, the AAA-enabled router uses either the Terminal Access Controller Access Control System (TACACS+) protocol or the Remote Authentication Dial-In User Service (RADIUS) protocol to communicate with the AAA server. While both protocols can be used to communicate between a router and AAA servers, TACACS+ is considered the more secure protocol. This is because all TACACS+ protocol exchanges are encrypted, while RADIUS only encrypts the user’s password. RADIUS does not encrypt user names, accounting information, or any other information carried in the RADIUS message.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: For more information on AAA, refer to the CCNA Security course. </p>
+        

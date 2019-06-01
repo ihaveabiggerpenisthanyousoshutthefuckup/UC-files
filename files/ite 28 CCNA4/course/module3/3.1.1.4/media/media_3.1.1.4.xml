@@ -1,0 +1,68 @@
+<textcomponents>
+
+	
+		<component id="ID_s1_title">
+		<text><![CDATA[<b>DSL Connections</b>]]></text>
+		</component>
+		
+		<component id="ID_s1_txt01">
+		<text><![CDATA[PSTN]]></text>
+		</component>
+		
+		<component id="ID_s1_txt02">
+		<text><![CDATA[Internet]]></text>
+		</component>
+		
+		<component id="ID_s1_txt03">
+		<text><![CDATA[<b>Provider Network</b>]]></text>
+		</component>
+		
+		<component id="ID_s1_txt04">
+		<text><![CDATA[PSTN Switch]]></text>
+		</component>
+		
+		<component id="ID_s1_txt05">
+		<text><![CDATA[DSLAM]]></text>
+		</component>
+		
+		<component id="ID_s1_txt06">
+		<text><![CDATA[ISP]]></text>
+		</component>
+		
+		<component id="ID_s1_txt07">
+		<text><![CDATA[<b>SOHO</b>]]></text>
+		</component>
+		
+		<component id="ID_s1_txt08">
+		<text><![CDATA[Microfilters]]></text>
+		</component>
+		
+		<component id="ID_s1_txt09">
+		<text><![CDATA[DSL Modem]]></text>
+		</component>
+		
+		<component id="ID_s1_txt10">
+		<text><![CDATA[Maximum distance of 3.39 miles (5.46 kilometers)]]></text>
+		</component>			
+	
+		<component id="ID_s2_title">
+		<text><![CDATA[<b>DSL Connections</b>]]></text>
+		</component>
+		
+		<component id="ID_s2_txt01">
+		<text><![CDATA[Cisco 810 Series Broadband Routers]]></text>
+		</component>
+		
+		<component id="ID_s2_txt02">
+		<text><![CDATA[Cisco 890 Series Broadband Routers]]></text>
+		</component>
+		
+		<component id="ID_s2_txt03">
+		<text><![CDATA[Cisco 10000 Series Broadband Aggregation Routers]]></text>
+		</component>
+
+
+
+	
+
+</textcomponents>

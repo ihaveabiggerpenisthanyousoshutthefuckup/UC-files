@@ -1,0 +1,1 @@
+Figure shows a packet capture file of a CDP. session using Wireshark.  The line that contains the software version for the cisco device is highlighted. An explanation box pointing to the highlighted data reads “Wireshark captured the software version from CDP frame. Cisco IOS software, C2960 Software (C2960-LANBASEK9-M), Version 12.2(44)SE, RELEASE SOFTWARE (fc1) …”  

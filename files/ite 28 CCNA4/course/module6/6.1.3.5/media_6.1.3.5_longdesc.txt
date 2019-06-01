@@ -1,0 +1,1 @@
+Figure shows an example of Class-Based Weighted Fair queuing (CBWFQ).

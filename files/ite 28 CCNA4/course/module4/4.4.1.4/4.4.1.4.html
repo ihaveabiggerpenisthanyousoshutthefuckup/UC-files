@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="loading" dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>4.4.1.4 Extended ACL Decision Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="../../common-ext/styles/page.css"/>
+    <script type="text/javascript" src="../../common-ext/scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/permission.js"></script>
+    <script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script type="text/javascript" src="media/override.js"></script>
+    <script>
+      var media_transcript_file = "media_4.4.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="main">
+      <div id="text">
+        <h1>Extended ACL Decision Process</h1>
+        <div>
+          <p>The figure shows the logical decision path used by an extended ACL built to filter on source and destination addresses, and protocol and port numbers. In this example, the ACL first filters on the source address, then on the port and protocol of the source. It then filters on the destination address, then on the port and protocol of the destination, and makes a final permit or deny decision. </p>
+          <p></p>
+          <p>Recall that entries in ACLs are processed one after the other, so a 'No' decision does not necessarily equal a 'Deny'. As you go through the logical decision path, note that a 'No' means go to the next entry until a condition is matched.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description"></iframe>
+      <div id="media-description">Figure is a flow chart depicting how routers test packets with an extended A.C.L.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com">netacad.com</a> before accessing this course.</div>
+  </body>
+</html>

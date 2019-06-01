@@ -1,0 +1,15 @@
+
+          <p>The needs of real-time applications, such as remote video, multimedia conferencing, visualization, and virtual reality, motivated the development of the IntServ architecture model in 1994 (RFC 1633, 2211, and 2212). IntServ is a multiple-service model that can accommodate multiple QoS requirements.</p>
+          <p></p>
+          <p>IntServ provides a way to deliver the end-to-end QoS that real-time applications require by explicitly managing network resources to provide QoS to specific user packet streams, sometimes called microflows.  It uses resource reservation and admission-control mechanisms as building blocks to establish and maintain QoS. This practice is similar to a concept known as “hard QoS.” Hard QoS guarantees traffic characteristics, such as bandwidth, delay, and packet-loss rates, from end to end. Hard QoS ensures both predictable and guaranteed service levels for mission-critical applications.</p>
+          <p></p>
+          <p>Figure 1 is a simple illustration of the IntServ model.</p>
+          <p></p>
+          <p>IntServ uses a connection-oriented approach inherited from telephony network design. Each individual communication must explicitly specify its traffic descriptor and requested resources to the network. The edge router performs admission control to ensure that available resources are sufficient in the network. The IntServ standard assumes that routers along a path set and maintain the state for each individual communication.</p>
+          <p></p>
+          <p>In the IntServ model, the application requests a specific kind of service from the network before sending data. The application informs the network of its traffic profile and requests a particular kind of service that can encompass its bandwidth and delay requirements.  IntServ uses the Resource Reservation Protocol (RSVP) to signal the QoS needs of an application’s traffic along devices in the end-to-end path through the network. If network devices along the path can reserve the necessary bandwidth, the originating application can begin transmitting. If the requested reservation fails along the path, the originating application does not send any data.</p>
+          <p></p>
+          <p>The edge router performs admission control based on information from the application and available network resources. The network commits to meeting the QoS requirements of the application as long as the traffic remains within the profile specifications. The network fulfills its commitment by maintaining the per-flow state and then performing packet classification, policing, and intelligent queuing based on that state.</p>
+          <p></p>
+          <p>The table in Figure 2 lists the benefits and drawbacks of the IntServ model.</p>
+        

@@ -1,0 +1,121 @@
+﻿
+<textcomponents>
+
+<component id="ID_s1_title">
+	<text><![CDATA[<b>Activity - Identify Cloud Computing Terminology</b>]]></text>
+</component>
+
+<component id='ID_s1_instr_title'>
+	<text><![CDATA[Instructions]]></text>
+</component>
+
+<component id='ID_s1_instr_body'>
+	<text><![CDATA[Match each term to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each cloud term to its description.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each cloud term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+<!--Drag Items-->
+
+<component id='ID_s1_drag_header'>
+	<text><![CDATA[<font color="#FFFFFF" size="15">Steps</font>]]></text>
+</component>
+
+<component id='ID_s1_drag01'>
+	<text><![CDATA[Public Cloud]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[PaaS]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[Custom Cloud]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[IaaS]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[Cloud]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[SaaS]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[Hybrid Cloud]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[Private Cloud]]></text>
+</component>
+
+<!--Questions-->
+<component id='ID_s1_target_header_01'>
+	<text><![CDATA[<font size="15">Term</font>]]></text>
+</component>
+<component id='ID_s1_text_header_01'>
+	<text><![CDATA[<font size="15">Description</font>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[Two or more clouds where each part remains a distinctive object, but both are connected using a single architecture]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+  <text><![CDATA[Access to the development tools and services used to deliver the applications]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+  <text><![CDATA[Applications and services are intended for a specific organization or entity, such as the government]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+	<text><![CDATA[Clouds built to meet the needs of a specific industry, such as healthcare or media]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+  <text><![CDATA[Access to the network equipment, virtualized network services, and supporting network infrastructure]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+  <text><![CDATA[Applications and services are made available to the general population]]></text> 
+</component>
+
+<component id="ID_s1_txt07">
+  <text><![CDATA[Large numbers of computers connected through a network that can be physically located anywhere]]></text> 
+</component>
+
+<component id="ID_s1_txt08">
+  <text><![CDATA[Access to services, such as email, communication, and  Office 365 that are delivered over the Internet]]></text> 
+</component>
+
+
+</textcomponents>
+

@@ -1,0 +1,1 @@
+Figure 1 depicts the moving of an operating system instance between two hypervisors from server 1 to server 2. Both servers have a hardware layer and above that the hypervisor layer. Server 1 shows three operating systems, Windows, Linux and UNIX. An arrow depicts the moving of the Windows OS from server 1 to server 2.

@@ -1,0 +1,15 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#canvasId{height:398px !important;}
+
+#ID_txt04{line-height:1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 1px rgba(255,255,255,.4);
+}

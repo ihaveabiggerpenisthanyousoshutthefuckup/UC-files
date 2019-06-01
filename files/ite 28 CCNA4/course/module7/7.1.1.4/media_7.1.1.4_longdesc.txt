@@ -1,0 +1,1 @@
+The figure shows the six pillars of the IoT System with the Internet of Things at the bottom, the pillars in the middle, and Applications at the top. The six pillars are network connectivity, fog computing, security (Cyber and Physical), data analytics, management and automation, and application enablement platform.

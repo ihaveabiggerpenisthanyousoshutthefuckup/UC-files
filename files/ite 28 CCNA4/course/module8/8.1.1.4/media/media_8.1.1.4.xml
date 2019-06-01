@@ -1,0 +1,104 @@
+﻿<textcomponents>
+
+<!--slide 1 -->	
+<component id="ID_s1_title">
+<text><![CDATA[<b>Planning for the First Baseline</b>]]></text>
+</component>
+
+	<!--slide 2 textbox -->	
+	<component id="ID_Title_txt01">
+	<text><![CDATA[Devices and Ports of Interest]]></text>
+	</component>
+	
+	<component id="ID_Body_txt01">
+	<text><![CDATA[<font size="10"><textformat blockindent='-14'><ul><li>Router to router ports</li><li>Router to switch ports</li><li>Router port to Web/TFTP Server</li><li>PC1 (Admin Terminal)</li><li>SRV1 (Web/TFTP Server)</li></ul></textformat></font>]]></text>
+	</component>
+	<!--end slide 2 textbox -->	
+
+<component id="ID_s1_txt01">
+<text><![CDATA[PPP]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Frame Relay]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[SRV1]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[SRV2]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[<font color="#652C8A"><b>WEB/TFTP Server</b></font><br>192.168.20.254/24]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<font color="#652C8A"><b>WEB Server</b></font><br>209.165.201.30/27]]></text>
+</component>
+<component id="ID_s1_txt07">
+<text><![CDATA[<b>Building B</b>]]></text>
+</component>
+<component id="ID_s1_txt08">
+<text><![CDATA[<b>Sales Office (London)</b>]]></text>
+</component>
+<component id="ID_s1_txt09">
+<text><![CDATA[<b>Admin Terminal</b>]]></text>
+</component>
+
+<!--slide 2-->	
+<component id="ID_s2_title">
+<text><![CDATA[<b>Capture Data Trends</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Daily Graph (5 minute Average)</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Monthly Graph (30 Minute Average)</b>]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>CPU Utilization</b>]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>CPU Utilization</b>]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[Max Load: <b>46%</b> Average Load: <b>3%</b> Current Load: <b>1%</b>]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[Max Load: <b>43%</b> Average Load: <b>2%</b> Current Load: <b>1%</b>]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>Weekly Graph (2 Hour Average)</b>]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[<b>Yearly Graph (1 day Average)</b>]]></text>
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[<b>CPU Utilization</b>]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[<b>CPU Utilization</b>]]></text>
+</component>
+
+<component id="ID_s2_txt11">
+<text><![CDATA[Max Load: <b>43%</b> Average Load: <b>2%</b> Current Load: <b>1%</b>]]></text>
+</component>
+
+<component id="ID_s2_txt12">
+<text><![CDATA[Max Load: <b>43%</b> Average Load: <b>0%</b> Current Load: <b>1%</b>]]></text>
+</component>
+
+</textcomponents>

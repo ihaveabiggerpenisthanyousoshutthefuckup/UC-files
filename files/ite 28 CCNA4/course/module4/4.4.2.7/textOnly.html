@@ -1,0 +1,26 @@
+
+          <p>In the figure, R3 is configured with an IPv6 ACL named RESTRICTED-ACCESS that should enforce the following policy for the R3 LAN:</p>
+          <p>
+            <ul>
+              <li>Permit access to the :10 network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Deny access to the :11 network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Permit SSH access to the PC at 2001:DB8:CAFE:11::11</li>
+            </ul>
+          </p>
+          <p>However, after configuring the ACL, PC3 cannot reach the 10 network or the 11 network, and it cannot SSH into the host at 2001:DB8:CAFE:11::11.</p>
+          <p></p>
+          <p>
+            <b>Solution</b>: In this situation the problem is not with how the ACL was applied. At the interface, the ACL is not misspelled and the direction and location are correct, as shown in Figure 2. A close look at the IPv6 ACL reveals that the problem is with the order and criteria of the ACE rules. The first permit statement should allow access to the :10 network. However, the administrator configured a host statement and did not specify a prefix. In this case, only access to the 2001:DB8:CAFE:10:: host is allowed.</p>
+          <p></p>
+          <p>To correct this issue, remove the host argument and change the prefix to /64. You can do this without removing the ACL by replacing the ACE using the sequence number 10, as shown in Figure 3.</p>
+          <p></p>
+          <p>The second error in the ACL is the order of the next two statements. The policy specifies that hosts on the R3 LAN should be able to SSH into host 2001:DB8:CAFE:11::11. However, the deny statement for :11 network is listed before the permit statement.  Therefore, all attempts to access the :11 network are denied before the statement permitting SSH access can be evaluated. After a match is made, no further statements are analyzed. To correct this issue, you will need to remove the statements first, and then enter them in the correct order, as shown in Figure 4.</p>
+        
